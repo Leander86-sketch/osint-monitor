@@ -145,7 +145,7 @@ export interface Camera {
   lastUpdated?: string;
 }
 
-export type LayerType = 'flights' | 'satellites' | 'conflicts' | 'carriers' | 'cameras' | 'sentiment' | 'displacement' | 'chokepoints' | 'hazards' | 'firms';
+export type LayerType = 'flights' | 'satellites' | 'conflicts' | 'carriers' | 'cameras' | 'sentiment' | 'displacement' | 'chokepoints' | 'hazards' | 'firms' | 'acled';
 
 export interface TelegramMessage {
   id: string;
@@ -244,4 +244,19 @@ export interface FirePoint {
   frp: number;
   confidence: string;
   date: string;
+}
+
+export interface ACLEDEvent {
+  id: string;
+  lat: number;
+  lng: number;
+  eventType: string;
+  actor1: string;
+  actor2: string;
+  country: string;
+  location: string;
+  fatalities: number;
+  date: string;
+  notes: string;
+  source: string;
 }

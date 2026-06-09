@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Situation } from '@/lib/types';
 
 const SEV_W: Record<string, number> = { low: 1, medium: 2, high: 3, critical: 4 };
+const STATUS_DOT: Record<string, string> = { breaking: '#dc2626', active: '#16a34a', cooling: '#555' };
 
 export function computeThreat(situations: Situation[]): number {
   if (!situations.length) return 0;
@@ -26,7 +27,8 @@ export default function ThreatGauge({ situations, onFocus }: { situations: Situa
   const t = computeThreat(situations);
   const color = threatColor(t);
   const breaking = situations.filter(s => s.status === 'breaking');
-  const active = situations.filter(s => s.status === 'active').length;
+  const active = situations.filter(s => s.status === 'active');
+  const live = situations.filter(s => s.status !== 'cooling');
   return (
     <div className="border border-[#1a1a1a] rounded bg-[#0a0a0a] p-3">
       <div className="flex items-center justify-between mb-2">
@@ -39,18 +41,20 @@ export default function ThreatGauge({ situations, onFocus }: { situations: Situa
       <div className="flex items-center gap-3 text-[10px] font-mono">
         {breaking.length > 0 && (
           <button onClick={() => setOpen(o => !o)} className="text-[#dc2626] hover:text-[#f87171] flex items-center gap-1 transition-colors">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse" /> {breaking.length} BREAKING <span className="text-[8px] opacity-70">{open ? '▲' : '▼'}</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse" /> {breaking.length} BREAKING
           </button>
         )}
-        <span className="text-[#888]">{active} ACTIVE</span>
+        <button onClick={() => setOpen(o => !o)} className="text-[#888] hover:text-[#ccc] flex items-center gap-1 transition-colors">
+          {active.length} ACTIVE {live.length > 0 && <span className="text-[8px] opacity-70">{open ? '▲' : '▼'}</span>}
+        </button>
         <span className="text-[#555]">{situations.length} TRACKED</span>
       </div>
-      {open && breaking.length > 0 && (
+      {open && live.length > 0 && (
         <div className="mt-2 space-y-2 border-t border-[#1a1a1a] pt-2 max-h-52 overflow-y-auto">
-          {breaking.map(s => (
+          {live.map(s => (
             <div key={s.id} className="text-[10px] font-mono">
               <div className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse shrink-0" />
+                <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${s.status === 'breaking' ? 'animate-pulse' : ''}`} style={{ backgroundColor: STATUS_DOT[s.status] }} />
                 <button onClick={() => onFocus?.(s.bbox)} className="text-[#ddd] hover:text-[#e8760a] uppercase truncate text-left transition-colors" title="Focus on map">{s.title}</button>
                 <span className="text-[#666] ml-auto shrink-0 tabular-nums">{s.metadata.velocity1h}/h</span>
               </div>

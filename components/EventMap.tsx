@@ -21,6 +21,7 @@ const CameraLayer = dynamic(() => import('./map-layers/CameraLayer'), { ssr: fal
 const SentimentLayer = dynamic(() => import('./map-layers/SentimentLayer'), { ssr: false });
 const DisplacementLayer = dynamic(() => import('./map-layers/DisplacementLayer'), { ssr: false });
 const ChokePointLayer = dynamic(() => import('./map-layers/ChokePointLayer'), { ssr: false });
+const HazardsLayer = dynamic(() => import('./map-layers/HazardsLayer'), { ssr: false });
 
 const TYPE_COLORS: Record<string, string> = {
   military: '#dc2626',
@@ -48,6 +49,7 @@ const LAYER_CONFIG: { id: LayerType; label: string; color: string }[] = [
   { id: 'sentiment', label: 'TONE', color: '#eab308' },
   { id: 'displacement', label: 'DISP', color: '#f59e0b' },
   { id: 'chokepoints', label: 'CHOKE', color: '#ef4444' },
+  { id: 'hazards', label: 'HAZARD', color: '#9ca3af' },
 ];
 
 function timeAgo(dateStr: string): string {
@@ -269,6 +271,7 @@ function EventMap({ focusBbox, situations }: { focusBbox?: [number, number, numb
           {activeLayers.has('sentiment') && <SentimentLayer />}
           {activeLayers.has('displacement') && <DisplacementLayer />}
           {activeLayers.has('chokepoints') && <ChokePointLayer />}
+          {activeLayers.has('hazards') && <HazardsLayer />}
         </MapContainer>
       </div>
     </div>

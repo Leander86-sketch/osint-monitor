@@ -4,80 +4,80 @@
     "keyword": "ceasefire",
     "enabled": true,
     "createdAt": "2026-03-23T13:29:27.608Z",
-    "triggerCount": 16470,
-    "lastTriggered": "2026-06-09T17:51:16.070Z"
+    "triggerCount": 16537,
+    "lastTriggered": "2026-06-09T18:00:35.674Z"
   },
   {
     "id": "default-airstrike",
     "keyword": "airstrike",
     "enabled": true,
     "createdAt": "2026-03-23T13:29:27.608Z",
-    "triggerCount": 3003,
-    "lastTriggered": "2026-06-09T17:51:16.005Z"
+    "triggerCount": 3017,
+    "lastTriggered": "2026-06-09T18:00:35.402Z"
   },
   {
     "id": "default-missile",
     "keyword": "missile",
     "enabled": true,
     "createdAt": "2026-03-23T13:29:27.608Z",
-    "triggerCount": 14286,
-    "lastTriggered": "2026-06-09T17:51:16.069Z"
+    "triggerCount": 14345,
+    "lastTriggered": "2026-06-09T18:00:35.772Z"
   },
   {
     "id": "default-nuclear",
     "keyword": "nuclear",
     "enabled": true,
     "createdAt": "2026-03-23T13:29:27.608Z",
-    "triggerCount": 16865,
-    "lastTriggered": "2026-06-09T17:51:16.037Z"
+    "triggerCount": 16937,
+    "lastTriggered": "2026-06-09T18:00:35.746Z"
   },
   {
     "id": "default-ukraine",
     "keyword": "Ukraine",
     "enabled": true,
     "createdAt": "2026-03-23T13:29:27.608Z",
-    "triggerCount": 32025,
-    "lastTriggered": "2026-06-09T17:51:16.074Z"
+    "triggerCount": 32198,
+    "lastTriggered": "2026-06-09T18:00:35.780Z"
   },
   {
     "id": "default-gaza",
     "keyword": "Gaza",
     "enabled": true,
     "createdAt": "2026-03-23T13:29:27.608Z",
-    "triggerCount": 7542,
-    "lastTriggered": "2026-06-09T17:51:15.895Z"
+    "triggerCount": 7591,
+    "lastTriggered": "2026-06-09T18:00:35.612Z"
   },
   {
     "id": "default-iran",
     "keyword": "Iran",
     "enabled": true,
     "createdAt": "2026-03-23T13:29:27.608Z",
-    "triggerCount": 166085,
-    "lastTriggered": "2026-06-09T17:51:16.077Z"
+    "triggerCount": 166559,
+    "lastTriggered": "2026-06-09T18:00:35.792Z"
   },
   {
     "id": "default-taiwan",
     "keyword": "Taiwan",
     "enabled": true,
     "createdAt": "2026-03-23T13:29:27.608Z",
-    "triggerCount": 4260,
-    "lastTriggered": "2026-06-09T17:51:15.984Z"
+    "triggerCount": 4283,
+    "lastTriggered": "2026-06-09T18:00:35.617Z"
   },
   {
     "id": "default-sanctions",
     "keyword": "sanctions",
     "enabled": true,
     "createdAt": "2026-03-23T13:29:27.608Z",
-    "triggerCount": 5912,
-    "lastTriggered": "2026-06-09T17:51:15.912Z"
+    "triggerCount": 5985,
+    "lastTriggered": "2026-06-09T18:00:35.786Z"
   },
   {
     "id": "default-tariff",
     "keyword": "tariff",
     "enabled": true,
     "createdAt": "2026-03-23T13:29:27.608Z",
-    "triggerCount": 3105,
-    "lastTriggered": "2026-06-09T17:51:16.059Z"
+    "triggerCount": 3125,
+    "lastTriggered": "2026-06-09T18:00:35.757Z"
   },
   {
     "id": "default-cyberattack",
@@ -92,7 +92,7 @@
     "keyword": "china",
     "enabled": true,
     "createdAt": "2026-03-24T15:02:34.148Z",
-    "triggerCount": 27539,
-    "lastTriggered": "2026-06-09T17:51:16.064Z"
+    "triggerCount": 27769,
+    "lastTriggered": "2026-06-09T18:00:35.790Z"
   }
 ]

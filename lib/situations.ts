@@ -150,12 +150,15 @@ export function computeSituations(): Situation[] {
     const tiers = new Set(its.map(i => i.sourceTier || 3));
     if (its.length < 3 || sources.size < 3 || tiers.size < 2) continue; // hysteresis-lite (buckets are already conflict-event titles)
     const loc = its[0].location!;
-    const title = loc.name;
-    const id = 'auto-' + slugify(title);
+    const kwCount = new Map<string, number>();
+    for (const it of its) for (const k of it.keywords) kwCount.set(k, (kwCount.get(k) || 0) + 1);
+    const topKw = [...kwCount.entries()].sort((a, b) => b[1] - a[1]).map(e => e[0]).find(k => k.toLowerCase() !== loc.name.toLowerCase());
+    const title = topKw ? loc.name + ' - ' + topKw : loc.name;
+    const id = 'auto-' + slugify(loc.name);
     if (out.some(s => s.id === id)) continue;
     const d = 3;
     const bbox: [number, number, number, number] = [loc.lat - d, loc.lng - d, loc.lat + d, loc.lng + d];
-    out.push(buildSituation({ id, slug: slugify(title), title, type: 'conflict', curated: false, center: { lat: loc.lat, lng: loc.lng }, bbox, zoom: 6, actors: [] }, its, now, (it) => STRONG_RE.test(it.title)));
+    out.push(buildSituation({ id, slug: slugify(loc.name), title, type: 'conflict', curated: false, center: { lat: loc.lat, lng: loc.lng }, bbox, zoom: 6, actors: [] }, its, now, (it) => STRONG_RE.test(it.title)));
   }
 
   out.sort((a, b) =>

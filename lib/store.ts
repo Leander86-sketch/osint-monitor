@@ -8,6 +8,7 @@ import path from 'path';
 const DATA_DIR = path.join(process.cwd(), 'data');
 const ALERTS_FILE = path.join(DATA_DIR, 'alerts.json');
 const ALERT_EVENTS_FILE = path.join(DATA_DIR, 'alert-events.json');
+const SNAPSHOT_FILE = path.join(DATA_DIR, 'news-snapshot.json');
 
 // Global singleton to survive Next.js hot reloads & module re-instantiation
 interface GlobalStore {
@@ -24,6 +25,27 @@ function ensureDataDir() {
   if (!fs.existsSync(DATA_DIR)) {
     fs.mkdirSync(DATA_DIR, { recursive: true });
   }
+}
+
+function saveSnapshot() {
+  ensureDataDir();
+  try {
+    fs.writeFileSync(SNAPSHOT_FILE, JSON.stringify({ newsItems: g.__osintStore!.newsItems, lastFetch: g.__osintStore!.lastFetch }));
+  } catch (e) { console.error('[store] snapshot save failed', e); }
+}
+
+function loadSnapshot(): boolean {
+  try {
+    if (fs.existsSync(SNAPSHOT_FILE)) {
+      const d = JSON.parse(fs.readFileSync(SNAPSHOT_FILE, 'utf-8'));
+      if (Array.isArray(d.newsItems) && d.newsItems.length > 0) {
+        g.__osintStore!.newsItems = d.newsItems;
+        g.__osintStore!.lastFetch = d.lastFetch || 0;
+        return true;
+      }
+    }
+  } catch (e) { console.error('[store] snapshot load failed', e); }
+  return false;
 }
 
 // --- News Items ---
@@ -71,6 +93,8 @@ export async function refreshFeeds(): Promise<{ added: number; total: number }> 
     }
   }
 
+  saveSnapshot();
+
   return { added, total: s.newsItems.length };
 }
 
@@ -83,7 +107,14 @@ let _refreshPromise: Promise<void> | null = null;
 export async function ensureFeedsLoaded(): Promise<void> {
   const s = g.__osintStore!;
   if (s.newsItems.length > 0) return;
-  // Deduplicate concurrent calls
+  // Survive restarts: load last on-disk snapshot instantly, then refresh in the background.
+  if (loadSnapshot()) {
+    if (!_refreshPromise) {
+      _refreshPromise = refreshFeeds().then(() => { _refreshPromise = null; }).catch(() => { _refreshPromise = null; });
+    }
+    return;
+  }
+  // No snapshot yet - must crawl before serving.
   if (!_refreshPromise) {
     _refreshPromise = refreshFeeds().then(() => { _refreshPromise = null; });
   }

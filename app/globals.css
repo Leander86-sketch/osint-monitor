@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #d4d4d4;
+  --surface: #0a0a0a;
+  --surface-2: #111111;
+  --border: #1a1a1a;
+  --border-light: #222222;
+  --amber: #e8760a;
+  --amber-dim: #b85a08;
+  --amber-glow: rgba(232, 118, 10, 0.08);
+  --red-alert: #dc2626;
+  --green-ok: #16a34a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Geist', 'Inter', -apple-system, sans-serif;
+}
+
+/* Scanline overlay for that grim CRT feel */
+body::after {
+  content: '▋';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+/* Scrollbar - minimal dark */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* Leaflet - pure black map */
+.leaflet-container {
+  background: #050505 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #0a0a0a !important;
+  color: #a3a3a3 !important;
+  border-radius: 4px !important;
+  border: 1px solid #1a1a1a !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8) !important;
+}
+
+.leaflet-popup-tip {
+  background: #0a0a0a !important;
+  border: 1px solid #1a1a1a !important;
+}
+
+.leaflet-popup-content {
+  margin: 8px 12px !important;
+}
+
+.leaflet-popup-content a {
+  color: var(--amber) !important;
+}
+
+/* Zoom controls */
+.leaflet-control-zoom a {
+  background: #0a0a0a !important;
+  color: #aaa !important;
+  border-color: #1a1a1a !important;
+}
+
+.leaflet-control-zoom a:hover {
+  color: var(--amber) !important;
+}
+
+/* Line clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Amber glow animation for critical items */
+@keyframes amber-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 118, 10, 0); }
+  50% { box-shadow: 0 0 12px 2px rgba(232, 118, 10, 0.15); }
+}
+
+.amber-pulse {
+  animation: amber-pulse 3s ease-in-out infinite;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(232, 118, 10, 0.3);
+  color: white;
+}
+
+/* Market ticker animation — continuous seamless loop */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker-scroll 40s linear infinite;
+  will-change: transform;
+  min-width: 200%;
+  display: inline-flex;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+.ticker-wrapper {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+/* --- ARGUS hero paint layer --- */
+.hero-glow {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(120% 80% at 50% -10%, rgba(232,118,10,0.16), transparent 55%),
+    radial-gradient(90% 70% at 82% 110%, rgba(220,38,38,0.13), transparent 60%);
+  mix-blend-mode: screen;
+  animation: argusGlow 8s ease-in-out infinite;
+}
+@keyframes argusGlow { 0%,100% { opacity: .6 } 50% { opacity: 1 } }
+.vignette {
+  position: absolute; inset: 0; pointer-events: none;
+  box-shadow: inset 0 0 180px 50px rgba(0,0,0,0.78);
+}
+.scanlines {
+  position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 2px, rgba(255,255,255,0.028) 3px, rgba(0,0,0,0) 3px);
+  mix-blend-mode: overlay; opacity: .55;
+}
+.type-cursor::after {
+  content: ''; display: inline-block; width: 0.5em; height: 1.05em;
+  background: #e8760a; margin-left: 3px; vertical-align: -0.15em;
+  animation: argusBlink 1s steps(1) infinite;
+}
+@keyframes argusBlink { 50% { opacity: 0 } }
+@media (prefers-reduced-motion: reduce) {
+  .hero-glow { animation: none }
+  .type-cursor::after { animation: none }
+}

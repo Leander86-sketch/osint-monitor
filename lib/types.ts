@@ -145,7 +145,7 @@ export interface Camera {
   lastUpdated?: string;
 }
 
-export type LayerType = 'flights' | 'satellites' | 'conflicts' | 'carriers' | 'cameras' | 'sentiment' | 'displacement' | 'chokepoints' | 'hazards';
+export type LayerType = 'flights' | 'satellites' | 'conflicts' | 'carriers' | 'cameras' | 'sentiment' | 'displacement' | 'chokepoints' | 'hazards' | 'firms';
 
 export interface TelegramMessage {
   id: string;
@@ -235,4 +235,13 @@ export interface HazardEvent {
   alert: string | null;
   date: string;
   url: string;
+}
+
+export interface FirePoint {
+  id: string;
+  lat: number;
+  lng: number;
+  frp: number;
+  confidence: string;
+  date: string;
 }

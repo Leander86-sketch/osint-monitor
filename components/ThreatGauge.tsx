@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { Situation } from '@/lib/types';
 
 const SEV_W: Record<string, number> = { low: 1, medium: 2, high: 3, critical: 4 };
@@ -20,10 +21,11 @@ export function threatColor(t: number): string {
   return t >= 75 ? '#dc2626' : t >= 50 ? '#f97316' : t >= 25 ? '#e8760a' : '#16a34a';
 }
 
-export default function ThreatGauge({ situations }: { situations: Situation[] }) {
+export default function ThreatGauge({ situations, onFocus }: { situations: Situation[]; onFocus?: (bbox: [number, number, number, number]) => void }) {
+  const [open, setOpen] = useState(false);
   const t = computeThreat(situations);
   const color = threatColor(t);
-  const breaking = situations.filter(s => s.status === 'breaking').length;
+  const breaking = situations.filter(s => s.status === 'breaking');
   const active = situations.filter(s => s.status === 'active').length;
   return (
     <div className="border border-[#1a1a1a] rounded bg-[#0a0a0a] p-3">
@@ -35,10 +37,30 @@ export default function ThreatGauge({ situations }: { situations: Situation[] })
         <div className="h-full rounded-full transition-all duration-700" style={{ width: `${t}%`, backgroundColor: color }} />
       </div>
       <div className="flex items-center gap-3 text-[10px] font-mono">
-        {breaking > 0 && <span className="text-[#dc2626]">● {breaking} BREAKING</span>}
+        {breaking.length > 0 && (
+          <button onClick={() => setOpen(o => !o)} className="text-[#dc2626] hover:text-[#f87171] flex items-center gap-1 transition-colors">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse" /> {breaking.length} BREAKING <span className="text-[8px] opacity-70">{open ? '▲' : '▼'}</span>
+          </button>
+        )}
         <span className="text-[#888]">{active} ACTIVE</span>
         <span className="text-[#555]">{situations.length} TRACKED</span>
       </div>
+      {open && breaking.length > 0 && (
+        <div className="mt-2 space-y-2 border-t border-[#1a1a1a] pt-2 max-h-52 overflow-y-auto">
+          {breaking.map(s => (
+            <div key={s.id} className="text-[10px] font-mono">
+              <div className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse shrink-0" />
+                <button onClick={() => onFocus?.(s.bbox)} className="text-[#ddd] hover:text-[#e8760a] uppercase truncate text-left transition-colors" title="Focus on map">{s.title}</button>
+                <span className="text-[#666] ml-auto shrink-0 tabular-nums">{s.metadata.velocity1h}/h</span>
+              </div>
+              {s.latestHeadline && (
+                <a href={s.latestLink} target="_blank" rel="noopener noreferrer" className="block text-[#888] hover:text-[#e8760a] leading-snug mt-0.5 pl-3 transition-colors">{s.latestHeadline} ↗</a>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

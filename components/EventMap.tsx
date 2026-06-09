@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, memo } from 'react';
 import dynamic from 'next/dynamic';
-import { GeoEvent, LayerType } from '@/lib/types';
+import { GeoEvent, LayerType, Situation } from '@/lib/types';
 import type { Map as LeafletMap } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -37,6 +37,8 @@ const SEVERITY_RADIUS: Record<string, number> = {
   low: 5,
 };
 
+const SIT_SEV: Record<string, string> = { critical: '#dc2626', high: '#f97316', medium: '#eab308', low: '#6b7280' };
+
 const LAYER_CONFIG: { id: LayerType; label: string; color: string }[] = [
   { id: 'flights', label: 'FLIGHT', color: '#38bdf8' },
   { id: 'satellites', label: 'SATELLITE', color: '#a78bfa' },
@@ -57,7 +59,7 @@ function timeAgo(dateStr: string): string {
   return `${Math.floor(diff / 86400000)}d`;
 }
 
-function EventMap({ focusBbox }: { focusBbox?: [number, number, number, number] | null }) {
+function EventMap({ focusBbox, situations }: { focusBbox?: [number, number, number, number] | null; situations?: Situation[] }) {
   const [events, setEvents] = useState<GeoEvent[]>([]);
   const [mounted, setMounted] = useState(false);
   const [typeFilter, setTypeFilter] = useState<string>('all');
@@ -228,6 +230,31 @@ function EventMap({ focusBbox }: { focusBbox?: [number, number, number, number] 
                   <a href={event.link} target="_blank" rel="noopener" className="text-[#d4a012] hover:underline mt-1.5 block text-[11px]">
                     OPEN SOURCE →
                   </a>
+                </div>
+              </Popup>
+            </CircleMarker>
+          ))}
+
+          {/* Situation markers (event-centric overlay) */}
+          {(situations || []).map(sit => (
+            <CircleMarker
+              key={`sit-${sit.id}`}
+              center={[sit.center.lat, sit.center.lng]}
+              radius={Math.min(10 + sit.metadata.articleCount / 3, 24)}
+              pathOptions={{ color: SIT_SEV[sit.severity] || '#888', fillColor: SIT_SEV[sit.severity] || '#888', fillOpacity: 0.15, weight: 2, opacity: 0.9 }}
+            >
+              <Tooltip direction="top" offset={[0, -6]} opacity={0.95}>
+                <div style={{ fontFamily: 'monospace', fontSize: '11px', maxWidth: '240px', color: '#111' }}>
+                  <div style={{ fontWeight: 'bold' }}>{sit.title} · {sit.severity.toUpperCase()}</div>
+                  <div style={{ color: '#666' }}>{sit.status.toUpperCase()} · {sit.metadata.velocity1h}/h · {sit.metadata.articleCount} reports</div>
+                </div>
+              </Tooltip>
+              <Popup>
+                <div className="text-[12px] max-w-[260px] font-mono">
+                  <div className="font-bold text-[#ccc] mb-1 leading-snug">{sit.title}</div>
+                  <div className="text-[#bbb] text-[11px] mb-1">{sit.status.toUpperCase()} · SEV {sit.severity.toUpperCase()} · {sit.metadata.velocity1h}/1h · CORR {sit.metadata.corroboration}</div>
+                  {sit.latestHeadline && <div className="text-[#999] text-[11px] leading-snug">{sit.latestHeadline}</div>}
+                  {sit.latestLink && <a href={sit.latestLink} target="_blank" rel="noopener" className="text-[#d4a012] hover:underline mt-1.5 block text-[11px]">OPEN SOURCE →</a>}
                 </div>
               </Popup>
             </CircleMarker>

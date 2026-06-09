@@ -110,11 +110,11 @@ export default function Home() {
 
       <section id="band-hero" className="scroll-mt-32 grid grid-cols-1 lg:grid-cols-[18rem_1fr_22rem] gap-px bg-[#1a1a1a] border-b border-[#1a1a1a]">
         <div className="bg-[#080808] p-3 flex flex-col gap-3">
-          <ThreatGauge situations={situations} />
+          <ThreatGauge situations={situations} onFocus={onFocus} />
           <div className="text-[10px] font-mono text-[#555] uppercase tracking-[0.2em] mt-auto animate-pulse">Descend for {situations.length} situations</div>
         </div>
         <div className="bg-[#050505] relative h-[72vh] min-h-[420px] overflow-hidden">
-          <EventMap focusBbox={focusBbox} />
+          <EventMap focusBbox={focusBbox} situations={situations} />
           <div className="hero-glow" />
           <div className="vignette" />
           <div className="scanlines" />

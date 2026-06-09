@@ -56,7 +56,7 @@ function timeAgo(dateStr: string): string {
   return `${Math.floor(diff / 86400000)}d`;
 }
 
-export default function EventMap() {
+export default function EventMap({ focusBbox }: { focusBbox?: [number, number, number, number] | null }) {
   const [events, setEvents] = useState<GeoEvent[]>([]);
   const [mounted, setMounted] = useState(false);
   const [typeFilter, setTypeFilter] = useState<string>('all');
@@ -81,6 +81,12 @@ export default function EventMap() {
     const interval = setInterval(fetchEvents, 60000);
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    if (!focusBbox || !mapRef.current) return;
+    const [s, w, n, e] = focusBbox;
+    mapRef.current.flyToBounds([[s, w], [n, e]], { maxZoom: 7, duration: 0.8 });
+  }, [focusBbox]);
 
   const fetchEvents = async () => {
     try {

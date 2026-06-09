@@ -29,6 +29,7 @@ export default function Home() {
   const [time, setTime] = useState('');
   const [keywordFilter, setKeywordFilter] = useState('');
   const [panel, setPanel] = useState<Panel>('feed');
+  const [focusBbox, setFocusBbox] = useState<[number, number, number, number] | null>(null);
 
   useEffect(() => {
     const u = () => setTime(new Date().toLocaleTimeString('en-US', { hour12: false }));
@@ -62,6 +63,11 @@ export default function Home() {
     setKeywordFilter(kw);
     setPanel('feed');
     jump('band-raw');
+  };
+
+  const onFocus = (bbox: [number, number, number, number]) => {
+    setFocusBbox(bbox);
+    jump('band-hero');
   };
 
   const threat = computeThreat(situations);
@@ -108,7 +114,7 @@ export default function Home() {
           <div className="text-[10px] font-mono text-[#555] uppercase tracking-[0.2em] mt-auto animate-pulse">Descend for {situations.length} situations</div>
         </div>
         <div className="bg-[#050505] relative h-[72vh] min-h-[420px] overflow-hidden">
-          <EventMap />
+          <EventMap focusBbox={focusBbox} />
           <div className="hero-glow" />
           <div className="vignette" />
           <div className="scanlines" />
@@ -120,7 +126,7 @@ export default function Home() {
           <h2 className="text-[11px] font-mono font-bold text-[#888] uppercase tracking-[0.2em] mb-2">Top Situations</h2>
           <div className="space-y-1">
             {top.map((s, i) => (
-              <button key={s.id} onClick={() => jump('band-situations')} className="w-full text-left flex items-center gap-2 px-2 py-1.5 rounded hover:bg-[#0e0e0e] border-l-2" style={{ borderColor: SEV_COLOR[s.severity] }}>
+              <button key={s.id} onClick={() => onFocus(s.bbox)} className="w-full text-left flex items-center gap-2 px-2 py-1.5 rounded hover:bg-[#0e0e0e] border-l-2" style={{ borderColor: SEV_COLOR[s.severity] }}>
                 <span className="text-[10px] font-mono text-[#444] tabular-nums">{String(i + 1).padStart(2, '0')}</span>
                 <span className="text-[11px] font-mono text-[#ccc] uppercase truncate flex-1">{s.title}</span>
                 {s.status === 'breaking' && <span className="w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse" />}
@@ -139,7 +145,7 @@ export default function Home() {
           <span className="text-[11px] font-mono text-[#555]">{situations.length}</span>
           <span className="text-[10px] font-mono text-[#444] ml-2">click a card to drill into the latest developments</span>
         </div>
-        <SituationOverview situations={situations} onFilter={onFilter} />
+        <SituationOverview situations={situations} onFilter={onFilter} onFocus={onFocus} />
       </section>
 
       <section id="band-raw" className="scroll-mt-32 px-4 py-6 border-t border-[#111] bg-[#070707]">

@@ -28,7 +28,7 @@ function Spark({ data, color }: { data: number[]; color: string }) {
 
 interface Detail { items: NewsItem[]; related: { slug: string; title: string; severity: string }[] }
 
-export default function SituationCard({ s, rank, onFilter }: { s: Situation; rank: number; onFilter?: (kw: string) => void }) {
+export default function SituationCard({ s, rank, onFilter, onFocus }: { s: Situation; rank: number; onFilter?: (kw: string) => void; onFocus?: (bbox: [number, number, number, number]) => void }) {
   const [open, setOpen] = useState(false);
   const [detail, setDetail] = useState<Detail | null>(null);
   const [loading, setLoading] = useState(false);
@@ -81,6 +81,9 @@ export default function SituationCard({ s, rank, onFilter }: { s: Situation; ran
           {loading && <div className="text-[10px] font-mono text-[#555] py-4 text-center">LOADING DOSSIER...</div>}
           {detail && (
             <>
+              {onFocus && (
+                <button onClick={() => onFocus(s.bbox)} className="mb-2 text-[9px] font-mono px-2 py-1 rounded border border-[#e8760a]/30 text-[#e8760a] hover:bg-[#e8760a]/10 uppercase tracking-wider">⊕ Focus on map</button>
+              )}
               {s.actors.length > 0 && (
                 <div className="flex flex-wrap gap-1 mb-2">
                   {s.actors.map(a => <span key={a} className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-[#111] text-[#999]">{a}</span>)}

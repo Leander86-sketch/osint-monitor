@@ -155,7 +155,6 @@ body::after {
     radial-gradient(120% 80% at 50% -10%, rgba(232,118,10,0.16), transparent 55%),
     radial-gradient(90% 70% at 82% 110%, rgba(220,38,38,0.13), transparent 60%);
   mix-blend-mode: screen;
-  animation: argusGlow 8s ease-in-out infinite;
 }
 @keyframes argusGlow { 0%,100% { opacity: .6 } 50% { opacity: 1 } }
 .vignette {
@@ -165,7 +164,7 @@ body::after {
 .scanlines {
   position: absolute; inset: 0; pointer-events: none;
   background: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 2px, rgba(255,255,255,0.028) 3px, rgba(0,0,0,0) 3px);
-  mix-blend-mode: overlay; opacity: .55;
+  opacity: .3;
 }
 .type-cursor::after {
   content: ''; display: inline-block; width: 0.5em; height: 1.05em;

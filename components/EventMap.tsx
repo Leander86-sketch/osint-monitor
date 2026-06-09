@@ -201,7 +201,7 @@ function EventMap({ focusBbox, situations }: { focusBbox?: [number, number, numb
           />
 
           {/* RSS-based geo events (always shown) */}
-          {filteredEvents.map(event => (
+          {filteredEvents.slice(0, 350).map(event => (
             <CircleMarker
               key={event.id}
               center={[event.location.lat, event.location.lng]}

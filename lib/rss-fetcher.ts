@@ -11,9 +11,21 @@ const parser = new RSSParser({
   },
 });
 
+// Per-host throttle: serialise same-domain fetches with a small gap so bursts (e.g. ~9 BBC feeds) avoid rate-limiting.
+const hostQueue = new Map<string, Promise<unknown>>();
+function hostOf(url: string): string {
+  try { return new URL(url).hostname; } catch { return url; }
+}
+function throttleHost<T>(host: string, fn: () => Promise<T>, gap = 900): Promise<T> {
+  const prev = hostQueue.get(host) || Promise.resolve();
+  const run = prev.then(fn, fn);
+  hostQueue.set(host, run.then(() => new Promise(r => setTimeout(r, gap)), () => new Promise(r => setTimeout(r, gap))));
+  return run;
+}
+
 export async function fetchFeed(feed: FeedConfig): Promise<NewsItem[]> {
   try {
-    const result = await parser.parseURL(feed.url);
+    const result = await throttleHost(hostOf(feed.url), () => parser.parseURL(feed.url));
     const items: NewsItem[] = [];
 
     for (const item of result.items || []) {

@@ -166,6 +166,13 @@ export const RSS_FEEDS: FeedConfig[] = [
   // ===================== BBC REGIONS (fill gaps) =====================
   { name: 'BBC US/Canada', url: 'https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml', category: 'americas', enabled: true, tier: 1, reliability: 95, region: 'americas' },
   { name: 'BBC Latin America', url: 'https://feeds.bbci.co.uk/news/world/latin_america/rss.xml', category: 'americas', enabled: true, tier: 1, reliability: 95, region: 'americas' },
+  // ===================== POLITICS / CONFLICT (added) =====================
+  { name: 'Long War Journal', url: 'https://www.longwarjournal.org/feed', category: 'defense', enabled: true, tier: 2, reliability: 80, region: 'global' },
+  { name: 'CISA Advisories', url: 'https://www.cisa.gov/cybersecurity-advisories/all.xml', category: 'cyber', enabled: true, tier: 1, reliability: 92, region: 'global' },
+  { name: 'Al-Monitor', url: 'https://www.al-monitor.com/rss', category: 'mideast', enabled: true, tier: 2, reliability: 80, region: 'mideast' },
+  { name: 'OC Media', url: 'https://oc-media.org/feed/', category: 'europe', enabled: true, tier: 2, reliability: 75, region: 'europe' },
+  { name: 'Balkan Insight', url: 'https://balkaninsight.com/feed/', category: 'europe', enabled: true, tier: 2, reliability: 78, region: 'europe' },
+
   // ===================== SPORT - FORMULA 1 =====================
   { name: 'F1 Official', url: 'https://www.formula1.com/en/latest/all.xml', category: 'sport', enabled: true, tier: 2, reliability: 90, region: 'global' },
   { name: 'BBC Sport F1', url: 'https://feeds.bbci.co.uk/sport/formula1/rss.xml', category: 'sport', enabled: true, tier: 2, reliability: 95, region: 'global' },

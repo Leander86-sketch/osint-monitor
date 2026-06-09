@@ -6,8 +6,9 @@ import { getNewsItems, getLastFetchTime } from './store';
 const SEV_ORDER: Record<string, number> = { low: 0, medium: 1, high: 2, critical: 3 };
 const SEV_NAME = ['low', 'medium', 'high', 'critical'] as const;
 const STATUS_RANK: Record<string, number> = { breaking: 0, active: 1, cooling: 2 };
-// Off-topic items that keyword-match a conflict anchor (e.g. sport teams named after places) must not pollute situations.
+// Genuine conflict-event terms - title signal for auto-emerge gating + on-topic headline picking.
 const STRONG_RE = /\b(airstrike|air strike|missile|rocket|shelling|bombing|bomb|explosion|killed|dead|casualt|wounded|attack|assault|offensive|clash|fighting|gunmen|gunman|militant|insurgent|troops|siege|ambush|raid|fighters|war|hostage|coup|massacre|drone|sanction|blockade)\b/i;
+// Off-topic items (sport teams named after places, entertainment) that must not pollute situations.
 const NOISE_RE = /\b(world cup|world championship|champions league|premier league|grand prix|formula 1|olympic|olympics|football|soccer|cricket|rugby|tennis|nba|nfl|golf|box office|grammy|oscar|eurovision|celebrity|red carpet)\b/i;
 
 interface Cache { key: number; ts: number; value: Situation[] }

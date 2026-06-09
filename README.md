@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ARGUS - Real-time global intelligence dashboard
 
-## Getting Started
+**Live:** https://osint.leanderbloot.nl
 
-First, run the development server:
+An event-centric OSINT monitoring dashboard focused on politics & conflict. ARGUS clusters 120+ tiered news feeds into live **situations** you can zoom into and drill down on - with an interactive conflict map, source-reliability scoring, and a calm overview that escalates only when something is actually happening. Self-hosted, no subscriptions, no editorial filter, no AI/token cost.
+
+![ARGUS](article-assets/argus-01-full.png)
+
+## What it does
+
+- **Event-centric situations** - news is auto-clustered into live situations (Strait of Hormuz, Ukraine front, Iran-Israel...) with severity, velocity (articles/hour) and source-tier corroboration (A/B/C). New flashpoints auto-emerge into their own dossier.
+- **Drill-down dossiers** - click a situation for a timeline of the latest developments, ranked by source reliability, with direct source links. The map flies to its location.
+- **Interactive map (Leaflet)** - situations as severity-coloured markers, plus toggleable layers: military ADS-B flights, satellites, GDELT conflicts, carrier groups, cameras, maritime chokepoints, **HAZARD** (USGS earthquakes + GDACS disasters), **THERMAL** (NASA FIRMS thermal anomalies), **ACLED** armed-conflict events.
+- **Global threat gauge** - one number with a clickable breaking/active dropdown that links straight to sources.
+- **120+ RSS feeds, 3-tier reliability** - wire services -> regional specialists -> state media, each labelled (T1/T2/T3) so you know how much to trust it.
+- **Telegram OSINT, sanctions, humanitarian, satellite and arms panels.**
+- **Persistent** - survives restarts via an on-disk snapshot; self-refreshing.
+
+## Screenshots
+
+![Layers](article-assets/argus-03-alllayers.png)
+
+## Stack
+
+Next.js 16 (App Router) - React 19 - Tailwind v4 - Leaflet (CartoDB dark) - in-memory store (no DB, on-disk snapshot for persistence). Runs on a Mac Mini via launchd, public via Cloudflare Tunnel. No external AI calls - zero token cost.
+
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run build
+npm start          # serves on :3003
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Optional map layers read free keys from `.env.local` (gitignored):
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+FIRMS_MAP_KEY=...            # NASA FIRMS thermal layer (free MAP_KEY)
+ACLED_EMAIL=...              # ACLED armed-conflict layer (free myACLED account)
+ACLED_PASSWORD=...
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Without these keys the FIRMS/ACLED layers simply stay empty; everything else works.
 
-## Learn More
+## Data sources & attribution
 
-To learn more about Next.js, take a look at the following resources:
+ACLED (acleddata.com), NASA FIRMS, USGS, GDACS, GDELT, OpenSky, CelesTrak, CoinGecko, and 120+ public RSS feeds. Each source has its own usage/attribution terms - respect them when redeploying.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT - see [LICENSE](LICENSE).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by Leander Bloot ([@LeanderLBB](https://x.com/LeanderLBB)) - powered by a Mac Mini and stubbornness.

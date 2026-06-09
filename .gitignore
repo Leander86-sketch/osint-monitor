@@ -45,3 +45,4 @@ next-env.d.ts
 *.bak
 /data/alert-events.json
 /data/news-snapshot.json
+/data/alerts.json

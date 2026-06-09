@@ -358,5 +358,6 @@ export function ingestItem(item: Partial<NewsItem>): NewsItem | null {
   };
 
   g.__osintStore!.newsItems.unshift(newsItem);
+  g.__osintStore!.lastFetch = Date.now();
   return newsItem;
 }

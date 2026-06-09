@@ -20,9 +20,9 @@ export function extractKeywords(text: string): string[] {
 }
 
 export function determineSeverity(text: string): 'low' | 'medium' | 'high' | 'critical' {
-  const lower = text.toLowerCase();
+  const t = ' ' + text.toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ';
   for (const [severity, keywords] of Object.entries(SEVERITY_KEYWORDS)) {
-    if (keywords.some(kw => lower.includes(kw))) {
+    if (keywords.some(kw => t.includes(' ' + kw.toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' '))) {
       return severity as 'low' | 'medium' | 'high' | 'critical';
     }
   }

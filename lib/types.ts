@@ -194,6 +194,7 @@ export interface AnchorSituation {
   bbox: [number, number, number, number]; // [south, west, north, east]
   zoom: number;
   actors: string[];
+  requireStrong?: boolean;
 }
 
 export interface Situation {

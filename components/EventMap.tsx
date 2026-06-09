@@ -1,9 +1,10 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, memo } from 'react';
 import dynamic from 'next/dynamic';
 import { GeoEvent, LayerType } from '@/lib/types';
 import type { Map as LeafletMap } from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 
 const MapContainer = dynamic(() => import('react-leaflet').then(mod => mod.MapContainer), { ssr: false });
 const TileLayer = dynamic(() => import('react-leaflet').then(mod => mod.TileLayer), { ssr: false });
@@ -56,7 +57,7 @@ function timeAgo(dateStr: string): string {
   return `${Math.floor(diff / 86400000)}d`;
 }
 
-export default function EventMap({ focusBbox }: { focusBbox?: [number, number, number, number] | null }) {
+function EventMap({ focusBbox }: { focusBbox?: [number, number, number, number] | null }) {
   const [events, setEvents] = useState<GeoEvent[]>([]);
   const [mounted, setMounted] = useState(false);
   const [typeFilter, setTypeFilter] = useState<string>('all');
@@ -176,7 +177,6 @@ export default function EventMap({ focusBbox }: { focusBbox?: [number, number, n
 
       {/* Map */}
       <div className="flex-1 relative">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
         <MapContainer
           center={[25, 35]}
           zoom={3}
@@ -185,10 +185,10 @@ export default function EventMap({ focusBbox }: { focusBbox?: [number, number, n
           attributionControl={false}
           preferCanvas={true}
           ref={(map) => {
-            if (map) {
+            if (map && mapRef.current !== map) {
               mapRef.current = map;
               map.on('moveend zoomend', updateBounds);
-              if (!bounds) updateBounds();
+              updateBounds();
             }
           }}
         >
@@ -247,3 +247,5 @@ export default function EventMap({ focusBbox }: { focusBbox?: [number, number, n
     </div>
   );
 }
+
+export default memo(EventMap);

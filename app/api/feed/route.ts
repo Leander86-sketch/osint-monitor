@@ -37,7 +37,14 @@ export async function GET(request: NextRequest) {
   });
 }
 
+let _refreshInFlight = false;
+
 export async function POST() {
+  // Throttle + dedup: a public page can have many tabs POSTing; cap real crawls.
+  if (_refreshInFlight || Date.now() - getLastFetchTime() < 240000) {
+    return NextResponse.json({ success: true, throttled: true, total: getNewsItemCount(), lastFetch: getLastFetchTime() });
+  }
+  _refreshInFlight = true;
   try {
     const result = await refreshFeeds();
     return NextResponse.json({
@@ -51,5 +58,7 @@ export async function POST() {
       { success: false, error: 'Failed to refresh feeds' },
       { status: 500 }
     );
+  } finally {
+    _refreshInFlight = false;
   }
 }

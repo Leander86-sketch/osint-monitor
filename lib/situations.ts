@@ -7,7 +7,7 @@ const SEV_ORDER: Record<string, number> = { low: 0, medium: 1, high: 2, critical
 const SEV_NAME = ['low', 'medium', 'high', 'critical'] as const;
 const STATUS_RANK: Record<string, number> = { breaking: 0, active: 1, cooling: 2 };
 // Off-topic items that keyword-match a conflict anchor (e.g. sport teams named after places) must not pollute situations.
-const STRONG_RE = /\b(airstrike|air strike|missile|rocket|shelling|bombing|bomb|explosion|killed|dead|casualt|wounded|attack|assault|offensive|clash|fighting|gunmen|gunman|militant|insurgent|troops|forces|strike|siege|ambush|raid|fighters|war|hostage|coup|massacre|shoot|drone|sanction|blockade)\b/i;
+const STRONG_RE = /\b(airstrike|air strike|missile|rocket|shelling|bombing|bomb|explosion|killed|dead|casualt|wounded|attack|assault|offensive|clash|fighting|gunmen|gunman|militant|insurgent|troops|siege|ambush|raid|fighters|war|hostage|coup|massacre|drone|sanction|blockade)\b/i;
 const NOISE_RE = /\b(world cup|world championship|champions league|premier league|grand prix|formula 1|olympic|olympics|football|soccer|cricket|rugby|tennis|nba|nfl|golf|box office|grammy|oscar|eurovision|celebrity|red carpet)\b/i;
 
 interface Cache { key: number; ts: number; value: Situation[] }
@@ -41,7 +41,7 @@ interface SitBase {
 function buildSituation(base: SitBase, items: NewsItem[], now: number, prefer: (it: NewsItem) => boolean = () => false): Situation {
   const sorted = [...items].sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
   const real = realDateSet(sorted);
-  const within = (ms: number) => sorted.filter(i => real.has(i.id) && (now - new Date(i.pubDate).getTime()) <= ms).length;
+  const within = (ms: number) => sorted.filter(i => { if (!real.has(i.id)) return false; const age = now - new Date(i.pubDate).getTime(); return age >= 0 && age <= ms; }).length;
   const velocity1h = within(3600000);
   const velocity24h = within(86400000);
 
@@ -93,6 +93,7 @@ function buildSituation(base: SitBase, items: NewsItem[], now: number, prefer: (
 }
 
 function matchesAnchor(it: NewsItem, a: AnchorSituation): boolean {
+  if (a.requireStrong && !STRONG_RE.test(it.title)) return false;
   const t = ' ' + it.title.toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ';
   return a.anchorKeywords.some(k => t.includes(' ' + k.toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' '));
 }

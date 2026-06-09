@@ -42,7 +42,9 @@ export default function SituationCard({ s, rank, onFilter, onFocus }: { s: Situa
       setLoading(true);
       try {
         const res = await fetch(`/api/situations/${s.slug}`);
-        setDetail(await res.json());
+        if (!res.ok) { setDetail(null); return; }
+        const data = await res.json();
+        setDetail(data && Array.isArray(data.items) ? data : null);
       } catch { /* ignore */ } finally { setLoading(false); }
     }
   };

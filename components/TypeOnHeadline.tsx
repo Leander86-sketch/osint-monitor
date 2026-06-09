@@ -10,10 +10,10 @@ export default function TypeOnHeadline({ situations }: { situations: Situation[]
     .map(s => `${s.title.toUpperCase()} — ${s.latestHeadline}`);
   const [idx, setIdx] = useState(0);
   const [shown, setShown] = useState('');
+  const full = lines.length ? lines[idx % lines.length] : '';
 
   useEffect(() => {
-    if (!lines.length) { setShown(''); return; }
-    const full = lines[idx % lines.length];
+    if (!full) { setShown(''); return; }
     let char = 0;
     setShown('');
     const typer = setInterval(() => {
@@ -23,8 +23,7 @@ export default function TypeOnHeadline({ situations }: { situations: Situation[]
     }, 28);
     const next = setTimeout(() => setIdx(i => i + 1), full.length * 28 + 4500);
     return () => { clearInterval(typer); clearTimeout(next); };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [idx, lines.length]);
+  }, [full, idx]);
 
   if (!lines.length) return null;
   return (

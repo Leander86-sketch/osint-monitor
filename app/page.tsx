@@ -66,7 +66,7 @@ export default function Home() {
   };
 
   const onFocus = (bbox: [number, number, number, number]) => {
-    setFocusBbox(bbox);
+    setFocusBbox([...bbox] as [number, number, number, number]);
     jump('band-hero');
   };
 

@@ -65,7 +65,7 @@ function timeAgo(dateStr: string): string {
   return `${Math.floor(diff / 86400000)}d`;
 }
 
-function EventMap({ focusBbox, situations }: { focusBbox?: [number, number, number, number] | null; situations?: Situation[] }) {
+function EventMap({ focusBbox, situations, bare }: { focusBbox?: [number, number, number, number] | null; situations?: Situation[]; bare?: boolean }) {
   const [events, setEvents] = useState<GeoEvent[]>([]);
   const [mounted, setMounted] = useState(false);
   const [typeFilter, setTypeFilter] = useState<string>('all');
@@ -141,6 +141,7 @@ function EventMap({ focusBbox, situations }: { focusBbox?: [number, number, numb
 
   return (
     <div className="h-full flex flex-col">
+      {!bare && (<>
       {/* Map Header */}
       <div className="flex items-center justify-between px-4 py-2.5 border-b border-[#1a1a1a] bg-[#080808]">
         <div className="flex items-center gap-2">
@@ -193,6 +194,7 @@ function EventMap({ focusBbox, situations }: { focusBbox?: [number, number, numb
           ))}
         </div>
       </div>
+      </>)}
 
       {/* Map */}
       <div className="flex-1 relative">

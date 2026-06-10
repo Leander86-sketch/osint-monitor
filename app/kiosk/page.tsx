@@ -59,7 +59,7 @@ export default function Kiosk() {
   return (
     <div className="fixed inset-0 bg-[#050505] text-[#e5e5e5] overflow-hidden">
       <div className="absolute inset-0">
-        <EventMap focusBbox={focusBbox} situations={situations} />
+        <EventMap focusBbox={focusBbox} situations={situations} bare />
       </div>
 
       {/* Top bar */}

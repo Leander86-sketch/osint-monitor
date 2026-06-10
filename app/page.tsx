@@ -12,6 +12,7 @@ import TypeOnHeadline from '@/components/TypeOnHeadline';
 import LiveFeed from '@/components/LiveFeed';
 import AlertPanel from '@/components/AlertPanel';
 import EscalationStrip from '@/components/EscalationStrip';
+import CommandPalette from '@/components/CommandPalette';
 import TelegramFeed from '@/components/TelegramFeed';
 import HumanitarianFeed from '@/components/HumanitarianFeed';
 import SanctionsFeed from '@/components/SanctionsFeed';
@@ -83,6 +84,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#050505] text-[#ccc]">
+      <CommandPalette situations={situations} onFocusSituation={onFocusSlug} />
       <EscalationStrip onFocus={onFocusSlug} />
       <div className="sticky top-0 z-40 bg-[#080808]/95 backdrop-blur border-b border-[#1a1a1a]">
         <header className="flex items-center justify-between px-5 py-2.5">

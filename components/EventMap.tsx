@@ -119,6 +119,16 @@ function EventMap({ focusBbox, situations }: { focusBbox?: [number, number, numb
     });
   };
 
+  useEffect(() => {
+    const onToggle = (e: Event) => {
+      const id = (e as CustomEvent).detail as LayerType;
+      if (id) toggleLayer(id);
+    };
+    window.addEventListener('argus:toggle-layer', onToggle);
+    return () => window.removeEventListener('argus:toggle-layer', onToggle);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const filteredEvents = typeFilter === 'all' ? events : events.filter(e => e.type === typeFilter);
 
   if (!mounted) {

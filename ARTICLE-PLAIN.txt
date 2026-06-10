@@ -181,7 +181,7 @@ Raw signal with clear reliability scoring beats curated narrative every time.
 
 Try It
 
-ARGUS is live at osint.leanderbloot.nl
+ARGUS is live at argus.prototipo.nl
 
 Built by Leander Bloot (@LeanderLBB)
 Powered by a Mac Mini and stubbornness.

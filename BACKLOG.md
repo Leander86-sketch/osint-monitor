@@ -13,10 +13,10 @@ Event-centric redesign shipped 2026-06-09 (see git log). This tracks remaining w
 ## Bucket 4 - layout & UX (LOGGED, not started)
 - Real hero->rail map-morph: map shrinks into a sticky strip on scroll so it stays visible. Fragile single-map height-tween; ship behind fixed-height fallback. [M]
 - Cmd-K command palette: fuzzy jump to a situation / toggle a layer. [M]
-- Kiosk / wall fullscreen mode: auto-rotating display for a wall monitor. [S]
+- [x] Kiosk / wall fullscreen mode (/kiosk): auto-rotating situation display. DONE 2026-06-10.
 - Responsive / mobile + PWA install: phone layout; manifest already present. [L]
 - Temporal scrubber: time-slider to replay last 24-72h of events on the map. [M]
-- Situation-level watchlist alerts: notify on situation escalation (velocity/severity) instead of keyword alerts. [M]
+- [x] Situation-level escalation alerts: severity-rise + velocity-surge detection, in-app strip. DONE 2026-06-10.
 
 ## Bucket 5 - architecture (in progress 2026-06-09)
 - [x] Persistence: disk snapshot of news store; survives launchd restart, instant warm (data/news-snapshot.json, gitignored).
@@ -25,6 +25,10 @@ Event-centric redesign shipped 2026-06-09 (see git log). This tracks remaining w
 
 ## Parked
 - F1 as a separate self-running stream-selector domain (NL/EN streams, language + resolution). Separate project.
+
+## Done 2026-06-10 (also)
+- Layer toggle tooltips (hover explains each of the 11 map layers + its source).
+- Moved to argus.prototipo.nl; Ko-fi support + custom-monitor CTA in footer/README.
 
 ## Known minor
 - CISA feed uses 2-digit year ("Jun 26") -> JS parses as 1926 -> sinks out of the window (harmless; cyber tangential).

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Custom monitoring sites for all global interests, by Leander Bloot — real-time intelligence dashboard with 120 tiered feeds, Telegram OSINT, nuclear sites, military bases, and undersea cables mapped live.",
   metadataBase: new URL("https://argus.prototipo.nl"),
   keywords: ["OSINT", "intelligence", "dashboard", "news", "geopolitics", "military", "nuclear", "real-time", "monitoring", "ARGUS"],
-  authors: [{ name: "Leander Bloot", url: "https://x.com/LeanderLBB" }],
+  authors: [{ name: "Leander Bloot" }],
   creator: "Leander Bloot",
   openGraph: {
     title: "ARGUS — Always Monitoring the Situation",
@@ -31,7 +31,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ARGUS — Always Monitoring the Situation",
     description: "120 tiered feeds. Telegram OSINT. Nuclear sites, military bases, undersea cables mapped live.",
-    creator: "@LeanderLBB",
   },
   robots: {
     index: true,
@@ -54,19 +53,10 @@ const jsonLd = {
   author: {
     "@type": "Person",
     name: "Leander Bloot",
-    url: "https://leanderbloot.nl",
-    sameAs: [
-      "https://leanderbloot.nl",
-      "https://x.com/LeanderLBB",
-      "https://www.linkedin.com/in/leanderbloot/",
-      "https://www.instagram.com/mrleanderb",
-      "https://silvertown.nl",
-    ],
   },
   creator: {
     "@type": "Person",
     name: "Leander Bloot",
-    url: "https://leanderbloot.nl",
   },
 };
 

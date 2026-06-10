@@ -46,3 +46,5 @@ next-env.d.ts
 /data/alert-events.json
 /data/news-snapshot.json
 /data/alerts.json
+/data/situation-state.json
+/data/situation-escalations.json

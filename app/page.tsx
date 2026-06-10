@@ -11,6 +11,7 @@ import SituationOverview from '@/components/SituationOverview';
 import TypeOnHeadline from '@/components/TypeOnHeadline';
 import LiveFeed from '@/components/LiveFeed';
 import AlertPanel from '@/components/AlertPanel';
+import EscalationStrip from '@/components/EscalationStrip';
 import TelegramFeed from '@/components/TelegramFeed';
 import HumanitarianFeed from '@/components/HumanitarianFeed';
 import SanctionsFeed from '@/components/SanctionsFeed';
@@ -74,8 +75,15 @@ export default function Home() {
   const tColor = threatColor(threat);
   const top = situations.slice(0, 6);
 
+  const onFocusSlug = useCallback((slug: string) => {
+    const sit = situations.find(x => x.slug === slug);
+    if (sit?.bbox) setFocusBbox(sit.bbox);
+    document.getElementById('situation-map')?.scrollIntoView({ behavior: 'smooth' });
+  }, [situations]);
+
   return (
     <div className="min-h-screen bg-[#050505] text-[#ccc]">
+      <EscalationStrip onFocus={onFocusSlug} />
       <div className="sticky top-0 z-40 bg-[#080808]/95 backdrop-blur border-b border-[#1a1a1a]">
         <header className="flex items-center justify-between px-5 py-2.5">
           <div className="flex items-center gap-4">
@@ -113,7 +121,7 @@ export default function Home() {
           <ThreatGauge situations={situations} onFocus={onFocus} />
           <div className="text-[10px] font-mono text-[#555] uppercase tracking-[0.2em] mt-auto animate-pulse">Descend for {situations.length} situations</div>
         </div>
-        <div className="bg-[#050505] relative h-[72vh] min-h-[420px] overflow-hidden">
+        <div id="situation-map" className="bg-[#050505] relative h-[72vh] min-h-[420px] overflow-hidden">
           <EventMap focusBbox={focusBbox} situations={situations} />
           <div className="hero-glow" />
           <div className="vignette" />

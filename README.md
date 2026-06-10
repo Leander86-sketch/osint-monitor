@@ -12,7 +12,7 @@ An event-centric OSINT monitoring dashboard focused on politics & conflict. ARGU
 
 - **Event-centric situations** - news is auto-clustered into live situations (Strait of Hormuz, Ukraine front, Iran-Israel...) with severity, velocity (articles/hour) and source-tier corroboration (A/B/C). New flashpoints auto-emerge into their own dossier.
 - **Drill-down dossiers** - click a situation for a timeline of the latest developments, ranked by source reliability, with direct source links. The map flies to its location.
-- **Interactive map (Leaflet)** - situations as severity-coloured markers, plus toggleable layers: military ADS-B flights, satellites, GDELT conflicts, carrier groups, cameras, maritime chokepoints, **HAZARD** (USGS earthquakes + GDACS disasters), **THERMAL** (NASA FIRMS thermal anomalies), **ACLED** armed-conflict events.
+- **Interactive map (Leaflet)** - situations as severity-coloured markers, plus toggleable layers: military ADS-B flights, satellites, GDELT conflicts, carrier groups, cameras, maritime chokepoints, **HAZARD** (USGS earthquakes + GDACS disasters), **THERMAL** (NASA FIRMS thermal anomalies).
 - **Global threat gauge** - one number with a clickable breaking/active dropdown that links straight to sources.
 - **120+ RSS feeds, 3-tier reliability** - wire services -> regional specialists -> state media, each labelled (T1/T2/T3) so you know how much to trust it.
 - **Telegram OSINT, sanctions, humanitarian, satellite and arms panels.**
@@ -38,15 +38,13 @@ Optional map layers read free keys from `.env.local` (gitignored):
 
 ```
 FIRMS_MAP_KEY=...            # NASA FIRMS thermal layer (free MAP_KEY)
-ACLED_EMAIL=...              # ACLED armed-conflict layer (free myACLED account)
-ACLED_PASSWORD=...
 ```
 
-Without these keys the FIRMS/ACLED layers simply stay empty; everything else works.
+Without this key the FIRMS thermal layer simply stays empty; everything else works.
 
 ## Data sources & attribution
 
-ACLED (acleddata.com), NASA FIRMS, USGS, GDACS, GDELT, OpenSky, CelesTrak, CoinGecko, and 120+ public RSS feeds. Each source has its own usage/attribution terms - respect them when redeploying.
+NASA FIRMS, USGS, GDACS, GDELT, OpenSky, CelesTrak, CoinGecko, and 120+ public RSS feeds. Each source has its own usage/attribution terms - respect them when redeploying.
 
 ## Support
 

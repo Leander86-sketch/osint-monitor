@@ -2,6 +2,8 @@
 
 **Live:** https://argus.prototipo.nl
 
+[![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-e8760a?logo=kofi&logoColor=white)](https://ko-fi.com/lb377260)
+
 An event-centric OSINT monitoring dashboard focused on politics & conflict. ARGUS clusters 120+ tiered news feeds into live **situations** you can zoom into and drill down on - with an interactive conflict map, source-reliability scoring, and a calm overview that escalates only when something is actually happening. Self-hosted, no subscriptions, no editorial filter, no AI/token cost.
 
 ![ARGUS](article-assets/argus-01-full.png)
@@ -48,7 +50,7 @@ ACLED (acleddata.com), NASA FIRMS, USGS, GDACS, GDELT, OpenSky, CelesTrak, CoinG
 
 ## Support
 
-ARGUS is free and self-funded. If it is useful to you: https://ko-fi.com/D5Z0215FW2
+ARGUS is free and self-funded. If it is useful to you: https://ko-fi.com/lb377260
 
 ## Custom monitors
 

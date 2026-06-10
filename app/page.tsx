@@ -100,6 +100,7 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-3">
             <span className="hidden lg:block text-[11px] font-mono text-[#888] uppercase tracking-wider">By Leander Bloot</span>
+            <a href="https://ko-fi.com/lb377260" target="_blank" rel="noopener noreferrer" className="hidden lg:block text-[11px] font-mono text-[#888] hover:text-[#e8760a] uppercase tracking-wider transition-colors">&#9749; Support</a>
             <div className="h-3 w-px bg-[#1a1a1a]" />
             <span className="text-[12px] text-[#ccc] font-mono tracking-wider tabular-nums">{time}</span>
           </div>
@@ -176,7 +177,7 @@ export default function Home() {
       </section>
 
       <footer className="px-5 py-4 border-t border-[#1a1a1a] flex items-center justify-between text-[10px] font-mono text-[#444]">
-        <span>ARGUS // OSINT - Built by Leander Bloot - <a href="https://leanderbloot.nl/contact" target="_blank" rel="noopener noreferrer" className="text-[#666] hover:text-[#e8760a] transition-colors">Want a custom monitor for your sector? Get in touch</a> - <a href="https://ko-fi.com/D5Z0215FW2" target="_blank" rel="noopener noreferrer" className="text-[#666] hover:text-[#e8760a] transition-colors">Support</a></span>
+        <span>ARGUS // OSINT - Built by Leander Bloot - <a href="https://leanderbloot.nl/contact" target="_blank" rel="noopener noreferrer" className="text-[#666] hover:text-[#e8760a] transition-colors">Want a custom monitor for your sector? Get in touch</a> - <a href="https://ko-fi.com/lb377260" target="_blank" rel="noopener noreferrer" className="text-[#666] hover:text-[#e8760a] transition-colors">Support</a></span>
         <button onClick={() => jump('band-hero')} className="hover:text-[#e8760a] uppercase tracking-wider">Back to Mission Control</button>
       </footer>
     </div>

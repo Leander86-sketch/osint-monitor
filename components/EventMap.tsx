@@ -42,18 +42,18 @@ const SEVERITY_RADIUS: Record<string, number> = {
 
 const SIT_SEV: Record<string, string> = { critical: '#dc2626', high: '#f97316', medium: '#eab308', low: '#6b7280' };
 
-const LAYER_CONFIG: { id: LayerType; label: string; color: string }[] = [
-  { id: 'flights', label: 'FLIGHT', color: '#38bdf8' },
-  { id: 'satellites', label: 'SATELLITE', color: '#a78bfa' },
-  { id: 'conflicts', label: 'CONFLICT', color: '#ff4444' },
-  { id: 'carriers', label: 'CVN', color: '#f59e0b' },
-  { id: 'cameras', label: 'CAM', color: '#8b5cf6' },
-  { id: 'sentiment', label: 'TONE', color: '#eab308' },
-  { id: 'displacement', label: 'DISP', color: '#f59e0b' },
-  { id: 'chokepoints', label: 'CHOKE', color: '#ef4444' },
-  { id: 'hazards', label: 'HAZARD', color: '#9ca3af' },
-  { id: 'firms', label: 'THERMAL', color: '#ff6a00' },
-  { id: 'acled', label: 'ACLED', color: '#dc2626' },
+const LAYER_CONFIG: { id: LayerType; label: string; color: string; desc: string }[] = [
+  { id: 'flights', label: 'FLIGHT', color: '#38bdf8', desc: 'Live aircraft positions (OpenSky) - watch for unusual military traffic' },
+  { id: 'satellites', label: 'SATELLITE', color: '#a78bfa', desc: 'Satellite positions overhead (CelesTrak) - recon & comms orbits' },
+  { id: 'conflicts', label: 'CONFLICT', color: '#ff4444', desc: 'Conflict-related events detected in global news (GDELT)' },
+  { id: 'carriers', label: 'CVN', color: '#f59e0b', desc: 'US carrier strike group positions, derived from news reports' },
+  { id: 'cameras', label: 'CAM', color: '#8b5cf6', desc: 'Public live cameras - visual ground truth on the map' },
+  { id: 'sentiment', label: 'TONE', color: '#eab308', desc: 'News tone heatmap (GDELT) - where global coverage turns dark' },
+  { id: 'displacement', label: 'DISP', color: '#f59e0b', desc: 'Refugee & displacement statistics (UNHCR)' },
+  { id: 'chokepoints', label: 'CHOKE', color: '#ef4444', desc: 'Strategic maritime chokepoints: Hormuz, Suez, Bab al-Mandab & more' },
+  { id: 'hazards', label: 'HAZARD', color: '#9ca3af', desc: 'Natural hazards: USGS earthquakes + GDACS disaster alerts' },
+  { id: 'firms', label: 'THERMAL', color: '#ff6a00', desc: 'NASA FIRMS satellite thermal detections - fires, strikes, explosions' },
+  { id: 'acled', label: 'ACLED', color: '#dc2626', desc: 'Armed conflict event database (ACLED) - battles, explosions, riots' },
 ];
 
 function timeAgo(dateStr: string): string {
@@ -169,6 +169,7 @@ function EventMap({ focusBbox, situations }: { focusBbox?: [number, number, numb
           {LAYER_CONFIG.map(layer => (
             <button
               key={layer.id}
+              title={layer.desc}
               onClick={() => toggleLayer(layer.id)}
               className={`text-[12px] px-1.5 py-0.5 font-mono uppercase tracking-wider rounded border transition-all ${
                 activeLayers.has(layer.id)

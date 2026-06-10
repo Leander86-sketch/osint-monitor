@@ -46,6 +46,10 @@ Without these keys the FIRMS/ACLED layers simply stay empty; everything else wor
 
 ACLED (acleddata.com), NASA FIRMS, USGS, GDACS, GDELT, OpenSky, CelesTrak, CoinGecko, and 120+ public RSS feeds. Each source has its own usage/attribution terms - respect them when redeploying.
 
+## Custom monitors
+
+ARGUS is a template as much as a product: different feeds, different map layers, same engine. Want a custom monitoring site for your sector (shipping, energy, security)? [Get in touch](https://leanderbloot.nl/contact).
+
 ## License
 
 MIT - see [LICENSE](LICENSE).

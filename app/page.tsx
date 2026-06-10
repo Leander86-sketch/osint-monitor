@@ -176,7 +176,7 @@ export default function Home() {
       </section>
 
       <footer className="px-5 py-4 border-t border-[#1a1a1a] flex items-center justify-between text-[10px] font-mono text-[#444]">
-        <span>ARGUS // OSINT - Built by Leander Bloot</span>
+        <span>ARGUS // OSINT - Built by Leander Bloot - <a href="https://leanderbloot.nl/contact" target="_blank" rel="noopener noreferrer" className="text-[#666] hover:text-[#e8760a] transition-colors">Want a custom monitor for your sector? Get in touch</a></span>
         <button onClick={() => jump('band-hero')} className="hover:text-[#e8760a] uppercase tracking-wider">Back to Mission Control</button>
       </footer>
     </div>

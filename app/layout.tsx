@@ -15,14 +15,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ARGUS — Always Monitoring the Situation",
   description: "Custom monitoring sites for all global interests, by Leander Bloot — real-time intelligence dashboard with 120 tiered feeds, Telegram OSINT, nuclear sites, military bases, and undersea cables mapped live.",
-  metadataBase: new URL("https://osint.leanderbloot.nl"),
+  metadataBase: new URL("https://argus.prototipo.nl"),
   keywords: ["OSINT", "intelligence", "dashboard", "news", "geopolitics", "military", "nuclear", "real-time", "monitoring", "ARGUS"],
   authors: [{ name: "Leander Bloot", url: "https://x.com/LeanderLBB" }],
   creator: "Leander Bloot",
   openGraph: {
     title: "ARGUS — Always Monitoring the Situation",
     description: "Real-time global intelligence dashboard with 120 tiered news feeds, Telegram OSINT, and interactive military/nuclear/cable map layers.",
-    url: "https://osint.leanderbloot.nl",
+    url: "https://argus.prototipo.nl",
     siteName: "ARGUS",
     type: "website",
     locale: "en_US",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://osint.leanderbloot.nl",
+    canonical: "https://argus.prototipo.nl",
   },
 };
 
@@ -48,7 +48,7 @@ const jsonLd = {
   name: "ARGUS — OSINT Monitor",
   alternateName: "ARGUS",
   description: "Custom monitoring sites for all global interests, by Leander Bloot. Real-time intelligence dashboard with 120 tiered news feeds, Telegram OSINT, and interactive map layers.",
-  url: "https://osint.leanderbloot.nl",
+  url: "https://argus.prototipo.nl",
   applicationCategory: "NewsApplication",
   operatingSystem: "Any",
   author: {

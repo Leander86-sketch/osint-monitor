@@ -155,7 +155,7 @@ function EventMap({ focusBbox, situations }: { focusBbox?: [number, number, numb
       </div>
 
       {/* Layer Controls + Legend */}
-      <div className="flex items-center justify-between px-4 py-1.5 border-b border-[#111] bg-[#080808]">
+      <div className="flex flex-wrap items-center justify-between gap-y-1.5 px-4 py-1.5 border-b border-[#111] bg-[#080808]">
         <div className="flex items-center gap-4">
           {Object.entries(TYPE_COLORS).map(([type, color]) => (
             <div key={type} className="flex items-center gap-1">
@@ -164,7 +164,7 @@ function EventMap({ focusBbox, situations }: { focusBbox?: [number, number, numb
             </div>
           ))}
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex flex-wrap items-center justify-end gap-1">
           <span className="text-[12px] text-[#aaa] font-mono uppercase tracking-[0.15em] mr-1">Layers</span>
           {LAYER_CONFIG.map(layer => (
             <button

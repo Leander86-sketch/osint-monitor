@@ -99,8 +99,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <a href="https://leanderbloot.nl" target="_blank" rel="noopener noreferrer" className="hidden lg:block text-[11px] font-mono text-[#888] hover:text-[#e8760a] uppercase tracking-wider transition-colors">By Leander Bloot</a>
-            <a href="https://x.com/LeanderLBB" target="_blank" rel="noopener noreferrer" className="text-[11px] font-mono text-[#888] hover:text-[#ccc] transition-colors">@LeanderLBB</a>
+            <span className="hidden lg:block text-[11px] font-mono text-[#888] uppercase tracking-wider">By Leander Bloot</span>
             <div className="h-3 w-px bg-[#1a1a1a]" />
             <span className="text-[12px] text-[#ccc] font-mono tracking-wider tabular-nums">{time}</span>
           </div>

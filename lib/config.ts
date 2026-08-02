@@ -16,25 +16,25 @@ export const RSS_FEEDS: FeedConfig[] = [
   { name: 'Al Jazeera', url: 'https://www.aljazeera.com/xml/rss/all.xml', category: 'world', enabled: true, tier: 1, reliability: 82, region: 'global' },
   { name: 'France 24', url: 'https://www.france24.com/en/rss', category: 'world', enabled: true, tier: 1, reliability: 88, region: 'global' },
   { name: 'DW News', url: 'https://rss.dw.com/rdf/rss-en-world', category: 'world', enabled: true, tier: 1, reliability: 88, region: 'global' },
-  { name: 'CNN World', url: 'https://rss.cnn.com/rss/edition_world.rss', category: 'world', enabled: true, tier: 1, reliability: 80, region: 'global' },
+  { name: 'CNN World', url: 'https://news.google.com/rss/search?q=site:cnn.com+world&hl=en', category: 'world', enabled: true, tier: 1, reliability: 80, region: 'global' },
 
   // ===================== TIER 1 — MIDDLE EAST =====================
   { name: 'BBC Middle East', url: 'https://feeds.bbci.co.uk/news/world/middle_east/rss.xml', category: 'mideast', enabled: true, tier: 1, reliability: 95, region: 'mideast' },
-  { name: 'Al Arabiya', url: 'https://www.alarabiya.net/tools/rss', category: 'mideast', enabled: true, tier: 1, reliability: 75, region: 'mideast' },
+  { name: 'Al Arabiya', url: 'https://news.google.com/rss/search?q=site:alarabiya.net&hl=en', category: 'mideast', enabled: true, tier: 1, reliability: 75, region: 'mideast' },
   { name: 'Times of Israel', url: 'https://www.timesofisrael.com/feed/', category: 'mideast', enabled: true, tier: 1, reliability: 78, region: 'mideast' },
   { name: 'Middle East Eye', url: 'https://www.middleeasteye.net/rss', category: 'mideast', enabled: true, tier: 2, reliability: 75, region: 'mideast' },
-  { name: 'Haaretz', url: 'https://www.haaretz.com/srv/haaretz-latest-rss', category: 'mideast', enabled: true, tier: 1, reliability: 85, region: 'mideast' },
-  { name: 'Arab News', url: 'https://www.arabnews.com/rss.xml', category: 'mideast', enabled: true, tier: 2, reliability: 70, region: 'mideast' },
-  { name: 'The National UAE', url: 'https://www.thenationalnews.com/rss', category: 'mideast', enabled: true, tier: 2, reliability: 72, region: 'mideast' },
+  { name: 'Haaretz', url: 'https://news.google.com/rss/search?q=site:haaretz.com&hl=en', category: 'mideast', enabled: true, tier: 1, reliability: 85, region: 'mideast' },
+  { name: 'Arab News', url: 'https://news.google.com/rss/search?q=site:arabnews.com&hl=en', category: 'mideast', enabled: true, tier: 2, reliability: 70, region: 'mideast' },
+  { name: 'The National UAE', url: 'https://news.google.com/rss/search?q=site:thenationalnews.com&hl=en', category: 'mideast', enabled: true, tier: 2, reliability: 72, region: 'mideast' },
   { name: 'Iran International', url: 'https://news.google.com/rss/search?q=site:iranintl.com&hl=en', category: 'mideast', enabled: true, tier: 2, reliability: 68, region: 'mideast' },
-  { name: 'Rudaw', url: 'https://www.rudaw.net/english/rss', category: 'mideast', enabled: true, tier: 2, reliability: 65, region: 'mideast' },
+  { name: 'Rudaw', url: 'https://news.google.com/rss/search?q=site:rudaw.net&hl=en', category: 'mideast', enabled: true, tier: 2, reliability: 65, region: 'mideast' },
 
   // ===================== TIER 1 — EUROPE / UKRAINE / NATO =====================
   { name: 'BBC Europe', url: 'https://feeds.bbci.co.uk/news/world/europe/rss.xml', category: 'europe', enabled: true, tier: 1, reliability: 95, region: 'europe' },
-  { name: 'Kyiv Independent', url: 'https://kyivindependent.com/feed/', category: 'europe', enabled: true, tier: 1, reliability: 80, region: 'europe' },
+  { name: 'Kyiv Independent', url: 'https://news.google.com/rss/search?q=site:kyivindependent.com&hl=en', category: 'europe', enabled: true, tier: 1, reliability: 80, region: 'europe' },
   { name: 'Ukrinform', url: 'https://www.ukrinform.net/rss/block-lastnews', category: 'europe', enabled: true, tier: 2, reliability: 72, region: 'europe' },
   { name: 'Guardian World', url: 'https://www.theguardian.com/world/rss', category: 'europe', enabled: true, tier: 1, reliability: 88, region: 'europe' },
-  { name: 'EuroNews', url: 'https://www.euronews.com/rss', category: 'europe', enabled: true, tier: 2, reliability: 78, region: 'europe' },
+  { name: 'EuroNews', url: 'https://news.google.com/rss/search?q=site:euronews.com&hl=en', category: 'europe', enabled: true, tier: 2, reliability: 78, region: 'europe' },
   { name: 'Le Monde', url: 'https://www.lemonde.fr/en/rss/une.xml', category: 'europe', enabled: true, tier: 1, reliability: 90, region: 'europe' },
   { name: 'Der Spiegel', url: 'https://www.spiegel.de/international/index.rss', category: 'europe', enabled: true, tier: 1, reliability: 88, region: 'europe' },
   { name: 'Moscow Times', url: 'https://www.themoscowtimes.com/rss/news', category: 'europe', enabled: true, tier: 2, reliability: 75, region: 'europe' },
@@ -50,7 +50,7 @@ export const RSS_FEEDS: FeedConfig[] = [
   { name: 'SCMP', url: 'https://www.scmp.com/rss/91/feed', category: 'asia', enabled: true, tier: 1, reliability: 78, region: 'asia' },
   { name: 'The Diplomat', url: 'https://thediplomat.com/feed/', category: 'asia', enabled: true, tier: 2, reliability: 82, region: 'asia' },
   { name: 'Nikkei Asia', url: 'https://news.google.com/rss/search?q=site:asia.nikkei.com&hl=en', category: 'asia', enabled: true, tier: 1, reliability: 85, region: 'asia' },
-  { name: 'Japan Today', url: 'https://japantoday.com/feed', category: 'asia', enabled: true, tier: 2, reliability: 72, region: 'asia' },
+  { name: 'Japan Today', url: 'https://news.google.com/rss/search?q=site:japantoday.com&hl=en', category: 'asia', enabled: true, tier: 2, reliability: 72, region: 'asia' },
   { name: 'Yonhap News', url: 'https://en.yna.co.kr/RSS/news.xml', category: 'asia', enabled: true, tier: 2, reliability: 80, region: 'asia' },
   { name: 'The Hindu', url: 'https://www.thehindu.com/news/international/feeder/default.rss', category: 'asia', enabled: true, tier: 2, reliability: 80, region: 'asia' },
   { name: 'NDTV', url: 'https://feeds.feedburner.com/ndtvnews-world-news', category: 'asia', enabled: true, tier: 2, reliability: 75, region: 'asia' },
@@ -62,7 +62,7 @@ export const RSS_FEEDS: FeedConfig[] = [
   // ===================== TIER 1 — AFRICA =====================
   { name: 'BBC Africa', url: 'https://feeds.bbci.co.uk/news/world/africa/rss.xml', category: 'africa', enabled: true, tier: 1, reliability: 95, region: 'africa' },
   { name: 'Africanews', url: 'https://www.africanews.com/feed/', category: 'africa', enabled: true, tier: 2, reliability: 75, region: 'africa' },
-  { name: 'News24 SA', url: 'https://feeds.news24.com/articles/news24/TopStories/rss', category: 'africa', enabled: true, tier: 2, reliability: 72, region: 'africa' },
+  { name: 'News24 SA', url: 'https://news.google.com/rss/search?q=site:news24.com&hl=en', category: 'africa', enabled: true, tier: 2, reliability: 72, region: 'africa' },
   { name: 'Premium Times NG', url: 'https://www.premiumtimesng.com/feed', category: 'africa', enabled: true, tier: 2, reliability: 70, region: 'africa' },
   { name: 'Daily Trust', url: 'https://dailytrust.com/feed/', category: 'africa', enabled: true, tier: 3, reliability: 65, region: 'africa' },
   { name: 'Jeune Afrique', url: 'https://www.jeuneafrique.com/feed/', category: 'africa', enabled: true, tier: 2, reliability: 75, region: 'africa' },
@@ -70,7 +70,7 @@ export const RSS_FEEDS: FeedConfig[] = [
   // ===================== TIER 1 — AMERICAS =====================
   { name: 'BBC Latin America', url: 'https://feeds.bbci.co.uk/news/world/latin_america/rss.xml', category: 'americas', enabled: true, tier: 1, reliability: 95, region: 'americas' },
   { name: 'NPR News', url: 'https://feeds.npr.org/1001/rss.xml', category: 'americas', enabled: true, tier: 1, reliability: 90, region: 'americas' },
-  { name: 'PBS NewsHour', url: 'https://www.pbs.org/newshour/feeds/rss/headlines', category: 'americas', enabled: true, tier: 1, reliability: 92, region: 'americas' },
+  { name: 'PBS NewsHour', url: 'https://news.google.com/rss/search?q=site:pbs.org+newshour&hl=en', category: 'americas', enabled: true, tier: 1, reliability: 92, region: 'americas' },
   { name: 'Politico', url: 'https://rss.politico.com/politics-news.xml', category: 'americas', enabled: true, tier: 1, reliability: 82, region: 'americas' },
   { name: 'The Hill', url: 'https://thehill.com/feed/', category: 'americas', enabled: true, tier: 2, reliability: 78, region: 'americas' },
   { name: 'InSight Crime', url: 'https://insightcrime.org/feed/', category: 'americas', enabled: true, tier: 2, reliability: 80, region: 'americas' },
@@ -83,7 +83,7 @@ export const RSS_FEEDS: FeedConfig[] = [
   { name: 'Reuters Business', url: 'https://news.google.com/rss/search?q=site:reuters.com+business&hl=en', category: 'markets', enabled: true, tier: 1, reliability: 95, region: 'global' },
 
   // ===================== TIER 2 — DEFENSE & MILITARY =====================
-  { name: 'Defense One', url: 'https://www.defenseone.com/rss/', category: 'defense', enabled: true, tier: 2, reliability: 82, region: 'global' },
+  { name: 'Defense One', url: 'https://www.defenseone.com/rss/all/', category: 'defense', enabled: true, tier: 2, reliability: 82, region: 'global' },
   { name: 'The War Zone', url: 'https://www.thedrive.com/the-war-zone/feed', category: 'defense', enabled: true, tier: 2, reliability: 78, region: 'global' },
   { name: 'Defense News', url: 'https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml', category: 'defense', enabled: true, tier: 2, reliability: 82, region: 'global' },
   { name: 'Military Times', url: 'https://www.militarytimes.com/arc/outboundfeeds/rss/?outputType=xml', category: 'defense', enabled: true, tier: 2, reliability: 78, region: 'global' },
@@ -94,26 +94,26 @@ export const RSS_FEEDS: FeedConfig[] = [
   // ===================== TIER 2 — THINK TANKS & ANALYSIS =====================
   { name: 'Foreign Policy', url: 'https://foreignpolicy.com/feed/', category: 'thinktank', enabled: true, tier: 2, reliability: 88, region: 'global' },
   { name: 'Atlantic Council', url: 'https://www.atlanticcouncil.org/feed/', category: 'thinktank', enabled: true, tier: 2, reliability: 85, region: 'global' },
-  { name: 'CSIS', url: 'https://www.csis.org/analysis/feed', category: 'thinktank', enabled: true, tier: 2, reliability: 88, region: 'global' },
-  { name: 'Brookings', url: 'https://www.brookings.edu/feed/', category: 'thinktank', enabled: true, tier: 2, reliability: 88, region: 'global' },
-  { name: 'Carnegie', url: 'https://carnegieendowment.org/rss/solr/?feed_id=global', category: 'thinktank', enabled: true, tier: 2, reliability: 88, region: 'global' },
+  { name: 'CSIS', url: 'https://news.google.com/rss/search?q=site:csis.org&hl=en', category: 'thinktank', enabled: true, tier: 2, reliability: 88, region: 'global' },
+  { name: 'Brookings', url: 'https://news.google.com/rss/search?q=site:brookings.edu&hl=en', category: 'thinktank', enabled: true, tier: 2, reliability: 88, region: 'global' },
+  { name: 'Carnegie', url: 'https://news.google.com/rss/search?q=site:carnegieendowment.org&hl=en', category: 'thinktank', enabled: true, tier: 2, reliability: 88, region: 'global' },
   { name: 'RAND', url: 'https://www.rand.org/content/rand/blog.xml', category: 'thinktank', enabled: true, tier: 2, reliability: 90, region: 'global' },
   { name: 'War on the Rocks', url: 'https://warontherocks.com/feed/', category: 'thinktank', enabled: true, tier: 2, reliability: 82, region: 'global' },
-  { name: 'RUSI', url: 'https://www.rusi.org/rss.xml', category: 'thinktank', enabled: true, tier: 2, reliability: 85, region: 'global' },
-  { name: 'Chatham House', url: 'https://www.chathamhouse.org/feed', category: 'thinktank', enabled: true, tier: 2, reliability: 88, region: 'global' },
+  { name: 'RUSI', url: 'https://news.google.com/rss/search?q=site:rusi.org&hl=en', category: 'thinktank', enabled: true, tier: 2, reliability: 85, region: 'global' },
+  { name: 'Chatham House', url: 'https://news.google.com/rss/search?q=site:chathamhouse.org&hl=en', category: 'thinktank', enabled: true, tier: 2, reliability: 88, region: 'global' },
   { name: 'Responsible Statecraft', url: 'https://responsiblestatecraft.org/feed/', category: 'thinktank', enabled: true, tier: 2, reliability: 78, region: 'global' },
   { name: 'Jamestown Foundation', url: 'https://jamestown.org/feed/', category: 'thinktank', enabled: true, tier: 3, reliability: 80, region: 'global' },
 
   // ===================== TIER 2 — CRISIS & HUMANITARIAN =====================
   { name: 'IAEA News', url: 'https://www.iaea.org/feeds/topnews', category: 'crisis', enabled: true, tier: 2, reliability: 95, region: 'global' },
   { name: 'WHO News', url: 'https://www.who.int/rss-feeds/news-english.xml', category: 'crisis', enabled: true, tier: 2, reliability: 95, region: 'global' },
-  { name: 'UNHCR', url: 'https://www.unhcr.org/rss/news.xml', category: 'crisis', enabled: true, tier: 2, reliability: 92, region: 'global' },
-  { name: 'UN News', url: 'https://news.un.org/feed/subscribe/en/news/all/rss.xml', category: 'crisis', enabled: true, tier: 1, reliability: 90, region: 'global' },
+  { name: 'UNHCR', url: 'https://news.google.com/rss/search?q=site:unhcr.org&hl=en', category: 'crisis', enabled: true, tier: 2, reliability: 92, region: 'global' },
+  { name: 'UN News', url: 'https://news.un.org/feed/subscribe/en/news/topic/peace-and-security/feed/rss.xml', category: 'crisis', enabled: true, tier: 1, reliability: 90, region: 'global' },
   { name: 'ReliefWeb', url: 'https://reliefweb.int/updates/rss.xml', category: 'crisis', enabled: true, tier: 2, reliability: 88, region: 'global' },
 
   // ===================== TIER 2 — GOVERNMENT =====================
-  { name: 'White House', url: 'https://www.whitehouse.gov/feed/', category: 'gov', enabled: true, tier: 2, reliability: 85, region: 'americas' },
-  { name: 'US State Dept', url: 'https://www.state.gov/rss-feed/press-releases/feed/', category: 'gov', enabled: true, tier: 2, reliability: 88, region: 'americas' },
+  { name: 'White House', url: 'https://www.whitehouse.gov/news/feed/', category: 'gov', enabled: true, tier: 2, reliability: 85, region: 'americas' },
+  { name: 'US State Dept', url: 'https://news.google.com/rss/search?q=site:state.gov&hl=en', category: 'gov', enabled: true, tier: 2, reliability: 88, region: 'americas' },
   { name: 'Pentagon', url: 'https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945', category: 'gov', enabled: true, tier: 2, reliability: 88, region: 'americas' },
   { name: 'UK MOD', url: 'https://www.gov.uk/government/organisations/ministry-of-defence.atom', category: 'gov', enabled: true, tier: 2, reliability: 88, region: 'europe' },
 
@@ -125,8 +125,8 @@ export const RSS_FEEDS: FeedConfig[] = [
 
   // ===================== TIER 2 — ENERGY & COMMODITIES =====================
   { name: 'Reuters Energy', url: 'https://news.google.com/rss/search?q=site:reuters.com+energy+oil+gas&hl=en', category: 'energy', enabled: true, tier: 2, reliability: 92, region: 'global' },
-  { name: 'Oil & Gas Journal', url: 'https://www.ogj.com/rss', category: 'energy', enabled: true, tier: 2, reliability: 80, region: 'global' },
-  { name: 'Nuclear Eng Intl', url: 'https://www.neimagazine.com/feed/', category: 'energy', enabled: true, tier: 3, reliability: 82, region: 'global' },
+  { name: 'Oil & Gas Journal', url: 'https://news.google.com/rss/search?q=site:ogj.com&hl=en', category: 'energy', enabled: true, tier: 2, reliability: 80, region: 'global' },
+  { name: 'Nuclear Eng Intl', url: 'https://news.google.com/rss/search?q=site:neimagazine.com&hl=en', category: 'energy', enabled: true, tier: 3, reliability: 82, region: 'global' },
 
   // ===================== TIER 2 — CRYPTO =====================
   { name: 'CoinDesk', url: 'https://www.coindesk.com/arc/outboundfeeds/rss/', category: 'crypto', enabled: true, tier: 2, reliability: 75, region: 'global' },
@@ -135,14 +135,14 @@ export const RSS_FEEDS: FeedConfig[] = [
 
   // ===================== TIER 2 — NUCLEAR & ARMS CONTROL =====================
   { name: 'Arms Control Assn', url: 'https://www.armscontrol.org/rss.xml', category: 'nuclear', enabled: true, tier: 2, reliability: 90, region: 'global' },
-  { name: 'Bulletin Atomic Scientists', url: 'https://thebulletin.org/feed/', category: 'nuclear', enabled: true, tier: 2, reliability: 92, region: 'global' },
+  { name: 'Bulletin Atomic Scientists', url: 'https://news.google.com/rss/search?q=site:thebulletin.org&hl=en', category: 'nuclear', enabled: true, tier: 2, reliability: 92, region: 'global' },
   { name: 'NTI', url: 'https://www.nti.org/rss/all/', category: 'nuclear', enabled: false, tier: 2, reliability: 90, region: 'global' }, // dead: RSS format error
   { name: 'FAS', url: 'https://fas.org/feed/', category: 'nuclear', enabled: true, tier: 2, reliability: 88, region: 'global' },
 
   // ===================== TIER 3 — REGIONAL EXTRAS =====================
   { name: 'TASS', url: 'https://tass.com/rss/v2.xml', category: 'europe', enabled: true, tier: 3, reliability: 35, region: 'europe' },
   { name: 'RT', url: 'https://www.rt.com/rss/', category: 'europe', enabled: false, tier: 3, reliability: 30, region: 'europe' }, // dead: ECONNREFUSED
-  { name: 'Hurriyet', url: 'https://www.hurriyetdailynews.com/rss', category: 'europe', enabled: true, tier: 3, reliability: 65, region: 'europe' },
+  { name: 'Hurriyet', url: 'https://news.google.com/rss/search?q=site:hurriyetdailynews.com&hl=en', category: 'europe', enabled: true, tier: 3, reliability: 65, region: 'europe' },
   { name: 'El Pais English', url: 'https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada', category: 'europe', enabled: true, tier: 2, reliability: 85, region: 'europe' },
   { name: 'ANSA', url: 'https://www.ansa.it/english/news/rss.xml', category: 'europe', enabled: false, tier: 2, reliability: 80, region: 'europe' }, // dead: 404
   { name: 'Novaya Gazeta EU', url: 'https://novayagazeta.eu/rss/en', category: 'europe', enabled: false, tier: 2, reliability: 78, region: 'europe' }, // dead: 404
@@ -174,9 +174,9 @@ export const RSS_FEEDS: FeedConfig[] = [
   { name: 'Balkan Insight', url: 'https://balkaninsight.com/feed/', category: 'europe', enabled: true, tier: 2, reliability: 78, region: 'europe' },
 
   // ===================== SPORT - FORMULA 1 =====================
-  { name: 'F1 Official', url: 'https://www.formula1.com/en/latest/all.xml', category: 'sport', enabled: true, tier: 2, reliability: 90, region: 'global' },
-  { name: 'BBC Sport F1', url: 'https://feeds.bbci.co.uk/sport/formula1/rss.xml', category: 'sport', enabled: true, tier: 2, reliability: 95, region: 'global' },
-  { name: 'Motorsport F1', url: 'https://www.motorsport.com/rss/f1/news/', category: 'sport', enabled: true, tier: 2, reliability: 80, region: 'global' },
+  { name: 'F1 Official', url: 'https://www.formula1.com/en/latest/all.xml', category: 'sport', enabled: false, tier: 2, reliability: 90, region: 'global' },
+  { name: 'BBC Sport F1', url: 'https://feeds.bbci.co.uk/sport/formula1/rss.xml', category: 'sport', enabled: false, tier: 2, reliability: 95, region: 'global' },
+  { name: 'Motorsport F1', url: 'https://www.motorsport.com/rss/f1/news/', category: 'sport', enabled: false, tier: 2, reliability: 80, region: 'global' },
 ];
 
 export const CONFLICT_KEYWORDS = [

@@ -12,11 +12,14 @@ export function generateId(input: string): string {
   return Math.abs(hash).toString(36) + Date.now().toString(36).slice(-4);
 }
 
+// Precompiled word-boundary patterns - substring matching mistagged e.g. "forward" as war, "policja" as ICJ
+const KEYWORD_PATTERNS: Array<[string, RegExp]> = CONFLICT_KEYWORDS.map(kw => [
+  kw,
+  new RegExp('\\b' + kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i'),
+]);
+
 export function extractKeywords(text: string): string[] {
-  const lower = text.toLowerCase();
-  return CONFLICT_KEYWORDS.filter(kw =>
-    lower.includes(kw.toLowerCase())
-  );
+  return KEYWORD_PATTERNS.filter(([, re]) => re.test(text)).map(([kw]) => kw);
 }
 
 export function determineSeverity(text: string): 'low' | 'medium' | 'high' | 'critical' {

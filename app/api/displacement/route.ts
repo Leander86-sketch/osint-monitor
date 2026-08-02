@@ -49,9 +49,10 @@ async function fetchDisplacement(): Promise<DisplacementData[]> {
 
     const results: DisplacementData[] = [];
     for (const item of data.items || []) {
-      const refugees = item.refugees || 0;
-      const idps = item.idps || 0;
-      const asylumSeekers = item.asylum_seekers || 0;
+      // UNHCR API returns these as strings - coerce or totals become string concatenation
+      const refugees = Number(item.refugees) || 0;
+      const idps = Number(item.idps) || 0;
+      const asylumSeekers = Number(item.asylum_seekers) || 0;
       const total = refugees + idps + asylumSeekers;
 
       // Only include countries with significant displacement (>10k)

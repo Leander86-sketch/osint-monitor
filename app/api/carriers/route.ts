@@ -1,15 +1,27 @@
 import { NextResponse } from 'next/server';
-import { fetchCarrierGroups } from '@/lib/fetchers/gdelt-carriers';
+import { fetchCarrierGroups, KNOWN_POSITIONS, CARRIERS_CACHE_MS } from '@/lib/fetchers/gdelt-carriers';
 import { getStore } from '@/lib/layer-store';
 
+// Never block the response on GDELT (429-prone): serve what we have and
+// refresh in the background through the shared GDELT queue.
+let refreshing = false;
+let lastKick = 0;
+const RETRY_MS = 10 * 60_000;
+
 export async function GET() {
-  // If carriers have cached data, return immediately
   const store = getStore().carriers;
-  if (store.data.length > 0) {
-    return NextResponse.json({ total: store.data.length, carriers: store.data });
+
+  // Cold start: seed with the USNI Fleet Tracker fallback so the layer is never empty
+  if (store.data.length === 0) {
+    store.data = KNOWN_POSITIONS.map(k => ({ ...k }));
   }
 
-  // Otherwise fetch — the fetcher has a built-in delay to avoid GDELT rate limits
-  const carriers = await fetchCarrierGroups();
-  return NextResponse.json({ total: carriers.length, carriers });
+  const stale = Date.now() - store.lastFetch > CARRIERS_CACHE_MS;
+  if (stale && !refreshing && Date.now() - lastKick > RETRY_MS) {
+    refreshing = true;
+    lastKick = Date.now();
+    fetchCarrierGroups().catch(() => {}).finally(() => { refreshing = false; });
+  }
+
+  return NextResponse.json({ total: store.data.length, carriers: store.data });
 }

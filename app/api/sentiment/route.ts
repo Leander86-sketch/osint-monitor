@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { enqueueGdeltRequest } from '@/lib/gdelt-queue';
 
 // GDELT GKG Tone-based sentiment for conflict regions
 // Free, no API key, updates every 15 minutes
@@ -12,8 +13,9 @@ interface SentimentPoint {
   topTheme: string;
 }
 
-const CACHE_MS = 15 * 60_000; // 15 minutes
-let cache: { data: SentimentPoint[]; ts: number } = { data: [], ts: 0 };
+const CACHE_MS = 15 * 60_000; // 15 minutes per region
+const regionCache = new Map<string, { point: SentimentPoint | null; ts: number }>();
+let refreshing = false;
 
 // Regions to query sentiment for
 const SENTIMENT_REGIONS: { name: string; query: string; lat: number; lng: number }[] = [
@@ -49,12 +51,9 @@ async function fetchSentimentForRegion(region: typeof SENTIMENT_REGIONS[0]): Pro
       format: 'json',
       timespan: '24h',
     });
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 8000);
-    const res = await fetch(`https://api.gdeltproject.org/api/v2/doc/doc?${params}`, {
-      signal: controller.signal,
-    });
-    clearTimeout(timeout);
+    const res = await enqueueGdeltRequest(() =>
+      fetch(`https://api.gdeltproject.org/api/v2/doc/doc?${params}`, { signal: AbortSignal.timeout(15000) })
+    );
     if (!res.ok) return null;
     const data = await res.json();
 
@@ -83,38 +82,30 @@ async function fetchSentimentForRegion(region: typeof SENTIMENT_REGIONS[0]): Pro
   }
 }
 
-async function fetchAllSentiment(): Promise<SentimentPoint[]> {
-  if (Date.now() - cache.ts < CACHE_MS && cache.data.length > 0) {
-    return cache.data;
-  }
-
-  // Fetch in batches of 5 to avoid rate limiting
-  const results: SentimentPoint[] = [];
-  for (let i = 0; i < SENTIMENT_REGIONS.length; i += 5) {
-    const batch = SENTIMENT_REGIONS.slice(i, i + 5);
-    const batchResults = await Promise.all(batch.map(fetchSentimentForRegion));
-    for (const r of batchResults) {
-      if (r && r.articles > 0) results.push(r);
+// Refresh at most 6 stale regions per pass, oldest first; the shared queue paces to 1 req/6s.
+async function refreshStaleRegions(): Promise<void> {
+  if (refreshing) return;
+  refreshing = true;
+  try {
+    const now = Date.now();
+    const stale = SENTIMENT_REGIONS
+      .filter(r => now - (regionCache.get(r.name)?.ts || 0) > CACHE_MS)
+      .sort((a, b) => (regionCache.get(a.name)?.ts || 0) - (regionCache.get(b.name)?.ts || 0))
+      .slice(0, 6);
+    for (const region of stale) {
+      const point = await fetchSentimentForRegion(region);
+      regionCache.set(region.name, { point, ts: Date.now() });
     }
-    // Small delay between batches
-    if (i + 5 < SENTIMENT_REGIONS.length) {
-      await new Promise(r => setTimeout(r, 1000));
-    }
+  } finally {
+    refreshing = false;
   }
-
-  cache = { data: results, ts: Date.now() };
-  return results;
 }
 
 export async function GET() {
-  try {
-    const sentiment = await fetchAllSentiment();
-    return NextResponse.json({
-      sentiment,
-      count: sentiment.length,
-      cached: Date.now() - cache.ts < 1000 ? false : true,
-    });
-  } catch (err) {
-    return NextResponse.json({ error: 'Sentiment fetch failed', sentiment: [] }, { status: 500 });
-  }
+  // Serve the cache immediately; fill/refresh it in the background
+  void refreshStaleRegions();
+  const sentiment = [...regionCache.values()]
+    .map(e => e.point)
+    .filter((p): p is SentimentPoint => p !== null && p.articles > 0);
+  return NextResponse.json({ sentiment, count: sentiment.length, cached: true });
 }

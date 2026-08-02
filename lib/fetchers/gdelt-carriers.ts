@@ -3,7 +3,7 @@ import { getStore } from '../layer-store';
 import { enqueueGdeltRequest } from '../gdelt-queue';
 
 const GDELT_DOC_API = 'https://api.gdeltproject.org/api/v2/doc/doc';
-const CACHE_MS = 12 * 60 * 60_000; // 12 hours
+export const CARRIERS_CACHE_MS = 12 * 60 * 60_000; // 12 hours
 
 interface CarrierRegistry {
   name: string;
@@ -61,7 +61,7 @@ const DEPLOYMENT_REGIONS: Record<string, { lat: number; lng: number }> = {
  * Used as fallback when GDELT doesn't return geo-matchable articles.
  * Source: USNI News Fleet and Marine Tracker
  */
-const KNOWN_POSITIONS: CarrierGroup[] = [
+export const KNOWN_POSITIONS: CarrierGroup[] = [
   {
     id: 'CVN-78', name: 'USS Gerald R. Ford', hullNumber: 'CVN-78',
     lat: 35.49, lng: 24.07, region: 'Souda Bay, Crete',
@@ -100,7 +100,7 @@ function matchRegion(text: string): { lat: number; lng: number; region: string }
 
 export async function fetchCarrierGroups(): Promise<CarrierGroup[]> {
   const store = getStore().carriers;
-  if (Date.now() - store.lastFetch < CACHE_MS && store.data.length > 0) {
+  if (Date.now() - store.lastFetch < CARRIERS_CACHE_MS && store.data.length > 0) {
     return store.data;
   }
 

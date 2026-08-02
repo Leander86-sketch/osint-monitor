@@ -1,13 +1,13 @@
 import RSSParser from 'rss-parser';
 import { NewsItem, FeedConfig } from './types';
-import { CONFLICT_KEYWORDS } from './config';
 import { extractLocation } from './geo-extract';
 import { generateId, extractKeywords } from './utils';
 
 const parser = new RSSParser({
   timeout: 10000,
   headers: {
-    'User-Agent': 'OSINT-Monitor/2.0 (Argus)',
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+    'Accept': 'application/rss+xml, application/xml, text/xml, */*',
   },
 });
 
@@ -33,16 +33,14 @@ export async function fetchFeed(feed: FeedConfig): Promise<NewsItem[]> {
       const description = item.contentSnippet || item.content || '';
       const text = `${title} ${description}`.toLowerCase();
 
-      // Filter: include items relevant to geopolitics, military, markets
-      const isRelevant = CONFLICT_KEYWORDS.some(kw =>
-        text.includes(kw.toLowerCase())
-      );
+      // Filter: include items relevant to geopolitics, military, markets (word-boundary match)
+      const keywords = extractKeywords(text);
+      const isRelevant = keywords.length > 0;
 
       // Tier 1 + market/crypto/energy: include everything. Others: filter by keywords
       const alwaysInclude = (feed.tier === 1) || ['markets', 'crypto', 'energy', 'nuclear', 'cyber'].includes(feed.category);
       if (!isRelevant && !alwaysInclude) continue;
 
-      const keywords = extractKeywords(text);
       // Sport (F1) is feed-only - exclude from the conflict map (race countries are not events)
       const location = feed.category === 'sport' ? null : extractLocation(text);
 

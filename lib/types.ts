@@ -145,7 +145,7 @@ export interface Camera {
   lastUpdated?: string;
 }
 
-export type LayerType = 'flights' | 'satellites' | 'conflicts' | 'carriers' | 'cameras' | 'sentiment' | 'displacement' | 'chokepoints' | 'hazards' | 'firms' | 'frontline' | 'outages';
+export type LayerType = 'flights' | 'satellites' | 'conflicts' | 'carriers' | 'cameras' | 'sentiment' | 'displacement' | 'chokepoints' | 'hazards' | 'firms' | 'frontline' | 'outages' | 'ships';
 
 export interface TelegramMessage {
   id: string;

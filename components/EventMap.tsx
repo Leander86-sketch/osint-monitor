@@ -25,6 +25,7 @@ const HazardsLayer = dynamic(() => import('./map-layers/HazardsLayer'), { ssr: f
 const FirmsLayer = dynamic(() => import('./map-layers/FirmsLayer'), { ssr: false });
 const FrontlineLayer = dynamic(() => import('./map-layers/FrontlineLayer'), { ssr: false });
 const OutagesLayer = dynamic(() => import('./map-layers/OutagesLayer'), { ssr: false });
+const ShipsLayer = dynamic(() => import('./map-layers/ShipsLayer'), { ssr: false });
 
 const TYPE_COLORS: Record<string, string> = {
   military: '#dc2626',
@@ -56,6 +57,7 @@ const LAYER_CONFIG: { id: LayerType; label: string; color: string; desc: string 
   { id: 'firms', label: 'THERMAL', color: '#ff6a00', desc: 'NASA FIRMS satellite thermal detections - fires, strikes, explosions' },
   { id: 'frontline', label: 'FRONT', color: '#b91c1c', desc: 'Assessed Russian-controlled territory in Ukraine (DeepStateMap, updated daily)' },
   { id: 'outages', label: 'NET', color: '#6366f1', desc: 'Internet outages & anomalies (Cloudflare Radar) - connectivity loss as a conflict signal' },
+  { id: 'ships', label: 'AIS', color: '#2dd4bf', desc: 'Live ship traffic at strategic chokepoints (AISStream) - Hormuz, Red Sea, Suez, Black Sea, Taiwan Strait' },
 ];
 const VALID_LAYERS: Set<string> = new Set(LAYER_CONFIG.map(l => l.id));
 
@@ -310,6 +312,7 @@ function EventMap({ focusBbox, situations, bare }: { focusBbox?: [number, number
           {activeLayers.has('firms') && <FirmsLayer />}
           {activeLayers.has('frontline') && <FrontlineLayer />}
           {activeLayers.has('outages') && <OutagesLayer />}
+          {activeLayers.has('ships') && <ShipsLayer />}
         </MapContainer>
       </div>
     </div>

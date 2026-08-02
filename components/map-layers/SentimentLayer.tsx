@@ -82,9 +82,9 @@ export default function SentimentLayer() {
               <div className="text-[12px] max-w-[220px] font-mono">
                 <div className="font-bold text-[#ccc] mb-1">{p.name} — Sentiment</div>
                 <div className="text-[#bbb] space-y-0.5 text-[11px]">
-                  <div>TONE: <span style={{ color }}>{p.tone > 0 ? '+' : ''}{p.tone} ({getToneLabel(p.tone)})</span></div>
-                  <div>ARTICLES (24h): {p.articles.toLocaleString()}</div>
-                  <div>TOPIC: {p.topTheme}</div>
+                  <div>News tone: <span style={{ color }}>{p.tone > 0 ? '+' : ''}{p.tone} — {getToneLabel(p.tone)}</span></div>
+                  <div>Based on {p.articles.toLocaleString()} articles in the last 24h (GDELT)</div>
+                  <div className="text-[#777]">Topic: {p.topTheme}</div>
                 </div>
               </div>
             </Popup>

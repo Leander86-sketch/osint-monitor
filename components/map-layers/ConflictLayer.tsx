@@ -69,10 +69,9 @@ export default function ConflictLayer() {
             <div className="text-[12px] max-w-[260px] font-mono">
               <div className="font-bold text-[#ccc] mb-1 leading-snug">{c.title}</div>
               <div className="text-[#bbb] space-y-0.5 text-[11px]">
-                {c.locationName && <div>LOCATION: {c.locationName}</div>}
-                <div>ARTICLES: {c.numArticles} | SOURCES: {c.sources.length}</div>
-                <div>SRCS: {c.sources.slice(0, 3).join(', ')}</div>
-                <div>POS: {c.lat.toFixed(2)}°, {c.lng.toFixed(2)}°</div>
+                {c.locationName && <div>{c.locationName}</div>}
+                <div>{c.numArticles} articles from {c.sources.length} sources ({c.sources.slice(0, 3).join(', ')})</div>
+                <div className="text-[#777]">Location estimated from news coverage (GDELT)</div>
               </div>
               {c.url && (
                 <a href={c.url} target="_blank" rel="noopener" className="text-[#d4a012] hover:underline mt-1.5 block text-[11px]">

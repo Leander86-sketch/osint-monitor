@@ -74,10 +74,10 @@ export default function DisplacementLayer() {
               <div className="text-[12px] max-w-[220px] font-mono">
                 <div className="font-bold text-[#ccc] mb-1">{d.country} — Displacement</div>
                 <div className="text-[#bbb] space-y-0.5 text-[11px]">
-                  <div>TOTAL DISPLACED: {d.total.toLocaleString()}</div>
-                  <div>REFUGEES: {d.refugees.toLocaleString()}</div>
-                  <div>IDPs: {d.idps.toLocaleString()}</div>
-                  <div>ASYLUM SEEKERS: {d.asylumSeekers.toLocaleString()}</div>
+                  <div>Total displaced: {d.total.toLocaleString()} people</div>
+                  <div>Refugees abroad: {d.refugees.toLocaleString()}</div>
+                  <div>Displaced within the country: {d.idps.toLocaleString()}</div>
+                  <div>Asylum seekers: {d.asylumSeekers.toLocaleString()}</div>
                   <div className="text-[#666] mt-1">Source: UNHCR 2024</div>
                 </div>
               </div>

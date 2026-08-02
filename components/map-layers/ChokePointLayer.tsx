@@ -59,8 +59,8 @@ export default function ChokePointLayer() {
               <div className="text-[12px] max-w-[240px] font-mono">
                 <div className="font-bold text-[#ccc] mb-1">⚓ {cp.name}</div>
                 <div className="text-[#bbb] space-y-0.5 text-[11px]">
-                  <div>TRAFFIC: {cp.traffic}</div>
-                  <div>RISK: <span style={{ color }}>{cp.risk.toUpperCase()}</span></div>
+                  <div>Traffic: {cp.traffic}</div>
+                  <div>Risk level: <span style={{ color }}>{cp.risk}</span></div>
                   <div className="text-[#888] mt-1">{cp.desc}</div>
                 </div>
               </div>

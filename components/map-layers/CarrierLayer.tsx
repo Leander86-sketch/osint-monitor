@@ -63,10 +63,9 @@ export default function CarrierLayer() {
               <div className="text-[12px] max-w-[240px] font-mono">
                 <div className="font-bold text-[#ccc] mb-1">{c.name}</div>
                 <div className="text-[#bbb] space-y-0.5 text-[11px]">
-                  <div>HULL: {c.hullNumber}</div>
-                  <div>REGION: {c.region.toUpperCase()}</div>
-                  <div>LAST SEEN: {timeAgo(c.lastSeen)}</div>
-                  {c.source && <div>SRC: {c.source}</div>}
+                  <div>Aircraft carrier {c.hullNumber} · {c.region}</div>
+                  <div>Last reported {timeAgo(c.lastSeen)}{c.source ? ` by ${c.source}` : ''}</div>
+                  <div className="text-[#777]">Approximate position, derived from news reports</div>
                 </div>
                 {c.sourceUrl && (
                   <a href={c.sourceUrl} target="_blank" rel="noopener" className="text-[#d4a012] hover:underline mt-1.5 block text-[11px]">

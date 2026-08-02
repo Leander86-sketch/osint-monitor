@@ -76,11 +76,10 @@ export default function SatelliteLayer({ bounds }: SatelliteLayerProps) {
               <div className="text-[12px] max-w-[220px] font-mono">
                 <div className="font-bold text-[#ccc] mb-1">{s.name}</div>
                 <div className="text-[#bbb] space-y-0.5 text-[11px]">
-                  <div>NORAD: {s.noradId}{s.intlDesignator ? ` | ${s.intlDesignator}` : ''}</div>
-                  <div>ALT: {Math.round(s.altitude).toLocaleString()} km</div>
-                  <div>SPD: {s.speed.toLocaleString()} km/h</div>
-                  <div>POS: {s.lat.toFixed(2)}°, {s.lng.toFixed(2)}°</div>
+                  <div>Altitude: {Math.round(s.altitude).toLocaleString()} km · {s.speed.toLocaleString()} km/h</div>
+                  <div className="text-[#777]">Catalog: NORAD {s.noradId}{s.intlDesignator ? ` · ${s.intlDesignator}` : ''}</div>
                 </div>
+                <a href={`https://www.n2yo.com/satellite/?s=${s.noradId}`} target="_blank" rel="noopener" className="text-[#d4a012] hover:underline mt-1.5 block text-[11px]">TRACK ORBIT →</a>
               </div>
             </Popup>
           </CircleMarker>

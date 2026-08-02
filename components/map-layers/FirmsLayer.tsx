@@ -41,9 +41,9 @@ export default function FirmsLayer() {
         >
           <Tooltip direction="top" offset={[0, -4]} opacity={0.95}>
             <div style={{ fontFamily: 'monospace', fontSize: '11px', maxWidth: '200px', color: '#111' }}>
-              <div style={{ fontWeight: 'bold', color: '#cc3300' }}>THERMAL ANOMALY</div>
-              <div>FRP {f.frp} MW · conf {f.confidence}</div>
-              <div style={{ color: '#666' }}>{f.date} · VIIRS</div>
+              <div style={{ fontWeight: 'bold', color: '#cc3300' }}>HEAT DETECTION</div>
+              <div>Fire intensity: {f.frp} MW · confidence {f.confidence}</div>
+              <div style={{ color: '#666' }}>Detected {f.date} by VIIRS satellite (fire, strike or explosion)</div>
             </div>
           </Tooltip>
         </CircleMarker>

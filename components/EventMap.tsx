@@ -262,9 +262,9 @@ function EventMap({ focusBbox, situations, bare }: { focusBbox?: [number, number
                 <div className="text-[12px] max-w-[240px] font-mono">
                   <div className="font-bold text-[#ccc] mb-1 leading-snug">{event.title}</div>
                   <div className="text-[#bbb] space-y-0.5 text-[11px]">
-                    <div>LOC: {event.location.name}{event.location.country ? ` / ${event.location.country}` : ''}</div>
-                    <div>TYPE: {event.type.toUpperCase()} | SEV: {event.severity.toUpperCase()}</div>
-                    <div>SRC: {event.source} | {timeAgo(event.timestamp)}</div>
+                    <div>{event.location.name}{event.location.country ? `, ${event.location.country}` : ''}</div>
+                    <div className="capitalize">{event.type} · {event.severity} severity</div>
+                    <div>{event.source} · {timeAgo(event.timestamp)} ago</div>
                   </div>
                   <a href={event.link} target="_blank" rel="noopener" className="text-[#d4a012] hover:underline mt-1.5 block text-[11px]">
                     OPEN SOURCE →
@@ -285,13 +285,13 @@ function EventMap({ focusBbox, situations, bare }: { focusBbox?: [number, number
               <Tooltip direction="top" offset={[0, -6]} opacity={0.95}>
                 <div style={{ fontFamily: 'monospace', fontSize: '11px', maxWidth: '240px', color: '#111' }}>
                   <div style={{ fontWeight: 'bold' }}>{sit.title} · {sit.severity.toUpperCase()}</div>
-                  <div style={{ color: '#666' }}>{sit.status.toUpperCase()} · {sit.metadata.velocity1h}/h · {sit.metadata.articleCount} reports</div>
+                  <div style={{ color: '#666' }}>{sit.status} · {sit.metadata.velocity1h} new/hour · {sit.metadata.articleCount} reports</div>
                 </div>
               </Tooltip>
               <Popup>
                 <div className="text-[12px] max-w-[260px] font-mono">
                   <div className="font-bold text-[#ccc] mb-1 leading-snug">{sit.title}</div>
-                  <div className="text-[#bbb] text-[11px] mb-1">{sit.status.toUpperCase()} · SEV {sit.severity.toUpperCase()} · {sit.metadata.velocity1h}/1h · CORR {sit.metadata.corroboration}</div>
+                  <div className="text-[#bbb] text-[11px] mb-1 capitalize">{sit.status} · {sit.severity} severity · {sit.metadata.velocity1h} reports last hour · <span title="A = multiple tier-1 or 5+ distinct sources, B = some corroboration, C = thin sourcing">sourcing {sit.metadata.corroboration === 'A' ? 'strong' : sit.metadata.corroboration === 'B' ? 'moderate' : 'thin'}</span></div>
                   {sit.latestHeadline && <div className="text-[#999] text-[11px] leading-snug">{sit.latestHeadline}</div>}
                   {sit.latestLink && <a href={sit.latestLink} target="_blank" rel="noopener" className="text-[#d4a012] hover:underline mt-1.5 block text-[11px]">OPEN SOURCE →</a>}
                 </div>

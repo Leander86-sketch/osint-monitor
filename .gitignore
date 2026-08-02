@@ -54,3 +54,4 @@ data/hazards-cache.json
 data/conflicts-cache.json
 data/carriers-usni.json
 data/tle-cache.json
+data/x-alerts-journal.json

@@ -56,7 +56,11 @@ ARGUS is a template as much as a product: different feeds, different map layers,
 
 ## License
 
-MIT - see [LICENSE](LICENSE).
+AGPL-3.0 - see [LICENSE](LICENSE).
+
+Free to use, study and modify. If you run a modified version as a public
+service, the AGPL requires you to publish your source. For a commercial or
+closed-source license, contact the author.
 
 ---
 

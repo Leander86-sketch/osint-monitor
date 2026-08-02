@@ -70,6 +70,29 @@ function timeAgo(dateStr: string): string {
   return `${Math.floor(diff / 86400000)}d`;
 }
 
+// Co-located events get a small golden-angle rosette in SCREEN PIXELS around
+// the true point. Pixel offsets cover less ground as you zoom in, so markers
+// converge to the real location; the first event of each group stays exact.
+function rosette(events: GeoEvent[], zoom: number): { event: GeoEvent; lat: number; lng: number }[] {
+  const seen = new Map<string, number>();
+  const lngDegPerPx = 360 / (256 * Math.pow(2, zoom));
+  return events.map(event => {
+    const { lat, lng } = event.location;
+    const key = `${lat.toFixed(3)},${lng.toFixed(3)}`;
+    const i = seen.get(key) || 0;
+    seen.set(key, i + 1);
+    if (i === 0) return { event, lat, lng };
+    const angle = i * 137.5 * (Math.PI / 180);
+    const rPx = Math.min(9 * Math.sqrt(i), 48);
+    const latScale = lngDegPerPx * Math.cos((lat * Math.PI) / 180);
+    return {
+      event,
+      lat: lat - Math.sin(angle) * rPx * latScale,
+      lng: lng + Math.cos(angle) * rPx * lngDegPerPx,
+    };
+  });
+}
+
 function EventMap({ focusBbox, situations, bare }: { focusBbox?: [number, number, number, number] | null; situations?: Situation[]; bare?: boolean }) {
   const [events, setEvents] = useState<GeoEvent[]>([]);
   const [mounted, setMounted] = useState(false);
@@ -82,11 +105,13 @@ function EventMap({ focusBbox, situations, bare }: { focusBbox?: [number, number
     return new Set(q.split(',').filter((l): l is LayerType => VALID_LAYERS.has(l)));
   });
   const [bounds, setBounds] = useState<{ north: number; south: number; east: number; west: number } | null>(null);
+  const [zoom, setZoom] = useState(3);
   const mapRef = useRef<LeafletMap | null>(null);
 
   const updateBounds = () => {
     if (!mapRef.current) return;
     const b = mapRef.current.getBounds();
+    setZoom(mapRef.current.getZoom());
     setBounds({
       north: b.getNorth(),
       south: b.getSouth(),
@@ -238,10 +263,10 @@ function EventMap({ focusBbox, situations, bare }: { focusBbox?: [number, number
           />
 
           {/* RSS-based geo events (always shown) */}
-          {filteredEvents.slice(0, 350).map(event => (
+          {rosette(filteredEvents.slice(0, 350), zoom).map(({ event, lat, lng }) => (
             <CircleMarker
               key={event.id}
-              center={[event.location.lat, event.location.lng]}
+              center={[lat, lng]}
               radius={SEVERITY_RADIUS[event.severity] || 6}
               pathOptions={{
                 color: TYPE_COLORS[event.type] || '#333',

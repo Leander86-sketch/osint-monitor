@@ -124,29 +124,11 @@ export async function ensureFeedsLoaded(): Promise<void> {
 // --- Geo Events ---
 
 export function getGeoEvents(): GeoEvent[] {
-  const events = g.__osintStore!.newsItems
+  // True coordinates only - de-overlapping is done client-side in screen
+  // pixels (zoom-aware), so co-located events converge when zooming in.
+  return g.__osintStore!.newsItems
     .map(newsItemToGeoEvent)
     .filter((e): e is GeoEvent => e !== null);
-
-  // Apply jitter to events at the same location so they don't stack
-  const locationCount = new Map<string, number>();
-  for (const e of events) {
-    const key = `${e.location.lat.toFixed(2)},${e.location.lng.toFixed(2)}`;
-    const count = locationCount.get(key) || 0;
-    if (count > 0) {
-      // Spread in a spiral pattern around the original point
-      const angle = (count * 137.5) * (Math.PI / 180); // golden angle
-      const dist = 0.15 + count * 0.08; // degrees offset, grows with count
-      e.location = {
-        ...e.location,
-        lat: e.location.lat + Math.cos(angle) * dist,
-        lng: e.location.lng + Math.sin(angle) * dist,
-      };
-    }
-    locationCount.set(key, count + 1);
-  }
-
-  return events;
 }
 
 // --- Alerts ---

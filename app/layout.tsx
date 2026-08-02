@@ -38,6 +38,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://argus.prototipo.nl",
+    types: { "application/rss+xml": "/rss" },
   },
 };
 

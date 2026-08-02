@@ -52,3 +52,4 @@ data/frontline-cache.json
 data/sentiment-cache.json
 data/hazards-cache.json
 data/conflicts-cache.json
+data/carriers-usni.json

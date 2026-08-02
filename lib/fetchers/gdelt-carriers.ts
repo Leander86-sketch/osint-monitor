@@ -25,7 +25,7 @@ const CARRIERS: CarrierRegistry[] = [
   { name: 'USS George H.W. Bush', hull: 'CVN-77', searchTerms: ['CVN-77', 'USS Bush', 'George H.W. Bush carrier'] },
 ];
 
-const DEPLOYMENT_REGIONS: Record<string, { lat: number; lng: number }> = {
+export const DEPLOYMENT_REGIONS: Record<string, { lat: number; lng: number }> = {
   'red sea': { lat: 18.0, lng: 39.5 },
   'persian gulf': { lat: 26.5, lng: 51.5 },
   'arabian sea': { lat: 18.0, lng: 65.0 },
@@ -62,30 +62,18 @@ const DEPLOYMENT_REGIONS: Record<string, { lat: number; lng: number }> = {
  * Source: USNI News Fleet and Marine Tracker
  */
 export const KNOWN_POSITIONS: CarrierGroup[] = [
-  {
-    id: 'CVN-78', name: 'USS Gerald R. Ford', hullNumber: 'CVN-78',
-    lat: 35.49, lng: 24.07, region: 'Souda Bay, Crete',
-    lastSeen: '2026-03-23', source: 'USNI Fleet Tracker',
-    sourceUrl: 'https://news.usni.org/category/fleet-tracker',
-  },
-  {
-    id: 'CVN-72', name: 'USS Abraham Lincoln', hullNumber: 'CVN-72',
-    lat: 18.0, lng: 65.0, region: 'Arabian Sea',
-    lastSeen: '2026-03-23', source: 'USNI Fleet Tracker',
-    sourceUrl: 'https://news.usni.org/category/fleet-tracker',
-  },
-  {
-    id: 'CVN-73', name: 'USS George Washington', hullNumber: 'CVN-73',
-    lat: 35.28, lng: 139.67, region: 'Yokosuka, Japan',
-    lastSeen: '2026-03-23', source: 'USNI Fleet Tracker',
-    sourceUrl: 'https://news.usni.org/category/fleet-tracker',
-  },
-  {
-    id: 'CVN-68', name: 'USS Nimitz', hullNumber: 'CVN-68',
-    lat: 5.0, lng: -85.0, region: 'Eastern Pacific',
-    lastSeen: '2026-03-23', source: 'USNI Fleet Tracker',
-    sourceUrl: 'https://news.usni.org/category/fleet-tracker',
-  },
+  // Refreshed 2026-08-02 from USNI Fleet Tracker (Jul 27) + TWZ (Jul 20/28)
+  { id: 'CVN-73', name: 'USS George Washington', hullNumber: 'CVN-73', lat: 16.07, lng: 108.22, region: 'Da Nang, Vietnam (port visit)', lastSeen: '2026-07-30', source: 'USNI News', sourceUrl: 'https://news.usni.org/category/fleet-tracker' },
+  { id: 'CVN-72', name: 'USS Abraham Lincoln', hullNumber: 'CVN-72', lat: 15.0, lng: 63.0, region: 'Arabian Sea', lastSeen: '2026-07-27', source: 'USNI Fleet Tracker', sourceUrl: 'https://news.usni.org/category/fleet-tracker' },
+  { id: 'CVN-77', name: 'USS George H.W. Bush', hullNumber: 'CVN-77', lat: 14.5, lng: 64.2, region: 'Arabian Sea', lastSeen: '2026-07-27', source: 'USNI Fleet Tracker', sourceUrl: 'https://news.usni.org/category/fleet-tracker' },
+  { id: 'CVN-71', name: 'USS Theodore Roosevelt', hullNumber: 'CVN-71', lat: 22.0, lng: -158.5, region: 'off Pearl Harbor (RIMPAC 2026)', lastSeen: '2026-07-27', source: 'USNI Fleet Tracker', sourceUrl: 'https://news.usni.org/category/fleet-tracker' },
+  { id: 'CVN-69', name: 'USS Dwight D. Eisenhower', hullNumber: 'CVN-69', lat: 36.94, lng: -76.31, region: 'Norfolk, VA (training role)', lastSeen: '2026-07-28', source: 'USNI/TWZ', sourceUrl: 'https://news.usni.org/category/fleet-tracker' },
+  { id: 'CVN-68', name: 'USS Nimitz', hullNumber: 'CVN-68', lat: 36.96, lng: -76.35, region: 'Norfolk, VA (homeport)', lastSeen: '2026-07-20', source: 'TWZ', sourceUrl: 'https://www.twz.com/sea/where-are-the-aircraft-carriers-july-20-2026' },
+  { id: 'CVN-70', name: 'USS Carl Vinson', hullNumber: 'CVN-70', lat: 32.70, lng: -117.20, region: 'San Diego, CA (homeport)', lastSeen: '2026-07-20', source: 'TWZ', sourceUrl: 'https://www.twz.com/sea/where-are-the-aircraft-carriers-july-20-2026' },
+  { id: 'CVN-78', name: 'USS Gerald R. Ford', hullNumber: 'CVN-78', lat: 36.81, lng: -76.30, region: 'Norfolk Naval Shipyard (maintenance)', lastSeen: '2026-07-20', source: 'TWZ', sourceUrl: 'https://www.twz.com/sea/where-are-the-aircraft-carriers-july-20-2026' },
+  { id: 'CVN-76', name: 'USS Ronald Reagan', hullNumber: 'CVN-76', lat: 47.56, lng: -122.65, region: 'Puget Sound NSY, Bremerton (maintenance)', lastSeen: '2026-07-20', source: 'TWZ', sourceUrl: 'https://www.twz.com/sea/where-are-the-aircraft-carriers-july-20-2026' },
+  { id: 'CVN-74', name: 'USS John C. Stennis', hullNumber: 'CVN-74', lat: 36.98, lng: -76.44, region: 'Newport News Shipbuilding (RCOH)', lastSeen: '2026-07-20', source: 'TWZ', sourceUrl: 'https://www.twz.com/sea/where-are-the-aircraft-carriers-july-20-2026' },
+  { id: 'CVN-75', name: 'USS Harry S. Truman', hullNumber: 'CVN-75', lat: 37.00, lng: -76.46, region: 'Newport News Shipbuilding (RCOH)', lastSeen: '2026-07-20', source: 'TWZ', sourceUrl: 'https://www.twz.com/sea/where-are-the-aircraft-carriers-july-20-2026' },
 ];
 
 function matchRegion(text: string): { lat: number; lng: number; region: string } | null {

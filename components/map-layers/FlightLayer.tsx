@@ -8,6 +8,11 @@ const CircleMarker = dynamic(() => import('react-leaflet').then(mod => mod.Circl
 const Popup = dynamic(() => import('react-leaflet').then(mod => mod.Popup), { ssr: false });
 const Tooltip = dynamic(() => import('react-leaflet').then(mod => mod.Tooltip), { ssr: false });
 
+function compass(deg: number): string {
+  const dirs = ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW'];
+  return dirs[Math.round(deg / 22.5) % 16];
+}
+
 interface FlightLayerProps {
   bounds?: { north: number; south: number; east: number; west: number } | null;
 }
@@ -72,12 +77,13 @@ export default function FlightLayer({ bounds }: FlightLayerProps) {
                   {f.callsign || f.icao}
                 </div>
                 <div className="text-[#bbb] space-y-0.5 text-[11px]">
-                  <div>ICAO: {f.icao}{f.registration ? ` | REG: ${f.registration}` : ''}</div>
-                  {f.type && <div>TYPE: {f.type}</div>}
-                  <div>ALT: {Math.round(f.altitude).toLocaleString()} ft</div>
-                  <div>SPD: {Math.round(f.speed)} kts | HDG: {Math.round(f.heading)}°</div>
-                  {f.originCountry && <div>ORIGIN: {f.originCountry}</div>}
+                  {f.type && <div>Aircraft: {f.type}{f.registration ? ` (${f.registration})` : ''}</div>}
+                  {!f.type && f.registration && <div>Registration: {f.registration}</div>}
+                  <div>Altitude: {Math.round(f.altitude).toLocaleString()} ft (~{(f.altitude * 0.0003048).toFixed(1)} km)</div>
+                  <div>Speed: {Math.round(f.speed)} kn (~{Math.round(f.speed * 1.852)} km/h), heading {compass(f.heading)}</div>
+                  {f.originCountry && <div>Registered in: {f.originCountry}</div>}
                 </div>
+                <a href={`https://globe.adsbexchange.com/?icao=${f.icao}`} target="_blank" rel="noopener" className="text-[#d4a012] hover:underline mt-1.5 block text-[11px]">TRACK LIVE →</a>
               </div>
             </Popup>
           </CircleMarker>

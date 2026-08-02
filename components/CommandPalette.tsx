@@ -9,7 +9,7 @@ const LAYERS: { id: string; label: string }[] = [
   { id: 'cameras', label: 'CAM' }, { id: 'sentiment', label: 'TONE' },
   { id: 'displacement', label: 'DISP' }, { id: 'chokepoints', label: 'CHOKE' },
   { id: 'hazards', label: 'HAZARD' }, { id: 'firms', label: 'THERMAL' },
-  { id: 'frontline', label: 'FRONT' },
+  { id: 'frontline', label: 'FRONT' }, { id: 'outages', label: 'NET' },
 ];
 const SEV_COLOR: Record<string, string> = { critical: '#dc2626', high: '#f97316', medium: '#eab308', low: '#6b7280' };
 

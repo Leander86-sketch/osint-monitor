@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 import { enqueueGdeltRequest } from '@/lib/gdelt-queue';
+import fs from 'fs';
+import path from 'path';
 
 // GDELT GKG Tone-based sentiment for conflict regions
 // Free, no API key, updates every 15 minutes
@@ -14,7 +16,22 @@ interface SentimentPoint {
 }
 
 const CACHE_MS = 15 * 60_000; // 15 minutes per region
-const regionCache = new Map<string, { point: SentimentPoint | null; ts: number }>();
+const DISK_CACHE = path.join(process.cwd(), 'data', 'sentiment-cache.json');
+
+// Survive restarts: GDELT fills slowly (1 req/6s + 429 backoff), so an
+// in-memory-only cache would reset to an empty TONE layer on every deploy.
+function loadDisk(): Map<string, { point: SentimentPoint | null; ts: number }> {
+  try {
+    return new Map(Object.entries(JSON.parse(fs.readFileSync(DISK_CACHE, 'utf8'))));
+  } catch {
+    return new Map();
+  }
+}
+function saveDisk(m: Map<string, { point: SentimentPoint | null; ts: number }>): void {
+  try { fs.writeFileSync(DISK_CACHE, JSON.stringify(Object.fromEntries(m))); } catch { /* non-fatal */ }
+}
+
+const regionCache = loadDisk();
 let refreshing = false;
 
 // Regions to query sentiment for
@@ -92,10 +109,13 @@ async function refreshStaleRegions(): Promise<void> {
       .filter(r => now - (regionCache.get(r.name)?.ts || 0) > CACHE_MS)
       .sort((a, b) => (regionCache.get(a.name)?.ts || 0) - (regionCache.get(b.name)?.ts || 0))
       .slice(0, 6);
+    let changed = false;
     for (const region of stale) {
       const point = await fetchSentimentForRegion(region);
       regionCache.set(region.name, { point, ts: Date.now() });
+      changed = true;
     }
+    if (changed) saveDisk(regionCache);
   } finally {
     refreshing = false;
   }

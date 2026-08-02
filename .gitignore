@@ -49,3 +49,4 @@ next-env.d.ts
 /data/situation-state.json
 /data/situation-escalations.json
 data/frontline-cache.json
+data/sentiment-cache.json

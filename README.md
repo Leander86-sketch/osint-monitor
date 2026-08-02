@@ -1,6 +1,6 @@
 # ARGUS - Real-time global intelligence dashboard
 
-**Live:** https://argus.prototipo.nl
+**Live:** [argus.prototipo.nl](https://argus.prototipo.nl) · **Alerts:** [@ArgusDashboard on X](https://x.com/ArgusDashboard) · **Feed:** [/rss](https://argus.prototipo.nl/rss)
 
 [![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20project-e8760a?logo=kofi&logoColor=white)](https://ko-fi.com/lb377260)
 

@@ -145,6 +145,7 @@ export default function HomeClient() {
           </div>
           <div className="flex items-center gap-3">
             <span className="hidden lg:block text-[11px] font-mono text-[#888] uppercase tracking-wider">By Leander Bloot</span>
+            <a href="https://x.com/ArgusDashboard" target="_blank" rel="noopener noreferrer" title="ARGUS alerts on X" className="hidden lg:block text-[11px] font-mono text-[#888] hover:text-[#e8760a] tracking-wider transition-colors">𝕏 @ArgusDashboard</a>
             <button
               onClick={() => {
                 navigator.clipboard.writeText(window.location.href)

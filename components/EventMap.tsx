@@ -55,6 +55,7 @@ const LAYER_CONFIG: { id: LayerType; label: string; color: string; desc: string 
   { id: 'firms', label: 'THERMAL', color: '#ff6a00', desc: 'NASA FIRMS satellite thermal detections - fires, strikes, explosions' },
   { id: 'frontline', label: 'FRONT', color: '#b91c1c', desc: 'Assessed Russian-controlled territory in Ukraine (DeepStateMap, updated daily)' },
 ];
+const VALID_LAYERS: Set<string> = new Set(LAYER_CONFIG.map(l => l.id));
 
 function timeAgo(dateStr: string): string {
   const diff = Date.now() - new Date(dateStr).getTime();
@@ -69,7 +70,13 @@ function EventMap({ focusBbox, situations, bare }: { focusBbox?: [number, number
   const [events, setEvents] = useState<GeoEvent[]>([]);
   const [mounted, setMounted] = useState(false);
   const [typeFilter, setTypeFilter] = useState<string>('all');
-  const [activeLayers, setActiveLayers] = useState<Set<LayerType>>(new Set());
+  const [activeLayers, setActiveLayers] = useState<Set<LayerType>>(() => {
+    // Deep link: restore ?layers=flights,frontline on load
+    if (typeof window === 'undefined') return new Set();
+    const q = new URLSearchParams(window.location.search).get('layers');
+    if (!q) return new Set();
+    return new Set(q.split(',').filter((l): l is LayerType => VALID_LAYERS.has(l)));
+  });
   const [bounds, setBounds] = useState<{ north: number; south: number; east: number; west: number } | null>(null);
   const mapRef = useRef<LeafletMap | null>(null);
 
@@ -118,6 +125,15 @@ function EventMap({ focusBbox, situations, bare }: { focusBbox?: [number, number
       return next;
     });
   };
+
+  // Keep ?layers= in the URL in sync so the current view is shareable
+  useEffect(() => {
+    if (!mounted) return;
+    const url = new URL(window.location.href);
+    if (activeLayers.size) url.searchParams.set('layers', [...activeLayers].join(','));
+    else url.searchParams.delete('layers');
+    window.history.replaceState(null, '', url);
+  }, [activeLayers, mounted]);
 
   useEffect(() => {
     const onToggle = (e: Event) => {

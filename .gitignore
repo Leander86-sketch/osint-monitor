@@ -50,3 +50,4 @@ next-env.d.ts
 /data/situation-escalations.json
 data/frontline-cache.json
 data/sentiment-cache.json
+data/hazards-cache.json

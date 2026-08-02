@@ -1,10 +1,27 @@
 import { HazardEvent } from '../types';
+import fs from 'fs';
+import path from 'path';
 
 let cache: { ts: number; value: HazardEvent[] } = { ts: 0, value: [] };
+
+// Per-source last-good on disk: an upstream outage (GDACS times out
+// regularly) plus a server restart otherwise silently drops that source.
+const DISK_CACHE = path.join(process.cwd(), 'data', 'hazards-cache.json');
+const LAST_GOOD_MAX_AGE = 24 * 60 * 60_000;
+
+type LastGood = Record<string, { ts: number; items: HazardEvent[] }>;
+function loadLastGood(): LastGood {
+  try { return JSON.parse(fs.readFileSync(DISK_CACHE, 'utf8')); } catch { return {}; }
+}
+function saveLastGood(lg: LastGood): void {
+  try { fs.writeFileSync(DISK_CACHE, JSON.stringify(lg)); } catch { /* non-fatal */ }
+}
 
 export async function fetchHazards(): Promise<HazardEvent[]> {
   if (cache.value.length && Date.now() - cache.ts < 1800000) return cache.value;
   const out: HazardEvent[] = [];
+  const lastGood = loadLastGood();
+  const sourceOk: Record<string, HazardEvent[]> = {};
 
   // USGS earthquakes M4.5+ last day (GeoJSON, no key)
   try {
@@ -16,6 +33,7 @@ export async function fetchHazards(): Promise<HazardEvent[]> {
       if (!c || typeof c[0] !== 'number' || typeof c[1] !== 'number') continue;
       out.push({ id: 'usgs-' + f.id, kind: 'earthquake', lat: c[1], lng: c[0], title: p.title || p.place || 'Earthquake', magnitude: typeof p.mag === 'number' ? p.mag : null, alert: p.alert || null, date: new Date(p.time || Date.now()).toISOString(), url: p.url || '' });
     }
+    sourceOk.usgs = out.filter(h => h.id.startsWith('usgs-'));
   } catch (e) { console.error('[hazards] USGS failed', e); }
 
   // GDACS active disasters (GeoJSON, no key)
@@ -29,6 +47,7 @@ export async function fetchHazards(): Promise<HazardEvent[]> {
       const u = typeof p.url === 'string' ? p.url : (p.url && p.url.report) || '';
       out.push({ id: 'gdacs-' + (p.eventid || (c[0] + '_' + c[1])), kind: p.eventtype || 'hazard', lat: c[1], lng: c[0], title: p.name || p.htmldescription || 'Disaster', magnitude: null, alert: p.alertlevel || null, date: p.fromdate || new Date().toISOString(), url: u });
     }
+    sourceOk.gdacs = out.filter(h => h.id.startsWith('gdacs-'));
   } catch (e) { console.error('[hazards] GDACS failed', e); }
 
   // EMSC (seismicportal.eu) - faster than USGS for Europe/Mediterranean; dedup against USGS
@@ -49,7 +68,20 @@ export async function fetchHazards(): Promise<HazardEvent[]> {
       const mag = typeof p.mag === 'number' ? p.mag : null;
       out.push({ id: 'emsc-' + (p.unid || p.source_id || `${lat}_${lng}_${t}`), kind: 'earthquake', lat, lng, title: `M${mag ?? '?'} - ${p.flynn_region || 'Earthquake'} (EMSC)`, magnitude: mag, alert: null, date: new Date(p.time || Date.now()).toISOString(), url: p.unid ? `https://www.seismicportal.eu/eventdetails.html?unid=${p.unid}` : 'https://www.seismicportal.eu' });
     }
+    sourceOk.emsc = out.filter(h => h.id.startsWith('emsc-'));
   } catch (e) { console.error('[hazards] EMSC failed', e); }
+
+  // Failed sources: fall back to their last-good snapshot (max 24h old)
+  const now = Date.now();
+  for (const src of ['usgs', 'gdacs', 'emsc']) {
+    if (sourceOk[src]) {
+      lastGood[src] = { ts: now, items: sourceOk[src] };
+    } else if (lastGood[src] && now - lastGood[src].ts < LAST_GOOD_MAX_AGE) {
+      console.warn(`[hazards] ${src} down - serving last-good from ${new Date(lastGood[src].ts).toISOString()}`);
+      out.push(...lastGood[src].items);
+    }
+  }
+  saveLastGood(lastGood);
 
   cache = { ts: Date.now(), value: out };
   return out;

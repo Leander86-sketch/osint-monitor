@@ -7,16 +7,27 @@ interface ChannelConfig {
 
 const CHANNELS: ChannelConfig[] = [
   { name: 'Sky News', ytHandle: '@SkyNews' },
-  { name: 'Al Jazeera', ytHandle: '@aborgen' },
+  { name: 'Al Jazeera AR', ytHandle: '@aljazeera' },
   { name: 'Al Jazeera EN', ytHandle: '@AlJazeeraEnglish' },
   { name: 'France 24', ytHandle: '@FRANCE24English' },
   { name: 'France 24 FR', ytHandle: '@FRANCE24' },
   { name: 'Euronews', ytHandle: '@euronews' },
-  { name: 'DW News', ytHandle: '@daborgen' },
+  { name: 'DW News DE', ytHandle: '@dwdeutsch' },
   { name: 'DW News EN', ytHandle: '@DWNews' },
   { name: 'Al Arabiya', ytHandle: '@AlArabiya' },
   { name: 'CNBC', ytHandle: '@CNBCtelevision' },
   { name: 'NBC News', ytHandle: '@NBCNews' },
+  { name: 'TRT World', ytHandle: '@trtworld' },
+  { name: 'WION', ytHandle: '@WION' },
+  { name: 'CNA', ytHandle: '@channelnewsasia' },
+  { name: 'NHK World', ytHandle: '@NHKWorldJapan' },
+  { name: 'ABC News AU', ytHandle: '@abcnewsaustralia' },
+  { name: 'India Today', ytHandle: '@indiatoday' },
+  { name: 'LiveNOW FOX', ytHandle: '@livenowfox' },
+  { name: 'Bloomberg', ytHandle: '@markets' },
+  { name: 'Intel Cams', ytHandle: '@intelcamslive' },
+  { name: 'Jerusalem Cam', ytHandle: '@earthcam' },
+  { name: 'Bosphorus Cam', ytHandle: '@bosphorustraffic' },
 ];
 
 // Cache live video IDs for 10 minutes

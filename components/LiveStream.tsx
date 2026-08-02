@@ -17,6 +17,19 @@ const CHANNELS: ChannelDef[] = [
   { name: 'Al Arabiya', shortName: 'ARAB', color: '#b45309' },
   { name: 'CNBC', shortName: 'CNBC', color: '#0284c7' },
   { name: 'NBC News', shortName: 'NBC', color: '#7c3aed' },
+  { name: 'Al Jazeera AR', shortName: 'AJ-AR', color: '#d97706' },
+  { name: 'DW News DE', shortName: 'DW-DE', color: '#525252' },
+  { name: 'TRT World', shortName: 'TRT', color: '#dc2626' },
+  { name: 'WION', shortName: 'WION', color: '#0891b2' },
+  { name: 'CNA', shortName: 'CNA', color: '#b91c1c' },
+  { name: 'NHK World', shortName: 'NHK', color: '#64748b' },
+  { name: 'ABC News AU', shortName: 'ABC-AU', color: '#0ea5e9' },
+  { name: 'India Today', shortName: 'INDIA', color: '#ef4444' },
+  { name: 'LiveNOW FOX', shortName: 'FOX', color: '#1e40af' },
+  { name: 'Bloomberg', shortName: 'BBG', color: '#f59e0b' },
+  { name: 'Intel Cams', shortName: 'CAMS', color: '#10b981' },
+  { name: 'Jerusalem Cam', shortName: 'JLM', color: '#eab308' },
+  { name: 'Bosphorus Cam', shortName: 'BOSP', color: '#06b6d4' },
 ];
 
 export default function LiveStream() {

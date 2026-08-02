@@ -16,11 +16,12 @@ import CommandPalette from '@/components/CommandPalette';
 import TelegramFeed from '@/components/TelegramFeed';
 import HumanitarianFeed from '@/components/HumanitarianFeed';
 import SanctionsFeed from '@/components/SanctionsFeed';
+import BlueskyFeed from '@/components/BlueskyFeed';
 import SatellitePanel from '@/components/SatellitePanel';
 import ArmsPanel from '@/components/ArmsPanel';
 
 const SEV_COLOR: Record<string, string> = { critical: '#dc2626', high: '#f97316', medium: '#eab308', low: '#6b7280' };
-type Panel = 'feed' | 'alerts' | 'telegram' | 'humanitarian' | 'sanctions' | 'satellite' | 'arms';
+type Panel = 'feed' | 'alerts' | 'telegram' | 'bluesky' | 'humanitarian' | 'sanctions' | 'satellite' | 'arms';
 
 function jump(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -54,7 +55,7 @@ export default function HomeClient() {
   useEffect(() => {
     const q = new URLSearchParams(window.location.search);
     const p = q.get('panel');
-    if (p && ['feed', 'alerts', 'telegram', 'humanitarian', 'sanctions', 'satellite', 'arms'].includes(p)) setPanel(p as Panel);
+    if (p && ['feed', 'alerts', 'telegram', 'bluesky', 'humanitarian', 'sanctions', 'satellite', 'arms'].includes(p)) setPanel(p as Panel);
     pendingSitRef.current = q.get('sit');
   }, []);
 
@@ -205,7 +206,7 @@ export default function HomeClient() {
         <h2 className="text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.2em] mb-3">Raw Intel — Unfiltered</h2>
         <div className="border border-[#1a1a1a] rounded bg-[#080808] overflow-hidden" style={{ height: '70vh' }}>
           <div className="flex border-b border-[#1a1a1a] overflow-x-auto">
-            {([['feed', 'Intel Feed'], ['alerts', 'Alerts'], ['telegram', 'Telegram'], ['humanitarian', 'Aid'], ['sanctions', 'Sanctions'], ['satellite', 'SAT'], ['arms', 'Arms']] as [Panel, string][]).map(([k, label]) => (
+            {([['feed', 'Intel Feed'], ['alerts', 'Alerts'], ['telegram', 'Telegram'], ['bluesky', 'BSKY'], ['humanitarian', 'Aid'], ['sanctions', 'Sanctions'], ['satellite', 'SAT'], ['arms', 'Arms']] as [Panel, string][]).map(([k, label]) => (
               <button key={k} onClick={() => setPanel(k)} className={`flex-1 whitespace-nowrap text-[11px] py-2.5 px-3 font-mono uppercase tracking-[0.15em] transition-colors ${panel === k ? 'text-[#e8760a] border-b border-[#e8760a] bg-[#e8760a]/5' : 'text-[#888] hover:text-[#ccc]'}`}>{label}</button>
             ))}
           </div>
@@ -213,6 +214,7 @@ export default function HomeClient() {
             {panel === 'feed' && <LiveFeed keywordFilter={keywordFilter} onClearFilter={() => setKeywordFilter('')} />}
             {panel === 'alerts' && <AlertPanel />}
             {panel === 'telegram' && <TelegramFeed />}
+            {panel === 'bluesky' && <BlueskyFeed />}
             {panel === 'humanitarian' && <HumanitarianFeed />}
             {panel === 'sanctions' && <SanctionsFeed />}
             {panel === 'satellite' && <SatellitePanel />}

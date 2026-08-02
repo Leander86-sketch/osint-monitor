@@ -28,6 +28,20 @@ function Spark({ data, color }: { data: number[]; color: string }) {
 
 interface Detail { items: NewsItem[]; related: { slug: string; title: string; severity: string }[] }
 
+// Situation -> most relevant live channel (names must match LiveStream CHANNELS)
+const SITUATION_CHANNELS: Record<string, string> = {
+  'gaza': 'Al Jazeera EN',
+  'iran-israel': 'Al Jazeera EN',
+  'lebanon-hezbollah': 'Al Jazeera EN',
+  'sudan': 'Al Jazeera EN',
+  'syria': 'Al Jazeera EN',
+  'ukraine-front': 'Intel Cams',
+  'taiwan-strait': 'CNA',
+  'korean-peninsula': 'NHK World',
+  'strait-of-hormuz': 'Al Arabiya',
+  'red-sea-bab-al-mandab': 'Al Arabiya',
+};
+
 export default function SituationCard({ s, rank, onFilter, onFocus }: { s: Situation; rank: number; onFilter?: (kw: string) => void; onFocus?: (bbox: [number, number, number, number]) => void }) {
   const [open, setOpen] = useState(false);
   const [detail, setDetail] = useState<Detail | null>(null);
@@ -85,6 +99,12 @@ export default function SituationCard({ s, rank, onFilter, onFocus }: { s: Situa
             <>
               {onFocus && (
                 <button onClick={() => onFocus(s.bbox)} className="mb-2 text-[9px] font-mono px-2 py-1 rounded border border-[#e8760a]/30 text-[#e8760a] hover:bg-[#e8760a]/10 uppercase tracking-wider">⊕ Focus on map</button>
+              )}
+              {SITUATION_CHANNELS[s.slug] && (
+                <button
+                  onClick={() => window.dispatchEvent(new CustomEvent('argus:watch-channel', { detail: SITUATION_CHANNELS[s.slug] }))}
+                  className="mb-2 ml-2 text-[9px] font-mono px-2 py-1 rounded border border-[#dc2626]/30 text-[#dc2626] hover:bg-[#dc2626]/10 uppercase tracking-wider"
+                >▶ Watch {SITUATION_CHANNELS[s.slug]}</button>
               )}
               {s.actors.length > 0 && (
                 <div className="flex flex-wrap gap-1 mb-2">

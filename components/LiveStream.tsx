@@ -46,6 +46,21 @@ export default function LiveStream() {
     return () => clearInterval(interval);
   }, []);
 
+  // Situation dossiers can switch the stream: 'argus:watch-channel' with a channel name
+  useEffect(() => {
+    const onWatch = (e: Event) => {
+      const name = (e as CustomEvent).detail as string;
+      const idx = CHANNELS.findIndex(c => c.name === name);
+      if (idx >= 0) {
+        setActiveChannel(idx);
+        setCollapsed(false);
+        setTimeout(() => document.getElementById('live-stream')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 150);
+      }
+    };
+    window.addEventListener('argus:watch-channel', onWatch);
+    return () => window.removeEventListener('argus:watch-channel', onWatch);
+  }, []);
+
   const fetchVideoIds = async () => {
     try {
       const res = await fetch('/api/live');
@@ -69,7 +84,7 @@ export default function LiveStream() {
   const availableCount = Object.keys(videoIds).length;
 
   return (
-    <div className="border-b border-[#1a1a1a]">
+    <div id="live-stream" className="border-b border-[#1a1a1a]">
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-2 border-b border-[#1a1a1a] bg-[#080808]">
         <div className="flex items-center gap-2">

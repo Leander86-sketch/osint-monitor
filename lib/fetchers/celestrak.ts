@@ -3,6 +3,18 @@ import { getStore } from '../layer-store';
 import * as satellite from 'satellite.js';
 
 const CELESTRAK_URL = 'https://celestrak.org/NORAD/elements/gp.php?GROUP=active&FORMAT=tle';
+// TLEs persist on disk: restarts must NOT trigger a refetch (CelesTrak 403-blocks
+// IPs that re-download the full catalog; slightly stale TLEs are fine to plot).
+import fs from 'fs';
+import path from 'path';
+const TLE_DISK = path.join(process.cwd(), 'data', 'tle-cache.json');
+const TLE_STALE_OK_MS = 7 * 24 * 60 * 60_000;
+function loadTleDisk(): { ts: number; tles: string } | null {
+  try { return JSON.parse(fs.readFileSync(TLE_DISK, 'utf8')); } catch { return null; }
+}
+function saveTleDisk(tles: string): void {
+  try { fs.writeFileSync(TLE_DISK, JSON.stringify({ ts: Date.now(), tles })); } catch { /* non-fatal */ }
+}
 const TLE_CACHE_MS = 24 * 60 * 60_000; // 24 hours (CelesTrak fair use policy)
 const PROPAGATION_CACHE_MS = 10_000; // 10 seconds
 
@@ -94,6 +106,15 @@ export async function fetchSatellites(): Promise<Satellite[]> {
     return store.data;
   }
 
+  // Cold start: reuse on-disk TLEs first (up to 7 days old) before hitting CelesTrak
+  if (!store.tles) {
+    const disk = loadTleDisk();
+    if (disk && Date.now() - disk.ts < TLE_STALE_OK_MS) {
+      store.tles = disk.tles;
+      store.lastTleFetch = disk.ts;
+    }
+  }
+
   // Fetch TLEs if needed (24h cache)
   if (!store.tles || Date.now() - store.lastTleFetch > TLE_CACHE_MS) {
     try {
@@ -104,9 +125,15 @@ export async function fetchSatellites(): Promise<Satellite[]> {
       if (!res.ok) throw new Error(`CelesTrak ${res.status}`);
       store.tles = await res.text();
       store.lastTleFetch = Date.now();
+      saveTleDisk(store.tles);
     } catch (err) {
       console.error('[CelesTrak] TLE fetch failed:', err);
-      if (!store.tles) return store.data;
+      // Keep serving whatever TLEs we have (disk or memory); retry in 1h, not every call
+      if (store.tles) {
+        store.lastTleFetch = Date.now() - TLE_CACHE_MS + 60 * 60_000;
+      } else {
+        return store.data;
+      }
     }
   }
 

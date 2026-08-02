@@ -121,6 +121,7 @@ export const RSS_FEEDS: FeedConfig[] = [
   { name: 'Bellingcat', url: 'https://www.bellingcat.com/feed/', category: 'osint', enabled: true, tier: 2, reliability: 85, region: 'global' },
   { name: 'Krebs Security', url: 'https://krebsonsecurity.com/feed/', category: 'cyber', enabled: true, tier: 2, reliability: 88, region: 'global' },
   { name: 'The Hacker News', url: 'https://feeds.feedburner.com/TheHackersNews', category: 'cyber', enabled: true, tier: 2, reliability: 78, region: 'global' },
+  { name: 'NetBlocks', url: 'https://netblocks.org/feed', category: 'cyber', enabled: true, tier: 2, reliability: 85, region: 'global' },
   { name: 'BleepingComputer', url: 'https://www.bleepingcomputer.com/feed/', category: 'cyber', enabled: true, tier: 2, reliability: 78, region: 'global' },
 
   // ===================== TIER 2 — ENERGY & COMMODITIES =====================

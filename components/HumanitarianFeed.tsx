@@ -62,9 +62,9 @@ export default function HumanitarianFeed() {
   }, [fetchData]);
 
   // Get unique countries for filter
-  const countries = [...new Set(reports.map(r => r.country.split(', ')[0]))].sort();
+  const countries = [...new Set(reports.map(r => (r.country || '').split(', ')[0]).filter(Boolean))].sort();
   const filtered = countryFilter
-    ? reports.filter(r => r.country.includes(countryFilter))
+    ? reports.filter(r => (r.country || '').includes(countryFilter))
     : reports;
 
   if (loading) {
@@ -119,8 +119,12 @@ export default function HumanitarianFeed() {
                 <div className="min-w-0 flex-1">
                   <div className="text-[12px] text-[#ccc] font-mono leading-snug line-clamp-2">{report.title}</div>
                   <div className="flex items-center gap-2 mt-1 text-[10px] font-mono text-[#666]">
-                    <span className="text-[#888]">{report.country}</span>
-                    <span>·</span>
+                    {report.country && (
+                      <>
+                        <span className="text-[#888]">{report.country}</span>
+                        <span>·</span>
+                      </>
+                    )}
                     <span>{report.source}</span>
                     <span>·</span>
                     <span>{timeAgo(report.date)}</span>

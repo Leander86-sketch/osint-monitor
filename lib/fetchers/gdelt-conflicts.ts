@@ -1,6 +1,17 @@
 import { ConflictEvent } from '../types';
 import { getStore } from '../layer-store';
 import { enqueueGdeltRequest } from '../gdelt-queue';
+import fs from 'fs';
+import path from 'path';
+
+// Restarts + GDELT 429 streaks otherwise leave this layer empty for hours
+const DISK_CACHE = path.join(process.cwd(), 'data', 'conflicts-cache.json');
+function loadDisk(): { ts: number; events: ConflictEvent[] } | null {
+  try { return JSON.parse(fs.readFileSync(DISK_CACHE, 'utf8')); } catch { return null; }
+}
+function saveDisk(events: ConflictEvent[]): void {
+  try { fs.writeFileSync(DISK_CACHE, JSON.stringify({ ts: Date.now(), events })); } catch { /* non-fatal */ }
+}
 
 const GDELT_DOC_API = 'https://api.gdeltproject.org/api/v2/doc/doc';
 const CACHE_MS = 6 * 3600_000; // 6 hours
@@ -189,6 +200,14 @@ function extractGeoFromTitle(title: string): { lat: number; lng: number; name: s
 
 export async function fetchGdeltConflicts(): Promise<ConflictEvent[]> {
   const store = getStore().conflicts;
+  // Cold start: seed from the last-good disk snapshot (max 24h old)
+  if (store.data.length === 0) {
+    const disk = loadDisk();
+    if (disk && Date.now() - disk.ts < 24 * 3600_000) {
+      store.data = disk.events;
+      store.lastFetch = disk.ts;
+    }
+  }
   if (Date.now() - store.lastFetch < CACHE_MS && store.data.length > 0) {
     return store.data;
   }
@@ -261,8 +280,16 @@ export async function fetchGdeltConflicts(): Promise<ConflictEvent[]> {
       .sort((a, b) => b.numArticles - a.numArticles)
       .slice(0, 150);
 
+    // All-429 runs yield 0 articles - keep previous data, retry in 15 min
+    if (events.length === 0) {
+      console.warn('[GDELT Conflicts] 0 events (rate-limited?) - keeping previous data');
+      store.lastFetch = Date.now() - CACHE_MS + 15 * 60_000;
+      return store.data;
+    }
+
     store.data = events;
     store.lastFetch = Date.now();
+    saveDisk(events);
 
     return events;
   } catch (err) {

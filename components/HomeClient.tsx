@@ -16,6 +16,7 @@ import CommandPalette from '@/components/CommandPalette';
 import TelegramFeed from '@/components/TelegramFeed';
 import HumanitarianFeed from '@/components/HumanitarianFeed';
 import SanctionsFeed from '@/components/SanctionsFeed';
+import SourcesPanel from '@/components/SourcesPanel';
 import BlueskyFeed from '@/components/BlueskyFeed';
 import SatellitePanel from '@/components/SatellitePanel';
 import ArmsPanel from '@/components/ArmsPanel';
@@ -145,6 +146,7 @@ export default function HomeClient() {
           </div>
           <div className="flex items-center gap-3">
             <span className="hidden lg:block text-[11px] font-mono text-[#888] uppercase tracking-wider">By Leander Bloot</span>
+            <SourcesPanel />
             <a href="https://x.com/ArgusDashboard" target="_blank" rel="noopener noreferrer" title="ARGUS alerts on X" className="hidden lg:block text-[11px] font-mono text-[#888] hover:text-[#e8760a] tracking-wider transition-colors">𝕏 @ArgusDashboard</a>
             <button
               onClick={() => {

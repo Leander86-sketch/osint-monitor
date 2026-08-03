@@ -133,7 +133,7 @@ export default function SourcesPanel() {
                 </div>
 
                 <div className="pt-1 text-[11px] text-[#666] border-t border-[#1a1a1a]">
-                  Open source (AGPL-3.0) · <a href="https://github.com/Leander86-sketch/osint-monitor" target="_blank" rel="noopener" className="text-[#888] hover:text-[#e8760a]">source on GitHub</a> · alerts on <a href="https://x.com/ArgusDashboard" target="_blank" rel="noopener" className="text-[#888] hover:text-[#e8760a]">X</a>
+                  Open source (AGPL-3.0) · <a href="https://github.com/Leander86-sketch/osint-monitor" target="_blank" rel="noopener" className="text-[#888] hover:text-[#e8760a]">source on GitHub</a> · <a href="https://x.com/ArgusDashboard" target="_blank" rel="noopener" className="text-[#888] hover:text-[#e8760a]">alerts on X</a> · <a href="https://ko-fi.com/lb377260" target="_blank" rel="noopener" className="text-[#888] hover:text-[#e8760a]">support on Ko-fi</a>
                 </div>
               </>}
             </div>

@@ -9,6 +9,8 @@ interface SourcesData {
   layers: LayerInfo[];
   intel: { label: string; source: string }[];
   feeds: { total: number; byRegion: Record<string, number>; byTier: Record<string, number> };
+  livestreams: { channels: number; summary: string };
+  derived: { label: string; how: string }[];
   caveats: string[];
 }
 
@@ -97,12 +99,29 @@ export default function SourcesPanel() {
                 <div>
                   <h3 className="text-[10px] text-[#666] uppercase tracking-[0.2em] mb-2">News & intel · {data.feeds.total} feeds</h3>
                   <p className="text-[#999] leading-relaxed mb-2">
-                    {data.feeds.total} tiered news feeds across {Object.keys(data.feeds.byRegion).length} regions
-                    ({Object.entries(data.feeds.byRegion).map(([r, n]) => `${r} ${n}`).join(' · ')}),
+                    <span className="text-[#ddd] font-bold">{data.feeds.total} tiered news feeds across {Object.keys(data.feeds.byRegion).length} regions</span>
+                    {' '}({Object.entries(data.feeds.byRegion).map(([r, n]) => `${r} ${n}`).join(' · ')}),
                     clustered into live situations. Corroboration grade A/B/C reflects how many independent, high-tier sources back a situation.
                   </p>
                   <div className="flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-[#888]">
                     {data.intel.map(p => (<span key={p.label}><span className="text-[#aaa]">{p.label}</span> — {p.source}</span>))}
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-[10px] text-[#666] uppercase tracking-[0.2em] mb-2">Live video · {data.livestreams.channels} channels</h3>
+                  <p className="text-[#999] leading-relaxed">{data.livestreams.summary}</p>
+                </div>
+
+                <div>
+                  <h3 className="text-[10px] text-[#666] uppercase tracking-[0.2em] mb-2">How the indicators work · rule-based, no AI</h3>
+                  <div className="space-y-1.5">
+                    {data.derived.map(d => (
+                      <div key={d.label} className="border-b border-[#111] pb-1">
+                        <span className="text-[#e8760a]">{d.label}</span>
+                        <span className="text-[#999]"> — {d.how}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
 

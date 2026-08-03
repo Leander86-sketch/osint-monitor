@@ -30,6 +30,19 @@ export const INTEL_PANELS: { label: string; source: string }[] = [
   { label: 'Arms', source: 'SIPRI arms transfers' },
 ];
 
+export const LIVESTREAMS = {
+  channels: 22,
+  summary: '22 live news channels (Al Jazeera, France 24, DW, TRT World, CNA, NHK, Sky, i24, ...) plus OSINT cameras — Bosphorus ship traffic, Jerusalem, and a Ukraine multi-cam — streamed via YouTube.',
+};
+
+export const DERIVED_SIGNALS: { label: string; how: string }[] = [
+  { label: 'Global threat (0–100)', how: 'Every live situation weighed by severity × how active it is (breaking/active/cooling) × report velocity, on a smooth 0–100 curve. Recomputed continuously.' },
+  { label: 'Situation severity', how: 'Critical / high / medium / low, taken from the strongest severity keywords across a situation\'s headlines.' },
+  { label: 'Status', how: 'Breaking = 4+ reports in the last hour · active = activity within 24h · cooling = gone quiet.' },
+  { label: 'Corroboration A/B/C', how: 'A = 2+ tier-1 outlets or 5+ distinct sources · B = some corroboration · C = thin sourcing.' },
+  { label: 'Escalation alerts (top strip)', how: 'Fire when a situation\'s severity jumps or its report volume surges versus its own baseline.' },
+];
+
 export function feedStats() {
   const enabled = RSS_FEEDS.filter(f => f.enabled);
   const byRegion: Record<string, number> = {};

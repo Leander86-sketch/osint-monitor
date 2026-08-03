@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 
 interface LayerInfo { label: string; shows: string; source: string; cadence: string }
 interface SourcesData {
@@ -14,20 +15,27 @@ interface SourcesData {
 export default function SourcesPanel() {
   const [open, setOpen] = useState(false);
   const [teasing, setTeasing] = useState(false);
+  const [pulsing, setPulsing] = useState(false);
   const [data, setData] = useState<SourcesData | null>(null);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   // First visit: announce the button once (label shows, then collapses to icon).
   // Never opens the panel automatically; localStorage keeps returning visitors calm.
   useEffect(() => {
+    // Every visit: a short attention pulse on the icon.
+    const p1 = setTimeout(() => setPulsing(true), 800);
+    const p2 = setTimeout(() => setPulsing(false), 4500);
     let seen = false;
     try { seen = localStorage.getItem('argus-sources-teased') === '1'; } catch { /* ignore */ }
-    if (seen) return;
+    if (seen) return () => { clearTimeout(p1); clearTimeout(p2); };
+    // First visit only: also expand the label once.
     const t1 = setTimeout(() => setTeasing(true), 1200);
     const t2 = setTimeout(() => {
       setTeasing(false);
       try { localStorage.setItem('argus-sources-teased', '1'); } catch { /* ignore */ }
     }, 6500);
-    return () => { clearTimeout(t1); clearTimeout(t2); };
+    return () => { clearTimeout(p1); clearTimeout(p2); clearTimeout(t1); clearTimeout(t2); };
   }, []);
 
   const load = useCallback(async () => {
@@ -38,7 +46,7 @@ export default function SourcesPanel() {
     } catch { /* ignore */ }
   }, [data]);
 
-  const openPanel = () => { setTeasing(false); setOpen(true); load(); };
+  const openPanel = () => { setTeasing(false); setPulsing(false); setOpen(true); load(); };
 
   // Esc closes; only user action closes (never auto-collapses while reading)
   useEffect(() => {
@@ -55,14 +63,14 @@ export default function SourcesPanel() {
         title="What am I looking at? — sources & method"
         className={`flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-wider rounded px-2 py-1 transition-all ${teasing ? 'text-[#e8760a] bg-[#e8760a]/10 ring-1 ring-[#e8760a]/40' : 'text-[#888] hover:text-[#e8760a]'}`}
       >
-        <span className={teasing ? 'animate-pulse' : ''}>ⓘ</span>
+        <span className={(teasing || pulsing) ? 'animate-pulse text-[#e8760a]' : ''}>ⓘ</span>
         <span className={`overflow-hidden whitespace-nowrap transition-all duration-500 ${teasing ? 'max-w-[220px] opacity-100' : 'max-w-0 opacity-0'}`}>
           what am I looking at?
         </span>
       </button>
 
-      {open && (
-        <div className="fixed inset-0 z-[1000] flex items-start justify-center p-4 sm:p-8 bg-black/70 backdrop-blur-sm overflow-y-auto" onClick={() => setOpen(false)}>
+      {open && mounted && createPortal(
+        <div className="fixed inset-0 z-[3000] flex items-start justify-center p-4 sm:p-8 bg-black/80 overflow-y-auto" onClick={() => setOpen(false)}>
           <div className="relative w-full max-w-2xl bg-[#0a0a0a] border border-[#222] rounded-lg shadow-2xl my-4" onClick={e => e.stopPropagation()}>
             <div className="flex items-center justify-between px-5 py-3 border-b border-[#1a1a1a] sticky top-0 bg-[#0a0a0a] rounded-t-lg">
               <h2 className="text-[12px] font-mono font-bold text-[#e8760a] uppercase tracking-[0.2em]">What am I looking at?</h2>
@@ -111,7 +119,8 @@ export default function SourcesPanel() {
               </>}
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );

@@ -56,3 +56,6 @@ data/carriers-usni.json
 data/tle-cache.json
 data/x-alerts-journal.json
 data/x-manual-log.json
+
+# runtime-caches en snapshots: machine-lokaal, horen niet in git
+/data/

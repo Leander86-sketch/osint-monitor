@@ -11,7 +11,7 @@ export const MAP_LAYERS: LayerInfo[] = [
   { label: 'SATELLITE', shows: 'Satellites overhead', source: 'CelesTrak (TLE orbital elements)', cadence: 'daily elements' },
   { label: 'CONFLICT', shows: 'Conflict events from news', source: 'GDELT (news mentions)', cadence: '~15 min' },
   { label: 'CVN', shows: 'US carrier strike groups', source: 'USNI Fleet Tracker', cadence: 'weekly' },
-  { label: 'FRONT', shows: 'Assessed frontline, Ukraine', source: 'DeepStateMap', cadence: 'daily' },
+  { label: 'FRONT', shows: 'Assessed frontline, Ukraine', source: 'DeepStateMap (via open mirror, 283 days of history)', cadence: 'daily' },
   { label: 'TONE', shows: 'News sentiment by region', source: 'GDELT tone', cadence: '~15 min' },
   { label: 'NET', shows: 'Internet outages & anomalies', source: 'Cloudflare Radar', cadence: '~30 min' },
   { label: 'THERMAL', shows: 'Fires, strikes, explosions (heat)', source: 'NASA FIRMS (VIIRS)', cadence: '~3 hours' },
@@ -31,8 +31,8 @@ export const INTEL_PANELS: { label: string; source: string }[] = [
 ];
 
 export const LIVESTREAMS = {
-  channels: 22,
-  summary: '22 live news channels (Al Jazeera, France 24, DW, TRT World, CNA, NHK, Sky, i24, ...) plus OSINT cameras — Bosphorus ship traffic, Jerusalem, and a Ukraine multi-cam — streamed via YouTube.',
+  channels: 30,
+  summary: '30 news channels that are broadcasting live at this moment, checked continuously — Al Jazeera (EN/AR), Sky News, Sky News Arabia, i24NEWS, France 24, Euronews, DW, TRT World, CNA, NHK, ABC (US/AU), CNN, AP, NBC, Bloomberg, Africanews, TVP World, NDTV, plus Ukrainian sources United24 and Espreso TV — with an OSINT multi-cam for the Middle East. A channel only appears while it is genuinely on air; it drops out the moment it stops.',
 };
 
 export const DERIVED_SIGNALS: { label: string; how: string }[] = [

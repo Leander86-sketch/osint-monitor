@@ -179,7 +179,13 @@ export default function HomeClient() {
             <TypeOnHeadline situations={situations} />
           </div>
         </div>
-        <div className="bg-[#080808] p-3 overflow-y-auto h-[72vh] min-h-[420px]">
+        <div className="bg-[#080808] overflow-y-auto h-[72vh] min-h-[420px]">
+          {/* Livestreams stonden onderaan de pagina, 2,5 schermhoogtes onder de vouw.
+              Het enige onbewerkte materiaal op het dashboard lag daarmee het verst
+              weg, terwijl alles erboven bewerkte signalen zijn. Hier staat het
+              naast de kaart, boven de situatielijst. */}
+          <div className="border-b border-[#1a1a1a]"><LiveStream /></div>
+          <div className="p-3">
           <h2 className="text-[11px] font-mono font-bold text-[#888] uppercase tracking-[0.2em] mb-2">Top Situations</h2>
           <div className="space-y-1">
             {top.map((s, i) => (
@@ -191,6 +197,7 @@ export default function HomeClient() {
               </button>
             ))}
             {top.length === 0 && <div className="text-[10px] font-mono text-[#333] py-8 text-center uppercase">Monitoring...</div>}
+          </div>
           </div>
         </div>
       </section>
@@ -228,10 +235,7 @@ export default function HomeClient() {
 
       <section id="band-ref" className="scroll-mt-32 px-4 py-6 border-t border-[#111]">
         <h2 className="text-[11px] font-mono font-bold text-[#666] uppercase tracking-[0.2em] mb-3">Reference — Bedrock</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-[22rem_1fr] gap-4">
-          <div className="border border-[#1a1a1a] rounded overflow-hidden"><LiveStream /></div>
-          <div className="border border-[#1a1a1a] rounded bg-[#080808] max-h-[600px] overflow-y-auto"><Dashboard /></div>
-        </div>
+        <div className="border border-[#1a1a1a] rounded bg-[#080808] max-h-[600px] overflow-y-auto"><Dashboard /></div>
       </section>
 
       <footer className="px-5 py-4 border-t border-[#1a1a1a] flex items-center justify-between text-[10px] font-mono text-[#444]">

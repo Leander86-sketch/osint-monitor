@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { enqueueGdeltRequest } from '@/lib/gdelt-queue';
+import { enqueueGdeltRequest, gdeltGet } from '@/lib/gdelt-queue';
 import fs from 'fs';
 import path from 'path';
 
@@ -68,11 +68,21 @@ async function fetchSentimentForRegion(region: typeof SENTIMENT_REGIONS[0]): Pro
       format: 'json',
       timespan: '24h',
     });
-    const res = await enqueueGdeltRequest(() =>
-      fetch(`https://api.gdeltproject.org/api/v2/doc/doc?${params}`, { signal: AbortSignal.timeout(15000) })
-    );
-    if (!res.ok) return null;
-    const data = await res.json();
+    // Zelfde reden als bij gdelt-conflicts: fetch() kapt GDELT af op undici's
+    // connect-timeout van 10s terwijl GDELT er 11-15s over doet. Bovendien
+    // weigert GDELT grofweg drie op de vier verzoeken met een 429, dus één
+    // poging per regio liet deze cache maandenlang met louter nulls achter.
+    let data: { tonechart?: Array<{ bin?: number; count?: number }> } | null = null;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const res = await enqueueGdeltRequest(() =>
+          gdeltGet(`https://api.gdeltproject.org/api/v2/doc/doc?${params}`)
+        );
+        if (res.status === 200) { data = JSON.parse(res.body); break; }
+      } catch { /* volgende poging */ }
+      await new Promise(r => setTimeout(r, 6000));
+    }
+    if (!data) return null;
 
     // ToneChart returns { tonechart: [{ bin: number, count: number }] }
     const bins = data.tonechart || [];

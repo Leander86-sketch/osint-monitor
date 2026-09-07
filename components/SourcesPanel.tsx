@@ -22,22 +22,34 @@ export default function SourcesPanel() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
-  // First visit: announce the button once (label shows, then collapses to icon).
-  // Never opens the panel automatically; localStorage keeps returning visitors calm.
+  // Eerste bezoek: het paneel opent zichzelf één keer, zodat een nieuwe bezoeker
+  // weet waar hij naar kijkt voordat hij een muur van cijfers ziet. Daarna nooit
+  // meer ongevraagd — alleen een korte puls op het icoon.
+  //
+  // De sleutel draagt een versie. Wordt de inhoud wezenlijk bijgewerkt (nieuwe
+  // lagen, ander bronnenaanbod), bump 'm dan: iedereen krijgt de introductie dan
+  // opnieuw te zien, ook wie de vorige al had gehad.
+  const INTRO_KEY = 'argus-intro-v2';
+
   useEffect(() => {
-    // Every visit: a short attention pulse on the icon.
     const p1 = setTimeout(() => setPulsing(true), 800);
     const p2 = setTimeout(() => setPulsing(false), 4500);
+
     let seen = false;
-    try { seen = localStorage.getItem('argus-sources-teased') === '1'; } catch { /* ignore */ }
+    try { seen = localStorage.getItem(INTRO_KEY) === '1'; } catch { /* ignore */ }
     if (seen) return () => { clearTimeout(p1); clearTimeout(p2); };
-    // First visit only: also expand the label once.
-    const t1 = setTimeout(() => setTeasing(true), 1200);
-    const t2 = setTimeout(() => {
-      setTeasing(false);
-      try { localStorage.setItem('argus-sources-teased', '1'); } catch { /* ignore */ }
-    }, 6500);
-    return () => { clearTimeout(p1); clearTimeout(p2); clearTimeout(t1); clearTimeout(t2); };
+
+    // Even wachten tot de kaart en de cijfers staan; direct openen op een lege
+    // pagina oogt als een foutmelding.
+    const t1 = setTimeout(() => {
+      setPulsing(false);
+      setOpen(true);
+      void load();
+      try { localStorage.setItem(INTRO_KEY, '1'); } catch { /* ignore */ }
+    }, 1800);
+
+    return () => { clearTimeout(p1); clearTimeout(p2); clearTimeout(t1); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const load = useCallback(async () => {

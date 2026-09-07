@@ -258,8 +258,15 @@ function EventMap({ focusBbox, situations, bare }: { focusBbox?: [number, number
             }
           }}
         >
+          {/* CARTO zette hun gratis basemaps in aug/sep 2026 achter een API-key: de
+              tiles komen nog met HTTP 200 door, maar met "API KEY REQUIRED" er
+              dwars overheen gebrand. Esri's dark canvas is key-vrij en donker
+              genoeg voor dit thema; de landnamen zijn op een conflictkaart eerder
+              winst dan ruis. Let op de tile-volgorde: Esri is {z}/{y}/{x}. */}
           <TileLayer
-            url="https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png"
+            url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"
+            attribution="&copy; Esri"
+            maxZoom={16}
           />
 
           {/* RSS-based geo events (always shown) */}

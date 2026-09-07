@@ -9,7 +9,6 @@ const CHANNELS: ChannelConfig[] = [
   { name: 'Sky News', ytHandle: '@SkyNews' },
   { name: 'Al Jazeera AR', ytHandle: '@aljazeera' },
   { name: 'Al Jazeera EN', ytHandle: '@AlJazeeraEnglish' },
-  { name: 'France 24', ytHandle: '@FRANCE24English' },
   { name: 'France 24 FR', ytHandle: '@FRANCE24' },
   { name: 'Euronews', ytHandle: '@euronews' },
   { name: 'DW News DE', ytHandle: '@dwdeutsch' },
@@ -26,8 +25,20 @@ const CHANNELS: ChannelConfig[] = [
   { name: 'LiveNOW FOX', ytHandle: '@livenowfox' },
   { name: 'Bloomberg', ytHandle: '@markets' },
   { name: 'Intel Cams', ytHandle: '@intelcamslive' },
-  { name: 'Jerusalem Cam', ytHandle: '@earthcam' },
+  { name: 'EarthCam', ytHandle: '@earthcam' },
   { name: 'Bosphorus Cam', ytHandle: '@bosphorustraffic' },
+  { name: 'i24NEWS', ytHandle: '@i24NEWS_EN' },
+  { name: 'United24 UA', ytHandle: '@United24media' },
+  { name: 'Espreso TV', ytHandle: '@espresotv' },
+  { name: 'Sky News Arabia', ytHandle: '@skynewsarabia' },
+  { name: 'AP News', ytHandle: '@AssociatedPress' },
+  { name: 'CNN', ytHandle: '@CNN' },
+  { name: 'ABC News US', ytHandle: '@ABCNews' },
+  { name: 'Africanews', ytHandle: '@africanews' },
+  { name: 'TVP World', ytHandle: '@TVPWorld' },
+  { name: 'NDTV', ytHandle: '@ndtv' },
+  { name: 'Firstpost', ytHandle: '@Firstpost' },
+  { name: 'Euronews FR', ytHandle: '@euronewsfr' },
 ];
 
 // Cache live video IDs for 10 minutes
@@ -42,18 +53,24 @@ async function fetchLiveVideoId(handle: string): Promise<string | null> {
     const res = await fetch(url, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+        'Accept-Language': 'en',
       },
       redirect: 'follow',
     });
     const html = await res.text();
 
-    // Extract video ID from canonical URL or og:url
-    const videoIdMatch = html.match(/\"videoId\":\"([a-zA-Z0-9_-]{11})\"/);
-    if (videoIdMatch) return videoIdMatch[1];
-
-    // Fallback: check for live indicator + video ID
-    const canonicalMatch = html.match(/watch\?v=([a-zA-Z0-9_-]{11})/);
-    if (canonicalMatch) return canonicalMatch[1];
+    // De vorige versie pakte simpelweg de eerste videoId op de pagina. Staat een
+    // kanaal niet live, dan leidt /live door naar de kanaalpagina en werd een
+    // willekeurige oude opname als "live" gepresenteerd — gemeten 7 sep 2026 bij
+    // 3 van de 22 kanalen. Alleen ytInitialPlayerResponse is hier gezaghebbend:
+    // een echte uitzending heeft isLive true EN playabilityStatus OK.
+    // [\s\S] i.p.v. de s-flag: die vraagt een hogere TS-target dan dit project heeft
+    const m = html.match(/ytInitialPlayerResponse\s*=\s*(\{[\s\S]+?\});\s*(?:var |<\/script>)/);
+    if (!m) return null;
+    let pr: { videoDetails?: { videoId?: string; isLive?: boolean }; playabilityStatus?: { status?: string } };
+    try { pr = JSON.parse(m[1]); } catch { return null; }
+    const vd = pr.videoDetails;
+    if (vd?.isLive === true && pr.playabilityStatus?.status === 'OK' && vd.videoId) return vd.videoId;
 
     return null;
   } catch (error) {

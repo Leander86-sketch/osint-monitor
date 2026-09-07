@@ -2,17 +2,26 @@ import fs from 'fs';
 import path from 'path';
 
 // DeepStateMap assessed Russian-occupied territory of Ukraine.
-// Daily GeoJSON mirror: github.com/cyterat/deepstate-map-data (03:00 UTC).
-// One file per day: data/deepstatemap_data_YYYYMMDD.geojson (~78 KB MultiPolygon).
+// Mirror: github.com/cyterat/deepstate-map-data.
+//
+// De mirror is medio 2026 van vorm veranderd: de losse dagbestanden onder data/
+// lopen door tot juli 2024 en daarna niet meer. Alles zit nu in één gzipped
+// FeatureCollection in de repo-root, met de hele historie erin (stand 7 sep 2026:
+// 785 features over 283 dagen). De oude fetcher liep daardoor stil op 404's en
+// serveerde eindeloos zijn last-good cache.
+//
+// We halen dat bestand op, houden alleen de nieuwste datum over voor de kaart,
+// en onthouden de ETag zodat een ongewijzigd bestand geen 20 MB kost.
 
-const RAW_BASE = 'https://raw.githubusercontent.com/cyterat/deepstate-map-data/main/data';
+const SRC_URL = 'https://raw.githubusercontent.com/cyterat/deepstate-map-data/main/deepstate-map-data.geojson.gz';
 const CACHE_MS = 6 * 60 * 60_000; // re-check twice per update cycle
 const DISK_CACHE = path.join(process.cwd(), 'data', 'frontline-cache.json');
 
 export interface FrontlineData {
-  date: string;            // YYYY-MM-DD of the DeepState file served
+  date: string;            // YYYY-MM-DD of the newest DeepState snapshot
   fetchedAt: number;
-  geojson: unknown;        // FeatureCollection (MultiPolygon)
+  geojson: unknown;        // FeatureCollection (MultiPolygon), newest day only
+  etag?: string;
 }
 
 const g = globalThis as unknown as { __frontline?: { data: FrontlineData | null; lastAttempt: number } };
@@ -32,28 +41,44 @@ function saveDisk(d: FrontlineData): void {
   } catch { /* non-fatal */ }
 }
 
-function ymd(d: Date): string {
-  return d.toISOString().slice(0, 10).replace(/-/g, '');
-}
+interface GeoFeature { properties?: { date?: string } }
 
 async function fetchLatest(): Promise<FrontlineData | null> {
-  // Try today, then walk back up to 7 days (file appears at 03:00 UTC)
-  for (let back = 0; back < 7; back++) {
-    const d = new Date(Date.now() - back * 86400000);
-    const stamp = ymd(d);
-    try {
-      const res = await fetch(`${RAW_BASE}/deepstatemap_data_${stamp}.geojson`, { signal: AbortSignal.timeout(15000) });
-      if (!res.ok) continue;
-      const geojson = await res.json();
-      if (!geojson || geojson.type !== 'FeatureCollection') continue;
-      return {
-        date: `${stamp.slice(0, 4)}-${stamp.slice(4, 6)}-${stamp.slice(6, 8)}`,
-        fetchedAt: Date.now(),
-        geojson,
-      };
-    } catch { /* try previous day */ }
+  const prev = g.__frontline!.data;
+  try {
+    const headers: Record<string, string> = { 'user-agent': 'ARGUS/1.0 (argus.prototipo.nl)' };
+    if (prev?.etag) headers['if-none-match'] = prev.etag;
+
+    const res = await fetch(SRC_URL, { headers, signal: AbortSignal.timeout(60000) });
+    if (res.status === 304 && prev) {
+      // Niets veranderd: de cache blijft geldig, alleen de klok gaat vooruit.
+      return { ...prev, fetchedAt: Date.now() };
+    }
+    if (!res.ok) return null;
+
+    const gz = Buffer.from(await res.arrayBuffer());
+    const { gunzipSync } = await import('zlib');
+    const parsed = JSON.parse(gunzipSync(gz).toString('utf8'));
+    if (!parsed || parsed.type !== 'FeatureCollection' || !Array.isArray(parsed.features)) return null;
+
+    // Alle dagen zitten in één bestand; de kaart wil alleen de meest recente.
+    const feats = parsed.features as GeoFeature[];
+    let newest = '';
+    for (const f of feats) {
+      const d = f.properties?.date;
+      if (d && d > newest) newest = d;
+    }
+    if (!newest) return null;
+
+    return {
+      date: newest.slice(0, 10),
+      fetchedAt: Date.now(),
+      geojson: { type: 'FeatureCollection', features: feats.filter(f => f.properties?.date === newest) },
+      etag: res.headers.get('etag') || undefined,
+    };
+  } catch {
+    return null;
   }
-  return null;
 }
 
 export async function getFrontline(): Promise<FrontlineData | null> {

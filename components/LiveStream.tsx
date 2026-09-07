@@ -30,6 +30,18 @@ const CHANNELS: ChannelDef[] = [
   { name: 'Intel Cams', shortName: 'CAMS', color: '#10b981' },
   { name: 'Jerusalem Cam', shortName: 'JLM', color: '#eab308' },
   { name: 'Bosphorus Cam', shortName: 'BOSP', color: '#06b6d4' },
+  { name: 'i24NEWS', shortName: 'I24', color: '#2563eb' },
+  { name: 'United24 UA', shortName: 'U24', color: '#facc15' },
+  { name: 'Espreso TV', shortName: 'ESPR', color: '#0ea5e9' },
+  { name: 'Sky News Arabia', shortName: 'SKY-AR', color: '#0f766e' },
+  { name: 'AP News', shortName: 'AP', color: '#dc2626' },
+  { name: 'CNN', shortName: 'CNN', color: '#cc0000' },
+  { name: 'ABC News US', shortName: 'ABC', color: '#1d4ed8' },
+  { name: 'Africanews', shortName: 'AFR', color: '#16a34a' },
+  { name: 'TVP World', shortName: 'TVP', color: '#b91c1c' },
+  { name: 'NDTV', shortName: 'NDTV', color: '#e11d48' },
+  { name: 'Firstpost', shortName: 'FP', color: '#7c2d12' },
+  { name: 'Euronews FR', shortName: 'EUR-FR', color: '#15803d' },
 ];
 
 export default function LiveStream() {
@@ -73,8 +85,17 @@ export default function LiveStream() {
     }
   };
 
-  const channel = CHANNELS[activeChannel];
-  const videoId = videoIds[channel.name];
+  // Met 33 kanalen is de tabrij te lang om er dode tabs in te laten staan:
+  // wat nu uitzendt hoort vooraan. De volgorde binnen elke groep blijft gelijk,
+  // zodat de rij niet bij elke poll onder je vinger verspringt.
+  const ordered = [...CHANNELS].sort((a, b) => {
+    const la = videoIds[a.name] ? 0 : 1;
+    const lb = videoIds[b.name] ? 0 : 1;
+    return la - lb || CHANNELS.indexOf(a) - CHANNELS.indexOf(b);
+  });
+
+  const channel = ordered[activeChannel] || ordered[0];
+  const videoId = channel ? videoIds[channel.name] : undefined;
 
   const getEmbedUrl = () => {
     if (!videoId) return '';
@@ -117,7 +138,7 @@ export default function LiveStream() {
         <>
           {/* Channel Tabs */}
           <div className="flex overflow-x-auto px-2 py-1.5 gap-0.5 border-b border-[#111] bg-[#070707]">
-            {CHANNELS.map((ch, i) => {
+            {ordered.map((ch, i) => {
               const hasStream = !!videoIds[ch.name];
               return (
                 <button

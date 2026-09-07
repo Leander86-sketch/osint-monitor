@@ -48,9 +48,26 @@ export function postedToday(j?: Journal): number {
   return Object.values(jj.posted).filter(p => p.at >= dayStart).length;
 }
 
+// De kop die de escalatie veroorzaakte, ingekort tot iets dat in een tweet past.
+function triggerLine(headline?: string): string {
+  if (!headline) return '';
+  let h = headline.replace(/\s+/g, ' ').trim().replace(/[.\s]+$/, '');
+  if (h.length > 115) h = h.slice(0, 112).replace(/\s+\S*$/, '') + '…';
+  return `\n${h}.`;
+}
+
 function formatAlert(e: Escalation): { text: string; reply: string } | null {
   const sit = computeSituations().find(s => s.slug === e.slug);
-  const stats = sit ? ` ${sit.metadata.articleCount} reports tracked, sourcing ${sit.metadata.corroboration === 'A' ? 'strong' : sit.metadata.corroboration === 'B' ? 'moderate' : 'thin'}.` : '';
+  const m = sit?.metadata as { articleCount?: number; corroboration?: string; sourceTierCounts?: { t1?: number } } | undefined;
+  // Zonder de aanleiding is een alert een cijfermelding: "severity high → critical"
+  // vertelt niet WAT er gebeurd is, en daar reageert niemand op. De kop staat in
+  // de situatiedata; die hoort in de tweet.
+  const trigger = triggerLine((sit as { latestHeadline?: string } | undefined)?.latestHeadline);
+  const tier1 = m?.sourceTierCounts?.t1;
+  const strength = m?.corroboration === 'A' ? 'strong' : m?.corroboration === 'B' ? 'moderate' : 'thin';
+  const stats = m?.articleCount
+    ? `\n${m.articleCount} reports in 24h${tier1 ? ` across ${tier1} tier-1 sources` : ''}, corroboration ${strength}.`
+    : '';
   let head: string;
   if (e.kind === 'severity_up') {
     head = `⚠ ${e.title.toUpperCase()} — ${e.detail.toLowerCase()}.`;
@@ -61,7 +78,7 @@ function formatAlert(e: Escalation): { text: string; reply: string } | null {
   } else {
     head = `⚠ ${e.title.toUpperCase()} — ${e.detail}.`;
   }
-  const text = `${head}${stats}`.slice(0, 275);
+  const text = `${head}${trigger}${stats}`.slice(0, 275);
   const reply = `Live dossier → ${SITE}/?sit=${e.slug}`;
   return { text, reply };
 }

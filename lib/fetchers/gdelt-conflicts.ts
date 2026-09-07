@@ -1,6 +1,6 @@
 import { ConflictEvent } from '../types';
 import { getStore } from '../layer-store';
-import { enqueueGdeltRequest } from '../gdelt-queue';
+import { enqueueGdeltRequest, gdeltGet } from '../gdelt-queue';
 import fs from 'fs';
 import path from 'path';
 
@@ -222,25 +222,37 @@ export async function fetchGdeltConflicts(): Promise<ConflictEvent[]> {
       timespan: '48h',
     });
 
-    // Use global GDELT queue to avoid 429s — retry up to 3 times
+    // GDELT laat ongeveer één op de drie verzoeken door (gemeten 7 sep 2026:
+    // 429 / 200 / 429, ongeacht querygrootte) en doet er 13-15s over als het
+    // wél antwoordt. De vorige versie brak daarop stuk: de timeout stond op 15s
+    // met een connect-timeout van 10s eronder, en zo'n timeout gooide een
+    // exceptie BUITEN deze lus — de drie pogingen werden dus nooit gebruikt en
+    // de laag bleef leeg. Nu: ruimere timeout, meer pogingen, en elke fout
+    // binnen de lus opgevangen zodat een retry ook echt volgt.
+    const ATTEMPTS = 5;
     let allArticles: GdeltArticle[] = [];
-    for (let attempt = 0; attempt < 3; attempt++) {
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 15000);
-      const res = await enqueueGdeltRequest(() =>
-        fetch(`${GDELT_DOC_API}?${params}`, { signal: controller.signal })
-      );
-      clearTimeout(timeout);
-      if (res.status === 429) {
-        console.warn(`[GDELT Conflicts] Rate limited, retry ${attempt + 1}/3`);
-        await new Promise(r => setTimeout(r, 10000));
-        continue;
+    for (let attempt = 0; attempt < ATTEMPTS; attempt++) {
+      try {
+        const res = await enqueueGdeltRequest(() => gdeltGet(`${GDELT_DOC_API}?${params}`));
+        if (res.status === 429) {
+          console.warn(`[GDELT Conflicts] Rate limited, retry ${attempt + 1}/${ATTEMPTS}`);
+          await new Promise(r => setTimeout(r, 8000 + attempt * 4000));
+          continue;
+        }
+        if (res.status !== 200) {
+          console.warn(`[GDELT Conflicts] HTTP ${res.status}, retry ${attempt + 1}/${ATTEMPTS}`);
+          await new Promise(r => setTimeout(r, 8000));
+          continue;
+        }
+        const json = JSON.parse(res.body);
+        allArticles = json.articles || [];
+        if (allArticles.length) break;
+      } catch (e) {
+        console.warn(`[GDELT Conflicts] ${(e as Error).name || 'fout'}, retry ${attempt + 1}/${ATTEMPTS}`);
+        await new Promise(r => setTimeout(r, 8000 + attempt * 4000));
       }
-      if (!res.ok) throw new Error(`GDELT ${res.status}`);
-      const json = await res.json();
-      allArticles = json.articles || [];
-      break;
     }
+    if (!allArticles.length) console.warn(`[GDELT Conflicts] geen artikelen na ${ATTEMPTS} pogingen`);
 
     // Deduplicate and geo-locate with finer 0.05° grid (~5km precision)
     const seen = new Map<string, ConflictEvent>();

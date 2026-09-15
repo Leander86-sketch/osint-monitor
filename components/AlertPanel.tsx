@@ -29,41 +29,45 @@ export default function AlertPanel() {
     return () => clearInterval(interval);
   }, []);
 
+  // Writes need the admin key (ARGUS_ADMIN_KEY on the server). Asked once, kept in localStorage.
+  const postAlerts = async (body: Record<string, unknown>) => {
+    const send = (key: string) => fetch('/api/alerts', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-argus-key': key },
+      body: JSON.stringify(body),
+    });
+    let key = localStorage.getItem('argus_admin_key') || '';
+    let res = await send(key);
+    if (res.status === 401) {
+      const entered = window.prompt('Argus admin key');
+      if (!entered) return res;
+      key = entered.trim();
+      res = await send(key);
+      if (res.ok) localStorage.setItem('argus_admin_key', key);
+      else window.alert('Key not accepted.');
+    }
+    return res;
+  };
+
   const addAlert = async () => {
     if (!newKeyword.trim()) return;
-    await fetch('/api/alerts', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'add', keyword: newKeyword.trim() }),
-    });
+    await postAlerts({ action: 'add', keyword: newKeyword.trim() });
     setNewKeyword('');
     fetchAlerts();
   };
 
   const toggleAlert = async (id: string) => {
-    await fetch('/api/alerts', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'toggle', id }),
-    });
+    await postAlerts({ action: 'toggle', id });
     fetchAlerts();
   };
 
   const removeAlert = async (id: string) => {
-    await fetch('/api/alerts', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'remove', id }),
-    });
+    await postAlerts({ action: 'remove', id });
     fetchAlerts();
   };
 
   const resetAlerts = async () => {
-    await fetch('/api/alerts', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'reset' }),
-    });
+    await postAlerts({ action: 'reset' });
     fetchAlerts();
   };
 

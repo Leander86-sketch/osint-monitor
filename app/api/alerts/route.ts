@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { isAdmin } from '@/lib/admin-key';
 import { getAlerts, addAlert, removeAlert, toggleAlert, getRecentAlertEvents, resetAlerts } from '@/lib/store';
 
 export async function GET() {
@@ -8,6 +9,7 @@ export async function GET() {
 }
 
 export async function POST(request: NextRequest) {
+  if (!isAdmin(request)) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
   try {
     const body = await request.json();
     const { action, keyword, id } = body;

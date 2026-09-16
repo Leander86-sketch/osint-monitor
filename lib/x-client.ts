@@ -30,8 +30,12 @@ function oauthHeader(method: string, url: string): string {
     oauth_token: c.at,
     oauth_version: '1.0',
   };
-  const ps = Object.keys(op).sort().map(k => `${pct(k)}=${pct(op[k])}`).join('&');
-  const base = `${method}&${pct(url)}&${pct(ps)}`;
+  // OAuth 1.0a: query-parameters horen in de parameterstring, de basis-URL zonder query (16 sep 2026 — GET users/me?user.fields gaf 401)
+  const [baseUrl, qs] = url.split('?');
+  const all: Record<string, string> = { ...op };
+  if (qs) for (const [k, v] of new URLSearchParams(qs)) all[k] = v;
+  const ps = Object.keys(all).sort().map(k => `${pct(k)}=${pct(all[k])}`).join('&');
+  const base = `${method}&${pct(baseUrl)}&${pct(ps)}`;
   const key = `${pct(c.cs)}&${pct(c.ats)}`;
   op.oauth_signature = crypto.createHmac('sha1', key).update(base).digest('base64');
   return 'OAuth ' + Object.keys(op).sort().map(k => `${pct(k)}="${pct(op[k])}"`).join(', ');
@@ -64,4 +68,28 @@ export async function whoAmI(): Promise<{ username: string; id: string } | null>
   } catch {
     return null;
   }
+}
+
+/** Publieke metrics van het eigen account (volgers, volgend, posts). Leesrecht op /2/users/me. */
+export async function myMetrics(): Promise<{ username: string; followers: number; following: number; tweets: number } | null> {
+  try {
+    const url = `${API}/users/me?user.fields=public_metrics`;
+    const res = await fetch(url, { headers: { Authorization: oauthHeader('GET', url) }, signal: AbortSignal.timeout(15000) });
+    const json = await res.json();
+    const d = json?.data; if (!d) return null;
+    const pm = d.public_metrics || {};
+    return { username: d.username, followers: Number(pm.followers_count ?? 0), following: Number(pm.following_count ?? 0), tweets: Number(pm.tweet_count ?? 0) };
+  } catch {
+    return null;
+  }
+}
+
+/** Debug (alleen localhost via /api/x-stats?debug=1): ruwe status + body van users/me. */
+export async function myMetricsRaw(): Promise<{ hasCreds: boolean; status?: number; body?: string; error?: string }> {
+  if (!hasXCreds()) return { hasCreds: false };
+  try {
+    const url = `${API}/users/me?user.fields=public_metrics`;
+    const res = await fetch(url, { headers: { Authorization: oauthHeader('GET', url) }, signal: AbortSignal.timeout(15000) });
+    return { hasCreds: true, status: res.status, body: (await res.text()).slice(0, 400) };
+  } catch (e) { return { hasCreds: true, error: String(e).slice(0, 200) }; }
 }

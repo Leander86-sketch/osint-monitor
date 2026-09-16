@@ -45,6 +45,10 @@ export default function HomeClient() {
   const [copied, setCopied] = useState(false);
   const pendingSitRef = useRef<string | null>(null);
 
+  // bezoekersmeting: één beacon per sessie (16 sep 2026)
+  useEffect(() => {
+    try { if (!sessionStorage.getItem('argus_v')) { sessionStorage.setItem('argus_v', '1'); fetch('/api/visit', { method: 'POST', keepalive: true }).catch(() => {}); } } catch { /* privé-modus */ }
+  }, []);
   useEffect(() => {
     const u = () => setTime(new Date().toLocaleTimeString('en-US', { hour12: false }));
     u();

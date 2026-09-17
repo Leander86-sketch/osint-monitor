@@ -9,7 +9,12 @@ export function generateId(input: string): string {
     hash = ((hash << 5) - hash) + char;
     hash = hash & hash; // Convert to 32-bit integer
   }
-  return Math.abs(hash).toString(36) + Date.now().toString(36).slice(-4);
+  // 17 sep 2026: het id was hash + de laatste 4 tekens van Date.now() → hetzelfde artikel kreeg elk half uur een NIEUW id
+  // en kwam dus opnieuw in de store (42% van de feed was dubbel; dat blies ook de situatie-tellingen op).
+  // Nu deterministisch: twee onafhankelijke hashes van dezelfde invoer.
+  let h2 = 5381;
+  for (let i = 0; i < input.length; i++) h2 = ((h2 * 33) ^ input.charCodeAt(i)) | 0;
+  return Math.abs(hash).toString(36) + Math.abs(h2).toString(36);
 }
 
 // Precompiled word-boundary patterns - substring matching mistagged e.g. "forward" as war, "policja" as ICJ

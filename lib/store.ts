@@ -1,4 +1,4 @@
-import { NewsItem, Alert, AlertEvent, GeoEvent, DashboardStats } from './types';
+import { NewsItem, Alert, AlertEvent, GeoEvent, DashboardStats, GeoLocation } from './types';
 import { newsItemToGeoEvent } from './utils';
 import { fetchAllFeeds } from './rss-fetcher';
 import { RSS_FEEDS } from './config';
@@ -27,6 +27,14 @@ function ensureDataDir() {
   }
 }
 
+// Eén artikel = één item: sleutel op link (of titel als er geen link is). Houdt het eerste dat het tegenkomt.
+const itemKey = (i: NewsItem) => (i.link || i.title || '').trim().toLowerCase();
+function dedupeItems(items: NewsItem[]): NewsItem[] {
+  const seen = new Set<string>(); const out: NewsItem[] = [];
+  for (const it of items) { const k = itemKey(it); if (k && seen.has(k)) continue; if (k) seen.add(k); out.push(it); }
+  return out;
+}
+
 function saveSnapshot() {
   ensureDataDir();
   try {
@@ -39,7 +47,7 @@ function loadSnapshot(): boolean {
     if (fs.existsSync(SNAPSHOT_FILE)) {
       const d = JSON.parse(fs.readFileSync(SNAPSHOT_FILE, 'utf-8'));
       if (Array.isArray(d.newsItems) && d.newsItems.length > 0) {
-        g.__osintStore!.newsItems = d.newsItems;
+        g.__osintStore!.newsItems = dedupeItems(d.newsItems); // ruimt ook de dubbelen van vóór 17 sep 2026 op
         g.__osintStore!.lastFetch = d.lastFetch || 0;
         return true;
       }
@@ -54,6 +62,18 @@ export function getNewsItems(limit = 100, offset = 0): NewsItem[] {
   return g.__osintStore!.newsItems.slice(offset, offset + limit);
 }
 
+// Alle items opnieuw plaatsen met de huidige plaatsbepaling (na een wijziging in LOCATION_MAP of het register). Geeft het aantal gewijzigde items.
+export function regeocodeAll(fn: (text: string) => GeoLocation | null): number {
+  let changed = 0;
+  for (const it of g.__osintStore!.newsItems) {
+    if (it.category === 'sport') continue;
+    const loc = fn(`${it.title} ${it.description || ''}`) || undefined;
+    if (JSON.stringify(it.location || null) !== JSON.stringify(loc || null)) { it.location = loc; changed++; }
+  }
+  saveSnapshot();
+  return changed;
+}
+
 export function getNewsItemCount(): number {
   return g.__osintStore!.newsItems.length;
 }
@@ -62,12 +82,14 @@ export async function refreshFeeds(): Promise<{ added: number; total: number }> 
   const s = g.__osintStore!;
   const newItems = await fetchAllFeeds(RSS_FEEDS);
   const existingIds = new Set(s.newsItems.map(i => i.id));
+  const existingKeys = new Set(s.newsItems.map(itemKey));
   let added = 0;
 
   for (const item of newItems) {
-    if (!existingIds.has(item.id)) {
+    const k = itemKey(item);
+    if (!existingIds.has(item.id) && !(k && existingKeys.has(k))) {
       s.newsItems.unshift(item);
-      existingIds.add(item.id);
+      existingIds.add(item.id); if (k) existingKeys.add(k);
       added++;
     }
   }

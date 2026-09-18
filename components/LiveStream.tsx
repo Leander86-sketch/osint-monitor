@@ -44,7 +44,10 @@ const CHANNELS: ChannelDef[] = [
   { name: 'Euronews FR', shortName: 'EUR-FR', color: '#15803d' },
 ];
 
-export default function LiveStream() {
+// variant (18 sep 2026, /next): 'stage' = speler vult het podium, bediening in een smalle balk ONDER het beeld
+// (YouTube staat geen elementen óver de speler toe); 'pip' = klein, zonder bediening, altijd gedempt.
+export default function LiveStream({ variant = 'default' }: { variant?: 'default' | 'stage' | 'pip' } = {}) {
+  const [showList, setShowList] = useState(false);
   const [activeChannel, setActiveChannel] = useState(0);
   const [muted, setMuted] = useState(true);
   const [collapsed, setCollapsed] = useState(false);
@@ -73,6 +76,13 @@ export default function LiveStream() {
     return () => window.removeEventListener('argus:watch-channel', onWatch);
   }, []);
 
+  useEffect(() => {
+    try { const name = sessionStorage.getItem('argus_ch'); if (!name) return;
+      const ord = [...CHANNELS].sort((a, b) => (videoIds[a.name] ? 0 : 1) - (videoIds[b.name] ? 0 : 1) || CHANNELS.indexOf(a) - CHANNELS.indexOf(b));
+      const idx = ord.findIndex(c => c.name === name); if (idx >= 0 && videoIds[name]) setActiveChannel(idx);
+    } catch { /* privé-modus */ }
+  }, [videoIds]);
+
   const fetchVideoIds = async () => {
     try {
       const res = await fetch('/api/live');
@@ -95,6 +105,8 @@ export default function LiveStream() {
   });
 
   const channel = ordered[activeChannel] || ordered[0];
+  // onthoud de gekozen zender op naam, zodat wisselen tussen klein en groot niet terugspringt naar de eerste
+  const pick = (i: number) => { setActiveChannel(i); try { sessionStorage.setItem('argus_ch', ordered[i]?.name || ''); } catch { /* privé-modus */ } };
   const videoId = channel ? videoIds[channel.name] : undefined;
 
   const getEmbedUrl = () => {
@@ -103,6 +115,47 @@ export default function LiveStream() {
   };
 
   const availableCount = Object.keys(videoIds).length;
+
+  if (variant !== 'default') {
+    const liveIdx = ordered.map((c, i) => (videoIds[c.name] ? i : -1)).filter(i => i >= 0);
+    const step = (d: number) => { if (!liveIdx.length) return; const at = Math.max(0, liveIdx.indexOf(activeChannel)); pick(liveIdx[(at + d + liveIdx.length) % liveIdx.length]); };
+    const isMuted = variant === 'pip' ? true : muted;
+    return (
+      <div className="flex flex-col h-full bg-black">
+        <div className="relative flex-1 min-h-0 flex items-center justify-center bg-black">
+          {loading ? (
+            <div className="w-4 h-4 border border-[#e8760a]/30 border-t-[#e8760a] rounded-full animate-spin" />
+          ) : videoId ? (
+            <div className="h-full max-w-full" style={{ aspectRatio: '16/9' }}>
+              <iframe key={`${videoId}-${isMuted}-${variant}`} src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=${isMuted ? '1' : '0'}&controls=1&modestbranding=1&rel=0`} className="w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ border: 'none' }} />
+            </div>
+          ) : (
+            <span className="text-[12px] font-mono text-[#333] uppercase">No live stream available</span>
+          )}
+        </div>
+        {variant === 'stage' && (
+          <div className="bg-[#080808] border-t border-[#1a1a1a]">
+            {showList && (
+              <div className="flex flex-wrap gap-1 px-3 py-2 border-b border-[#111]">
+                {ordered.map((ch, i) => videoIds[ch.name] ? (
+                  <button key={ch.name} onClick={() => { pick(i); setShowList(false); }} className="text-[11px] px-2 py-1 font-mono uppercase tracking-wider rounded" style={i === activeChannel ? { backgroundColor: ch.color, color: '#fff' } : { color: '#bbb', border: '1px solid #1a1a1a' }}>{ch.shortName}</button>
+                ) : null)}
+              </div>
+            )}
+            <div className="flex items-center gap-2 px-3 py-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse" />
+              <span className="text-[10px] font-mono text-[#888] uppercase tracking-[0.2em]">Live</span>
+              <button onClick={() => step(-1)} aria-label="Previous channel" className="text-[13px] font-mono text-[#ccc] hover:text-[#e8760a] px-2 border border-[#1a1a1a] rounded">&lsaquo;</button>
+              <span className="text-[12px] font-mono text-white uppercase tracking-[0.15em] min-w-[9rem] text-center">{channel?.name || '—'}</span>
+              <button onClick={() => step(1)} aria-label="Next channel" className="text-[13px] font-mono text-[#ccc] hover:text-[#e8760a] px-2 border border-[#1a1a1a] rounded">&rsaquo;</button>
+              <button onClick={() => setShowList(v => !v)} className="text-[10px] font-mono text-[#aaa] hover:text-[#e8760a] uppercase tracking-[0.15em] px-2 py-1 border border-[#1a1a1a] rounded ml-1">Channels · {availableCount} {showList ? '▴' : '▾'}</button>
+              <button onClick={() => setMuted(!muted)} title={muted ? 'Unmute' : 'Mute'} className="text-[12px] font-mono text-[#ccc] hover:text-[#e8760a] px-2 ml-auto">{muted ? '◁× sound off' : '◁)) sound on'}</button>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div id="live-stream" className="border-b border-[#1a1a1a]">

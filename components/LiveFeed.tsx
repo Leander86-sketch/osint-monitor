@@ -8,7 +8,15 @@ interface LiveFeedProps {
   onRefresh?: () => void;
   keywordFilter?: string;
   onClearFilter?: () => void;
+  /** /next (18 sep 2026): 'conflict' houdt markten, crypto en binnenlands nieuws uit de hoofdfeed; 'markets' toont juist die; standaard alles */
+  mode?: 'all' | 'conflict' | 'markets';
 }
+
+// Wat in de conflictfeed niet thuishoort: beurs, crypto, bedrijfsnieuws. Bewust op categorie én op kop, want wire-feeds mengen alles.
+const MARKET_CATS = new Set(['markets', 'crypto']);
+const MARKET_RE = /\b(stocks?|shares|nasdaq|dow jones|s&p|wall street|fed(eral reserve)?|interest rates?|rate (hike|cut)|yields?|bonds?|mortgage|inflation|earnings|ipo|etf|bitcoin|btc|ethereum|crypto|altcoin|xrp|gold price|silver price|berkshire|buffett|quarterly|revenue|housing market)\b/i;
+const CONFLICT_RE = /\b(war|strike|attack|missile|drone|troops|military|sanction|ceasefire|hostage|killed|blockade|nuclear|navy|airspace|frontline|offensive|houthi|hezbollah|hamas|idf|nato)\b/i;
+export function isMarketItem(i: { category?: string; title: string }): boolean { return MARKET_CATS.has(i.category || '') || (MARKET_RE.test(i.title) && !CONFLICT_RE.test(i.title)); }
 
 const TIER_BADGE: Record<number, { label: string; color: string; bg: string }> = {
   1: { label: 'T1', color: '#16a34a', bg: 'rgba(22,163,74,0.1)' },
@@ -63,7 +71,7 @@ function timeAgo(dateStr: string): string {
   return `${d}d`;
 }
 
-export default function LiveFeed({ onRefresh, keywordFilter, onClearFilter }: LiveFeedProps) {
+export default function LiveFeed({ onRefresh, keywordFilter, onClearFilter, mode = 'all' }: LiveFeedProps) {
   const [items, setItems] = useState<NewsItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -79,7 +87,7 @@ export default function LiveFeed({ onRefresh, keywordFilter, onClearFilter }: Li
 
   const fetchItems = useCallback(async () => {
     try {
-      const params = new URLSearchParams({ limit: '100' });
+      const params = new URLSearchParams({ limit: mode === 'all' ? '100' : '300' });
       if (sourceFilter) params.set('source', sourceFilter);
       if (filter) params.set('keyword', filter);
       const res = await fetch(`/api/feed?${params}`);
@@ -90,7 +98,7 @@ export default function LiveFeed({ onRefresh, keywordFilter, onClearFilter }: Li
     } finally {
       setLoading(false);
     }
-  }, [filter, sourceFilter]);
+  }, [filter, sourceFilter, mode]);
 
   const doRefresh = async () => {
     setRefreshing(true);
@@ -117,7 +125,8 @@ export default function LiveFeed({ onRefresh, keywordFilter, onClearFilter }: Li
   }, []);
 
   const sources = [...new Set(items.map(i => i.source))];
-  const filteredItems = tierFilter > 0 ? items.filter(i => (i.sourceTier || 3) === tierFilter) : items;
+  const byMode = mode === 'all' ? items : items.filter(i => (mode === 'markets') === isMarketItem(i)).slice(0, 120);
+  const filteredItems = tierFilter > 0 ? byMode.filter(i => (i.sourceTier || 3) === tierFilter) : byMode;
 
   return (
     <div className="flex flex-col h-full">

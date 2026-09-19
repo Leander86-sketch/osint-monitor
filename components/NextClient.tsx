@@ -5,7 +5,7 @@ import { Situation } from '@/lib/types';
 import EventMap from '@/components/EventMap';
 import LiveStream from '@/components/LiveStream';
 import Dashboard from '@/components/Dashboard';
-import ThreatGauge, { computeThreat, threatColor } from '@/components/ThreatGauge';
+import { computeThreat, threatColor } from '@/components/ThreatGauge';
 import SituationOverview from '@/components/SituationOverview';
 import TypeOnHeadline from '@/components/TypeOnHeadline';
 import LiveFeed from '@/components/LiveFeed';
@@ -20,6 +20,7 @@ import BlueskyFeed from '@/components/BlueskyFeed';
 import SatellitePanel from '@/components/SatellitePanel';
 import ArmsPanel from '@/components/ArmsPanel';
 import BreakingBand from '@/components/BreakingBand';
+import BreakingRail from '@/components/BreakingRail';
 
 const SEV_COLOR: Record<string, string> = { critical: '#dc2626', high: '#f97316', medium: '#eab308', low: '#6b7280' };
 type Panel = 'feed' | 'alerts' | 'telegram' | 'bluesky' | 'humanitarian' | 'sanctions' | 'satellite' | 'arms' | 'markets';
@@ -197,10 +198,8 @@ export default function NextClient() {
 
       <section id="band-hero" className="scroll-mt-32 border-b border-[#1a1a1a] bg-[#1a1a1a]">
         {stage === 'split' && (
-          <div className="grid grid-cols-1 lg:grid-cols-[18rem_1fr_22rem] gap-px">
-            <div className="bg-[#080808] p-3 flex flex-col gap-3">
-              <ThreatGauge situations={situations} onFocus={onFocus} />
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-[23rem_1fr_22rem] gap-px">
+            <div className="bg-[#080808] h-[72vh] min-h-[420px] order-2 lg:order-none"><BreakingRail situations={situations} /></div>
             <div id="situation-map" className="bg-[#050505] relative h-[72vh] min-h-[420px] overflow-hidden">
               <EventMap focusBbox={focusBbox} situations={situations} />
               <div className="hero-glow" /><div className="vignette" /><div className="scanlines" />
@@ -223,7 +222,7 @@ export default function NextClient() {
                 <div className="absolute inset-0 pointer-events-none"><EventMap key="mini" focusBbox={focusBbox} situations={situations} bare /></div>
                 <span className="absolute left-2 bottom-2 z-[600] text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] group-hover:text-[#e8760a] bg-[#050505]/85 border border-[#222] px-2 py-1">⤢ Map</span>
               </button>
-              <div className="p-3">{topList}</div>
+              <div className="flex-1 min-h-0"><BreakingRail situations={situations} compact /></div>
             </div>
           </div>
         )}

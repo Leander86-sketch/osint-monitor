@@ -14,8 +14,8 @@ interface LiveFeedProps {
 
 // Wat in de conflictfeed niet thuishoort: beurs, crypto, bedrijfsnieuws. Bewust op categorie én op kop, want wire-feeds mengen alles.
 const MARKET_CATS = new Set(['markets', 'crypto']);
-const MARKET_RE = /\b(stocks?|shares|nasdaq|dow jones|s&p|wall street|fed(eral reserve)?|interest rates?|rate (hike|cut)|yields?|bonds?|mortgage|inflation|earnings|ipo|etf|bitcoin|btc|ethereum|crypto|altcoin|xrp|gold price|silver price|berkshire|buffett|quarterly|revenue|housing market)\b/i;
-const CONFLICT_RE = /\b(war|strike|attack|missile|drone|troops|military|sanction|ceasefire|hostage|killed|blockade|nuclear|navy|airspace|frontline|offensive|houthi|hezbollah|hamas|idf|nato)\b/i;
+const MARKET_RE = /\b(stocks?|shares|nasdaq|dow jones|s&p|wall street|fed(eral reserve)?|interest rates?|rate (hike|cut)|yields?|bonds?|mortgage|inflation|earnings|ipo|etf|bitcoin|btc|ethereum|crypto|altcoin|xrp|gold price|silver price|berkshire|buffett|quarterly|revenue|housing market|futures|crude oil|oil prices?|brent|wti|commodit(y|ies))\b/i;
+export const CONFLICT_RE = /\b(war|wars|strikes?|airstrikes?|attacks?|attacked|missiles?|drones?|troops|military|army|forces|sanctions?|ceasefire|truce|hostages?|killed|dead|wounded|blockade|nuclear|navy|warship|tanker|airspace|frontline|offensive|invasion|shelling|bombing|explosion|sabotage|cyberattacks?|coup|militia|rebels?|insurgen\w*|terror\w*|evacuat\w*|weapons?|arms|houthis?|hezbollah|hamas|idf|nato|kremlin|pentagon)\b/i;
 export function isMarketItem(i: { category?: string; title: string }): boolean { return MARKET_CATS.has(i.category || '') || (MARKET_RE.test(i.title) && !CONFLICT_RE.test(i.title)); }
 
 const TIER_BADGE: Record<number, { label: string; color: string; bg: string }> = {

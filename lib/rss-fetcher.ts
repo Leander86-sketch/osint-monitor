@@ -42,7 +42,7 @@ export async function fetchFeed(feed: FeedConfig): Promise<NewsItem[]> {
       if (!isRelevant && !alwaysInclude) continue;
 
       // Sport (F1) is feed-only - exclude from the conflict map (race countries are not events)
-      const location = feed.category === 'sport' ? null : extractLocation(text);
+      const location = feed.category === 'sport' ? null : extractLocation(`${title} ${description}`); // originele hoofdletters: de registerlaag heeft ze nodig
 
       items.push({
         id: generateId(item.link || title),

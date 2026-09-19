@@ -95,6 +95,9 @@ function buildSituation(base: SitBase, items: NewsItem[], now: number, prefer: (
 
 function matchesAnchor(it: NewsItem, a: AnchorSituation): boolean {
   if (a.requireStrong && !STRONG_RE.test(it.title)) return false;
+  if (a.exclude && new RegExp(a.exclude, 'i').test(it.title)) return false;
+  if (a.requireAny && !new RegExp(a.requireAny, 'i').test(it.title)) return false;
+  if (a.anchorRegex && new RegExp(a.anchorRegex, 'i').test(it.title)) return true;
   const t = ' ' + it.title.toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ';
   return a.anchorKeywords.some(k => t.includes(' ' + k.toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' '));
 }
@@ -139,7 +142,7 @@ export function computeSituations(): Situation[] {
     if ((now - new Date(it.pubDate).getTime()) > 86400000) continue;
     if (!STRONG_RE.test(it.title)) continue;
     const lat = it.location.lat, lng = it.location.lng;
-    if (SITUATIONS.some(a => lat >= a.bbox[0] && lat <= a.bbox[2] && lng >= a.bbox[1] && lng <= a.bbox[3])) continue; // region already covered by an anchor
+    if (SITUATIONS.some(a => a.coversRegion !== false && lat >= a.bbox[0] && lat <= a.bbox[2] && lng >= a.bbox[1] && lng <= a.bbox[3])) continue; // region already covered by an anchor
     const key = it.location.name.toLowerCase();
     const arr = autoBuckets.get(key) || [];
     arr.push(it);

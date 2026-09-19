@@ -17,6 +17,7 @@ export default function Dossier({ situations, slug, onClose, onGo, onLocate }: {
   const next = idx >= 0 && idx < situations.length - 1 ? situations[idx + 1] : situations[0];
   const [items, setItems] = useState<NewsItem[]>([]);
   const [loading, setLoading] = useState(true);
+  const [copied, setCopied] = useState(false);
   const [now, setNow] = useState(() => Date.now());
 
   useEffect(() => {
@@ -48,7 +49,8 @@ export default function Dossier({ situations, slug, onClose, onGo, onLocate }: {
           <button title="Previous dossier" onClick={() => prev && onGo(prev.slug)} className="text-[11px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] border border-[#222] hover:border-[#e8760a] px-3 py-2">‹ {prev?.title}</button>
           <span className="text-[10px] font-mono text-[#555] tabular-nums">{idx + 1} / {situations.length}</span>
           <button title="Next dossier" onClick={() => next && onGo(next.slug)} className="text-[11px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] border border-[#222] hover:border-[#e8760a] px-3 py-2">{next?.title} ›</button>
-          <button title="Close dossier" onClick={onClose} className="ml-auto text-[11px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] border border-[#222] px-3 py-2">✕ Close</button>
+          <button title="Copy link" onClick={() => { navigator.clipboard.writeText(`${window.location.origin}/s/${sit?.slug}`).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1800); }).catch(() => {}); }} className="ml-auto text-[11px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] border border-[#222] px-3 py-2">{copied ? '✓ Link copied' : '⧉ Share'}</button>
+          <button title="Close dossier" onClick={onClose} className="text-[11px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] border border-[#222] px-3 py-2">✕ Close</button>
         </div>
 
         <div className="border-l-4 pl-5 mb-7" style={{ borderColor: sev }}>

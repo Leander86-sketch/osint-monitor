@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import NextClient from '@/components/NextClient';
-import { getSituationBySlug } from '@/lib/situations';
+import { getSituationBySlug, computeSituations } from '@/lib/situations';
+import { ensureFeedsLoaded } from '@/lib/store';
 
 export const dynamic = 'force-dynamic';
 
@@ -29,6 +30,10 @@ export async function generateMetadata(
   return {};
 }
 
-export default function Page() {
-  return <NextClient />;
+// De situaties gaan al vanaf de server mee (19 sep 2026), zodat zoekmachines en linkvoorbeelden de echte inhoud zien
+// in plaats van "0 active situations"; de browser ververst ze daarna zelf elke 30 seconden.
+export default async function Home() {
+  let initial: ReturnType<typeof computeSituations> = [];
+  try { await ensureFeedsLoaded(); initial = computeSituations(); } catch { initial = []; }
+  return <NextClient initialSituations={initial} />;
 }

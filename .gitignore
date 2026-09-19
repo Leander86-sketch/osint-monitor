@@ -59,3 +59,4 @@ data/x-manual-log.json
 
 # runtime-caches en snapshots: machine-lokaal, horen niet in git
 /data/
+.attic/

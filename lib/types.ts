@@ -195,6 +195,14 @@ export interface AnchorSituation {
   zoom: number;
   actors: string[];
   requireStrong?: boolean;
+  /** regex (bron): koppen die hierop matchen horen NIET bij deze situatie (bv. Oekraïne-oorlog buiten 'Europees luchtruim') */
+  exclude?: string;
+  /** regex (bron): de kop MOET hierop matchen (bv. een Europees land of 'airport'), anders hoort hij er niet bij */
+  requireAny?: string;
+  /** regex (bron) op de kop als alternatief voor anchorKeywords — voor onderwerpen die niet in vaste woordgroepen te vangen zijn */
+  anchorRegex?: string;
+  /** false = de bbox dient alleen om de kaart te richten en onderdrukt geen automatisch opkomende situaties in dat gebied */
+  coversRegion?: boolean;
 }
 
 export interface Situation {

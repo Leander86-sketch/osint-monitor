@@ -42,13 +42,13 @@ function setUrlParam(key: string, value: string | null) {
 
 // Homepage sinds 19 sep 2026 (was /next, 18 sep): nieuwe bovenkant — breaking-band, feed die kiest, podium met grote stream of kaart.
 // De vorige homepage (HomeClient) blijft bereikbaar op /classic, zodat terugdraaien één handeling is.
-export default function NextClient() {
+export default function NextClient({ initialSituations = [] }: { initialSituations?: Situation[] } = {}) {
   const [stage, setStage] = useState<Stage>('split');
   const [focus, setFocus] = useState<{ last30: number; critical30: number } | null>(null);
   useEffect(() => { fetch('/api/hybrid?summary=1').then(r => r.json()).then(d => { if (d && typeof d.last30 === 'number') setFocus(d); }).catch(() => {}); }, []);
   const [dossier, setDossier] = useState<string | null>(null); // open dossier (slug); ook via ?dossier=
   const [demoBreaking, setDemoBreaking] = useState(false); // ?breaking=1 toont de band ook als er nu niets breekt (alleen om te beoordelen)
-  const [situations, setSituations] = useState<Situation[]>([]);
+  const [situations, setSituations] = useState<Situation[]>(initialSituations);
   const [time, setTime] = useState('');
   const [keywordFilter, setKeywordFilter] = useState('');
   const [panel, setPanel] = useState<Panel>('feed');

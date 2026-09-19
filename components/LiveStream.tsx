@@ -138,18 +138,18 @@ export default function LiveStream({ variant = 'default' }: { variant?: 'default
             {showList && (
               <div className="flex flex-wrap gap-1 px-3 py-2 border-b border-[#111]">
                 {ordered.map((ch, i) => videoIds[ch.name] ? (
-                  <button key={ch.name} onClick={() => { pick(i); setShowList(false); }} className="text-[11px] px-2 py-1 font-mono uppercase tracking-wider rounded" style={i === activeChannel ? { backgroundColor: ch.color, color: '#fff' } : { color: '#bbb', border: '1px solid #1a1a1a' }}>{ch.shortName}</button>
+                  <button key={ch.name} title={ch.name} onClick={() => { pick(i); setShowList(false); }} className="text-[11px] px-2 py-1 font-mono uppercase tracking-wider rounded" style={i === activeChannel ? { backgroundColor: ch.color, color: '#fff' } : { color: '#bbb', border: '1px solid #1a1a1a' }}>{ch.shortName}</button>
                 ) : null)}
               </div>
             )}
             <div className="flex items-center gap-2 px-3 py-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse" />
               <span className="text-[10px] font-mono text-[#888] uppercase tracking-[0.2em]">Live</span>
-              <button onClick={() => step(-1)} aria-label="Previous channel" className="text-[13px] font-mono text-[#ccc] hover:text-[#e8760a] px-2 border border-[#1a1a1a] rounded">&lsaquo;</button>
+              <button title="Previous channel" onClick={() => step(-1)} aria-label="Previous channel" className="text-[13px] font-mono text-[#ccc] hover:text-[#e8760a] px-2 border border-[#1a1a1a] rounded">&lsaquo;</button>
               <span className="text-[12px] font-mono text-white uppercase tracking-[0.15em] min-w-[9rem] text-center">{channel?.name || '—'}</span>
-              <button onClick={() => step(1)} aria-label="Next channel" className="text-[13px] font-mono text-[#ccc] hover:text-[#e8760a] px-2 border border-[#1a1a1a] rounded">&rsaquo;</button>
-              <button onClick={() => setShowList(v => !v)} className="text-[10px] font-mono text-[#aaa] hover:text-[#e8760a] uppercase tracking-[0.15em] px-2 py-1 border border-[#1a1a1a] rounded ml-1">Channels · {availableCount} {showList ? '▴' : '▾'}</button>
-              <button onClick={() => setMuted(!muted)} title={muted ? 'Unmute' : 'Mute'} className="text-[12px] font-mono text-[#ccc] hover:text-[#e8760a] px-2 ml-auto">{muted ? '◁× sound off' : '◁)) sound on'}</button>
+              <button title="Next channel" onClick={() => step(1)} aria-label="Next channel" className="text-[13px] font-mono text-[#ccc] hover:text-[#e8760a] px-2 border border-[#1a1a1a] rounded">&rsaquo;</button>
+              <button title="All channels" onClick={() => setShowList(v => !v)} className="text-[10px] font-mono text-[#aaa] hover:text-[#e8760a] uppercase tracking-[0.15em] px-2 py-1 border border-[#1a1a1a] rounded ml-1">Channels · {availableCount} {showList ? '▴' : '▾'}</button>
+              <button onClick={() => setMuted(!muted)} title={muted ? 'Sound on' : 'Sound off'} className="text-[12px] font-mono text-[#ccc] hover:text-[#e8760a] px-2 ml-auto">{muted ? '◁× sound off' : '◁)) sound on'}</button>
             </div>
           </div>
         )}

@@ -139,7 +139,7 @@ export default function NextClient() {
             <span className="text-[10px] font-mono text-[#444] tabular-nums">{String(i + 1).padStart(2, '0')}</span>
             <span className="text-[11px] font-mono text-[#ccc] uppercase truncate flex-1">{s.title}</span>
             {s.status === 'breaking' && <span className="w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse" />}
-            <span className="text-[10px] font-mono tabular-nums" style={{ color: quiet(s.latestPubDate) ? '#555' : SEV_COLOR[s.severity] }}>{quiet(s.latestPubDate) || (s.metadata.velocity1h > 0 ? '+' + s.metadata.velocity1h : s.severity.slice(0, 3).toUpperCase())}</span>
+            <span className="text-[10px] font-mono tabular-nums" title={quiet(s.latestPubDate) ? 'No news' : 'Last hour'} style={{ color: quiet(s.latestPubDate) ? '#555' : SEV_COLOR[s.severity] }}>{quiet(s.latestPubDate) || (s.metadata.velocity1h > 0 ? '+' + s.metadata.velocity1h : s.severity.slice(0, 3).toUpperCase())}</span>
           </button>
         ))}
         {top.length === 0 && <div className="text-[10px] font-mono text-[#333] py-8 text-center uppercase">Monitoring...</div>}
@@ -160,7 +160,7 @@ export default function NextClient() {
                 <div className="absolute inset-0 w-2 h-2 rounded-full bg-[#e8760a] animate-ping opacity-30" />
               </div>
               <h1 className="text-sm font-bold tracking-[0.15em] uppercase"><span className="text-[#e8760a]">ARGUS</span></h1>
-              <span className="text-[9px] font-mono text-[#050505] bg-[#e8760a] px-1.5 py-px tracking-[0.2em]">PREVIEW</span>
+              <span title="Test version" className="text-[9px] font-mono text-[#050505] bg-[#e8760a] px-1.5 py-px tracking-[0.2em]">PREVIEW</span>
             </div>
             <div className="h-3 w-px bg-[#1a1a1a]" />
             <div className="flex items-center gap-2">
@@ -198,17 +198,17 @@ export default function NextClient() {
 
       <section id="band-hero" className="scroll-mt-32 border-b border-[#1a1a1a] bg-[#1a1a1a]">
         {stage === 'split' && (
-          <div className="grid grid-cols-1 lg:grid-cols-[23rem_1fr_22rem] gap-px">
+          <div className="grid grid-cols-1 lg:grid-cols-[30rem_1fr_22rem] gap-px">
             <div className="bg-[#080808] h-[72vh] min-h-[420px] order-2 lg:order-none"><BreakingRail situations={situations} /></div>
             <div id="situation-map" className="bg-[#050505] relative h-[72vh] min-h-[420px] overflow-hidden">
               <EventMap focusBbox={focusBbox} situations={situations} />
               <div className="hero-glow" /><div className="vignette" /><div className="scanlines" />
               <div className="absolute bottom-0 left-0 right-0 z-[500] pointer-events-none px-3 pb-2.5"><TypeOnHeadline situations={situations} /></div>
-              <button onClick={() => setStage('map')} className="absolute top-24 right-3 z-[600] text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] bg-[#050505]/85 border border-[#222] hover:border-[#e8760a] px-2.5 py-1.5">⤢ Enlarge map</button>
+              <button title="Bigger map" onClick={() => setStage('map')} className="absolute top-24 right-3 z-[600] text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] bg-[#050505]/85 border border-[#222] hover:border-[#e8760a] px-2.5 py-1.5">⤢ Enlarge map</button>
             </div>
             <div className="bg-[#080808] overflow-y-auto h-[72vh] min-h-[420px]">
               <div className="border-b border-[#1a1a1a]"><LiveStream /></div>
-              <div className="px-3 pt-2"><button onClick={() => setStage('live')} className="w-full text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] border border-[#222] hover:border-[#e8760a] px-2.5 py-1.5">⤢ Enlarge live stream</button></div>
+              <div className="px-3 pt-2"><button title="Bigger video" onClick={() => setStage('live')} className="w-full text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] border border-[#222] hover:border-[#e8760a] px-2.5 py-1.5">⤢ Enlarge live stream</button></div>
               <div className="p-3">{topList}</div>
             </div>
           </div>
@@ -217,8 +217,8 @@ export default function NextClient() {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_20rem] gap-px">
             <div className="bg-black h-[78vh] min-h-[460px]"><LiveStream variant="stage" /></div>
             <div className="bg-[#080808] h-[78vh] min-h-[460px] overflow-y-auto flex flex-col">
-              <div className="flex items-center justify-between px-3 py-2 border-b border-[#1a1a1a]"><span className="text-[10px] font-mono text-[#888] uppercase tracking-[0.2em]">Live stream enlarged</span><button onClick={() => setStage('split')} className="text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] border border-[#222] px-2 py-1">⤡ Back</button></div>
-              <button onClick={() => setStage('map')} title="Switch to the map" className="relative h-44 shrink-0 border-b border-[#1a1a1a] overflow-hidden text-left group">
+              <div className="flex items-center justify-between px-3 py-2 border-b border-[#1a1a1a]"><span className="text-[10px] font-mono text-[#888] uppercase tracking-[0.2em]">Live stream enlarged</span><button title="Normal view" onClick={() => setStage('split')} className="text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] border border-[#222] px-2 py-1">⤡ Back</button></div>
+              <button onClick={() => setStage('map')} title="Show map" className="relative h-44 shrink-0 border-b border-[#1a1a1a] overflow-hidden text-left group">
                 <div className="absolute inset-0 pointer-events-none"><EventMap key="mini" focusBbox={focusBbox} situations={situations} bare /></div>
                 <span className="absolute left-2 bottom-2 z-[600] text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] group-hover:text-[#e8760a] bg-[#050505]/85 border border-[#222] px-2 py-1">⤢ Map</span>
               </button>
@@ -230,10 +230,10 @@ export default function NextClient() {
           <div id="situation-map" className="bg-[#050505] relative h-[78vh] min-h-[460px] overflow-hidden">
             <EventMap key="big" focusBbox={focusBbox} situations={situations} />
             <div className="hero-glow" /><div className="vignette" />
-            <button onClick={() => setStage('split')} className="absolute top-24 right-3 z-[600] text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] bg-[#050505]/85 border border-[#222] px-2.5 py-1.5">⤡ Back</button>
+            <button title="Normal view" onClick={() => setStage('split')} className="absolute top-24 right-3 z-[600] text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] bg-[#050505]/85 border border-[#222] px-2.5 py-1.5">⤡ Back</button>
             <div className="absolute right-4 bottom-4 z-[600] w-[22rem] max-w-[40vw] border border-[#222] bg-black shadow-[0_10px_40px_rgba(0,0,0,.7)]">
               <div className="h-[12.4rem]"><LiveStream variant="pip" /></div>
-              <button onClick={() => setStage('live')} className="w-full text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] bg-[#080808] border-t border-[#222] px-2 py-1.5">⤢ Enlarge live stream</button>
+              <button title="Bigger video" onClick={() => setStage('live')} className="w-full text-[10px] font-mono uppercase tracking-[0.15em] text-[#bbb] hover:text-[#e8760a] bg-[#080808] border-t border-[#222] px-2 py-1.5">⤢ Enlarge live stream</button>
             </div>
           </div>
         )}
@@ -254,7 +254,7 @@ export default function NextClient() {
         <div className="border border-[#1a1a1a] rounded bg-[#080808] overflow-hidden" style={{ height: '70vh' }}>
           <div className="flex border-b border-[#1a1a1a] overflow-x-auto">
             {([['feed', 'Intel Feed'], ['alerts', 'Alerts'], ['telegram', 'Telegram'], ['bluesky', 'BSKY'], ['humanitarian', 'Aid'], ['sanctions', 'Sanctions'], ['satellite', 'SAT'], ['arms', 'Arms'], ['markets', 'Markets']] as [Panel, string][]).map(([k, label]) => (
-              <button key={k} onClick={() => setPanel(k)} className={`flex-1 whitespace-nowrap text-[11px] py-2.5 px-3 font-mono uppercase tracking-[0.15em] transition-colors ${panel === k ? 'text-[#e8760a] border-b border-[#e8760a] bg-[#e8760a]/5' : 'text-[#888] hover:text-[#ccc]'}`}>{label}</button>
+              <button key={k} title={k === 'markets' ? 'Business news' : k === 'feed' ? 'Conflict news' : undefined} onClick={() => setPanel(k)} className={`flex-1 whitespace-nowrap text-[11px] py-2.5 px-3 font-mono uppercase tracking-[0.15em] transition-colors ${panel === k ? 'text-[#e8760a] border-b border-[#e8760a] bg-[#e8760a]/5' : 'text-[#888] hover:text-[#ccc]'}`}>{label}</button>
             ))}
           </div>
           <div className="overflow-hidden" style={{ height: 'calc(70vh - 41px)' }}>

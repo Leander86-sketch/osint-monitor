@@ -66,9 +66,9 @@ export default function BreakingRail({ situations, compact = false }: { situatio
 
   return (
     <div className="flex flex-col h-full bg-[#080808]">
-      <div className="flex items-center gap-2 px-3 py-2.5 border-b border-[#1a1a1a]">
+      <div className="flex items-center gap-2 px-4 py-3 border-b border-[#1a1a1a]">
         <span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full rounded-full bg-[#dc2626] opacity-50 animate-ping" /><span className="relative inline-flex rounded-full h-2 w-2 bg-[#dc2626]" /></span>
-        <h2 className="text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.2em]">Breaking</h2>
+        <h2 title="Live feed" className="text-[12px] font-mono font-bold text-[#eee] uppercase tracking-[0.22em]">Breaking</h2>
         <span className="text-[10px] font-mono text-[#555] ml-auto">conflict only · newest first</span>
       </div>
       <div className="flex-1 overflow-y-auto">
@@ -80,25 +80,25 @@ export default function BreakingRail({ situations, compact = false }: { situatio
           const views = [...new Set(srcs.map(viewOf))]; const isOpen = open === c.lead.id;
           return (
             <div key={c.lead.id} className={`border-b border-[#141414] ${isOpen ? 'bg-[#e8760a]/[0.06]' : 'hover:bg-[#0d0d0d]'}`}>
-              <button onClick={() => setOpen(isOpen ? null : c.lead.id)} className="w-full text-left px-3 py-2.5 grid grid-cols-[3.2rem_1fr] gap-2">
-                <span className="text-[12px] font-mono tabular-nums text-white flex items-start gap-1.5 pt-px">{fresh && <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse shrink-0" />}{ago(age)}</span>
+              <button onClick={() => setOpen(isOpen ? null : c.lead.id)} title="Show sources" className="w-full text-left px-4 py-3.5 grid grid-cols-[3.6rem_1fr] gap-3">
+                <span title="Age" className="text-[14px] font-mono tabular-nums text-white flex items-start gap-1.5 pt-px">{fresh && <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse shrink-0" />}{ago(age)}</span>
                 <span className="min-w-0">
-                  <span className="block text-[13px] leading-snug text-[#eee]" style={{ fontFamily: 'var(--font-geist-sans), sans-serif' }}>{c.lead.title}</span>
-                  <span className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[10px] font-mono text-[#777]">
-                    <span className={`px-1 border ${c.lead.sourceTier === 1 ? 'text-[#e8760a] border-[#b85a08]' : 'border-[#222]'}`}>T{c.lead.sourceTier || 3}</span>
+                  <span className="block text-[15.5px] leading-snug text-[#f2f2f2]" style={{ fontFamily: 'var(--font-geist-sans), sans-serif' }}>{c.lead.title}</span>
+                  <span className="mt-2 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[11px] font-mono text-[#888]">
+                    <span title="Source rank" className={`px-1 border ${c.lead.sourceTier === 1 ? 'text-[#e8760a] border-[#b85a08]' : 'border-[#222]'}`}>T{c.lead.sourceTier || 3}</span>
                     <span>{c.lead.source}</span>
-                    {srcs.length > 1 && <span className="flex items-center gap-1 text-[#aaa]">{views.map(v => <i key={v} title={v} className="inline-block w-[7px] h-[7px] rounded-full" style={{ background: VIEW_COLOR[v] }} />)}<span className="ml-0.5">{srcs.length} sources</span></span>}
-                    {srcs.length > 1 && first.source !== c.lead.source && <span className="text-[#666]">first: {first.source}</span>}
+                    {srcs.length > 1 && <span title="Viewpoints" className="flex items-center gap-1 text-[#aaa]">{views.map(v => <i key={v} title={v} className="inline-block w-[7px] h-[7px] rounded-full" style={{ background: VIEW_COLOR[v] }} />)}<span className="ml-0.5">{srcs.length} sources</span></span>}
+                    {srcs.length > 1 && first.source !== c.lead.source && <span title="First report" className="text-[#666]">first: {first.source}</span>}
                   </span>
                 </span>
               </button>
               {isOpen && (
-                <div className="px-3 pb-3 pl-[4.1rem] space-y-1.5">
+                <div className="px-4 pb-4 pl-[5.35rem] space-y-2.5">
                   {srcs.map(i => { const v = viewOf(i); return (
-                    <a key={i.id} href={i.link} target="_blank" rel="noopener noreferrer" className="block group">
+                    <a key={i.id} href={i.link} target="_blank" rel="noopener noreferrer" title="Open article" className="block group">
                       <span className="text-[9px] font-mono tracking-[0.15em] mr-2" style={{ color: VIEW_COLOR[v] }}>{v}</span>
                       <span className="text-[10px] font-mono text-[#888]">{i.source} · {ago(now - new Date(i.pubDate).getTime())}</span>
-                      <span className="block text-[12px] leading-snug text-[#bbb] group-hover:text-[#e8760a]" style={{ fontFamily: 'var(--font-geist-sans), sans-serif' }}>{i.title}</span>
+                      <span className="block text-[13.5px] leading-snug text-[#c8c8c8] group-hover:text-[#e8760a]" style={{ fontFamily: 'var(--font-geist-sans), sans-serif' }}>{i.title}</span>
                     </a>); })}
                 </div>
               )}
@@ -106,7 +106,7 @@ export default function BreakingRail({ situations, compact = false }: { situatio
           );
         })}
       </div>
-      {quiet.length > 0 && <div className="px-3 py-2 border-t border-dashed border-[#222] text-[10px] font-mono text-[#555] truncate">quiet: {quiet.map(s => `${s.title} ${ago(now - new Date(s.latestPubDate).getTime())}`).join(' · ')}</div>}
+      {quiet.length > 0 && <div title="No news" className="px-4 py-2.5 border-t border-dashed border-[#222] text-[11px] font-mono text-[#666] truncate">quiet: {quiet.map(s => `${s.title} ${ago(now - new Date(s.latestPubDate).getTime())}`).join(' · ')}</div>}
     </div>
   );
 }

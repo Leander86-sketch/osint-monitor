@@ -40,13 +40,13 @@ export default function BreakingBand({ situations, onFocus, onWatch, demo = fals
           <div className="text-[11px] font-mono uppercase tracking-[0.25em]"><span className="text-white">Breaking</span><span className="text-[#dc2626] ml-3">{sit.title} · {sit.severity} · {sit.metadata.velocity1h} in the last hour</span></div>
           <a href={sit.latestLink || '#'} target="_blank" rel="noopener noreferrer" className="block mt-1.5 text-[17px] leading-snug text-white hover:text-[#e8760a] transition-colors" style={{ fontFamily: 'var(--font-geist-sans), sans-serif' }}>{sit.latestHeadline}</a>
           <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] font-mono text-[#888]">
-            {first && <><span className="text-[9px] tracking-[0.18em] text-[#e8760a] border border-[#b85a08] px-1.5 py-px">FIRST REPORT</span><span>{first.source} · {new Date(first.pubDate).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}</span></>}
+            {first && <><span title="Earliest source" className="text-[9px] tracking-[0.18em] text-[#e8760a] border border-[#b85a08] px-1.5 py-px">FIRST REPORT</span><span>{first.source} · {new Date(first.pubDate).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}</span></>}
             <span className="flex items-center gap-1" title={sources.join(' · ')}>{Array.from({ length: 5 }).map((_, i) => <i key={i} className="inline-block w-[7px] h-[7px] rounded-full" style={i < dots ? { background: '#e8760a' } : { border: '1px solid #333' }} />)}<span className="ml-1">{sources.length} {sources.length === 1 ? 'source' : 'sources'} in 3 h</span></span>
-            <button onClick={() => onFocus(sit.slug)} className="text-[#e8760a] border-b border-[#b85a08] hover:text-white">show on map →</button>
-            <button onClick={onWatch} className="text-[#e8760a] border-b border-[#b85a08] hover:text-white">watch live →</button>
+            <button title="Locate" onClick={() => onFocus(sit.slug)} className="text-[#e8760a] border-b border-[#b85a08] hover:text-white">show on map →</button>
+            <button title="Bigger video" onClick={onWatch} className="text-[#e8760a] border-b border-[#b85a08] hover:text-white">watch live →</button>
           </div>
         </div>
-        <div className="text-right shrink-0"><div className="text-[22px] font-mono font-light text-white tabular-nums">{ago(latestAge)}</div><div className="text-[9px] font-mono uppercase tracking-[0.2em] text-[#666]">since latest report</div></div>
+        <div title="Latest report" className="text-right shrink-0"><div className="text-[22px] font-mono font-light text-white tabular-nums">{ago(latestAge)}</div><div className="text-[9px] font-mono uppercase tracking-[0.2em] text-[#666]">since latest report</div></div>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import HomeClient from '@/components/HomeClient';
+import NextClient from '@/components/NextClient';
 import { getSituationBySlug } from '@/lib/situations';
 
 export const dynamic = 'force-dynamic';
@@ -30,5 +30,5 @@ export async function generateMetadata(
 }
 
 export default function Page() {
-  return <HomeClient />;
+  return <NextClient />;
 }

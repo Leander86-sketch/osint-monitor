@@ -52,10 +52,9 @@ export default function FocusHybrid() {
   return (
     <div className="min-h-screen bg-[#050505] text-[#ccc]">
       <header className="sticky top-0 z-40 bg-[#080808]/95 backdrop-blur border-b border-[#1a1a1a] flex items-center gap-4 px-5 py-4">
-        <a href="/next" title="Back to dashboard" className="flex items-center gap-2.5"><span className="w-2 h-2 rounded-full bg-[#e8760a]" /><span className="text-sm font-bold tracking-[0.15em] uppercase text-[#e8760a]">ARGUS</span></a>
-        <span title="Test version" className="text-[9px] font-mono text-[#050505] bg-[#e8760a] px-1.5 py-px tracking-[0.2em]">PREVIEW</span>
+        <a href="/" title="Back to dashboard" className="flex items-center gap-2.5"><span className="w-2 h-2 rounded-full bg-[#e8760a]" /><span className="text-sm font-bold tracking-[0.15em] uppercase text-[#e8760a]">ARGUS</span></a>
         <span className="text-[11px] font-mono text-[#888] uppercase tracking-[0.2em]">Focus</span>
-        <a href="/next" title="Back to dashboard" className="ml-auto text-[11px] font-mono text-[#bbb] hover:text-[#e8760a] uppercase tracking-[0.15em] border border-[#222] px-3 py-1.5">‹ Dashboard</a>
+        <a href="/" title="Back to dashboard" className="ml-auto text-[11px] font-mono text-[#bbb] hover:text-[#e8760a] uppercase tracking-[0.15em] border border-[#222] px-3 py-1.5">‹ Dashboard</a>
       </header>
 
       <div className="max-w-[1500px] mx-auto px-6">

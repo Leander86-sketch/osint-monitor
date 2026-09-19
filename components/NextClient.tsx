@@ -40,10 +40,12 @@ function setUrlParam(key: string, value: string | null) {
   window.history.replaceState(null, '', url);
 }
 
-// /next (18 sep 2026): voorstel voor de nieuwe bovenkant — breaking-band, feed die kiest, podium met grote stream of kaart.
-// De homepage (HomeClient) blijft ongewijzigd tot Leander zegt dat de twee gewisseld worden.
+// Homepage sinds 19 sep 2026 (was /next, 18 sep): nieuwe bovenkant — breaking-band, feed die kiest, podium met grote stream of kaart.
+// De vorige homepage (HomeClient) blijft bereikbaar op /classic, zodat terugdraaien één handeling is.
 export default function NextClient() {
   const [stage, setStage] = useState<Stage>('split');
+  const [focus, setFocus] = useState<{ last30: number; critical30: number } | null>(null);
+  useEffect(() => { fetch('/api/hybrid?summary=1').then(r => r.json()).then(d => { if (d && typeof d.last30 === 'number') setFocus(d); }).catch(() => {}); }, []);
   const [dossier, setDossier] = useState<string | null>(null); // open dossier (slug); ook via ?dossier=
   const [demoBreaking, setDemoBreaking] = useState(false); // ?breaking=1 toont de band ook als er nu niets breekt (alleen om te beoordelen)
   const [situations, setSituations] = useState<Situation[]>([]);
@@ -165,7 +167,6 @@ export default function NextClient() {
                 <div className="absolute inset-0 w-2 h-2 rounded-full bg-[#e8760a] animate-ping opacity-30" />
               </div>
               <h1 className="text-sm font-bold tracking-[0.15em] uppercase"><span className="text-[#e8760a]">ARGUS</span></h1>
-              <span title="Test version" className="text-[9px] font-mono text-[#050505] bg-[#e8760a] px-1.5 py-px tracking-[0.2em]">PREVIEW</span>
             </div>
             <div className="h-3 w-px bg-[#1a1a1a]" />
             <div className="flex items-center gap-2">
@@ -177,7 +178,7 @@ export default function NextClient() {
               {[['band-hero', 'GLANCE'], ['band-situations', 'SITUATIONS'], ['band-raw', 'RAW'], ['band-ref', 'REF']].map(([id, label]) => (
                 <button key={id} onClick={() => jump(id)} className="text-[10px] font-mono px-2 py-1 rounded text-[#888] hover:text-[#e8760a] hover:bg-[#0f0f0f] uppercase tracking-wider transition-colors">{label}</button>
               ))}
-              <a href="/next/focus" title="Hybrid Europe" className="text-[10px] font-mono px-2 py-1 rounded text-[#e8760a] border border-[#b85a08]/60 hover:bg-[#e8760a]/10 uppercase tracking-wider transition-colors ml-1">Focus</a>
+              <a href="/focus" title="Hybrid Europe" className="text-[10px] font-mono px-2 py-1 rounded text-[#e8760a] border border-[#b85a08]/60 hover:bg-[#e8760a]/10 uppercase tracking-wider transition-colors ml-1">Focus</a>
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -244,6 +245,14 @@ export default function NextClient() {
           </div>
         )}
       </section>
+
+      {/* Verwijzing naar het verdiepingsstuk: één patroon over veel landen */}
+      <a href="/focus" title="Hybrid Europe" className="group flex flex-wrap items-center gap-x-4 gap-y-1 px-5 py-4 border-b border-[#1a1a1a] bg-[#0a0806] hover:bg-[#120d07] transition-colors">
+        <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#e8760a] border border-[#b85a08] px-2 py-0.5">Focus</span>
+        <span className="text-[16px] text-white" style={{ fontFamily: 'var(--font-geist-sans), sans-serif' }}>Hybrid Europe: drones, sabotage and cut cables below the threshold of war</span>
+        {focus && <span className="text-[11px] font-mono text-[#999]">{focus.last30} incidents in the last 30 days · {focus.critical30} critical</span>}
+        <span className="ml-auto text-[11px] font-mono text-[#e8760a] group-hover:text-white">read the analysis →</span>
+      </a>
 
       <section id="band-situations" className="scroll-mt-32 px-4 py-6">
         <div className="flex items-center gap-2 mb-3">

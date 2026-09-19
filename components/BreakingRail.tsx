@@ -55,9 +55,10 @@ export default function BreakingRail({ situations, compact = false }: { situatio
   }, []);
 
   const clusters = useMemo(() => {
-    // conflict = hoort bij een lopende situatie, óf de kop of inleiding gaat aantoonbaar over geweld, krijgsmacht of sancties
+    // conflict = de tekst gaat aantoonbaar over geweld, krijgsmacht of sancties, én het bericht hoort bij een lopende situatie of zegt het al in de kop
+    // (19 sep: 'weersverwachting Oekraïne' zat in de situatie Oekraïne en kwam zo in de rail)
     const inSituation = new Set(situations.flatMap(s => s.itemIds || []));
-    const conflict = items.filter(i => i.category !== 'sport' && !isMarketItem(i) && (inSituation.has(i.id) || CONFLICT_RE.test(`${i.title} ${i.description || ''}`)))
+    const conflict = items.filter(i => i.category !== 'sport' && !isMarketItem(i) && CONFLICT_RE.test(`${i.title} ${i.description || ''}`) && (inSituation.has(i.id) || CONFLICT_RE.test(i.title)))
       .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()).slice(0, 160);
     return cluster(conflict).slice(0, compact ? 25 : 45);
   }, [items, compact, situations]);

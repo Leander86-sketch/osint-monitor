@@ -8,39 +8,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { NewsItem, Situation } from '@/lib/types';
 import { isMarketItem, CONFLICT_RE } from '@/components/LiveFeed';
 
-type View = 'WEST' | 'RUSSIA' | 'UKRAINE' | 'MIDEAST' | 'ASIA' | 'OTHER';
-const VIEW_COLOR: Record<View, string> = { WEST: '#60a5fa', RUSSIA: '#f87171', UKRAINE: '#facc15', MIDEAST: '#34d399', ASIA: '#c084fc', OTHER: '#9ca3af' };
-const BY_SOURCE: Array<[RegExp, View]> = [
-  [/tass|ria|rt\b|sputnik|moscow times|meduza|interfax/i, 'RUSSIA'],
-  [/ukrinform|kyiv|ukrainska|pravda|united24/i, 'UKRAINE'],
-  [/al jazeera|middle east eye|arab news|al-monitor|times of israel|haaretz|jerusalem|rudaw|al arabiya|i24|anadolu|trt|iran|press tv/i, 'MIDEAST'],
-  [/scmp|south china|cna|channel news|nhk|nikkei|hindu|india|wion|xinhua|global times|yonhap|korea|japan times|straits|abc australia/i, 'ASIA'],
-];
-function viewOf(i: NewsItem): View {
-  for (const [re, v] of BY_SOURCE) if (re.test(i.source)) return v;
-  if (i.category === 'mideast') return 'MIDEAST'; if (i.category === 'asia') return 'ASIA';
-  if (['europe', 'americas', 'world', 'defense', 'gov', 'thinktank', 'crisis'].includes(i.category || '')) return 'WEST';
-  return 'OTHER';
-}
-
-const STOP = new Set(['the', 'and', 'for', 'with', 'from', 'that', 'this', 'after', 'over', 'into', 'says', 'said', 'amid', 'will', 'have', 'has', 'are', 'was', 'were', 'its', 'his', 'her', 'their', 'new', 'more', 'than', 'about', 'against', 'news', 'live', 'update', 'updates', 'report', 'reports']);
-const words = (t: string) => new Set(t.toLowerCase().replace(/[^a-z0-9à-ÿ ]+/g, ' ').split(/\s+/).filter(w => w.length > 3 && !STOP.has(w)));
-interface Cluster { lead: NewsItem; items: NewsItem[]; w: Set<string> }
-
-function cluster(items: NewsItem[]): Cluster[] {
-  const out: Cluster[] = [];
-  for (const it of items) { // nieuwste eerst
-    const w = words(it.title); let home: Cluster | null = null;
-    for (const c of out) {
-      if (Math.abs(new Date(c.lead.pubDate).getTime() - new Date(it.pubDate).getTime()) > 8 * 3600000) continue;
-      let shared = 0; w.forEach(x => { if (c.w.has(x)) shared++; });
-      if (shared >= 4 || (shared >= 3 && shared / Math.min(w.size, c.w.size) >= 0.6)) { home = c; break; }
-    }
-    if (home) { home.items.push(it); w.forEach(x => home!.w.add(x)); } else out.push({ lead: it, items: [it], w });
-  }
-  return out;
-}
-const ago = (ms: number) => { const m = Math.max(0, Math.floor(ms / 60000)); return m < 60 ? `${m}m` : m < 1440 ? `${Math.floor(m / 60)}h${String(m % 60).padStart(2, '0')}` : `${Math.floor(m / 1440)}d`; };
+import { VIEW_COLOR, viewOf, clusterEvents, agoShort as ago } from '@/lib/viewpoints';
 
 export default function BreakingRail({ situations, compact = false }: { situations: Situation[]; compact?: boolean }) {
   const [items, setItems] = useState<NewsItem[]>([]);
@@ -60,7 +28,7 @@ export default function BreakingRail({ situations, compact = false }: { situatio
     const inSituation = new Set(situations.flatMap(s => s.itemIds || []));
     const conflict = items.filter(i => i.category !== 'sport' && !isMarketItem(i) && CONFLICT_RE.test(`${i.title} ${i.description || ''}`) && (inSituation.has(i.id) || CONFLICT_RE.test(i.title)))
       .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()).slice(0, 160);
-    return cluster(conflict).slice(0, compact ? 25 : 45);
+    return clusterEvents(conflict).slice(0, compact ? 25 : 45);
   }, [items, compact, situations]);
   const quiet = situations.filter(s => s.latestPubDate && now - new Date(s.latestPubDate).getTime() > 45 * 60000).slice(0, 4);
 

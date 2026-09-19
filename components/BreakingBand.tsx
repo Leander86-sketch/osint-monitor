@@ -11,7 +11,7 @@ const WINDOW_MS = 3 * 3600000;
 
 function ago(ms: number): string { const m = Math.max(0, Math.floor(ms / 60000)); return m < 60 ? `${m} min` : `${Math.floor(m / 60)} h ${m % 60} min`; }
 
-export default function BreakingBand({ situations, onFocus, onWatch, demo = false }: { situations: Situation[]; onFocus: (slug: string) => void; onWatch: () => void; demo?: boolean }) {
+export default function BreakingBand({ situations, onFocus, onWatch, onDossier, demo = false }: { situations: Situation[]; onFocus: (slug: string) => void; onWatch: () => void; onDossier?: (slug: string) => void; demo?: boolean }) {
   const sit = situations.find(s => s.status === 'breaking') || situations.find(s => s.severity === 'critical' && s.metadata.velocity1h >= 2) || (demo ? situations[0] : null) || null;
   const [items, setItems] = useState<Item[]>([]);
   const [now, setNow] = useState(() => Date.now());
@@ -42,6 +42,7 @@ export default function BreakingBand({ situations, onFocus, onWatch, demo = fals
           <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] font-mono text-[#888]">
             {first && <><span title="Earliest source" className="text-[9px] tracking-[0.18em] text-[#e8760a] border border-[#b85a08] px-1.5 py-px">FIRST REPORT</span><span>{first.source} · {new Date(first.pubDate).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}</span></>}
             <span className="flex items-center gap-1" title={sources.join(' · ')}>{Array.from({ length: 5 }).map((_, i) => <i key={i} className="inline-block w-[7px] h-[7px] rounded-full" style={i < dots ? { background: '#e8760a' } : { border: '1px solid #333' }} />)}<span className="ml-1">{sources.length} {sources.length === 1 ? 'source' : 'sources'} in 3 h</span></span>
+            {onDossier && <button title="All sources" onClick={() => onDossier(sit.slug)} className="text-[#e8760a] border-b border-[#b85a08] hover:text-white">open dossier →</button>}
             <button title="Locate" onClick={() => onFocus(sit.slug)} className="text-[#e8760a] border-b border-[#b85a08] hover:text-white">show on map →</button>
             <button title="Bigger video" onClick={onWatch} className="text-[#e8760a] border-b border-[#b85a08] hover:text-white">watch live →</button>
           </div>

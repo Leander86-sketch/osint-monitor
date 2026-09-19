@@ -42,7 +42,8 @@ const SITUATION_CHANNELS: Record<string, string> = {
   'red-sea-bab-al-mandab': 'Al Arabiya',
 };
 
-export default function SituationCard({ s, rank, onFilter, onFocus }: { s: Situation; rank: number; onFilter?: (kw: string) => void; onFocus?: (bbox: [number, number, number, number]) => void }) {
+// onOpen (19 sep 2026, /next): als die is meegegeven opent een klik het dossier op volle breedte in plaats van de kaart uit te klappen
+export default function SituationCard({ s, rank, onFilter, onFocus, onOpen }: { s: Situation; rank: number; onFilter?: (kw: string) => void; onFocus?: (bbox: [number, number, number, number]) => void; onOpen?: (slug: string) => void }) {
   const [open, setOpen] = useState(false);
   const [detail, setDetail] = useState<Detail | null>(null);
   const [loading, setLoading] = useState(false);
@@ -50,6 +51,7 @@ export default function SituationCard({ s, rank, onFilter, onFocus }: { s: Situa
   const m = s.metadata;
 
   const toggle = async () => {
+    if (onOpen) { onOpen(s.slug); return; }
     const next = !open;
     setOpen(next);
     if (next && !detail) {

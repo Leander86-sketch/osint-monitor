@@ -21,6 +21,7 @@ import SatellitePanel from '@/components/SatellitePanel';
 import ArmsPanel from '@/components/ArmsPanel';
 import BreakingBand from '@/components/BreakingBand';
 import BreakingRail from '@/components/BreakingRail';
+import Dossier from '@/components/Dossier';
 
 const SEV_COLOR: Record<string, string> = { critical: '#dc2626', high: '#f97316', medium: '#eab308', low: '#6b7280' };
 type Panel = 'feed' | 'alerts' | 'telegram' | 'bluesky' | 'humanitarian' | 'sanctions' | 'satellite' | 'arms' | 'markets';
@@ -43,6 +44,7 @@ function setUrlParam(key: string, value: string | null) {
 // De homepage (HomeClient) blijft ongewijzigd tot Leander zegt dat de twee gewisseld worden.
 export default function NextClient() {
   const [stage, setStage] = useState<Stage>('split');
+  const [dossier, setDossier] = useState<string | null>(null); // open dossier (slug); ook via ?dossier=
   const [demoBreaking, setDemoBreaking] = useState(false); // ?breaking=1 toont de band ook als er nu niets breekt (alleen om te beoordelen)
   const [situations, setSituations] = useState<Situation[]>([]);
   const [time, setTime] = useState('');
@@ -70,11 +72,13 @@ export default function NextClient() {
     if (p && ['feed', 'alerts', 'telegram', 'bluesky', 'humanitarian', 'sanctions', 'satellite', 'arms', 'markets'].includes(p)) setPanel(p as Panel);
     pendingSitRef.current = q.get('sit');
     setDemoBreaking(q.get('breaking') === '1');
+    if (q.get('dossier')) setDossier(q.get('dossier'));
   }, []);
 
   useEffect(() => {
     setUrlParam('panel', panel === 'feed' ? null : panel);
   }, [panel]);
+  useEffect(() => { setUrlParam('dossier', dossier); }, [dossier]);
 
   const fetchSituations = useCallback(async () => {
     try {
@@ -138,6 +142,7 @@ export default function NextClient() {
           <button key={s.id} onClick={() => { onFocus(s.bbox); if (stage === 'live') setStage('map'); }} className="w-full text-left flex items-center gap-2 px-2 py-1.5 rounded hover:bg-[#0e0e0e] border-l-2" style={{ borderColor: SEV_COLOR[s.severity] }}>
             <span className="text-[10px] font-mono text-[#444] tabular-nums">{String(i + 1).padStart(2, '0')}</span>
             <span className="text-[11px] font-mono text-[#ccc] uppercase truncate flex-1">{s.title}</span>
+            <span role="button" title="Open dossier" onClick={(e) => { e.stopPropagation(); setDossier(s.slug); }} className="text-[10px] font-mono text-[#666] hover:text-[#e8760a] px-1">▤</span>
             {s.status === 'breaking' && <span className="w-1.5 h-1.5 rounded-full bg-[#dc2626] animate-pulse" />}
             <span className="text-[10px] font-mono tabular-nums" title={quiet(s.latestPubDate) ? 'No news' : 'Last hour'} style={{ color: quiet(s.latestPubDate) ? '#555' : SEV_COLOR[s.severity] }}>{quiet(s.latestPubDate) || (s.metadata.velocity1h > 0 ? '+' + s.metadata.velocity1h : s.severity.slice(0, 3).toUpperCase())}</span>
           </button>
@@ -194,7 +199,7 @@ export default function NextClient() {
         </header>
       </div>
 
-      <BreakingBand situations={situations} demo={demoBreaking} onFocus={onFocusSlug} onWatch={() => { setStage('live'); jump('band-hero'); }} />
+      <BreakingBand situations={situations} demo={demoBreaking} onDossier={setDossier} onFocus={onFocusSlug} onWatch={() => { setStage('live'); jump('band-hero'); }} />
 
       <section id="band-hero" className="scroll-mt-32 border-b border-[#1a1a1a] bg-[#1a1a1a]">
         {stage === 'split' && (
@@ -244,9 +249,10 @@ export default function NextClient() {
           <div className="w-1.5 h-1.5 rounded-full bg-[#16a34a]" />
           <h2 className="text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.2em]">Live Situations</h2>
           <span className="text-[11px] font-mono text-[#555]">{situations.length}</span>
-          <span className="text-[10px] font-mono text-[#444] ml-2">click a card to drill into the latest developments</span>
+          <span className="text-[10px] font-mono text-[#444] ml-2">click a card to open its dossier</span>
         </div>
-        <SituationOverview situations={situations} onFilter={onFilter} onFocus={onFocus} />
+        <SituationOverview situations={situations} onFilter={onFilter} onFocus={onFocus} onOpen={setDossier} />
+        {dossier && <Dossier situations={situations} slug={dossier} onClose={() => setDossier(null)} onGo={setDossier} onLocate={(sl) => { setDossier(null); setStage('split'); onFocusSlug(sl); }} />}
       </section>
 
       <section id="band-raw" className="scroll-mt-32 px-4 py-6 border-t border-[#111] bg-[#070707]">

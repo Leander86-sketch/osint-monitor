@@ -177,6 +177,7 @@ export default function NextClient() {
               {[['band-hero', 'GLANCE'], ['band-situations', 'SITUATIONS'], ['band-raw', 'RAW'], ['band-ref', 'REF']].map(([id, label]) => (
                 <button key={id} onClick={() => jump(id)} className="text-[10px] font-mono px-2 py-1 rounded text-[#888] hover:text-[#e8760a] hover:bg-[#0f0f0f] uppercase tracking-wider transition-colors">{label}</button>
               ))}
+              <a href="/next/focus" title="Hybrid Europe" className="text-[10px] font-mono px-2 py-1 rounded text-[#e8760a] border border-[#b85a08]/60 hover:bg-[#e8760a]/10 uppercase tracking-wider transition-colors ml-1">Focus</a>
             </div>
           </div>
           <div className="flex items-center gap-3">

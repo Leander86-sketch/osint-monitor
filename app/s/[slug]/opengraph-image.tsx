@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { getSituationBySlug } from '@/lib/situations';
-import { ensureFeedsLoaded } from '@/lib/store';
+import { ensureFeedsLoaded, getNewsItems } from '@/lib/store';
 
 // Deelbaar plaatje per situatie (19 sep 2026): titel, niveau, laatste kop en cijfers — voor X, WhatsApp en Telegram.
 export const alt = 'ARGUS situation';
@@ -13,7 +13,11 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const { slug } = await params; await ensureFeedsLoaded();
   const s = getSituationBySlug(slug);
   const sev = s ? SEV[s.severity] || '#6b7280' : '#6b7280';
-  const head = s?.latestHeadline ? (s.latestHeadline.length > 130 ? s.latestHeadline.slice(0, 127) + '…' : s.latestHeadline) : 'Always monitoring the situation';
+  // het account is Engelstalig: neem de nieuwste Engelse kop (de situatie Europe Airspace leest ook Duitse bronnen)
+  const GERMAN = /[äöüß]|\b(der|die|das|und|wegen|nach|im|am|ist|nicht|flughafen|drohnen?)\b/i;
+  let latest = s?.latestHeadline || '';
+  if (s && latest && GERMAN.test(latest)) { const ids = new Set(s.itemIds); const en = getNewsItems(1000, 0).filter(i => ids.has(i.id) && !GERMAN.test(i.title)).sort((x, y) => new Date(y.pubDate).getTime() - new Date(x.pubDate).getTime())[0]; if (en) latest = en.title; }
+  const head = latest ? (latest.length > 130 ? latest.slice(0, 127) + '…' : latest) : 'Always monitoring the situation';
   return new ImageResponse(
     (
       <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: '#050505', padding: '56px 64px', fontFamily: 'monospace', borderLeft: `18px solid ${sev}` }}>

@@ -250,7 +250,7 @@ export default function NextClient({ initialSituations = [] }: { initialSituatio
       <a href="/focus" title="Hybrid Europe" className="group flex flex-wrap items-center gap-x-4 gap-y-1 px-5 py-4 border-b border-[#1a1a1a] bg-[#0a0806] hover:bg-[#120d07] transition-colors">
         <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#e8760a] border border-[#b85a08] px-2 py-0.5">Focus</span>
         <span className="text-[16px] text-white" style={{ fontFamily: 'var(--font-geist-sans), sans-serif' }}>Hybrid Europe: drones, sabotage and cut cables below the threshold of war</span>
-        {focus && <span className="text-[11px] font-mono text-[#999]">{focus.total} incidents since 2022 · {focus.criticalTotal} critical · read the analysis</span>}
+        {focus && <span className="text-[11px] font-mono text-[#999]">{focus.total} incidents since 2022 · {focus.criticalTotal} critical</span>}
         <span className="ml-auto text-[11px] font-mono text-[#e8760a] group-hover:text-white">read the analysis →</span>
       </a>
 

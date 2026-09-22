@@ -18,7 +18,7 @@ const RANGES: [string, number][] = [['30 days', 30], ['90 days', 90], ['This yea
 
 export default function FocusHybrid() {
   const [data, setData] = useState<Data | null>(null);
-  const [range, setRange] = useState(90);
+  const [range, setRange] = useState(0); // 0 = alles: de dataset loopt tot 2025, de eigen detectie begint 22 sep 2026
   const [types, setTypes] = useState<Set<string>>(new Set());
   const [sevs, setSevs] = useState<Set<Sev>>(new Set());
   const [country, setCountry] = useState('');

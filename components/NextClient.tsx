@@ -44,7 +44,7 @@ function setUrlParam(key: string, value: string | null) {
 // De vorige homepage (HomeClient) blijft bereikbaar op /classic, zodat terugdraaien één handeling is.
 export default function NextClient({ initialSituations = [] }: { initialSituations?: Situation[] } = {}) {
   const [stage, setStage] = useState<Stage>('split');
-  const [focus, setFocus] = useState<{ last30: number; critical30: number } | null>(null);
+  const [focus, setFocus] = useState<{ total: number; last30: number; critical30: number; last365: number; critical365: number } | null>(null);
   useEffect(() => { fetch('/api/hybrid?summary=1').then(r => r.json()).then(d => { if (d && typeof d.last30 === 'number') setFocus(d); }).catch(() => {}); }, []);
   const [dossier, setDossier] = useState<string | null>(null); // open dossier (slug); ook via ?dossier=
   const [demoBreaking, setDemoBreaking] = useState(false); // ?breaking=1 toont de band ook als er nu niets breekt (alleen om te beoordelen)
@@ -250,7 +250,7 @@ export default function NextClient({ initialSituations = [] }: { initialSituatio
       <a href="/focus" title="Hybrid Europe" className="group flex flex-wrap items-center gap-x-4 gap-y-1 px-5 py-4 border-b border-[#1a1a1a] bg-[#0a0806] hover:bg-[#120d07] transition-colors">
         <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#e8760a] border border-[#b85a08] px-2 py-0.5">Focus</span>
         <span className="text-[16px] text-white" style={{ fontFamily: 'var(--font-geist-sans), sans-serif' }}>Hybrid Europe: drones, sabotage and cut cables below the threshold of war</span>
-        {focus && <span className="text-[11px] font-mono text-[#999]">{focus.last30} incidents in the last 30 days · {focus.critical30} critical</span>}
+        {focus && <span className="text-[11px] font-mono text-[#999]">{focus.total} incidents since 2022 · {focus.last365} in the last 12 months · {focus.critical365} critical</span>}
         <span className="ml-auto text-[11px] font-mono text-[#e8760a] group-hover:text-white">read the analysis →</span>
       </a>
 

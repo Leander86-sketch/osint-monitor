@@ -109,7 +109,7 @@ export function computeSituations(): Situation[] {
     return g.__situationsCache.value;
   }
 
-  const items = getNewsItems(2000, 0).filter(i => i.category !== 'sport' && i.keywords.length > 0 && !NOISE_RE.test(i.title));
+  const items = getNewsItems(3200, 0).filter(i => i.category !== 'sport' && i.keywords.length > 0 && !NOISE_RE.test(i.title));
 
   // 1) curated anchors - first match wins
   const buckets = new Map<string, NewsItem[]>();

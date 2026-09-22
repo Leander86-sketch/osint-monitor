@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
   const keyword = searchParams.get('keyword');
 
   await ensureFeedsLoaded();
-  let items = getNewsItems(500, 0);
+  let items = getNewsItems(3200, 0);
 
   // Filter by source
   if (source) {

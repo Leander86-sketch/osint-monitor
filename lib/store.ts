@@ -99,9 +99,15 @@ export async function refreshFeeds(): Promise<{ added: number; total: number }> 
     new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
   );
 
-  // Keep max 1000 items
-  if (s.newsItems.length > 1000) {
-    s.newsItems = s.newsItems.slice(0, 1000);
+  // Venster (22 sep 2026, Leander): 3000 nieuwste berichten, en van elke bron blijven de 3 nieuwste altijd staan —
+  // zeldzaam postende bronnen (Bellingcat, Oryx, Estse defensie) vielen anders buiten beeld.
+  const MAX = 3000, KEEP_PER_SOURCE = 3;
+  if (s.newsItems.length > MAX) {
+    const kept = new Set<string>(); const perSource = new Map<string, number>();
+    for (const it of s.newsItems) { const n = perSource.get(it.source) || 0; if (n < KEEP_PER_SOURCE) { kept.add(it.id); perSource.set(it.source, n + 1); } }
+    const head = s.newsItems.slice(0, MAX); const headIds = new Set(head.map(i => i.id));
+    const rare = s.newsItems.slice(MAX).filter(i => kept.has(i.id) && !headIds.has(i.id));
+    s.newsItems = [...head, ...rare];
   }
 
   s.lastFetch = Date.now();

@@ -18,7 +18,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const GERMAN = /[äöüß]|\b(der|die|das|und|wegen|nach|im|am|ist|nicht|flughafen|drohnen?)\b/i;
   let latest = s?.latestHeadline || '';
   // …en nooit een kop van staatsmedia op het plaatje (19 sep: TASS-kop 'Germany artificially inflates crisis' stond erop)
-  if (s && latest) { const ids = new Set(s.itemIds); const en = getNewsItems(1000, 0).filter(i => ids.has(i.id) && !GERMAN.test(i.title) && !isStateMedia(i.source)).sort((x, y) => new Date(y.pubDate).getTime() - new Date(x.pubDate).getTime())[0]; if (en) latest = en.title; }
+  if (s && latest) { const ids = new Set(s.itemIds); const en = getNewsItems(3200, 0).filter(i => ids.has(i.id) && !GERMAN.test(i.title) && !isStateMedia(i.source)).sort((x, y) => new Date(y.pubDate).getTime() - new Date(x.pubDate).getTime())[0]; if (en) latest = en.title; }
   const head = latest ? (latest.length > 130 ? latest.slice(0, 127) + '…' : latest) : 'Always monitoring the situation';
   return new ImageResponse(
     (

@@ -15,7 +15,7 @@ const ago = (iso: string) => { const m = Math.max(0, Math.floor((Date.now() - ne
 async function load(slug: string) {
   await ensureFeedsLoaded();
   const s = getSituationBySlug(slug); if (!s) return null;
-  const byId = new Map(getNewsItems(2000, 0).map(i => [i.id, i]));
+  const byId = new Map(getNewsItems(3200, 0).map(i => [i.id, i]));
   const items = s.itemIds.map(id => byId.get(id)).filter((i): i is NewsItem => !!i).sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
   return { s, items };
 }

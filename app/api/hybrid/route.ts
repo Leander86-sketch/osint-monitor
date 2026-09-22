@@ -13,7 +13,7 @@ export async function GET(req: NextRequest) {
       const now = Date.now(); const within = (a: number, b: number) => d.incidents.filter(i => { const age = now - new Date(i.date).getTime(); return age >= a * 86400000 && age < b * 86400000; });
       const l30 = within(0, 30);
       const l365 = within(0, 365);
-      return NextResponse.json({ total: d.incidents.length, last30: l30.length, prev30: within(30, 60).length, critical30: l30.filter(i => i.severity === 'critical').length, last365: l365.length, critical365: l365.filter(i => i.severity === 'critical').length, generatedAt: d.generatedAt }, { headers: { 'Cache-Control': 'public, max-age=600' } });
+      return NextResponse.json({ total: d.incidents.length, last30: l30.length, prev30: within(30, 60).length, critical30: l30.filter(i => i.severity === 'critical').length, last365: l365.length, critical365: l365.filter(i => i.severity === 'critical').length, criticalTotal: d.incidents.filter(i => i.severity === 'critical').length, generatedAt: d.generatedAt }, { headers: { 'Cache-Control': 'public, max-age=600' } });
     }
     return NextResponse.json(d, { headers: { 'Cache-Control': 'public, max-age=300' } });
   } catch {

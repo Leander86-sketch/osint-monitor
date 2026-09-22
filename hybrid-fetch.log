@@ -1,1 +1,12 @@
 2026-09-19T16:40:08Z {'total': 580, 'saha': 477, 'greyzone': 129, 'bySeverity': {'critical': 88, 'medium': 455, 'small': 37}} 
+2026-09-19T22:40:09Z {'total': 586, 'saha': 483, 'greyzone': 129, 'bySeverity': {'critical': 88, 'medium': 461, 'small': 37}} 
+2026-09-20T04:40:08Z {'total': 586, 'saha': 483, 'greyzone': 129, 'bySeverity': {'critical': 88, 'medium': 461, 'small': 37}} 
+2026-09-20T10:40:12Z {'total': 586, 'saha': 483, 'greyzone': 129, 'bySeverity': {'critical': 88, 'medium': 461, 'small': 37}} 
+2026-09-20T16:40:11Z {'total': 586, 'saha': 483, 'greyzone': 129, 'bySeverity': {'critical': 88, 'medium': 461, 'small': 37}} 
+2026-09-20T22:40:09Z {'total': 594, 'saha': 491, 'greyzone': 129, 'bySeverity': {'critical': 91, 'medium': 466, 'small': 37}} 
+2026-09-21T04:40:11Z {'total': 594, 'saha': 491, 'greyzone': 129, 'bySeverity': {'critical': 91, 'medium': 466, 'small': 37}} 
+2026-09-21T10:40:11Z {'total': 598, 'saha': 495, 'greyzone': 129, 'bySeverity': {'critical': 94, 'medium': 467, 'small': 37}} 
+2026-09-21T16:40:11Z {'total': 601, 'saha': 498, 'greyzone': 129, 'bySeverity': {'critical': 94, 'medium': 470, 'small': 37}} 
+2026-09-21T22:40:10Z {'total': 601, 'saha': 498, 'greyzone': 129, 'bySeverity': {'critical': 94, 'medium': 470, 'small': 37}} 
+2026-09-22T04:40:09Z {'total': 601, 'saha': 498, 'greyzone': 129, 'bySeverity': {'critical': 94, 'medium': 470, 'small': 37}} 
+2026-09-22T10:40:13Z {'total': 601, 'saha': 498, 'greyzone': 129, 'bySeverity': {'critical': 94, 'medium': 470, 'small': 37}} 

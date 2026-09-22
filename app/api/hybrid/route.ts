@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export const dynamic = 'force-dynamic';
-// Focus: hybrid Europe — leest de lijst die scripts/hybrid_fetch.py elke 6 uur samenstelt (Saha-tracker + Grey Zone Europe).
+// Focus: hybrid Europe — leest de lijst die scripts/hybrid_fetch.py elke 6 uur samenstelt (Schuurman-dataset CC BY 4.0 + eigen nieuwsdetectie; Saha en Grey Zone niet meer sinds 22 sep 2026).
 // ?summary=1 geeft alleen de tellingen (voor de verwijzing op de homepage), niet de hele lijst.
 export async function GET(req: NextRequest) {
   try {

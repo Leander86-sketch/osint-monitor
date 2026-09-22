@@ -190,6 +190,21 @@ export const RSS_FEEDS: FeedConfig[] = [
   { name: 'F1 Official', url: 'https://www.formula1.com/en/latest/all.xml', category: 'sport', enabled: false, tier: 2, reliability: 90, region: 'global' },
   { name: 'BBC Sport F1', url: 'https://feeds.bbci.co.uk/sport/formula1/rss.xml', category: 'sport', enabled: false, tier: 2, reliability: 95, region: 'global' },
   { name: 'Motorsport F1', url: 'https://www.motorsport.com/rss/f1/news/', category: 'sport', enabled: false, tier: 2, reliability: 80, region: 'global' },
+  // ===================== 22 SEP 2026 — bronnenronde: officiële en OSINT-feeds, allemaal live gecontroleerd =====================
+  { name: 'Kremlin.ru', url: 'http://en.kremlin.ru/events/president/news/feed', category: 'gov', enabled: true, tier: 3, reliability: 30, region: 'europe' },
+  { name: 'IAEA', url: 'https://www.iaea.org/feeds/topnews', category: 'nuclear', enabled: true, tier: 1, reliability: 90, region: 'global' },
+  { name: 'OPCW', url: 'https://www.opcw.org/rss.xml', category: 'gov', enabled: true, tier: 1, reliability: 90, region: 'global' },
+  { name: 'Europol', url: 'https://www.europol.europa.eu/rss.xml', category: 'gov', enabled: true, tier: 1, reliability: 90, region: 'europe' },
+  { name: 'UK Ministry of Defence', url: 'https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=ministry-of-defence', category: 'defense', enabled: true, tier: 1, reliability: 85, region: 'europe' },
+  { name: 'US Department of Defense', url: 'https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&max=10', category: 'defense', enabled: true, tier: 1, reliability: 85, region: 'americas' },
+  { name: 'Estonian Defence Forces', url: 'https://mil.ee/en/feed/', category: 'defense', enabled: true, tier: 2, reliability: 85, region: 'europe' },
+  { name: 'Latvian Ministry of Defence', url: 'https://www.mod.gov.lv/en/rss.xml', category: 'defense', enabled: true, tier: 2, reliability: 85, region: 'europe' },
+  { name: 'MilitaryLand', url: 'https://militaryland.net/feed/', category: 'defense', enabled: true, tier: 2, reliability: 70, region: 'europe' },
+  { name: 'Bellingcat', url: 'https://www.bellingcat.com/feed/', category: 'thinktank', enabled: true, tier: 2, reliability: 85, region: 'global' },
+  { name: 'Oryx', url: 'https://www.oryxspioenkop.com/feeds/posts/default?alt=rss', category: 'defense', enabled: true, tier: 2, reliability: 80, region: 'global' },
+  { name: 'EUvsDisinfo', url: 'https://euvsdisinfo.eu/feed/', category: 'thinktank', enabled: true, tier: 2, reliability: 80, region: 'europe' },
+  { name: 'ISW', url: 'https://understandingwar.org/wp-json/wp/v2/posts?per_page=8&_fields=title,link,date,excerpt', category: 'thinktank', enabled: true, tier: 1, reliability: 85, region: 'global' },
+  { name: 'IMB Piracy Reporting Centre', url: 'https://icc-ccs.org/feed/', category: 'crisis', enabled: true, tier: 2, reliability: 80, region: 'global' },
 ];
 
 export const CONFLICT_KEYWORDS = [

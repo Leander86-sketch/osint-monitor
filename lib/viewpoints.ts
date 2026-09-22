@@ -9,12 +9,12 @@ export const VIEW_COLOR: Record<View, string> = { WEST: '#60a5fa', RUSSIA: '#f87
 export const VIEW_LABEL: Record<View, string> = { WEST: 'Western', RUSSIA: 'Russian', UKRAINE: 'Ukrainian', MIDEAST: 'Middle East', ASIA: 'Asian', OTHER: 'Other' };
 
 const BY_SOURCE: Array<[RegExp, View]> = [
-  [/tass|ria\b|rt\b|sputnik|moscow times|meduza|interfax|novaya/i, 'RUSSIA'],
+  [/tass|ria\b|rt\b|sputnik|moscow times|meduza|interfax|novaya|kremlin|tv rain|dozhd/i, 'RUSSIA'],
   [/ukrinform|kyiv|ukrainska|pravda|united24/i, 'UKRAINE'],
   [/al jazeera|middle east eye|arab news|al-monitor|times of israel|haaretz|jerusalem|rudaw|al arabiya|i24|anadolu|trt|press tv|irna|tehran/i, 'MIDEAST'],
   [/scmp|south china|cna\b|channel news|nhk|nikkei|hindu|india|wion|xinhua|global times|cgtn|yonhap|korea|japan times|straits|abc australia/i, 'ASIA'],
 ];
-const STATE_RE = /\b(tass|ria|sputnik|rt|xinhua|global times|cgtn|press tv|irna|anadolu|trt|kcna|ukrinform)\b/i;
+const STATE_RE = /\b(tass|ria|sputnik|rt|xinhua|global times|cgtn|press tv|irna|anadolu|trt|kcna|ukrinform|kremlin)\b/i;
 
 export function viewOf(i: Pick<NewsItem, 'source' | 'category'>): View {
   for (const [re, v] of BY_SOURCE) if (re.test(i.source)) return v;

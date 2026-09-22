@@ -2,7 +2,8 @@ import { NextResponse } from 'next/server';
 
 interface ChannelConfig {
   name: string;
-  ytHandle: string;
+  ytHandle?: string;   // kanaal: /live wordt opgezocht (de video-ID wisselt per dag)
+  videoId?: string;    // vaste stream (webcams die meerdere streams tegelijk uitzenden); wordt wel gecontroleerd op 'live'
 }
 
 const CHANNELS: ChannelConfig[] = [
@@ -39,6 +40,23 @@ const CHANNELS: ChannelConfig[] = [
   { name: 'NDTV', ytHandle: '@ndtv' },
   { name: 'Firstpost', ytHandle: '@Firstpost' },
   { name: 'Euronews FR', ytHandle: '@euronewsfr' },
+  // ── toegevoegd 22 sep 2026 (bronnenronde): allemaal gecontroleerd op live + insluitbaar ──
+  { name: 'CGTN', ytHandle: '@CGTN' },
+  { name: 'UATV English', ytHandle: '@UATVEnglish' },
+  { name: 'FREEДOM (RU)', ytHandle: '@FREEDOM_LIVE' },
+  { name: 'TV Rain (RU)', ytHandle: '@tvrain' },
+  { name: 'NASA ISS', ytHandle: '@NASA' },
+  { name: 'Odesa Alarm Map', ytHandle: '@OdesaLive' },
+  { name: 'Intel Cams UA', videoId: 'IcZ-7sFi1HM' },
+  { name: 'Rotterdam Port', videoId: '_KVWehizoNU' },
+  { name: 'Hamburg Port', ytHandle: '@hamburghafenlive24' },
+  { name: 'Kiel Canal', videoId: '7AWAGFNept8' },
+  { name: 'Helsinki Port', ytHandle: '@PortofHelsinki' },
+  { name: 'Tallinn Cam', videoId: 'VhVgZi2lGv0' },
+  { name: 'St Petersburg Cam', videoId: 'w_Dg2vC0tUE' },
+  { name: 'Poland Cams', videoId: 'Rn_ga4yXkME' },
+  { name: 'Taipei Cam', videoId: 'z_fY1pj1VBw' },
+  { name: 'Prague Airport', videoId: 'Deo_lcwn8lk' },
 ];
 
 // Cache live video IDs for 10 minutes
@@ -47,9 +65,9 @@ let cache: { videoIds: Record<string, string>; timestamp: number } = {
   timestamp: 0,
 };
 
-async function fetchLiveVideoId(handle: string): Promise<string | null> {
+async function fetchLiveVideoId(handle: string | undefined, videoId?: string): Promise<string | null> {
   try {
-    const url = `https://www.youtube.com/${handle}/live`;
+    const url = videoId ? `https://www.youtube.com/watch?v=${videoId}` : `https://www.youtube.com/${handle}/live`;
     const res = await fetch(url, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
@@ -90,7 +108,7 @@ export async function GET() {
   // Fetch all live video IDs in parallel
   const results = await Promise.allSettled(
     CHANNELS.map(async (ch) => {
-      const videoId = await fetchLiveVideoId(ch.ytHandle);
+      const videoId = await fetchLiveVideoId(ch.ytHandle, ch.videoId);
       return { name: ch.name, videoId };
     })
   );

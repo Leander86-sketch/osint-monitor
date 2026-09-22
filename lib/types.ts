@@ -92,6 +92,7 @@ export interface Flight {
   military: boolean;
   type?: string;
   registration?: string;
+  notable?: { badge: string; category: string; operator: string; type: string; link?: string }; // plane-alert-db (ODbL), 22 sep 2026
 }
 
 export interface Satellite {

@@ -25,7 +25,14 @@ function throttleHost<T>(host: string, fn: () => Promise<T>, gap = 900): Promise
 
 export async function fetchFeed(feed: FeedConfig): Promise<NewsItem[]> {
   try {
-    const result = await throttleHost(hostOf(feed.url), () => parser.parseURL(feed.url));
+    // WordPress-JSON (22 sep 2026): ISW heeft geen RSS meer, wel /wp-json/wp/v2/posts — dezelfde vorm als een feed
+    const result = /\/wp-json\/wp\/v2\/posts/.test(feed.url)
+      ? await throttleHost(hostOf(feed.url), async () => {
+          const r = await fetch(feed.url, { headers: { 'User-Agent': 'ARGUS-dashboard/1.0 (+https://argus.prototipo.nl)' }, signal: AbortSignal.timeout(20000) });
+          const posts = (await r.json()) as Array<{ title?: { rendered?: string }; link?: string; date?: string; excerpt?: { rendered?: string } }>;
+          return { items: posts.map(p => ({ content: undefined as string | undefined, isoDate: undefined as string | undefined, enclosure: undefined as { url?: string } | undefined, title: (p.title?.rendered || '').replace(/&#8217;|&#039;/g, "'").replace(/&amp;/g, '&').replace(/<[^>]+>/g, ''), link: p.link || '', pubDate: p.date ? new Date(p.date).toUTCString() : undefined, contentSnippet: (p.excerpt?.rendered || '').replace(/<[^>]+>/g, '').slice(0, 300) })) };
+        })
+      : await throttleHost(hostOf(feed.url), () => parser.parseURL(feed.url));
     const items: NewsItem[] = [];
 
     for (const item of result.items || []) {

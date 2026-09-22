@@ -42,6 +42,23 @@ const CHANNELS: ChannelDef[] = [
   { name: 'NDTV', shortName: 'NDTV', color: '#e11d48' },
   { name: 'Firstpost', shortName: 'FP', color: '#7c2d12' },
   { name: 'Euronews FR', shortName: 'EUR-FR', color: '#15803d' },
+  // ── 22 sep 2026 ──
+  { name: 'CGTN', shortName: 'CGTN', color: '#b91c1c' },
+  { name: 'UATV English', shortName: 'UATV', color: '#2563eb' },
+  { name: 'FREEДOM (RU)', shortName: 'FREEDOM', color: '#0ea5e9' },
+  { name: 'TV Rain (RU)', shortName: 'RAIN', color: '#a21caf' },
+  { name: 'NASA ISS', shortName: 'ISS', color: '#1e3a8a' },
+  { name: 'Odesa Alarm Map', shortName: 'ALARM', color: '#f59e0b' },
+  { name: 'Intel Cams UA', shortName: 'CAMS-UA', color: '#059669' },
+  { name: 'Rotterdam Port', shortName: 'RTM', color: '#0369a1' },
+  { name: 'Hamburg Port', shortName: 'HAM', color: '#334155' },
+  { name: 'Kiel Canal', shortName: 'KIEL', color: '#0e7490' },
+  { name: 'Helsinki Port', shortName: 'HEL', color: '#1d4ed8' },
+  { name: 'Tallinn Cam', shortName: 'TLL', color: '#2563eb' },
+  { name: 'St Petersburg Cam', shortName: 'SPB', color: '#7f1d1d' },
+  { name: 'Poland Cams', shortName: 'PL', color: '#dc2626' },
+  { name: 'Taipei Cam', shortName: 'TPE', color: '#0891b2' },
+  { name: 'Prague Airport', shortName: 'PRG', color: '#475569' },
 ];
 
 // variant (18 sep 2026, /next): 'stage' = speler vult het podium, bediening in een smalle balk ONDER het beeld

@@ -48,12 +48,12 @@ export default function FlightLayer({ bounds }: FlightLayerProps) {
   return (
     <>
       {visibleFlights.map((f) => {
-        const color = f.military ? '#dc2626' : '#38bdf8';
+        const color = f.notable ? '#f59e0b' : f.military ? '#dc2626' : '#38bdf8';
         return (
           <CircleMarker
             key={`${f.icao}-${f.military ? 'mil' : 'civ'}`}
             center={[f.lat, f.lng]}
-            radius={f.military ? 4 : 2}
+            radius={f.notable ? 6 : f.military ? 4 : 2}
             pathOptions={{
               color,
               fillColor: color,
@@ -65,7 +65,7 @@ export default function FlightLayer({ bounds }: FlightLayerProps) {
             <Tooltip direction="top" offset={[0, -4]} opacity={0.95}>
               <div style={{ fontFamily: 'monospace', fontSize: '11px', color: '#111' }}>
                 <span style={{ fontWeight: 'bold', color: f.military ? '#cc0000' : '#0066cc' }}>
-                  {f.military ? '[MIL] ' : ''}{f.callsign || f.icao}
+                  {f.notable ? `[${f.notable.badge.toUpperCase()}] ` : f.military ? '[MIL] ' : ''}{f.callsign || f.icao}
                 </span>
                 {' '}{Math.round(f.altitude).toLocaleString()}ft · {Math.round(f.speed)}kts
               </div>
@@ -77,7 +77,8 @@ export default function FlightLayer({ bounds }: FlightLayerProps) {
                   {f.callsign || f.icao}
                 </div>
                 <div className="text-[#bbb] space-y-0.5 text-[11px]">
-                  {f.type && <div>Aircraft: {f.type}{f.registration ? ` (${f.registration})` : ''}</div>}
+                  {f.notable && <div className="text-[#f59e0b]">{f.notable.badge} · {f.notable.operator}{f.notable.link ? <> · <a href={f.notable.link} target="_blank" rel="noopener" className="underline">wiki</a></> : null}</div>}
+                  {f.type && <div>Aircraft: {f.notable?.type || f.type}{f.registration ? ` (${f.registration})` : ''}</div>}
                   {!f.type && f.registration && <div>Registration: {f.registration}</div>}
                   <div>Altitude: {Math.round(f.altitude).toLocaleString()} ft (~{(f.altitude * 0.0003048).toFixed(1)} km)</div>
                   <div>Speed: {Math.round(f.speed)} kn (~{Math.round(f.speed * 1.852)} km/h), heading {compass(f.heading)}</div>

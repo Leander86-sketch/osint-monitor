@@ -6,7 +6,7 @@ import { RSS_FEEDS } from './config';
 export interface LayerInfo { label: string; shows: string; source: string; cadence: string }
 
 export const MAP_LAYERS: LayerInfo[] = [
-  { label: 'FLIGHT', shows: 'Live aircraft, military highlighted', source: 'OpenSky + adsb.lol (transponders)', cadence: '~1 min' },
+  { label: 'FLIGHT', shows: 'Live aircraft, military highlighted', source: 'OpenSky + adsb.lol (transponders); notable aircraft via plane-alert-db (sdr-enthusiasts, ODbL 1.0)', cadence: '~1 min' },
   { label: 'AIS', shows: 'Ships at strategic chokepoints', source: 'AISStream (terrestrial AIS)', cadence: 'live' },
   { label: 'SATELLITE', shows: 'Satellites overhead', source: 'CelesTrak (TLE orbital elements)', cadence: 'daily elements' },
   { label: 'CONFLICT', shows: 'Conflict events from news', source: 'GDELT (news mentions)', cadence: '~15 min' },

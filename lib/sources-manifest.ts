@@ -12,6 +12,7 @@ export const MAP_LAYERS: LayerInfo[] = [
   { label: 'CONFLICT', shows: 'Conflict events from news', source: 'GDELT (news mentions)', cadence: '~15 min' },
   { label: 'CVN', shows: 'US carrier strike groups', source: 'USNI Fleet Tracker', cadence: 'weekly' },
   { label: 'FRONT', shows: 'Assessed frontline, Ukraine', source: 'DeepStateMap (via open mirror, 283 days of history)', cadence: 'daily' },
+  { label: 'NAVWARN', shows: 'Navigational warnings in force: mines, firing exercises, GPS interference, submarine ops, cable work', source: 'NGA Maritime Safety Information (US public domain)', cadence: '3 h' },
   { label: 'TONE', shows: 'News sentiment by region', source: 'GDELT tone', cadence: '~15 min' },
   { label: 'NET', shows: 'Internet outages & anomalies', source: 'Cloudflare Radar', cadence: '~30 min' },
   { label: 'THERMAL', shows: 'Fires, strikes, explosions (heat)', source: 'NASA FIRMS (VIIRS)', cadence: '~3 hours' },

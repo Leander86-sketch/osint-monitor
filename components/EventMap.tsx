@@ -22,6 +22,7 @@ const SentimentLayer = dynamic(() => import('./map-layers/SentimentLayer'), { ss
 const DisplacementLayer = dynamic(() => import('./map-layers/DisplacementLayer'), { ssr: false });
 const ChokePointLayer = dynamic(() => import('./map-layers/ChokePointLayer'), { ssr: false });
 const HazardsLayer = dynamic(() => import('./map-layers/HazardsLayer'), { ssr: false });
+const NavWarnLayer = dynamic(() => import('./map-layers/NavWarnLayer'), { ssr: false });
 const FirmsLayer = dynamic(() => import('./map-layers/FirmsLayer'), { ssr: false });
 const FrontlineLayer = dynamic(() => import('./map-layers/FrontlineLayer'), { ssr: false });
 const OutagesLayer = dynamic(() => import('./map-layers/OutagesLayer'), { ssr: false });
@@ -54,6 +55,7 @@ const LAYER_CONFIG: { id: LayerType; label: string; color: string; desc: string 
   { id: 'displacement', label: 'DISP', color: '#f59e0b', desc: 'Refugee & displacement statistics (UNHCR)' },
   { id: 'chokepoints', label: 'CHOKE', color: '#ef4444', desc: 'Strategic maritime chokepoints: Hormuz, Suez, Bab al-Mandab & more' },
   { id: 'hazards', label: 'HAZARD', color: '#9ca3af', desc: 'Natural hazards: USGS earthquakes + GDACS disaster alerts' },
+  { id: 'navwarn', label: 'NAVWARN', color: '#f97316', desc: 'Navigational warnings in force (NGA MSI): mines, missile exercises, GPS interference, submarine ops, cable work' },
   { id: 'firms', label: 'THERMAL', color: '#ff6a00', desc: 'NASA FIRMS satellite thermal detections - fires, strikes, explosions' },
   { id: 'frontline', label: 'FRONT', color: '#b91c1c', desc: 'Assessed Russian-controlled territory in Ukraine (DeepStateMap, updated daily)' },
   { id: 'outages', label: 'NET', color: '#6366f1', desc: 'Internet outages & anomalies (Cloudflare Radar) - connectivity loss as a conflict signal' },
@@ -341,6 +343,7 @@ function EventMap({ focusBbox, situations, bare }: { focusBbox?: [number, number
           {activeLayers.has('displacement') && <DisplacementLayer />}
           {activeLayers.has('chokepoints') && <ChokePointLayer />}
           {activeLayers.has('hazards') && <HazardsLayer />}
+          {activeLayers.has('navwarn') && <NavWarnLayer />}
           {activeLayers.has('firms') && <FirmsLayer />}
           {activeLayers.has('frontline') && <FrontlineLayer />}
           {activeLayers.has('outages') && <OutagesLayer />}

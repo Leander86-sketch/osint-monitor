@@ -10,17 +10,36 @@ import { isMarketItem, CONFLICT_RE } from '@/components/LiveFeed';
 
 import { VIEW_COLOR, viewOf, clusterEvents, agoShort as ago } from '@/lib/viewpoints';
 
+interface NotableFlight { icao: string; callsign: string; badge: string; operator: string; type: string; lat: number; lng: number }
+
+// Volgorde: de zeldzame, zware categorieën eerst; daarna wat in ons gebied vliegt (Europa, Middellandse Zee,
+// Zwarte Zee, Midden-Oosten) boven de rest van de wereld. Maximaal zes regels, de rest als telling.
+const BADGE_RANK = ['Doomsday plane', 'Nuclear C2', 'Gunship', 'Dictator Alert', 'SIGINT / recon', 'AEW', 'ASW patrol', 'UAV', 'Contractor ISR', 'Survey', 'Government'];
+const inRegion = (f: NotableFlight) => f.lat >= 25 && f.lat <= 72 && f.lng >= -30 && f.lng <= 65;
+function rankNotable(list: NotableFlight[]) {
+  const rank = (f: NotableFlight) => { const i = BADGE_RANK.indexOf(f.badge); return (i < 0 ? 99 : i) + (inRegion(f) ? 0 : 50); };
+  const sorted = [...list].sort((a, b) => rank(a) - rank(b));
+  const shown = sorted.slice(0, 6);
+  return { shown, more: sorted.length - shown.length };
+}
+
 export default function BreakingRail({ situations, compact = false }: { situations: Situation[]; compact?: boolean }) {
   const [items, setItems] = useState<NewsItem[]>([]);
   const [now, setNow] = useState(() => Date.now());
   const [open, setOpen] = useState<string | null>(null);
+  const [notable, setNotable] = useState<NotableFlight[]>([]);
 
   useEffect(() => {
     let dead = false;
     const load = () => fetch('/api/feed?limit=300').then(r => r.json()).then(d => { if (!dead) setItems((d.items || []) as NewsItem[]); }).catch(() => {});
     load(); const a = setInterval(load, 60000); const b = setInterval(() => setNow(Date.now()), 15000);
-    return () => { dead = true; clearInterval(a); clearInterval(b); };
+    // Opvallende toestellen (plane-alert-db) uit dezelfde bron als de kaartlaag; om de 2 min.
+    const loadAir = () => fetch('/api/flights').then(r => r.json()).then(d => { if (!dead) setNotable((d.notable || []) as NotableFlight[]); }).catch(() => {});
+    loadAir(); const c = setInterval(loadAir, 120000);
+    return () => { dead = true; clearInterval(a); clearInterval(b); clearInterval(c); };
   }, []);
+
+  const air = useMemo(() => rankNotable(notable), [notable]);
 
   const clusters = useMemo(() => {
     // conflict = de tekst gaat aantoonbaar over geweld, krijgsmacht of sancties, én het bericht hoort bij een lopende situatie of zegt het al in de kop
@@ -74,6 +93,11 @@ export default function BreakingRail({ situations, compact = false }: { situatio
           );
         })}
       </div>
+      {air.shown.length > 0 && (
+        <a href="/?layers=flights" title="Notable aircraft airborne now (plane-alert-db) · open the map" className="block px-4 py-2.5 border-t border-dashed border-[#222] text-[11px] font-mono text-[#777] truncate hover:text-[#e8760a]">
+          <span className="text-[#f97316]">in the air:</span> {air.shown.map(f => `${f.badge} · ${f.type}${f.operator ? ` (${f.operator})` : ''}`).join(' · ')}{air.more > 0 ? ` · +${air.more} elsewhere` : ''}
+        </a>
+      )}
       {quiet.length > 0 && <div title="No news" className="px-4 py-2.5 border-t border-dashed border-[#222] text-[11px] font-mono text-[#666] truncate">quiet: {quiet.map(s => `${s.title} ${ago(now - new Date(s.latestPubDate).getTime())}`).join(' · ')}</div>}
     </div>
   );

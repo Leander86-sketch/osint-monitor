@@ -9,7 +9,7 @@ export async function GET() {
   return NextResponse.json({
     available: true,
     date: data.date,
-    source: 'DeepStateMap via github.com/cyterat/deepstate-map-data',
+    source: data.origin === 'mirror' ? 'DeepStateMap via github.com/cyterat/deepstate-map-data' : 'DeepStateMap (deepstatemap.live)',
     geojson: data.geojson,
   });
 }

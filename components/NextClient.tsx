@@ -20,6 +20,7 @@ import BlueskyFeed from '@/components/BlueskyFeed';
 import SatellitePanel from '@/components/SatellitePanel';
 import ArmsPanel from '@/components/ArmsPanel';
 import BreakingBand from '@/components/BreakingBand';
+import ThreatLevels from '@/components/ThreatLevels';
 import BreakingRail from '@/components/BreakingRail';
 import Dossier from '@/components/Dossier';
 
@@ -253,6 +254,9 @@ export default function NextClient({ initialSituations = [] }: { initialSituatio
         {focus && <span className="text-[11px] font-mono text-[#999]">{focus.total} incidents since 2022 · {focus.criticalTotal} critical</span>}
         <span className="ml-auto text-[11px] font-mono text-[#e8760a] group-hover:text-white">read the analysis →</span>
       </a>
+
+      {/* Officiële terreurdreigingsniveaus (NL, UK, US) — 23 sep 2026 */}
+      <ThreatLevels />
 
       <section id="band-situations" className="scroll-mt-32 px-4 py-6">
         <div className="flex items-center gap-2 mb-3">

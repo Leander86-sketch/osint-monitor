@@ -64,3 +64,4 @@ x-reach.log
 data/x-reach.jsonl
 briefing.log
 data/briefing-stats.jsonl
+data/bsky-follows.jsonl

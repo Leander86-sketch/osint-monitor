@@ -35,6 +35,18 @@ def ts(pub):
         try: return datetime.datetime.fromisoformat(pub.replace("Z", "+00:00")).timestamp() * 1000
         except Exception: return 0
 
+_TOP = []
+def top_rows(): return _TOP
+
+def bsky_short(rows, url):
+    """Drie regels + link, binnen 300 tekens."""
+    lines = ["ARGUS daily briefing"]
+    for _, new, s in rows[:3]: lines.append(f"• {s['title']}: {new} new reports, {s.get('severity','?')}")
+    lines.append(url)
+    t = "\n".join(lines)
+    while len(t) > 300 and len(lines) > 2: lines.pop(-2); t = "\n".join(lines)
+    return t
+
 def build():
     now = datetime.datetime.now(datetime.timezone.utc); since = now.timestamp() * 1000 - 24 * 3600e3
     sits = get("/api/situations"); sits = sits if isinstance(sits, list) else sits.get("situations", [])
@@ -52,7 +64,7 @@ def build():
         if s.get("status") not in (None, "active"): continue
         new = len(set(s.get("itemIds", [])) & fresh)
         rows.append((len(esc24[s["slug"]]) * 10 + new + sev_rank.get(s.get("severity"), 0), new, s))
-    rows.sort(key=lambda r: -r[0]); top = rows[:3]
+    rows.sort(key=lambda r: -r[0]); top = rows[:3]; _TOP[:] = top
 
     threat = get("/api/threat-levels").get("levels", [])
     tl = " · ".join((f"{t['code']} {t['level']}{t.get('scale','')}" if str(t.get('level')) not in ("0", "") else f"{t['code']} no bulletin") for t in threat if t.get("ok"))
@@ -101,11 +113,25 @@ def main():
     token = e.get("ARGUS_BRIEFING_BOT_TOKEN") or e.get("TELEGRAM_BOT_TOKEN"); chat = e.get("ARGUS_BRIEFING_CHAT")
     text, url = build()
     if "--dry" in sys.argv or not (token and chat):
-        print(text); print("\n[preview]", url); 
+        print(text); print("\n[preview]", url); print("\n[bluesky]", bsky_short(top_rows(), url)); 
         if not chat: print("[dry] ARGUS_BRIEFING_CHAT niet gezet in osint-monitor/.env.local")
         return
     mid = send(text, url, token, chat)
     n = members(token, chat)
+    # Zelfde briefing, kort, op Bluesky (max 300 tekens) — 24 sep 2026
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "scripts")); import bsky_onboard as B
+        did, jwt, handle = B.login(B.PROJECTS["argus"])
+        short = bsky_short(top_rows(), url)
+        rec = {"$type": "app.bsky.feed.post", "text": short, "createdAt": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"), "langs": ["en"], "facets": B.facets(short)}
+        try:
+            title, desc, img = B.og(url); ext = {"uri": url, "title": title[:200], "description": desc[:300]}
+            if img: ext["thumb"] = B.upload(jwt, urllib.parse.urljoin(url, img))
+            rec["embed"] = {"$type": "app.bsky.embed.external", "external": ext}
+        except Exception: pass
+        r = B.call("com.atproto.repo.createRecord", jwt, body={"repo": did, "collection": "app.bsky.feed.post", "record": rec})
+        print("bluesky:", r.get("uri"))
+    except Exception as e: print("bluesky mislukt:", e)
     with open(os.path.join(ROOT, "data", "briefing-stats.jsonl"), "a") as f:
         f.write(json.dumps({"ts": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"), "chat": chat, "message_id": mid, "members": n, "top": url}) + "\n")
     print("verstuurd", mid, "leden", n)

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { computeSituations } from './situations';
 import { postTweet, hasXCreds } from './x-client';
+import { postBsky, hasBskyCreds } from './bsky-client';
 
 // Escalation -> alert tweet pipeline for @ArgusDashboard.
 // Phase 1 is semi-manual: the route serves SUGGESTIONS; nothing is posted
@@ -22,7 +23,7 @@ export interface AlertSuggestion {
 }
 
 interface Journal {
-  posted: Record<string, { tweetId: string; at: number; text: string }>;
+  posted: Record<string, { tweetId: string; at: number; text: string; bskyUri?: string }>;
   skipped: Record<string, number>;
 }
 
@@ -102,7 +103,7 @@ export function buildSuggestions(): { budgetLeft: number; suggestions: AlertSugg
   return { budgetLeft, suggestions };
 }
 
-export async function sendAlert(escalationId: string): Promise<{ tweetId: string; replyId: string }> {
+export async function sendAlert(escalationId: string): Promise<{ tweetId: string; replyId: string; bskyUri?: string }> {
   if (!hasXCreds()) throw new Error('X credentials not configured');
   const j = loadJournal();
   if (j.posted[escalationId]) throw new Error('already posted');
@@ -117,9 +118,19 @@ export async function sendAlert(escalationId: string): Promise<{ tweetId: string
     replyId = await postTweet(s.reply, tweetId);
   } catch { /* main alert stands even if the link reply fails */ }
 
-  j.posted[escalationId] = { tweetId, at: Date.now(), text: s.text };
+  // Bluesky krijgt dezelfde melding (24 sep 2026); de X-post staat al, dus een Bluesky-fout is niet fataal.
+  let bskyUri: string | undefined;
+  if (hasBskyCreds()) {
+    try {
+      const main = await postBsky(s.text);
+      bskyUri = main.uri;
+      try { await postBsky(s.reply, { replyTo: main, root: main }); } catch { /* link-reply optioneel */ }
+    } catch (e) { console.error('[bsky] alert failed:', (e as Error).message); }
+  }
+
+  j.posted[escalationId] = { tweetId, at: Date.now(), text: s.text, bskyUri };
   saveJournal(j);
-  return { tweetId, replyId };
+  return { tweetId, replyId, bskyUri };
 }
 
 export function skipAlert(escalationId: string): void {

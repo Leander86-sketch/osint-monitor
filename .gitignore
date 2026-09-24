@@ -62,3 +62,5 @@ data/x-manual-log.json
 .attic/
 x-reach.log
 data/x-reach.jsonl
+briefing.log
+data/briefing-stats.jsonl

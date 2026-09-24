@@ -13,10 +13,10 @@ Leest BSKY_HANDLE / BSKY_APP_PASSWORD uit het .env.local van het project.
 import sys, os, json, re, urllib.request, urllib.parse, datetime
 
 PROJECTS = {
-    "argus": {"env": "~/Clawd/osint-monitor/.env.local", "domain": "argus.prototipo.nl", "site_root": "~/Clawd/osint-monitor/public",
+    "argus": {"env": "~/Clawd/osint-monitor/.env.local", "domain": "argus.prototipo.nl", "did_file": "~/Clawd/osint-monitor/data/atproto-did.txt",
               "displayName": "ARGUS", "avatar": "~/Clawd/osint-monitor/public/icon-512.png",
               "description": "Always monitoring the situation. Free, no-login OSINT dashboard: live conflict map (flights, ships, thermal, frontline, NAVWARN, air alerts), 165 feeds by viewpoint, 46 live channels, shareable situation pages. Runs on one Mac mini in NL.\nargus.prototipo.nl"},
-    "hub": {"env": "~/Clawd/motorsport-addon/.env.local", "domain": "motorsport.prototipo.nl", "site_root": "~/Clawd/motorsport-hub-site",
+    "hub": {"env": "~/Clawd/motorsport-addon/.env.local", "domain": "motorsport.prototipo.nl", "did_file": "~/Clawd/motorsport-hub-site/.well-known/atproto-did",
             "displayName": "Motorsport Hub", "avatar": "~/Clawd/motorsport-hub-site/mhub-logo.png",
             "description": "Every free & legal motorsport stream in one place. 96 official sources, F1 to MotoGP to King of the Hammers. Stremio, Kodi, web, Samsung TV. No ads, no tracking, spoiler-free.\nmotorsport.prototipo.nl"},
 }
@@ -88,8 +88,8 @@ def main():
         call("com.atproto.repo.putRecord", jwt, body={"repo": did, "collection": "app.bsky.actor.profile", "rkey": "self", "record": rec, **({"swapRecord": cur["cid"]} if cur.get("cid") else {})})
         print("profiel gezet:", p["displayName"])
     elif cmd == "handle":
-        wk = os.path.join(os.path.expanduser(p["site_root"]), ".well-known"); os.makedirs(wk, exist_ok=True)
-        open(os.path.join(wk, "atproto-did"), "w").write(did)
+        df = os.path.expanduser(p["did_file"]); os.makedirs(os.path.dirname(df), exist_ok=True)
+        open(df, "w").write(did)
         url = f"https://{p['domain']}/.well-known/atproto-did"
         got = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=15).read().decode().strip()
         if got != did: raise SystemExit(f"{url} geeft '{got[:60]}' i.p.v. de DID — wordt .well-known geserveerd?")

@@ -185,7 +185,9 @@ export default function NextClient({ initialSituations = [] }: { initialSituatio
           <div className="flex items-center gap-3">
             <span className="hidden lg:block text-[11px] font-mono text-[#888] uppercase tracking-wider">By Leander Bloot</span>
             <SourcesPanel />
-            <a href="https://x.com/ArgusDashboard" target="_blank" rel="noopener noreferrer" title="ARGUS alerts on X" className="hidden lg:block text-[11px] font-mono text-[#888] hover:text-[#e8760a] tracking-wider transition-colors">𝕏 @ArgusDashboard</a>
+            <a href="https://t.me/argusdaily" target="_blank" rel="noopener noreferrer" title="ARGUS Daily: one briefing every morning at 07:00 CET, on Telegram" className="hidden lg:block text-[11px] font-mono text-[#888] hover:text-[#e8760a] uppercase tracking-wider transition-colors">Daily briefing</a>
+            <a href="https://bsky.app/profile/argus.prototipo.nl" target="_blank" rel="noopener noreferrer" title="ARGUS alerts on Bluesky" className="hidden lg:block text-[11px] font-mono text-[#888] hover:text-[#e8760a] uppercase tracking-wider transition-colors">Bluesky</a>
+            <a href="https://x.com/ArgusDashboard" target="_blank" rel="noopener noreferrer" title="ARGUS alerts on X" className="hidden lg:block text-[11px] font-mono text-[#888] hover:text-[#e8760a] tracking-wider transition-colors">𝕏</a>
             <button
               onClick={() => {
                 navigator.clipboard.writeText(window.location.href)

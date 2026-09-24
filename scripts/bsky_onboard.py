@@ -15,7 +15,7 @@ import sys, os, json, re, urllib.request, urllib.parse, datetime
 PROJECTS = {
     "argus": {"env": "~/Clawd/osint-monitor/.env.local", "domain": "argus.prototipo.nl", "did_file": "~/Clawd/osint-monitor/data/atproto-did.txt",
               "displayName": "ARGUS", "avatar": "~/Clawd/osint-monitor/public/icon-512.png",
-              "description": "Always monitoring the situation. Free, no-login OSINT dashboard: live conflict map (flights, ships, thermal, frontline, NAVWARN, air alerts), 165 feeds by viewpoint, 46 live channels, shareable situation pages. Runs on one Mac mini in NL.\nargus.prototipo.nl"},
+              "description": "Always monitoring the situation. Free, no-login OSINT dashboard: live conflict map, 165 feeds by viewpoint, 46 live channels, shareable situation pages. Built solo, runs on one Mac mini in NL.\nargus.prototipo.nl"},
     "hub": {"env": "~/Clawd/motorsport-addon/.env.local", "domain": "motorsport.prototipo.nl", "did_file": "~/Clawd/motorsport-hub-site/.well-known/atproto-did",
             "displayName": "Motorsport Hub", "avatar": "~/Clawd/motorsport-hub-site/mhub-logo.png",
             "description": "Every free & legal motorsport stream in one place. 96 official sources, F1 to MotoGP to King of the Hammers. Stremio, Kodi, web, Samsung TV. No ads, no tracking, spoiler-free.\nmotorsport.prototipo.nl"},

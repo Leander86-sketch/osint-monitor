@@ -14,14 +14,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "ARGUS — Always Monitoring the Situation",
-  description: "Custom monitoring sites for all global interests, by Leander Bloot — real-time intelligence dashboard with 120 tiered feeds, Telegram OSINT, nuclear sites, military bases, and undersea cables mapped live.",
+  description: "Free, no-login OSINT dashboard by Leander Bloot: live conflict map (flights incl. notable military aircraft, ships, thermal detections, frontline, navigational warnings, air-raid alerts), 165 tiered news feeds grouped by viewpoint, 46 live channels, shareable situation pages.",
   metadataBase: new URL("https://argus.prototipo.nl"),
   keywords: ["OSINT", "intelligence", "dashboard", "news", "geopolitics", "military", "nuclear", "real-time", "monitoring", "ARGUS"],
   authors: [{ name: "Leander Bloot" }],
   creator: "Leander Bloot",
   openGraph: {
     title: "ARGUS — Always Monitoring the Situation",
-    description: "Real-time global intelligence dashboard with 120 tiered news feeds, Telegram OSINT, and interactive military/nuclear/cable map layers.",
+    description: "Free, no-login OSINT dashboard: live conflict map, 165 news feeds grouped by viewpoint (West, Russia, Ukraine, Middle East, Asia), 46 live channels, shareable situation pages.",
     url: "https://argus.prototipo.nl",
     siteName: "ARGUS",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "ARGUS — Always Monitoring the Situation",
-    description: "120 tiered feeds. Telegram OSINT. Nuclear sites, military bases, undersea cables mapped live.",
+    description: "165 feeds by viewpoint. 46 live channels. Live conflict map with flights, ships, thermal, frontline, air alerts. Free, no login.",
   },
   robots: {
     index: true,
@@ -47,7 +47,7 @@ const jsonLd = {
   "@type": "WebApplication",
   name: "ARGUS — OSINT Monitor",
   alternateName: "ARGUS",
-  description: "Custom monitoring sites for all global interests, by Leander Bloot. Real-time intelligence dashboard with 120 tiered news feeds, Telegram OSINT, and interactive map layers.",
+  description: "Free, no-login OSINT dashboard by Leander Bloot: live conflict map, 165 tiered news feeds grouped by viewpoint, 46 live channels and shareable situation pages.",
   url: "https://argus.prototipo.nl",
   applicationCategory: "NewsApplication",
   operatingSystem: "Any",

@@ -10,3 +10,11 @@
 2026-09-21T22:40:10Z {'total': 601, 'saha': 498, 'greyzone': 129, 'bySeverity': {'critical': 94, 'medium': 470, 'small': 37}} 
 2026-09-22T04:40:09Z {'total': 601, 'saha': 498, 'greyzone': 129, 'bySeverity': {'critical': 94, 'medium': 470, 'small': 37}} 
 2026-09-22T10:40:13Z {'total': 601, 'saha': 498, 'greyzone': 129, 'bySeverity': {'critical': 94, 'medium': 470, 'small': 37}} 
+2026-09-22T16:40:00Z {'total': 159, 'schuurman': 146, 'argus': 13, 'bySeverity': {'critical': 37, 'medium': 56, 'small': 66}} 
+2026-09-22T22:40:01Z {'total': 160, 'schuurman': 146, 'argus': 14, 'bySeverity': {'critical': 37, 'medium': 57, 'small': 66}} 
+2026-09-23T04:40:00Z {'total': 160, 'schuurman': 146, 'argus': 14, 'bySeverity': {'critical': 37, 'medium': 57, 'small': 66}} 
+2026-09-23T10:40:00Z {'total': 160, 'schuurman': 146, 'argus': 14, 'bySeverity': {'critical': 37, 'medium': 57, 'small': 66}} 
+2026-09-23T16:40:01Z {'total': 163, 'schuurman': 146, 'argus': 17, 'bySeverity': {'critical': 37, 'medium': 58, 'small': 68}} 
+2026-09-23T22:40:00Z {'total': 166, 'schuurman': 146, 'argus': 20, 'bySeverity': {'critical': 37, 'medium': 60, 'small': 69}} 
+2026-09-24T04:40:01Z {'total': 166, 'schuurman': 146, 'argus': 20, 'bySeverity': {'critical': 37, 'medium': 60, 'small': 69}} 
+2026-09-24T10:40:00Z {'total': 167, 'schuurman': 146, 'argus': 21, 'bySeverity': {'critical': 37, 'medium': 61, 'small': 69}} 

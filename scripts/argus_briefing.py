@@ -55,7 +55,7 @@ def build():
     rows.sort(key=lambda r: -r[0]); top = rows[:3]
 
     threat = get("/api/threat-levels").get("levels", [])
-    tl = " · ".join(f"{t['code']} {t['level']}{t.get('scale','')}" for t in threat if t.get("ok") and t.get("level"))
+    tl = " · ".join((f"{t['code']} {t['level']}{t.get('scale','')}" if str(t.get('level')) not in ("0", "") else f"{t['code']} no bulletin") for t in threat if t.get("ok"))
     fl = get("/api/flights"); notable = fl.get("notable", [])
     badges = collections.Counter(n.get("badge") for n in notable)
     air = get("/api/airalerts"); alerts = [s["name"].replace(" oblast", "") for s in air.get("states", []) if s.get("alert")]
@@ -66,7 +66,8 @@ def build():
     lines = [f"<b>ARGUS daily briefing</b> · {local.strftime('%a %d %b %Y, %H:%M')} CEST", ""]
     for i, (_, new, s) in enumerate(top, 1):
         e = esc24[s["slug"]]
-        change = f"{new} new reports" + (f", {e[-1]['detail'].lower()}" if e else "")
+        extra = [x["detail"] for x in e if not x["detail"].startswith("+")]  # tellingen doen we zelf; wel severity-sprongen e.d.
+        change = f"{new} new reports" + (f", {extra[-1].lower()}" if extra else "")
         lines.append(f"{i}. <b>{s['title']}</b> — {s.get('severity','?')} · {change}")
         if s.get("latestHeadline"): lines.append(f"   ↳ {s['latestHeadline'][:140]}")
         lines.append(f"   {SITE}/s/{s['slug']}")

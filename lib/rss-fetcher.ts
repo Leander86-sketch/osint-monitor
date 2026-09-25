@@ -23,6 +23,16 @@ function throttleHost<T>(host: string, fn: () => Promise<T>, gap = 900): Promise
   return run;
 }
 
+// Datum-normalisatie (25 sep 2026): IAEA (iaea.org/feeds/topnews) levert " 26-09-25 08:00 " (JJ-MM-DD UU:MM, Weense tijd);
+// dat parste als een vreemde datum en sorteerde fout. Onparseerbaar → nu.
+function normalizeDate(raw?: string): string {
+  const s = (raw || '').trim();
+  if (!s) return new Date().toISOString();
+  const m = /^(\d{2})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})$/.exec(s);
+  if (m) return `20${m[1]}-${m[2]}-${m[3]}T${m[4]}:${m[5]}:00+02:00`;
+  return isNaN(new Date(s).getTime()) ? new Date().toISOString() : s;
+}
+
 export async function fetchFeed(feed: FeedConfig): Promise<NewsItem[]> {
   try {
     // WordPress-JSON (22 sep 2026): ISW heeft geen RSS meer, wel /wp-json/wp/v2/posts — dezelfde vorm als een feed
@@ -57,7 +67,7 @@ export async function fetchFeed(feed: FeedConfig): Promise<NewsItem[]> {
         description: description.slice(0, 300),
         link: item.link || '',
         source: feed.name,
-        pubDate: item.pubDate || item.isoDate || new Date().toISOString(),
+        pubDate: normalizeDate(item.pubDate || item.isoDate),
         category: feed.category,
         keywords,
         location: location || undefined,

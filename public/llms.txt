@@ -1,0 +1,21 @@
+# ARGUS
+
+> ARGUS is a free, no-login open-source-intelligence (OSINT) dashboard at argus.prototipo.nl, "always monitoring the situation". It combines a live conflict map, 165 tiered news feeds grouped by viewpoint (West, Russia, Ukraine, Middle East, Asia), 46 live video channels, national terror threat levels and per-situation pages. Built and run by one person, Leander Bloot (Netherlands), on a single Mac mini. It aggregates public sources and hosts no original data; every item links to its named source.
+
+Key facts
+- Map layers: ADS-B flights incl. notable military aircraft (plane-alert-db), ships at chokepoints (AIS), NASA FIRMS thermal detections, DeepStateMap frontline (occupied and grey-zone areas), NGA navigational warnings in force, Ukraine air-raid alerts per oblast, USGS/GDACS/EMSC hazards, Cloudflare Radar internet outages, satellites, cameras.
+- Situations: live clusters of reporting (e.g. Ukraine Front, Iran-Israel, Europe Airspace / Drones, NATO Eastern Flank, Taiwan Strait) with severity, velocity and corroboration; each has a shareable page under /s/.
+- Hybrid Europe dossier: 146 documented Russian hybrid operations in Europe 2022–2025 from Leiden University's CC BY dataset (Schuurman), plus ARGUS's own detection of new incidents.
+- Threat levels: NL (NCTV), UK (GOV.UK), US (DHS NTAS), refreshed every 6 hours.
+- Free, no account, no tracking; hosted, not open source. Occasional downtime (single machine).
+
+## Pages
+- [Home](https://argus.prototipo.nl/): map, breaking rail, situations, live channels, threat levels.
+- [Situation pages](https://argus.prototipo.nl/s/ukraine-front): one per situation, e.g. /s/ukraine-front, /s/iran-israel, /s/europe-airspace-drones, /s/nato-eastern-flank.
+- [Focus: Hybrid Europe](https://argus.prototipo.nl/focus): the hybrid-warfare dossier.
+- [Sources](https://argus.prototipo.nl/): the sources panel lists every feed, layer and channel with its origin and cadence.
+- [RSS](https://argus.prototipo.nl/rss) · [Sitemap](https://argus.prototipo.nl/sitemap.xml)
+
+## Follow
+- Daily briefing on Telegram: https://t.me/argusdaily (07:00 CET)
+- Bluesky: https://bsky.app/profile/argus.prototipo.nl · X: https://x.com/ArgusDashboard

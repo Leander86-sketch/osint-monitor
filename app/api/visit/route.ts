@@ -7,6 +7,7 @@ import { isAdmin } from '@/lib/admin-key';
 // Bezoekersmeting (16 sep 2026): de pagina stuurt één POST per sessie; we bewaren per dag een set
 // gehashte IP's (dag-salt, dus niet herleidbaar over dagen). GET geeft uniek vandaag / 7 dagen.
 const FILE = join(process.cwd(), 'data', 'visits.json');
+const REF_FILE = join(process.cwd(), 'data', 'visits-ref.json'); // 25 sep 2026: per dag { bron: aantal } uit document.referrer en ?ref=
 const KEEP_DAYS = 60;
 type Visits = Record<string, string[]>;
 
@@ -21,6 +22,19 @@ function visitorStats(v: Visits = load()): { today: number; week: number; days: 
   return { today: (v[day()] || []).length, week: week.size, days };
 }
 
+// Bron uit verwijzer-URL of ?ref=: 'bsky.app', 't.me', 'x.com', 'reddit.com', 'google.com', 'ref:wknd-0925', of 'direct'.
+function sourceOf(ref: string, qref: string): string {
+  if (qref) return 'ref:' + qref.replace(/[^a-z0-9_-]/gi, '').slice(0, 40);
+  try { const h = new URL(ref).hostname.replace(/^www\./, ''); return h === 'argus.prototipo.nl' ? '' : h || 'direct'; } catch { return ref ? 'other' : 'direct'; }
+}
+function bumpRef(src: string) {
+  if (!src) return;
+  let r: Record<string, Record<string, number>> = {}; try { r = JSON.parse(readFileSync(REF_FILE, 'utf-8')); } catch { /* leeg */ }
+  const today = day(); r[today] = r[today] || {}; r[today][src] = (r[today][src] || 0) + 1;
+  const cutoff = day(new Date(Date.now() - KEEP_DAYS * 86400000)); for (const k of Object.keys(r)) if (k < cutoff) delete r[k];
+  try { writeFileSync(REF_FILE, JSON.stringify(r)); } catch { /* non-fatal */ }
+}
+
 export async function POST(req: NextRequest) {
   const ip = req.headers.get('cf-connecting-ip') || req.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'unknown';
   const ua = req.headers.get('user-agent') || '';
@@ -32,11 +46,13 @@ export async function POST(req: NextRequest) {
   for (const k of Object.keys(v)) if (k < cutoff) delete v[k];
   v[today] = v[today] || [];
   if (!v[today].includes(h)) { v[today].push(h); save(v); }
+  try { const b = await req.json(); bumpRef(sourceOf(String(b?.ref || ''), String(b?.q || ''))); } catch { bumpRef('direct'); }
   return NextResponse.json({ ok: true });
 }
 
 export async function GET(req: NextRequest) {
   const host = req.headers.get('host') || '';
   if (!/^(localhost|127\.0\.0\.1)(:\d+)?$/.test(host) && !isAdmin(req)) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
-  return NextResponse.json(visitorStats());
+  let refs = {}; try { refs = JSON.parse(readFileSync(REF_FILE, 'utf-8')); } catch { /* leeg */ }
+  return NextResponse.json({ ...visitorStats(), refs });
 }

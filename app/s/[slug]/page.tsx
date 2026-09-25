@@ -55,6 +55,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           {items.length === 0 && <li className="bg-[#080808] px-4 py-10 text-center text-[11px] font-mono text-[#555] uppercase">No reports right now</li>}
         </ol>
         <p className="mt-4 text-[12px] font-mono text-[#666] leading-relaxed">ARGUS clusters open, public sources into live situations. Every line is a named source you can check yourself. Severity follows the volume and rank of reporting; corroboration A means several independent top-rank sources carry it.</p>
+        <p className="mt-3 text-[12px] font-mono text-[#888]">Get this as a daily briefing: <a href="https://t.me/argusdaily" className="text-[#e8760a] hover:underline">t.me/argusdaily</a> · alerts as they happen: <a href="https://bsky.app/profile/argus.prototipo.nl" className="text-[#e8760a] hover:underline">@argus.prototipo.nl</a> on Bluesky</p>
         <h2 className="mt-9 mb-3 text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.22em]">Other situations</h2>
         <div className="flex flex-wrap gap-2">{others.map(o => <a key={o.slug} href={`/s/${o.slug}`} className="text-[11px] font-mono uppercase tracking-[0.12em] px-2.5 py-1.5 border border-[#222] hover:border-[#e8760a] hover:text-[#e8760a]" style={{ boxShadow: `inset 3px 0 0 ${SEV_COLOR[o.severity]}` }}>{o.title}</a>)}</div>
       </article>

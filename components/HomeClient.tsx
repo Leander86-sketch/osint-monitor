@@ -47,7 +47,7 @@ export default function HomeClient() {
 
   // bezoekersmeting: één beacon per sessie (16 sep 2026)
   useEffect(() => {
-    try { if (!sessionStorage.getItem('argus_v')) { sessionStorage.setItem('argus_v', '1'); fetch('/api/visit', { method: 'POST', keepalive: true }).catch(() => {}); } } catch { /* privé-modus */ }
+    try { if (!sessionStorage.getItem('argus_v')) { sessionStorage.setItem('argus_v', '1'); fetch('/api/visit', { method: 'POST', keepalive: true, headers: { 'content-type': 'application/json' }, body: JSON.stringify({ ref: document.referrer || '', q: new URLSearchParams(location.search).get('ref') || '' }) }).catch(() => {}); } } catch { /* privé-modus */ }
   }, []);
   useEffect(() => {
     const u = () => setTime(new Date().toLocaleTimeString('en-US', { hour12: false }));

@@ -10,7 +10,8 @@ from datetime import datetime, timezone
 
 ROOT = os.path.expanduser("~/Clawd/osint-monitor")
 OUT = os.path.join(ROOT, "data", "x-reach.jsonl")
-HANDLES = ["LeanderLbb", "ArgusDashboard"]
+HANDLES = ["LeanderLbb", "ArgusDashboard", "MotorsportHubTv"]
+BSKY = ["argus.prototipo.nl", "motorsport.prototipo.nl"]  # 25 sep 2026: Bluesky via de publieke API, geen login nodig
 
 def load_env():
     env = {}
@@ -51,6 +52,23 @@ def collect():
         except Exception as e:
             run["accounts"][h] = {"error": str(e)[:200]}
         time.sleep(2)
+    run["bluesky"] = {}
+    for h in BSKY:
+        try:
+            pub = "https://public.api.bsky.app/xrpc/"
+            def pget(m, q):
+                with urllib.request.urlopen(urllib.request.Request(pub + m + "?" + urllib.parse.urlencode(q), headers={"User-Agent": "ARGUS-reach/1.0"}), timeout=30) as r: return json.loads(r.read())
+            prof = pget("app.bsky.actor.getProfile", {"actor": h})
+            feed = pget("app.bsky.feed.getAuthorFeed", {"actor": h, "limit": 20, "filter": "posts_no_replies"})
+            items = []
+            for it in feed.get("feed", []):
+                po = it["post"]
+                if po["author"]["handle"] != h: continue
+                items.append({"uri": po["uri"], "at": po["record"].get("createdAt", ""), "likes": po.get("likeCount", 0), "reposts": po.get("repostCount", 0),
+                              "replies": po.get("replyCount", 0), "quotes": po.get("quoteCount", 0), "text": po["record"].get("text", "")[:90]})
+            run["bluesky"][h] = {"followers": prof.get("followersCount", 0), "follows": prof.get("followsCount", 0), "posts": prof.get("postsCount", 0), "items": items}
+        except Exception as e:
+            run["bluesky"][h] = {"error": str(e)[:200]}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "a") as f: f.write(json.dumps(run, ensure_ascii=False) + "\n")
     return run
@@ -72,6 +90,12 @@ def report():
         for t in a["items"][:12]:
             d = f" (+{t['imp']-pi[t['id']]['imp']})" if t["id"] in pi else ""
             print(f"  {t['at'][5:16]} {t['kind']:5} imp {t['imp']:>5}{d:8} ♥{t['likes']} ↩{t['replies']} ⟳{t['reposts']}  {t['text'][:60]}")
+    for h, b in (last.get("bluesky") or {}).items():
+        if "error" in b: print(f"\nBluesky @{h}: fout {b['error']}"); continue
+        pf = (prev or {}).get("bluesky", {}).get(h, {}).get("followers") if prev else None
+        print(f"\nBluesky @{h}: {b['followers']} volgers" + (f" ({b['followers']-pf:+d})" if pf is not None else "") + f", {b['posts']} posts")
+        for t in b["items"][:8]:
+            print(f"  {t['at'][5:16]}       ♥{t['likes']} ↩{t['replies']} ⟳{t['reposts']} \"{t['quotes']}  {t['text'][:60]}")
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "report": report()

@@ -97,6 +97,8 @@ def main():
         print("handle gewisseld naar", p["domain"])
     elif cmd == "post":
         text = sys.argv[3] if len(sys.argv) > 3 else f"{p['displayName']} is now on Bluesky. https://{p['domain']}"
+        if not text.strip(): raise SystemExit("lege tekst: niet gepost")
+        if len(text) > 300: raise SystemExit(f"te lang voor Bluesky: {len(text)} tekens (max 300): niet gepost")
         rec = {"$type": "app.bsky.feed.post", "text": text, "createdAt": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"), "langs": ["en"]}
         f = facets(text)
         if f:

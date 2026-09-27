@@ -31,6 +31,7 @@ export const RSS_FEEDS: FeedConfig[] = [
 
   // ===================== TIER 1 — EUROPE / UKRAINE / NATO =====================
   { name: 'BBC Europe', url: 'https://feeds.bbci.co.uk/news/world/europe/rss.xml', category: 'europe', enabled: true, tier: 1, reliability: 95, region: 'europe' },
+  { name: 'BBC UK', url: 'https://feeds.bbci.co.uk/news/uk/rss.xml', category: 'europe', enabled: true, tier: 1, reliability: 95, region: 'europe' },
   // ── NAVO-oostflank en Noord-Europa, Engelstalig (19 sep 2026; alle getest op 17 sep) — voor drones, luchtruim en hybride incidenten
   { name: 'ERR News (Estonia)', url: 'https://news.err.ee/rss', category: 'europe', enabled: true, tier: 2, reliability: 82, region: 'europe' },
   { name: 'LSM (Latvia)', url: 'https://eng.lsm.lv/rss/', category: 'europe', enabled: true, tier: 2, reliability: 82, region: 'europe' },

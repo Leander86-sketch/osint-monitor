@@ -18,7 +18,7 @@ PROJECTS = {
               "description": "Always monitoring the situation. Free, no-login OSINT dashboard: live conflict map, 165 feeds by viewpoint, 46 live channels, shareable situation pages. Built solo, runs on one Mac mini in NL.\nargus.prototipo.nl"},
     "hub": {"env": "~/Clawd/motorsport-addon/.env.local", "domain": "motorsport.prototipo.nl", "did_file": "~/Clawd/motorsport-hub-site/.well-known/atproto-did",
             "displayName": "Motorsport Hub", "avatar": "~/Clawd/motorsport-hub-site/mhub-logo.png",
-            "description": "Every free & legal motorsport stream in one place. 96 official sources, F1 to MotoGP to King of the Hammers. Stremio, Kodi, web, Samsung TV. No ads, no tracking, spoiler-free.\nmotorsport.prototipo.nl"},
+            "description": "Every free & legal motorsport stream in one place. 95 official sources, F1 to MotoGP to King of the Hammers. Stremio, Kodi, web, Samsung TV. No ads, no tracking, spoiler-free.\nmotorsport.prototipo.nl"},
 }
 PDS = "https://bsky.social/xrpc"
 UA = {"User-Agent": "ARGUS-bsky-onboard/1.0"}

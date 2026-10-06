@@ -100,6 +100,7 @@ updates to a hand-compiled dossier. Rules, strictly:
 10. In "by": write "Says: ..." and add "Denies: ..." only when someone actually denies. Never write "Denies: n/a".
 8. Output ONE JSON object, nothing else, with this shape:
 {"summary": "2-3 sentences: what changed since the dossier was last updated",
+ "headline": "a newspaper headline for the situation as it stands now: max 12 words, your own wording (never copy a source headline), names the actor, no clickbait, no question marks",
  "stand": "a proposed replacement paragraph for the stand (max 90 words), or null if no change needed",
  "figures": [{"action":"new|change","label":"...","value":"...","src":{"name":"...","url":"...","date":"6 Oct"},"quote":"..."}],
  "claims": [{"action":"new|change","status":"confirmed|reported|disputed|debunked","text":"...","by":"Says: ... Denies: ...","sources":[{"name":"...","url":"...","date":"6 Oct"}],"quote":"..."}],
@@ -221,6 +222,7 @@ def apply(slug, pfile):
         d['timeline'].append({'date': t['date'], 'kind': t.get('kind', 'media'), 'text': t['text'], 'sources': t.get('sources', [])}); n += 1
     d['timeline'] = sort_timeline(d['timeline'])
     if prop.get('stand') and (prop.get('apply_stand') or not d.get('stand')): d['stand'] = prop['stand']; n += 1
+    if prop.get('headline') and 3 <= len(prop['headline'].split()) <= 16: d['headline'] = prop['headline'].strip().rstrip('.'); n += 1
     # bronnentabel: elke unieke bron-url uit de overgenomen regels, als die er nog niet in staat
     seen = {x['url'] for x in d.get('sources', [])}
     for row in d['claims'] + d['timeline']:
@@ -236,7 +238,19 @@ def main():
     slug, cmd, args = sys.argv[1], sys.argv[2], sys.argv[3:]
     os.makedirs(f'{ROOT}/data/dossiers/proposals', exist_ok=True)
     stamp = dt.datetime.now().strftime('%Y%m%d-%H%M')
-    if cmd == 'init':
+    if cmd == 'headline':
+        # alleen een kop, uit de stand + claims (geen artikelen nodig): snel, via claude -p
+        import subprocess
+        d = load_dossier(slug)
+        prompt = ("Write ONE newspaper headline for this situation as it stands now. Max 12 words. Your own wording. Name the actor. "
+                  "No clickbait, no question mark, no trailing full stop, British spelling. Output the headline only.\n\nSTAND: " + d.get('stand', '') +
+                  "\n\nCLAIMS:\n" + '\n'.join(f"- [{c['status']}] {c['text']}" for c in d.get('claims', [])[:10]))
+        r = subprocess.run(['/opt/homebrew/bin/claude', '-p', '--model', 'sonnet', '--output-format', 'text'], input=prompt, capture_output=True, text=True, timeout=300, cwd=ROOT)
+        h = r.stdout.strip().strip('"').strip().rstrip('.')
+        if r.returncode != 0 or not (3 <= len(h.split()) <= 16): sys.exit(f'bad headline: {h[:80]!r} {r.stderr[:200]}')
+        d['headline'] = h; json.dump(d, open(f'{ROOT}/data/dossiers/{slug}.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
+        print(f'{slug}: {h}')
+    elif cmd == 'init':
         # leeg skelet: ankers = de wires; de automatische laag staat er al, de redactionele laag wordt gevuld door propose + apply
         out = f'{ROOT}/data/dossiers/{slug}.json'
         if os.path.exists(out): sys.exit(f'{out} exists')

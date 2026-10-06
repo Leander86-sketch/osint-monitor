@@ -20,6 +20,8 @@ export interface Dossier {
   updatedAt: string;
   /** ankerbronnen: hun nieuwste koppen gelden als de laatste stand (regex op bronnaam) */
   anchors?: DossierAnchor[];
+  /** krantenkop boven de lede (6 okt 2026); uit de extractiestap, elke ochtend mee ververst */
+  headline?: string;
   stand: string;
   figures: DossierFigure[];
   claims: DossierClaim[];

@@ -65,7 +65,8 @@ export default function SituationDossier({ d, s, items }: { d: Dossier | null; s
       {d && d.stand && (
         <div className="max-w-[62ch] mb-8">
           <div className="w-10 h-[3px] bg-[#e8760a] mb-3" />
-          <p className="text-[21px] leading-[1.45] text-[#f2f2f2]" style={sans}>{d.stand}</p>
+          {d.headline && <h2 className="text-[30px] leading-[1.15] font-medium tracking-[-0.01em] text-white mb-3" style={sans}>{d.headline}</h2>}
+          <p className={`${d.headline ? 'text-[17px] text-[#d8d8d8]' : 'text-[21px] text-[#f2f2f2]'} leading-[1.5]`} style={sans}>{d.stand}</p>
           <div className="mt-2.5 flex items-center gap-2.5 text-[10px] font-mono text-[#666]"><span>Dossier updated {fmt(d.updatedAt)}</span><Tag /></div>
         </div>
       )}

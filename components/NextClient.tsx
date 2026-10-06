@@ -163,13 +163,13 @@ export default function NextClient({ initialSituations = [] }: { initialSituatio
       <div className="sticky top-0 z-40 bg-[#080808]/95 backdrop-blur border-b border-[#1a1a1a]">
         <header className="flex items-center justify-between px-5 py-4">
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2.5">
+            <a href="/" title="ARGUS home (reload)" className="flex items-center gap-2.5 hover:opacity-80">
               <div className="relative">
                 <div className="w-2 h-2 rounded-full bg-[#e8760a]" />
                 <div className="absolute inset-0 w-2 h-2 rounded-full bg-[#e8760a] animate-ping opacity-30" />
               </div>
               <h1 className="text-sm font-bold tracking-[0.15em] uppercase"><span className="text-[#e8760a]">ARGUS</span></h1>
-            </div>
+            </a>
             <div className="h-3 w-px bg-[#1a1a1a]" />
             <div className="flex items-center gap-2">
               <span className="text-[10px] font-mono text-[#888] uppercase tracking-wider">Threat</span>

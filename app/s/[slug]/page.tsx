@@ -4,6 +4,8 @@ import { getSituationBySlug, computeSituations } from '@/lib/situations';
 import { ensureFeedsLoaded, getNewsItems } from '@/lib/store';
 import { NewsItem } from '@/lib/types';
 import { VIEW_COLOR, VIEW_LABEL, viewOf, isStateMedia } from '@/lib/viewpoints';
+import { getDossier } from '@/lib/dossiers';
+import SituationDossier from '@/components/SituationDossier';
 
 export const dynamic = 'force-dynamic';
 // Vindbare, deelbare pagina per situatie (19 sep 2026). Volledig op de server opgebouwd, zodat zoekmachines en
@@ -23,13 +25,15 @@ async function load(slug: string) {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params; const d = await load(slug); if (!d) return { title: 'ARGUS' };
   const title = `${d.s.title} — ${d.s.severity.toUpperCase()} · ARGUS`;
-  const description = d.s.latestHeadline ? `Latest: ${d.s.latestHeadline}. ${d.s.metadata.velocity24h} reports in 24 hours from ${new Set(d.items.map(i => i.source)).size} sources, corroboration ${d.s.metadata.corroboration}.` : `Live OSINT tracking of ${d.s.title}.`;
+  const dossier = getDossier(slug);
+  const description = dossier ? dossier.stand.slice(0, 300) : d.s.latestHeadline ? `Latest: ${d.s.latestHeadline}. ${d.s.metadata.velocity24h} reports in 24 hours from ${new Set(d.items.map(i => i.source)).size} sources, corroboration ${d.s.metadata.corroboration}.` : `Live OSINT tracking of ${d.s.title}.`;
   return { title, description, alternates: { canonical: `/s/${slug}` }, openGraph: { title, description, siteName: 'ARGUS', type: 'article', url: `/s/${slug}` }, twitter: { card: 'summary_large_image', title, description, site: '@ArgusDashboard' } };
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; const d = await load(slug); if (!d) notFound();
   const { s, items } = d; const sev = SEV_COLOR[s.severity] || '#6b7280';
+  const dossier = getDossier(slug); // handgemaakt dossier (data/dossiers/<slug>.json), als het er is
   const others = computeSituations().filter(x => x.slug !== s.slug).slice(0, 8);
   const sources = [...new Set(items.map(i => i.source))];
   return (
@@ -39,13 +43,14 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <span className="text-[11px] font-mono text-[#888] uppercase tracking-[0.2em]">Situation</span>
         <a href={`/?dossier=${s.slug}`} className="ml-auto text-[11px] font-mono text-[#050505] bg-[#e8760a] hover:bg-white uppercase tracking-[0.15em] px-3 py-1.5">Open live dashboard →</a>
       </header>
-      <article className="max-w-[1000px] mx-auto px-6 py-9">
+      <article className={`${dossier ? "max-w-[1200px]" : "max-w-[1000px]"} mx-auto px-6 py-9`}>
         <div className="border-l-4 pl-5" style={{ borderColor: sev }}>
           <div className="text-[11px] font-mono uppercase tracking-[0.25em]" style={{ color: sev }}>{s.severity} · {s.status} · corroboration {s.metadata.corroboration}</div>
           <h1 className="text-[40px] leading-tight text-white mt-1" style={sans}>{s.title}</h1>
           <p className="mt-3 text-[13px] font-mono text-[#999]">{s.metadata.velocity1h} reports in the last hour · {s.metadata.velocity24h} in 24 hours · {sources.length} sources · updated {s.latestPubDate ? ago(s.latestPubDate) : '—'}</p>
         </div>
-        <h2 className="mt-9 mb-3 text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.22em]">Latest reports</h2>
+        {dossier && <SituationDossier d={dossier} feedChecked={items[0]?.pubDate} />}
+        <h2 className="mt-9 mb-3 text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.22em]">Latest reports{dossier ? ' · automatic' : ''}</h2>
         <ol className="border border-[#1a1a1a] divide-y divide-[#141414]">
           {items.slice(0, 25).map(i => { const v = viewOf(i); return (
             <li key={i.id} className="bg-[#080808] px-4 py-3.5">

@@ -223,6 +223,8 @@ export interface Situation {
   latestHeadline: string;
   latestLink: string;
   latestPubDate: string;
+  /** true als er een handgemaakt dossier is (data/dossiers/<slug>.json) */
+  dossier?: boolean;
   metadata: {
     articleCount: number;
     velocity1h: number;

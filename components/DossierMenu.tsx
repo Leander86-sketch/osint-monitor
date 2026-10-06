@@ -48,6 +48,7 @@ export default function DossierMenu({ situations }: { situations: Situation[] })
               <a key={s.id} href={`/s/${s.slug}`} className="flex items-center gap-2.5 px-4 py-1.5 hover:bg-[#e8760a]/10 group">
                 <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: SEV_COLOR[s.severity] || '#6b7280' }} />
                 <span className="text-[12px] font-mono text-[#ddd] group-hover:text-[#e8760a] truncate">{s.title}</span>
+                {s.dossier && <span title="Hand-compiled dossier: what's confirmed and what isn't, with sources" className="text-[8px] font-mono font-bold px-1 py-px bg-[#e8760a]/15 text-[#e8760a] border border-[#e8760a]/40 uppercase tracking-wider shrink-0">dossier</span>}
                 <span className="ml-auto text-[9px] font-mono text-[#555] uppercase tracking-wider shrink-0">{s.status}{s.metadata?.articleCount ? ` · ${s.metadata.articleCount}` : ''}</span>
               </a>
             ))}

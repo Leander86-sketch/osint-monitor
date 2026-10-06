@@ -50,11 +50,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           <p className="mt-3 text-[13px] font-mono text-[#999]">{s.metadata.velocity1h} reports in the last hour · {s.metadata.velocity24h} in 24 hours · {sources.length} sources · updated {s.latestPubDate ? ago(s.latestPubDate) : '—'}</p>
         </div>
         <SituationDossier d={dossier} s={s} items={items} />
-        <h2 className="mt-9 mb-3 text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.22em]">Latest reports</h2>
-        <ol className="border border-[#1a1a1a] divide-y divide-[#141414]">
+        <h2 className="mt-10 mb-1 pb-1.5 border-b border-[#2a2a2a] text-[10px] font-mono font-bold text-[#eee] uppercase tracking-[0.24em]">Latest reports <span className="ml-2 text-[8px] font-normal px-1 py-px border text-[#4ade80]/80 border-[#1f4d2e]">live</span></h2>
+        <ol className="divide-y divide-[#1a1a1a]">
           {items.slice(0, 25).map(i => { const v = viewOf(i); return (
-            <li key={i.id} className="bg-[#080808] px-4 py-3.5">
-              <a href={i.link} target="_blank" rel="noopener noreferrer" className="block text-[16px] leading-snug text-[#f0f0f0] hover:text-[#e8760a]" style={sans}>{i.title}</a>
+            <li key={i.id} className="px-1 py-2.5">
+              <a href={i.link} target="_blank" rel="noopener noreferrer" className="block text-[13.5px] leading-snug text-[#e0e0e0] hover:text-[#e8760a]" style={sans}>{i.title}</a>
               <div className="mt-1.5 text-[10px] font-mono text-[#888]"><span style={{ color: VIEW_COLOR[v] }}>{VIEW_LABEL[v].toUpperCase()}</span> · {i.source}{isStateMedia(i.source) && <span className="ml-1.5 text-[#a16207]">state</span>} · T{i.sourceTier || 3} · <time dateTime={new Date(i.pubDate).toISOString()}>{ago(i.pubDate)}</time></div>
             </li>); })}
           {items.length === 0 && <li className="bg-[#080808] px-4 py-10 text-center text-[11px] font-mono text-[#555] uppercase">No reports right now</li>}

@@ -1,0 +1,460 @@
+{
+  "slug": "ukraine-front",
+  "updatedAt": "2026-10-06T16:50+02:00",
+  "anchors": [
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    },
+    {
+      "label": "BBC",
+      "match": "^BBC"
+    },
+    {
+      "label": "AFP",
+      "match": "AFP|France 24"
+    }
+  ],
+  "stand": "Russia and Ukraine are trading escalating long-range strikes as a fifth winter approaches. Russia has hit Kyiv's bridges, railways and energy sites, and pledges further strikes after Ukraine's attacks on its oil refineries. Ukraine says it has disabled over half of Russia's refining capacity and struck Moscow region with 650 drones, killing two. Civilians are dying on both sides. Washington is pushing trilateral talks by end-October; Kyiv says yes, Moscow's answer is pending. Germany pledged fresh military aid; Russia is accused of trying to intimidate Kyiv's foreign embassies.",
+  "figures": [
+    {
+      "label": "Trains evacuated in September due to drone attacks",
+      "value": "5,831",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Ukrzaliznytsia via AFP (in BBC)",
+        "url": "https://www.bbc.co.uk/news/articles/cr4g1qxzwyj1o?at_medium=RSS&at_campaign=rss",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Drones in Ukraine's overnight attack on Moscow region",
+      "value": "around 650",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Moscow Mayor Sergei Sobyanin (via SCMP)",
+        "url": "https://www.scmp.com/news/world/russia-central-asia/article/3369888/ukraine-attacks-moscow-region-650-drones-both-sides-step-strikes?utm_source=rss_feed",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Russia's oil refining capacity disabled (Ukraine's claim)",
+      "value": "51%",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Ukraine Defence Ministry (via ABC News)",
+        "url": "https://abcnews.com/International/wireStory/ukraine-claims-attacks-half-russias-oil-refining-capacity-136996326",
+        "date": "4 Oct"
+      }
+    },
+    {
+      "label": "Economic cost of refinery strikes, acknowledged by Putin",
+      "value": "roughly 1% of GDP",
+      "color": "#f59e0b",
+      "src": {
+        "name": "President Vladimir Putin, Valdai Club forum (via ABC News)",
+        "url": "https://abcnews.com/International/wireStory/ukraine-claims-attacks-half-russias-oil-refining-capacity-136996326",
+        "date": "1 Oct"
+      }
+    },
+    {
+      "label": "Ukraine's planned drone production, 2026",
+      "value": "10 million",
+      "color": "#f59e0b",
+      "src": {
+        "name": "President Volodymyr Zelenskyy (via NPR)",
+        "url": "https://www.npr.org/2026/10/05/nx-s1-5925803/drones-buzz-overhead-troops-hunker-underground-in-ukraines-hellish-kill-zone",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Russia's planned drone production, 2026",
+      "value": "more than 7 million",
+      "color": "#f59e0b",
+      "src": {
+        "name": "NPR reporting",
+        "url": "https://www.npr.org/2026/10/05/nx-s1-5925803/drones-buzz-overhead-troops-hunker-underground-in-ukraines-hellish-kill-zone",
+        "date": "5 Oct"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "status": "disputed",
+      "text": "Russia says rail strikes hit military-logistics infrastructure, not civilians; Ukrainian accounts describe repeated strikes near passenger trains.",
+      "by": "Says: Russia's Defence Ministry — denies targeting civilians, says attacks target military transport infrastructure.",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr4g1qxzwyj1o?at_medium=RSS&at_campaign=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Russia's Defence Ministry confirmed striking Kyiv's Northern Bridge, calling it a military-logistics target; two people were injured.",
+      "by": "Says: Russia's Defence Ministry, via Telegram — confirms the strike and its military rationale. Says: Kyiv Mayor Vitali Klitschko — two injured.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html",
+          "date": "4 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Zelenskyy says Ukraine will intensify strikes on Russian oil refineries in retaliation for Russia's air campaign against Kyiv, and that Russian civilians will not be targeted.",
+      "by": "Says: President Volodymyr Zelenskyy, to Reuters.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html",
+          "date": "3 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Ukraine's Defence Ministry claims strikes have disabled 51% of Russia's oil refining capacity; the figure is unverified.",
+      "by": "Says: Ukraine Defence Ministry. Not independently verified — Russia has released no figures.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/ukraine-claims-attacks-half-russias-oil-refining-capacity-136996326",
+          "date": "4 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Putin acknowledged Ukrainian refinery strikes have cost Russia around 1% of GDP, saying Ukraine only partially achieved its aim of damaging the economy.",
+      "by": "Says: President Vladimir Putin, at the Valdai Club forum.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/ukraine-claims-attacks-half-russias-oil-refining-capacity-136996326",
+          "date": "1 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Russian officials say Ukraine launched a roughly 650-drone attack on the Moscow region overnight, killing two; no Ukrainian confirmation appears in the sources reviewed.",
+      "by": "Says: Moscow Mayor Sergei Sobyanin, Governor Andrei Vorobyov. No Ukrainian confirmation in sources reviewed.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/ukraine-launches-major-drone-attack-on-russias-moscow-region-killing-two?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "A war blogger claims a Ukrainian strike hit an oil-storage tank at the Volodarskaya facility near Moscow; there is no official confirmation.",
+      "by": "Says: war blogger Yuri Podolyaka. No official confirmation given.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/ukraine-launches-major-drone-attack-on-russias-moscow-region-killing-two?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Estonia's Foreign Ministry says Russia is trying to intimidate foreign diplomats in Kyiv to undermine support for Ukraine; Estonia says its embassy is staying.",
+      "by": "Says: Estonian Foreign Ministry. No Russian response appears in sources reviewed.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-polytics/4170993-estonian-foreign-ministry-says-estonian-embassy-remains-in-kyiv.html",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Guardian investigation found sanctioned tankers carried South Korean fuel to Russia in July-August; an analyst says this undermines the sanctions regime, and Seoul did not address the shipments directly.",
+      "by": "Says: Guardian analysis / CREA analyst Isaac Levi. South Korea's foreign ministry did not address the shipments.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/06/oil-tankers-south-korea-russia-ukraine-war",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "India's external affairs minister says Delhi is becoming more actively involved in efforts to end the war, including on Black Sea shipping safety.",
+      "by": "Says: India's External Affairs Minister Jaishankar.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/asia/south-asia/article/3369747/india-seeks-be-little-bit-more-involved-ending-ukraine-war-minister?utm_source=rss_feed",
+          "date": "4 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Zelenskyy says the US has proposed trilateral peace talks at technical level by end of October; Ukraine responds positively and awaits Russia's answer.",
+      "by": "Says: President Volodymyr Zelenskyy, citing a US proposal. Russia's response not yet given in sources reviewed.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html",
+          "date": "4 Oct"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "timeline": [
+    {
+      "date": "16 Sep",
+      "kind": "media",
+      "text": "Drone strike near an Odesa-Kirovohrad passenger train forces a trackside evacuation; the train itself was not damaged.",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr4g1qxzwyj1o?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "date": "20 Sep",
+      "kind": "media",
+      "text": "A relative lull in large Ukrainian drone strikes on the Moscow region begins.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/ukraine-launches-major-drone-attack-on-russias-moscow-region-killing-two?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "1 Oct",
+      "kind": "official",
+      "text": "Putin says Ukrainian refinery strikes have cost Russia about 1% of GDP.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/ukraine-claims-attacks-half-russias-oil-refining-capacity-136996326"
+        }
+      ]
+    },
+    {
+      "date": "3 Oct",
+      "kind": "official",
+      "text": "Russian drone strikes Kyiv's Northern Bridge over the Dnipro, damaging the road surface and injuring two.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "official",
+      "text": "Russia's Defence Ministry confirms the Northern Bridge strike via Telegram, calling Zelenskyy responsible for the escalation.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "official",
+      "text": "German Chancellor Merz visits Kyiv, pledging €1bn in military aid.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "official",
+      "text": "Russian drone attack injures a 53-year-old man in Pryozerne, Kherson region; separate shelling injures a woman in Bilozerka.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171058-russian-drone-attack-in-kherson-region-leaves-one-injured.html"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Russia launches 205 drones overnight into Monday; Ukraine's air force says 172 are shot down or suppressed.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/ukraine-claims-attacks-half-russias-oil-refining-capacity-136996326"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Russian guided aerial bomb attack kills at least three and wounds 39 in Kharkiv; a search for people under rubble is under way.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/ukraine-claims-attacks-half-russias-oil-refining-capacity-136996326"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "media",
+      "text": "Russian drone attack sinks a Turkish-owned grain ship in Romania's Black Sea waters; two killed, 11 rescued.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/ukraine-says-russian-drone-attack-sinks-ship-in-romanian-waters?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "German minister Karin Prien arrives in Kyiv, a day after Merz's visit, to highlight support for children and civil society.",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/europa/prien-besuch-ukraine-100.html"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Russia says it struck the port of Vylkove and fuel depots at Chornomorsk in Odesa region and a power plant in Kharkiv region; one dead, six injured in Kharkiv.",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/europa/prien-besuch-ukraine-100.html"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "reaction",
+      "text": "Estonia's embassy says it is staying in Kyiv despite Russian intimidation; Ukraine's foreign ministry had denied reports of Western embassies evacuating west.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-polytics/4170993-estonian-foreign-ministry-says-estonian-embassy-remains-in-kyiv.html"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Ukraine strikes Russia's Moscow region overnight with roughly 650 drones; Russian officials say two are killed and a warehouse set ablaze.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/world/russia-central-asia/article/3369888/ukraine-attacks-moscow-region-650-drones-both-sides-step-strikes?utm_source=rss_feed"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/ukraine-launches-major-drone-attack-on-russias-moscow-region-killing-two?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "A separate Ukrainian drone attack hits a minibus in Russian-occupied Zaporizhzhia, killing three, Moscow-installed officials say.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/ukraine-launches-major-drone-attack-on-russias-moscow-region-killing-two?traffic_source=rss"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "who": "BBC World",
+      "what": "Russia says rail strikes hit military-logistics infrastructure, not civilians; Ukrainian accounts describe repeated stri",
+      "url": "https://www.bbc.co.uk/news/articles/cr4g1qxzwyj1o?at_medium=RSS&at_campaign=rss",
+      "date": "6 Oct"
+    },
+    {
+      "who": "CNBC World",
+      "what": "Russia's Defence Ministry confirmed striking Kyiv's Northern Bridge, calling it a military-logistics target; two people ",
+      "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html",
+      "date": "4 Oct"
+    },
+    {
+      "who": "ABC News",
+      "what": "Ukraine's Defence Ministry claims strikes have disabled 51% of Russia's oil refining capacity; the figure is unverified.",
+      "url": "https://abcnews.com/International/wireStory/ukraine-claims-attacks-half-russias-oil-refining-capacity-136996326",
+      "date": "4 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Russian officials say Ukraine launched a roughly 650-drone attack on the Moscow region overnight, killing two; no Ukrain",
+      "url": "https://www.aljazeera.com/news/2026/10/6/ukraine-launches-major-drone-attack-on-russias-moscow-region-killing-two?traffic_source=rss",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Estonia's Foreign Ministry says Russia is trying to intimidate foreign diplomats in Kyiv to undermine support for Ukrain",
+      "url": "https://www.ukrinform.net/rubric-polytics/4170993-estonian-foreign-ministry-says-estonian-embassy-remains-in-kyiv.html",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Guardian World",
+      "what": "A Guardian investigation found sanctioned tankers carried South Korean fuel to Russia in July-August; an analyst says th",
+      "url": "https://www.theguardian.com/world/2026/oct/06/oil-tankers-south-korea-russia-ukraine-war",
+      "date": "6 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "India's external affairs minister says Delhi is becoming more actively involved in efforts to end the war, including on ",
+      "url": "https://www.scmp.com/news/asia/south-asia/article/3369747/india-seeks-be-little-bit-more-involved-ending-ukraine-war-minister?utm_source=rss_feed",
+      "date": "4 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Russian drone attack injures a 53-year-old man in Pryozerne, Kherson region; separate shelling injures a woman in Biloze",
+      "url": "https://www.ukrinform.net/rubric-ato/4171058-russian-drone-attack-in-kherson-region-leaves-one-injured.html",
+      "date": "4 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Russian drone attack sinks a Turkish-owned grain ship in Romania's Black Sea waters; two killed, 11 rescued.",
+      "url": "https://www.aljazeera.com/news/2026/10/5/ukraine-says-russian-drone-attack-sinks-ship-in-romanian-waters?traffic_source=rss",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Tagesschau",
+      "what": "German minister Karin Prien arrives in Kyiv, a day after Merz's visit, to highlight support for children and civil socie",
+      "url": "https://www.tagesschau.de/ausland/europa/prien-besuch-ukraine-100.html",
+      "date": "5 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Ukraine strikes Russia's Moscow region overnight with roughly 650 drones; Russian officials say two are killed and a war",
+      "url": "https://www.scmp.com/news/world/russia-central-asia/article/3369888/ukraine-attacks-moscow-region-650-drones-both-sides-step-strikes?utm_source=rss_feed",
+      "date": "6 Oct"
+    }
+  ],
+  "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds."
+}

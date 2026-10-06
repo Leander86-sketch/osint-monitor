@@ -1,0 +1,337 @@
+{
+  "slug": "taiwan-strait",
+  "updatedAt": "2026-10-06T17:25+02:00",
+  "anchors": [
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    },
+    {
+      "label": "BBC",
+      "match": "^BBC"
+    },
+    {
+      "label": "AFP",
+      "match": "AFP|France 24"
+    }
+  ],
+  "stand": "The FBI arrested Wanying Zhang in Los Angeles, accusing her of spying for China on President Lai Ching-te's son's family; she faces court Monday, and China has not responded. Taiwan's foreign minister is visiting Arizona's chip corridor, skipping Washington after the Xi-Trump summit. Taiwanese media report an unconfirmed Pentagon plan to post two officials inside Taiwan's defence ministry. The US and Japan are expanding missile and drone deployments near Taiwan, including at Yonaguni, as a survey finds Chinese favour peaceful reunification but would back force against formal independence.",
+  "figures": [
+    {
+      "label": "Taiwan's defence-spending target",
+      "value": "from 3% to 5% of GDP",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Guardian World",
+        "url": "https://www.theguardian.com/world/2026/oct/05/california-woman-arrested-and-accused-of-spying-on-taiwan-presidents-son-for-china",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "NMESIS strike range",
+      "value": "around 115 miles",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Defense News",
+        "url": "https://www.defensenews.com/global/asia-pacific/2026/10/05/us-marine-corps-anti-ship-weaponry-to-see-exercise-action-on-remote-japan-island-near-taiwan/",
+        "date": "5 Oct"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "status": "confirmed",
+      "text": "FBI arrested Wanying Zhang, a California woman, for spying on Taiwan President Lai Ching-te's son's family for China.",
+      "by": "Says: FBI / US Justice Department. Denies: no response yet from China.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/fbi-arrests-chinese-foreign-agent-for-spying-on-taiwan-presidents-son?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Zhang travelled to Seattle at Chinese officials' direction and sent them photos, video and license-plate data on Lai's son's family.",
+      "by": "Says: US Justice Department. Denies: not addressed by China.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/fbi-arrests-chinese-foreign-agent-for-spying-on-taiwan-presidents-son?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Zhang's surveillance target was Lai Ting-yu, identified via a news report, not named directly by the FBI.",
+      "by": "Says: media report shared by FBI. Denies: FBI itself did not confirm the name.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/fbi-arrests-chinese-foreign-agent-for-spying-on-taiwan-presidents-son?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "FBI Director Kash Patel says China sent an operative to surveil the Lai family on US soil.",
+      "by": "Says: FBI Director Kash Patel. Denies: no Chinese comment.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/us/diplomacy/article/3369844/us-accuses-mainland-china-targeting-taiwan-leaders-family-surveillance-case?utm_source=rss_feed",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Taiwan's presidential office calls the surveillance case transnational repression.",
+      "by": "Says: Taiwan presidential office spokesperson Karen Kuo. Denies: China has not commented.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/california-woman-arrested-and-accused-of-spying-on-taiwan-presidents-son-for-china",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "China has made no official response to the spying allegation.",
+      "by": "Says: n/a. Denies: Chinese embassy and foreign ministry gave no comment.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/world/california-woman-spying-china-taiwan-leader-6432126",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Pentagon reportedly plans to station two defence officials inside Taiwan's defence ministry headquarters through 2028.",
+      "by": "Says: Taiwanese media reports. Denies: not confirmed by Pentagon or Taiwan's defence ministry.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/military/article/3369795/us-defence-experts-work-inside-taiwan-military-hq-under-reported-pact?utm_source=rss_feed",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Taiwan's foreign minister is visiting Arizona's semiconductor corridor while avoiding Washington, days after the Xi-Trump summit.",
+      "by": "Says: two sources familiar with the matter. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3369770/days-after-xi-trump-summit-top-taiwan-diplomat-opens-de-facto-consulate-us?utm_source=rss_feed",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Carter Centre survey finds mainland Chinese favour peaceful reunification but would back a military response to a formal independence declaration.",
+      "by": "Says: Carter Centre/Emory University China Pulse survey researcher Nick Zeller. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3369842/mainland-chinese-favour-diplomacy-achieve-taiwan-reunification-caveats-survey?utm_source=rss_feed",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Beijing policy institutes are drafting proposals on how a reunified Taiwan would be governed, varying by how reunification occurs.",
+      "by": "Says: mainland Chinese scholars cited by SCMP. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/politics/article/3369782/beijings-policy-advisers-map-out-how-post-reunification-taiwan-could-be-governed?utm_source=rss_feed",
+          "date": "6 Oct"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "timeline": [
+    {
+      "date": "23-25 Sep",
+      "kind": "official",
+      "text": "Xi-Trump summit; China presses US to harden Taiwan line.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3369770/days-after-xi-trump-summit-top-taiwan-diplomat-opens-de-facto-consulate-us?utm_source=rss_feed"
+        }
+      ]
+    },
+    {
+      "date": "1 Oct",
+      "kind": "official",
+      "text": "Okinawa Defense Bureau relays Yonaguni NMESIS/MADIS deployment plans.",
+      "sources": [
+        {
+          "name": "Defense News",
+          "url": "https://www.defensenews.com/global/asia-pacific/2026/10/05/us-marine-corps-anti-ship-weaponry-to-see-exercise-action-on-remote-japan-island-near-taiwan/"
+        }
+      ]
+    },
+    {
+      "date": "2 Oct",
+      "kind": "official",
+      "text": "Yonaguni's local government discloses the NMESIS/MADIS deployment.",
+      "sources": [
+        {
+          "name": "Defense News",
+          "url": "https://www.defensenews.com/global/asia-pacific/2026/10/05/us-marine-corps-anti-ship-weaponry-to-see-exercise-action-on-remote-japan-island-near-taiwan/"
+        }
+      ]
+    },
+    {
+      "date": "3 Oct",
+      "kind": "official",
+      "text": "Taiwan's foreign minister Lin Chia-lung arrives in Phoenix for a three-day visit.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3369770/days-after-xi-trump-summit-top-taiwan-diplomat-opens-de-facto-consulate-us?utm_source=rss_feed"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "official",
+      "text": "FBI arrests Wanying Zhang at LAX before a flight to China.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/world/california-woman-spying-china-taiwan-leader-6432126"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "reaction",
+      "text": "Taiwan's presidential office calls the case a classic case of transnational repression.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/california-woman-arrested-and-accused-of-spying-on-taiwan-presidents-son-for-china"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "media",
+      "text": "Taiwanese media report the unconfirmed Pentagon plan to post officials in Taiwan's defence ministry.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/military/article/3369795/us-defence-experts-work-inside-taiwan-military-hq-under-reported-pact?utm_source=rss_feed"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Zhang due in Los Angeles federal court.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/fbi-arrests-chinese-foreign-agent-for-spying-on-taiwan-presidents-son?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "Jun",
+      "kind": "official",
+      "text": "NMESIS and MADIS systems first arrive with Okinawa-based Marine unit.",
+      "sources": [
+        {
+          "name": "Defense News",
+          "url": "https://www.defensenews.com/global/asia-pacific/2026/10/05/us-marine-corps-anti-ship-weaponry-to-see-exercise-action-on-remote-japan-island-near-taiwan/"
+        }
+      ]
+    },
+    {
+      "date": "2025",
+      "kind": "official",
+      "text": "Zhang travels to Seattle at Chinese officials' direction and surveils Lai's son's family.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/fbi-arrests-chinese-foreign-agent-for-spying-on-taiwan-presidents-son?traffic_source=rss"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "who": "Al Jazeera",
+      "what": "FBI arrested Wanying Zhang, a California woman, for spying on Taiwan President Lai Ching-te's son's family for China.",
+      "url": "https://www.aljazeera.com/news/2026/10/5/fbi-arrests-chinese-foreign-agent-for-spying-on-taiwan-presidents-son?traffic_source=rss",
+      "date": "5 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "FBI Director Kash Patel says China sent an operative to surveil the Lai family on US soil.",
+      "url": "https://www.scmp.com/news/us/diplomacy/article/3369844/us-accuses-mainland-china-targeting-taiwan-leaders-family-surveillance-case?utm_source=rss_feed",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Guardian World",
+      "what": "Taiwan's presidential office calls the surveillance case transnational repression.",
+      "url": "https://www.theguardian.com/world/2026/oct/05/california-woman-arrested-and-accused-of-spying-on-taiwan-presidents-son-for-china",
+      "date": "5 Oct"
+    },
+    {
+      "who": "CNA Singapore",
+      "what": "China has made no official response to the spying allegation.",
+      "url": "https://www.channelnewsasia.com/world/california-woman-spying-china-taiwan-leader-6432126",
+      "date": "5 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Pentagon reportedly plans to station two defence officials inside Taiwan's defence ministry headquarters through 2028.",
+      "url": "https://www.scmp.com/news/china/military/article/3369795/us-defence-experts-work-inside-taiwan-military-hq-under-reported-pact?utm_source=rss_feed",
+      "date": "5 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Taiwan's foreign minister is visiting Arizona's semiconductor corridor while avoiding Washington, days after the Xi-Trum",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3369770/days-after-xi-trump-summit-top-taiwan-diplomat-opens-de-facto-consulate-us?utm_source=rss_feed",
+      "date": "5 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Carter Centre survey finds mainland Chinese favour peaceful reunification but would back a military response to a formal",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3369842/mainland-chinese-favour-diplomacy-achieve-taiwan-reunification-caveats-survey?utm_source=rss_feed",
+      "date": "5 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Beijing policy institutes are drafting proposals on how a reunified Taiwan would be governed, varying by how reunificati",
+      "url": "https://www.scmp.com/news/china/politics/article/3369782/beijings-policy-advisers-map-out-how-post-reunification-taiwan-could-be-governed?utm_source=rss_feed",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Defense News",
+      "what": "Okinawa Defense Bureau relays Yonaguni NMESIS/MADIS deployment plans.",
+      "url": "https://www.defensenews.com/global/asia-pacific/2026/10/05/us-marine-corps-anti-ship-weaponry-to-see-exercise-action-on-remote-japan-island-near-taiwan/",
+      "date": "1 Oct"
+    }
+  ],
+  "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds."
+}

@@ -1,0 +1,408 @@
+{
+  "slug": "nato-eastern-flank",
+  "updatedAt": "2026-10-06T16:53+02:00",
+  "anchors": [
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    },
+    {
+      "label": "BBC",
+      "match": "^BBC"
+    },
+    {
+      "label": "AFP",
+      "match": "AFP|France 24"
+    }
+  ],
+  "stand": "NATO's Baltic flank is tightening. Estonia is shifting to 'active defense', moving its main brigade toward the Russian border and buying HIMARS and Chunmoo rockets that can strike 300km into Russia. Lithuania's parliament has voted to scrap its ban on nuclear weapons and foreign bases, while pushing Washington for a permanent US base; Trump says he will 'look at it'. Moscow warns of retaliation and repeats Putin's threat to use 'all weapons' over Kaliningrad, which it says NATO is isolating; NATO denies this. Poland and Lithuania are planning for up to a million war refugees.",
+  "figures": [],
+  "claims": [
+    {
+      "status": "confirmed",
+      "text": "Putin warns Russia could deploy all its weapons in response to a direct attack on Russia, including Kaliningrad.",
+      "by": "Says: Vladimir Putin, at the Valdai Discussion Club. Denies: n/a.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/kaliningrad-why-russias-baltic-exclave-is-a-new-flashpoint/article71547624.ece",
+          "date": "1 Oct"
+        },
+        {
+          "name": "El Pais English",
+          "url": "https://english.elpais.com/international/2026-10-05/kaliningrad-the-russian-militarized-exclave-surrounded-by-nato-that-triggered-putins-nuclear-threat.html",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Russia accuses NATO of seeking to isolate or block Kaliningrad; NATO rejects the accusation.",
+      "by": "Says: Kremlin, in a formal diplomatic note to NATO. Denies: NATO, calling its regional activities defensive.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/kaliningrad-why-russias-baltic-exclave-is-a-new-flashpoint/article71547624.ece",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Lithuania's parliament voted to remove the constitutional ban on nuclear weapons and foreign military bases; a second vote is required in January.",
+      "by": "Says: Seimas Speaker Juozas Olekas. Denies: n/a.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198017",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The Kremlin says Russia will be forced to take retaliatory measures if nuclear weapons or a NATO base are deployed in Lithuania.",
+      "by": "Says: Kremlin spokesman Dmitry Peskov. Denies: n/a.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/politics/2198051",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Estonia has adopted an 'active defense' strategy, relocating its main brigade toward the Russian border and buying long-range strike weapons.",
+      "by": "Says: Estonian defence officials and military intelligence, cited by the Financial Times. Denies: n/a.",
+      "sources": [
+        {
+          "name": "ERR News (citing FT)",
+          "url": "https://news.err.ee/1610156476/ft-estonia-moving-troops-closer-to-russia-in-active-defense-push",
+          "date": "5 Oct"
+        },
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/news/2026/10/05/estonia-moves-troops-closer-to-russian-border-under-active-defense-program",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "The Kremlin downplays Estonia's troop shift, saying Russian intelligence already monitors border movements.",
+      "by": "Says: Kremlin spokesman Dmitry Peskov. Denies: n/a (brushes aside the FT report rather than denying it factually).",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/05/kremlin-downplays-estonias-troop-shift-to-border-plays-up-russias-intelligence-capabilities-a93882",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Putin dismisses Estonian government statements about readiness to fight Russia as absurd.",
+      "by": "Says: Vladimir Putin. Denies: n/a — mocks rather than factually denies.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2197585",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Trump says the US will consider a permanent military base in Lithuania.",
+      "by": "Says: US President Donald Trump, responding to Lithuania's invitation. Denies: n/a.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3074082/trump-says-he-will-consider-permanent-us-military-base-in-lithuania",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Lithuania says it is ready to cover the costs of a permanent US base.",
+      "by": "Says: Lithuanian PM Mindaugas Sinkevicius. Denies: n/a.",
+      "sources": [
+        {
+          "name": "Defense News",
+          "url": "https://www.defensenews.com/global/europe/2026/10/06/lithuania-says-it-would-pay-the-cost-if-us-establishes-military-base/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Poland and Lithuania are jointly preparing cross-border evacuation plans for up to a million Baltic residents in case of war.",
+      "by": "Says: Lithuanian interior minister Martynas Katelynas and Polish counterpart Marcin Kierwiński. Denies: n/a.",
+      "sources": [
+        {
+          "name": "Notes from Poland",
+          "url": "https://notesfrompoland.com/2026/10/06/poland-and-lithuania-prepare-for-one-million-baltic-refugees-entering-poland-in-event-of-war/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Germany's foreign intelligence chief warns Germany faces a real risk of low-intensity Russian military activity in the Baltic states.",
+      "by": "Says: BND chief Martin Jaeger. Denies: n/a.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/05/kremlin-downplays-estonias-troop-shift-to-border-plays-up-russias-intelligence-capabilities-a93882",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "UK Royal Navy chief says the JEF offers partner states a 'nuclear umbrella'; an Estonian security expert says no separate guarantee is actually being offered.",
+      "by": "Says: First Sea Lord Gwyn Jenkins. Denies: security expert Meelis Oidsalu.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610156440/uk-nuclear-umbrella-comments-prompt-estonia-defense-debate",
+          "date": "5 Oct"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "timeline": [
+    {
+      "date": "23 Sep",
+      "kind": "media",
+      "text": "A Russian Mi-8 helicopter from Kaliningrad enters Polish airspace for about 42 seconds.",
+      "sources": [
+        {
+          "name": "El Pais English",
+          "url": "https://english.elpais.com/international/2026-10-05/kaliningrad-the-russian-militarized-exclave-surrounded-by-nato-that-triggered-putins-nuclear-threat.html"
+        }
+      ]
+    },
+    {
+      "date": "30 Sep",
+      "kind": "official",
+      "text": "NATO Secretary General Mark Rutte says there is no imminent threat to Alliance territory despite Russia's threats.",
+      "sources": [
+        {
+          "name": "El Pais English",
+          "url": "https://english.elpais.com/international/2026-10-05/kaliningrad-the-russian-militarized-exclave-surrounded-by-nato-that-triggered-putins-nuclear-threat.html"
+        }
+      ]
+    },
+    {
+      "date": "1 Oct",
+      "kind": "official",
+      "text": "Putin warns at the Valdai Discussion Club that an attack on Russia would put use of 'all weapons' on the agenda.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/kaliningrad-why-russias-baltic-exclave-is-a-new-flashpoint/article71547624.ece"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "media",
+      "text": "UK First Sea Lord's Baltic Sea comments, reported as touching on a 'nuclear umbrella' for JEF states, prompt debate in Estonia.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610156440/uk-nuclear-umbrella-comments-prompt-estonia-defense-debate"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "media",
+      "text": "Financial Times reports Estonia is relocating its main brigade toward the Russian border under an 'active defense' strategy.",
+      "sources": [
+        {
+          "name": "ERR News (citing FT)",
+          "url": "https://news.err.ee/1610156476/ft-estonia-moving-troops-closer-to-russia-in-active-defense-push"
+        },
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2197585"
+        },
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/news/2026/10/05/estonia-moves-troops-closer-to-russian-border-under-active-defense-program"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "denial",
+      "text": "Kremlin's Peskov brushes aside the FT report on Estonia's troop shift, citing Russian intelligence capability.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/05/kremlin-downplays-estonias-troop-shift-to-border-plays-up-russias-intelligence-capabilities-a93882"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Lithuania says infrastructure for the planned German brigade deployment remains on schedule.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3073329/lithuania-says-infrastructure-for-german-brigade-remains-on-schedule"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Lithuanian and Polish interior ministers meet to discuss a joint evacuation plan for up to a million Baltic refugees.",
+      "sources": [
+        {
+          "name": "Notes from Poland",
+          "url": "https://notesfrompoland.com/2026/10/06/poland-and-lithuania-prepare-for-one-million-baltic-refugees-entering-poland-in-event-of-war/"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Trump says he will consider a permanent US military base in Lithuania, responding to Lithuania's invitation.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3074082/trump-says-he-will-consider-permanent-us-military-base-in-lithuania"
+        },
+        {
+          "name": "Defense News",
+          "url": "https://www.defensenews.com/global/europe/2026/10/06/lithuania-says-it-would-pay-the-cost-if-us-establishes-military-base/"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Lithuania's Seimas votes 106-18 to lift the constitutional ban on nuclear weapons and foreign bases; a second vote is due 12 January.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198017"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "reaction",
+      "text": "Kremlin's Peskov says Russia will be forced to retaliate against nuclear weapons or a NATO base in Lithuania.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/politics/2198051"
+        }
+      ]
+    },
+    {
+      "date": "May",
+      "kind": "official",
+      "text": "Estonia incorporates 'active defense' concept into national defence policy.",
+      "sources": [
+        {
+          "name": "ERR News (citing FT)",
+          "url": "https://news.err.ee/1610156476/ft-estonia-moving-troops-closer-to-russia-in-active-defense-push"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "who": "The Hindu",
+      "what": "Putin warns Russia could deploy all its weapons in response to a direct attack on Russia, including Kaliningrad.",
+      "url": "https://www.thehindu.com/news/international/kaliningrad-why-russias-baltic-exclave-is-a-new-flashpoint/article71547624.ece",
+      "date": "1 Oct"
+    },
+    {
+      "who": "El Pais English",
+      "what": "Putin warns Russia could deploy all its weapons in response to a direct attack on Russia, including Kaliningrad.",
+      "url": "https://english.elpais.com/international/2026-10-05/kaliningrad-the-russian-militarized-exclave-surrounded-by-nato-that-triggered-putins-nuclear-threat.html",
+      "date": "5 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Lithuania's parliament voted to remove the constitutional ban on nuclear weapons and foreign military bases; a second vo",
+      "url": "https://tass.com/world/2198017",
+      "date": "6 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "The Kremlin says Russia will be forced to take retaliatory measures if nuclear weapons or a NATO base are deployed in Li",
+      "url": "https://tass.com/politics/2198051",
+      "date": "6 Oct"
+    },
+    {
+      "who": "ERR News (citing FT)",
+      "what": "Estonia has adopted an 'active defense' strategy, relocating its main brigade toward the Russian border and buying long-",
+      "url": "https://news.err.ee/1610156476/ft-estonia-moving-troops-closer-to-russia-in-active-defense-push",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Meduza",
+      "what": "Estonia has adopted an 'active defense' strategy, relocating its main brigade toward the Russian border and buying long-",
+      "url": "https://meduza.io/en/news/2026/10/05/estonia-moves-troops-closer-to-russian-border-under-active-defense-program",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Moscow Times",
+      "what": "The Kremlin downplays Estonia's troop shift, saying Russian intelligence already monitors border movements.",
+      "url": "https://www.themoscowtimes.com/2026/10/05/kremlin-downplays-estonias-troop-shift-to-border-plays-up-russias-intelligence-capabilities-a93882",
+      "date": "5 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Putin dismisses Estonian government statements about readiness to fight Russia as absurd.",
+      "url": "https://tass.com/world/2197585",
+      "date": "5 Oct"
+    },
+    {
+      "who": "LRT",
+      "what": "Trump says the US will consider a permanent military base in Lithuania.",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3074082/trump-says-he-will-consider-permanent-us-military-base-in-lithuania",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Defense News",
+      "what": "Lithuania says it is ready to cover the costs of a permanent US base.",
+      "url": "https://www.defensenews.com/global/europe/2026/10/06/lithuania-says-it-would-pay-the-cost-if-us-establishes-military-base/",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Notes from Poland",
+      "what": "Poland and Lithuania are jointly preparing cross-border evacuation plans for up to a million Baltic residents in case of",
+      "url": "https://notesfrompoland.com/2026/10/06/poland-and-lithuania-prepare-for-one-million-baltic-refugees-entering-poland-in-event-of-war/",
+      "date": "6 Oct"
+    },
+    {
+      "who": "ERR News",
+      "what": "UK Royal Navy chief says the JEF offers partner states a 'nuclear umbrella'; an Estonian security expert says no separat",
+      "url": "https://news.err.ee/1610156440/uk-nuclear-umbrella-comments-prompt-estonia-defense-debate",
+      "date": "5 Oct"
+    },
+    {
+      "who": "LRT",
+      "what": "Lithuania says infrastructure for the planned German brigade deployment remains on schedule.",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3073329/lithuania-says-infrastructure-for-german-brigade-remains-on-schedule",
+      "date": "5 Oct"
+    }
+  ],
+  "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds."
+}

@@ -103,6 +103,12 @@ updates to a hand-compiled dossier. Rules, strictly:
  "timeline": [{"date":"6 Oct","kind":"official|media|denial|factcheck|reaction","text":"...","sources":[{"name":"...","url":"..."}],"quote":"..."}],
  "questions": ["open questions a human editor should check, if any"]}"""
 
+INIT_NOTE = """\nTHE DOSSIER IS NEW AND EMPTY. Build the initial version from the articles: a stand paragraph (max 90 words, the
+situation as it is now, actors named, no history lesson), the claim ledger (6-12 claims that matter, each with status
+and who says / who denies), the timeline (the dated events in the articles, oldest first), and figures ONLY if an
+article states a number that matters (casualties, ships, troops, sanctions, cases). If no meaningful number is stated,
+return an empty figures list — do not invent one. Use action "new" everywhere."""
+
 def build_prompt(d, arts):
     compact = json.loads(json.dumps({k: d.get(k) for k in ('slug', 'updatedAt', 'stand', 'figures', 'claims', 'timeline')}))
     for c in compact.get('claims', []): c.pop('sources', None)
@@ -111,7 +117,7 @@ def build_prompt(d, arts):
     user = 'CURRENT DOSSIER (JSON):\n' + json.dumps(compact, ensure_ascii=False) + '\n\nARTICLES:\n'
     for k, a in enumerate(arts, 1):
         user += f'\n--- ARTICLE {k} · {a["source"]} · {a["date"]} · {a["url"]}\nTITLE: {a["title"]}\n{a["text"]}\n'
-    user += '\nPropose the update as the JSON object described. Output JSON only, no prose, no code fence.'
+    user += (INIT_NOTE if not d.get('claims') else '') + '\nPropose the update as the JSON object described. Output JSON only, no prose, no code fence.'
     return user
 
 def parse_json(txt):
@@ -187,6 +193,7 @@ def apply(slug, pfile):
     n = 0
     for f in prop.get('figures', []) or []:
         if not f.get('verified'): continue
+        if len(str(f.get('value', ''))) > 24: continue  # een cijfer is kort; anders hoort het in een claim
         row = {'label': f['label'], 'value': f['value'], 'color': '#f59e0b', 'src': f['src']}
         ex = next((x for x in d['figures'] if x['label'].lower() == f['label'].lower()), None)
         if ex: ex.update(row)
@@ -210,7 +217,13 @@ def apply(slug, pfile):
         if not t.get('verified'): continue
         d['timeline'].append({'date': t['date'], 'kind': t.get('kind', 'media'), 'text': t['text'], 'sources': t.get('sources', [])}); n += 1
     d['timeline'] = sort_timeline(d['timeline'])
-    if prop.get('stand') and prop.get('apply_stand'): d['stand'] = prop['stand']; n += 1
+    if prop.get('stand') and (prop.get('apply_stand') or not d.get('stand')): d['stand'] = prop['stand']; n += 1
+    # bronnentabel: elke unieke bron-url uit de overgenomen regels, als die er nog niet in staat
+    seen = {x['url'] for x in d.get('sources', [])}
+    for row in d['claims'] + d['timeline']:
+        for x in row.get('sources', []):
+            if x.get('url') and x['url'] not in seen:
+                d.setdefault('sources', []).append({'who': x.get('name', ''), 'what': row['text'][:120], 'url': x['url'], 'date': x.get('date', row.get('date', ''))}); seen.add(x['url'])
     d['updatedAt'] = dt.datetime.now().astimezone().isoformat(timespec='minutes')
     json.dump(d, open(f'{ROOT}/data/dossiers/{slug}.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
     print(f'applied {n} verified lines to {slug}; backup {bak}')
@@ -220,7 +233,16 @@ def main():
     slug, cmd, args = sys.argv[1], sys.argv[2], sys.argv[3:]
     os.makedirs(f'{ROOT}/data/dossiers/proposals', exist_ok=True)
     stamp = dt.datetime.now().strftime('%Y%m%d-%H%M')
-    if cmd == 'bundle':
+    if cmd == 'init':
+        # leeg skelet: ankers = de wires; de automatische laag staat er al, de redactionele laag wordt gevuld door propose + apply
+        out = f'{ROOT}/data/dossiers/{slug}.json'
+        if os.path.exists(out): sys.exit(f'{out} exists')
+        json.dump({'slug': slug, 'updatedAt': dt.datetime.now().astimezone().isoformat(timespec='minutes'), 'anchors': [{'label': 'Reuters', 'match': '^Reuters'}, {'label': 'AP', 'match': '^AP News'}, {'label': 'BBC', 'match': '^BBC'}, {'label': 'AFP', 'match': 'AFP|France 24'}],
+                   'stand': '', 'figures': [], 'claims': [], 'places': [], 'timeline': [], 'sources': [],
+                   'disclaimer': 'The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.'},
+                  open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
+        print('created', out)
+    elif cmd == 'bundle':
         d = load_dossier(slug)
         since = float(args[args.index('--since') + 1]) if '--since' in args else 24
         max_n = int(args[args.index('--max') + 1]) if '--max' in args else 14

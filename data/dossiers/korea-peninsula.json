@@ -1,0 +1,302 @@
+{
+  "slug": "korea-peninsula",
+  "updatedAt": "2026-10-06T17:19+02:00",
+  "anchors": [
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    },
+    {
+      "label": "BBC",
+      "match": "^BBC"
+    },
+    {
+      "label": "AFP",
+      "match": "AFP|France 24"
+    }
+  ],
+  "stand": "South Korea and the US-led UN Command have concluded North Korea planted the anti-personnel mines that wounded three soldiers in the DMZ on 21 September. Seoul (Defence Minister Kang Shin-chul, spokeswoman Chung Bin-na) demands an apology, is weighing further measures, and has begun clearing mines south of the Military Demarcation Line. Pyongyang, through Kim Yo Jong, denies its soldiers crossed the line and rejected a proposal to resurvey the border. North Korea's Foreign Ministry has warned of retaliatory force against any Southern incursion.",
+  "figures": [
+    {
+      "label": "Soldiers injured in 21 Sep blast",
+      "value": "3 injured, 2 seriously",
+      "color": "#f59e0b",
+      "src": {
+        "name": "The Diplomat",
+        "url": "https://thediplomat.com/2026/10/mine-blast-tests-south-korean-engagement-policy-as-pyongyang-rejects-any-contact/",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "North Korean workers deployed to fortify border this year",
+      "value": "up to 7,000",
+      "color": "#f59e0b",
+      "src": {
+        "name": "SCMP",
+        "url": "https://www.scmp.com/news/asia/east-asia/article/3369810/seoul-probe-reveals-border-mine-blast-caused-north-korea?utm_source=rss_feed",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Border-crossing incidents this year (SK military count)",
+      "value": "about 50",
+      "color": "#f59e0b",
+      "src": {
+        "name": "SCMP",
+        "url": "https://www.scmp.com/news/asia/east-asia/article/3369810/seoul-probe-reveals-border-mine-blast-caused-north-korea?utm_source=rss_feed",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Original MDL boundary markers (1953) still intact",
+      "value": "about 200 of 1,292",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Border coordinates disputed between Seoul and UNC",
+      "value": "roughly 60%",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss",
+        "date": "6 Oct"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "status": "confirmed",
+      "text": "North Korea planted the mines that caused the 21 Sep DMZ blast.",
+      "by": "Says: South Korea's military and the US-led UN Command, after joint investigation. Denies: North Korea.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/south-korea-pyongyang-dmz-mines-6432796",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "At least four mines, including one unexploded, were found at the blast site.",
+      "by": "Says: South Korean military and UN Command investigation.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/mine-blast-tests-south-korean-engagement-policy-as-pyongyang-rejects-any-contact/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "North Korean soldiers crossed the Military Demarcation Line.",
+      "by": "Says: South Korean military. Denies: Kim Yo Jong, North Korea.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/mine-blast-tests-south-korean-engagement-policy-as-pyongyang-rejects-any-contact/",
+          "date": "30 Sep"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The mine placement violated the 1953 Armistice Agreement.",
+      "by": "Says: US-led UN Command (international body).",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "South Korea demands a formal apology from North Korea; Pyongyang has refused.",
+      "by": "Says: South Korea's military. Refuses: North Korea.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/south-korea-pyongyang-dmz-mines-6432796",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "North Korea rejected Seoul's proposal to jointly resurvey the MDL, saying it will fix its border by force.",
+      "by": "Says: Unification Minister Chung Dong-young proposed the resurvey. Denies/rejects: Kim Yo Jong.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/mine-blast-tests-south-korean-engagement-policy-as-pyongyang-rejects-any-contact/",
+          "date": "2 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "North Korea's Foreign Ministry states it will use force against any Southern military incursion.",
+      "by": "Says: North Korea's Foreign Ministry (KCNA statement).",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198141",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "South Korea has begun clearing mines on its side of the MDL.",
+      "by": "Says: South Korea's military.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "timeline": [
+    {
+      "date": "21 Sep",
+      "kind": "media",
+      "text": "Two mines exploded in the DMZ, injuring three South Korean soldiers, two seriously.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/mine-blast-tests-south-korean-engagement-policy-as-pyongyang-rejects-any-contact/"
+        }
+      ]
+    },
+    {
+      "date": "28 Sep",
+      "kind": "official",
+      "text": "South Korea's Joint Chiefs of Staff gave a preliminary assessment blaming North Korean mines.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/mine-blast-tests-south-korean-engagement-policy-as-pyongyang-rejects-any-contact/"
+        }
+      ]
+    },
+    {
+      "date": "30 Sep",
+      "kind": "denial",
+      "text": "Kim Yo Jong denied North Korean soldiers crossed the border, calling the incident a farce.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/mine-blast-tests-south-korean-engagement-policy-as-pyongyang-rejects-any-contact/"
+        }
+      ]
+    },
+    {
+      "date": "2 Oct",
+      "kind": "official",
+      "text": "Unification Minister Chung Dong-young proposed a joint resurvey of the MDL.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "2 Oct",
+      "kind": "denial",
+      "text": "Kim Yo Jong rejected the resurvey proposal, saying the border will be set by force.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/mine-blast-tests-south-korean-engagement-policy-as-pyongyang-rejects-any-contact/"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "South Korea's military announced final investigation results naming North Korea responsible and demanded an apology.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/south-korea-pyongyang-dmz-mines-6432796"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "South Korea's military carried out a mine-clearing operation at the blast site.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198141"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "reaction",
+      "text": "North Korea's Foreign Ministry warned it would use force against any Southern military incursion.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198141"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Seoul said it was not ruling out measures to force an apology from Pyongyang.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "who": "CNA Singapore",
+      "what": "North Korea planted the mines that caused the 21 Sep DMZ blast.",
+      "url": "https://www.channelnewsasia.com/east-asia/south-korea-pyongyang-dmz-mines-6432796",
+      "date": "5 Oct"
+    },
+    {
+      "who": "The Diplomat",
+      "what": "At least four mines, including one unexploded, were found at the blast site.",
+      "url": "https://thediplomat.com/2026/10/mine-blast-tests-south-korean-engagement-policy-as-pyongyang-rejects-any-contact/",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The mine placement violated the 1953 Armistice Agreement.",
+      "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss",
+      "date": "6 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "North Korea's Foreign Ministry states it will use force against any Southern military incursion.",
+      "url": "https://tass.com/world/2198141",
+      "date": "6 Oct"
+    }
+  ],
+  "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds."
+}

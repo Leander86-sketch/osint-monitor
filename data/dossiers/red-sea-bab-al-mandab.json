@@ -1,0 +1,454 @@
+{
+  "slug": "red-sea-bab-al-mandab",
+  "updatedAt": "2026-10-06T17:02+02:00",
+  "anchors": [
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    },
+    {
+      "label": "BBC",
+      "match": "^BBC"
+    },
+    {
+      "label": "AFP",
+      "match": "AFP|France 24"
+    }
+  ],
+  "stand": "Yemen's Saudi-backed government has launched Operation Dawn of Yemen, an offensive to retake all Houthi-held territory, including Sanaa. Government forces claim Mocha and Dhubab near Bab al-Mandeb; Houthis deny Mocha fell. Houthis have cut the Taiz-Aden road, encircling Taiz, and fired missiles and drones at Saudi airports and Aramco sites. A Saudi-led coalition is running an air campaign with 100 jets. Turkiye and Pakistan have activated a mutual defence pact to back Saudi Arabia. WHO reports 959 dead and 4,200 wounded.",
+  "figures": [
+    {
+      "label": "Coalition fighter jets deployed",
+      "value": "100 jets",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Guardian World",
+        "url": "https://www.theguardian.com/world/2026/oct/05/yemen-air-campaign-houthis-saudi-led-coalition",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Houthi Red Sea coastline seized (September offensive)",
+      "value": "about 150km (93 miles)",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/5/yemen-war-escalates-whats-the-latest-on-the-battlefield?traffic_source=rss",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Military/logistical vehicles destroyed or disabled (government claim)",
+      "value": "364 vehicles",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/5/yemen-war-escalates-whats-the-latest-on-the-battlefield?traffic_source=rss",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "People displaced since war resumed",
+      "value": "184,000+",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Children out of school before escalation",
+      "value": "3.2 million",
+      "color": "#f59e0b",
+      "src": {
+        "name": "BBC World",
+        "url": "https://www.bbc.co.uk/news/articles/c670pzpv9gk4o?at_medium=RSS&at_campaign=rss",
+        "date": "6 Oct"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "status": "confirmed",
+      "text": "Yemen's government, backed by Saudi Arabia, launched Operation Dawn of Yemen to retake all Houthi-held territory, including Sanaa.",
+      "by": "Says: Yemeni President Rashad al-Alimi, Presidential Leadership Council. Denies: —",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/04/yemen-launches-offensive-to-seize-all-areas-from-iran-backed-houthis.html",
+          "date": "4 Oct"
+        },
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-backed-yemen-government-military-drive-retake-houthi-territory",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Houthi forces cut the main supply road linking besieged Taiz to the government's interim capital, Aden, encircling the city.",
+      "by": "Says: Yemeni security and military sources, via AFP. Denies: —",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-backed-yemen-government-military-drive-retake-houthi-territory",
+          "date": "5 Oct"
+        },
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c670pzpv9gk4o?at_medium=RSS&at_campaign=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Government forces say they recaptured the Red Sea port city of Mocha from the Houthis.",
+      "by": "Says: Yemeni government/Saba news agency. Denies: Houthi deputy governor of Taiz, Fuad Sinan.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/yemen-forces-claim-to-seize-dhubab-sites-near-bab-al-mandeb-from-houthis?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Government forces say they retook the Dhubab district and its airport near Bab al-Mandeb.",
+      "by": "Says: Yemeni government forces. Denies: Houthis.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/yemen-war-escalates-whats-the-latest-on-the-battlefield?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Saudi-led coalition says it has secured \"air protection\" over Bab al-Mandeb and destroyed hundreds of Houthi targets.",
+      "by": "Says: coalition spokesperson Maj Gen Turki al-Maliki. Denies: —; Al Jazeera says it could not independently verify.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/yemen-air-campaign-houthis-saudi-led-coalition",
+          "date": "5 Oct"
+        },
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-forces-recapture-key-areas-strait-houthis-yemen",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Houthis say they struck Saudi Aramco oil sites in Riyadh and Khurais with missiles and drones, causing large fires.",
+      "by": "Says: Houthi military spokesperson Yahya Saree. Denies: no immediate confirmation from Saudi Arabia.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-backed-yemen-government-military-drive-retake-houthi-territory",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Three people were wounded in attacks on Jazan and Najran airports near the Yemen border.",
+      "by": "Says: Saudi General Authority of Civil Aviation. Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/yemen-forces-claim-to-seize-dhubab-sites-near-bab-al-mandeb-from-houthis?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The latest fighting in Yemen has killed at least 959 people and wounded more than 4,200.",
+      "by": "Says: World Health Organization. Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "More than 184,000 people have been displaced since the war resumed.",
+      "by": "Says: International Organization for Migration. Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Turkiye and Pakistan agreed to activate collective deterrence measures and rapidly deploy forces to Saudi Arabia under their mutual defence pact.",
+      "by": "Says: Saudi defence minister Khalid bin Salman. Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/yemen-forces-claim-to-seize-dhubab-sites-near-bab-al-mandeb-from-houthis?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Yemen's Defence Ministry says Mocha has fallen to government forces.",
+      "by": "Says: Yemen's Defence Ministry. Denies: Houthi military spokesman, who calls the reports \"fabricated heroics\".",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "More than 2.2 million Yemeni children under five are acutely malnourished, over half a million of them severely.",
+      "by": "Says: United Nations. Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/malnutrition-among-yemens-children?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "timeline": [
+    {
+      "date": "4 Oct",
+      "kind": "official",
+      "text": "President Rashad al-Alimi announces in a televised address the start of Operation Dawn of Yemen to retake all Houthi-held territory.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/04/yemen-launches-offensive-to-seize-all-areas-from-iran-backed-houthis.html"
+        },
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-backed-yemen-government-military-drive-retake-houthi-territory"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "media",
+      "text": "Houthi fighters cut the main road linking Taiz to Aden, taking the al-Safiya area and its police station, encircling Taiz.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-backed-yemen-government-military-drive-retake-houthi-territory"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "media",
+      "text": "Houthis fire missiles and drones at Aramco sites in Riyadh and Khurais, claiming large fires; Saudi Arabia does not immediately confirm.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-backed-yemen-government-military-drive-retake-houthi-territory"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "media",
+      "text": "Government forces say they retook Dhubab district, its airport and the port city of Mocha; Houthis deny Mocha fell.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/yemen-forces-claim-to-seize-dhubab-sites-near-bab-al-mandeb-from-houthis?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Saudi-led coalition launches an air campaign with 100 fighter jets, saying it has secured air protection over Bab al-Mandeb.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/yemen-air-campaign-houthis-saudi-led-coalition"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "media",
+      "text": "Government forces announce a strategic offensive on the Houthi-held capital, Sanaa.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/yemen-war-escalates-whats-the-latest-on-the-battlefield?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "media",
+      "text": "Houthi fighters capture the town of Turbah in southwestern Yemen, advancing toward Taiz.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/05/saudi-forces-recapture-key-areas-strait-houthis-yemen"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Saudi civil aviation authority says three people were wounded in attacks on Jazan and Najran airports near the Yemen border.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/yemen-forces-claim-to-seize-dhubab-sites-near-bab-al-mandeb-from-houthis?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Defence ministers of Turkiye, Pakistan and Saudi Arabia meet in Riyadh and agree to activate deterrence measures under their mutual defence pact.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/yemen-forces-claim-to-seize-dhubab-sites-near-bab-al-mandeb-from-houthis?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "denial",
+      "text": "Yemen's Defence Ministry says Mocha has fallen; a Houthi military spokesman denies any retreat, calling reports \"fabricated heroics\".",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "Government and allied Popular Resistance Forces say they took the al-Manzara, al-Ashari and Dhiban mountains in Haifan, south of Taiz.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "WHO says the fighting has killed at least 959 people and wounded 4,200+; IOM says over 184,000 have been displaced since the war resumed.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "Houthis claim fresh strikes on Riyadh's King Khalid airport, the Rabigh Aramco refinery, Abha airport and the Khamis Mushait base; Riyadh does not confirm.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "Sep",
+      "kind": "media",
+      "text": "Houthis sweep down Yemen's Red Sea coast, seizing about 150km of coastline and areas around Bab al-Mandeb.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/yemen-war-escalates-whats-the-latest-on-the-battlefield?traffic_source=rss"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "who": "CNBC World",
+      "what": "Yemen's government, backed by Saudi Arabia, launched Operation Dawn of Yemen to retake all Houthi-held territory, includ",
+      "url": "https://www.cnbc.com/2026/10/04/yemen-launches-offensive-to-seize-all-areas-from-iran-backed-houthis.html",
+      "date": "4 Oct"
+    },
+    {
+      "who": "Guardian World",
+      "what": "Yemen's government, backed by Saudi Arabia, launched Operation Dawn of Yemen to retake all Houthi-held territory, includ",
+      "url": "https://www.theguardian.com/world/2026/oct/05/saudi-backed-yemen-government-military-drive-retake-houthi-territory",
+      "date": "5 Oct"
+    },
+    {
+      "who": "BBC World",
+      "what": "Houthi forces cut the main supply road linking besieged Taiz to the government's interim capital, Aden, encircling the c",
+      "url": "https://www.bbc.co.uk/news/articles/c670pzpv9gk4o?at_medium=RSS&at_campaign=rss",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Government forces say they recaptured the Red Sea port city of Mocha from the Houthis.",
+      "url": "https://www.aljazeera.com/news/2026/10/5/yemen-forces-claim-to-seize-dhubab-sites-near-bab-al-mandeb-from-houthis?traffic_source=rss",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Government forces say they retook the Dhubab district and its airport near Bab al-Mandeb.",
+      "url": "https://www.aljazeera.com/news/2026/10/5/yemen-war-escalates-whats-the-latest-on-the-battlefield?traffic_source=rss",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Guardian World",
+      "what": "Saudi-led coalition says it has secured \"air protection\" over Bab al-Mandeb and destroyed hundreds of Houthi targets.",
+      "url": "https://www.theguardian.com/world/2026/oct/05/yemen-air-campaign-houthis-saudi-led-coalition",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Guardian World",
+      "what": "Saudi-led coalition says it has secured \"air protection\" over Bab al-Mandeb and destroyed hundreds of Houthi targets.",
+      "url": "https://www.theguardian.com/world/2026/oct/05/saudi-forces-recapture-key-areas-strait-houthis-yemen",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The latest fighting in Yemen has killed at least 959 people and wounded more than 4,200.",
+      "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "More than 2.2 million Yemeni children under five are acutely malnourished, over half a million of them severely.",
+      "url": "https://www.aljazeera.com/news/2026/10/6/malnutrition-among-yemens-children?traffic_source=rss",
+      "date": "6 Oct"
+    }
+  ],
+  "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds."
+}

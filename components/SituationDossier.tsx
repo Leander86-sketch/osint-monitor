@@ -100,16 +100,16 @@ export default function SituationDossier({ d, s, items }: { d: Dossier | null; s
         <div className="mt-3 border border-[#1a1a1a] bg-[#080808] px-5 py-4" style={{ boxShadow: 'inset 3px 0 0 #e8760a' }}>
           <Label right={`dossier updated ${fmt(d.updatedAt)}`}>The stand</Label>
           <p className="text-[16px] leading-relaxed text-[#e6e6e6] max-w-4xl" style={sans}>{d.stand}</p>
-          <div className="mt-3 flex flex-wrap gap-2">{d.figures.map(f => (
+          {(d.figures || []).length > 0 && <div className="mt-3 flex flex-wrap gap-2">{d.figures.map(f => (
             <a key={f.label} href={f.src.url} target="_blank" rel="noopener noreferrer" title={`${f.src.name}${f.src.date ? ' · ' + f.src.date : ''}`} className="group flex items-baseline gap-2 border border-[#222] hover:border-[#e8760a] px-3 py-1.5">
               <span className="text-[20px] font-mono font-light tabular-nums leading-none" style={{ color: f.color || '#fff' }}>{f.value}</span>
               <span className="text-[10px] font-mono text-[#999] uppercase tracking-[0.12em]">{f.label}</span>
               <span className="text-[9px] font-mono text-[#555] group-hover:text-[#e8760a]">{f.src.name}{f.src.date ? ` · ${f.src.date}` : ''}</span>
-            </a>))}</div>
+            </a>))}</div>}
         </div>
 
         {/* ── claim-grootboek ─────────────────────────────────────────────────────────── */}
-        <div className="mt-3 border border-[#1a1a1a] bg-[#080808]">
+        {(d.claims || []).length > 0 && <div className="mt-3 border border-[#1a1a1a] bg-[#080808]">
           <div className="px-5 pt-4 pb-1"><Label right="one line per claim · status is ARGUS' reading of the sources, not a verdict">Claim ledger</Label></div>
           <div className="px-5 pb-3 flex flex-wrap gap-x-4 gap-y-1 text-[10px] font-mono text-[#777]">{(Object.keys(STATUS) as (keyof typeof STATUS)[]).map(k => <span key={k} title={STATUS[k].hint}><span className="inline-block w-2 h-2 mr-1.5 align-middle" style={{ background: STATUS[k].color }} />{STATUS[k].label} <span className="text-[#555]">— {STATUS[k].hint}</span></span>)}</div>
           <div className="divide-y divide-[#141414] border-t border-[#1a1a1a]">
@@ -123,7 +123,7 @@ export default function SituationDossier({ d, s, items }: { d: Dossier | null; s
                 </div>
               </div>))}
           </div>
-        </div>
+        </div>}
       </>)}
 
       {/* ── kaart: automatisch (koppen) + redactioneel (spelden) ────────────────────────── */}
@@ -134,11 +134,11 @@ export default function SituationDossier({ d, s, items }: { d: Dossier | null; s
             <div className="h-[360px]"><DossierMap points={[...autoPoints, ...pinPoints]} center={d?.map?.center || [s.center.lat, s.center.lng]} zoom={d?.map?.zoom || s.zoom} /></div>
             <div className="px-5 py-2 flex flex-wrap gap-x-4 gap-y-1 text-[10px] font-mono text-[#888]">
               <span><span className="inline-block w-2.5 h-2.5 rounded-full mr-1.5 align-middle border border-[#60a5fa] bg-[#60a5fa]/30" />places in the headlines, size = mentions (automatic)</span>
-              {d && [...new Set(d.places.map(p => p.kind))].map(k => <span key={k}><span className="inline-block w-2 h-2 rounded-full mr-1.5 align-middle" style={{ background: KIND[k].color }} />{KIND[k].label}</span>)}
+              {d && [...new Set((d.places || []).map(p => p.kind))].map(k => <span key={k}><span className="inline-block w-2 h-2 rounded-full mr-1.5 align-middle" style={{ background: KIND[k].color }} />{KIND[k].label}</span>)}
             </div>
           </div>
           <div className="px-5 py-4">
-            {d && d.places.length > 0 && (<>
+            {d && (d.places || []).length > 0 && (<>
               <Label>Pins</Label>
               <div className="space-y-2 mb-4">{d.places.map(p => <div key={p.name} className="grid grid-cols-[10px_1fr] gap-2.5"><span className="w-2 h-2 rounded-full mt-1.5" style={{ background: KIND[p.kind].color }} /><div className="text-[12px] leading-snug text-[#ddd]" style={sans}>{p.name} <span className="text-[#777]">· {p.where}</span><div className="text-[11px] text-[#999]">{p.role}</div></div></div>)}</div>
             </>)}
@@ -148,7 +148,7 @@ export default function SituationDossier({ d, s, items }: { d: Dossier | null; s
         </div>
       )}
 
-      {d && (
+      {d && (d.timeline || []).length > 0 && (
         /* ── tijdlijn: wie zegt wat, wanneer ─────────────────────────────────────────── */
         <div className="mt-3 border border-[#1a1a1a] bg-[#080808] px-5 py-4">
           <Label right={<span className="flex flex-wrap gap-x-3">{(Object.keys(EVENT) as (keyof typeof EVENT)[]).map(k => <span key={k}><span className="inline-block w-2 h-2 mr-1 align-middle" style={{ background: EVENT[k].color }} />{EVENT[k].label}</span>)}</span>}>Timeline</Label>
@@ -185,10 +185,10 @@ export default function SituationDossier({ d, s, items }: { d: Dossier | null; s
             {d.background.source && <div className="mt-2 text-[10px] font-mono text-[#666]">Source: <Src s={d.background.source} /></div>}
           </details>
         )}
-        <details className="mt-3 border border-[#1a1a1a] bg-[#080808] px-5 py-3 group">
+        {(d.sources || []).length > 0 && <details className="mt-3 border border-[#1a1a1a] bg-[#080808] px-5 py-3 group">
           <summary className="cursor-pointer list-none flex items-baseline gap-3"><span className="text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.22em]">Sources used for this dossier</span><span className="text-[10px] font-mono text-[#555]">{d.sources.length} · click to open</span><span className="ml-auto text-[#555] group-open:rotate-180 transition-transform">▾</span></summary>
           <table className="w-full text-[12px] mt-3"><tbody>{d.sources.map((x, k) => <tr key={k} className="border-t border-[#141414] align-top"><td className="py-2 pr-3 text-[#ddd] font-mono text-[11px] whitespace-nowrap">{x.who}</td><td className="py-2 pr-3 text-[#bbb]" style={sans}>{x.what} <a href={x.url} target="_blank" rel="noopener noreferrer" className="text-[#8ab4f8] hover:text-[#e8760a] font-mono text-[10px]">link</a></td><td className="py-2 text-right font-mono text-[11px] text-[#888] whitespace-nowrap">{x.date}</td></tr>)}</tbody></table>
-        </details>
+        </details>}
         {d.disclaimer && <p className="mt-3 text-[11px] font-mono text-[#666] leading-relaxed">{d.disclaimer}</p>}
       </>)}
     </section>

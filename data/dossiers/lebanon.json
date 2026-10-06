@@ -1,0 +1,239 @@
+{
+  "slug": "lebanon",
+  "updatedAt": "2026-10-06T17:21+02:00",
+  "anchors": [
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    },
+    {
+      "label": "BBC",
+      "match": "^BBC"
+    },
+    {
+      "label": "AFP",
+      "match": "AFP|France 24"
+    }
+  ],
+  "stand": "Lebanon faces a renewed humanitarian and economic crisis. Hostilities escalated sharply on 2 March 2026 amid wider regional conflict, triggering fresh displacement and infrastructure damage. The Ministry of Public Health has recorded at least 3,884 deaths and 11,856 injuries since, per OCHA. Humanitarian partners estimate 1.4 million people need assistance and are seeking US$331.5 million through August 2026. The IPC projects 1.24 million people in acute food insecurity, concentrated in the south. The WFP-led Logistics & Telecommunications Cluster keeps emergency communications running despite access constraints.",
+  "figures": [
+    {
+      "label": "People in need of humanitarian assistance",
+      "value": "1.4 million",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Revised 2026 Flash Appeal, cited in MSNA ToR",
+        "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Flash Appeal funding sought, Jun-Aug 2026",
+      "value": "US$331.5 million",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Revised 2026 Flash Appeal, cited in MSNA ToR",
+        "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Reconstruction and recovery needs",
+      "value": "US$11 billion",
+      "color": "#f59e0b",
+      "src": {
+        "name": "World Bank 2025 Rapid Damage and Needs Assessment, cited in MSNA ToR",
+        "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+        "date": "6 Oct"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "status": "confirmed",
+      "text": "At least 3,884 people have died and 11,856 been injured since the 2 March 2026 escalation.",
+      "by": "Says: OCHA, citing Lebanon's Ministry of Public Health. Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "An estimated 1.4 million people are directly affected and need humanitarian assistance.",
+      "by": "Says: UN-coordinated revised 2026 Flash Appeal. Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Humanitarian partners are seeking US$331.5 million to fund assistance between June and August 2026.",
+      "by": "Says: humanitarian partners, via revised 2026 Flash Appeal. Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "About 1.24 million people, 24% of the population analysed, face acute food insecurity at IPC Phase 3 or above.",
+      "by": "Says: IPC Acute Food Insecurity Projection Update (Apr-Aug 2026). Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The 2023-2024 conflict cost Lebanon's economy an estimated US$14 billion, with reconstruction needs put at US$11 billion.",
+      "by": "Says: World Bank 2025 Rapid Damage and Needs Assessment. Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Lebanon's real GDP contracted 7.1% in 2024, with a cumulative decline of nearly 40% since 2019.",
+      "by": "Says: World Bank, cited in 2026 MSNA ToR. Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Hostilities intensified sharply on 2 March 2026 amid wider regional escalation, driving fresh displacement and infrastructure damage.",
+      "by": "Says: 2026 MSNA ToR, drawing on ACAPS analysis. Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Displacement and movement restrictions have severely damaged livelihoods and the wider economy.",
+      "by": "Says: ACAPS. Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Telecommunications services in Lebanon have stayed operational despite insecurity and access constraints in the south.",
+      "by": "Says: WFP-led Logistics & Telecommunications Cluster. Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb (LTC Telecoms Situation Report #10)",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-middle-east-escalation-ltc-situation-report-telecoms-10-september-2026",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Protracted displacement toward Beirut, Mount Lebanon, Akkar, Baalbek-El Hermel and Syria is straining host communities.",
+      "by": "Says: ACAPS, cited in 2026 MSNA ToR. Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+          "date": "6 Oct"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "timeline": [
+    {
+      "date": "2 Mar 2026",
+      "kind": "official",
+      "text": "Hostilities intensify sharply amid broader regional escalation, triggering renewed displacement and infrastructure damage.",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20"
+        }
+      ]
+    },
+    {
+      "date": "16 Mar 2026",
+      "kind": "official",
+      "text": "WFP-led Logistics & Telecommunications Cluster activated to support the humanitarian telecoms response.",
+      "sources": [
+        {
+          "name": "ReliefWeb (LTC Telecoms Situation Report #10)",
+          "url": "https://reliefweb.int/report/lebanon/lebanon-middle-east-escalation-ltc-situation-report-telecoms-10-september-2026"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "2026 Multi-Sector Needs Assessment Terms of Reference (V2.0) cites OCHA's toll of 3,884 deaths and 11,856 injuries since 2 March.",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20"
+        }
+      ]
+    },
+    {
+      "date": "Nov 2024",
+      "kind": "official",
+      "text": "Ceasefire takes hold; partial returns and temporary easing follow.",
+      "sources": [
+        {
+          "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "who": "ReliefWeb (MSNA ToR)",
+      "what": "At least 3,884 people have died and 11,856 been injured since the 2 March 2026 escalation.",
+      "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+      "date": "6 Oct"
+    },
+    {
+      "who": "ReliefWeb (LTC Telecoms Situation Report #10)",
+      "what": "Telecommunications services in Lebanon have stayed operational despite insecurity and access constraints in the south.",
+      "url": "https://reliefweb.int/report/lebanon/lebanon-middle-east-escalation-ltc-situation-report-telecoms-10-september-2026",
+      "date": "5 Oct"
+    }
+  ],
+  "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds."
+}

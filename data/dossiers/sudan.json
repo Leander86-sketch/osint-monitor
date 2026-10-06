@@ -1,0 +1,335 @@
+{
+  "slug": "sudan",
+  "updatedAt": "2026-10-06T17:14+02:00",
+  "anchors": [
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    },
+    {
+      "label": "BBC",
+      "match": "^BBC"
+    },
+    {
+      "label": "AFP",
+      "match": "AFP|France 24"
+    }
+  ],
+  "stand": "Sudan's army (SAF) and the RSF remain at war into a fourth year. The UN Human Rights Council has condemned drone strikes and civilian attacks by both sides, demanding an unconditional ceasefire, after a WFP aid convoy was hit by an air strike in South Kordofan. The US, via envoy Massad Boulos, and Egypt are pressing army chief Burhan toward a truce; Egypt, Eritrea, Somalia and Sudan backed Khartoum against the RSF's rival \"Tasis\" government. Humanitarian agencies warn nearly 29 million face acute food insecurity as the harvest season begins.",
+  "figures": [
+    {
+      "label": "War dead (cumulative)",
+      "value": "at least 59,000 killed",
+      "color": "#f59e0b",
+      "src": {
+        "name": "The Hindu",
+        "url": "https://www.thehindu.com/news/international/us-envoy-holds-rare-meeting-with-sudans-top-general-in-push-to-seek-end-to-fighting/article71549759.ece",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Displaced",
+      "value": "more than 13 million",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/6/un-rights-council-condemns-attacks-on-civilians-in-sudan-calls-for-truce?traffic_source=rss",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Drone-strike deaths, Jan-May 2026",
+      "value": "more than 1,100 killed",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/6/un-rights-council-condemns-attacks-on-civilians-in-sudan-calls-for-truce?traffic_source=rss",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "People facing acute food insecurity",
+      "value": "nearly 29 million",
+      "color": "#f59e0b",
+      "src": {
+        "name": "ReliefWeb / Sudan FSL Cluster",
+        "url": "https://reliefweb.int/report/sudan/sudans-harvest-risk-millions-face-worsening-hunger-2027",
+        "date": "5 Oct"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "status": "confirmed",
+      "text": "UN Human Rights Council adopted a resolution demanding an immediate, unconditional ceasefire in Sudan and extended its fact-finding mission.",
+      "by": "Says: UN Human Rights Council (28-10-9 vote, Geneva). Denies: Sudan urged member states to reject the resolution.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/un-rights-council-condemns-attacks-on-civilians-in-sudan-calls-for-truce?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "RSF's siege and capture of el-Fasher, North Darfur, bore the hallmarks of genocide.",
+      "by": "Says: UN-mandated independent international fact-finding mission for Sudan.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/un-rights-council-condemns-attacks-on-civilians-in-sudan-calls-for-truce?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "An air strike killed a WFP driver on a convoy travelling between Dilling and Kadugli, South Kordofan.",
+      "by": "Says: World Food Programme. No party claimed responsibility.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/un-rights-council-condemns-attacks-on-civilians-in-sudan-calls-for-truce?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Both the Sudanese Armed Forces and the RSF are carrying out indiscriminate aerial bombardments and drone strikes on civilians.",
+      "by": "Says: UN Human Rights Council.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/un-rights-council-condemns-attacks-on-civilians-in-sudan-calls-for-truce?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Egypt, Eritrea, Somalia and Sudan jointly backed Sudan's army-led government and rejected the RSF's parallel administration.",
+      "by": "Says: joint statement of the four leaders (Sisi, Afwerki, Mohamud, Burhan).",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/egypt-eritrea-somalia-and-sudan-hold-summit-amid-ethiopia-tensions",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The US is pushing for a regional agreement on an immediate humanitarian truce, including troop withdrawals and safe corridors.",
+      "by": "Says: White House senior adviser Massad Boulos and Trump administration officials.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/us-envoy-holds-rare-meeting-with-sudans-top-general-in-push-to-seek-end-to-fighting/article71549759.ece",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Sudan accuses Washington of denying army chief Burhan a visa to attend the UN General Assembly.",
+      "by": "Says: Sudanese Foreign Minister Mohieldin Salim Ahmed Ibrahim. Response: US State Department declined to comment.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/us-envoy-holds-rare-meeting-with-sudans-top-general-in-push-to-seek-end-to-fighting/article71549759.ece",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The RSF's rival \"Tasis\" government named a Dutch-Sudanese lawyer, Osama Said, as its Justice Minister in early May 2026.",
+      "by": "Says: Osama Said confirms his nomination; says he has not yet formally accepted the post.",
+      "sources": [
+        {
+          "name": "NOS Nieuws",
+          "url": "https://nos.nl/l/2633698",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The UN Security Council called the RSF's \"Tasis\" parallel government a direct danger to Sudan's territorial integrity when it was founded.",
+      "by": "Says: UN Security Council.",
+      "sources": [
+        {
+          "name": "NOS Nieuws",
+          "url": "https://nos.nl/l/2633698",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "RSF commander Algoney Dagalo, brother of RSF leader Hemedti, attended a Hague peace conference under a false name while under US sanctions; he is now also EU-sanctioned and barred from entry.",
+      "by": "Says: Dutch foreign ministry and conference organiser The Hague Peace Projects confirm his presence and the false name.",
+      "sources": [
+        {
+          "name": "NOS Nieuws",
+          "url": "https://nos.nl/l/2633735",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Famine has been confirmed multiple times over the past two years in parts of Sudan, with other areas still at risk.",
+      "by": "Says: Integrated Food Security Phase Classification (IPC).",
+      "sources": [
+        {
+          "name": "ReliefWeb / Sudan FSL Cluster",
+          "url": "https://reliefweb.int/report/sudan/sudans-harvest-risk-millions-face-worsening-hunger-2027",
+          "date": "5 Oct"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "timeline": [
+    {
+      "date": "2 Oct",
+      "kind": "official",
+      "text": "A WFP vehicle hits an explosive device in Dilling after a food distribution run.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/un-rights-council-condemns-attacks-on-civilians-in-sudan-calls-for-truce?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "3 Oct",
+      "kind": "official",
+      "text": "An air strike kills a WFP driver on a convoy between Dilling and Kadugli, South Kordofan.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/un-rights-council-condemns-attacks-on-civilians-in-sudan-calls-for-truce?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "official",
+      "text": "Egypt, Eritrea, Somalia and Sudan hold a four-way summit in New Alamein, backing Sudan's army-led government.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/egypt-eritrea-somalia-and-sudan-hold-summit-amid-ethiopia-tensions"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "official",
+      "text": "US envoy Massad Boulos meets Sudanese army chief Burhan at a luncheon hosted by Egypt's Sisi, on the AU meeting sidelines.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/us-envoy-holds-rare-meeting-with-sudans-top-general-in-push-to-seek-end-to-fighting/article71549759.ece"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "media",
+      "text": "Qatar Red Crescent Society launches a medical convoy at Bahri Teaching Hospital, Khartoum.",
+      "sources": [
+        {
+          "name": "ReliefWeb / QRCS",
+          "url": "https://reliefweb.int/report/sudan/qrcs-launches-multidisciplinary-medical-convoy-sudan-enar"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "UN Human Rights Council adopts resolution demanding a ceasefire and extending the Sudan fact-finding mission's mandate.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/un-rights-council-condemns-attacks-on-civilians-in-sudan-calls-for-truce?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "late 2024",
+      "kind": "media",
+      "text": "RSF commander Algoney Dagalo attended a Hague peace conference under the false name \"Ahmed Musa\" while on a US sanctions list.",
+      "sources": [
+        {
+          "name": "NOS Nieuws",
+          "url": "https://nos.nl/l/2633735"
+        }
+      ]
+    },
+    {
+      "date": "early May 2026",
+      "kind": "media",
+      "text": "RSF's \"Tasis\" parallel government names ministers, including Dutch-Sudanese lawyer Osama Said as Justice Minister.",
+      "sources": [
+        {
+          "name": "NOS Nieuws",
+          "url": "https://nos.nl/l/2633698"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "who": "Al Jazeera",
+      "what": "UN Human Rights Council adopted a resolution demanding an immediate, unconditional ceasefire in Sudan and extended its f",
+      "url": "https://www.aljazeera.com/news/2026/10/6/un-rights-council-condemns-attacks-on-civilians-in-sudan-calls-for-truce?traffic_source=rss",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Egypt, Eritrea, Somalia and Sudan jointly backed Sudan's army-led government and rejected the RSF's parallel administrat",
+      "url": "https://www.al-monitor.com/originals/2026/10/egypt-eritrea-somalia-and-sudan-hold-summit-amid-ethiopia-tensions",
+      "date": "5 Oct"
+    },
+    {
+      "who": "The Hindu",
+      "what": "The US is pushing for a regional agreement on an immediate humanitarian truce, including troop withdrawals and safe corr",
+      "url": "https://www.thehindu.com/news/international/us-envoy-holds-rare-meeting-with-sudans-top-general-in-push-to-seek-end-to-fighting/article71549759.ece",
+      "date": "6 Oct"
+    },
+    {
+      "who": "NOS Nieuws",
+      "what": "The RSF's rival \"Tasis\" government named a Dutch-Sudanese lawyer, Osama Said, as its Justice Minister in early May 2026.",
+      "url": "https://nos.nl/l/2633698",
+      "date": "5 Oct"
+    },
+    {
+      "who": "NOS Nieuws",
+      "what": "RSF commander Algoney Dagalo, brother of RSF leader Hemedti, attended a Hague peace conference under a false name while ",
+      "url": "https://nos.nl/l/2633735",
+      "date": "5 Oct"
+    },
+    {
+      "who": "ReliefWeb / Sudan FSL Cluster",
+      "what": "Famine has been confirmed multiple times over the past two years in parts of Sudan, with other areas still at risk.",
+      "url": "https://reliefweb.int/report/sudan/sudans-harvest-risk-millions-face-worsening-hunger-2027",
+      "date": "5 Oct"
+    },
+    {
+      "who": "ReliefWeb / QRCS",
+      "what": "Qatar Red Crescent Society launches a medical convoy at Bahri Teaching Hospital, Khartoum.",
+      "url": "https://reliefweb.int/report/sudan/qrcs-launches-multidisciplinary-medical-convoy-sudan-enar",
+      "date": "4 Oct"
+    }
+  ],
+  "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds."
+}

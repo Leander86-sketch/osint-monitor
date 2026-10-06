@@ -1,0 +1,343 @@
+{
+  "slug": "europe-airspace-drones",
+  "updatedAt": "2026-10-06T16:43+02:00",
+  "anchors": [
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    },
+    {
+      "label": "BBC",
+      "match": "^BBC"
+    },
+    {
+      "label": "AFP",
+      "match": "AFP|France 24"
+    }
+  ],
+  "stand": "Drones have struck Black Sea shipping twice in two days: a Turkish-flagged grain carrier sank near Romania on 5 October, killing two, and Bulgaria's Alfa Watan and Able were hit on 6 October, sinking one and damaging the other roughly 80 miles off the coast. Bulgarian PM Rumen Radev calls it a violation of international law but will not name the attacker; Ukraine's Zelensky blames Russian drones for the Romania strike. Bulgarian opposition accuses Radev of shielding Moscow. Estonia received 13 US reconnaissance drones for border security.",
+  "figures": [
+    {
+      "label": "Romania grain carrier casualties",
+      "value": "2 killed, 11 rescued",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Ukrinform",
+        "url": "https://www.ukrinform.net/rubric-ato/4171234-russian-drone-strikes-grain-carrier-in-black-sea-near-romania-fatalities-reported-vessel-sinks.html",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Able crew evacuated (Bulgaria)",
+      "value": "18 crew members",
+      "color": "#f59e0b",
+      "src": {
+        "name": "ABC News",
+        "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Sailors seriously injured (Bulgaria)",
+      "value": "2",
+      "color": "#f59e0b",
+      "src": {
+        "name": "ABC News",
+        "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Estonia drone transfer",
+      "value": "13 Skydio X10D drones",
+      "color": "#f59e0b",
+      "src": {
+        "name": "ERR News",
+        "url": "https://news.err.ee/1610157010/us-gives-estonia-13-reconnaissance-drones-to-boost-border-security",
+        "date": "5 Oct"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "status": "confirmed",
+      "text": "A drone strike sank the Turkish-flagged grain carrier Royad Mammadov near Romania, killing two and leaving 11 rescued.",
+      "by": "Says: Romania's Ministry of Internal Affairs",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171234-russian-drone-strikes-grain-carrier-in-black-sea-near-romania-fatalities-reported-vessel-sinks.html",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The Romania grain-carrier strike was carried out by two Russian drones.",
+      "by": "Says: Ukrainian President Volodymyr Zelenskyy; Denies: not addressed by Russia in these articles",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Drones struck two commercial vessels, the Alfa Watan and the Able, in Bulgaria's Black Sea exclusive economic zone.",
+      "by": "Says: Bulgarian PM Rumen Radev",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "The origin of the drones in the Bulgaria attack is unresolved; Radev will not name an aggressor while opposition figures say it is clearly Russia.",
+      "by": "Says: PM Rumen Radev (\"either Russian or Ukrainian\"); Denies/alleges: opposition figures Assen Vassilev and Ivaylo Mirchev say it is Russia and accuse Radev of shielding it",
+      "sources": [
+        {
+          "name": "Balkan Insight",
+          "url": "https://balkaninsight.com/2026/10/06/bulgarian-pm-and-opposition-quarrel-over-black-sea-drone-attack/bi/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "A surviving crew member says the Alfa Watan was hit by a naval mine from underneath, not a drone.",
+      "by": "Says: unnamed Turkish crew member; Denies: no government confirmation of cause given in these articles",
+      "sources": [
+        {
+          "name": "Balkan Insight",
+          "url": "https://balkaninsight.com/2026/10/06/bulgarian-pm-and-opposition-quarrel-over-black-sea-drone-attack/bi/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "NATO's top commander has urged member states to publicly name those they believe responsible for drone incidents once evidence is gathered.",
+      "by": "Says: NATO Supreme Allied Commander Gen. Alex Grynkewich",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Germany took almost a month to publicly blame Russia for an August drone-and-explosives attack at Leipzig/Halle Airport.",
+      "by": "Says: German government",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The US transferred 13 Skydio X10D reconnaissance drones to Estonia's Police and Border Guard Board.",
+      "by": "Says: US Embassy in Estonia / Ambassador Roman Pipko",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610157010/us-gives-estonia-13-reconnaissance-drones-to-boost-border-security",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Zelensky says more than 12 anti-drone turrets have been installed in Kyiv, protecting against Shahed drones.",
+      "by": "Says: President Volodymyr Zelensky",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-polytics/4171350-zelensky-discusses-strengthening-air-defenses-and-protection-against-shahed-drones-with-dutch-pm.html",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Zelensky discussed strengthening defences against Russian Shahed drones with Dutch PM Rob Jetten.",
+      "by": "Says: President Volodymyr Zelensky",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-polytics/4171350-zelensky-discusses-strengthening-air-defenses-and-protection-against-shahed-drones-with-dutch-pm.html",
+          "date": "5 Oct"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "timeline": [
+    {
+      "date": "4 Aug",
+      "kind": "media",
+      "text": "A drone laden with explosives attempted an attack at Leipzig/Halle Airport in Germany.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "The US and Estonia signed a transfer agreement for 13 Skydio X10D border-surveillance drones at Tallinn's Miinisadam Naval Base.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610157010/us-gives-estonia-13-reconnaissance-drones-to-boost-border-security"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "media",
+      "text": "A drone strike sank the Turkish-flagged grain carrier Royad Mammadov near Romania's coast; two were killed and 11 rescued.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171234-russian-drone-strikes-grain-carrier-in-black-sea-near-romania-fatalities-reported-vessel-sinks.html"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Zelensky discussed Shahed-drone air defences with Dutch PM Rob Jetten and cited new Kyiv anti-drone turrets.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-polytics/4171350-zelensky-discusses-strengthening-air-defenses-and-protection-against-shahed-drones-with-dutch-pm.html"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "Drones struck two commercial vessels in Bulgaria's exclusive economic zone around 3 a.m.; the Alfa Watan sank and the Able caught fire.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648"
+        },
+        {
+          "name": "TASS",
+          "url": "https://tass.com/emergencies/2197969"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "PM Rumen Radev called the strike a blatant violation of international law after an emergency government meeting, without naming an aggressor.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "reaction",
+      "text": "Acting President Iliana Iotova signed a decree to convene Bulgaria's security council on Wednesday (7 Oct).",
+      "sources": [
+        {
+          "name": "Balkan Insight",
+          "url": "https://balkaninsight.com/2026/10/06/bulgarian-pm-and-opposition-quarrel-over-black-sea-drone-attack/bi/"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "reaction",
+      "text": "Opposition figures accused Radev of avoiding naming Russia as the aggressor out of sympathy for the Kremlin.",
+      "sources": [
+        {
+          "name": "Balkan Insight",
+          "url": "https://balkaninsight.com/2026/10/06/bulgarian-pm-and-opposition-quarrel-over-black-sea-drone-attack/bi/"
+        }
+      ]
+    },
+    {
+      "date": "Aug",
+      "kind": "official",
+      "text": "Romania scrambled F-16 fighter jets to destroy a maritime drone near the Neptun Deep gas platform in the Black Sea.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171234-russian-drone-strikes-grain-carrier-in-black-sea-near-romania-fatalities-reported-vessel-sinks.html"
+        }
+      ]
+    },
+    {
+      "date": "Sep",
+      "kind": "official",
+      "text": "NATO's Gen. Alex Grynkewich urged member states to publicly identify those responsible for drone incidents once evidence is gathered.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "who": "Ukrinform",
+      "what": "A drone strike sank the Turkish-flagged grain carrier Royad Mammadov near Romania, killing two and leaving 11 rescued.",
+      "url": "https://www.ukrinform.net/rubric-ato/4171234-russian-drone-strikes-grain-carrier-in-black-sea-near-romania-fatalities-reported-vessel-sinks.html",
+      "date": "5 Oct"
+    },
+    {
+      "who": "ABC News",
+      "what": "The Romania grain-carrier strike was carried out by two Russian drones.",
+      "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Balkan Insight",
+      "what": "The origin of the drones in the Bulgaria attack is unresolved; Radev will not name an aggressor while opposition figures",
+      "url": "https://balkaninsight.com/2026/10/06/bulgarian-pm-and-opposition-quarrel-over-black-sea-drone-attack/bi/",
+      "date": "6 Oct"
+    },
+    {
+      "who": "ERR News",
+      "what": "The US transferred 13 Skydio X10D reconnaissance drones to Estonia's Police and Border Guard Board.",
+      "url": "https://news.err.ee/1610157010/us-gives-estonia-13-reconnaissance-drones-to-boost-border-security",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Zelensky says more than 12 anti-drone turrets have been installed in Kyiv, protecting against Shahed drones.",
+      "url": "https://www.ukrinform.net/rubric-polytics/4171350-zelensky-discusses-strengthening-air-defenses-and-protection-against-shahed-drones-with-dutch-pm.html",
+      "date": "5 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Drones struck two commercial vessels in Bulgaria's exclusive economic zone around 3 a.m.; the Alfa Watan sank and the Ab",
+      "url": "https://tass.com/emergencies/2197969",
+      "date": "6 Oct"
+    }
+  ],
+  "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds."
+}

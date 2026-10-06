@@ -1,0 +1,399 @@
+{
+  "slug": "iran-israel",
+  "updatedAt": "2026-10-06T17:11+02:00",
+  "anchors": [
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    },
+    {
+      "label": "BBC",
+      "match": "^BBC"
+    },
+    {
+      "label": "AFP",
+      "match": "AFP|France 24"
+    }
+  ],
+  "stand": "The US-Israel war on Iran, launched 28 Feb, is in its eighth month. Washington has shifted from heavy bombing to economic pressure, while Iran keeps contesting the Strait of Hormuz, now subject to a US counterblockade. The US withdrew B-1 bombers from RAF Fairford after a security alert; Tehran denies any plot link. Fuel prices are rising in the US, fuelling Trump-Democrat blame fights ahead of midterms. Oil stockpiles are \"scarily thin\", Aramco warns. Israel's Katz has ordered the army to prepare a West Bank offensive against the Palestinian Authority.",
+  "figures": [
+    {
+      "label": "Strait of Hormuz daily oil exports",
+      "value": "down 97% since war began",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/economy/2026/10/5/trump-blames-democrats-and-ukraine-for-soaring-us-fuel-prices-not-iran-war?traffic_source=rss",
+        "date": "5 Oct"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "status": "confirmed",
+      "text": "The US withdrew all its bomber aircraft from RAF Fairford after a security incident.",
+      "by": "Says: Pentagon spokesperson, confirmed to CBS News Denies: —",
+      "sources": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/live-updates/trump-iran-war-us-midterm-elections-troops-deployment/",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Tehran denies any link to the alleged plot to target RAF Fairford.",
+      "by": "Says: UK security incident led to five arrests near the base Denies: Iran denies any link",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news-analysis/2026/10/5/us-pulls-bombers-from-uk-base-is-iran-maneouvering-trumps-war-plans?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The war has sharply cut Strait of Hormuz oil exports, driving up global fuel prices.",
+      "by": "Says: Al Jazeera, citing AAA price data Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/10/5/trump-blames-democrats-and-ukraine-for-soaring-us-fuel-prices-not-iran-war?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Middle East crude exports excluding Iran have surpassed pre-war levels despite Hormuz attacks.",
+      "by": "Says: Kpler tracking data, cited by CBS News Denies: —",
+      "sources": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/live-updates/trump-iran-war-us-midterm-elections-troops-deployment/",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Global oil stockpiles are now scarily thin, with most commercial inventories not practically available.",
+      "by": "Says: Saudi Aramco chief executive Amin Nasser Denies: —",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-aramco-chief-warns-scarily-thin-global-oil-stockpiles-amid-war",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran's foreign minister says only negotiations, not military moves, can end the war.",
+      "by": "Says: Iranian FM Abbas Araghchi Denies: —",
+      "sources": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/live-updates/trump-iran-war-us-midterm-elections-troops-deployment/",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Iran's ability to rebuild its missile and drone arsenal is disputed.",
+      "by": "Says: Iranian officials say production and improvement continue Denies: Many US and Israeli officials say Iran can no longer produce missiles and drones",
+      "sources": [
+        {
+          "name": "War on the Rocks",
+          "url": "https://warontherocks.com/iran-faces-severe-challenges-to-rebuild-missile-and-drone-production/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Israel's defence minister has ordered the army to prepare a full-scale offensive against the Palestinian Authority in the West Bank.",
+      "by": "Says: Defense Minister Israel Katz, per Times of Israel Denies: —",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198197",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The UN Secretary-General has called for an end to the Iran war and restoration of navigational rights.",
+      "by": "Says: UN Secretary-General Antonio Guterres Denies: —",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/un-chief-calls-diplomacy-restoration-navigational-rights-iran-war",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Trump says the war is almost over and that losing Los Angeles or San Diego would be a small price to pay.",
+      "by": "Says: President Donald Trump, at a Nebraska rally Denies: —",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2197905",
+          "date": "6 Oct"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "timeline": [
+    {
+      "date": "28 Feb",
+      "kind": "official",
+      "text": "US and Israel launch war against Iran.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2197905"
+        }
+      ]
+    },
+    {
+      "date": "8 Jul",
+      "kind": "official",
+      "text": "US resumes large-scale strikes on Iran, accusing Tehran of violating the Hormuz agreement.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2197905"
+        }
+      ]
+    },
+    {
+      "date": "29 Jul",
+      "kind": "official",
+      "text": "Saudi Arabia and the US strike PMF targets in Iraq, killing at least 20.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/news/iraq-paramilitaries-baghdad-push-greater-state-control"
+        }
+      ]
+    },
+    {
+      "date": "25 Sep",
+      "kind": "official",
+      "text": "Iran's foreign minister blames US and Israeli actions for insecurity in the Strait of Hormuz.",
+      "sources": [
+        {
+          "name": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-military/2026/10/05/aboard-the-uss-george-washington-young-sailors-adjust-to-war-with-iran/"
+        }
+      ]
+    },
+    {
+      "date": "27 Sep",
+      "kind": "media",
+      "text": "Five British nationals arrested near RAF Fairford on suspicion of explosives and terror offences.",
+      "sources": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/live-updates/trump-iran-war-us-midterm-elections-troops-deployment/"
+        }
+      ]
+    },
+    {
+      "date": "30 Sep",
+      "kind": "official",
+      "text": "US-led coalition withdraws from Iraq; 90-day halt on paramilitary military activity begins.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/news/iraq-paramilitaries-baghdad-push-greater-state-control"
+        }
+      ]
+    },
+    {
+      "date": "1 Oct",
+      "kind": "official",
+      "text": "Turkey announces handover of the Bashiqa-Zelikan camp near Mosul to the Iraqi government.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/news/iraq-paramilitaries-baghdad-push-greater-state-control"
+        }
+      ]
+    },
+    {
+      "date": "2 Oct",
+      "kind": "official",
+      "text": "Senior Trump officials meet at Camp David on the Iran war and Houthi-Saudi conflict; G7 leaders agree to release diesel stockpiles.",
+      "sources": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/live-updates/trump-iran-war-us-midterm-elections-troops-deployment/"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "media",
+      "text": "Another tanker is struck in the Strait of Hormuz by an unknown projectile.",
+      "sources": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/live-updates/trump-iran-war-us-midterm-elections-troops-deployment/"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Pentagon confirms all US bombers withdrawn from RAF Fairford.",
+      "sources": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/live-updates/trump-iran-war-us-midterm-elections-troops-deployment/"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Trump blames Democrats and Ukraine's refinery strikes, not the Iran war, for rising US fuel prices.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/10/5/trump-blames-democrats-and-ukraine-for-soaring-us-fuel-prices-not-iran-war?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "UN chief Guterres calls for diplomacy and restoration of navigational rights, speaking in Islamabad.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/un-chief-calls-diplomacy-restoration-navigational-rights-iran-war"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Saudi Aramco chief Amin Nasser warns global oil stockpiles are scarily thin.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-aramco-chief-warns-scarily-thin-global-oil-stockpiles-amid-war"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Trump says Los Angeles and San Diego could be destroyed, calls it a small price to pay, and says the war is almost over.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2197905"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Israel's defence minister Katz orders the army to prepare a full-scale offensive against the Palestinian Authority in the West Bank.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198197"
+        }
+      ]
+    },
+    {
+      "date": "June",
+      "kind": "official",
+      "text": "US and Iran sign memorandum of understanding for a ceasefire including Lebanon.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2197905"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "who": "CBS News",
+      "what": "The US withdrew all its bomber aircraft from RAF Fairford after a security incident.",
+      "url": "https://www.cbsnews.com/live-updates/trump-iran-war-us-midterm-elections-troops-deployment/",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Tehran denies any link to the alleged plot to target RAF Fairford.",
+      "url": "https://www.aljazeera.com/news-analysis/2026/10/5/us-pulls-bombers-from-uk-base-is-iran-maneouvering-trumps-war-plans?traffic_source=rss",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The war has sharply cut Strait of Hormuz oil exports, driving up global fuel prices.",
+      "url": "https://www.aljazeera.com/economy/2026/10/5/trump-blames-democrats-and-ukraine-for-soaring-us-fuel-prices-not-iran-war?traffic_source=rss",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "Global oil stockpiles are now scarily thin, with most commercial inventories not practically available.",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-aramco-chief-warns-scarily-thin-global-oil-stockpiles-amid-war",
+      "date": "6 Oct"
+    },
+    {
+      "who": "War on the Rocks",
+      "what": "Iran's ability to rebuild its missile and drone arsenal is disputed.",
+      "url": "https://warontherocks.com/iran-faces-severe-challenges-to-rebuild-missile-and-drone-production/",
+      "date": "6 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Israel's defence minister has ordered the army to prepare a full-scale offensive against the Palestinian Authority in th",
+      "url": "https://tass.com/world/2198197",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "The UN Secretary-General has called for an end to the Iran war and restoration of navigational rights.",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/un-chief-calls-diplomacy-restoration-navigational-rights-iran-war",
+      "date": "6 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Trump says the war is almost over and that losing Los Angeles or San Diego would be a small price to pay.",
+      "url": "https://tass.com/world/2197905",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "Saudi Arabia and the US strike PMF targets in Iraq, killing at least 20.",
+      "url": "https://www.middleeasteye.net/news/iraq-paramilitaries-baghdad-push-greater-state-control",
+      "date": "29 Jul"
+    },
+    {
+      "who": "Military Times",
+      "what": "Iran's foreign minister blames US and Israeli actions for insecurity in the Strait of Hormuz.",
+      "url": "https://www.militarytimes.com/news/your-military/2026/10/05/aboard-the-uss-george-washington-young-sailors-adjust-to-war-with-iran/",
+      "date": "25 Sep"
+    }
+  ],
+  "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds."
+}

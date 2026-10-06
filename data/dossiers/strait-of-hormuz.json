@@ -1,0 +1,511 @@
+{
+  "slug": "strait-of-hormuz",
+  "updatedAt": "2026-10-06T17:07+02:00",
+  "anchors": [
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    },
+    {
+      "label": "BBC",
+      "match": "^BBC"
+    },
+    {
+      "label": "AFP",
+      "match": "AFP|France 24"
+    }
+  ],
+  "stand": "Iran's IRGC is pressuring tanker traffic through the Strait of Hormuz with near-daily projectile strikes and turn-back orders, while the US Navy enforces a blockade on vessels linked to Iranian ports. Gulf oil exports have nonetheless climbed back above pre-war levels on several days, driven by Saudi, Kuwaiti and Iraqi shipments and US-escorted transits. A Kpler analyst speculates Gulf states may be paying Iran a toll for safe passage, unconfirmed. IRGC's Fadavi claims US forces have withdrawn and calls through-traffic negligible; CENTCOM disputes this by citing active blockade enforcement.",
+  "figures": [
+    {
+      "label": "IRGC-claimed current flow on US-supervised route",
+      "value": "3–4 million bpd",
+      "color": "#f59e0b",
+      "src": {
+        "name": "IRGC commander Ali Fadavi via Middle East Eye",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-says-us-forces-have-fled-1000km-irans-borders",
+        "date": "5 Oct"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "status": "disputed",
+      "text": "Gulf crude exports recovered above pre-war levels on several days in late September, per Kpler data, but Iran disputes the significance of US-supervised traffic.",
+      "by": "Says: Kpler ship-tracking data. Denies/minimises: IRGC commander Ali Fadavi, who calls US-supervised route volume negligible.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/is-iran-charging-a-toll-to-allow-oil-traffic-through-hormuz?traffic_source=rss",
+          "date": "5 Oct"
+        },
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-says-us-forces-have-fled-1000km-irans-borders",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Kpler analyst speculates Gulf states may be paying Iran a toll for safe tanker passage through Hormuz; Lloyd's List reported the IRGC already running a 'toll booth' system since March. Washington says it will not permit any toll under a deal.",
+      "by": "Says: Kpler's Michelle Brohard (speculation); Lloyd's List (March report). Rejects: Trump administration, which says Iran will not be allowed to charge a toll under any agreement.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/is-iran-charging-a-toll-to-allow-oil-traffic-through-hormuz?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "IRGC commander Ali Fadavi claims US naval forces have withdrawn 1,000km from Iran's borders and are absent from the Gulf, Strait of Hormuz, Sea of Oman and northern Indian Ocean.",
+      "by": "Says: IRGC commander Ali Fadavi. Denies: CENTCOM, which reports active blockade enforcement and US naval interdictions as recently as 5 October.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-says-us-forces-have-fled-1000km-irans-borders",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The IRGC Navy has warned ships using the US-supervised southern route through Hormuz that they may be targeted at any point.",
+      "by": "Says: IRGC, via commander Ali Fadavi.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-says-us-forces-have-fled-1000km-irans-borders",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "At least 12 tankers were attacked in the Strait of Hormuz over the past week, with UKMTO logging at least one attack daily in Hormuz or the Gulf of Aden since 2 October.",
+      "by": "Says: UKMTO.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/hormuz-tanker-attacks-mount-putting-oil-flows-risk",
+          "date": "5 Oct"
+        },
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/middle-east-oil-exports-top-pre-war-levels-for-part-of-september-but-tanker-attacks-increase/",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "On 5 October the IRGC twice hailed inbound tankers near Oman and ordered them to turn back or be targeted; both masters complied.",
+      "by": "Says: UKMTO.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-turns-back-tanker-strait-hormuz",
+          "date": "5 Oct"
+        },
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/five-hormuz-incidents-reported-monday-as-tanker-attacks-mount/",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "US CENTCOM says it has redirected 130 commercial vessels, disabled three and destroyed 13 over the past 12 weeks while enforcing its blockade on ships entering or leaving Iranian ports.",
+      "by": "Says: CENTCOM commander Adm. Brad Cooper.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/five-hormuz-incidents-reported-monday-as-tanker-attacks-mount/",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The ICC warns that if Hormuz shipping restrictions persist, grain prices in some regions could rise by up to 80%, driven largely by disrupted fertiliser supply chains.",
+      "by": "Says: ICC Secretary-General John Denton.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2197527",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Kuwait's oil output has recovered to about 75% of pre-war levels as more tankers risk Hormuz transits, says Kuwait Petroleum Corp's chief executive.",
+      "by": "Says: Sheikh Nawaf Al-Sabah, CEO, Kuwait Petroleum Corp.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/kuwait-oil-output-at-75-of-prewar-as-hormuz-transits-rise/",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "LNG shipments through Hormuz are rebounding but remain more than 75% below pre-war levels.",
+      "by": "Says: Bloomberg/Kpler ship-tracking data.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/lng-trade-through-hormuz-extends-rebound-despite-shipping-risks/",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Iraq's state-owned Oil Tanker Company transported two million barrels of crude through the Strait of Hormuz on a VLCC, its first such operation in decades.",
+      "by": "Says: Iraq's Oil Tanker Company (director general).",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/is-iran-charging-a-toll-to-allow-oil-traffic-through-hormuz?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "timeline": [
+    {
+      "date": "28 Feb",
+      "kind": "media",
+      "text": "US-Israel war on Iran began, the starting point for the Hormuz crisis.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/middle-east-oil-exports-top-pre-war-levels-for-part-of-september-but-tanker-attacks-increase/"
+        }
+      ]
+    },
+    {
+      "date": "14 Jul",
+      "kind": "official",
+      "text": "US naval blockade against Iran resumes.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/five-hormuz-incidents-reported-monday-as-tanker-attacks-mount/"
+        }
+      ]
+    },
+    {
+      "date": "10 Sep",
+      "kind": "media",
+      "text": "Attack on Saudi Arabia's East-West pipeline, later cited as a driver of the export surge.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/middle-east-oil-exports-top-pre-war-levels-for-part-of-september-but-tanker-attacks-increase/"
+        }
+      ]
+    },
+    {
+      "date": "17 Sep",
+      "kind": "media",
+      "text": "Kazimah III last seen discharging Kuwaiti crude at Ras Markaz, Oman, before being struck days later.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/west-asian-crude-oil-exports-exceed-pre-war-levels-but-tanker-attacks-increase/article71545667.ece"
+        }
+      ]
+    },
+    {
+      "date": "24-29 Sep",
+      "kind": "media",
+      "text": "Crude exports from the region exceeded pre-war levels on four days.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/west-asian-crude-oil-exports-exceed-pre-war-levels-but-tanker-attacks-increase/article71545667.ece"
+        }
+      ]
+    },
+    {
+      "date": "30 Sep",
+      "kind": "media",
+      "text": "Seven-day moving average for regional crude exports reaches 18.3 million bpd.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/middle-east-oil-exports-top-pre-war-levels-for-part-of-september-but-tanker-attacks-increase/"
+        }
+      ]
+    },
+    {
+      "date": "1 Oct",
+      "kind": "media",
+      "text": "VLCC Kazimah III struck by a projectile in the strait, causing an onboard fire.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/west-asian-crude-oil-exports-exceed-pre-war-levels-but-tanker-attacks-increase/article71545667.ece"
+        }
+      ]
+    },
+    {
+      "date": "1 Oct",
+      "kind": "media",
+      "text": "Seven-day moving average for crude exports rises to 18.5 million bpd.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/west-asian-crude-oil-exports-exceed-pre-war-levels-but-tanker-attacks-increase/article71545667.ece"
+        }
+      ]
+    },
+    {
+      "date": "2 Oct",
+      "kind": "official",
+      "text": "UKMTO begins reporting at least one attack per day in Hormuz or the Gulf of Aden.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/middle-east-oil-exports-top-pre-war-levels-for-part-of-september-but-tanker-attacks-increase/"
+        }
+      ]
+    },
+    {
+      "date": "2-3 Oct",
+      "kind": "official",
+      "text": "JMIC documents four confirmed tanker attacks in the strait, along the Omani side.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-irgc-orders-ship-to-turn-back/"
+        }
+      ]
+    },
+    {
+      "date": "3 Oct",
+      "kind": "official",
+      "text": "A crude oil tanker is struck above the waterline during transit; timing unclear, possibly overlapping other reports.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-irgc-orders-ship-to-turn-back/"
+        }
+      ]
+    },
+    {
+      "date": "3 Oct",
+      "kind": "official",
+      "text": "Iraq's Oil Tanker Company announces its first VLCC transit of the strait in decades, carrying two million barrels of crude.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/is-iran-charging-a-toll-to-allow-oil-traffic-through-hormuz?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "media",
+      "text": "Aframax tanker Lipsi struck near Jazirat Um Al Fayarin, Oman, damaging its engine room.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/middle-east-oil-exports-top-pre-war-levels-for-part-of-september-but-tanker-attacks-increase/"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "official",
+      "text": "UKMTO reports a separate tanker hit by an unknown projectile within Hormuz.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/lng-trade-through-hormuz-extends-rebound-despite-shipping-risks/"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "A tanker north of Khasab, Oman, is hailed by the IRGC and ordered to turn back; the master complies.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-turns-back-tanker-strait-hormuz",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "A tanker transiting the strait is struck by an unknown projectile at 1637 UTC, causing an engine-room fire.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2197847",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "CENTCOM says US forces redirected the 130th commercial vessel under the blockade.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/five-hormuz-incidents-reported-monday-as-tanker-attacks-mount/",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "IRGC commander Ali Fadavi says US forces have fled 1,000km from Iran's borders.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-says-us-forces-have-fled-1000km-irans-borders",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "media",
+      "text": "Kuwait Petroleum Corp's CEO says output has recovered to 75% of pre-war levels.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/kuwait-oil-output-at-75-of-prewar-as-hormuz-transits-rise/",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "reaction",
+      "text": "ICC Secretary-General warns Hormuz restrictions could push grain prices up by as much as 80%.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2197527",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "media",
+      "text": "Kpler analyst Michelle Brohard speculates in an interview that Gulf states may be paying Iran a toll for safe passage.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/is-iran-charging-a-toll-to-allow-oil-traffic-through-hormuz?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "date": "Mar",
+      "kind": "media",
+      "text": "Lloyd's List reports the IRGC had already imposed a toll system on vessel traffic through Hormuz.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/is-iran-charging-a-toll-to-allow-oil-traffic-through-hormuz?traffic_source=rss"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "who": "Al Jazeera",
+      "what": "Gulf crude exports recovered above pre-war levels on several days in late September, per Kpler data, but Iran disputes t",
+      "url": "https://www.aljazeera.com/news/2026/10/5/is-iran-charging-a-toll-to-allow-oil-traffic-through-hormuz?traffic_source=rss",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "Gulf crude exports recovered above pre-war levels on several days in late September, per Kpler data, but Iran disputes t",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-says-us-forces-have-fled-1000km-irans-borders",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "At least 12 tankers were attacked in the Strait of Hormuz over the past week, with UKMTO logging at least one attack dai",
+      "url": "https://www.al-monitor.com/originals/2026/10/hormuz-tanker-attacks-mount-putting-oil-flows-risk",
+      "date": "5 Oct"
+    },
+    {
+      "who": "gCaptain",
+      "what": "At least 12 tankers were attacked in the Strait of Hormuz over the past week, with UKMTO logging at least one attack dai",
+      "url": "https://gcaptain.com/middle-east-oil-exports-top-pre-war-levels-for-part-of-september-but-tanker-attacks-increase/",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "On 5 October the IRGC twice hailed inbound tankers near Oman and ordered them to turn back or be targeted; both masters ",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-turns-back-tanker-strait-hormuz",
+      "date": "5 Oct"
+    },
+    {
+      "who": "gCaptain",
+      "what": "On 5 October the IRGC twice hailed inbound tankers near Oman and ordered them to turn back or be targeted; both masters ",
+      "url": "https://gcaptain.com/five-hormuz-incidents-reported-monday-as-tanker-attacks-mount/",
+      "date": "5 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "The ICC warns that if Hormuz shipping restrictions persist, grain prices in some regions could rise by up to 80%, driven",
+      "url": "https://tass.com/world/2197527",
+      "date": "5 Oct"
+    },
+    {
+      "who": "gCaptain",
+      "what": "Kuwait's oil output has recovered to about 75% of pre-war levels as more tankers risk Hormuz transits, says Kuwait Petro",
+      "url": "https://gcaptain.com/kuwait-oil-output-at-75-of-prewar-as-hormuz-transits-rise/",
+      "date": "5 Oct"
+    },
+    {
+      "who": "gCaptain",
+      "what": "LNG shipments through Hormuz are rebounding but remain more than 75% below pre-war levels.",
+      "url": "https://gcaptain.com/lng-trade-through-hormuz-extends-rebound-despite-shipping-risks/",
+      "date": "5 Oct"
+    },
+    {
+      "who": "The Hindu",
+      "what": "Kazimah III last seen discharging Kuwaiti crude at Ras Markaz, Oman, before being struck days later.",
+      "url": "https://www.thehindu.com/news/international/west-asian-crude-oil-exports-exceed-pre-war-levels-but-tanker-attacks-increase/article71545667.ece",
+      "date": "17 Sep"
+    },
+    {
+      "who": "gCaptain",
+      "what": "JMIC documents four confirmed tanker attacks in the strait, along the Omani side.",
+      "url": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-irgc-orders-ship-to-turn-back/",
+      "date": "2-3 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "A tanker transiting the strait is struck by an unknown projectile at 1637 UTC, causing an engine-room fire.",
+      "url": "https://tass.com/world/2197847",
+      "date": "5 Oct"
+    }
+  ],
+  "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds."
+}

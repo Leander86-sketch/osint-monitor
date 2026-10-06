@@ -1,0 +1,434 @@
+{
+  "slug": "gaza",
+  "updatedAt": "2026-10-06T16:59+02:00",
+  "anchors": [
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    },
+    {
+      "label": "BBC",
+      "match": "^BBC"
+    },
+    {
+      "label": "AFP",
+      "match": "AFP|France 24"
+    }
+  ],
+  "stand": "Three years after Hamas's 7 October 2023 attack and a year into the Trump-brokered ceasefire, Gaza's war has not ended. Israeli forces control roughly two-thirds of the enclave and strike almost daily; Gaza's Health Ministry says over 1,400 Palestinians have been killed since the October 2025 ceasefire. Hamas, estimated at 30,000 fighters, has not disarmed. Reconstruction and aid remain largely blocked; 1.2 million people face acute hunger and 1.65 million risk a fourth winter in tents. Netanyahu vows there will be no Hamas rule in Gaza, with Israeli elections set for 27 October.",
+  "figures": [
+    {
+      "label": "Gaza deaths since Oct 2025 ceasefire",
+      "value": "more than 1,440 killed",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al-Monitor",
+        "url": "https://www.al-monitor.com/originals/2026/10/oct-7-memorial-netanyahu-says-will-be-no-hamas-rule-gaza",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Israeli soldiers killed, total war",
+      "value": "almost 500",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al-Monitor",
+        "url": "https://www.al-monitor.com/originals/2026/10/three-years-after-oct-7-hamas-grip-gaza-tests-netanyahus-total-victory",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Israeli soldiers killed since ceasefire",
+      "value": "5",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al-Monitor (Reuters)",
+        "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed",
+        "date": "6 Oct"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "status": "reported",
+      "text": "Netanyahu vows there will be no Hamas rule in Gaza.",
+      "by": "Says: Israeli PM Benjamin Netanyahu, at Mount Herzl memorial.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3369831/there-will-be-no-hamas-rule-gaza-netanyahu-vows-october-7-memorial?utm_source=rss_feed",
+          "date": "5 Oct"
+        },
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/oct-7-memorial-netanyahu-says-will-be-no-hamas-rule-gaza",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Hamas has not disarmed one year into the ceasefire; Israel will not withdraw until it does.",
+      "by": "Says: Hamas agreed to hand weapons to a Palestinian technocratic government, rejects the word disarmament. Denies: Israel calls the plan unacceptable, insists on full disarmament first.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Israeli strikes have killed more than 1,440 Palestinians since the October 2025 ceasefire.",
+      "by": "Says: Gaza Health Ministry; figures regarded as reliable by the United Nations.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/oct-7-memorial-netanyahu-says-will-be-no-hamas-rule-gaza",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Israel says its post-ceasefire strikes target Hamas members trying to rearm and attack; Hamas denies this.",
+      "by": "Says: Israel. Denies: Hamas denies trying to rearm or attack.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Israel's military says 170 people killed in Gaza who presented themselves as journalists were in fact militants; CPJ says the two lists mostly do not match and is still reviewing the evidence.",
+      "by": "Says: Israeli military (Brig Gen Effie Defrin). Disputes: CPJ (Jodie Ginsberg) says it will assess the evidence independently; ~78 names appear on both lists.",
+      "sources": [
+        {
+          "name": "Folha SP",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/israel-lista-mortos-em-gaza-que-seriam-combatentes-disfarcados-de-jornalistas.shtml",
+          "date": "1 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "CPJ says Israel's military is responsible for the vast majority of journalist deaths worldwide since 2023.",
+      "by": "Says: Committee to Protect Journalists (CPJ).",
+      "sources": [
+        {
+          "name": "Folha SP",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/israel-lista-mortos-em-gaza-que-seriam-combatentes-disfarcados-de-jornalistas.shtml",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Aid agencies say Israel blocks essential shelter and reconstruction items as dual-use; Israel says it is meeting its obligations.",
+      "by": "Says: NRC and the Shelter Cluster say Israel blocks dual-use items. Denies: Israel/COGAT says about 600 trucks/day enter and it is meeting its obligations.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Former FAO official Benjamin Davis says he was fired for highlighting hunger in Gaza; FAO says he breached staff conduct rules.",
+      "by": "Says: Benjamin Davis says fired over Gaza hunger work and weekly vigils. Denies: FAO cites breaches of the civil-servant conduct code; director-general Qu Dongyu says he fires staff for political games.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/06/former-un-food-agency-official-fao-benjamin-davis-hunger-gaza",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Israeli Defence Minister Katz says there is no real solution for Gaza without Palestinian migration out of the territory.",
+      "by": "Says: Defence Minister Israel Katz. Denies: Israeli officials say there are no plans to remove the population by force; Trump backed away from the idea after international pushback.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The US Treasury sanctioned a Hamas commander and two France-based individuals and charities for raising funds for Hamas, including via crypto.",
+      "by": "Says: US Treasury Department (Secretary Scott Bessent).",
+      "sources": [
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/10/05/treasury-crackdown-exposes-crypto-s-role-in-usd2-million-hamas-fundraising-network",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "None of the war goals Israel's government set after 7 October has been achieved, despite Hamas's reduced but intact fighting strength.",
+      "by": "Says: Israeli intelligence assessments cited by Al-Monitor; no official Israeli government confirmation of the fighter estimate.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/three-years-after-oct-7-hamas-grip-gaza-tests-netanyahus-total-victory",
+          "date": "6 Oct"
+        }
+      ]
+    }
+  ],
+  "places": [],
+  "timeline": [
+    {
+      "date": "8 Jun 2024",
+      "kind": "media",
+      "text": "Israeli rescue operation in Nuseirat refugee camp kills 274 Palestinians and wounds 698, per Gaza's Health Ministry.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/features/2026/10/6/widowed-twice-a-gaza-mothers-story-of-loss-and-survival?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "8 Jul 2025",
+      "kind": "media",
+      "text": "A strike near al-Awda Hospital in Nuseirat kills a man identified by his widow as her second husband.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/features/2026/10/6/widowed-twice-a-gaza-mothers-story-of-loss-and-survival?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "1 Oct 2026",
+      "kind": "official",
+      "text": "Israeli military spokesman Effie Defrin announces 170 people posing as journalists in Gaza were militants.",
+      "sources": [
+        {
+          "name": "Folha SP",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/israel-lista-mortos-em-gaza-que-seriam-combatentes-disfarcados-de-jornalistas.shtml"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct 2026",
+      "kind": "official",
+      "text": "Netanyahu vows there will be no Hamas rule in Gaza at the Oct 7 memorial ceremony.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3369831/there-will-be-no-hamas-rule-gaza-netanyahu-vows-october-7-memorial?utm_source=rss_feed"
+        },
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/oct-7-memorial-netanyahu-says-will-be-no-hamas-rule-gaza"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct 2026",
+      "kind": "official",
+      "text": "US Treasury sanctions a Hamas commander and a France-based crypto fundraising network.",
+      "sources": [
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/10/05/treasury-crackdown-exposes-crypto-s-role-in-usd2-million-hamas-fundraising-network"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct 2023",
+      "kind": "official",
+      "text": "Hamas-led attack on Israel kills 1,221 people and 251 hostages are taken into Gaza.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/oct-7-memorial-netanyahu-says-will-be-no-hamas-rule-gaza"
+        }
+      ]
+    },
+    {
+      "date": "10 Oct 2025",
+      "kind": "official",
+      "text": "Ceasefire takes effect; remaining hostages released and hundreds of Palestinian prisoners freed.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed"
+        }
+      ]
+    },
+    {
+      "date": "23 Oct 2025",
+      "kind": "reaction",
+      "text": "A woman identifying as an Israeli diplomat photographs an FAO staff moment-of-silence vigil for Gaza dead and complains of harassment.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/06/former-un-food-agency-official-fao-benjamin-davis-hunger-gaza"
+        }
+      ]
+    },
+    {
+      "date": "27 Oct 2026",
+      "kind": "media",
+      "text": "Israel is due to hold its first general election since the 7 October 2023 attack.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed"
+        }
+      ]
+    },
+    {
+      "date": "22 Nov 2023",
+      "kind": "media",
+      "text": "Israeli strikes on residential buildings in Gaza City kill about 308 members of one extended family.",
+      "sources": [
+        {
+          "name": "Folha SP",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/assombrado-apos-perder-quase-toda-sua-familia-deslocado-de-gaza-ainda-sonha-em-voltar.shtml"
+        }
+      ]
+    },
+    {
+      "date": "Sept 2025",
+      "kind": "reaction",
+      "text": "An FAO seminar on hunger in Gaza draws a complaint from the Israeli mission to the FAO.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/06/former-un-food-agency-official-fao-benjamin-davis-hunger-gaza"
+        }
+      ]
+    },
+    {
+      "date": "Jan 2026",
+      "kind": "official",
+      "text": "The National Committee for the Administration of Gaza is appointed, led by Ali Shaath.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed"
+        }
+      ]
+    },
+    {
+      "date": "Aug 2026",
+      "kind": "official",
+      "text": "IPC report finds Gaza aid trucks averaged 227/day since the ceasefire, under half the required minimum.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed"
+        }
+      ]
+    },
+    {
+      "date": "Sept 2026",
+      "kind": "official",
+      "text": "The Board of Peace unveils a $2.45 billion plan to begin rebuilding Gaza.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed"
+        }
+      ]
+    },
+    {
+      "date": "Sept 2026",
+      "kind": "official",
+      "text": "FAO director-general Qu Dongyu publicly threatens to fire more staff for what he calls political activism on human rights.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/06/former-un-food-agency-official-fao-benjamin-davis-hunger-gaza"
+        }
+      ]
+    },
+    {
+      "date": "29 Sept 2026",
+      "kind": "media",
+      "text": "Benjamin Davis's FAO contract is not renewed; he leaves the Rome headquarters after 26 years.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/06/former-un-food-agency-official-fao-benjamin-davis-hunger-gaza"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "who": "SCMP",
+      "what": "Netanyahu vows there will be no Hamas rule in Gaza.",
+      "url": "https://www.scmp.com/news/world/middle-east/article/3369831/there-will-be-no-hamas-rule-gaza-netanyahu-vows-october-7-memorial?utm_source=rss_feed",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Netanyahu vows there will be no Hamas rule in Gaza.",
+      "url": "https://www.al-monitor.com/originals/2026/10/oct-7-memorial-netanyahu-says-will-be-no-hamas-rule-gaza",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al-Monitor (Reuters)",
+      "what": "Hamas has not disarmed one year into the ceasefire; Israel will not withdraw until it does.",
+      "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Folha SP",
+      "what": "Israel's military says 170 people killed in Gaza who presented themselves as journalists were in fact militants; CPJ say",
+      "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/israel-lista-mortos-em-gaza-que-seriam-combatentes-disfarcados-de-jornalistas.shtml",
+      "date": "1 Oct"
+    },
+    {
+      "who": "Guardian World",
+      "what": "Former FAO official Benjamin Davis says he was fired for highlighting hunger in Gaza; FAO says he breached staff conduct",
+      "url": "https://www.theguardian.com/world/2026/oct/06/former-un-food-agency-official-fao-benjamin-davis-hunger-gaza",
+      "date": "6 Oct"
+    },
+    {
+      "who": "CoinDesk",
+      "what": "The US Treasury sanctioned a Hamas commander and two France-based individuals and charities for raising funds for Hamas,",
+      "url": "https://www.coindesk.com/policy/2026/10/05/treasury-crackdown-exposes-crypto-s-role-in-usd2-million-hamas-fundraising-network",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "None of the war goals Israel's government set after 7 October has been achieved, despite Hamas's reduced but intact figh",
+      "url": "https://www.al-monitor.com/originals/2026/10/three-years-after-oct-7-hamas-grip-gaza-tests-netanyahus-total-victory",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Israeli rescue operation in Nuseirat refugee camp kills 274 Palestinians and wounds 698, per Gaza's Health Ministry.",
+      "url": "https://www.aljazeera.com/features/2026/10/6/widowed-twice-a-gaza-mothers-story-of-loss-and-survival?traffic_source=rss",
+      "date": "8 Jun 2024"
+    },
+    {
+      "who": "Folha SP",
+      "what": "Israeli strikes on residential buildings in Gaza City kill about 308 members of one extended family.",
+      "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/assombrado-apos-perder-quase-toda-sua-familia-deslocado-de-gaza-ainda-sonha-em-voltar.shtml",
+      "date": "22 Nov 2023"
+    }
+  ],
+  "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds."
+}

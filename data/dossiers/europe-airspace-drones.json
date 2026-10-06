@@ -64,7 +64,7 @@
   ],
   "claims": [
     {
-      "status": "confirmed",
+      "status": "reported",
       "text": "A drone strike sank the Turkish-flagged grain carrier Royad Mammadov near Romania, killing two and leaving 11 rescued.",
       "by": "Says: Romania's Ministry of Internal Affairs",
       "sources": [
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "status": "confirmed",
+      "status": "reported",
       "text": "Zelensky says more than 12 anti-drone turrets have been installed in Kyiv, protecting against Shahed drones.",
       "by": "Says: President Volodymyr Zelensky",
       "sources": [
@@ -172,7 +172,7 @@
       ]
     },
     {
-      "status": "confirmed",
+      "status": "reported",
       "text": "Zelensky discussed strengthening defences against Russian Shahed drones with Dutch PM Rob Jetten.",
       "by": "Says: President Volodymyr Zelensky",
       "sources": [

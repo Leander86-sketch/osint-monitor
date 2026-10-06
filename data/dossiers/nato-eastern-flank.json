@@ -25,7 +25,7 @@
     {
       "status": "confirmed",
       "text": "Putin warns Russia could deploy all its weapons in response to a direct attack on Russia, including Kaliningrad.",
-      "by": "Says: Vladimir Putin, at the Valdai Discussion Club. Denies: n/a.",
+      "by": "Says: Vladimir Putin, at the Valdai Discussion Club.",
       "sources": [
         {
           "name": "The Hindu",
@@ -52,9 +52,9 @@
       ]
     },
     {
-      "status": "confirmed",
+      "status": "reported",
       "text": "Lithuania's parliament voted to remove the constitutional ban on nuclear weapons and foreign military bases; a second vote is required in January.",
-      "by": "Says: Seimas Speaker Juozas Olekas. Denies: n/a.",
+      "by": "Says: Seimas Speaker Juozas Olekas.",
       "sources": [
         {
           "name": "TASS",
@@ -64,9 +64,9 @@
       ]
     },
     {
-      "status": "confirmed",
+      "status": "reported",
       "text": "The Kremlin says Russia will be forced to take retaliatory measures if nuclear weapons or a NATO base are deployed in Lithuania.",
-      "by": "Says: Kremlin spokesman Dmitry Peskov. Denies: n/a.",
+      "by": "Says: Kremlin spokesman Dmitry Peskov.",
       "sources": [
         {
           "name": "TASS",
@@ -78,7 +78,7 @@
     {
       "status": "reported",
       "text": "Estonia has adopted an 'active defense' strategy, relocating its main brigade toward the Russian border and buying long-range strike weapons.",
-      "by": "Says: Estonian defence officials and military intelligence, cited by the Financial Times. Denies: n/a.",
+      "by": "Says: Estonian defence officials and military intelligence, cited by the Financial Times.",
       "sources": [
         {
           "name": "ERR News (citing FT)",
@@ -95,7 +95,7 @@
     {
       "status": "disputed",
       "text": "The Kremlin downplays Estonia's troop shift, saying Russian intelligence already monitors border movements.",
-      "by": "Says: Kremlin spokesman Dmitry Peskov. Denies: n/a (brushes aside the FT report rather than denying it factually).",
+      "by": "Says: Kremlin spokesman Dmitry Peskov.  (brushes aside the FT report rather than denying it factually).",
       "sources": [
         {
           "name": "Moscow Times",
@@ -107,7 +107,7 @@
     {
       "status": "disputed",
       "text": "Putin dismisses Estonian government statements about readiness to fight Russia as absurd.",
-      "by": "Says: Vladimir Putin. Denies: n/a — mocks rather than factually denies.",
+      "by": "Says: Vladimir Putin.  — mocks rather than factually denies.",
       "sources": [
         {
           "name": "TASS",
@@ -119,7 +119,7 @@
     {
       "status": "reported",
       "text": "Trump says the US will consider a permanent military base in Lithuania.",
-      "by": "Says: US President Donald Trump, responding to Lithuania's invitation. Denies: n/a.",
+      "by": "Says: US President Donald Trump, responding to Lithuania's invitation.",
       "sources": [
         {
           "name": "LRT",
@@ -131,7 +131,7 @@
     {
       "status": "reported",
       "text": "Lithuania says it is ready to cover the costs of a permanent US base.",
-      "by": "Says: Lithuanian PM Mindaugas Sinkevicius. Denies: n/a.",
+      "by": "Says: Lithuanian PM Mindaugas Sinkevicius.",
       "sources": [
         {
           "name": "Defense News",
@@ -143,7 +143,7 @@
     {
       "status": "reported",
       "text": "Poland and Lithuania are jointly preparing cross-border evacuation plans for up to a million Baltic residents in case of war.",
-      "by": "Says: Lithuanian interior minister Martynas Katelynas and Polish counterpart Marcin Kierwiński. Denies: n/a.",
+      "by": "Says: Lithuanian interior minister Martynas Katelynas and Polish counterpart Marcin Kierwiński.",
       "sources": [
         {
           "name": "Notes from Poland",
@@ -155,7 +155,7 @@
     {
       "status": "confirmed",
       "text": "Germany's foreign intelligence chief warns Germany faces a real risk of low-intensity Russian military activity in the Baltic states.",
-      "by": "Says: BND chief Martin Jaeger. Denies: n/a.",
+      "by": "Says: BND chief Martin Jaeger.",
       "sources": [
         {
           "name": "Moscow Times",

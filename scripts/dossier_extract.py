@@ -95,6 +95,9 @@ updates to a hand-compiled dossier. Rules, strictly:
 5. Figures: only propose a figure if an article states the number; say which source and date.
 6. Dates in the timeline as "6 Oct" style. Prefer the article's own dating of events over its publication date.
 7. Be sparse and precise. Short sentences. Name the actor. British spelling. English output.
+9. A claim whose only sources are state media (TASS, RIA, Sputnik, RT, Xinhua, Global Times, CGTN, Press TV, IRNA,
+   Anadolu, KCNA, Ukrinform) is at most "reported", never "confirmed", even if it quotes an official.
+10. In "by": write "Says: ..." and add "Denies: ..." only when someone actually denies. Never write "Denies: n/a".
 8. Output ONE JSON object, nothing else, with this shape:
 {"summary": "2-3 sentences: what changed since the dossier was last updated",
  "stand": "a proposed replacement paragraph for the stand (max 90 words), or null if no change needed",

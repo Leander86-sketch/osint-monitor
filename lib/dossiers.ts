@@ -14,9 +14,12 @@ export interface DossierClaim { status: ClaimStatus; text: string; by: string; s
 export interface DossierPlace { name: string; where: string; role: string; lat: number; lon: number; kind: PlaceKind }
 export type EventKind = 'official' | 'media' | 'denial' | 'factcheck' | 'reaction';
 export interface DossierEvent { date: string; kind: EventKind; text: string; sources: DossierSource[] }
+export interface DossierAnchor { label: string; match: string }
 export interface Dossier {
   slug: string;
   updatedAt: string;
+  /** ankerbronnen: hun nieuwste koppen gelden als de laatste stand (regex op bronnaam) */
+  anchors?: DossierAnchor[];
   stand: string;
   figures: DossierFigure[];
   claims: DossierClaim[];

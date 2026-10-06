@@ -54,6 +54,11 @@ export default function SituationDossier({ d, s, items }: { d: Dossier | null; s
   const pinPoints: MapPoint[] = (d?.places || []).map((p, i) => ({ id: `p-${i}`, lat: p.lat, lon: p.lon, color: KIND[p.kind].color, big: p.kind === 'event' || p.kind === 'site', approx: false, label: `${p.name} — ${p.role}` }));
   const byView = (v: View) => items.filter(i => viewOf(i) === v).slice(0, 3);
   const last24 = items.filter(i => now - new Date(i.pubDate).getTime() < 86400000).length;
+  // ankerbronnen: per dossier instelbaar (WHO, Reuters, AP); zonder dossier de wires. Hun nieuwste kop = de laatste
+  // stand volgens die bron — een regel, geen weging. Daarom staat deze band boven het grootboek.
+  const anchors = d?.anchors?.length ? d.anchors : [{ label: 'Reuters', match: '^Reuters' }, { label: 'AP', match: '^AP News' }, { label: 'BBC', match: '^BBC' }, { label: 'AFP', match: 'AFP|France 24' }];
+  const anchorRows = anchors.map(a => { const re = new RegExp(a.match, 'i'); const hits = items.filter(i => re.test(i.source)); return { ...a, hits, latest: hits[0] }; });
+  const anyAnchor = anchorRows.some(a => a.hits.length > 0);
 
   return (
     <section className="mt-7">
@@ -74,6 +79,20 @@ export default function SituationDossier({ d, s, items }: { d: Dossier | null; s
           <Label auto>Named most</Label>
           <ol className="space-y-1">{mentionList.slice(0, 5).map(m => <li key={m.name} className="flex items-center gap-2 text-[11px] font-mono"><span className="text-[#ddd] truncate">{m.name}</span><span className="flex-1 h-px bg-[#1a1a1a]" /><span className="text-[#888] tabular-nums">{m.n}</span></li>)}{mentionList.length === 0 && <li className="text-[10px] font-mono text-[#555]">no places recognised in the headlines</li>}</ol>
         </div>
+      </div>
+
+      {/* ── ankerlijn: automatisch — de laatste kop van elke ankerbron ──────────────── */}
+      <div className="mt-3 border border-[#1a1a1a] bg-[#080808] px-5 py-4" style={{ boxShadow: 'inset 3px 0 0 #60a5fa' }}>
+        <Label auto right="the newest headline from each anchor source is the latest word from that source — a rule, not a judgement">Anchor line · {anchors.map(a => a.label).join(' · ')}</Label>
+        <div className="grid md:grid-cols-3 gap-x-6 gap-y-3">
+          {anchorRows.map(a => (
+            <div key={a.label} className="min-w-0">
+              <div className="flex items-baseline gap-2 text-[10px] font-mono uppercase tracking-[0.18em]"><span className="font-bold text-[#8ab4f8]">{a.label}</span><span className="text-[#555]">{a.hits.length} report{a.hits.length === 1 ? '' : 's'}{a.latest ? ` · ${ago(a.latest.pubDate)}` : ''}</span></div>
+              {a.latest ? <a href={a.latest.link} target="_blank" rel="noopener noreferrer" className="block mt-1 text-[14px] leading-snug text-[#eee] hover:text-[#e8760a]" style={sans}>{a.latest.title.replace(/\s+-\s+(Reuters|AP News|BBC|AP)$/i, '')}</a> : <div className="mt-1 text-[12px] font-mono text-[#555]">nothing from this source yet</div>}
+              {a.latest && <div className="mt-0.5 text-[9px] font-mono text-[#666]">{a.latest.source}</div>}
+            </div>))}
+        </div>
+        {!anyAnchor && <div className="text-[11px] font-mono text-[#555]">No anchor source has reported on this situation yet.</div>}
       </div>
 
       {d && (<>

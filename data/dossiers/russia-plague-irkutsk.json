@@ -1,49 +1,450 @@
 {
   "slug": "russia-plague-irkutsk",
-  "updatedAt": "2026-10-06T15:40:00+02:00",
+  "updatedAt": "2026-10-06T15:55:00+02:00",
+  "anchors": [
+    {
+      "label": "WHO",
+      "match": "^WHO"
+    },
+    {
+      "label": "Reuters",
+      "match": "^Reuters"
+    },
+    {
+      "label": "AP",
+      "match": "^AP News"
+    }
+  ],
   "stand": "A laboratory technician of the Irkutsk Anti-Plague Institute died in a hospital in Shelekhov, Siberia, in the night of 1–2 October, two days after being admitted with severe pneumonia. Russian media and Telegram channels call it pneumonic plague; Russia's health agency Rospotrebnadzor calls it \"pneumonia of unknown etiology\" and says there was no lab accident. No plague case has been confirmed. About 200 contacts are under observation and none has symptoms. The WHO rates the risk \"moderate to low\" for Irkutsk and \"very low\" for Europe.",
   "figures": [
-    { "label": "confirmed plague cases", "value": "0", "color": "#4ade80", "src": { "name": "Rospotrebnadzor via Interfax", "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872", "date": "5 Oct" } },
-    { "label": "death, cause unconfirmed", "value": "1", "color": "#ef4444", "src": { "name": "Meduza", "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable", "date": "5 Oct" } },
-    { "label": "contacts under observation (media count)", "value": "~197", "color": "#f59e0b", "src": { "name": "Izvestia via Meduza", "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable", "date": "2 Oct" } },
-    { "label": "WHO risk for Europe", "value": "very low", "color": "#4ade80", "src": { "name": "WHO via The Guardian", "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who", "date": "6 Oct" } }
+    {
+      "label": "confirmed plague cases",
+      "value": "0",
+      "color": "#4ade80",
+      "src": {
+        "name": "Rospotrebnadzor via Interfax",
+        "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "death, cause unconfirmed",
+      "value": "1",
+      "color": "#ef4444",
+      "src": {
+        "name": "Meduza",
+        "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "contacts under observation (media count)",
+      "value": "~197",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Izvestia via Meduza",
+        "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable",
+        "date": "2 Oct"
+      }
+    },
+    {
+      "label": "WHO risk for Europe",
+      "value": "very low",
+      "color": "#4ade80",
+      "src": {
+        "name": "WHO via The Guardian",
+        "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who",
+        "date": "6 Oct"
+      }
+    }
   ],
   "claims": [
-    { "status": "confirmed", "text": "A technician of the Irkutsk Anti-Plague Institute was hospitalised in Shelekhov on 29 Sep with severe pneumonia and died two days later.", "by": "Rospotrebnadzor; Governor Kobzev; WHO", "sources": [{ "name": "Moscow Times", "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872", "date": "5 Oct" }, { "name": "The Guardian", "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who", "date": "6 Oct" }] },
-    { "status": "confirmed", "text": "All close contacts are under medical observation with daily testing; the tests found 2 COVID-19 and 2 rhinovirus infections and nothing else. None has symptoms.", "by": "Rospotrebnadzor; WHO spokesperson", "sources": [{ "name": "Moscow Times", "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872", "date": "5 Oct" }, { "name": "The Guardian", "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who", "date": "6 Oct" }] },
-    { "status": "confirmed", "text": "WHO risk assessment: \"moderate to low\" for Irkutsk, \"low\" for the rest of Russia, \"very low\" for Europe. No sign of a wider outbreak.", "by": "WHO (Christian Lindmeier, Geneva)", "sources": [{ "name": "The Guardian", "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who", "date": "6 Oct" }] },
-    { "status": "confirmed", "text": "Masks mandatory at the Irkutsk Aluminium Plant in Shelekhov since 3 Oct; several Irkutsk hospitals restricted access; ~60 institute staff kept inside for testing.", "by": "Plant director; People of Baikal; Russian media", "sources": [{ "name": "Meduza", "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable", "date": "5 Oct" }, { "name": "The Guardian", "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who", "date": "6 Oct" }] },
-    { "status": "disputed", "text": "The cause of death was pneumonic plague.", "by": "Says: Russian media, Telegram channels, head of Buryatia (later softened to \"may have\"). Denies: Rospotrebnadzor — \"pneumonia of unknown etiology\", no work-related microorganisms in her samples.", "sources": [{ "name": "Meduza", "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable", "date": "5 Oct" }, { "name": "El País", "url": "https://english.elpais.com/international/2026-10-06/what-authorities-have-said-about-plague-alert-after-death-of-a-laboratory-worker-in-russia.html", "date": "6 Oct" }] },
-    { "status": "disputed", "text": "She fell ill after breaking a test tube holding the plague agent, around 25 Sep.", "by": "Says: Russian media, X posts. Denies: Rospotrebnadzor — two commissions found \"no evidence of an accident involving pathogenic microorganisms\". A second media account says she fell ill after a trip to Thailand.", "sources": [{ "name": "DW fact check", "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752", "date": "6 Oct" }, { "name": "Meduza", "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable", "date": "5 Oct" }] },
-    { "status": "reported", "text": "About 197 contacts were quarantined (Izvestia); 189 hospitalised (REN TV). Authorities say \"nearly 200\" were tested but publish no figure.", "by": "Izvestia, REN TV via Meduza, The Insider", "sources": [{ "name": "Meduza", "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable", "date": "5 Oct" }, { "name": "El País", "url": "https://english.elpais.com/international/2026-10-06/what-authorities-have-said-about-plague-alert-after-death-of-a-laboratory-worker-in-russia.html", "date": "6 Oct" }] },
-    { "status": "reported", "text": "Her name and age: Darya Shipilova, 28 (El País: 27). The date of death: 1 Oct (Russian media) or the night into 2 Oct (WHO via CBS, El País). Officials have confirmed none of this.", "by": "The Guardian, Meduza, El País", "sources": [{ "name": "The Guardian", "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who", "date": "6 Oct" }, { "name": "El País", "url": "https://english.elpais.com/international/2026-10-06/what-authorities-have-said-about-plague-alert-after-death-of-a-laboratory-worker-in-russia.html", "date": "6 Oct" }] },
-    { "status": "debunked", "text": "\"She infected several hundred people\" (X post, 320,000 views).", "by": "DW fact check: unproven; no contact has symptoms or a positive test.", "sources": [{ "name": "DW fact check", "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752", "date": "6 Oct" }] },
-    { "status": "debunked", "text": "\"The WHO updated its plague fact sheet the day she was admitted — they know something.\"", "by": "DW fact check: the 29 Sep update was part of a scheduled WHO publication cycle; the previous version dated from 2022.", "sources": [{ "name": "DW fact check", "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752", "date": "6 Oct" }] },
-    { "status": "debunked", "text": "Video of \"the plague marching across Russia\" (1.7 M views).", "by": "DW fact check: filmed 31 Aug in Kabardino-Balkaria, 6,000 km away, where the pathogen was found in squirrels.", "sources": [{ "name": "DW fact check", "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752", "date": "6 Oct" }] }
+    {
+      "status": "confirmed",
+      "text": "A technician of the Irkutsk Anti-Plague Institute was hospitalised in Shelekhov on 29 Sep with severe pneumonia and died two days later.",
+      "by": "Rospotrebnadzor; Governor Kobzev; WHO",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872",
+          "date": "5 Oct"
+        },
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "All close contacts are under medical observation with daily testing; the tests found 2 COVID-19 and 2 rhinovirus infections and nothing else. None has symptoms.",
+      "by": "Rospotrebnadzor; WHO spokesperson",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872",
+          "date": "5 Oct"
+        },
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "WHO risk assessment: \"moderate to low\" for Irkutsk, \"low\" for the rest of Russia, \"very low\" for Europe. No sign of a wider outbreak.",
+      "by": "WHO (Christian Lindmeier, Geneva)",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Masks mandatory at the Irkutsk Aluminium Plant in Shelekhov since 3 Oct; several Irkutsk hospitals restricted access; ~60 institute staff kept inside for testing.",
+      "by": "Plant director; People of Baikal; Russian media",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable",
+          "date": "5 Oct"
+        },
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "The cause of death was pneumonic plague.",
+      "by": "Says: Russian media, Telegram channels, head of Buryatia (later softened to \"may have\"). Denies: Rospotrebnadzor — \"pneumonia of unknown etiology\", no work-related microorganisms in her samples.",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable",
+          "date": "5 Oct"
+        },
+        {
+          "name": "El País",
+          "url": "https://english.elpais.com/international/2026-10-06/what-authorities-have-said-about-plague-alert-after-death-of-a-laboratory-worker-in-russia.html",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "She fell ill after breaking a test tube holding the plague agent, around 25 Sep.",
+      "by": "Says: Russian media, X posts. Denies: Rospotrebnadzor — two commissions found \"no evidence of an accident involving pathogenic microorganisms\". A second media account says she fell ill after a trip to Thailand.",
+      "sources": [
+        {
+          "name": "DW fact check",
+          "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752",
+          "date": "6 Oct"
+        },
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "About 197 contacts were quarantined (Izvestia); 189 hospitalised (REN TV). Authorities say \"nearly 200\" were tested but publish no figure.",
+      "by": "Izvestia, REN TV via Meduza, The Insider",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable",
+          "date": "5 Oct"
+        },
+        {
+          "name": "El País",
+          "url": "https://english.elpais.com/international/2026-10-06/what-authorities-have-said-about-plague-alert-after-death-of-a-laboratory-worker-in-russia.html",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Her name and age: Darya Shipilova, 28 (El País: 27). The date of death: 1 Oct (Russian media) or the night into 2 Oct (WHO via CBS, El País). Officials have confirmed none of this.",
+      "by": "The Guardian, Meduza, El País",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who",
+          "date": "6 Oct"
+        },
+        {
+          "name": "El País",
+          "url": "https://english.elpais.com/international/2026-10-06/what-authorities-have-said-about-plague-alert-after-death-of-a-laboratory-worker-in-russia.html",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "debunked",
+      "text": "\"She infected several hundred people\" (X post, 320,000 views).",
+      "by": "DW fact check: unproven; no contact has symptoms or a positive test.",
+      "sources": [
+        {
+          "name": "DW fact check",
+          "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "debunked",
+      "text": "\"The WHO updated its plague fact sheet the day she was admitted — they know something.\"",
+      "by": "DW fact check: the 29 Sep update was part of a scheduled WHO publication cycle; the previous version dated from 2022.",
+      "sources": [
+        {
+          "name": "DW fact check",
+          "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "debunked",
+      "text": "Video of \"the plague marching across Russia\" (1.7 M views).",
+      "by": "DW fact check: filmed 31 Aug in Kabardino-Balkaria, 6,000 km away, where the pathogen was found in squirrels.",
+      "sources": [
+        {
+          "name": "DW fact check",
+          "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752",
+          "date": "6 Oct"
+        }
+      ]
+    }
   ],
-  "map": { "center": [52.1, 104.9], "zoom": 8 },
+  "map": {
+    "center": [
+      52.1,
+      104.9
+    ],
+    "zoom": 8
+  },
   "places": [
-    { "name": "Shelekhov district hospital", "where": "Shelekhov", "role": "Admitted 29 Sep, died there; inpatient unit quarantined", "lat": 52.213, "lon": 104.098, "kind": "event" },
-    { "name": "Irkutsk Anti-Plague Research Institute", "where": "Irkutsk", "role": "Her workplace; ~60 staff kept inside for testing", "lat": 52.273, "lon": 104.282, "kind": "site" },
-    { "name": "Irkutsk hospitals No. 1, 3, 10, children's, maternity", "where": "Irkutsk", "role": "Access restrictions reported 4 Oct; maternity hospital screens patients", "lat": 52.295, "lon": 104.31, "kind": "measure" },
-    { "name": "Irkutsk Aluminium Plant", "where": "Shelekhov", "role": "Masks mandatory from 3 Oct", "lat": 52.196, "lon": 104.07, "kind": "measure" },
-    { "name": "Baikalsk", "where": "Irkutsk region", "role": "Urged residents not to travel to Shelekhov (3 Oct); post deleted", "lat": 51.52, "lon": 104.14, "kind": "context" },
-    { "name": "Ulan-Ude", "where": "Buryatia", "role": "Head of the republic said \"died of plague\", then \"may have\"", "lat": 51.83, "lon": 107.6, "kind": "context" },
-    { "name": "Dzhily-Su", "where": "Kabardino-Balkaria, 6,000 km west", "role": "Source of the viral video; unrelated", "lat": 43.43, "lon": 42.62, "kind": "unrelated" }
+    {
+      "name": "Shelekhov district hospital",
+      "where": "Shelekhov",
+      "role": "Admitted 29 Sep, died there; inpatient unit quarantined",
+      "lat": 52.213,
+      "lon": 104.098,
+      "kind": "event"
+    },
+    {
+      "name": "Irkutsk Anti-Plague Research Institute",
+      "where": "Irkutsk",
+      "role": "Her workplace; ~60 staff kept inside for testing",
+      "lat": 52.273,
+      "lon": 104.282,
+      "kind": "site"
+    },
+    {
+      "name": "Irkutsk hospitals No. 1, 3, 10, children's, maternity",
+      "where": "Irkutsk",
+      "role": "Access restrictions reported 4 Oct; maternity hospital screens patients",
+      "lat": 52.295,
+      "lon": 104.31,
+      "kind": "measure"
+    },
+    {
+      "name": "Irkutsk Aluminium Plant",
+      "where": "Shelekhov",
+      "role": "Masks mandatory from 3 Oct",
+      "lat": 52.196,
+      "lon": 104.07,
+      "kind": "measure"
+    },
+    {
+      "name": "Baikalsk",
+      "where": "Irkutsk region",
+      "role": "Urged residents not to travel to Shelekhov (3 Oct); post deleted",
+      "lat": 51.52,
+      "lon": 104.14,
+      "kind": "context"
+    },
+    {
+      "name": "Ulan-Ude",
+      "where": "Buryatia",
+      "role": "Head of the republic said \"died of plague\", then \"may have\"",
+      "lat": 51.83,
+      "lon": 107.6,
+      "kind": "context"
+    },
+    {
+      "name": "Dzhily-Su",
+      "where": "Kabardino-Balkaria, 6,000 km west",
+      "role": "Source of the viral video; unrelated",
+      "lat": 43.43,
+      "lon": 42.62,
+      "kind": "unrelated"
+    }
   ],
   "timeline": [
-    { "date": "~25 Sep", "kind": "media", "text": "Media: she breaks a test tube holding the plague agent. Rospotrebnadzor later: no accident.", "sources": [{ "name": "DW fact check", "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752" }] },
-    { "date": "29 Sep", "kind": "official", "text": "Admitted to the Shelekhov district hospital with severe pneumonia.", "sources": [{ "name": "Meduza", "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable" }] },
-    { "date": "1–2 Oct", "kind": "official", "text": "She dies of severe pneumonia. FSB officers reportedly escort ambulances taking her contacts for examination.", "sources": [{ "name": "Moscow Times", "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872" }, { "name": "Meduza", "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable" }] },
-    { "date": "2 Oct", "kind": "media", "text": "Russian media and Telegram report pneumonic plague. Izvestia: 197 quarantined. Governor Kobzev meets chief sanitary doctor Popova over \"a suspected case of a particularly dangerous infection\".", "sources": [{ "name": "Meduza", "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable" }] },
-    { "date": "3 Oct", "kind": "media", "text": "Masks mandatory at the aluminium plant. Baikalsk warns against travel to Shelekhov, then deletes the post. REN TV deletes five posts.", "sources": [{ "name": "Meduza", "url": "https://meduza.io/en/news/2026/10/05/officials-in-russia-s-irkutsk-region-advised-against-traveling-to-a-town-where-a-hospital-patient-may-have-died-of-plague-they-later-deleted-the-post" }] },
-    { "date": "4 Oct", "kind": "denial", "text": "Rospotrebnadzor: situation \"stable\", \"pneumonia of unknown cause\", no microorganisms linked to her work. People of Baikal: three-week quarantines at Irkutsk hospitals.", "sources": [{ "name": "Meduza", "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable" }] },
-    { "date": "4 Oct", "kind": "reaction", "text": "White House monitoring the reports, \"assessing options\".", "sources": [{ "name": "Axios", "url": "https://www.axios.com/2026/10/04/russia-plague-outbreak-white-house-us" }] },
-    { "date": "5 Oct", "kind": "denial", "text": "Rospotrebnadzor: no lab accident; contacts' daily tests show 2 COVID-19 and 2 rhinovirus. Kremlin refers all questions to Rospotrebnadzor.", "sources": [{ "name": "Moscow Times", "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872" }, { "name": "CBS News", "url": "https://www.cbsnews.com/news/russia-plague-lab-death-pneumonia-of-unknown-origin/" }] },
-    { "date": "5 Oct", "kind": "reaction", "text": "Rubio: \"not cause for alarm, but cause for focus\". Trump: \"We'll help.\" EU Commission monitoring \"very closely\".", "sources": [{ "name": "Moscow Times", "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872" }, { "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/10/5/trump-says-us-ready-to-aid-russia-with-plague-outbreak-in-siberia" }] },
-    { "date": "6 Oct", "kind": "official", "text": "WHO (Geneva): risk \"moderate to low\" for Irkutsk, \"low\" for Russia, \"very low\" for Europe; no contact symptomatic.", "sources": [{ "name": "The Guardian", "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who" }] },
-    { "date": "6 Oct", "kind": "reaction", "text": "Rubio: \"incumbent upon Russia to share more information\". Peskov: rely on Rospotrebnadzor, not rumours. Rospotrebnadzor offers the US help with its own measles and plague cases. Latvia monitoring.", "sources": [{ "name": "CBS News", "url": "https://www.cbsnews.com/news/russia-pneumonic-plague-lab-worker-death-rubio-us-reaction/" }, { "name": "BNN", "url": "https://bnn-news.com/social/following-reports-of-possible-plague-case-latvian-health-authorities-closely-monitoring-situation-u85wjqt" }] },
-    { "date": "6 Oct", "kind": "factcheck", "text": "DW: lab-accident claim unproven; \"hundreds infected\" and \"WHO fact-sheet\" claims misleading; viral video is from Kabardino-Balkaria. Moscow Times: Irkutsk maternity hospital screens patients.", "sources": [{ "name": "DW", "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752" }, { "name": "Moscow Times", "url": "https://www.themoscowtimes.com/2026/10/06/irkutsk-maternity-hospital-screens-patients-for-plague-after-lab-workers-death-a93887" }] }
+    {
+      "date": "~25 Sep",
+      "kind": "media",
+      "text": "Media: she breaks a test tube holding the plague agent. Rospotrebnadzor later: no accident.",
+      "sources": [
+        {
+          "name": "DW fact check",
+          "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752"
+        }
+      ]
+    },
+    {
+      "date": "29 Sep",
+      "kind": "official",
+      "text": "Admitted to the Shelekhov district hospital with severe pneumonia.",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable"
+        }
+      ]
+    },
+    {
+      "date": "1–2 Oct",
+      "kind": "official",
+      "text": "She dies of severe pneumonia. FSB officers reportedly escort ambulances taking her contacts for examination.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872"
+        },
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable"
+        }
+      ]
+    },
+    {
+      "date": "2 Oct",
+      "kind": "media",
+      "text": "Russian media and Telegram report pneumonic plague. Izvestia: 197 quarantined. Governor Kobzev meets chief sanitary doctor Popova over \"a suspected case of a particularly dangerous infection\".",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable"
+        }
+      ]
+    },
+    {
+      "date": "3 Oct",
+      "kind": "media",
+      "text": "Masks mandatory at the aluminium plant. Baikalsk warns against travel to Shelekhov, then deletes the post. REN TV deletes five posts.",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/news/2026/10/05/officials-in-russia-s-irkutsk-region-advised-against-traveling-to-a-town-where-a-hospital-patient-may-have-died-of-plague-they-later-deleted-the-post"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "denial",
+      "text": "Rospotrebnadzor: situation \"stable\", \"pneumonia of unknown cause\", no microorganisms linked to her work. People of Baikal: three-week quarantines at Irkutsk hospitals.",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "reaction",
+      "text": "White House monitoring the reports, \"assessing options\".",
+      "sources": [
+        {
+          "name": "Axios",
+          "url": "https://www.axios.com/2026/10/04/russia-plague-outbreak-white-house-us"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "denial",
+      "text": "Rospotrebnadzor: no lab accident; contacts' daily tests show 2 COVID-19 and 2 rhinovirus. Kremlin refers all questions to Rospotrebnadzor.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872"
+        },
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/news/russia-plague-lab-death-pneumonia-of-unknown-origin/"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "reaction",
+      "text": "Rubio: \"not cause for alarm, but cause for focus\". Trump: \"We'll help.\" EU Commission monitoring \"very closely\".",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/5/trump-says-us-ready-to-aid-russia-with-plague-outbreak-in-siberia"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "WHO (Geneva): risk \"moderate to low\" for Irkutsk, \"low\" for Russia, \"very low\" for Europe; no contact symptomatic.",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "reaction",
+      "text": "Rubio: \"incumbent upon Russia to share more information\". Peskov: rely on Rospotrebnadzor, not rumours. Rospotrebnadzor offers the US help with its own measles and plague cases. Latvia monitoring.",
+      "sources": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/news/russia-pneumonic-plague-lab-worker-death-rubio-us-reaction/"
+        },
+        {
+          "name": "BNN",
+          "url": "https://bnn-news.com/social/following-reports-of-possible-plague-case-latvian-health-authorities-closely-monitoring-situation-u85wjqt"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "factcheck",
+      "text": "DW: lab-accident claim unproven; \"hundreds infected\" and \"WHO fact-sheet\" claims misleading; viral video is from Kabardino-Balkaria. Moscow Times: Irkutsk maternity hospital screens patients.",
+      "sources": [
+        {
+          "name": "DW",
+          "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752"
+        },
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/06/irkutsk-maternity-hospital-screens-patients-for-plague-after-lab-workers-death-a93887"
+        }
+      ]
+    }
   ],
   "background": {
     "title": "If it is plague",
@@ -55,18 +456,66 @@
       "Treatable with common antibiotics if caught early; untreated pneumonic plague is almost always fatal. Close contacts get preventive antibiotics.",
       "About 2,000 cases a year worldwide, mostly in Africa, Asia and the Americas; a fatal case was recorded in New Mexico in June 2026."
     ],
-    "source": { "name": "WHO plague fact sheet, 29 Sep 2026", "url": "https://www.who.int/news-room/fact-sheets/detail/plague" }
+    "source": {
+      "name": "WHO plague fact sheet, 29 Sep 2026",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+    }
   },
   "sources": [
-    { "who": "WHO (spokesperson, Geneva)", "what": "Risk moderate to low for Irkutsk, low for Russia, very low for Europe; all contacts identified, none symptomatic", "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who", "date": "6 Oct" },
-    { "who": "Rospotrebnadzor (via Interfax / TASS)", "what": "Pneumonia of unknown etiology; no lab accident; no work-related microorganisms; contacts: 2 COVID-19, 2 rhinovirus", "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872", "date": "4–5 Oct" },
-    { "who": "Meduza / People of Baikal / Izvestia", "what": "Hospital quarantines, 197 quarantined, two accounts of how she fell ill, deleted posts, FSB escorts", "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable", "date": "5 Oct" },
-    { "who": "The Moscow Times (with Reuters)", "what": "Admission and death, Buryatia statement edited, Rubio and EU reactions, Kobzev on discharge", "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872", "date": "5 Oct" },
-    { "who": "DW Fact Check", "what": "Lab-accident claim unproven; WHO fact-sheet timing coincidental; viral video from Kabardino-Balkaria", "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752", "date": "6 Oct" },
-    { "who": "El País", "what": "What is known and not known; expert comments via Science Media Centre; age 27, death 2 Oct", "url": "https://english.elpais.com/international/2026-10-06/what-authorities-have-said-about-plague-alert-after-death-of-a-laboratory-worker-in-russia.html", "date": "6 Oct" },
-    { "who": "CBS News", "what": "Russia plays down the death; Rubio asks for openness", "url": "https://www.cbsnews.com/news/russia-pneumonic-plague-lab-worker-death-rubio-us-reaction/", "date": "5–6 Oct" },
-    { "who": "Axios", "what": "White House monitoring; missing details keep US response on hold", "url": "https://www.axios.com/2026/10/06/missing-details-us-plague-response", "date": "4–6 Oct" },
-    { "who": "Baltic News Network", "what": "Latvian health authorities monitoring", "url": "https://bnn-news.com/social/following-reports-of-possible-plague-case-latvian-health-authorities-closely-monitoring-situation-u85wjqt", "date": "6 Oct" }
+    {
+      "who": "WHO (spokesperson, Geneva)",
+      "what": "Risk moderate to low for Irkutsk, low for Russia, very low for Europe; all contacts identified, none symptomatic",
+      "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Rospotrebnadzor (via Interfax / TASS)",
+      "what": "Pneumonia of unknown etiology; no lab accident; no work-related microorganisms; contacts: 2 COVID-19, 2 rhinovirus",
+      "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872",
+      "date": "4–5 Oct"
+    },
+    {
+      "who": "Meduza / People of Baikal / Izvestia",
+      "what": "Hospital quarantines, 197 quarantined, two accounts of how she fell ill, deleted posts, FSB escorts",
+      "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable",
+      "date": "5 Oct"
+    },
+    {
+      "who": "The Moscow Times (with Reuters)",
+      "what": "Admission and death, Buryatia statement edited, Rubio and EU reactions, Kobzev on discharge",
+      "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872",
+      "date": "5 Oct"
+    },
+    {
+      "who": "DW Fact Check",
+      "what": "Lab-accident claim unproven; WHO fact-sheet timing coincidental; viral video from Kabardino-Balkaria",
+      "url": "https://www.dw.com/en/russia-lab-worker-death-fact-check/a-79560752",
+      "date": "6 Oct"
+    },
+    {
+      "who": "El País",
+      "what": "What is known and not known; expert comments via Science Media Centre; age 27, death 2 Oct",
+      "url": "https://english.elpais.com/international/2026-10-06/what-authorities-have-said-about-plague-alert-after-death-of-a-laboratory-worker-in-russia.html",
+      "date": "6 Oct"
+    },
+    {
+      "who": "CBS News",
+      "what": "Russia plays down the death; Rubio asks for openness",
+      "url": "https://www.cbsnews.com/news/russia-pneumonic-plague-lab-worker-death-rubio-us-reaction/",
+      "date": "5–6 Oct"
+    },
+    {
+      "who": "Axios",
+      "what": "White House monitoring; missing details keep US response on hold",
+      "url": "https://www.axios.com/2026/10/06/missing-details-us-plague-response",
+      "date": "4–6 Oct"
+    },
+    {
+      "who": "Baltic News Network",
+      "what": "Latvian health authorities monitoring",
+      "url": "https://bnn-news.com/social/following-reports-of-possible-plague-case-latvian-health-authorities-closely-monitoring-situation-u85wjqt",
+      "date": "6 Oct"
+    }
   ],
   "disclaimer": "Not medical advice. The ledger, timeline and figures are compiled by hand from the sources ARGUS reads, each linked; the pulse, map mentions and headline columns are automatic and refresh with the feeds."
 }

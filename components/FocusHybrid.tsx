@@ -5,6 +5,7 @@
 // Elke regel heeft een bron, een toeschrijving zoals de bron die geeft, en een ernst volgens vaste regels (zie "How severity is assigned").
 import { useEffect, useMemo, useState } from 'react';
 import FocusMap, { MapPoint } from '@/components/FocusMap';
+import HybridStand from '@/components/HybridStand';
 
 type Sev = 'critical' | 'medium' | 'small';
 interface Incident { id: string; date: string; dateApprox: boolean; countries: string[]; place: string | null; lat: number | null; lon: number | null; coordApprox: boolean; type: string; title: string; attribution: 'confirmed' | 'suspected' | 'unknown'; actor: string | null; severity: Sev; severityWhy: string; campaign?: string | null; sources: { name: string; url: string }[]; origin: string }
@@ -42,9 +43,6 @@ export default function FocusHybrid() {
 
   const points: MapPoint[] = useMemo(() => list.filter(i => i.lat != null && i.lon != null).slice(0, 400).map(i => ({ id: i.id, lat: i.lat as number, lon: i.lon as number, color: SEV_COLOR[i.severity], big: i.severity === 'critical', approx: i.coordApprox, label: `${i.date} · ${i.title.slice(0, 70)}` })), [list]);
   const toggle = <T,>(set: Set<T>, v: T, fn: (s: Set<T>) => void) => { const n = new Set(set); if (n.has(v)) n.delete(v); else n.add(v); fn(n); };
-  const count = (s: Sev) => inRange.filter(i => i.severity === s).length;
-  const last30 = all.filter(i => now - new Date(i.date).getTime() < 30 * 86400000).length;
-  const prev30 = all.filter(i => { const a = now - new Date(i.date).getTime(); return a >= 30 * 86400000 && a < 60 * 86400000; }).length;
   const chip = (on: boolean) => `text-[11px] font-mono uppercase tracking-[0.12em] px-2.5 py-1.5 border transition-colors ${on ? 'text-[#050505] bg-[#e8760a] border-[#e8760a]' : 'text-[#aaa] border-[#222] hover:border-[#e8760a] hover:text-[#e8760a]'}`;
 
   useEffect(() => { if (picked) document.getElementById(`inc-${picked}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, [picked]);
@@ -62,11 +60,7 @@ export default function FocusHybrid() {
           <div className="text-[11px] font-mono uppercase tracking-[0.25em] text-[#e8760a]">Focus · one pattern, many countries</div>
           <h1 className="text-[40px] leading-tight text-white mt-2" style={sans}>Hybrid Europe</h1>
           <p className="mt-3 max-w-3xl text-[16px] leading-relaxed text-[#bbb]" style={sans}>Below the threshold of war: drones over airports and bases, fires and devices at substations, cut cables, jammed GPS, cyberattacks. Each one is small. Together they form a pattern. This page lists every incident with its source and how serious it was. 2022–2025 comes from the <i>Russian Operations Against Europe Dataset</i> (Bart Schuurman, Leiden University, CC BY 4.0); from 2026 ARGUS detects incidents itself in the news feeds it reads, with the reporting outlets linked per incident.</p>
-          <div className="mt-6 grid grid-cols-2 md:grid-cols-5 gap-px bg-[#1a1a1a] border border-[#1a1a1a]">
-            {[['Incidents tracked', String(all.length), 'since 2022'], ['Last 30 days', String(last30), prev30 ? `${last30 >= prev30 ? '+' : ''}${last30 - prev30} vs the 30 days before` : ''], ['Critical', String(count('critical')), 'in this period'], ['Medium', String(count('medium')), 'in this period'], ['Small', String(count('small')), 'in this period']].map(([k, v, sub], n) => (
-              <div key={k} className="bg-[#080808] px-4 py-4"><div className="text-[30px] font-mono font-light tabular-nums" style={{ color: n === 2 ? SEV_COLOR.critical : n === 3 ? SEV_COLOR.medium : '#fff' }}>{v}</div><div className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#888] mt-1">{k}</div><div className="text-[10px] font-mono text-[#555] mt-0.5">{sub}</div></div>
-            ))}
-          </div>
+          <HybridStand all={all} generatedAt={data?.generatedAt || null} credits={data?.credits || []} onPick={setPicked} />
         </section>
 
         <section className="py-7 border-b border-[#1a1a1a]">
@@ -109,6 +103,7 @@ export default function FocusHybrid() {
                     <div className="mt-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[10px] font-mono text-[#888]">
                       <span className="text-[#bbb]">{i.countries.join(' · ') || '—'}{i.place ? ` · ${i.place}` : ''}</span>
                       <span title="Incident type" className="px-1.5 border border-[#222] uppercase">{TYPES.find(t => t[0] === i.type)?.[1] || i.type}</span>
+                      <span title={i.origin === 'schuurman' ? 'From the documented 2022–2025 dataset' : 'Reported in 2026 by ARGUS from open feeds — not independently verified'} className={`px-1.5 border uppercase ${i.origin === 'schuurman' ? 'border-[#2a4a6a] text-[#7fb2e0]' : 'border-[#5a3a0a] text-[#e8a04a]'}`}>{i.origin === 'schuurman' ? 'dataset' : 'reported'}</span>
                       <span title="Attribution" style={{ color: i.attribution === 'confirmed' ? '#f87171' : i.attribution === 'suspected' ? '#fbbf24' : '#777' }}>{ATTR_LABEL[i.attribution]}{i.actor && i.attribution !== 'unknown' ? ` · ${i.actor}` : ''}</span>
                       {i.campaign && <span title="Campaign" className="text-[#777]">{i.campaign}</span>}
                       {i.sources.map((s, k) => <a key={k} href={s.url} target="_blank" rel="noopener noreferrer" title="Open source" className="text-[#e8760a] border-b border-[#b85a08]/60 hover:text-white">{s.name}</a>)}

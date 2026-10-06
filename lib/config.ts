@@ -255,6 +255,8 @@ export const CONFLICT_KEYWORDS = [
   // --- Energy ---
   'pipeline', 'LNG', 'energy crisis', 'blackout', 'power grid',
   'oil embargo', 'gas pipeline', 'Nord Stream',
+  // --- Health / outbreaks (6 okt 2026: plague-dossier Irkutsk) ---
+  'plague', 'pneumonic', 'Irkutsk', 'Rospotrebnadzor', 'Yersinia', 'quarantine',
 ];
 
 export const LOCATION_MAP: Record<string, { lat: number; lng: number; country: string }> = {
@@ -486,5 +488,13 @@ export const SITUATIONS: AnchorSituation[] = [
   { id: 'taiwan', slug: 'taiwan-strait', title: 'Taiwan Strait', type: 'conflict', anchorKeywords: ['Taiwan','South China Sea','Taiwan Strait','PLA'], center: { lat: 24.0, lng: 119.5 }, bbox: [21.0,117.0,26.5,122.5], zoom: 7, actors: ['China','Taiwan','US'] },
   { id: 'korea', slug: 'korea-peninsula', title: 'Korean Peninsula', type: 'nuclear', anchorKeywords: ['North Korea','Pyongyang','Kim Jong','ICBM'], center: { lat: 39.0, lng: 127.5 }, bbox: [37.0,124.0,42.0,131.0], zoom: 6, actors: ['North Korea','South Korea','US'] },
   { id: 'sudan', slug: 'sudan', title: 'Sudan', type: 'humanitarian', anchorKeywords: ['Sudan','Khartoum','RSF'], center: { lat: 15.50, lng: 32.56 }, bbox: [9.0,22.0,18.0,38.0], zoom: 6, actors: ['SAF','RSF'] },
+  // 6 okt 2026 (Leander): de vermoedelijke pestuitbraak na de dood van een laboratoriummedewerker in Irkutsk, als dossier.
+  // 'plague' als los woord vangt ook 'scandal-plagued' — vandaar de regex op \bplague\b plus een uitsluiting op figuurlijk gebruik.
+  { id: 'plague', slug: 'russia-plague-irkutsk', title: 'Russia plague (Irkutsk)', type: 'humanitarian',
+    anchorKeywords: ['Irkutsk', 'Rospotrebnadzor', 'pneumonic plague', 'plague outbreak', 'plague lab', 'plague death', 'plague fears', 'plague alert', 'plague response', 'anti-plague', 'Yersinia pestis'],
+    anchorRegex: '\\bplague\\b',
+    exclude: 'plagued|scandal|injur|drought|locust|crisis-|rat-|rats\\b|bronze age|5,?500 years|medieval|black death|justinian',
+    requireAny: 'russia|russian|siberia|irkutsk|moscow|kremlin|putin|rospotrebnadzor|pneumonic|yersinia|outbreak|quarantine|\\blab|who\\b|disease|infect|mongolia|china|kazakh',
+    center: { lat: 52.29, lng: 104.3 }, bbox: [50.0, 98.0, 56.0, 112.0], zoom: 5, actors: ['Russia', 'Rospotrebnadzor', 'WHO'], coversRegion: false },
   { id: 'syria', slug: 'syria', title: 'Syria', type: 'conflict', anchorKeywords: ['Syria','Damascus','Aleppo'], center: { lat: 34.8, lng: 38.99 }, bbox: [32.0,35.5,37.5,42.0], zoom: 6, actors: ['Syria'] },
 ];

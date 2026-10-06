@@ -43,14 +43,14 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <span className="text-[11px] font-mono text-[#888] uppercase tracking-[0.2em]">Situation</span>
         <a href={`/?dossier=${s.slug}`} className="ml-auto text-[11px] font-mono text-[#050505] bg-[#e8760a] hover:bg-white uppercase tracking-[0.15em] px-3 py-1.5">Open live dashboard →</a>
       </header>
-      <article className={`${dossier ? "max-w-[1200px]" : "max-w-[1000px]"} mx-auto px-6 py-9`}>
+      <article className="max-w-[1200px] mx-auto px-6 py-9">
         <div className="border-l-4 pl-5" style={{ borderColor: sev }}>
           <div className="text-[11px] font-mono uppercase tracking-[0.25em]" style={{ color: sev }}>{s.severity} · {s.status} · corroboration {s.metadata.corroboration}</div>
           <h1 className="text-[40px] leading-tight text-white mt-1" style={sans}>{s.title}</h1>
           <p className="mt-3 text-[13px] font-mono text-[#999]">{s.metadata.velocity1h} reports in the last hour · {s.metadata.velocity24h} in 24 hours · {sources.length} sources · updated {s.latestPubDate ? ago(s.latestPubDate) : '—'}</p>
         </div>
-        {dossier && <SituationDossier d={dossier} feedChecked={items[0]?.pubDate} />}
-        <h2 className="mt-9 mb-3 text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.22em]">Latest reports{dossier ? ' · automatic' : ''}</h2>
+        <SituationDossier d={dossier} s={s} items={items} />
+        <h2 className="mt-9 mb-3 text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.22em]">Latest reports</h2>
         <ol className="border border-[#1a1a1a] divide-y divide-[#141414]">
           {items.slice(0, 25).map(i => { const v = viewOf(i); return (
             <li key={i.id} className="bg-[#080808] px-4 py-3.5">

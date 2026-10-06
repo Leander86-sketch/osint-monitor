@@ -3,7 +3,7 @@ import { MAP_LAYERS, INTEL_PANELS, LIVESTREAMS, DERIVED_SIGNALS, feedStats } fro
 
 export async function GET() {
   return NextResponse.json({
-    manifesto: 'ARGUS clusters open, public data into live conflict situations. No AI in the pipeline, no paywall, no editorial filter — every layer below is a named, verifiable source you can check yourself.',
+    manifesto: 'ARGUS clusters open, public data into live conflict situations. No AI in the live pipeline, no paywall, no editorial filter — every layer below is a named, verifiable source you can check yourself. The situation dossiers are the one exception: a language model drafts them from the sources ARGUS reads, every line is checked against a verbatim quote, then reviewed.',
     layers: MAP_LAYERS,
     intel: INTEL_PANELS,
     feeds: feedStats(),

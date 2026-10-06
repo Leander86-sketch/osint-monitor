@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from 'react';
 import { createPortal } from 'react-dom';
+import { WHATS_NEW } from '@/lib/whats-new';
 
 interface LayerInfo { label: string; shows: string; source: string; cadence: string }
 interface SourcesData {
@@ -22,21 +23,18 @@ export default function SourcesPanel() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
-  // Eerste bezoek: het paneel opent zichzelf één keer, zodat een nieuwe bezoeker
-  // weet waar hij naar kijkt voordat hij een muur van cijfers ziet. Daarna nooit
-  // meer ongevraagd — alleen een korte puls op het icoon.
-  //
-  // De sleutel draagt een versie. Wordt de inhoud wezenlijk bijgewerkt (nieuwe
-  // lagen, ander bronnenaanbod), bump 'm dan: iedereen krijgt de introductie dan
-  // opnieuw te zien, ook wie de vorige al had gehad.
-  const INTRO_KEY = 'argus-intro-v2';
+  // Elk bezoek (6 okt 2026, Leander): het paneel opent zichzelf één keer per browsersessie, met "What's new"
+  // bovenin. Niet bij elke refresh binnen de sessie — dat wordt irritant. Wat de bezoeker nog niet zag krijgt NEW.
+  const INTRO_KEY = 'argus-intro-session';
+  const SEEN_KEY = 'argus-wn-seen';
+  const [seenUntil, setSeenUntil] = useState('');
 
   useEffect(() => {
     const p1 = setTimeout(() => setPulsing(true), 800);
     const p2 = setTimeout(() => setPulsing(false), 4500);
 
     let seen = false;
-    try { seen = localStorage.getItem(INTRO_KEY) === '1'; } catch { /* ignore */ }
+    try { seen = sessionStorage.getItem(INTRO_KEY) === '1'; setSeenUntil(localStorage.getItem(SEEN_KEY) || ''); } catch { /* ignore */ }
     if (seen) return () => { clearTimeout(p1); clearTimeout(p2); };
 
     // Even wachten tot de kaart en de cijfers staan; direct openen op een lege
@@ -45,7 +43,7 @@ export default function SourcesPanel() {
       setPulsing(false);
       setOpen(true);
       void load();
-      try { localStorage.setItem(INTRO_KEY, '1'); } catch { /* ignore */ }
+      try { sessionStorage.setItem(INTRO_KEY, '1'); } catch { /* ignore */ }
     }, 1800);
 
     return () => { clearTimeout(p1); clearTimeout(p2); clearTimeout(t1); };
@@ -63,6 +61,10 @@ export default function SourcesPanel() {
   const openPanel = () => { setTeasing(false); setPulsing(false); setOpen(true); load(); };
 
   // Esc closes; only user action closes (never auto-collapses while reading)
+  useEffect(() => {
+    if (open) return;
+    try { if (WHATS_NEW.length) localStorage.setItem(SEEN_KEY, WHATS_NEW[0].date); } catch { /* ignore */ }
+  }, [open]);
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false); };
@@ -91,6 +93,16 @@ export default function SourcesPanel() {
               <button onClick={() => setOpen(false)} className="text-[#666] hover:text-[#ccc] text-lg leading-none px-1">×</button>
             </div>
             <div className="px-5 py-4 font-mono text-[12px] text-[#bbb] space-y-5">
+              <div>
+                <h3 className="text-[10px] text-[#e8760a] uppercase tracking-[0.2em] mb-2">What&apos;s new</h3>
+                <ul className="space-y-1.5">
+                  {WHATS_NEW.slice(0, 5).map((w, k) => (
+                    <li key={k} className="grid grid-cols-[4.2rem_1fr] gap-2 leading-snug">
+                      <span className="text-[10px] text-[#666] tabular-nums pt-px">{w.date.slice(5).replace('-', '/')}{(!seenUntil || w.date > seenUntil) && <span className="ml-1 text-[8px] font-bold text-[#050505] bg-[#e8760a] px-1 align-middle">NEW</span>}</span>
+                      <span className="text-[#ccc]">{w.text}{w.href && <> <a href={w.href} className="text-[#e8760a] hover:underline">→</a></>}</span>
+                    </li>))}
+                </ul>
+              </div>
               {!data && <div className="text-[#666] py-6 text-center">Loading…</div>}
               {data && <>
                 <p className="text-[#ccc] leading-relaxed">{data.manifesto}</p>

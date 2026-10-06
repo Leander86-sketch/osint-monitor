@@ -19,7 +19,7 @@ const ago = (iso: string) => { const m = Math.max(0, Math.floor((Date.now() - ne
 const Label = ({ children, auto, right }: { children: React.ReactNode; auto?: boolean; right?: React.ReactNode }) => (
   <div className="flex items-baseline gap-3 mb-3 flex-wrap">
     <h2 className="text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.22em]">{children}</h2>
-    <span className={`text-[9px] font-mono uppercase tracking-[0.15em] px-1.5 py-px border ${auto ? 'text-[#4ade80] border-[#1f4d2e]' : 'text-[#e8760a] border-[#5a3a0a]'}`}>{auto ? 'automatic · live' : 'compiled by hand'}</span>
+    <span className={`text-[9px] font-mono uppercase tracking-[0.15em] px-1.5 py-px border ${auto ? 'text-[#4ade80] border-[#1f4d2e]' : 'text-[#e8760a] border-[#5a3a0a]'}`}>{auto ? 'automatic · live' : 'reviewed · quote-checked'}</span>
     {right && <span className="ml-auto text-[10px] font-mono text-[#555]">{right}</span>}
   </div>
 );

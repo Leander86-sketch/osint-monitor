@@ -55,7 +55,7 @@ export default function Dossier({ situations, slug, onClose, onGo, onLocate }: {
 
         <div className="border-l-4 pl-5 mb-7" style={{ borderColor: sev }}>
           <div className="text-[11px] font-mono uppercase tracking-[0.25em]" style={{ color: sev }}>{sit.severity} · {sit.status} · corroboration {sit.metadata.corroboration}</div>
-          <h1 className="text-[34px] leading-tight text-white mt-1" style={sans}>{sit.title}</h1>
+          <h1 className="text-[30px] leading-tight text-white mt-1" style={sans}>{sit.title}</h1>
           {sit.latestHeadline && <a href={sit.latestLink} target="_blank" rel="noopener noreferrer" className="block mt-2 text-[17px] text-[#ccc] hover:text-[#e8760a] max-w-4xl" style={sans}><span className="text-[#e8760a] font-mono text-[11px] tracking-[0.2em] mr-2">LATEST {agoShort(now - new Date(sit.latestPubDate).getTime())}</span>{sit.latestHeadline}</a>}
           <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-mono text-[#888]">
             <span title="Last hour">1H <b className="text-white font-normal">{sit.metadata.velocity1h}</b></span><span title="Last day">24H <b className="text-white font-normal">{sit.metadata.velocity24h}</b></span>
@@ -69,15 +69,15 @@ export default function Dossier({ situations, slug, onClose, onGo, onLocate }: {
 
         {!loading && shared.length > 0 && (
           <section className="mb-8">
-            <h2 title="Same event" className="text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.22em] mb-3">Same event, different words</h2>
+            <div className="flex items-baseline gap-2.5 border-b border-[#2a2a2a] pb-1.5 mb-3"><h2 title="Same event" className="text-[10px] font-mono font-bold text-[#eee] uppercase tracking-[0.24em]">Same event, different words</h2><span className="text-[9px] font-mono text-[#555]">one story, reported from different sides · last 72 hours</span></div>
             <div className="space-y-3">
               {shared.map(({ c, views }) => (
-                <div key={c.lead.id} className="border border-[#1a1a1a] bg-[#080808]">
-                  <div className="grid gap-px bg-[#1a1a1a]" style={{ gridTemplateColumns: `repeat(${Math.min(views.length, 4)}, minmax(0, 1fr))` }}>
+                <div key={c.lead.id} className="border-b border-[#1a1a1a]">
+                  <div className="grid gap-px bg-[#161616]" style={{ gridTemplateColumns: `repeat(${Math.min(views.length, 4)}, minmax(0, 1fr))` }}>
                     {views.slice(0, 4).map(v => { const it = c.items.filter(i => viewOf(i) === v).sort((a, b) => new Date(a.pubDate).getTime() - new Date(b.pubDate).getTime())[0]; return (
                       <a key={v} href={it.link} target="_blank" rel="noopener noreferrer" title="Open article" className="block bg-[#080808] p-3.5 hover:bg-[#0d0d0d] group">
                         <div className="text-[10px] font-mono tracking-[0.18em] mb-1.5" style={{ color: VIEW_COLOR[v] }}>{VIEW_LABEL[v].toUpperCase()}</div>
-                        <div className="text-[15px] leading-snug text-[#eee] group-hover:text-[#e8760a]" style={sans}>{it.title}</div>
+                        <div className="text-[14px] leading-snug text-[#e8e8e8] group-hover:text-[#e8760a]" style={sans}>{it.title}</div>
                         <div className="mt-2 text-[10px] font-mono text-[#777]">{it.source}{isStateMedia(it.source) && <span title="State media" className="ml-1.5 text-[#a16207]">state</span>} · T{it.sourceTier || 3} · {agoShort(now - new Date(it.pubDate).getTime())}</div>
                       </a>); })}
                   </div>
@@ -89,7 +89,7 @@ export default function Dossier({ situations, slug, onClose, onGo, onLocate }: {
 
         {!loading && (
           <section className="mb-10">
-            <h2 title="By viewpoint" className="text-[11px] font-mono font-bold text-[#ddd] uppercase tracking-[0.22em] mb-3">Who reports what · last 72 hours</h2>
+            <div className="flex items-baseline gap-2.5 border-b border-[#2a2a2a] pb-1.5 mb-3"><h2 title="By viewpoint" className="text-[10px] font-mono font-bold text-[#eee] uppercase tracking-[0.24em]">Who reports what</h2><span className="text-[9px] font-mono text-[#555]">newest first per viewpoint · last 72 hours</span></div>
             {cols.length === 0 ? <div className="text-[11px] font-mono text-[#555] py-10 text-center uppercase">No reports in the last 72 hours</div> : (
               <div className="grid gap-px bg-[#1a1a1a] border border-[#1a1a1a]" style={{ gridTemplateColumns: `repeat(${cols.length}, minmax(0, 1fr))` }}>
                 {cols.map(v => { const list = byView.get(v) || []; const srcs = new Set(list.map(i => i.source)); return (
@@ -101,7 +101,7 @@ export default function Dossier({ situations, slug, onClose, onGo, onLocate }: {
                     <div className="max-h-[52vh] overflow-y-auto">
                       {list.slice(0, 14).map((it, k) => (
                         <a key={it.id} href={it.link} target="_blank" rel="noopener noreferrer" title="Open article" className="block px-3.5 py-3 border-b border-[#121212] hover:bg-[#0d0d0d] group">
-                          <div className={`${k === 0 ? 'text-[15px] text-white' : 'text-[13px] text-[#c4c4c4]'} leading-snug group-hover:text-[#e8760a]`} style={sans}>{it.title}</div>
+                          <div className={`text-[13px] leading-snug group-hover:text-[#e8760a] ${k === 0 ? 'text-[#f0f0f0]' : 'text-[#c4c4c4]'}`} style={sans}>{it.title}</div>
                           <div className="mt-1.5 text-[10px] font-mono text-[#777]">{agoShort(now - new Date(it.pubDate).getTime())} · {it.source}{isStateMedia(it.source) && <span title="State media" className="ml-1.5 text-[#a16207]">state</span>} · T{it.sourceTier || 3}</div>
                         </a>
                       ))}

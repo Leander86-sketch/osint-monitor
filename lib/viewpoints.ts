@@ -29,18 +29,23 @@ const STOP = new Set(['the', 'and', 'for', 'with', 'from', 'that', 'this', 'afte
 export const titleWords = (t: string) => new Set(t.toLowerCase().replace(/[^a-z0-9à-ÿ ]+/g, ' ').split(/\s+/).filter(w => w.length > 3 && !STOP.has(w)));
 
 export interface EventCluster { lead: NewsItem; items: NewsItem[]; w: Set<string> }
-// Berichten over dezelfde gebeurtenis samennemen: ≥4 gedeelde kernwoorden, of ≥3 bij 60% overlap, binnen 8 uur. Invoer: nieuwste eerst.
+// Berichten over dezelfde gebeurtenis samennemen (6 okt 2026, strenger): vergelijk met de LEIDENDE kop (geen woord-
+// stapeling meer), laat de generieke woorden van deze set weg (in >20% van de koppen: 'ukraine', 'russia', 'drones'…),
+// en eis ≥3 gedeelde onderscheidende woorden met ≥50% overlap, binnen het tijdvenster. Invoer: nieuwste eerst.
 export function clusterEvents(items: NewsItem[], windowH = 8): EventCluster[] {
+  const df = new Map<string, number>();
+  const sets = items.map(i => { const w = titleWords(i.title); w.forEach(x => df.set(x, (df.get(x) || 0) + 1)); return w; });
+  const generic = new Set<string>(); if (items.length >= 8) df.forEach((n, x) => { if (n / items.length > 0.2) generic.add(x); });
   const out: EventCluster[] = [];
-  for (const it of items) {
-    const w = titleWords(it.title); let home: EventCluster | null = null;
-    for (const c of out) {
+  items.forEach((it, k) => {
+    const w = new Set([...sets[k]].filter(x => !generic.has(x))); let home: EventCluster | null = null;
+    if (w.size >= 3) for (const c of out) {
       if (Math.abs(new Date(c.lead.pubDate).getTime() - new Date(it.pubDate).getTime()) > windowH * 3600000) continue;
       let shared = 0; w.forEach(x => { if (c.w.has(x)) shared++; });
-      if (shared >= 4 || (shared >= 3 && shared / Math.min(w.size, c.w.size) >= 0.6)) { home = c; break; }
+      if (shared >= 3 && shared / Math.min(w.size, c.w.size) >= 0.5) { home = c; break; }
     }
-    if (home) { home.items.push(it); w.forEach(x => home!.w.add(x)); } else out.push({ lead: it, items: [it], w });
-  }
+    if (home) home.items.push(it); else out.push({ lead: it, items: [it], w });
+  });
   return out;
 }
 export const agoShort = (ms: number) => { const m = Math.max(0, Math.floor(ms / 60000)); return m < 60 ? `${m}m` : m < 1440 ? `${Math.floor(m / 60)}h${String(m % 60).padStart(2, '0')}` : `${Math.floor(m / 1440)}d`; };

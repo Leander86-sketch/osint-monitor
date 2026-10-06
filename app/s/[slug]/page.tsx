@@ -6,6 +6,7 @@ import { NewsItem } from '@/lib/types';
 import { VIEW_COLOR, VIEW_LABEL, viewOf, isStateMedia } from '@/lib/viewpoints';
 import { getDossier } from '@/lib/dossiers';
 import SituationDossier from '@/components/SituationDossier';
+import VisitBeacon from '@/components/VisitBeacon';
 
 export const dynamic = 'force-dynamic';
 // Vindbare, deelbare pagina per situatie (19 sep 2026). Volledig op de server opgebouwd, zodat zoekmachines en
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params; const d = await load(slug); if (!d) return { title: 'ARGUS' };
   const title = `${d.s.title} — ${d.s.severity.toUpperCase()} · ARGUS`;
   const dossier = getDossier(slug);
-  const description = dossier ? dossier.stand.slice(0, 300) : d.s.latestHeadline ? `Latest: ${d.s.latestHeadline}. ${d.s.metadata.velocity24h} reports in 24 hours from ${new Set(d.items.map(i => i.source)).size} sources, corroboration ${d.s.metadata.corroboration}.` : `Live OSINT tracking of ${d.s.title}.`;
+  const description = dossier ? ((dossier.headline ? dossier.headline + '. ' : '') + dossier.stand).slice(0, 300) : d.s.latestHeadline ? `Latest: ${d.s.latestHeadline}. ${d.s.metadata.velocity24h} reports in 24 hours from ${new Set(d.items.map(i => i.source)).size} sources, corroboration ${d.s.metadata.corroboration}.` : `Live OSINT tracking of ${d.s.title}.`;
   return { title, description, alternates: { canonical: `/s/${slug}` }, openGraph: { title, description, siteName: 'ARGUS', type: 'article', url: `/s/${slug}` }, twitter: { card: 'summary_large_image', title, description, site: '@ArgusDashboard' } };
 }
 
@@ -38,6 +39,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const sources = [...new Set(items.map(i => i.source))];
   return (
     <main className="min-h-screen bg-[#050505] text-[#ccc]">
+      <VisitBeacon />
       <header className="border-b border-[#1a1a1a] flex items-center gap-4 px-5 py-4">
         <a href="/" className="flex items-center gap-2.5"><span className="w-2 h-2 rounded-full bg-[#e8760a]" /><span className="text-sm font-bold tracking-[0.15em] uppercase text-[#e8760a]">ARGUS</span></a>
         <span className="text-[11px] font-mono text-[#888] uppercase tracking-[0.2em]">Situation</span>

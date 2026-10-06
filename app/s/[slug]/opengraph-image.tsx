@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og';
+import { getDossier } from '@/lib/dossiers';
 import { getSituationBySlug } from '@/lib/situations';
 import { ensureFeedsLoaded, getNewsItems } from '@/lib/store';
 import { isStateMedia } from '@/lib/viewpoints';
@@ -19,6 +20,9 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   let latest = s?.latestHeadline || '';
   // …en nooit een kop van staatsmedia op het plaatje (19 sep: TASS-kop 'Germany artificially inflates crisis' stond erop)
   if (s && latest) { const ids = new Set(s.itemIds); const en = getNewsItems(3200, 0).filter(i => ids.has(i.id) && !GERMAN.test(i.title) && !isStateMedia(i.source)).sort((x, y) => new Date(y.pubDate).getTime() - new Date(x.pubDate).getTime())[0]; if (en) latest = en.title; }
+  // 6 okt 2026: de krantenkop uit het dossier gaat vóór de feedkop
+  const dossierHead = getDossier(slug)?.headline || '';
+  if (dossierHead) latest = dossierHead;
   const head = latest ? (latest.length > 130 ? latest.slice(0, 127) + '…' : latest) : 'Always monitoring the situation';
   return new ImageResponse(
     (

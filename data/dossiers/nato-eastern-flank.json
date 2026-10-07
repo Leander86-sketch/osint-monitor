@@ -1,6 +1,6 @@
 {
   "slug": "nato-eastern-flank",
-  "updatedAt": "2026-10-07T09:06+02:00",
+  "updatedAt": "2026-10-07T18:30+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,8 +19,19 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "NATO's Baltic flank is tightening. Estonia is shifting to 'active defense', moving its main brigade toward the Russian border and buying HIMARS and Chunmoo rockets that can strike 300km into Russia. Lithuania's parliament has voted to scrap its ban on nuclear weapons and foreign bases, while pushing Washington for a permanent US base; Trump says he will 'look at it'. Moscow warns of retaliation and repeats Putin's threat to use 'all weapons' over Kaliningrad, which it says NATO is isolating; NATO denies this. Poland and Lithuania are planning for up to a million war refugees.",
-  "figures": [],
+  "stand": "NATO's Baltic flank is hardening further. Lithuania is deploying troops to help guard its border with Kaliningrad after a Latvian border incident and fears of Russian mobilisation. Vilnius is pressing Washington for a permanent US base, courting Trump's non-committal interest, while roughly 1,000 US troops resume rotations in late October. Estonia is running NATO's biggest-ever command exercise, Steadfast Duel. Moscow calls NATO's new 'Theory of Victory' eastern-flank plan preparation for aggression and repeats its Kaliningrad weapons threat; NATO denies isolating the enclave. Poland and Lithuania plan for mass war refugees.",
+  "figures": [
+    {
+      "label": "Pabradė base capacity cited for a potential permanent base",
+      "value": "~1,500 troops",
+      "color": "#f59e0b",
+      "src": {
+        "name": "LRT",
+        "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
+        "date": "7 Oct"
+      }
+    }
+  ],
   "claims": [
     {
       "status": "confirmed",
@@ -130,13 +141,18 @@
     },
     {
       "status": "reported",
-      "text": "Lithuania says it is ready to cover the costs of a permanent US base.",
-      "by": "Says: Lithuanian PM Mindaugas Sinkevicius.",
+      "text": "Lithuania has formally submitted a proposal for a permanent US base to the Pentagon; talks are under way and 'signals are positive'.",
+      "by": "Says: Defence Minister Robertas Kaunas.",
       "sources": [
         {
           "name": "Defense News",
           "url": "https://www.defensenews.com/global/europe/2026/10/06/lithuania-says-it-would-pay-the-cost-if-us-establishes-military-base/",
           "date": "6 Oct"
+        },
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
+          "date": "7 Oct"
         }
       ]
     },
@@ -199,10 +215,122 @@
           "date": "6 Oct"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Lithuania is deploying its armed forces to help border guards protect the border with Russia's Kaliningrad region, as a preventive measure.",
+      "by": "Says: Interior Minister Martynas Katelynas.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075423/lithuania-to-deploy-military-to-help-guard-border-with-kaliningrad-minister",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The deployment follows an incident on the Latvian border and reports that Russia could announce a mobilisation.",
+      "by": "Says: Interior Minister Martynas Katelynas.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075423/lithuania-to-deploy-military-to-help-guard-border-with-kaliningrad-minister",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A group of at least 20 migrants, escorted by masked armed individuals, tried to cross from Belarus into Latvia; the group later sabotaged border infrastructure.",
+      "by": "Says: Latvia's National Armed Forces.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075423/lithuania-to-deploy-military-to-help-guard-border-with-kaliningrad-minister",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Russian Duma member calls NATO's new 'Theory of Victory' eastern-flank defence plan preparation for aggression against Russia and a lever to raise allied defence spending.",
+      "by": "Says: State Duma member and retired Maj. Gen. Leonid Ivlev.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/politics/2198763",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Trump also signals support for Poland's long-running push for a permanent US base.",
+      "by": "Says: US President Donald Trump.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "An Estonian-based defence researcher says Lithuania's current infrastructure could not host a full permanent US base, and the Pentagon leans toward cutting troop levels in Europe rather than adding bases.",
+      "by": "Says: Tomas Jermalavičius, International Centre for Defence and Security.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A Russian court sentenced Igor Odintsov, a Kaliningrad man Lithuania had returned to Russia after an asylum request, to six years in prison over anti-war social media posts.",
+      "by": "Says: Baltic Fleet Military Court.",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/news/2026/10/07/a-russian-man-swam-to-lithuania-to-seek-asylum-he-was-sent-back-to-russia-where-he-was-sentenced-to-six-years-in-prison",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/russian-who-swam-to-lithuania-to-seek-asylum-gets-6-years-in-russian-prison-after-return-a93912",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Lithuania's return of Odintsov to Russia is called a betrayal by the Kaliningrad Lithuanian community; Lithuania's border guard says it was unclear he had made a formal asylum claim.",
+      "by": "Says: Sigitas Šamborskis, Lithuanian community in Kaliningrad. Denies: Lithuania's State Border Guard Service.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075076/lithuania-could-restrict-transit-from-russia-if-plague-threat-confirmed-minister",
+          "date": "7 Oct"
+        }
+      ]
     }
   ],
   "places": [],
   "timeline": [
+    {
+      "date": "17 Sep",
+      "kind": "official",
+      "text": "Igor Odintsov swims from Kaliningrad to Lithuania via the Nemunas, requests asylum, is returned to Russia the same day.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/russian-who-swam-to-lithuania-to-seek-asylum-gets-6-years-in-russian-prison-after-return-a93912"
+        }
+      ]
+    },
     {
       "date": "23 Sep",
       "kind": "media",
@@ -222,6 +350,17 @@
         {
           "name": "El Pais English",
           "url": "https://english.elpais.com/international/2026-10-05/kaliningrad-the-russian-militarized-exclave-surrounded-by-nato-that-triggered-putins-nuclear-threat.html"
+        }
+      ]
+    },
+    {
+      "date": "30 Sep",
+      "kind": "official",
+      "text": "Russia's Baltic Fleet Military Court sentences Odintsov to six years in a penal colony.",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/news/2026/10/07/a-russian-man-swam-to-lithuania-to-seek-asylum-he-was-sent-back-to-russia-where-he-was-sentenced-to-six-years-in-prison"
         }
       ]
     },
@@ -370,6 +509,61 @@
       ]
     },
     {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "Masked, armed individuals push a migrant group toward the Latvian-Belarusian border, then sabotage a border electricity panel and steal CCTV cameras.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075423/lithuania-to-deploy-military-to-help-guard-border-with-kaliningrad-minister"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "NATO's largest-ever command exercise, Steadfast Duel 26, begins with Estonia and all 32 member states, running to 15 Oct.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610158603/estonia-joins-nato-s-largest-command-exercise-steadfast-duel-26"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Lithuania orders its armed forces to help guard the border with Kaliningrad as a preventive measure.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075423/lithuania-to-deploy-military-to-help-guard-border-with-kaliningrad-minister"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "reaction",
+      "text": "Duma member Leonid Ivlev brands NATO's new 'Theory of Victory' eastern-flank plan preparation for aggression against Russia.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/politics/2198763"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "reaction",
+      "text": "Lithuanian President Gitanas Nausėda welcomes Trump's base remark, urges Lithuania to act consistently while awaiting the troop rotation.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius"
+        }
+      ]
+    },
+    {
       "date": "May",
       "kind": "official",
       "text": "Estonia incorporates 'active defense' concept into national defence policy.",
@@ -477,8 +671,50 @@
       "what": "Estonia's defence minister confirms loitering-munition drones are already deployed and the unit trained.",
       "url": "https://news.err.ee/1610157991/expert-says-moving-estonia-s-units-near-border-has-limited-strategic-impact",
       "date": "6 Oct"
+    },
+    {
+      "who": "LRT",
+      "what": "Lithuania has formally submitted a proposal for a permanent US base to the Pentagon; talks are under way and 'signals ar",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
+      "date": "7 Oct"
+    },
+    {
+      "who": "LRT",
+      "what": "Lithuania is deploying its armed forces to help border guards protect the border with Russia's Kaliningrad region, as a ",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3075423/lithuania-to-deploy-military-to-help-guard-border-with-kaliningrad-minister",
+      "date": "7 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "A Russian Duma member calls NATO's new 'Theory of Victory' eastern-flank defence plan preparation for aggression against",
+      "url": "https://tass.com/politics/2198763",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Meduza",
+      "what": "A Russian court sentenced Igor Odintsov, a Kaliningrad man Lithuania had returned to Russia after an asylum request, to ",
+      "url": "https://meduza.io/en/news/2026/10/07/a-russian-man-swam-to-lithuania-to-seek-asylum-he-was-sent-back-to-russia-where-he-was-sentenced-to-six-years-in-prison",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Moscow Times",
+      "what": "A Russian court sentenced Igor Odintsov, a Kaliningrad man Lithuania had returned to Russia after an asylum request, to ",
+      "url": "https://www.themoscowtimes.com/2026/10/07/russian-who-swam-to-lithuania-to-seek-asylum-gets-6-years-in-russian-prison-after-return-a93912",
+      "date": "7 Oct"
+    },
+    {
+      "who": "LRT",
+      "what": "Lithuania's return of Odintsov to Russia is called a betrayal by the Kaliningrad Lithuanian community; Lithuania's borde",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3075076/lithuania-could-restrict-transit-from-russia-if-plague-threat-confirmed-minister",
+      "date": "7 Oct"
+    },
+    {
+      "who": "ERR News",
+      "what": "NATO's largest-ever command exercise, Steadfast Duel 26, begins with Estonia and all 32 member states, running to 15 Oct",
+      "url": "https://news.err.ee/1610158603/estonia-joins-nato-s-largest-command-exercise-steadfast-duel-26",
+      "date": "6 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Lithuania advances nuclear-ban repeal and US base push amid Kremlin threats"
+  "headline": "Lithuania militarises Kaliningrad border as NATO drills and base talks intensify"
 }

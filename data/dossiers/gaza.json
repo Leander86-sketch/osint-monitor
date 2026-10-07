@@ -1,6 +1,6 @@
 {
   "slug": "gaza",
-  "updatedAt": "2026-10-07T09:06+02:00",
+  "updatedAt": "2026-10-07T18:19+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Three years after Hamas's 7 October 2023 attack and a year into the Trump-brokered ceasefire, Gaza's war has not ended. Israeli forces control roughly two-thirds of the enclave and strike almost daily; OCHA says at least 1,431 Palestinians have been killed and 5,026 wounded since the October 2025 ceasefire. Hamas, estimated at 30,000 fighters, has not disarmed. Reconstruction, estimated at $71.4 billion, and aid remain largely blocked; 1.2 million people face acute hunger. Netanyahu vows there will be no Hamas rule in Gaza, with Israeli elections set for 27 October.",
+  "stand": "Three years after Hamas's 7 October 2023 attack and a year into the Trump-brokered ceasefire, Gaza's war has not ended. Israeli forces control roughly two-thirds of the enclave and continue demolishing towns such as Rafah; OCHA says 1,431 Palestinians have been killed and 5,026 wounded since the ceasefire, on top of more than 74,245 killed overall. Hamas has not disarmed. Reconstruction, estimated at $71.4 billion, remains largely blocked; 94% of Gazans need shelter aid. Netanyahu vows no Hamas rule, with elections set for 27 October.",
   "figures": [
     {
       "label": "Gaza deaths since Oct 2025 ceasefire",
@@ -43,11 +43,41 @@
     },
     {
       "label": "Israeli soldiers killed since ceasefire",
-      "value": "5",
+      "value": "4",
       "color": "#f59e0b",
       "src": {
-        "name": "Al-Monitor (Reuters)",
-        "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed",
+        "name": "Israeli Army (via Folha)",
+        "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml",
+        "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Palestinians killed, total war",
+      "value": "more than 74,243",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Gaza Health Ministry (via Guardian)",
+        "url": "https://www.theguardian.com/us-news/2026/oct/07/first-thing-israel-marks-third-anniversary-7-october-hamas-attacks",
+        "date": "7 Oct"
+      }
+    },
+    {
+      "label": "Gaza residents stranded abroad",
+      "value": "more than 100,000",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Palestinian Authority (via Folha)",
+        "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/assombrado-apos-perder-quase-toda-sua-familia-deslocado-de-gaza-ainda-sonha-em-voltar.shtml",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Reconstruction cost, first 18 months",
+      "value": "$26.3 billion",
+      "color": "#f59e0b",
+      "src": {
+        "name": "UN/EU/World Bank (via Folha)",
+        "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml",
         "date": "6 Oct"
       }
     }
@@ -84,12 +114,17 @@
     },
     {
       "status": "confirmed",
-      "text": "Israeli strikes have killed more than 1,440 Palestinians since the October 2025 ceasefire.",
-      "by": "Says: Gaza Health Ministry; figures regarded as reliable by the United Nations.",
+      "text": "OCHA counts 1,431 Palestinians killed and 5,026 wounded since the October 2025 ceasefire, revising the earlier rounded toll.",
+      "by": "Says: OCHA, citing Gaza Health Ministry figures.",
       "sources": [
         {
           "name": "Al-Monitor",
           "url": "https://www.al-monitor.com/originals/2026/10/oct-7-memorial-netanyahu-says-will-be-no-hamas-rule-gaza",
+          "date": "5 Oct"
+        },
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml",
           "date": "5 Oct"
         }
       ]
@@ -252,7 +287,7 @@
     },
     {
       "status": "reported",
-      "text": "Acled says violence in Gaza fell 61% compared with the war's second year, while Israel-Hezbollah fighting in Lebanon reached its highest level in the same period.",
+      "text": "Acled says violence in Gaza fell 61% compared with the war's second year; 1,915 Palestinians were killed in Gaza and 165 in the West Bank over the past year, while Israel-Hezbollah fighting in Lebanon reached its highest level in the same period.",
       "by": "Says: Acled analyst Nasser Khdour.",
       "sources": [
         {
@@ -271,6 +306,102 @@
           "name": "Folha de S.Paulo",
           "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/nao-quero-mais-continuar-aqui-diz-jornalista-de-gaza-apos-tres-anos-sob-ataques.shtml",
           "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Israel is using territorial control to pressure Hamas and Hezbollah into disarming, rather than withdrawing first.",
+      "by": "Says: Acled analyst Nasser Khdour.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Access restrictions to 65% of Gaza remain an obstacle to reconstruction, since the remaining 35% is already overcrowded.",
+      "by": "Says: OCHA.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml",
+          "date": "Oct 2026"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The number of Gaza structures classed as completely destroyed grew 9% since the ceasefire was declared, as demolition has continued.",
+      "by": "Says: Unosat (UN satellite centre).",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml",
+          "date": "Oct 2026"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Satellite imagery shows Israel's military has systematically razed Rafah, once home to a quarter of a million people, continuing demolitions since the ceasefire across the territory it still controls.",
+      "by": "Says: SCMP, based on satellite imagery analysis.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3370017/israel-continues-demolishing-buildings-gaza-year-after-ceasefire?utm_source=rss_feed",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "94% of Gaza's population urgently needs shelter and basic household aid, and 65% of families live in tents or improvised shelters.",
+      "by": "Says: OCHA.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/nao-quero-mais-continuar-aqui-diz-jornalista-de-gaza-apos-tres-anos-sob-ataques.shtml",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Israeli strikes destroyed or damaged 95.5% of Gaza's 815 education facilities by the end of 2025, leaving all school-age children without access; UN-backed learning spaces now enrol 565,000 children, with roughly 200,000 still excluded.",
+      "by": "Says: Unicef (facility damage); OCHA, September 2026 report (enrolment figures).",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/nao-quero-mais-continuar-aqui-diz-jornalista-de-gaza-apos-tres-anos-sob-ataques.shtml",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "More than 100,000 Gaza residents who fled during the war remain stuck abroad, unable to return.",
+      "by": "Says: Palestinian Authority data.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/assombrado-apos-perder-quase-toda-sua-familia-deslocado-de-gaza-ainda-sonha-em-voltar.shtml",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Nine candidates with personal ties to the 7 October attack — bereaved relatives, former hostages' kin or combatants — are standing for rival parties in the 27 October election.",
+      "by": "Says: AFP analysis.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/parentes-e-sobreviventes-do-ataque-do-hamas-tentam-vaga-no-parlamento-de-israel.shtml",
+          "date": "7 Oct"
         }
       ]
     }
@@ -359,6 +490,17 @@
       ]
     },
     {
+      "date": "5 Oct 2026",
+      "kind": "official",
+      "text": "Israeli military says four of its soldiers have been killed by Hamas actions since the ceasefire took effect.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml"
+        }
+      ]
+    },
+    {
       "date": "6 Oct 2026",
       "kind": "media",
       "text": "Guardian reports Benjamin Davis has lodged a formal appeal against his FAO dismissal.",
@@ -377,6 +519,28 @@
         {
           "name": "Al-Monitor",
           "url": "https://www.al-monitor.com/originals/2026/10/oct-7-memorial-netanyahu-says-will-be-no-hamas-rule-gaza"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct 2026",
+      "kind": "reaction",
+      "text": "Protesters gather outside Netanyahu's residence and the Knesset on the attack's third anniversary, demanding a state inquiry into the security failures of 7 October 2023.",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/asien/israel-gedenken-hamas-ueberfall-102.html"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct 2026",
+      "kind": "media",
+      "text": "Israeli strikes across Gaza kill at least four Palestinians, including a Civil Defence rescue worker near Kamal Adwan Hospital.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/israeli-attacks-across-gaza-kill-at-least-four-palestinians?traffic_source=rss"
         }
       ]
     },
@@ -602,8 +766,32 @@
       "what": "A PCPSR poll finds support for Hamas has fallen to 24%, from 35% ten months earlier, while 72% of Palestinians still opp",
       "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/nao-quero-mais-continuar-aqui-diz-jornalista-de-gaza-apos-tres-anos-sob-ataques.shtml",
       "date": "6 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Satellite imagery shows Israel's military has systematically razed Rafah, once home to a quarter of a million people, co",
+      "url": "https://www.scmp.com/news/world/middle-east/article/3370017/israel-continues-demolishing-buildings-gaza-year-after-ceasefire?utm_source=rss_feed",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Folha de S.Paulo",
+      "what": "Nine candidates with personal ties to the 7 October attack — bereaved relatives, former hostages' kin or combatants — ar",
+      "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/parentes-e-sobreviventes-do-ataque-do-hamas-tentam-vaga-no-parlamento-de-israel.shtml",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Tagesschau",
+      "what": "Protesters gather outside Netanyahu's residence and the Knesset on the attack's third anniversary, demanding a state inq",
+      "url": "https://www.tagesschau.de/ausland/asien/israel-gedenken-hamas-ueberfall-102.html",
+      "date": "7 Oct 2026"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Israeli strikes across Gaza kill at least four Palestinians, including a Civil Defence rescue worker near Kamal Adwan Ho",
+      "url": "https://www.aljazeera.com/news/2026/10/7/israeli-attacks-across-gaza-kill-at-least-four-palestinians?traffic_source=rss",
+      "date": "7 Oct 2026"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Israel and Hamas remain deadlocked a year into Gaza's fragile ceasefire"
+  "headline": "Israel keeps razing Gaza as war passes third anniversary"
 }

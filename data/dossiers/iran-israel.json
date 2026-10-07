@@ -1,6 +1,6 @@
 {
   "slug": "iran-israel",
-  "updatedAt": "2026-10-07T09:06+02:00",
+  "updatedAt": "2026-10-07T18:21+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "The US-Israel war on Iran, launched 28 Feb, is in its eighth month; joint strikes killed Khamenei at the outset, and Washington has shifted from bombing to economic pressure. Vance says Iran must meaningfully cut enrichment to end the war; Trump rejected Tehran's latest offer. A suspected Iran-linked drone plot against RAF Fairford brought a UK arrest; Tehran denies involvement. Iran's Hormuz exports have collapsed near zero and its offshore reserves are depleting, even as Gulf exports hit war-time highs. Katz has detailed a short, powerful West Bank offensive plan.",
+  "stand": "The US-Israel war on Iran, launched 28 Feb, is in its eighth month and now costs an estimated $3bn a month. Vance says Iran must cut its 60%-enriched uranium stock, not just pledge future drawdowns; Trump rejected Tehran's latest offer, while Pezeshkian insists Tehran is fighting a 'full-scale war' and still negotiating. A suspected Iran-linked drone plot against RAF Fairford brought a UK arrest; Tehran denies involvement. Hormuz disruption has pushed Iraq to devalue its dinar; Iran's own Hormuz exports stay near zero as Gulf exports hit war-time highs. Katz has detailed a short West Bank offensive plan.",
   "figures": [
     {
       "label": "Strait of Hormuz daily oil exports",
@@ -165,13 +165,18 @@
     },
     {
       "status": "reported",
-      "text": "US Vice President JD Vance says Iran must make a meaningful cut to uranium enrichment to end the war; Trump rejected Tehran's latest offer.",
-      "by": "Says: US Vice President JD Vance, to Reuters",
+      "text": "Vance says Iran must cut its 60%-enriched uranium stockpile, not just promise future drawdowns, to end the war; Washington is talking to Iran's president and foreign minister but is unsure how much power they actually hold.",
+      "by": "Says: US Vice President JD Vance, to Reuters Denies: —",
       "sources": [
         {
           "name": "Al-Monitor (Reuters)",
           "url": "https://www.al-monitor.com/originals/2026/10/interview-us-vice-president-vance-says-iran-must-cut-enrichment-end-war",
           "date": "6 Oct"
+        },
+        {
+          "name": "The Hindu/Reuters",
+          "url": "https://www.thehindu.com/news/international/iran-must-cut-enrichment-to-end-war-us-vice-president-vance-says/article71554105.ece",
+          "date": "5 Oct"
         }
       ]
     },
@@ -220,6 +225,54 @@
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/economy/2026/10/6/southeast-asias-energy-chiefs-meet-against-backdrop-of-iran-war?traffic_source=rss",
           "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iranian forces can periodically strike commercial ships in the Strait of Hormuz but are largely unable to stop energy exports through the waterway.",
+      "by": "Says: US Vice President JD Vance, to Reuters Denies: —",
+      "sources": [
+        {
+          "name": "CNA",
+          "url": "https://www.channelnewsasia.com/world/jd-vance-iran-cut-nuclear-enrichment-end-war-6437781",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Iraq devalued its dinar from about 1,300 to 1,500 per dollar, as Hormuz-linked disruption widened the gap with the market rate.",
+      "by": "Says: Iraq's central bank Denies: —",
+      "sources": [
+        {
+          "name": "AP via ABC News",
+          "url": "https://abcnews.com/International/wireStory/iraq-devalues-currency-us-war-iran-disrupts-oil-137058204",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran's president says the country is in a state of full-scale war and is negotiating from that position to defend its people's rights.",
+      "by": "Says: Iranian President Masoud Pezeshkian, per Fars news agency, cited by TASS Denies: —",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198795",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The war's shutdown of Strait of Hormuz trade halted global fertiliser shipments and spiked prices, squeezing African smallholder farmers.",
+      "by": "Says: NPR Denies: —",
+      "sources": [
+        {
+          "name": "NPR",
+          "url": "https://www.npr.org/2026/10/07/g-s1-146541/fertilizer-diy-farmers-iran-war",
+          "date": "7 Oct"
         }
       ]
     }
@@ -469,6 +522,28 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Iraq's central bank devalues the dinar from about 1,300 to 1,500 per dollar amid Hormuz-linked disruption.",
+      "sources": [
+        {
+          "name": "AP via ABC News",
+          "url": "https://abcnews.com/International/wireStory/iraq-devalues-currency-us-war-iran-disrupts-oil-137058204"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Pezeshkian says Iran is fighting a full-scale war while still negotiating to defend Iranians' rights, speaking in Rabat.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198795"
+        }
+      ]
+    },
+    {
       "date": "June",
       "kind": "official",
       "text": "US and Iran sign memorandum of understanding for a ceasefire including Lebanon.",
@@ -570,8 +645,38 @@
       "what": "The Philippines declared a national energy emergency over war-driven fuel disruption, warning supplies could run dry in ",
       "url": "https://www.aljazeera.com/economy/2026/10/6/southeast-asias-energy-chiefs-meet-against-backdrop-of-iran-war?traffic_source=rss",
       "date": "6 Oct"
+    },
+    {
+      "who": "The Hindu/Reuters",
+      "what": "Vance says Iran must cut its 60%-enriched uranium stockpile, not just promise future drawdowns, to end the war; Washingt",
+      "url": "https://www.thehindu.com/news/international/iran-must-cut-enrichment-to-end-war-us-vice-president-vance-says/article71554105.ece",
+      "date": "5 Oct"
+    },
+    {
+      "who": "CNA",
+      "what": "Iranian forces can periodically strike commercial ships in the Strait of Hormuz but are largely unable to stop energy ex",
+      "url": "https://www.channelnewsasia.com/world/jd-vance-iran-cut-nuclear-enrichment-end-war-6437781",
+      "date": "5 Oct"
+    },
+    {
+      "who": "AP via ABC News",
+      "what": "Iraq devalued its dinar from about 1,300 to 1,500 per dollar, as Hormuz-linked disruption widened the gap with the marke",
+      "url": "https://abcnews.com/International/wireStory/iraq-devalues-currency-us-war-iran-disrupts-oil-137058204",
+      "date": "7 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Iran's president says the country is in a state of full-scale war and is negotiating from that position to defend its pe",
+      "url": "https://tass.com/world/2198795",
+      "date": "7 Oct"
+    },
+    {
+      "who": "NPR",
+      "what": "The war's shutdown of Strait of Hormuz trade halted global fertiliser shipments and spiked prices, squeezing African sma",
+      "url": "https://www.npr.org/2026/10/07/g-s1-146541/fertilizer-diy-farmers-iran-war",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Vance ties ceasefire to Iran's enrichment cuts amid deepening squeeze"
+  "headline": "Vance Demands Iran Cut Enrichment As War's Economic Toll Spreads"
 }

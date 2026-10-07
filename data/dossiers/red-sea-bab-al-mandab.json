@@ -1,6 +1,6 @@
 {
   "slug": "red-sea-bab-al-mandab",
-  "updatedAt": "2026-10-07T09:06+02:00",
+  "updatedAt": "2026-10-07T18:32+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Yemen's Saudi-backed government presses Operation Dawn of Yemen on three fronts: the Red Sea coast, Taiz and Marib. Forces claim Mocha and Dhubab near Bab al-Mandeb and have opened an offensive on Houthi-held al-Waziiya in Taiz; Houthis deny losing Mocha or al-Waziiya and say they repelled the attack. Houthis have cut the Taiz-Aden road and struck Saudi airports and Aramco sites. A Saudi-led coalition, flying 100 jets, intercepted a missile near Khamis Mushait. Turkiye and Pakistan have activated their defence pact; Pakistan says its forces are already aiding with reconnaissance.",
+  "stand": "Yemen's Saudi-backed government presses Operation Dawn of Yemen on three fronts: the Red Sea coast, Taiz and Marib. Forces claim Mocha and Dhubab near Bab al-Mandeb, though analysts say the Mocha claim was premature and Houthis deny losing either. Houthis have struck Aden's international airport, forcing a diverted flight, and claim fresh strikes on Riyadh, Abha and Khamis Mushait; a coalition, flying 100 jets, intercepted a missile north of Riyadh. Turkiye is sending technical and defensive support under the activated Mecca pact; Pakistan aids with reconnaissance.",
   "figures": [
     {
       "label": "Coalition fighter jets deployed",
@@ -53,12 +53,12 @@
     },
     {
       "label": "People displaced since war resumed",
-      "value": "184,000+",
+      "value": "201,217",
       "color": "#f59e0b",
       "src": {
-        "name": "Al Jazeera",
-        "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss",
-        "date": "6 Oct"
+        "name": "IOM, via ReliefWeb",
+        "url": "https://reliefweb.int/report/yemen/yemen-displacement-tops-200000-needs-soar-and-funding-alarmingly-dries",
+        "date": "7 Oct"
       }
     },
     {
@@ -141,13 +141,18 @@
     },
     {
       "status": "disputed",
-      "text": "Government forces say they retook the Dhubab district and its airport near Bab al-Mandeb.",
-      "by": "Says: Yemeni government forces. Denies: Houthis.",
+      "text": "The Yemeni government's claim to have reached Mocha was premature, according to Yemeni military officials on the ground and analysts; fighting is concentrated around Dhubab district.",
+      "by": "Says: Yemen's government. Denies/disputes: Yemeni military officials on the ground and analysts.",
       "sources": [
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/5/yemen-war-escalates-whats-the-latest-on-the-battlefield?traffic_source=rss",
           "date": "5 Oct"
+        },
+        {
+          "name": "gCaptain (Reuters)",
+          "url": "https://gcaptain.com/houthis-attack-aden-airport-as-fighting-intensifies-in-yemen/",
+          "date": "7 Oct"
         }
       ]
     },
@@ -194,37 +199,52 @@
     },
     {
       "status": "confirmed",
-      "text": "The latest fighting in Yemen has killed at least 959 people and wounded more than 4,200.",
-      "by": "Says: World Health Organization. Denies: —",
+      "text": "The latest fighting in Yemen has killed 959 people and wounded 4,207, Yemen's Ministry of Health and Population says.",
+      "by": "Says: Yemen's Ministry of Health and Population, via WHO. Denies: —",
       "sources": [
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss",
+          "date": "6 Oct"
+        },
+        {
+          "name": "WHO, via ReliefWeb",
+          "url": "https://reliefweb.int/report/yemen/who-sounds-alarm-critical-funding-gap-health-response-yeme",
           "date": "6 Oct"
         }
       ]
     },
     {
       "status": "confirmed",
-      "text": "More than 184,000 people have been displaced since the war resumed.",
-      "by": "Says: International Organization for Migration. Denies: —",
+      "text": "More than 201,000 (201,217) people have been displaced since the war resumed, nearly all since 1 September, with Ta'iz governorate hardest hit.",
+      "by": "Says: International Organization for Migration, Director General Amy Pope. Denies: —",
       "sources": [
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss",
           "date": "6 Oct"
+        },
+        {
+          "name": "IOM, via ReliefWeb",
+          "url": "https://reliefweb.int/report/yemen/yemen-displacement-tops-200000-needs-soar-and-funding-alarmingly-dries",
+          "date": "7 Oct"
         }
       ]
     },
     {
       "status": "confirmed",
-      "text": "Turkiye and Pakistan agreed to activate collective deterrence measures and rapidly deploy forces to Saudi Arabia under their mutual defence pact.",
-      "by": "Says: Saudi defence minister Khalid bin Salman. Denies: —",
+      "text": "Turkiye's support to Saudi Arabia under the Mecca pact is mainly defensive and technical — military equipment, intelligence sharing and weapons systems — not combat deployment.",
+      "by": "Says: Turkish and Saudi officials, via Reuters. Denies: —",
       "sources": [
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/5/yemen-forces-claim-to-seize-dhubab-sites-near-bab-al-mandeb-from-houthis?traffic_source=rss",
           "date": "5 Oct"
+        },
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/turkey-sending-technical-defensive-support-saudi-arabia-help-fight-houthis",
+          "date": "7 Oct"
         }
       ]
     },
@@ -319,6 +339,83 @@
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/6/pakistan-turkiye-join-saudi-deterrence-against-houthis-what-that-means",
           "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Houthis attacked Aden International Airport with ballistic missiles and drones, forcing a flight from Cairo to divert to Jeddah.",
+      "by": "Says: Yemen's Ministry of Transport. Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/yemens-houthis-attack-aden-airport-saudi-forces-down-missile-near-riyadh?traffic_source=rss",
+          "date": "7 Oct"
+        },
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com/en/yemen-s-houthis-claim-strikes-on-aden-riyadh-airports/a-79571321?maca=en-rss-en-world-4025-rdf",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Houthis say they fired at a Saudi military supply convoy at Camp Badr near Aden airport; the government says its runway and passenger terminal were hit.",
+      "by": "Says: Houthi military spokesman Yahya Saree. Denies: Yemen's Transport Ministry, which says the runway and terminal were targeted.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/news/yemen-houthi-strike-saudi-violence-intensifies",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The Saudi-led coalition intercepted and destroyed a Houthi ballistic missile launched north of Riyadh.",
+      "by": "Says: Saudi-led coalition spokesperson Maj Gen Turki al-Maliki. Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/yemens-houthis-attack-aden-airport-saudi-forces-down-missile-near-riyadh?traffic_source=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Houthis claim fresh strikes on Saudi Arabia's King Khalid International Airport in Riyadh, Abha airport and the Khamis Mushait air base.",
+      "by": "Says: Houthi military spokesman Yahya Saree. Denies: no immediate Saudi confirmation.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-new-attacks-saudi-airports-conflict-deepens",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "WHO's immediate funding requirement for Yemen's health response has risen from $9 million to $31 million.",
+      "by": "Says: WHO Representative in Yemen, Dr Syed Jaffar Hussain. Denies: —",
+      "sources": [
+        {
+          "name": "WHO, via ReliefWeb",
+          "url": "https://reliefweb.int/report/yemen/who-sounds-alarm-critical-funding-gap-health-response-yeme",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Cholera cases in Yemen have tripled in three weeks, with cases detected in displacement camps.",
+      "by": "Says: World Health Organization. Denies: —",
+      "sources": [
+        {
+          "name": "WHO, via ReliefWeb",
+          "url": "https://reliefweb.int/report/yemen/who-sounds-alarm-critical-funding-gap-health-response-yeme",
+          "date": "6 Oct"
         }
       ]
     }
@@ -539,6 +636,83 @@
       ]
     },
     {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "WHO warns of a critical funding gap for Yemen's health response as needs rise and trauma points go unstaffed.",
+      "sources": [
+        {
+          "name": "WHO, via ReliefWeb",
+          "url": "https://reliefweb.int/report/yemen/who-sounds-alarm-critical-funding-gap-health-response-yeme"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Houthis attack Aden International Airport with ballistic missiles and drones; a flight from Cairo is diverted to Jeddah and the terminal evacuated.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/yemens-houthis-attack-aden-airport-saudi-forces-down-missile-near-riyadh?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Saudi-led coalition says it intercepted and destroyed a Houthi ballistic missile launched north of Riyadh.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/yemens-houthis-attack-aden-airport-saudi-forces-down-missile-near-riyadh?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "Houthis claim fresh strikes on Riyadh's King Khalid airport, Abha airport and the Khamis Mushait air base; Riyadh does not confirm.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-new-attacks-saudi-airports-conflict-deepens"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "IOM says Yemen displacement has passed 200,000, reaching 201,217, with Ta'iz governorate hardest hit.",
+      "sources": [
+        {
+          "name": "IOM, via ReliefWeb",
+          "url": "https://reliefweb.int/report/yemen/yemen-displacement-tops-200000-needs-soar-and-funding-alarmingly-dries"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Turkiye says its support to Saudi Arabia under the Mecca pact is mainly defensive and technical, not combat deployment.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/turkey-sending-technical-defensive-support-saudi-arabia-help-fight-houthis"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "Yemeni military officials and analysts say the government's claim of reaching Mocha was premature; fighting is concentrated in Dhubab district.",
+      "sources": [
+        {
+          "name": "gCaptain (Reuters)",
+          "url": "https://gcaptain.com/houthis-attack-aden-airport-as-fighting-intensifies-in-yemen/"
+        }
+      ]
+    },
+    {
       "date": "Sep",
       "kind": "media",
       "text": "Houthis sweep down Yemen's Red Sea coast, seizing about 150km of coastline and areas around Bab al-Mandeb.",
@@ -634,8 +808,56 @@
       "what": "Pakistani forces in Saudi Arabia are already playing a supporting, reconnaissance role; Saudi forces are conducting the ",
       "url": "https://www.aljazeera.com/news/2026/10/6/pakistan-turkiye-join-saudi-deterrence-against-houthis-what-that-means",
       "date": "5 Oct"
+    },
+    {
+      "who": "gCaptain (Reuters)",
+      "what": "The Yemeni government's claim to have reached Mocha was premature, according to Yemeni military officials on the ground ",
+      "url": "https://gcaptain.com/houthis-attack-aden-airport-as-fighting-intensifies-in-yemen/",
+      "date": "7 Oct"
+    },
+    {
+      "who": "WHO, via ReliefWeb",
+      "what": "The latest fighting in Yemen has killed 959 people and wounded 4,207, Yemen's Ministry of Health and Population says.",
+      "url": "https://reliefweb.int/report/yemen/who-sounds-alarm-critical-funding-gap-health-response-yeme",
+      "date": "6 Oct"
+    },
+    {
+      "who": "IOM, via ReliefWeb",
+      "what": "More than 201,000 (201,217) people have been displaced since the war resumed, nearly all since 1 September, with Ta'iz g",
+      "url": "https://reliefweb.int/report/yemen/yemen-displacement-tops-200000-needs-soar-and-funding-alarmingly-dries",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Al-Monitor (Reuters)",
+      "what": "Turkiye's support to Saudi Arabia under the Mecca pact is mainly defensive and technical — military equipment, intellige",
+      "url": "https://www.al-monitor.com/originals/2026/10/turkey-sending-technical-defensive-support-saudi-arabia-help-fight-houthis",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Houthis attacked Aden International Airport with ballistic missiles and drones, forcing a flight from Cairo to divert to",
+      "url": "https://www.aljazeera.com/news/2026/10/7/yemens-houthis-attack-aden-airport-saudi-forces-down-missile-near-riyadh?traffic_source=rss",
+      "date": "7 Oct"
+    },
+    {
+      "who": "DW News",
+      "what": "Houthis attacked Aden International Airport with ballistic missiles and drones, forcing a flight from Cairo to divert to",
+      "url": "https://www.dw.com/en/yemen-s-houthis-claim-strikes-on-aden-riyadh-airports/a-79571321?maca=en-rss-en-world-4025-rdf",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "Houthis say they fired at a Saudi military supply convoy at Camp Badr near Aden airport; the government says its runway ",
+      "url": "https://www.middleeasteye.net/news/yemen-houthi-strike-saudi-violence-intensifies",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Houthis claim fresh strikes on Saudi Arabia's King Khalid International Airport in Riyadh, Abha airport and the Khamis M",
+      "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-new-attacks-saudi-airports-conflict-deepens",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Yemeni forces open new Taiz front as casualties mount"
+  "headline": "Houthis strike Aden airport as Yemen displacement tops 200,000"
 }

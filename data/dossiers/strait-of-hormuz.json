@@ -1,6 +1,6 @@
 {
   "slug": "strait-of-hormuz",
-  "updatedAt": "2026-10-07T09:06+02:00",
+  "updatedAt": "2026-10-07T18:35+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Iran's IRGC continues near-daily strikes and turn-back orders against tankers in the Strait of Hormuz; the Joint Maritime Information Center counts nearly 20 ships attacked in the past month. On 6 October a projectile hit the Panama-flagged tanker On Peace, injuring 12 crew, 11 of them Indian; India condemned the attack and Oman evacuated the wounded to Khasab. Gulf oil exports remain elevated; Euler puts Hormuz throughput at about 75% of pre-war levels, while Kpler data showed broader Gulf exports near pre-war levels in late September.",
+  "stand": "Iran's IRGC continues near-daily strikes and turn-back orders against tankers in Hormuz; the week of 28 September-5 October saw at least 12 tanker attacks, the highest weekly total since the war began, while the IMO recorded nine. On 6 October a projectile hit tanker On Peace, injuring 12 crew, 11 Indian. An IRGC adviser says Iran will soon block 'illegal' smuggling routes off Oman's coast and claims full control of the strait. Gulf exports remain elevated, topping pre-war levels on about 14 days in September per Kpler.",
   "figures": [
     {
       "label": "IRGC-claimed current flow on US-supervised route",
@@ -45,8 +45,8 @@
   "claims": [
     {
       "status": "disputed",
-      "text": "Gulf crude exports recovered above pre-war levels on several days in late September, per Kpler data, but Iran disputes the significance of US-supervised traffic.",
-      "by": "Says: Kpler ship-tracking data. Denies/minimises: IRGC commander Ali Fadavi, who calls US-supervised route volume negligible.",
+      "text": "Gulf crude exports topped pre-war levels on about 14 days in September, roughly half the month, per Kpler data; Iran's IRGC continues to dispute the significance of this recovery.",
+      "by": "Says: Kpler ship-tracking data, via Reuters. Denies/minimises: IRGC adviser Majid Mirahmadi, who says transits remain far below pre-war levels.",
       "sources": [
         {
           "name": "Al Jazeera",
@@ -57,6 +57,16 @@
           "name": "Middle East Eye",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-says-us-forces-have-fled-1000km-irans-borders",
           "date": "5 Oct"
+        },
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/iranian-official-says-illegal-routes-strait-hormuz-soon-be-blocked",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/attacks-tankers-hormuz-hit-highest-any-week-start-iran-war-sources-say",
+          "date": "7 Oct"
         }
       ]
     },
@@ -74,13 +84,23 @@
     },
     {
       "status": "disputed",
-      "text": "IRGC commander Ali Fadavi claims US naval forces have withdrawn 1,000km from Iran's borders and are absent from the Gulf, Strait of Hormuz, Sea of Oman and northern Indian Ocean.",
-      "by": "Says: IRGC commander Ali Fadavi. Denies: CENTCOM, which reports active blockade enforcement and US naval interdictions as recently as 5 October.",
+      "text": "IRGC commander Ali Fadavi's claim that US naval forces have withdrawn 1,000km from Iran's borders was echoed by a second official, who said foreign warships have moved more than 1,000km from the Gulf and 'do not dare approach'.",
+      "by": "Says: IRGC commander Ali Fadavi; IRGC political bureau deputy Yadollah Javani (via IRNA). Denies: CENTCOM, which reports active blockade enforcement and US naval interdictions as recently as 5 October.",
       "sources": [
         {
           "name": "Middle East Eye",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-says-us-forces-have-fled-1000km-irans-borders",
           "date": "5 Oct"
+        },
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-official-says-foreign-warships-withdrew-over-1000km-away-gulf",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-official-says-foreign-warships-have-retreated-gulf",
+          "date": "7 Oct"
         }
       ]
     },
@@ -271,6 +291,59 @@
           "date": "6 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "An IRGC adviser says Iran will soon block 'illegal' routes hugging Oman's coast used to smuggle oil, and claims the Strait of Hormuz is under Iran's full control.",
+      "by": "Says: IRGC adviser Mohammadreza Naqdi (Fars News Agency), also reported by TASS as 'Mohammad Reza Naghdi'.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/iranian-official-says-illegal-routes-strait-hormuz-soon-be-blocked",
+          "date": "7 Oct"
+        },
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198853",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "IRGC adviser Majid Mirahmadi says only an average of 10 ships a day now transit Hormuz, against 125 a day before the war, disputing the narrative of recovering Gulf flows.",
+      "by": "Says: IRGC adviser Majid Mirahmadi.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/iranian-official-says-illegal-routes-strait-hormuz-soon-be-blocked",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Maritime security sources tracking incidents say the week of 28 September-5 October saw at least 12 tanker attacks in and around Hormuz, the highest weekly tally since the war began on 28 February.",
+      "by": "Says: three maritime security sources, via Reuters.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/attacks-tankers-hormuz-hit-highest-any-week-start-iran-war-sources-say",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The UN shipping agency IMO recorded nine incidents involving vessels in Hormuz the same week, 28 September-5 October.",
+      "by": "Says: International Maritime Organization.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/attacks-tankers-hormuz-hit-highest-any-week-start-iran-war-sources-say",
+          "date": "7 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -320,6 +393,17 @@
       ]
     },
     {
+      "date": "28 Sep-5 Oct",
+      "kind": "official",
+      "text": "Maritime security sources log at least 12 tanker attacks in Hormuz, the highest weekly tally since the war began; the IMO separately records nine incidents.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/attacks-tankers-hormuz-hit-highest-any-week-start-iran-war-sources-say"
+        }
+      ]
+    },
+    {
       "date": "24-29 Sep",
       "kind": "media",
       "text": "Crude exports from the region exceeded pre-war levels on four days.",
@@ -338,6 +422,17 @@
         {
           "name": "gCaptain",
           "url": "https://gcaptain.com/middle-east-oil-exports-top-pre-war-levels-for-part-of-september-but-tanker-attacks-increase/"
+        }
+      ]
+    },
+    {
+      "date": "30 Sep",
+      "kind": "media",
+      "text": "Kpler data show Gulf crude exports topped pre-war levels on 14 days in September.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/iranian-official-says-illegal-routes-strait-hormuz-soon-be-blocked"
         }
       ]
     },
@@ -573,6 +668,32 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "IRGC adviser Mohammadreza Naqdi says Iran will soon block 'illegal' smuggling routes off Oman's coast and claims full control of the Strait of Hormuz.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/iranian-official-says-illegal-routes-strait-hormuz-soon-be-blocked"
+        },
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198853"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "reaction",
+      "text": "IRGC political bureau deputy Yadollah Javani repeats the claim that foreign warships have retreated more than 1,000km from the Gulf.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-official-says-foreign-warships-have-retreated-gulf"
+        }
+      ]
+    },
+    {
       "date": "Mar",
       "kind": "media",
       "text": "Lloyd's List reports the IRGC had already imposed a toll system on vessel traffic through Hormuz.",
@@ -698,8 +819,38 @@
       "what": "Panama-flagged tanker On Peace struck by a projectile off Khasab/Limah, Oman; 12 of 19 crew injured, 11 Indian; Oman eva",
       "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
       "date": "6 Oct"
+    },
+    {
+      "who": "Al-Monitor/Reuters",
+      "what": "Gulf crude exports topped pre-war levels on about 14 days in September, roughly half the month, per Kpler data; Iran's I",
+      "url": "https://www.al-monitor.com/originals/2026/10/iranian-official-says-illegal-routes-strait-hormuz-soon-be-blocked",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Al-Monitor/Reuters",
+      "what": "Gulf crude exports topped pre-war levels on about 14 days in September, roughly half the month, per Kpler data; Iran's I",
+      "url": "https://www.al-monitor.com/originals/2026/10/attacks-tankers-hormuz-hit-highest-any-week-start-iran-war-sources-say",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "IRGC commander Ali Fadavi's claim that US naval forces have withdrawn 1,000km from Iran's borders was echoed by a second",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-official-says-foreign-warships-withdrew-over-1000km-away-gulf",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "IRGC commander Ali Fadavi's claim that US naval forces have withdrawn 1,000km from Iran's borders was echoed by a second",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-official-says-foreign-warships-have-retreated-gulf",
+      "date": "7 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "An IRGC adviser says Iran will soon block 'illegal' routes hugging Oman's coast used to smuggle oil, and claims the Stra",
+      "url": "https://tass.com/world/2198853",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Iran's Hormuz attacks injure tanker crew as exports keep recovering"
+  "headline": "Iran threatens new Hormuz closures as tanker attacks hit record week"
 }

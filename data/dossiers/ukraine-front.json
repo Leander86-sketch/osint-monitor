@@ -1,6 +1,6 @@
 {
   "slug": "ukraine-front",
-  "updatedAt": "2026-10-07T09:06+02:00",
+  "updatedAt": "2026-10-07T18:43+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Russia and Ukraine are trading escalating long-range strikes as a fifth winter approaches. Russia has hit Kyiv's bridges, railways and energy sites, and pledges further strikes after Ukraine's attacks on its oil refineries. Ukraine says it has disabled over half of Russia's refining capacity and struck Moscow region with 650 drones, killing two. Civilians are dying on both sides. Washington is pushing trilateral talks by end-October; Kyiv says yes, Moscow's answer is pending. Germany pledged fresh military aid; Russia is accused of trying to intimidate Kyiv's foreign embassies.",
+  "stand": "Russia and Ukraine continue exchanging long-range strikes as a fifth winter nears. Overnight on 6-7 October, Russia fired 70 missiles and 46 drones at Ukraine, collapsing an apartment block in Pryluky and killing at least a dozen people nationwide, timed to Putin's 74th birthday. Zelensky calls it deliberate terror and appeals for Patriot interceptors. Ukraine says it struck Russian oil facilities in response. The EU disbursed a €1.2bn tranche to Kyiv for defence. WHO reports attacks on Ukrainian healthcare rose 17% in Q3. Trilateral peace talks remain pending Moscow's answer.",
   "figures": [
     {
       "label": "Trains evacuated in September due to drone attacks",
@@ -236,6 +236,165 @@
           "name": "SCMP",
           "url": "https://www.scmp.com/week-asia/politics/article/3369911/why-india-getting-serious-about-ending-ukraine-war?utm_source=rss_feed",
           "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Zelensky accuses Russia of deliberately targeting civilians with a strike timed as a 'birthday gift' for Putin, calling it an absolutely deliberate choice of terror.",
+      "by": "Says: President Volodymyr Zelenskyy. No Russian response on the accusation in sources reviewed.",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Ukraine's officials say the overnight 6-7 October attack involved around 70 missiles, many ballistic, and 46 jet-powered drones hitting eleven regions.",
+      "by": "Says: President Volodymyr Zelenskyy / Ukrainian officials.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/russia-launches-heavy-strikes-at-ukraine-killing-at-least-20-a93901",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Zelensky appeals to allies for US-made Patriot interceptors, saying Ukraine struggles to shoot down enemy ballistic missiles.",
+      "by": "Says: President Volodymyr Zelenskyy.",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Pryluky apartment-block death toll is reported inconsistently: Guardian/Zelensky say 18 dead including 4 children; Moscow Times cites local officials for 'at least 14' including 4 children; Meduza cites the State Emergency Service for 4 dead and 20 injured including 3 children.",
+      "by": "Says: Ukrainian officials, via Zelensky and local/regional officials (figures vary by outlet).",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/russia-launches-heavy-strikes-at-ukraine-killing-at-least-20-a93901",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/news/2026/10/07/russian-missile-and-drone-strikes-across-ukraine-kill-six-and-injure-more-than-20",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A Russian strike causes a fire at a garage cooperative in Kyiv's Darnytskyi district, killing two people.",
+      "by": "Says: Kyiv Mayor Vitali Klitschko.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171757-missile-attack-on-kyiv-two-people-killed-damage-reported-in-several-districts.html",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/news/2026/10/07/russian-missile-and-drone-strikes-across-ukraine-kill-six-and-injure-more-than-20",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Ukraine's air force intercepted over 80% of the 46 jet-powered drones launched, up from a recent average of 50-60%.",
+      "by": "Says: Ukraine's air force.",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Russia's Defence Ministry says its strike targeted military-industrial facilities including sites where Ukrainian firm Fire Point makes and stores Flamingo cruise missiles and long-range drones, across Kyiv, Chernihiv, Kirovohrad, Dnipropetrovsk, Poltava and Kharkiv regions, plus Odesa port infrastructure.",
+      "by": "Says: Russia's Defence Ministry. No Ukrainian confirmation of these specific targets in sources reviewed.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/russia-launches-heavy-strikes-at-ukraine-killing-at-least-20-a93901",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Russian officials say naval drones hit a Liberian-flagged oil tanker near Sochi, with crude oil burning on the Black Sea; its Indian crew of 23 was rescued.",
+      "by": "Says: Russian officials.",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The search for sailors from the Black Sea grain ship that sank earlier this week has been called off with no survivors found; a second vessel was also hit in Bulgaria's exclusive economic zone.",
+      "by": "Says: Bulgarian Vice-Admiral Rumen Nikolov; Says: Bulgarian PM Rumen Radev (on the second ship).",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "WHO verified 180 attacks on healthcare in Ukraine in Q3 2026, a 17% rise on Q2, with 480 attacks verified in the first nine months of the year.",
+      "by": "Says: World Health Organization.",
+      "sources": [
+        {
+          "name": "ReliefWeb (WHO Ukraine Newsletter)",
+          "url": "https://reliefweb.int/report/ukraine/who-ukraine-newsletter-september-2026",
+          "date": "Sep 2026"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Two WHO warehouses in Ukraine were hit in September: a main humanitarian warehouse in Kyiv region destroyed on 3 September and one in Chornomorsk damaged on 22 September, losing supplies meant for nearly 270,000 people.",
+      "by": "Says: World Health Organization.",
+      "sources": [
+        {
+          "name": "ReliefWeb (WHO Ukraine Newsletter)",
+          "url": "https://reliefweb.int/report/ukraine/who-ukraine-newsletter-september-2026",
+          "date": "Sep 2026"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Kyiv's Dovzhenko Film Studio was damaged again in the strike, in a three-pavilion building; no fatalities reported.",
+      "by": "Says: Dovzhenko Film Studio, via Facebook.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171824-dovzhenko-film-studio-in-kyiv-damaged-again-in-russian-attack.html",
+          "date": "7 Oct"
         }
       ]
     }
@@ -465,6 +624,76 @@
           "url": "https://tass.com/defense/2197931"
         }
       ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Russian forces strike a warehouse facility in Zaporizhzhia, killing a man.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171756-russian-forces-attack-transport-infrastructure-in-zaporizhzhia.html"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Russia fires roughly 70 missiles, many ballistic, and 46 jet-powered drones at Ukraine overnight, hitting eleven regions on Putin's birthday.",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin"
+        },
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/russia-launches-heavy-strikes-at-ukraine-killing-at-least-20-a93901"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "A fire at a garage cooperative in Kyiv's Darnytskyi district kills two people.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171757-missile-attack-on-kyiv-two-people-killed-damage-reported-in-several-districts.html"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Russia's Defence Ministry says it struck Ukrainian military-industrial sites, including Fire Point's missile facilities and Odesa port infrastructure.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/russia-launches-heavy-strikes-at-ukraine-killing-at-least-20-a93901"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "An oil tanker burns near Sochi after Russian officials report a naval drone strike; its Indian crew of 23 is rescued.",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "The search for sailors from the Black Sea grain ship that sank earlier this week is called off with no survivors found.",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin"
+        }
+      ]
     }
   ],
   "sources": [
@@ -569,8 +798,50 @@
       "what": "Dutch PM Rob Jetten pledges F-16 maintenance, spare parts and ammunition for Ukraine after talks with Zelenskyy on air d",
       "url": "https://www.ukrinform.net/rubric-polytics/4171398-pm-jetten-netherlands-to-help-ukraine-with-f16-maintenance-spare-parts-and-ammunition.html",
       "date": "6 Oct"
+    },
+    {
+      "who": "Guardian",
+      "what": "Zelensky accuses Russia of deliberately targeting civilians with a strike timed as a 'birthday gift' for Putin, calling ",
+      "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Moscow Times",
+      "what": "Ukraine's officials say the overnight 6-7 October attack involved around 70 missiles, many ballistic, and 46 jet-powered",
+      "url": "https://www.themoscowtimes.com/2026/10/07/russia-launches-heavy-strikes-at-ukraine-killing-at-least-20-a93901",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Meduza",
+      "what": "Pryluky apartment-block death toll is reported inconsistently: Guardian/Zelensky say 18 dead including 4 children; Mosco",
+      "url": "https://meduza.io/en/news/2026/10/07/russian-missile-and-drone-strikes-across-ukraine-kill-six-and-injure-more-than-20",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "A Russian strike causes a fire at a garage cooperative in Kyiv's Darnytskyi district, killing two people.",
+      "url": "https://www.ukrinform.net/rubric-ato/4171757-missile-attack-on-kyiv-two-people-killed-damage-reported-in-several-districts.html",
+      "date": "7 Oct"
+    },
+    {
+      "who": "ReliefWeb (WHO Ukraine Newsletter)",
+      "what": "WHO verified 180 attacks on healthcare in Ukraine in Q3 2026, a 17% rise on Q2, with 480 attacks verified in the first n",
+      "url": "https://reliefweb.int/report/ukraine/who-ukraine-newsletter-september-2026",
+      "date": "Sep 2026"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Kyiv's Dovzhenko Film Studio was damaged again in the strike, in a three-pavilion building; no fatalities reported.",
+      "url": "https://www.ukrinform.net/rubric-ato/4171824-dovzhenko-film-studio-in-kyiv-damaged-again-in-russian-attack.html",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Russian forces strike a warehouse facility in Zaporizhzhia, killing a man.",
+      "url": "https://www.ukrinform.net/rubric-ato/4171756-russian-forces-attack-transport-infrastructure-in-zaporizhzhia.html",
+      "date": "6 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Russia and Ukraine escalate mutual drone and infrastructure strikes"
+  "headline": "Russia batters Ukraine with largest missile barrage in weeks, dozens dead"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "europe-airspace-drones",
-  "updatedAt": "2026-10-07T09:06+02:00",
+  "updatedAt": "2026-10-07T18:13+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Drones have struck Black Sea shipping twice in two days: a Turkish-flagged grain carrier sank near Romania on 5 October, killing two, and Bulgaria's Alfa Watan and Able were hit on 6 October, sinking one and damaging the other. Radev calls it a violation of international law but won't name the attacker. Zelensky says Ukrainian naval intelligence has established the Bulgaria strike as a combined Russian drone attack; a Reuters source separately points to Russia. Opposition accuses Radev of shielding Moscow. Estonia received 13 US drones for border security.",
+  "stand": "Drones have struck Black Sea shipping twice this week: a Turkish-flagged carrier sank near Romania on 5 October, killing two, and Bulgaria's Alfa Watan and Able were hit on 6 October, sinking one and damaging the other. Bulgaria has called off the search for the Alfa Watan's crew, finding no survivors, and says it still cannot determine the drones' origin. Radev calls the attack unacceptable and plans to buy five more air-defence systems. Zelensky says Russia carried it out; opposition accuses Radev of shielding Moscow. Estonia received 13 US drones.",
   "figures": [
     {
       "label": "Romania grain carrier casualties",
@@ -111,13 +111,23 @@
     },
     {
       "status": "disputed",
-      "text": "The origin of the drones in the Bulgaria attack is unresolved; Radev will not name an aggressor while opposition figures say it is clearly Russia.",
-      "by": "Says: PM Rumen Radev (\"either Russian or Ukrainian\"); Denies/alleges: opposition figures Assen Vassilev and Ivaylo Mirchev say it is Russia and accuse Radev of shielding it",
+      "text": "The origin of the drones in the Bulgaria attack remains undetermined: no drone wreckage has been recovered, and Radev still will not name an aggressor while opposition figures say it is clearly Russia.",
+      "by": "Says: Bulgarian authorities (Vice Admiral Rumen Nikolov, PM Rumen Radev); Denies/alleges: opposition figures Assen Vassilev and Ivaylo Mirchev say it is Russia and accuse Radev of shielding it",
       "sources": [
         {
           "name": "Balkan Insight",
           "url": "https://balkaninsight.com/2026/10/06/bulgarian-pm-and-opposition-quarrel-over-black-sea-drone-attack/bi/",
           "date": "6 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/bulgaria-ends-search-for-missing-crew-after-drone-strike-sinks-cargo-ship?traffic_source=rss",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Baltic News Network",
+          "url": "https://bnn-news.com/world/bulgaria-calls-off-search-for-crew-of-ship-sunk-by-drone-strike-anskxvj",
+          "date": "7 Oct"
         }
       ]
     },
@@ -226,6 +236,47 @@
           "name": "Fox News World",
           "url": "https://www.foxnews.com/world/drone-strike-sinks-ship-nato-waters-zelenskyy-warns-looming-massive-strike",
           "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Bulgaria's Maritime Search and Rescue Coordination Centre ended its search for the Alfa Watan's missing crew, finding no survivors.",
+      "by": "Says: Vice Admiral Rumen Nikolov, head of Bulgaria's Maritime Search and Rescue Coordination Centre",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/bulgaria-ends-search-for-missing-crew-after-drone-strike-sinks-cargo-ship?traffic_source=rss",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Baltic News Network",
+          "url": "https://bnn-news.com/world/bulgaria-calls-off-search-for-crew-of-ship-sunk-by-drone-strike-anskxvj",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Bulgaria's government will approve the purchase of five additional surface-to-air missile systems.",
+      "by": "Says: Bulgarian PM Rumen Radev",
+      "sources": [
+        {
+          "name": "Baltic News Network",
+          "url": "https://bnn-news.com/world/bulgaria-calls-off-search-for-crew-of-ship-sunk-by-drone-strike-anskxvj",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "EU ambassadors are discussing, in restricted format, a 'nightmare scenario' hybrid attack causing numerous casualties, with talks intensifying since the Leipzig airport drone discovery.",
+      "by": "Says: Politico Europe (cited by TASS)",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198685",
+          "date": "7 Oct"
         }
       ]
     }
@@ -380,6 +431,43 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Bulgaria's Maritime Search and Rescue Coordination Centre ended the search for the Alfa Watan's missing crew; no drone wreckage was recovered, only a boat, life rafts and ship debris.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/bulgaria-ends-search-for-missing-crew-after-drone-strike-sinks-cargo-ship?traffic_source=rss"
+        },
+        {
+          "name": "Baltic News Network",
+          "url": "https://bnn-news.com/world/bulgaria-calls-off-search-for-crew-of-ship-sunk-by-drone-strike-anskxvj"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Radev announced his government would approve the purchase of five additional surface-to-air missile systems.",
+      "sources": [
+        {
+          "name": "Baltic News Network",
+          "url": "https://bnn-news.com/world/bulgaria-calls-off-search-for-crew-of-ship-sunk-by-drone-strike-anskxvj"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "Politico reported EU ambassadors have been discussing a 'nightmare scenario' hybrid-attack contingency plan since the August Leipzig drone discovery.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198685"
+        }
+      ]
+    },
+    {
       "date": "Aug",
       "kind": "official",
       "text": "Romania scrambled F-16 fighter jets to destroy a maritime drone near the Neptun Deep gas platform in the Black Sea.",
@@ -462,8 +550,26 @@
       "what": "Bulgaria's Security Council is set to meet at 13:00 at the presidential residence on maritime security and critical-infr",
       "url": "https://www.ukrinform.net/rubric-polytics/4171723-bulgarian-president-convenes-security-council-after-drone-attacks-on-commercial-vessels.html",
       "date": "7 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The origin of the drones in the Bulgaria attack remains undetermined: no drone wreckage has been recovered, and Radev st",
+      "url": "https://www.aljazeera.com/news/2026/10/7/bulgaria-ends-search-for-missing-crew-after-drone-strike-sinks-cargo-ship?traffic_source=rss",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Baltic News Network",
+      "what": "The origin of the drones in the Bulgaria attack remains undetermined: no drone wreckage has been recovered, and Radev st",
+      "url": "https://bnn-news.com/world/bulgaria-calls-off-search-for-crew-of-ship-sunk-by-drone-strike-anskxvj",
+      "date": "7 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "EU ambassadors are discussing, in restricted format, a 'nightmare scenario' hybrid attack causing numerous casualties, w",
+      "url": "https://tass.com/world/2198685",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Ukraine blames Russia for Bulgaria Black Sea drone strikes"
+  "headline": "Bulgaria Ends Search for Drone-Strike Crew, Origin Still Unconfirmed"
 }

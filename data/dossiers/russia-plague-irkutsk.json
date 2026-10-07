@@ -1,6 +1,6 @@
 {
   "slug": "russia-plague-irkutsk",
-  "updatedAt": "2026-10-07T16:50+02:00",
+  "updatedAt": "2026-10-07T18:03+02:00",
   "anchors": [
     {
       "label": "WHO",
@@ -444,12 +444,22 @@
     },
     {
       "status": "reported",
-      "text": "Media report a second institute employee with pneumonia of undetermined cause. The WHO has asked Russia to clarify these reports; Russia has not confirmed a second case.",
-      "by": "Says: media reports, relayed by the WHO to AP. Denies: Kremlin spokesman Peskov calls most reporting on the case false.",
+      "text": "A second case: Russian media claim a second person died at Irkutsk district hospital (Daily Mail, 6 Oct); the WHO speaks only of \"media reports of a second employee with pneumonia of undetermined cause\" and has asked Russia to clarify. Neither a second death nor a diagnosis is confirmed.",
+      "by": "Says: Russian media via Daily Mail; WHO (reports only). Denies: Kremlin — most reporting false; Russia: no plague case registered.",
       "sources": [
         {
           "name": "ABC News (AP)",
           "url": "https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Daily Mail",
+          "url": "https://www.dailymail.com/news/article-16186315/Russian-media-claims-second-victim-died-plague-outbreak-infection-zone-hospital-Kremlin-scrambles-cover-details.html",
+          "date": "6 Oct"
+        },
+        {
+          "name": "Politico",
+          "url": "https://www.politico.eu/article/world-health-organization-who-information-pneumonia-russia-plague/",
           "date": "7 Oct"
         }
       ]
@@ -516,6 +526,42 @@
           "name": "ABC News (AP)",
           "url": "https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277",
           "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The EU's Health Security Committee discusses the case on 7 Oct; the Commission and the US monitor it closely.",
+      "by": "Says: European Commission spokesperson, to Politico.",
+      "sources": [
+        {
+          "name": "Politico",
+          "url": "https://www.politico.eu/article/world-health-organization-who-information-pneumonia-russia-plague/",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Mongolia, Kyrgyzstan and Uzbekistan are tightening border health controls; Russian searches for \"chuma\" (plague) are up 5,000% year on year (The Times).",
+      "by": "Says: Daily Mail, citing The Times.",
+      "sources": [
+        {
+          "name": "Daily Mail",
+          "url": "https://www.dailymail.com/news/article-16186315/Russian-media-claims-second-victim-died-plague-outbreak-infection-zone-hospital-Kremlin-scrambles-cover-details.html",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Plague reports have disappeared from Russian national media, including Channel 5 and Kommersant, after REN TV deleted five posts.",
+      "by": "Says: Daily Mail; The Insider.",
+      "sources": [
+        {
+          "name": "Daily Mail",
+          "url": "https://www.dailymail.com/news/article-16186315/Russian-media-claims-second-victim-died-plague-outbreak-infection-zone-hospital-Kremlin-scrambles-cover-details.html",
+          "date": "6 Oct"
         }
       ]
     }
@@ -940,6 +986,17 @@
           "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss"
         }
       ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "reaction",
+      "text": "EU Health Security Committee takes up the case; Russia's note to the WHO calls it 'community acquired pneumonia'.",
+      "sources": [
+        {
+          "name": "Politico",
+          "url": "https://www.politico.eu/article/world-health-organization-who-information-pneumonia-russia-plague/"
+        }
+      ]
     }
   ],
   "background": {
@@ -1136,6 +1193,18 @@
       "who": "CNA",
       "what": "Whether a Trump–Putin call is scheduled: Trump says \"I have a call scheduled\" and expects to report \"probably tomorrow\";",
       "url": "https://www.channelnewsasia.com/world/trump-putin-russian-plague-lab-6438031",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Daily Mail",
+      "what": "A second case: Russian media claim a second person died at Irkutsk district hospital (Daily Mail, 6 Oct); the WHO speaks",
+      "url": "https://www.dailymail.com/news/article-16186315/Russian-media-claims-second-victim-died-plague-outbreak-infection-zone-hospital-Kremlin-scrambles-cover-details.html",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Politico",
+      "what": "A second case: Russian media claim a second person died at Irkutsk district hospital (Daily Mail, 6 Oct); the WHO speaks",
+      "url": "https://www.politico.eu/article/world-health-organization-who-information-pneumonia-russia-plague/",
       "date": "7 Oct"
     }
   ],

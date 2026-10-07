@@ -92,7 +92,9 @@ updates to a hand-compiled dossier. Rules, strictly:
    "debunked" = checked and found false. Attribute: who says, who denies.
 4. Do not repeat what the dossier already says unless the article CHANGES it (new number, new date, a denial, a
    confirmation). For a change, give action "change" and name what changed.
-5. Figures: only propose a figure if an article states the number; say which source and date.
+5. Figures: only propose a figure if an article states the number; say which source and date. A figure describes
+   the CURRENT state: if a new number supersedes an old one (e.g. "90% cleared" replaces "197 under observation"),
+   use action "change" with the OLD label so it is replaced, never added beside it. Keep at most 6 figures.
 6. Dates in the timeline as "6 Oct" style. Prefer the article's own dating of events over its publication date.
 7. Be sparse and precise. Short sentences. Name the actor. British spelling. English output.
 9. A claim whose only sources are state media (TASS, RIA, Sputnik, RT, Xinhua, Global Times, CGTN, Press TV, IRNA,

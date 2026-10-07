@@ -106,7 +106,7 @@ updates to a hand-compiled dossier. Rules, strictly:
    verification.
 8. Output ONE JSON object, nothing else, with this shape:
 {"summary": "2-3 sentences: what changed since the dossier was last updated",
- "headline": "a newspaper headline for the situation as it stands now: max 12 words, your own wording (never copy a source headline), names the actor, no clickbait, no question marks",
+ "headline": "a newspaper headline for the situation as it stands now: max 12 words, sentence case (capitals only for names), your own wording (never copy a source headline), names the actor, no clickbait, no question marks",
  "stand": "a proposed replacement paragraph for the stand (max 90 words), or null if no change needed",
  "figures": [{"action":"new|change","label":"...","value":"...","src":{"name":"...","url":"...","date":"6 Oct"},"quote":"..."}],
  "claims": [{"action":"new|change","status":"confirmed|reported|disputed|debunked","text":"...","by":"Says: ... Denies: ...","sources":[{"name":"...","url":"...","date":"6 Oct"}],"quote":"..."}],
@@ -249,7 +249,7 @@ def main():
         import subprocess
         d = load_dossier(slug)
         prompt = ("Write ONE newspaper headline for this situation as it stands now. Max 12 words. Your own wording. Name the actor. "
-                  "No clickbait, no question mark, no trailing full stop, British spelling. Output the headline only.\n\nSTAND: " + d.get('stand', '') +
+                  "No clickbait, no question mark, no trailing full stop, British spelling, SENTENCE CASE (capitals only for names). Output the headline only.\n\nSTAND: " + d.get('stand', '') +
                   "\n\nCLAIMS:\n" + '\n'.join(f"- [{c['status']}] {c['text']}" for c in d.get('claims', [])[:10]))
         r = subprocess.run(['/opt/homebrew/bin/claude', '-p', '--model', 'sonnet', '--output-format', 'text'], input=prompt, capture_output=True, text=True, timeout=300, cwd=ROOT)
         h = r.stdout.strip().strip('"').strip().rstrip('.')

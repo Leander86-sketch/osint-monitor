@@ -98,6 +98,10 @@ updates to a hand-compiled dossier. Rules, strictly:
 9. A claim whose only sources are state media (TASS, RIA, Sputnik, RT, Xinhua, Global Times, CGTN, Press TV, IRNA,
    Anadolu, KCNA, Ukrinform) is at most "reported", never "confirmed", even if it quotes an official.
 10. In "by": write "Says: ..." and add "Denies: ..." only when someone actually denies. Never write "Denies: n/a".
+11. A statement by a party to the conflict ABOUT the other side (casualties it inflicted, leaders it killed, territory
+   it took, what the enemy intends) is at most "reported" — or "disputed" if the other side denies — never "confirmed",
+   whatever the speaker's rank. "Confirmed" needs the affected side itself, an international body, or independent
+   verification.
 8. Output ONE JSON object, nothing else, with this shape:
 {"summary": "2-3 sentences: what changed since the dossier was last updated",
  "headline": "a newspaper headline for the situation as it stands now: max 12 words, your own wording (never copy a source headline), names the actor, no clickbait, no question marks",

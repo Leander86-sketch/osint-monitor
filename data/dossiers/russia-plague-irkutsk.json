@@ -22,45 +22,35 @@
       "value": "0",
       "color": "#4ade80",
       "src": {
-        "name": "Rospotrebnadzor via Interfax",
-        "url": "https://www.themoscowtimes.com/2026/10/05/officials-seek-to-reassure-public-after-irkutsk-anti-plague-institute-workers-death-a93872",
-        "date": "5 Oct"
+        "name": "Russia to WHO, via AP",
+        "url": "https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277",
+        "date": "7 Oct"
       }
     },
     {
-      "label": "death, cause unconfirmed",
+      "label": "death, cause unconfirmed · a 2nd claimed by Russian media, unconfirmed",
       "value": "1",
       "color": "#ef4444",
       "src": {
-        "name": "Meduza",
-        "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable",
-        "date": "5 Oct"
+        "name": "WHO via Politico · Daily Mail",
+        "url": "https://www.politico.eu/article/world-health-organization-who-information-pneumonia-russia-plague/",
+        "date": "7 Oct"
       }
     },
     {
-      "label": "contacts under observation (media count)",
-      "value": "~197",
+      "label": "of ~200 contacts cleared from observation",
+      "value": "90%",
       "color": "#f59e0b",
       "src": {
-        "name": "Izvestia via Meduza",
-        "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable",
-        "date": "2 Oct"
-      }
-    },
-    {
-      "label": "WHO risk for Europe",
-      "value": "very low",
-      "color": "#4ade80",
-      "src": {
-        "name": "WHO via The Guardian",
-        "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who",
-        "date": "6 Oct"
+        "name": "Rospotrebnadzor via BBC",
+        "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss",
+        "date": "7 Oct"
       }
     },
     {
       "label": "institute staff with new symptoms",
       "value": "0",
-      "color": "#f59e0b",
+      "color": "#4ade80",
       "src": {
         "name": "Governor Kobzev via BBC",
         "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&at_campaign=rss",
@@ -68,12 +58,12 @@
       }
     },
     {
-      "label": "contacts cleared from observation",
-      "value": "90%",
-      "color": "#f59e0b",
+      "label": "WHO risk for Europe",
+      "value": "very low",
+      "color": "#4ade80",
       "src": {
-        "name": "Rospotrebnadzor via BBC",
-        "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss",
+        "name": "WHO via Politico",
+        "url": "https://www.politico.eu/article/world-health-organization-who-information-pneumonia-russia-plague/",
         "date": "7 Oct"
       }
     }

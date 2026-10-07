@@ -1,6 +1,6 @@
 {
   "slug": "russia-plague-irkutsk",
-  "updatedAt": "2026-10-07T09:06+02:00",
+  "updatedAt": "2026-10-07T16:50+02:00",
   "anchors": [
     {
       "label": "WHO",
@@ -15,7 +15,7 @@
       "match": "^AP News"
     }
   ],
-  "stand": "A laboratory technician of the Irkutsk Anti-Plague Institute died in Shelekhov on 1–2 October, two days after admission with severe pneumonia. Rospotrebnadzor calls it \"pneumonia of unknown etiology\", denies a lab accident, and told the WHO on 6 October that no plague cases had been recorded in Irkutsk; an autopsy found no pathogens linked to her work. Some contacts have been released from quarantine; none is symptomatic. The WHO rates public risk low but wants transparency. Trump plans to call Putin \"very soon\"; the US CDC is monitoring.",
+  "stand": "A laboratory technician of the Irkutsk Anti-Plague Institute died in Shelekhov on 1–2 October, two days after admission with severe pneumonia. Rospotrebnadzor calls it \"pneumonia of unknown etiology\", denies a lab accident and says 90% of contacts have completed observation with no infectious illness found. Russia told the WHO no plague case has been registered; the WHO has now asked Russia to clarify media reports of a second employee with undetermined pneumonia. The US sent a diplomatic demarche and a health alert; the Kremlin calls most reporting false.",
   "figures": [
     {
       "label": "confirmed plague cases",
@@ -86,6 +86,16 @@
         "url": "https://www.aljazeera.com/news/2026/10/6/russia-denies-imposing-anti-plague-measures-after-lab-worker-death?traffic_source=rss",
         "date": "6 Oct"
       }
+    },
+    {
+      "label": "contacts cleared from observation",
+      "value": "90%",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Rospotrebnadzor via BBC",
+        "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss",
+        "date": "7 Oct"
+      }
     }
   ],
   "claims": [
@@ -108,7 +118,7 @@
     },
     {
       "status": "confirmed",
-      "text": "Rospotrebnadzor specifies that contacts have been under daily laboratory tests and observation for 10 days with no plague found.",
+      "text": "Rospotrebnadzor: more than 90% of contacts have completed medical observation with no infectious illness detected; a biosafety review found no emergencies involving pathogens; \"there are no epidemic risks for the population\".",
       "by": "Says: Rospotrebnadzor.",
       "sources": [
         {
@@ -130,6 +140,16 @@
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/6/russia-denies-imposing-anti-plague-measures-after-lab-worker-death?traffic_source=rss",
           "date": "6 Oct"
+        },
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss",
+          "date": "7 Oct"
+        },
+        {
+          "name": "TASS",
+          "url": "https://tass.com/society/2198859",
+          "date": "7 Oct"
         }
       ]
     },
@@ -439,6 +459,83 @@
           "name": "The Guardian",
           "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who",
           "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Media report a second institute employee with pneumonia of undetermined cause. The WHO has asked Russia to clarify these reports; Russia has not confirmed a second case.",
+      "by": "Says: media reports, relayed by the WHO to AP. Denies: Kremlin spokesman Peskov calls most reporting on the case false.",
+      "sources": [
+        {
+          "name": "ABC News (AP)",
+          "url": "https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Russia told the WHO that contact tracing, medical monitoring and lab tests were carried out and showed no dangerous pathogens in any contact; the WHO has asked for the cause of the pneumonia and the pathogen behind the measures.",
+      "by": "Says: Russian note to the WHO, relayed by the WHO to AP.",
+      "sources": [
+        {
+          "name": "ABC News (AP)",
+          "url": "https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "WHO chief Tedros publicly called for \"timely, complete and transparent information sharing\" from Russia to clarify conflicting reports.",
+      "by": "Says: WHO Director-General Tedros Adhanom Ghebreyesus.",
+      "sources": [
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The US Embassy in Moscow issued a health alert: citizens in the area should follow local guidance, avoid affected facilities and seek care for fever or respiratory symptoms; it reiterated the standing advice to leave Russia.",
+      "by": "Says: US Embassy Moscow.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/us-embassy-urges-citizens-to-leave-russia-over-siberian-plague-suspicions-a93899",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Whether a Trump–Putin call is scheduled: Trump says \"I have a call scheduled\" and expects to report \"probably tomorrow\"; Peskov says no call has been set but one could be organised quickly.",
+      "by": "Says: Trump. Denies: Kremlin spokesman Peskov.",
+      "sources": [
+        {
+          "name": "CNA",
+          "url": "https://www.channelnewsasia.com/world/trump-putin-russian-plague-lab-6438031",
+          "date": "7 Oct"
+        },
+        {
+          "name": "ABC News (AP)",
+          "url": "https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Russian state TV and national state media have steered clear of the case; some state-sponsored outlets withdrew earlier reports.",
+      "by": "Says: AP.",
+      "sources": [
+        {
+          "name": "ABC News (AP)",
+          "url": "https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277",
+          "date": "7 Oct"
         }
       ]
     }
@@ -822,6 +919,47 @@
           "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who"
         }
       ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Rospotrebnadzor: biosafety review complete, no emergencies; 90% of contacts cleared; \"no epidemic risks\". Peskov: WHO duly informed, most media reports false; no Trump call scheduled yet.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/society/2198859"
+        },
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "WHO asks Russia to clarify the cause of the pneumonia, the pathogen behind the measures, and media reports of a second employee with undetermined pneumonia.",
+      "sources": [
+        {
+          "name": "ABC News (AP)",
+          "url": "https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "reaction",
+      "text": "US Embassy Moscow health alert; State Department demarche confirmed to AFP by a source; Rubio: the US has \"measures\" to help if the situation is more serious than claimed.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/us-embassy-urges-citizens-to-leave-russia-over-siberian-plague-suspicions-a93899"
+        },
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss"
+        }
+      ]
     }
   ],
   "background": {
@@ -989,8 +1127,38 @@
       "what": "US CDC says it is aware of and monitoring the case; sees no broader threat to the US.",
       "url": "https://www.cnbc.com/2026/10/07/trump-putin-russian-plague-death-cdc-pneumonic-.html",
       "date": "6 Oct"
+    },
+    {
+      "who": "BBC",
+      "what": "Rospotrebnadzor: more than 90% of contacts have completed medical observation with no infectious illness detected; a bio",
+      "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss",
+      "date": "7 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Rospotrebnadzor: more than 90% of contacts have completed medical observation with no infectious illness detected; a bio",
+      "url": "https://tass.com/society/2198859",
+      "date": "7 Oct"
+    },
+    {
+      "who": "ABC News (AP)",
+      "what": "Media report a second institute employee with pneumonia of undetermined cause. The WHO has asked Russia to clarify these",
+      "url": "https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Moscow Times",
+      "what": "The US Embassy in Moscow issued a health alert: citizens in the area should follow local guidance, avoid affected facili",
+      "url": "https://www.themoscowtimes.com/2026/10/07/us-embassy-urges-citizens-to-leave-russia-over-siberian-plague-suspicions-a93899",
+      "date": "7 Oct"
+    },
+    {
+      "who": "CNA",
+      "what": "Whether a Trump–Putin call is scheduled: Trump says \"I have a call scheduled\" and expects to report \"probably tomorrow\";",
+      "url": "https://www.channelnewsasia.com/world/trump-putin-russian-plague-lab-6438031",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "Not medical advice. The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Russia under growing international pressure over plague death transparency"
+  "headline": "WHO presses Russia over reports of a second Irkutsk pneumonia case"
 }

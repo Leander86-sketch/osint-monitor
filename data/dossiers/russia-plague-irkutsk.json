@@ -68,26 +68,6 @@
       }
     },
     {
-      "label": "contacts tested so far",
-      "value": "60%",
-      "color": "#f59e0b",
-      "src": {
-        "name": "NBC News",
-        "url": "https://www.nbcnews.com/world/russia/russia-says-no-plague-found-contacts-siberian-lab-worker-died-rcna601805",
-        "date": "6 Oct"
-      }
-    },
-    {
-      "label": "contacts released from quarantine",
-      "value": "60%",
-      "color": "#f59e0b",
-      "src": {
-        "name": "Elena Sofina via Al Jazeera",
-        "url": "https://www.aljazeera.com/news/2026/10/6/russia-denies-imposing-anti-plague-measures-after-lab-worker-death?traffic_source=rss",
-        "date": "6 Oct"
-      }
-    },
-    {
       "label": "contacts cleared from observation",
       "value": "90%",
       "color": "#f59e0b",

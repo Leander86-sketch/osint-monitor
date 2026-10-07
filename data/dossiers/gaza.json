@@ -1,6 +1,6 @@
 {
   "slug": "gaza",
-  "updatedAt": "2026-10-06T16:59+02:00",
+  "updatedAt": "2026-10-07T09:06+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Three years after Hamas's 7 October 2023 attack and a year into the Trump-brokered ceasefire, Gaza's war has not ended. Israeli forces control roughly two-thirds of the enclave and strike almost daily; Gaza's Health Ministry says over 1,400 Palestinians have been killed since the October 2025 ceasefire. Hamas, estimated at 30,000 fighters, has not disarmed. Reconstruction and aid remain largely blocked; 1.2 million people face acute hunger and 1.65 million risk a fourth winter in tents. Netanyahu vows there will be no Hamas rule in Gaza, with Israeli elections set for 27 October.",
+  "stand": "Three years after Hamas's 7 October 2023 attack and a year into the Trump-brokered ceasefire, Gaza's war has not ended. Israeli forces control roughly two-thirds of the enclave and strike almost daily; OCHA says at least 1,431 Palestinians have been killed and 5,026 wounded since the October 2025 ceasefire. Hamas, estimated at 30,000 fighters, has not disarmed. Reconstruction, estimated at $71.4 billion, and aid remain largely blocked; 1.2 million people face acute hunger. Netanyahu vows there will be no Hamas rule in Gaza, with Israeli elections set for 27 October.",
   "figures": [
     {
       "label": "Gaza deaths since Oct 2025 ceasefire",
@@ -189,6 +189,90 @@
           "date": "6 Oct"
         }
       ]
+    },
+    {
+      "status": "disputed",
+      "text": "CPJ removed 19 names from its journalist-death list after its own investigations found them to be combatants, almost all overlapping with Israel's list of 170; it has excluded 27 combatants in total since the war began.",
+      "by": "Says: CPJ (Jodie Ginsberg).",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/israel-lista-mortos-em-gaza-que-seriam-combatentes-disfarcados-de-jornalistas.shtml",
+          "date": "Sept 2026"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Benjamin Davis has filed a formal appeal against his FAO dismissal, seeking reinstatement and withdrawal of the accusations against him.",
+      "by": "Says: Benjamin Davis. Denies: FAO cites breaches of the civil-servant conduct code on impartiality and public comment on controversial matters.",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/06/former-un-food-agency-official-fao-benjamin-davis-hunger-gaza",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "UN Secretary-General António Guterres calls for the Gaza ceasefire to become permanent and for humanitarian aid at scale.",
+      "by": "Says: UN Secretary-General António Guterres.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/un-chief-calls-for-gaza-ceasefire-ahead-of-october-7-anniversary/article71549809.ece",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The planned International Stabilization Force would deploy 20,000 troops and train 12,000 Palestinian police, with Indonesia, Morocco, Kazakhstan, Albania, Kosovo and Uganda committing personnel.",
+      "by": "Says: ISF commander US Major General Jasper Jeffers.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Israeli politician Moshe Feiglin says Gaza's entire population, including babies and children, is \"the enemy,\" and frames forced expulsion and annexation as a moral obligation.",
+      "by": "Says: Israeli politician Moshe Feiglin, to the Jerusalem Post.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-politician-calls-gazas-population-including-babies-enemy",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Acled says violence in Gaza fell 61% compared with the war's second year, while Israel-Hezbollah fighting in Lebanon reached its highest level in the same period.",
+      "by": "Says: Acled analyst Nasser Khdour.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A PCPSR poll finds support for Hamas has fallen to 24%, from 35% ten months earlier, while 72% of Palestinians still oppose disarming the group, fearing it would trigger a new war rather than Israeli withdrawal.",
+      "by": "Says: Palestinian Centre for Policy and Survey Research (PCPSR).",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/nao-quero-mais-continuar-aqui-diz-jornalista-de-gaza-apos-tres-anos-sob-ataques.shtml",
+          "date": "6 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -249,6 +333,39 @@
         {
           "name": "CoinDesk",
           "url": "https://www.coindesk.com/policy/2026/10/05/treasury-crackdown-exposes-crypto-s-role-in-usd2-million-hamas-fundraising-network"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct 2026",
+      "kind": "official",
+      "text": "OCHA report counts at least 1,431 Palestinians killed and 5,026 wounded since the ceasefire took effect.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct 2026",
+      "kind": "official",
+      "text": "UN Secretary-General Guterres calls for the Gaza ceasefire to become permanent, ahead of the third anniversary of the 7 October attack.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/un-chief-calls-for-gaza-ceasefire-ahead-of-october-7-anniversary/article71549809.ece"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct 2026",
+      "kind": "media",
+      "text": "Guardian reports Benjamin Davis has lodged a formal appeal against his FAO dismissal.",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/06/former-un-food-agency-official-fao-benjamin-davis-hunger-gaza"
         }
       ]
     },
@@ -363,6 +480,39 @@
       ]
     },
     {
+      "date": "Sept 2026",
+      "kind": "factcheck",
+      "text": "CPJ removes 19 names from its journalist-death list after concluding they were combatants, mostly overlapping with Israel's 170-name list.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/israel-lista-mortos-em-gaza-que-seriam-combatentes-disfarcados-de-jornalistas.shtml"
+        }
+      ]
+    },
+    {
+      "date": "Apr 2026",
+      "kind": "official",
+      "text": "UN, EU and World Bank assessment estimates Gaza's reconstruction needs at $71.4 billion over the next decade.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed"
+        }
+      ]
+    },
+    {
+      "date": "Jun 2026",
+      "kind": "official",
+      "text": "Unosat satellite assessment finds 82% of Gaza's structures damaged.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml"
+        }
+      ]
+    },
+    {
       "date": "29 Sept 2026",
       "kind": "media",
       "text": "Benjamin Davis's FAO contract is not renewed; he leaves the Rome headquarters after 26 years.",
@@ -428,8 +578,32 @@
       "what": "Israeli strikes on residential buildings in Gaza City kill about 308 members of one extended family.",
       "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/assombrado-apos-perder-quase-toda-sua-familia-deslocado-de-gaza-ainda-sonha-em-voltar.shtml",
       "date": "22 Nov 2023"
+    },
+    {
+      "who": "The Hindu",
+      "what": "UN Secretary-General António Guterres calls for the Gaza ceasefire to become permanent and for humanitarian aid at scale",
+      "url": "https://www.thehindu.com/news/international/un-chief-calls-for-gaza-ceasefire-ahead-of-october-7-anniversary/article71549809.ece",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "Israeli politician Moshe Feiglin says Gaza's entire population, including babies and children, is \"the enemy,\" and frame",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-politician-calls-gazas-population-including-babies-enemy",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Folha de S.Paulo",
+      "what": "Acled says violence in Gaza fell 61% compared with the war's second year, while Israel-Hezbollah fighting in Lebanon rea",
+      "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Folha de S.Paulo",
+      "what": "A PCPSR poll finds support for Hamas has fallen to 24%, from 35% ten months earlier, while 72% of Palestinians still opp",
+      "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/nao-quero-mais-continuar-aqui-diz-jornalista-de-gaza-apos-tres-anos-sob-ataques.shtml",
+      "date": "6 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Gaza war grinds on as Israel holds territory and Hamas refuses to disarm"
+  "headline": "Israel and Hamas remain deadlocked a year into Gaza's fragile ceasefire"
 }

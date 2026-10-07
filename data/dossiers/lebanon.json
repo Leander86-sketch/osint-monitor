@@ -1,6 +1,6 @@
 {
   "slug": "lebanon",
-  "updatedAt": "2026-10-06T17:21+02:00",
+  "updatedAt": "2026-10-07T09:06+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -91,8 +91,8 @@
     },
     {
       "status": "confirmed",
-      "text": "About 1.24 million people, 24% of the population analysed, face acute food insecurity at IPC Phase 3 or above.",
-      "by": "Says: IPC Acute Food Insecurity Projection Update (Apr-Aug 2026). Denies: —",
+      "text": "Of the 1.24 million people in acute food insecurity, 1.14 million are in Crisis (Phase 3) and 101,000 in Emergency (Phase 4).",
+      "by": "Says: IPC Acute Food Insecurity Projection Update (Apr-Aug 2026).",
       "sources": [
         {
           "name": "ReliefWeb (MSNA ToR)",
@@ -103,8 +103,8 @@
     },
     {
       "status": "confirmed",
-      "text": "The 2023-2024 conflict cost Lebanon's economy an estimated US$14 billion, with reconstruction needs put at US$11 billion.",
-      "by": "Says: World Bank 2025 Rapid Damage and Needs Assessment. Denies: —",
+      "text": "The 2023-2024 conflict's US$14 billion cost comprised US$6.8 billion in physical damage and US$7.2 billion in economic losses.",
+      "by": "Says: World Bank 2025 Rapid Damage and Needs Assessment.",
       "sources": [
         {
           "name": "ReliefWeb (MSNA ToR)",
@@ -168,6 +168,30 @@
       "sources": [
         {
           "name": "ReliefWeb (MSNA ToR)",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "South and El Nabatieh governorates were among the areas most impacted by the 2023-2024 conflict, followed by Mount Lebanon.",
+      "by": "Says: World Bank 2025 Rapid Damage and Needs Assessment.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Food insecurity is particularly severe in the conflict-affected southern districts of Bent Jbeil, Marjaayoun, Sour and El Nabatieh.",
+      "by": "Says: IPC Acute Food Insecurity Projection Update (Apr-Aug 2026).",
+      "sources": [
+        {
+          "name": "ReliefWeb",
           "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
           "date": "6 Oct"
         }
@@ -236,5 +260,5 @@
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Lebanon's death toll surpasses 3,800 as humanitarian crisis deepens"
+  "headline": "World Bank breaks down Lebanon's war damage by cost and region"
 }

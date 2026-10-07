@@ -1,6 +1,6 @@
 {
   "slug": "russia-plague-irkutsk",
-  "updatedAt": "2026-10-06T16:33+02:00",
+  "updatedAt": "2026-10-07T09:06+02:00",
   "anchors": [
     {
       "label": "WHO",
@@ -15,7 +15,7 @@
       "match": "^AP News"
     }
   ],
-  "stand": "A laboratory technician of the Irkutsk Anti-Plague Institute died in a hospital in Shelekhov, Siberia, in the night of 1–2 October, two days after admission with severe pneumonia. Russian media call it pneumonic plague; Rospotrebnadzor calls it \"pneumonia of unknown etiology\", denies a lab accident, and told the WHO on 6 October that no plague cases had been recorded in Irkutsk. About 60% of some 200 contacts have been tested, with no symptoms found. The WHO says the cause of death remains unconfirmed and rates the public risk as low.",
+  "stand": "A laboratory technician of the Irkutsk Anti-Plague Institute died in Shelekhov on 1–2 October, two days after admission with severe pneumonia. Rospotrebnadzor calls it \"pneumonia of unknown etiology\", denies a lab accident, and told the WHO on 6 October that no plague cases had been recorded in Irkutsk; an autopsy found no pathogens linked to her work. Some contacts have been released from quarantine; none is symptomatic. The WHO rates public risk low but wants transparency. Trump plans to call Putin \"very soon\"; the US CDC is monitoring.",
   "figures": [
     {
       "label": "confirmed plague cases",
@@ -76,6 +76,16 @@
         "url": "https://www.nbcnews.com/world/russia/russia-says-no-plague-found-contacts-siberian-lab-worker-died-rcna601805",
         "date": "6 Oct"
       }
+    },
+    {
+      "label": "contacts released from quarantine",
+      "value": "60%",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Elena Sofina via Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/6/russia-denies-imposing-anti-plague-measures-after-lab-worker-death?traffic_source=rss",
+        "date": "6 Oct"
+      }
     }
   ],
   "claims": [
@@ -98,8 +108,8 @@
     },
     {
       "status": "confirmed",
-      "text": "All close contacts are under medical observation; about 60% have now been tested, finding 2 COVID-19 and 2 rhinovirus infections and nothing else. None has symptoms.",
-      "by": "Rospotrebnadzor; WHO spokesperson",
+      "text": "Rospotrebnadzor specifies that contacts have been under daily laboratory tests and observation for 10 days with no plague found.",
+      "by": "Says: Rospotrebnadzor.",
       "sources": [
         {
           "name": "Moscow Times",
@@ -114,6 +124,11 @@
         {
           "name": "NBC News",
           "url": "https://www.nbcnews.com/world/russia/russia-says-no-plague-found-contacts-siberian-lab-worker-died-rcna601805",
+          "date": "6 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/russia-denies-imposing-anti-plague-measures-after-lab-worker-death?traffic_source=rss",
           "date": "6 Oct"
         }
       ]
@@ -265,13 +280,18 @@
     },
     {
       "status": "confirmed",
-      "text": "A Rospotrebnadzor biosafety team inspected the institute and found no emergency; no institute staff have sought medical attention since her death.",
-      "by": "Says: Governor Igor Kobzev, quoting Rospotrebnadzor.",
+      "text": "The institute itself, not only Rospotrebnadzor, says extensive testing on an autopsy of the technician's body found no microorganisms linked to her work.",
+      "by": "Says: Irkutsk Anti-Plague Institute, via Rospotrebnadzor.",
       "sources": [
         {
           "name": "BBC",
           "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&at_campaign=rss",
           "date": "5 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/russia-denies-imposing-anti-plague-measures-after-lab-worker-death?traffic_source=rss",
+          "date": "6 Oct"
         }
       ]
     },
@@ -358,6 +378,66 @@
         {
           "name": "CNBC",
           "url": "https://www.cnbc.com/2026/10/06/plague-russia-person-died-lab-infection-pneumonic.html",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A Shelekhov district deputy head says no \"dangerous diagnosis\" has been confirmed; 60% of quarantined contacts have already been released.",
+      "by": "Says: Elena Sofina, deputy head of Shelekhov district.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/russia-denies-imposing-anti-plague-measures-after-lab-worker-death?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "WHO confirms the institute sits in a part of Siberia where plague occurs naturally in wild animals.",
+      "by": "Says: WHO spokesperson Christian Lindmeier.",
+      "sources": [
+        {
+          "name": "CBS News",
+          "url": "https://www.cbsnews.com/news/russia-pneumonic-plague-lab-worker-death-rubio-us-reaction/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A former White House biosecurity official says the scale of Russia's quarantine does not match its public statements, suggesting more serious infection than disclosed.",
+      "by": "Says: Dr Raj Panjabi, Harvard University, former White House Biosecurity Director.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/make-it/2026/10/06/russia-plague-global-risk.html",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A former US pandemic response coordinator says it is unlikely the technician was the only person infected with pneumonic plague.",
+      "by": "Says: Dr Ashish Jha, former White House COVID-19 response coordinator.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news-analysis/2026/10/6/us-cdc-says-its-aware-of-and-closely-monitoring-russian-plague-case?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The US State Department sent Russia a confidential diplomatic warning (a demarche) saying its failure to disclose details breaches international health obligations.",
+      "by": "Says: Wall Street Journal, via the Guardian.",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who",
           "date": "6 Oct"
         }
       ]
@@ -474,6 +554,17 @@
         {
           "name": "Meduza",
           "url": "https://meduza.io/en/feature/2026/10/05/hospitals-in-irkutsk-impose-quarantines-after-an-employee-at-an-anti-plague-institute-dies-russia-s-public-health-agency-says-she-died-of-pneumonia-and-the-epidemiological-situation-remains-stable"
+        }
+      ]
+    },
+    {
+      "date": "2 Oct",
+      "kind": "reaction",
+      "text": "US State Department officials in contact with the Russian government and foreign ministry since this date, a US official says.",
+      "sources": [
+        {
+          "name": "NBC News",
+          "url": "https://www.nbcnews.com/world/russia/russia-says-no-plague-found-contacts-siberian-lab-worker-died-rcna601805"
         }
       ]
     },
@@ -698,6 +789,39 @@
           "url": "https://www.nbcnews.com/world/russia/russia-says-no-plague-found-contacts-siberian-lab-worker-died-rcna601805"
         }
       ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "reaction",
+      "text": "Trump confirms a call with Putin on the case is scheduled \"very soon\"; says intelligence agencies will report on it \"probably tomorrow\".",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "US CDC says it is aware of and monitoring the case; sees no broader threat to the US.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/07/trump-putin-russian-plague-death-cdc-pneumonic-.html"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "reaction",
+      "text": "WHO director-general Tedros Adhanom Ghebreyesus posts on X urging Russia to share information to clarify conflicting reports.",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who"
+        }
+      ]
     }
   ],
   "background": {
@@ -769,8 +893,104 @@
       "what": "Latvian health authorities monitoring",
       "url": "https://bnn-news.com/social/following-reports-of-possible-plague-case-latvian-health-authorities-closely-monitoring-situation-u85wjqt",
       "date": "6 Oct"
+    },
+    {
+      "who": "NBC News",
+      "what": "Rospotrebnadzor specifies that contacts have been under daily laboratory tests and observation for 10 days with no plagu",
+      "url": "https://www.nbcnews.com/world/russia/russia-says-no-plague-found-contacts-siberian-lab-worker-died-rcna601805",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Rospotrebnadzor specifies that contacts have been under daily laboratory tests and observation for 10 days with no plagu",
+      "url": "https://www.aljazeera.com/news/2026/10/6/russia-denies-imposing-anti-plague-measures-after-lab-worker-death?traffic_source=rss",
+      "date": "6 Oct"
+    },
+    {
+      "who": "CNBC",
+      "what": "Russia told the WHO on 6 Oct that no plague cases had been recorded in Irkutsk. The WHO could not immediately say whethe",
+      "url": "https://www.cnbc.com/2026/10/06/plague-russia-person-died-lab-infection-pneumonic.html",
+      "date": "6 Oct"
+    },
+    {
+      "who": "CNBC",
+      "what": "The WHO says the cause of death has not been confirmed; it is awaiting confirmation from Russia on which pneumonia-causi",
+      "url": "https://www.cnbc.com/2026/10/06/russia-plague-death-trump-offers-us-help.html",
+      "date": "6 Oct"
+    },
+    {
+      "who": "BBC",
+      "what": "The institute itself, not only Rospotrebnadzor, says extensive testing on an autopsy of the technician's body found no m",
+      "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&at_campaign=rss",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Al Jazeera, citing Russian media, dates the onset to 30 Sep at work with death two days later — one day later than the 2",
+      "url": "https://www.aljazeera.com/news/2026/10/6/russia-plague-quarantine-following-lab-death-should-we-be-worried?traffic_source=rss",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Bangkok Post",
+      "what": "A document circulating online claimed an \"enhanced sanitary-epidemiological regime\" and strict new restrictions had been",
+      "url": "https://www.bangkokpost.com/world/3332334/moscow-denies-sanitary-measures-over-plague-reports",
+      "date": "6 Oct"
+    },
+    {
+      "who": "CNBC",
+      "what": "A former White House biosecurity official says the scale of Russia's quarantine does not match its public statements, su",
+      "url": "https://www.cnbc.com/make-it/2026/10/06/russia-plague-global-risk.html",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "A former US pandemic response coordinator says it is unlikely the technician was the only person infected with pneumonic",
+      "url": "https://www.aljazeera.com/news-analysis/2026/10/6/us-cdc-says-its-aware-of-and-closely-monitoring-russian-plague-case?traffic_source=rss",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Meduza",
+      "what": "Masks mandatory at the aluminium plant. Baikalsk warns against travel to Shelekhov, then deletes the post. REN TV delete",
+      "url": "https://meduza.io/en/news/2026/10/05/officials-in-russia-s-irkutsk-region-advised-against-traveling-to-a-town-where-a-hospital-patient-may-have-died-of-plague-they-later-deleted-the-post",
+      "date": "3 Oct"
+    },
+    {
+      "who": "Axios",
+      "what": "White House monitoring the reports, \"assessing options\".",
+      "url": "https://www.axios.com/2026/10/04/russia-plague-outbreak-white-house-us",
+      "date": "4 Oct"
+    },
+    {
+      "who": "CBS News",
+      "what": "Rospotrebnadzor: no lab accident; contacts' daily tests show 2 COVID-19 and 2 rhinovirus. Kremlin refers all questions t",
+      "url": "https://www.cbsnews.com/news/russia-plague-lab-death-pneumonia-of-unknown-origin/",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Rubio: \"not cause for alarm, but cause for focus\". Trump: \"We'll help.\" EU Commission monitoring \"very closely\".",
+      "url": "https://www.aljazeera.com/news/2026/10/5/trump-says-us-ready-to-aid-russia-with-plague-outbreak-in-siberia",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Moscow Times",
+      "what": "DW: lab-accident claim unproven; \"hundreds infected\" and \"WHO fact-sheet\" claims misleading; viral video is from Kabardi",
+      "url": "https://www.themoscowtimes.com/2026/10/06/irkutsk-maternity-hospital-screens-patients-for-plague-after-lab-workers-death-a93887",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Bangkok Post",
+      "what": "Thailand's Department of Disease Control says the risk of the disease reaching Thailand is low; WHO has issued no travel",
+      "url": "https://www.bangkokpost.com/thailand/general/3332318/disease-control-chief-allays-plague-concern-in-russia",
+      "date": "6 Oct"
+    },
+    {
+      "who": "CNBC",
+      "what": "US CDC says it is aware of and monitoring the case; sees no broader threat to the US.",
+      "url": "https://www.cnbc.com/2026/10/07/trump-putin-russian-plague-death-cdc-pneumonic-.html",
+      "date": "6 Oct"
     }
   ],
   "disclaimer": "Not medical advice. The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Rospotrebnadzor denies plague death as Irkutsk institute technician's cause remains unconfirmed"
+  "headline": "Russia under growing international pressure over plague death transparency"
 }

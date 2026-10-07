@@ -1,6 +1,6 @@
 {
   "slug": "red-sea-bab-al-mandab",
-  "updatedAt": "2026-10-06T17:02+02:00",
+  "updatedAt": "2026-10-07T09:06+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Yemen's Saudi-backed government has launched Operation Dawn of Yemen, an offensive to retake all Houthi-held territory, including Sanaa. Government forces claim Mocha and Dhubab near Bab al-Mandeb; Houthis deny Mocha fell. Houthis have cut the Taiz-Aden road, encircling Taiz, and fired missiles and drones at Saudi airports and Aramco sites. A Saudi-led coalition is running an air campaign with 100 jets. Turkiye and Pakistan have activated a mutual defence pact to back Saudi Arabia. WHO reports 959 dead and 4,200 wounded.",
+  "stand": "Yemen's Saudi-backed government presses Operation Dawn of Yemen on three fronts: the Red Sea coast, Taiz and Marib. Forces claim Mocha and Dhubab near Bab al-Mandeb and have opened an offensive on Houthi-held al-Waziiya in Taiz; Houthis deny losing Mocha or al-Waziiya and say they repelled the attack. Houthis have cut the Taiz-Aden road and struck Saudi airports and Aramco sites. A Saudi-led coalition, flying 100 jets, intercepted a missile near Khamis Mushait. Turkiye and Pakistan have activated their defence pact; Pakistan says its forces are already aiding with reconnaissance.",
   "figures": [
     {
       "label": "Coalition fighter jets deployed",
@@ -68,6 +68,26 @@
       "src": {
         "name": "BBC World",
         "url": "https://www.bbc.co.uk/news/articles/c670pzpv9gk4o?at_medium=RSS&at_campaign=rss",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Fighters killed across all fronts in one day",
+      "value": "270+",
+      "color": "#f59e0b",
+      "src": {
+        "name": "AFP, via Al-Monitor",
+        "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-attack-riyadh-airport-deny-losing-territory",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "East-West pipeline oil flow",
+      "value": "5.8 million barrels",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Saudi Energy Minister, via CNBC",
+        "url": "https://www.cnbc.com/2026/10/07/oil-prices-today-brent-wti-hormuz.html",
         "date": "6 Oct"
       }
     }
@@ -210,25 +230,95 @@
     },
     {
       "status": "disputed",
-      "text": "Yemen's Defence Ministry says Mocha has fallen to government forces.",
-      "by": "Says: Yemen's Defence Ministry. Denies: Houthi military spokesman, who calls the reports \"fabricated heroics\".",
+      "text": "Yemen's Defence Ministry says Mocha has fallen; Houthi military spokesman Yahya Saree now says Houthi fighters retain full control of all their advances.",
+      "by": "Says: Yemen's Defence Ministry. Denies: Houthi military spokesman Yahya Saree.",
       "sources": [
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss",
+          "date": "6 Oct"
+        },
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-attack-riyadh-airport-deny-losing-territory",
           "date": "6 Oct"
         }
       ]
     },
     {
       "status": "confirmed",
-      "text": "More than 2.2 million Yemeni children under five are acutely malnourished, over half a million of them severely.",
-      "by": "Says: United Nations. Denies: —",
+      "text": "516,157 of Yemen's acutely malnourished children under five have the severe form of the condition, almost a quarter of the total.",
+      "by": "Says: United Nations, via Al Jazeera.",
       "sources": [
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/6/malnutrition-among-yemens-children?traffic_source=rss",
           "date": "6 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/malnutrition-among-yemens-children",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Government-aligned Homeland Shield Forces launched a large-scale operation to retake Houthi-held al-Waziiya, west of Taiz; Houthis say they repelled the advance.",
+      "by": "Says: Yemen's army media centre, citing a military source. Denies: Houthi military spokesman Yahya Saree.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/yemeni-forces-launch-offensive-to-retake-houthi-held-al-waziiya-in-taiz",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Saudi airstrike killed six members of one family, including four children, in Hajjah governorate.",
+      "by": "Says: Houthi health ministry.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-attack-riyadh-airport-deny-losing-territory",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The Saudi-led coalition intercepted and destroyed a Houthi ballistic missile launched towards Khamis Mushait.",
+      "by": "Says: coalition spokesperson Maj Gen Turki al-Maliki.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/yemeni-forces-launch-offensive-to-retake-houthi-held-al-waziiya-in-taiz",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The coalition destroyed a ballistic missile launch platform in Sanaa and a Saada storage facility holding 20 ballistic missiles.",
+      "by": "Says: Saudi-led coalition, via Saudi Press Agency.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/saudi-arabia-says-three-wounded-in-attacks-on-airports-near-yemen-border",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Pakistani forces in Saudi Arabia are already playing a supporting, reconnaissance role; Saudi forces are conducting the actual combat.",
+      "by": "Says: Pakistan's Defence Minister Khawaja Asif.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/pakistan-turkiye-join-saudi-deterrence-against-houthis-what-that-means",
+          "date": "5 Oct"
         }
       ]
     }
@@ -339,6 +429,17 @@
       ]
     },
     {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Pakistan's defence minister says Pakistani forces are already providing reconnaissance support in Saudi Arabia; combat remains Saudi-led.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/pakistan-turkiye-join-saudi-deterrence-against-houthis-what-that-means"
+        }
+      ]
+    },
+    {
       "date": "6 Oct",
       "kind": "denial",
       "text": "Yemen's Defence Ministry says Mocha has fallen; a Houthi military spokesman denies any retreat, calling reports \"fabricated heroics\".",
@@ -379,6 +480,61 @@
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/6/yemen-war-whats-the-latest-on-the-battlefield?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "Government-aligned Homeland Shield Forces launch a large-scale operation to retake Houthi-held al-Waziiya, west of Taiz; Houthis say they repelled it.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/yemeni-forces-launch-offensive-to-retake-houthi-held-al-waziiya-in-taiz"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Saudi-led coalition says it intercepted a Houthi ballistic missile aimed at Khamis Mushait.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/yemeni-forces-launch-offensive-to-retake-houthi-held-al-waziiya-in-taiz"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Coalition says it destroyed a missile launch platform in Sanaa and a Saada depot holding 20 ballistic missiles.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/saudi-arabia-says-three-wounded-in-attacks-on-airports-near-yemen-border"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Houthi health ministry says a Saudi strike killed six members of a family, four of them children, in Hajjah.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-attack-riyadh-airport-deny-losing-territory"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "AFP sources on both sides say fighting across Yemen killed more than 270 government troops and Houthi fighters in a single day.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-attack-riyadh-airport-deny-losing-territory"
         }
       ]
     },
@@ -448,8 +604,38 @@
       "what": "More than 2.2 million Yemeni children under five are acutely malnourished, over half a million of them severely.",
       "url": "https://www.aljazeera.com/news/2026/10/6/malnutrition-among-yemens-children?traffic_source=rss",
       "date": "6 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Yemen's Defence Ministry says Mocha has fallen; Houthi military spokesman Yahya Saree now says Houthi fighters retain fu",
+      "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-attack-riyadh-airport-deny-losing-territory",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "516,157 of Yemen's acutely malnourished children under five have the severe form of the condition, almost a quarter of t",
+      "url": "https://www.aljazeera.com/news/2026/10/6/malnutrition-among-yemens-children",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Government-aligned Homeland Shield Forces launched a large-scale operation to retake Houthi-held al-Waziiya, west of Tai",
+      "url": "https://www.aljazeera.com/news/2026/10/7/yemeni-forces-launch-offensive-to-retake-houthi-held-al-waziiya-in-taiz",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The coalition destroyed a ballistic missile launch platform in Sanaa and a Saada storage facility holding 20 ballistic m",
+      "url": "https://www.aljazeera.com/news/2026/10/6/saudi-arabia-says-three-wounded-in-attacks-on-airports-near-yemen-border",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Pakistani forces in Saudi Arabia are already playing a supporting, reconnaissance role; Saudi forces are conducting the ",
+      "url": "https://www.aljazeera.com/news/2026/10/6/pakistan-turkiye-join-saudi-deterrence-against-houthis-what-that-means",
+      "date": "5 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Yemen's government launches offensive to retake Houthi-held territory from Sanaa to Mocha"
+  "headline": "Yemeni forces open new Taiz front as casualties mount"
 }

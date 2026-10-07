@@ -1,6 +1,6 @@
 {
   "slug": "iran-israel",
-  "updatedAt": "2026-10-06T17:11+02:00",
+  "updatedAt": "2026-10-07T09:06+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "The US-Israel war on Iran, launched 28 Feb, is in its eighth month. Washington has shifted from heavy bombing to economic pressure, while Iran keeps contesting the Strait of Hormuz, now subject to a US counterblockade. The US withdrew B-1 bombers from RAF Fairford after a security alert; Tehran denies any plot link. Fuel prices are rising in the US, fuelling Trump-Democrat blame fights ahead of midterms. Oil stockpiles are \"scarily thin\", Aramco warns. Israel's Katz has ordered the army to prepare a West Bank offensive against the Palestinian Authority.",
+  "stand": "The US-Israel war on Iran, launched 28 Feb, is in its eighth month; joint strikes killed Khamenei at the outset, and Washington has shifted from bombing to economic pressure. Vance says Iran must meaningfully cut enrichment to end the war; Trump rejected Tehran's latest offer. A suspected Iran-linked drone plot against RAF Fairford brought a UK arrest; Tehran denies involvement. Iran's Hormuz exports have collapsed near zero and its offshore reserves are depleting, even as Gulf exports hit war-time highs. Katz has detailed a short, powerful West Bank offensive plan.",
   "figures": [
     {
       "label": "Strait of Hormuz daily oil exports",
@@ -47,13 +47,18 @@
     },
     {
       "status": "disputed",
-      "text": "Tehran denies any link to the alleged plot to target RAF Fairford.",
-      "by": "Says: UK security incident led to five arrests near the base Denies: Iran denies any link",
+      "text": "The alleged RAF Fairford plot involved a suspected complex drone attack; a further suspect, a 22-year-old man, was arrested in London.",
+      "by": "Says: Two US officials, speaking anonymously, to Reuters; British police confirm new London arrest Denies: Iran denies any involvement",
       "sources": [
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news-analysis/2026/10/5/us-pulls-bombers-from-uk-base-is-iran-maneouvering-trumps-war-plans?traffic_source=rss",
           "date": "5 Oct"
+        },
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/iran-drone-plot-fears-led-us-remove-bombers-uk-base-us-officials-say",
+          "date": "6 Oct"
         }
       ]
     },
@@ -71,13 +76,18 @@
     },
     {
       "status": "reported",
-      "text": "Middle East crude exports excluding Iran have surpassed pre-war levels despite Hormuz attacks.",
-      "by": "Says: Kpler tracking data, cited by CBS News Denies: —",
+      "text": "Middle East crude exports excluding Iran reached 18.3 million bpd in late September, the highest level since the war began, led by Saudi and UAE output.",
+      "by": "Says: Kpler and Vortexa data, cited by United Against Nuclear Iran and gCaptain",
       "sources": [
         {
           "name": "CBS News",
           "url": "https://www.cbsnews.com/live-updates/trump-iran-war-us-midterm-elections-troops-deployment/",
           "date": "5 Oct"
+        },
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/irans-offshore-oil-stockpile-nears-exhaustion-as-blockade-chokes-new-supply/",
+          "date": "30 Sep"
         }
       ]
     },
@@ -107,8 +117,8 @@
     },
     {
       "status": "disputed",
-      "text": "Iran's ability to rebuild its missile and drone arsenal is disputed.",
-      "by": "Says: Iranian officials say production and improvement continue Denies: Many US and Israeli officials say Iran can no longer produce missiles and drones",
+      "text": "Israeli and US strikes hit more than 40 ballistic missile, nearly 20 cruise missile and over 20 drone industry sites, severely damaging Iran's production base.",
+      "by": "Says: Iranian officials say production and improvement continue; War on the Rocks analyst assessment finds severe damage to production sites Denies: US and Israeli officials say Iran can no longer produce missiles and drones",
       "sources": [
         {
           "name": "War on the Rocks",
@@ -119,8 +129,8 @@
     },
     {
       "status": "reported",
-      "text": "Israel's defence minister has ordered the army to prepare a full-scale offensive against the Palestinian Authority in the West Bank.",
-      "by": "Says: Defense Minister Israel Katz, per Times of Israel Denies: —",
+      "text": "Katz's West Bank plan envisages a short, powerful offensive with ground, air and special forces if Palestinian Authority forces and Tanzim arm against settlers or troops.",
+      "by": "Says: Defence Minister Israel Katz, per Times of Israel, cited by TASS",
       "sources": [
         {
           "name": "TASS",
@@ -152,6 +162,66 @@
           "date": "6 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "US Vice President JD Vance says Iran must make a meaningful cut to uranium enrichment to end the war; Trump rejected Tehran's latest offer.",
+      "by": "Says: US Vice President JD Vance, to Reuters",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/interview-us-vice-president-vance-says-iran-must-cut-enrichment-end-war",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Joint US-Israeli strikes killed Iran's Supreme Leader Ayatollah Ali Khamenei at the start of the war.",
+      "by": "Says: US Vice President JD Vance, to Reuters",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/interview-us-vice-president-vance-says-iran-must-cut-enrichment-end-war",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Trump says no one knows who is running Iran; Iran's foreign ministry denies, blaming contradictory US messaging.",
+      "by": "Says: Trump says his biggest problem is no one knows who is running Iran Denies: Iran FM spokesperson Esmaeil Baghaei says the problem is contradictory US positions",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/interview-us-vice-president-vance-says-iran-must-cut-enrichment-end-war",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Iran executed two more men, Alireza Sepahi and Alireza Raisi, over January's protests, bringing the total executed to 34.",
+      "by": "Says: Iran's judiciary (Mizan News Agency), per Al-Monitor; tally per Iran Human Rights Organization",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/irans-execution-drive-intensifies-war-provides-cover-repression",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The Philippines declared a national energy emergency over war-driven fuel disruption, warning supplies could run dry in 45 days.",
+      "by": "Says: Philippine Energy Secretary Sharon Garin, per Al Jazeera",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/10/6/southeast-asias-energy-chiefs-meet-against-backdrop-of-iran-war?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -164,6 +234,17 @@
         {
           "name": "TASS",
           "url": "https://tass.com/world/2197905"
+        }
+      ]
+    },
+    {
+      "date": "28 Feb",
+      "kind": "official",
+      "text": "Joint US-Israeli opening strikes killed Iran's Supreme Leader Khamenei, Vance later reveals.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/interview-us-vice-president-vance-says-iran-must-cut-enrichment-end-war"
         }
       ]
     },
@@ -300,6 +381,28 @@
       ]
     },
     {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Iran executes Alireza Sepahi and Alireza Raisi over January protests.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/irans-execution-drive-intensifies-war-provides-cover-repression"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Vance says Iran must meaningfully cut enrichment to end war; Trump rejected Tehran's latest proposal.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/interview-us-vice-president-vance-says-iran-must-cut-enrichment-end-war"
+        }
+      ]
+    },
+    {
       "date": "6 Oct",
       "kind": "official",
       "text": "Trump says Los Angeles and San Diego could be destroyed, calls it a small price to pay, and says the war is almost over.",
@@ -318,6 +421,50 @@
         {
           "name": "TASS",
           "url": "https://tass.com/world/2198197"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "British police arrest a 22-year-old man in London in the RAF Fairford drone-plot investigation.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/iran-drone-plot-fears-led-us-remove-bombers-uk-base-us-officials-say"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "War on the Rocks assesses Israeli and US strikes hit 40+ missile, cruise and drone industry sites in Iran.",
+      "sources": [
+        {
+          "name": "War on the Rocks",
+          "url": "https://warontherocks.com/iran-faces-severe-challenges-to-rebuild-missile-and-drone-production/"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Katz details a short, powerful West Bank offensive plan if the PA and Tanzim arm against Israel.",
+      "sources": [
+        {
+          "name": "TASS, citing Times of Israel",
+          "url": "https://tass.com/world/2198197"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Guterres praises Pakistan's role mediating between the US and Iran, speaking in Islamabad.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/un-chief-calls-diplomacy-restoration-navigational-rights-iran-war"
         }
       ]
     },
@@ -393,8 +540,38 @@
       "what": "Iran's foreign minister blames US and Israeli actions for insecurity in the Strait of Hormuz.",
       "url": "https://www.militarytimes.com/news/your-military/2026/10/05/aboard-the-uss-george-washington-young-sailors-adjust-to-war-with-iran/",
       "date": "25 Sep"
+    },
+    {
+      "who": "Al-Monitor (Reuters)",
+      "what": "The alleged RAF Fairford plot involved a suspected complex drone attack; a further suspect, a 22-year-old man, was arres",
+      "url": "https://www.al-monitor.com/originals/2026/10/iran-drone-plot-fears-led-us-remove-bombers-uk-base-us-officials-say",
+      "date": "6 Oct"
+    },
+    {
+      "who": "gCaptain",
+      "what": "Middle East crude exports excluding Iran reached 18.3 million bpd in late September, the highest level since the war beg",
+      "url": "https://gcaptain.com/irans-offshore-oil-stockpile-nears-exhaustion-as-blockade-chokes-new-supply/",
+      "date": "30 Sep"
+    },
+    {
+      "who": "Al-Monitor (Reuters)",
+      "what": "US Vice President JD Vance says Iran must make a meaningful cut to uranium enrichment to end the war; Trump rejected Teh",
+      "url": "https://www.al-monitor.com/originals/2026/10/interview-us-vice-president-vance-says-iran-must-cut-enrichment-end-war",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Iran executed two more men, Alireza Sepahi and Alireza Raisi, over January's protests, bringing the total executed to 34",
+      "url": "https://www.al-monitor.com/originals/2026/10/irans-execution-drive-intensifies-war-provides-cover-repression",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The Philippines declared a national energy emergency over war-driven fuel disruption, warning supplies could run dry in ",
+      "url": "https://www.aljazeera.com/economy/2026/10/6/southeast-asias-energy-chiefs-meet-against-backdrop-of-iran-war?traffic_source=rss",
+      "date": "6 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "US tightens Hormuz blockade as Katz orders West Bank offensive plan"
+  "headline": "Vance ties ceasefire to Iran's enrichment cuts amid deepening squeeze"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "ukraine-front",
-  "updatedAt": "2026-10-06T16:50+02:00",
+  "updatedAt": "2026-10-07T09:06+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -145,8 +145,8 @@
     },
     {
       "status": "reported",
-      "text": "Russian officials say Ukraine launched a roughly 650-drone attack on the Moscow region overnight, killing two; no Ukrainian confirmation appears in the sources reviewed.",
-      "by": "Says: Moscow Mayor Sergei Sobyanin, Governor Andrei Vorobyov. No Ukrainian confirmation in sources reviewed.",
+      "text": "Russian officials give fuller detail on the 650-drone Moscow-region attack: one killed in Radumlya, another in Barbybino, seven injured, 47 houses, four apartments and three cars damaged, and 185 drones destroyed or neutralised over the wider region.",
+      "by": "Says: Moscow Region Governor Andrei Vorobyov. No Ukrainian confirmation in sources reviewed.",
       "sources": [
         {
           "name": "Al Jazeera",
@@ -157,7 +157,7 @@
     },
     {
       "status": "disputed",
-      "text": "A war blogger claims a Ukrainian strike hit an oil-storage tank at the Volodarskaya facility near Moscow; there is no official confirmation.",
+      "text": "War blogger Yuri Podolyaka's claimed strike on the Volodarskaya oil facility concerns the largest such site in the Moscow region, linked to Transneft and Moscow's main refinery, supplying all three of the capital's airports; still no official confirmation.",
       "by": "Says: war blogger Yuri Podolyaka. No official confirmation given.",
       "sources": [
         {
@@ -212,6 +212,30 @@
           "name": "CNBC World",
           "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html",
           "date": "4 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Russia's Defence Ministry says Geran attack drones struck several Ukrainian data centres (Parkovy, Ukrtelecom, Giga, Podolsky) that process data for government, commercial and military services.",
+      "by": "Says: Russia's Defence Ministry, via TASS.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/defense/2197931",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Ukraine's embassy in India accuses Russia of striking a factory owned by Indian investors, as Delhi shifts toward more active peacemaking.",
+      "by": "Says: Ukraine's embassy in India.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/week-asia/politics/article/3369911/why-india-getting-serious-about-ending-ukraine-war?utm_source=rss_feed",
+          "date": "6 Oct"
         }
       ]
     }
@@ -386,6 +410,61 @@
           "url": "https://www.aljazeera.com/news/2026/10/6/ukraine-launches-major-drone-attack-on-russias-moscow-region-killing-two?traffic_source=rss"
         }
       ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Casualties from the Russian strike on Zaporizhzhia's Dnipro bridge rise to five injured, including two Red Cross workers.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171425-casualties-from-russian-attack-on-bridge-in-zaporizhzhia-rise-to-five-injuries.html"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "A Russian drone strike sparks a fire on the roof of an educational institution in Kyiv's Obolon district; no casualties, fire extinguished.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171428-fire-in-kyivs-obolon-district-sparked-by-russian-attack-has-been-extinguished.html"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Russian forces strike infrastructure in Odesa region again overnight; no casualties, residential areas undamaged.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171422-russian-forces-strike-infrastructure-in-odesa-overnight.html"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Dutch PM Rob Jetten pledges F-16 maintenance, spare parts and ammunition for Ukraine after talks with Zelenskyy on air defence.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-polytics/4171398-pm-jetten-netherlands-to-help-ukraine-with-f16-maintenance-spare-parts-and-ammunition.html"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Russia's Defence Ministry says its Geran drones struck Ukrainian data centres used by government, commercial and military services.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/defense/2197931"
+        }
+      ]
     }
   ],
   "sources": [
@@ -454,8 +533,44 @@
       "what": "Ukraine strikes Russia's Moscow region overnight with roughly 650 drones; Russian officials say two are killed and a war",
       "url": "https://www.scmp.com/news/world/russia-central-asia/article/3369888/ukraine-attacks-moscow-region-650-drones-both-sides-step-strikes?utm_source=rss_feed",
       "date": "6 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Russia's Defence Ministry says Geran attack drones struck several Ukrainian data centres (Parkovy, Ukrtelecom, Giga, Pod",
+      "url": "https://tass.com/defense/2197931",
+      "date": "6 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Ukraine's embassy in India accuses Russia of striking a factory owned by Indian investors, as Delhi shifts toward more a",
+      "url": "https://www.scmp.com/week-asia/politics/article/3369911/why-india-getting-serious-about-ending-ukraine-war?utm_source=rss_feed",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Casualties from the Russian strike on Zaporizhzhia's Dnipro bridge rise to five injured, including two Red Cross workers",
+      "url": "https://www.ukrinform.net/rubric-ato/4171425-casualties-from-russian-attack-on-bridge-in-zaporizhzhia-rise-to-five-injuries.html",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "A Russian drone strike sparks a fire on the roof of an educational institution in Kyiv's Obolon district; no casualties,",
+      "url": "https://www.ukrinform.net/rubric-ato/4171428-fire-in-kyivs-obolon-district-sparked-by-russian-attack-has-been-extinguished.html",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Russian forces strike infrastructure in Odesa region again overnight; no casualties, residential areas undamaged.",
+      "url": "https://www.ukrinform.net/rubric-ato/4171422-russian-forces-strike-infrastructure-in-odesa-overnight.html",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Dutch PM Rob Jetten pledges F-16 maintenance, spare parts and ammunition for Ukraine after talks with Zelenskyy on air d",
+      "url": "https://www.ukrinform.net/rubric-polytics/4171398-pm-jetten-netherlands-to-help-ukraine-with-f16-maintenance-spare-parts-and-ammunition.html",
+      "date": "6 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Russia and Ukraine trade long-range strikes as diplomacy stalls"
+  "headline": "Russia and Ukraine escalate mutual drone and infrastructure strikes"
 }

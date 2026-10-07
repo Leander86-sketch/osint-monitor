@@ -1,6 +1,6 @@
 {
   "slug": "taiwan-strait",
-  "updatedAt": "2026-10-06T17:25+02:00",
+  "updatedAt": "2026-10-07T09:06+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "The FBI arrested Wanying Zhang in Los Angeles, accusing her of spying for China on President Lai Ching-te's son's family; she faces court Monday, and China has not responded. Taiwan's foreign minister is visiting Arizona's chip corridor, skipping Washington after the Xi-Trump summit. Taiwanese media report an unconfirmed Pentagon plan to post two officials inside Taiwan's defence ministry. The US and Japan are expanding missile and drone deployments near Taiwan, including at Yonaguni, as a survey finds Chinese favour peaceful reunification but would back force against formal independence.",
+  "stand": "The FBI arrested Wanying Zhang in Los Angeles, charging her as an unregistered foreign agent for spying on President Lai Ching-te's son's family for China, which has not responded. Taiwan's foreign minister visited Arizona's chip corridor, skipping Washington; Taiwanese media report an unconfirmed Pentagon plan to post officials inside Taiwan's defence ministry. The US and Japan are expanding missile and drone deployments, and Taiwan's first F-16V jets arrived, as a Chinese coast guard clash near the Pratas Islands and North Korea's backing for Beijing added to tensions.",
   "figures": [
     {
       "label": "Taiwan's defence-spending target",
@@ -162,6 +162,95 @@
           "date": "6 Oct"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Zhang charged with acting as an unregistered foreign agent; prosecutors say she used tradecraft to avoid detection and never disclosed working for a foreign government.",
+      "by": "Says: US attorney Bill Essayli, Justice Department. Denies: not addressed by China.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/us-accuses-california-woman-of-spying-for-china-surveilling-taiwan-leaders-son/article71545758.ece",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "China's Taiwan Affairs Office called on Taiwan not to use dangerous or heavy-handed methods against mainland fishing vessels and crews.",
+      "by": "Says: Taiwan Affairs Office of the PRC State Council. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/taiwans-maritime-law-enforcement-operation-has-sparked-anger-in-chinese-society/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "North Korea's KCNA backed Beijing's One China policy and accused Washington of fuelling tension in the Taiwan Strait through arms sales to Taiwan.",
+      "by": "Says: KCNA commentary by analyst Kim Myong Chol. Denies: not addressed by US or Taiwan.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/north-korea-warns-us-over-taiwan-while-kim-pledges-support-for-russia/article71553315.ece",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Yonhap News",
+          "url": "https://en.yna.co.kr/view/AEN20261007001700315",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A North Korean state media commentary claimed US arms sales to Taiwan over the past decade exceeded US$39 billion.",
+      "by": "Says: KCNA commentary by analyst Kim Myong-chol. Denies: not verified independently.",
+      "sources": [
+        {
+          "name": "Yonhap News",
+          "url": "https://en.yna.co.kr/view/AEN20261007001700315",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "US defence firm Aevex plans to manufacture combat-tested drones in Taiwan, designed to resist electronic warfare based on lessons from Ukraine.",
+      "by": "Says: Aevex executives, cited by SCMP. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/military/article/3369929/us-firm-make-battle-tested-drones-taiwan-boosting-supply-chain-resilience?utm_source=rss_feed",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A mainland poll found opinion split on using force for reunification: 38% say it should never be used, 47% disagree.",
+      "by": "Says: unnamed poll cited by The Diplomat. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/taiwans-maritime-law-enforcement-operation-has-sparked-anger-in-chinese-society/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Same poll: if Taiwan declared independence, 81% of mainlanders would back limited operations on offshore islands, but only 32% a full-scale attack.",
+      "by": "Says: unnamed poll cited by The Diplomat. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/taiwans-maritime-law-enforcement-operation-has-sparked-anger-in-chinese-society/",
+          "date": "6 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -178,6 +267,17 @@
       ]
     },
     {
+      "date": "30 Sep",
+      "kind": "official",
+      "text": "Taiwan Coast Guard detains a Chinese fishing vessel near Penghu, holding its seven crew members.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/taiwans-maritime-law-enforcement-operation-has-sparked-anger-in-chinese-society/"
+        }
+      ]
+    },
+    {
       "date": "1 Oct",
       "kind": "official",
       "text": "Okinawa Defense Bureau relays Yonaguni NMESIS/MADIS deployment plans.",
@@ -185,6 +285,17 @@
         {
           "name": "Defense News",
           "url": "https://www.defensenews.com/global/asia-pacific/2026/10/05/us-marine-corps-anti-ship-weaponry-to-see-exercise-action-on-remote-japan-island-near-taiwan/"
+        }
+      ]
+    },
+    {
+      "date": "1 Oct",
+      "kind": "official",
+      "text": "A Chinese fishing vessel clashes with Taiwan's Coast Guard near the Pratas Islands; the Coast Guard uses a water cannon to force it away.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/taiwans-maritime-law-enforcement-operation-has-sparked-anger-in-chinese-society/"
         }
       ]
     },
@@ -251,6 +362,21 @@
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/5/fbi-arrests-chinese-foreign-agent-for-spying-on-taiwan-presidents-son?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "North Korea's KCNA backs China's One China policy and warns Washington over Taiwan arms sales.",
+      "sources": [
+        {
+          "name": "Yonhap News",
+          "url": "https://en.yna.co.kr/view/AEN20261007001700315"
+        },
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/north-korea-warns-us-over-taiwan-while-kim-pledges-support-for-russia/article71553315.ece"
         }
       ]
     },
@@ -331,8 +457,38 @@
       "what": "Okinawa Defense Bureau relays Yonaguni NMESIS/MADIS deployment plans.",
       "url": "https://www.defensenews.com/global/asia-pacific/2026/10/05/us-marine-corps-anti-ship-weaponry-to-see-exercise-action-on-remote-japan-island-near-taiwan/",
       "date": "1 Oct"
+    },
+    {
+      "who": "The Hindu",
+      "what": "Zhang charged with acting as an unregistered foreign agent; prosecutors say she used tradecraft to avoid detection and n",
+      "url": "https://www.thehindu.com/news/international/us-accuses-california-woman-of-spying-for-china-surveilling-taiwan-leaders-son/article71545758.ece",
+      "date": "6 Oct"
+    },
+    {
+      "who": "The Diplomat",
+      "what": "China's Taiwan Affairs Office called on Taiwan not to use dangerous or heavy-handed methods against mainland fishing ves",
+      "url": "https://thediplomat.com/2026/10/taiwans-maritime-law-enforcement-operation-has-sparked-anger-in-chinese-society/",
+      "date": "6 Oct"
+    },
+    {
+      "who": "The Hindu",
+      "what": "North Korea's KCNA backed Beijing's One China policy and accused Washington of fuelling tension in the Taiwan Strait thr",
+      "url": "https://www.thehindu.com/news/international/north-korea-warns-us-over-taiwan-while-kim-pledges-support-for-russia/article71553315.ece",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Yonhap News",
+      "what": "North Korea's KCNA backed Beijing's One China policy and accused Washington of fuelling tension in the Taiwan Strait thr",
+      "url": "https://en.yna.co.kr/view/AEN20261007001700315",
+      "date": "7 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "US defence firm Aevex plans to manufacture combat-tested drones in Taiwan, designed to resist electronic warfare based o",
+      "url": "https://www.scmp.com/news/china/military/article/3369929/us-firm-make-battle-tested-drones-taiwan-boosting-supply-chain-resilience?utm_source=rss_feed",
+      "date": "6 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "FBI accuses Beijing operative of spying on Taiwan president's family in Los Angeles"
+  "headline": "Taiwan Strait tensions rise with coast guard clash and North Korea's warning"
 }

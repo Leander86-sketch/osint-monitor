@@ -1,6 +1,6 @@
 {
   "slug": "sudan",
-  "updatedAt": "2026-10-06T17:14+02:00",
+  "updatedAt": "2026-10-07T09:06+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Sudan's army (SAF) and the RSF remain at war into a fourth year. The UN Human Rights Council has condemned drone strikes and civilian attacks by both sides, demanding an unconditional ceasefire, after a WFP aid convoy was hit by an air strike in South Kordofan. The US, via envoy Massad Boulos, and Egypt are pressing army chief Burhan toward a truce; Egypt, Eritrea, Somalia and Sudan backed Khartoum against the RSF's rival \"Tasis\" government. Humanitarian agencies warn nearly 29 million face acute food insecurity as the harvest season begins.",
+  "stand": "Sudan's army (SAF) and the RSF remain at war into a fourth year. Army chief Burhan has rejected negotiations, vowing to retake all RSF-held territory, as fighting intensifies in North and West Kordofan and the RSF kills civilians near En Nahud. The US, via envoy Massad Boulos, and Egypt continue pressing for a Sudanese-led dialogue toward civilian rule; Washington says neither SAF nor RSF represents legitimate governance. Humanitarian agencies warn displacement is deepening, including a refugee outflow into South Sudan now topping 1.4 million.",
   "figures": [
     {
       "label": "War dead (cumulative)",
@@ -59,6 +59,16 @@
         "name": "ReliefWeb / Sudan FSL Cluster",
         "url": "https://reliefweb.int/report/sudan/sudans-harvest-risk-millions-face-worsening-hunger-2027",
         "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Refugees/returnees into South Sudan since 2023",
+      "value": "more than 1.4 million",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/7/south-sudans-aid-crisis-deepens-as-food-stocks-run-low?traffic_source=rss",
+        "date": "7 Oct"
       }
     }
   ],
@@ -194,6 +204,66 @@
           "date": "5 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "Al-Burhan vowed to continue fighting until the RSF is removed from Sudan, rejecting negotiations to end the war.",
+      "by": "Says: Sudanese army chief Abdel Fattah al-Burhan (quoted via Sudan News Agency).",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The RSF killed 10 civilians and wounded others in an attack on Abu Ajal village, West Kordofan.",
+      "by": "Says: Dar Hamar Emergency Committee, a local charity group.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "More than 5,500 people were displaced from Blue Nile state villages over three days amid deteriorating security.",
+      "by": "Says: International Organization for Migration (IOM).",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Neither the Sudanese Armed Forces nor the RSF, nor their leaders, represent legitimate constitutional governance for Sudan.",
+      "by": "Says: US State Department.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf?traffic_source=rss",
+          "date": "Sept 2026"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Sudan's army advanced toward En Nahud and Al Khuway in West Kordofan after gains in North Kordofan, as the RSF massed in the area.",
+      "by": "Says: Al Jazeera.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -265,6 +335,50 @@
       ]
     },
     {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "Al-Burhan tells a rally in Village 5, Merowe he will retake all RSF territory and rejects negotiations.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "RSF kills 10 civilians in Abu Ajal village, West Kordofan, says Dar Hamar Emergency Committee.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "IOM reports more than 5,500 people displaced from Blue Nile villages over three days amid deteriorating security.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "Sudan's army advances on En Nahud and Al Khuway in West Kordofan as the RSF masses nearby.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf?traffic_source=rss"
+        }
+      ]
+    },
+    {
       "date": "late 2024",
       "kind": "media",
       "text": "RSF commander Algoney Dagalo attended a Hague peace conference under the false name \"Ahmed Musa\" while on a US sanctions list.",
@@ -329,8 +443,14 @@
       "what": "Qatar Red Crescent Society launches a medical convoy at Bahri Teaching Hospital, Khartoum.",
       "url": "https://reliefweb.int/report/sudan/qrcs-launches-multidisciplinary-medical-convoy-sudan-enar",
       "date": "4 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Al-Burhan vowed to continue fighting until the RSF is removed from Sudan, rejecting negotiations to end the war.",
+      "url": "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf?traffic_source=rss",
+      "date": "6 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Sudan's warring factions pound civilians as UN warns of genocide and famine"
+  "headline": "Burhan rejects talks, vows to retake all Sudan from RSF"
 }

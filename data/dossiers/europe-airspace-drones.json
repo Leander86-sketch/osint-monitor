@@ -1,6 +1,6 @@
 {
   "slug": "europe-airspace-drones",
-  "updatedAt": "2026-10-06T16:43+02:00",
+  "updatedAt": "2026-10-07T09:06+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Drones have struck Black Sea shipping twice in two days: a Turkish-flagged grain carrier sank near Romania on 5 October, killing two, and Bulgaria's Alfa Watan and Able were hit on 6 October, sinking one and damaging the other roughly 80 miles off the coast. Bulgarian PM Rumen Radev calls it a violation of international law but will not name the attacker; Ukraine's Zelensky blames Russian drones for the Romania strike. Bulgarian opposition accuses Radev of shielding Moscow. Estonia received 13 US reconnaissance drones for border security.",
+  "stand": "Drones have struck Black Sea shipping twice in two days: a Turkish-flagged grain carrier sank near Romania on 5 October, killing two, and Bulgaria's Alfa Watan and Able were hit on 6 October, sinking one and damaging the other. Radev calls it a violation of international law but won't name the attacker. Zelensky says Ukrainian naval intelligence has established the Bulgaria strike as a combined Russian drone attack; a Reuters source separately points to Russia. Opposition accuses Radev of shielding Moscow. Estonia received 13 US drones for border security.",
   "figures": [
     {
       "label": "Romania grain carrier casualties",
@@ -59,6 +59,16 @@
         "name": "ERR News",
         "url": "https://news.err.ee/1610157010/us-gives-estonia-13-reconnaissance-drones-to-boost-border-security",
         "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Evacuated crew nationalities (Bulgaria)",
+      "value": "11 Turkish, 7 Indian",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Fox News World",
+        "url": "https://www.foxnews.com/world/drone-strike-sinks-ship-nato-waters-zelenskyy-warns-looming-massive-strike",
+        "date": "6 Oct"
       }
     }
   ],
@@ -182,6 +192,42 @@
           "date": "5 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "Ukraine's Navy says the Bulgaria drone attack, like the Romania strike, was a combined Russian maritime-and-aerial-drone operation.",
+      "by": "Says: President Volodymyr Zelenskyy, citing Ukraine's Navy; Denies: Russia has not commented on the incident",
+      "sources": [
+        {
+          "name": "Fox News World",
+          "url": "https://www.foxnews.com/world/drone-strike-sinks-ship-nato-waters-zelenskyy-warns-looming-massive-strike",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "An unnamed maritime security source gave a preliminary assessment that Russia was probably behind the Bulgaria drone attack.",
+      "by": "Says: unnamed maritime security source cited by Reuters; Denies: Russia did not immediately comment",
+      "sources": [
+        {
+          "name": "gCaptain (Reuters)",
+          "url": "https://gcaptain.com/drone-sinks-ship-in-bulgarias-black-sea-media-reports/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A drone industry expert says the coordinated hitting of two ships travelling in opposite directions points to a Russian escalation.",
+      "by": "Says: drone manufacturer founder Cameron Chell (Draganfly)",
+      "sources": [
+        {
+          "name": "Fox News World",
+          "url": "https://www.foxnews.com/world/drone-strike-sinks-ship-nato-waters-zelenskyy-warns-looming-massive-strike",
+          "date": "6 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -279,6 +325,61 @@
       ]
     },
     {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Zelensky said Ukraine's Navy had established the Bulgaria strike as a combined Russian maritime-and-aerial-drone attack, after contacting Bulgarian counterparts.",
+      "sources": [
+        {
+          "name": "Fox News World",
+          "url": "https://www.foxnews.com/world/drone-strike-sinks-ship-nato-waters-zelenskyy-warns-looming-massive-strike"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "A Reuters maritime security source said a preliminary assessment pointed to Russia as the likely attacker in Bulgaria's waters.",
+      "sources": [
+        {
+          "name": "gCaptain (Reuters)",
+          "url": "https://gcaptain.com/drone-sinks-ship-in-bulgarias-black-sea-media-reports/"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "reaction",
+      "text": "European Commission President Ursula von der Leyen condemned the targeting of commercial ships and crews.",
+      "sources": [
+        {
+          "name": "gCaptain (Reuters)",
+          "url": "https://gcaptain.com/drone-sinks-ship-in-bulgarias-black-sea-media-reports/"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "reaction",
+      "text": "Hungarian PM Peter Magyar voiced solidarity with Bulgaria after the attack on the two ships.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/bulgaria-says-two-commercial-vessels-were-hit-in-drone-attack-in-its-waters?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Bulgaria's Security Council is set to meet at 13:00 at the presidential residence on maritime security and critical-infrastructure risks.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-polytics/4171723-bulgarian-president-convenes-security-council-after-drone-attacks-on-commercial-vessels.html"
+        }
+      ]
+    },
+    {
       "date": "Aug",
       "kind": "official",
       "text": "Romania scrambled F-16 fighter jets to destroy a maritime drone near the Neptun Deep gas platform in the Black Sea.",
@@ -337,8 +438,32 @@
       "what": "Drones struck two commercial vessels in Bulgaria's exclusive economic zone around 3 a.m.; the Alfa Watan sank and the Ab",
       "url": "https://tass.com/emergencies/2197969",
       "date": "6 Oct"
+    },
+    {
+      "who": "Fox News World",
+      "what": "Ukraine's Navy says the Bulgaria drone attack, like the Romania strike, was a combined Russian maritime-and-aerial-drone",
+      "url": "https://www.foxnews.com/world/drone-strike-sinks-ship-nato-waters-zelenskyy-warns-looming-massive-strike",
+      "date": "6 Oct"
+    },
+    {
+      "who": "gCaptain (Reuters)",
+      "what": "An unnamed maritime security source gave a preliminary assessment that Russia was probably behind the Bulgaria drone att",
+      "url": "https://gcaptain.com/drone-sinks-ship-in-bulgarias-black-sea-media-reports/",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Hungarian PM Peter Magyar voiced solidarity with Bulgaria after the attack on the two ships.",
+      "url": "https://www.aljazeera.com/news/2026/10/6/bulgaria-says-two-commercial-vessels-were-hit-in-drone-attack-in-its-waters?traffic_source=rss",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Bulgaria's Security Council is set to meet at 13:00 at the presidential residence on maritime security and critical-infr",
+      "url": "https://www.ukrinform.net/rubric-polytics/4171723-bulgarian-president-convenes-security-council-after-drone-attacks-on-commercial-vessels.html",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Russia blamed as drones sink ships off Romania and Bulgaria while Radev stays silent"
+  "headline": "Ukraine blames Russia for Bulgaria Black Sea drone strikes"
 }

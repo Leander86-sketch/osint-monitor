@@ -1,6 +1,6 @@
 {
   "slug": "korea-peninsula",
-  "updatedAt": "2026-10-06T17:19+02:00",
+  "updatedAt": "2026-10-07T09:06+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "South Korea and the US-led UN Command have concluded North Korea planted the anti-personnel mines that wounded three soldiers in the DMZ on 21 September. Seoul (Defence Minister Kang Shin-chul, spokeswoman Chung Bin-na) demands an apology, is weighing further measures, and has begun clearing mines south of the Military Demarcation Line. Pyongyang, through Kim Yo Jong, denies its soldiers crossed the line and rejected a proposal to resurvey the border. North Korea's Foreign Ministry has warned of retaliatory force against any Southern incursion.",
+  "stand": "South Korea and the US-led UN Command have concluded North Korea planted four mines, laid about a year before the blast, 10 metres south of the Military Demarcation Line, wounding three soldiers in the DMZ on 21 September. Seoul (Kang Shin-chul, Cho Hyun, Chung Bin-na) demands an apology, is weighing diplomatic measures, and has cleared mines on its side. Pyongyang, through Kim Yo Jong, denies crossing the line, calling the apology demand \"despicable\", and its Foreign Ministry warns it will retaliate with force against any Southern incursion, \"even one millimetre\".",
   "figures": [
     {
       "label": "Soldiers injured in 21 Sep blast",
@@ -68,6 +68,16 @@
       "src": {
         "name": "Al Jazeera",
         "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss",
+        "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Distance of planted mines south of MDL",
+      "value": "10 metres (32 feet)",
+      "color": "#f59e0b",
+      "src": {
+        "name": "SCMP",
+        "url": "https://www.scmp.com/week-asia/politics/article/3369898/north-koreas-dmz-landmines-sabotage-souths-peace-push?utm_source=rss_feed",
         "date": "6 Oct"
       }
     }
@@ -124,12 +134,17 @@
     {
       "status": "disputed",
       "text": "South Korea demands a formal apology from North Korea; Pyongyang has refused.",
-      "by": "Says: South Korea's military. Refuses: North Korea.",
+      "by": "Says: South Korea's military. Refuses: North Korea, with Kim Yo Jong calling the demand \"despicable\".",
       "sources": [
         {
           "name": "CNA Singapore",
           "url": "https://www.channelnewsasia.com/east-asia/south-korea-pyongyang-dmz-mines-6432796",
           "date": "5 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss",
+          "date": "6 Oct"
         }
       ]
     },
@@ -148,7 +163,7 @@
     {
       "status": "reported",
       "text": "North Korea's Foreign Ministry states it will use force against any Southern military incursion.",
-      "by": "Says: North Korea's Foreign Ministry (KCNA statement).",
+      "by": "Says: North Korea's Foreign Ministry (KCNA statement, reported by TASS).",
       "sources": [
         {
           "name": "TASS",
@@ -161,6 +176,18 @@
       "status": "confirmed",
       "text": "South Korea has begun clearing mines on its side of the MDL.",
       "by": "Says: South Korea's military.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The mines were planted by North Korean forces about a year before the blast, not shortly before it.",
+      "by": "Says: South Korean-UN Command investigation.",
       "sources": [
         {
           "name": "Al Jazeera",
@@ -270,6 +297,28 @@
           "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss"
         }
       ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Defence Minister Kang Shin-chul called the military's response unprecedented and said all responsibility lies with North Korea.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/6/south-korea-considers-steps-to-force-north-korea-apology-for-dmz-mine-blast?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Foreign Minister Cho Hyun said Seoul was considering various diplomatic measures over the incident.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198141"
+        }
+      ]
     }
   ],
   "sources": [
@@ -299,5 +348,5 @@
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "North Korea denies crossing border as Seoul clears DMZ mines after blast"
+  "headline": "Seoul weighs diplomatic steps as Pyongyang hardens border threat"
 }

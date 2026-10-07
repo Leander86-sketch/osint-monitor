@@ -1,6 +1,6 @@
 {
   "slug": "strait-of-hormuz",
-  "updatedAt": "2026-10-06T17:07+02:00",
+  "updatedAt": "2026-10-07T09:06+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Iran's IRGC is pressuring tanker traffic through the Strait of Hormuz with near-daily projectile strikes and turn-back orders, while the US Navy enforces a blockade on vessels linked to Iranian ports. Gulf oil exports have nonetheless climbed back above pre-war levels on several days, driven by Saudi, Kuwaiti and Iraqi shipments and US-escorted transits. A Kpler analyst speculates Gulf states may be paying Iran a toll for safe passage, unconfirmed. IRGC's Fadavi claims US forces have withdrawn and calls through-traffic negligible; CENTCOM disputes this by citing active blockade enforcement.",
+  "stand": "Iran's IRGC continues near-daily strikes and turn-back orders against tankers in the Strait of Hormuz; the Joint Maritime Information Center counts nearly 20 ships attacked in the past month. On 6 October a projectile hit the Panama-flagged tanker On Peace, injuring 12 crew, 11 of them Indian; India condemned the attack and Oman evacuated the wounded to Khasab. Gulf oil exports remain elevated; Euler puts Hormuz throughput at about 75% of pre-war levels, while Kpler data showed broader Gulf exports near pre-war levels in late September.",
   "figures": [
     {
       "label": "IRGC-claimed current flow on US-supervised route",
@@ -29,6 +29,16 @@
         "name": "IRGC commander Ali Fadavi via Middle East Eye",
         "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-says-us-forces-have-fled-1000km-irans-borders",
         "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Commercial ships attacked in Hormuz, the Gulf or off Oman (past month)",
+      "value": "nearly 20",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Joint Maritime Information Center, via CNBC",
+        "url": "https://www.cnbc.com/2026/10/07/trump-hormuz-oil-diesel-iran-anthropic-ai.html",
+        "date": "7 Oct"
       }
     }
   ],
@@ -87,9 +97,9 @@
       ]
     },
     {
-      "status": "reported",
-      "text": "At least 12 tankers were attacked in the Strait of Hormuz over the past week, with UKMTO logging at least one attack daily in Hormuz or the Gulf of Aden since 2 October.",
-      "by": "Says: UKMTO.",
+      "status": "confirmed",
+      "text": "The attack tally has widened: JMIC counts nearly 20 commercial ships attacked in Hormuz, the Gulf or off Oman over the past month, beyond the week-long UKMTO count already logged.",
+      "by": "Says: Joint Maritime Information Center.",
       "sources": [
         {
           "name": "Al-Monitor",
@@ -100,6 +110,11 @@
           "name": "gCaptain",
           "url": "https://gcaptain.com/middle-east-oil-exports-top-pre-war-levels-for-part-of-september-but-tanker-attacks-increase/",
           "date": "5 Oct"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/07/trump-hormuz-oil-diesel-iran-anthropic-ai.html",
+          "date": "7 Oct"
         }
       ]
     },
@@ -177,6 +192,83 @@
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/5/is-iran-charging-a-toll-to-allow-oil-traffic-through-hormuz?traffic_source=rss",
           "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A projectile struck the Panama-flagged tanker MT On Peace in the Strait of Hormuz on 6 October, injuring 12 of its 19 crew, 11 of them Indian; Oman evacuated the wounded to Khasab. India did not identify the attacker.",
+      "by": "Says: India's Ministry of External Affairs; Oman's Ministry of Defence.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/indian-crew-attacked-in-mt-on-peace-vessel-attack-strait-of-hormuz/article71551158.ece",
+          "date": "6 Oct"
+        },
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran's Persian Gulf Strait Authority has blacklisted the tanker On Peace for allegedly violating Iranian transit protocols and threatens listed vessels with fines, detention or confiscation.",
+      "by": "Says: Iran's Persian Gulf Strait Authority, per gCaptain.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Trump claims Iran's oil minister has quit, quoting the official as saying Iran has no economy and no oil left.",
+      "by": "Says: US President Donald Trump.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-millions-barrels-oil-transited-through-hormuz",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The ICC is working with the UN and IMO on a plan to temporarily place Hormuz navigation under UN management, but US-Iran tensions have stalled it.",
+      "by": "Says: International Chamber of Commerce, per Wall Street Journal.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hormuz-strait-disruptions-could-lead-global-food-security-crisis",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Oil and condensate exports through the Strait of Hormuz reached about 75% of pre-conflict levels in the week of 26 September-2 October.",
+      "by": "Says: Euler analyst Andrey Polishchuk, via TASS.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198249",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Gulf oil flows excluding Iran rose above 81% of pre-war levels in September, led by Saudi exports, while Iran's own exports fell to zero under the US blockade.",
+      "by": "Says: gCaptain, citing tracking data.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/",
+          "date": "6 Oct"
         }
       ]
     }
@@ -422,6 +514,65 @@
       ]
     },
     {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Panama-flagged tanker On Peace struck by a projectile off Khasab/Limah, Oman; 12 of 19 crew injured, 11 Indian; Oman evacuates wounded to Khasab.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss"
+        },
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "reaction",
+      "text": "India's foreign ministry condemns the attack and calls for an immediate end to strikes on shipping and seafarers.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/indian-crew-attacked-in-mt-on-peace-vessel-attack-strait-of-hormuz/article71551158.ece"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "reaction",
+      "text": "Trump says oil is flowing through Hormuz at or above pre-war levels and claims Iran's oil minister has resigned.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-millions-barrels-oil-transited-through-hormuz"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "Euler estimates Hormuz crude and condensate exports recovered to about 75% of pre-conflict levels for 26 Sep-2 Oct.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198249"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "JMIC tallies nearly 20 commercial ships attacked in Hormuz, the Gulf or off Oman over the past month.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/07/trump-hormuz-oil-diesel-iran-anthropic-ai.html"
+        }
+      ]
+    },
+    {
       "date": "Mar",
       "kind": "media",
       "text": "Lloyd's List reports the IRGC had already imposed a toll system on vessel traffic through Hormuz.",
@@ -505,8 +656,50 @@
       "what": "A tanker transiting the strait is struck by an unknown projectile at 1637 UTC, causing an engine-room fire.",
       "url": "https://tass.com/world/2197847",
       "date": "5 Oct"
+    },
+    {
+      "who": "CNBC",
+      "what": "The attack tally has widened: JMIC counts nearly 20 commercial ships attacked in Hormuz, the Gulf or off Oman over the p",
+      "url": "https://www.cnbc.com/2026/10/07/trump-hormuz-oil-diesel-iran-anthropic-ai.html",
+      "date": "7 Oct"
+    },
+    {
+      "who": "The Hindu",
+      "what": "A projectile struck the Panama-flagged tanker MT On Peace in the Strait of Hormuz on 6 October, injuring 12 of its 19 cr",
+      "url": "https://www.thehindu.com/news/national/indian-crew-attacked-in-mt-on-peace-vessel-attack-strait-of-hormuz/article71551158.ece",
+      "date": "6 Oct"
+    },
+    {
+      "who": "gCaptain",
+      "what": "A projectile struck the Panama-flagged tanker MT On Peace in the Strait of Hormuz on 6 October, injuring 12 of its 19 cr",
+      "url": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "Trump claims Iran's oil minister has quit, quoting the official as saying Iran has no economy and no oil left.",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-millions-barrels-oil-transited-through-hormuz",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "The ICC is working with the UN and IMO on a plan to temporarily place Hormuz navigation under UN management, but US-Iran",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/hormuz-strait-disruptions-could-lead-global-food-security-crisis",
+      "date": "6 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Oil and condensate exports through the Strait of Hormuz reached about 75% of pre-conflict levels in the week of 26 Septe",
+      "url": "https://tass.com/world/2198249",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Panama-flagged tanker On Peace struck by a projectile off Khasab/Limah, Oman; 12 of 19 crew injured, 11 Indian; Oman eva",
+      "url": "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss",
+      "date": "6 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "IRGC squeezes Hormuz traffic as Gulf crude exports defy blockade"
+  "headline": "Iran's Hormuz attacks injure tanker crew as exports keep recovering"
 }

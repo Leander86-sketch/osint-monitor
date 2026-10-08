@@ -111,7 +111,7 @@ def main():
         elif slug in used_slugs: why = 'dossier deze run al gebruikt'
         if not why:
             ov, spec = overlap(slug, c['text'])
-            if len(ov) < 3 or len(spec) < 2: why = f'te weinig specifieke overlap met het dossier (alles: {", ".join(ov) or "geen"} · specifiek: {", ".join(spec) or "geen"})'
+            if len(ov) < 3 or len(spec) < 3: why = f'te weinig specifieke overlap met het dossier (alles: {", ".join(ov) or "geen"} · specifiek: {", ".join(spec) or "geen"})'
         if why: log(f'skip @{author} → {slug}: {why}'); continue
         text = compose(slug)
         if not text: log(f'skip @{author}: tekst te lang'); continue

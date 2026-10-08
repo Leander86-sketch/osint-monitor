@@ -1,6 +1,6 @@
 {
   "slug": "russia-plague-irkutsk",
-  "updatedAt": "2026-10-07T18:03+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "WHO",
@@ -15,7 +15,7 @@
       "match": "^AP News"
     }
   ],
-  "stand": "A laboratory technician of the Irkutsk Anti-Plague Institute died in Shelekhov on 1–2 October, two days after admission with severe pneumonia. Rospotrebnadzor calls it \"pneumonia of unknown etiology\", denies a lab accident and says 90% of contacts have completed observation with no infectious illness found. Russia told the WHO no plague case has been registered; the WHO has now asked Russia to clarify media reports of a second employee with undetermined pneumonia. The US sent a diplomatic demarche and a health alert; the Kremlin calls most reporting false.",
+  "stand": "A laboratory technician of the Irkutsk Anti-Plague Institute died in Shelekhov on 1–2 October, two days after admission with severe pneumonia. Rospotrebnadzor calls it \"pneumonia of unknown etiology\", denies a lab accident, and says over 90% of contacts are cleared with no illness found. Russia told the WHO no plague case has been registered; WHO director-general Tedros says it still lacks a \"full picture\" and cannot complete a risk assessment, and seeks clarity on a reported second ill employee. The Kremlin calls most reporting false; the US sent a demarche.",
   "figures": [
     {
       "label": "confirmed plague cases",
@@ -136,9 +136,9 @@
       ]
     },
     {
-      "status": "confirmed",
-      "text": "Masks mandatory at the Irkutsk Aluminium Plant in Shelekhov since 3 Oct; several Irkutsk hospitals restricted access; ~60 institute staff kept inside for testing.",
-      "by": "Plant director; People of Baikal; Russian media",
+      "status": "reported",
+      "text": "Masks mandatory at the Irkutsk Aluminium Plant in Shelekhov since 3 Oct; several Irkutsk hospitals restricted access; institute staff were locked down inside for three days, sleeping on floors and chairs, during testing.",
+      "by": "Says: Plant director; People of Baikal; Russian media; the Guardian.",
       "sources": [
         {
           "name": "Meduza",
@@ -149,6 +149,11 @@
           "name": "The Guardian",
           "url": "https://www.theguardian.com/world/2026/oct/06/plague-epidemic-risk-russia-low-death-darya-shipilova-who",
           "date": "6 Oct"
+        },
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/who-says-it-does-not-have-full-picture-from-russia-following-suspected-plague-death",
+          "date": "7 Oct"
         }
       ]
     },
@@ -287,8 +292,8 @@
     },
     {
       "status": "disputed",
-      "text": "How she fell ill — now three accounts: a broken test tube (Russian media), a trip to Thailand (Russian media), or a recent visit to Buryatia on the Mongolian border where plague occurs in rodents (BBC). The head of Buryatia said she had not visited the republic; Rospotrebnadzor says no accident.",
-      "by": "Says: Russian media, BBC. Denies: Rospotrebnadzor (no accident); head of Buryatia (no visit).",
+      "text": "How she fell ill — three accounts persist: a broken test tube, a trip to Thailand, or a visit to Buryatia. Rospotrebnadzor denies an accident; the head of Buryatia denies she visited; her mother says a test tube cannot break this way.",
+      "by": "Says: Russian media, BBC. Denies: Rospotrebnadzor (no accident); head of Buryatia (no visit); Shipilova's mother Svetlana (test tube unbreakable).",
       "sources": [
         {
           "name": "DW fact check",
@@ -304,6 +309,11 @@
           "name": "BBC",
           "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&at_campaign=rss",
           "date": "5 Oct"
+        },
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/who-says-it-does-not-have-full-picture-from-russia-following-suspected-plague-death",
+          "date": "7 Oct"
         }
       ]
     },
@@ -434,8 +444,8 @@
     },
     {
       "status": "reported",
-      "text": "A second case: Russian media claim a second person died at Irkutsk district hospital (Daily Mail, 6 Oct); the WHO speaks only of \"media reports of a second employee with pneumonia of undetermined cause\" and has asked Russia to clarify. Neither a second death nor a diagnosis is confirmed.",
-      "by": "Says: Russian media via Daily Mail; WHO (reports only). Denies: Kremlin — most reporting false; Russia: no plague case registered.",
+      "text": "A second case: Russian media claim a second person died at Irkutsk district hospital; the WHO speaks only of \"media reports of a second employee with pneumonia of undetermined cause\" and has asked Russia to clarify. Asked directly about it, Peskov called most reporting false. Neither a second death nor a diagnosis is confirmed.",
+      "by": "Says: Russian media via Daily Mail; WHO (reports only). Denies: Kremlin spokesman Peskov — vast majority of reporting false; Russia: no plague case registered.",
       "sources": [
         {
           "name": "ABC News (AP)",
@@ -450,6 +460,11 @@
         {
           "name": "Politico",
           "url": "https://www.politico.eu/article/world-health-organization-who-information-pneumonia-russia-plague/",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information?traffic_source=rss",
           "date": "7 Oct"
         }
       ]
@@ -492,7 +507,7 @@
     },
     {
       "status": "disputed",
-      "text": "Whether a Trump–Putin call is scheduled: Trump says \"I have a call scheduled\" and expects to report \"probably tomorrow\"; Peskov says no call has been set but one could be organised quickly.",
+      "text": "Whether a Trump–Putin call is scheduled: Trump says a call is \"set up\" for Wednesday, Putin's 74th birthday; the Kremlin said earlier that day no call had been set but one could be organised quickly.",
       "by": "Says: Trump. Denies: Kremlin spokesman Peskov.",
       "sources": [
         {
@@ -503,6 +518,11 @@
         {
           "name": "ABC News (AP)",
           "url": "https://abcnews.com/International/wireStory/russia-tight-lid-suspected-case-pneumonic-plague-global-137065277",
+          "date": "7 Oct"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/07/trump-russia-plague-bioweapon-putin.html",
           "date": "7 Oct"
         }
       ]
@@ -551,6 +571,54 @@
         {
           "name": "Daily Mail",
           "url": "https://www.dailymail.com/news/article-16186315/Russian-media-claims-second-victim-died-plague-outbreak-infection-zone-hospital-Kremlin-scrambles-cover-details.html",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The WHO says it does not yet have the full picture of the case and cannot complete a full risk assessment.",
+      "by": "Says: WHO Director-General Tedros Adhanom Ghebreyesus.",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/who-says-it-does-not-have-full-picture-from-russia-following-suspected-plague-death",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The WHO still does not know how the technician became infected.",
+      "by": "Says: Maria Van Kerkhove, WHO Director of Epidemic and Pandemic Management.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information?traffic_source=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The US CDC says there is no indication of a broader threat to the US; it is working with Homeland Security, State and Defense, and screens travellers from the Siberian region at a JFK Airport health station.",
+      "by": "Says: US CDC statement; CDC Director Erica Schwartz.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information?traffic_source=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "ECDC: based on limited information available, there are no reports of secondary cases and no evidence of sustained human-to-human transmission.",
+      "by": "Says: ECDC statement, 6 October.",
+      "sources": [
+        {
+          "name": "DW",
+          "url": "https://www.dw.com/en/suspected-pneumonic-plague-in-siberia-what-we-know-about-the-disease/a-79547919?maca=en-rss-en-world-4025-rdf",
           "date": "6 Oct"
         }
       ]
@@ -937,6 +1005,17 @@
       ]
     },
     {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "ECDC statement: no reports of secondary cases and no evidence of sustained human-to-human transmission.",
+      "sources": [
+        {
+          "name": "DW",
+          "url": "https://www.dw.com/en/suspected-pneumonic-plague-in-siberia-what-we-know-about-the-disease/a-79547919?maca=en-rss-en-world-4025-rdf"
+        }
+      ]
+    },
+    {
       "date": "7 Oct",
       "kind": "official",
       "text": "Rospotrebnadzor: biosafety review complete, no emergencies; 90% of contacts cleared; \"no epidemic risks\". Peskov: WHO duly informed, most media reports false; no Trump call scheduled yet.",
@@ -985,6 +1064,72 @@
         {
           "name": "Politico",
           "url": "https://www.politico.eu/article/world-health-organization-who-information-pneumonia-russia-plague/"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "WHO director-general Tedros: the WHO still lacks a full picture of the case and cannot complete a risk assessment.",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/who-says-it-does-not-have-full-picture-from-russia-following-suspected-plague-death"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "WHO's Maria Van Kerkhove: the agency still does not know how Shipilova was infected.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "denial",
+      "text": "Peskov, asked specifically about a second case, says most media reporting on the situation is false.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "CDC says it is working with Homeland Security, State and Defense; JFK Airport has a health screening station for travellers from the region.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "denial",
+      "text": "Shipilova's mother, Svetlana, rejects the broken-test-tube theory; former classmates also sceptical.",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/who-says-it-does-not-have-full-picture-from-russia-following-suspected-plague-death"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "reaction",
+      "text": "Trump reaffirms a call with Putin is set up for later that day, Putin's 74th birthday.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/07/trump-russia-plague-bioweapon-putin.html"
         }
       ]
     }
@@ -1196,8 +1341,32 @@
       "what": "A second case: Russian media claim a second person died at Irkutsk district hospital (Daily Mail, 6 Oct); the WHO speaks",
       "url": "https://www.politico.eu/article/world-health-organization-who-information-pneumonia-russia-plague/",
       "date": "7 Oct"
+    },
+    {
+      "who": "The Guardian",
+      "what": "Masks mandatory at the Irkutsk Aluminium Plant in Shelekhov since 3 Oct; several Irkutsk hospitals restricted access; in",
+      "url": "https://www.theguardian.com/world/2026/oct/07/who-says-it-does-not-have-full-picture-from-russia-following-suspected-plague-death",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "A second case: Russian media claim a second person died at Irkutsk district hospital; the WHO speaks only of \"media repo",
+      "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information?traffic_source=rss",
+      "date": "7 Oct"
+    },
+    {
+      "who": "CNBC",
+      "what": "Whether a Trump–Putin call is scheduled: Trump says a call is \"set up\" for Wednesday, Putin's 74th birthday; the Kremlin",
+      "url": "https://www.cnbc.com/2026/10/07/trump-russia-plague-bioweapon-putin.html",
+      "date": "7 Oct"
+    },
+    {
+      "who": "DW",
+      "what": "ECDC: based on limited information available, there are no reports of secondary cases and no evidence of sustained human",
+      "url": "https://www.dw.com/en/suspected-pneumonic-plague-in-siberia-what-we-know-about-the-disease/a-79547919?maca=en-rss-en-world-4025-rdf",
+      "date": "6 Oct"
     }
   ],
   "disclaimer": "Not medical advice. The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "WHO presses Russia over reports of a second Irkutsk pneumonia case"
+  "headline": "WHO says it lacks full picture as Kremlin denies second case"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "ukraine-front",
-  "updatedAt": "2026-10-07T18:43+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Russia and Ukraine continue exchanging long-range strikes as a fifth winter nears. Overnight on 6-7 October, Russia fired 70 missiles and 46 drones at Ukraine, collapsing an apartment block in Pryluky and killing at least a dozen people nationwide, timed to Putin's 74th birthday. Zelensky calls it deliberate terror and appeals for Patriot interceptors. Ukraine says it struck Russian oil facilities in response. The EU disbursed a €1.2bn tranche to Kyiv for defence. WHO reports attacks on Ukrainian healthcare rose 17% in Q3. Trilateral peace talks remain pending Moscow's answer.",
+  "stand": "Russia and Ukraine continue exchanging long-range strikes as a fifth winter nears. Overnight on 6-7 October, Russia fired 70 missiles, 48 cruise missiles and 130 drones at Ukraine, hitting eleven regions; reported nationwide deaths range 20-24, with a Pryluky apartment block's toll put at 14-18. Zelensky calls it deliberate terror timed to Putin's birthday and appeals for Patriot interceptors. Ukraine says it struck Russian oil facilities and a training ground in response. WHO reports attacks on Ukrainian healthcare rose 17% in Q3. Trilateral talks await Moscow's answer.",
   "figures": [
     {
       "label": "Trains evacuated in September due to drone attacks",
@@ -253,12 +253,17 @@
     },
     {
       "status": "confirmed",
-      "text": "Ukraine's officials say the overnight 6-7 October attack involved around 70 missiles, many ballistic, and 46 jet-powered drones hitting eleven regions.",
-      "by": "Says: President Volodymyr Zelenskyy / Ukrainian officials.",
+      "text": "Ukraine's air force says the overnight 6-7 October attack involved 130 drones, 48 cruise missiles and an unspecified number of ballistic missiles, with air defence downing 161 targets; Zelenskyy separately put the missile count at about 70, hitting eleven regions.",
+      "by": "Says: Ukraine's Air Force / President Volodymyr Zelenskyy.",
       "sources": [
         {
           "name": "Moscow Times",
           "url": "https://www.themoscowtimes.com/2026/10/07/russia-launches-heavy-strikes-at-ukraine-killing-at-least-20-a93901",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/at-least-two-killed-in-kyiv-as-russia-launches-massive-attack-on-ukraine?traffic_source=rss",
           "date": "7 Oct"
         }
       ]
@@ -277,8 +282,8 @@
     },
     {
       "status": "reported",
-      "text": "Pryluky apartment-block death toll is reported inconsistently: Guardian/Zelensky say 18 dead including 4 children; Moscow Times cites local officials for 'at least 14' including 4 children; Meduza cites the State Emergency Service for 4 dead and 20 injured including 3 children.",
-      "by": "Says: Ukrainian officials, via Zelensky and local/regional officials (figures vary by outlet).",
+      "text": "Pryluky apartment-block toll remains disputed by outlet: Guardian/Zelensky and SCMP say 18 dead including 4 children (three aged about one, one aged eight), with dozens wounded; Al Jazeera cites regional officials for 'at least 14' including 4 children and 50 wounded. Nationwide deaths from the 6-7 October barrage are put at 20 (Al Jazeera) to 24 (SCMP, Guardian).",
+      "by": "Says: Ukrainian officials, via Zelensky, SCMP and Al Jazeera reporting (figures vary by outlet).",
       "sources": [
         {
           "name": "Guardian",
@@ -293,6 +298,16 @@
         {
           "name": "Meduza",
           "url": "https://meduza.io/en/news/2026/10/07/russian-missile-and-drone-strikes-across-ukraine-kill-six-and-injure-more-than-20",
+          "date": "7 Oct"
+        },
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/world/europe/article/3369997/russian-barrage-hits-kyiv-hours-after-zelensky-warns-impending-attack?utm_source=rss_feed",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/at-least-two-killed-in-kyiv-as-russia-launches-massive-attack-on-ukraine?traffic_source=rss",
           "date": "7 Oct"
         }
       ]
@@ -395,6 +410,90 @@
           "name": "Ukrinform",
           "url": "https://www.ukrinform.net/rubric-ato/4171824-dovzhenko-film-studio-in-kyiv-damaged-again-in-russian-attack.html",
           "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Zelenskyy calls the 7 October barrage one of the most vile strikes of the nearly five-year war.",
+      "by": "Says: President Volodymyr Zelenskyy.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/world/ukraine-russia-strikes-children-killed-6440326",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Ukraine's foreign minister Andrii Sybiha accuses Russian generals of giving Putin 'war crimes' as his birthday present, and says the fitting present would be a trial at The Hague.",
+      "by": "Says: Ukraine's Foreign Minister Andrii Sybiha.",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Zelenskyy says Ukrainian forces struck four Russian targets in the past 24 hours: two oil facilities and a training ground in Perm, Samara and Astrakhan regions, plus a response in the Black Sea.",
+      "by": "Says: President Volodymyr Zelenskyy.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/at-least-two-killed-in-kyiv-as-russia-launches-massive-attack-on-ukraine?traffic_source=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Turkish President Erdogan presses Putin on safe Black Sea navigation and repeats his offer to help facilitate direct Russia-Ukraine talks.",
+      "by": "Says: Turkish Presidency statement.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/at-least-two-killed-in-kyiv-as-russia-launches-massive-attack-on-ukraine?traffic_source=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "WHO's new Winter Risk Assessment flags Sumy, Kharkiv, Chernihiv and Donetsk oblasts as facing the highest public-health risk this winter; separately, HeRAMS data show 629 of 11,099 tracked health facilities, or 6%, are non-operational, mostly in Donetska, Kharkivska, Sumska, Zaporizka and Poltavska oblasts.",
+      "by": "Says: World Health Organization.",
+      "sources": [
+        {
+          "name": "WHO Ukraine Newsletter (via ReliefWeb)",
+          "url": "https://reliefweb.int/report/ukraine/who-ukraine-newsletter-september-2026",
+          "date": "Sep 2026"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Ukraine's Air Force says Russia's monthly use of jet-powered attack drones rose from 350 in June to 3,500 in September, before easing to about 50 a night in October.",
+      "by": "Says: Ukrainian Air Force spokesperson Yurii Ihnat.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171830-russian-army-used-nearly-3500-jetpowered-drones-against-ukraine-in-september-air-force.html",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Russian state media TASS estimates Ukraine has lost more than $5bn in foreign-exchange revenue from the shutdown of Odesa-area ports, ongoing since 22 July.",
+      "by": "Says: TASS calculations.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/economy/2199045",
+          "date": "8 Oct"
         }
       ]
     }
@@ -637,6 +736,17 @@
       ]
     },
     {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Ukraine's air force detects three Tu-160 strategic bombers taking off from Russia's Belaya airfield, hours before the mass missile-and-drone barrage.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4171754-russian-ballistic-attack-explosions-heard-in-kyiv-and-dnipro.html"
+        }
+      ]
+    },
+    {
       "date": "7 Oct",
       "kind": "official",
       "text": "Russia fires roughly 70 missiles, many ballistic, and 46 jet-powered drones at Ukraine overnight, hitting eleven regions on Putin's birthday.",
@@ -692,6 +802,28 @@
         {
           "name": "Guardian",
           "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Russian guided aerial bombs strike the 'Intellect' gymnasium in Kushuhum, Zaporizhzhia region, for a second time, causing significant damage.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4172119-russian-kab-strikes-again-target-high-school-in-kushuhum-zaporizhzhia-region.html"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "A Russian drone strikes a 12-storey residential building in Kyiv's Desnianskyi district; 22 people including 8 children are rescued and four injured.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4172129-drone-strike-hits-highrise-building-in-kyiv-injuring-four-people-including-two-children.html"
         }
       ]
     }
@@ -840,8 +972,56 @@
       "what": "Russian forces strike a warehouse facility in Zaporizhzhia, killing a man.",
       "url": "https://www.ukrinform.net/rubric-ato/4171756-russian-forces-attack-transport-infrastructure-in-zaporizhzhia.html",
       "date": "6 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Ukraine's air force says the overnight 6-7 October attack involved 130 drones, 48 cruise missiles and an unspecified num",
+      "url": "https://www.aljazeera.com/news/2026/10/7/at-least-two-killed-in-kyiv-as-russia-launches-massive-attack-on-ukraine?traffic_source=rss",
+      "date": "7 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Pryluky apartment-block toll remains disputed by outlet: Guardian/Zelensky and SCMP say 18 dead including 4 children (th",
+      "url": "https://www.scmp.com/news/world/europe/article/3369997/russian-barrage-hits-kyiv-hours-after-zelensky-warns-impending-attack?utm_source=rss_feed",
+      "date": "7 Oct"
+    },
+    {
+      "who": "CNA Singapore",
+      "what": "Zelenskyy calls the 7 October barrage one of the most vile strikes of the nearly five-year war.",
+      "url": "https://www.channelnewsasia.com/world/ukraine-russia-strikes-children-killed-6440326",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Ukraine's Air Force says Russia's monthly use of jet-powered attack drones rose from 350 in June to 3,500 in September, ",
+      "url": "https://www.ukrinform.net/rubric-ato/4171830-russian-army-used-nearly-3500-jetpowered-drones-against-ukraine-in-september-air-force.html",
+      "date": "8 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Russian state media TASS estimates Ukraine has lost more than $5bn in foreign-exchange revenue from the shutdown of Odes",
+      "url": "https://tass.com/economy/2199045",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Ukraine's air force detects three Tu-160 strategic bombers taking off from Russia's Belaya airfield, hours before the ma",
+      "url": "https://www.ukrinform.net/rubric-ato/4171754-russian-ballistic-attack-explosions-heard-in-kyiv-and-dnipro.html",
+      "date": "6 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "Russian guided aerial bombs strike the 'Intellect' gymnasium in Kushuhum, Zaporizhzhia region, for a second time, causin",
+      "url": "https://www.ukrinform.net/rubric-ato/4172119-russian-kab-strikes-again-target-high-school-in-kushuhum-zaporizhzhia-region.html",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "A Russian drone strikes a 12-storey residential building in Kyiv's Desnianskyi district; 22 people including 8 children ",
+      "url": "https://www.ukrinform.net/rubric-ato/4172129-drone-strike-hits-highrise-building-in-kyiv-injuring-four-people-including-two-children.html",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Russia batters Ukraine with largest missile barrage in weeks, dozens dead"
+  "headline": "Russia's birthday barrage kills up to 24 as Zelensky demands Patriots"
 }

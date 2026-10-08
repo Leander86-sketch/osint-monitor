@@ -1,6 +1,6 @@
 {
   "slug": "lebanon",
-  "updatedAt": "2026-10-07T09:06+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Lebanon faces a renewed humanitarian and economic crisis. Hostilities escalated sharply on 2 March 2026 amid wider regional conflict, triggering fresh displacement and infrastructure damage. The Ministry of Public Health has recorded at least 3,884 deaths and 11,856 injuries since, per OCHA. Humanitarian partners estimate 1.4 million people need assistance and are seeking US$331.5 million through August 2026. The IPC projects 1.24 million people in acute food insecurity, concentrated in the south. The WFP-led Logistics & Telecommunications Cluster keeps emergency communications running despite access constraints.",
+  "stand": "Lebanon remains in humanitarian and economic crisis after hostilities escalated on 2 March 2026. A ceasefire followed a June 2026 US-brokered framework in which Israel and Lebanon agreed Hezbollah disarmament and phased Israeli withdrawal, though violations continue. UNIFIL reported small-arms fire at its Kfar Shouba post on 7 October, and its mandate is due to end 31 December. Lebanon's health ministry says Israeli attacks have killed over 4,300 people since March. Humanitarian partners still seek US$331.5 million for 1.4 million people in need, with 1.24 million facing acute food insecurity.",
   "figures": [
     {
       "label": "People in need of humanitarian assistance",
@@ -50,18 +50,33 @@
         "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
         "date": "6 Oct"
       }
+    },
+    {
+      "label": "FAO emergency agricultural funding sought for Lebanon",
+      "value": "US$38 million",
+      "color": "#f59e0b",
+      "src": {
+        "name": "FAO, via ReliefWeb",
+        "url": "https://reliefweb.int/report/lebanon/fao-calls-urgent-investment-protect-food-production-crises-deepen-across-near-east-and-north-africa",
+        "date": "7 Oct"
+      }
     }
   ],
   "claims": [
     {
       "status": "confirmed",
-      "text": "At least 3,884 people have died and 11,856 been injured since the 2 March 2026 escalation.",
-      "by": "Says: OCHA, citing Lebanon's Ministry of Public Health. Denies: —",
+      "text": "Israeli attacks in Lebanon have killed more than 4,300 people since 2 March 2026, according to Lebanon's Ministry of Public Health.",
+      "by": "Says: Lebanon's health ministry, cited by Reuters. Denies: —",
       "sources": [
         {
           "name": "ReliefWeb (MSNA ToR)",
           "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
           "date": "6 Oct"
+        },
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/exclusive-lebanons-hezbollah-gets-200-million-iran-help-displaced-sources-say",
+          "date": "7 Oct"
         }
       ]
     },
@@ -187,13 +202,126 @@
     },
     {
       "status": "confirmed",
-      "text": "Food insecurity is particularly severe in the conflict-affected southern districts of Bent Jbeil, Marjaayoun, Sour and El Nabatieh.",
-      "by": "Says: IPC Acute Food Insecurity Projection Update (Apr-Aug 2026).",
+      "text": "In Bent Jbeil, Marjaayoun, El Nabatieh and Sour, between 55% and 65% of the population is projected to face Crisis or worse food insecurity.",
+      "by": "Says: FAO. Denies: —",
       "sources": [
         {
           "name": "ReliefWeb",
           "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20",
           "date": "6 Oct"
+        },
+        {
+          "name": "FAO, via ReliefWeb",
+          "url": "https://reliefweb.int/report/lebanon/fao-calls-urgent-investment-protect-food-production-crises-deepen-across-near-east-and-north-africa",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Hezbollah received $200 million from Iran to help families displaced by the war with Israel.",
+      "by": "Says: two sources with direct knowledge of the transfer; a Hezbollah official says an amount has been secured. Denies: US State Department spokesperson Tommy Pigott says the money 'is not there'.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/exclusive-lebanons-hezbollah-gets-200-million-iran-help-displaced-sources-say",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Hezbollah plans to pay an initial $3,000 to each of roughly 50,000 affected families, prioritising those whose villages are destroyed or inaccessible.",
+      "by": "Says: sources with direct knowledge of the funding transfer. Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/exclusive-lebanons-hezbollah-gets-200-million-iran-help-displaced-sources-say",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran transferred $1 billion to Hezbollah in the first ten months of 2025.",
+      "by": "Says: US Treasury Department. Denies: Iran has never acknowledged financing Hezbollah.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/exclusive-lebanons-hezbollah-gets-200-million-iran-help-displaced-sources-say",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Lebanon's Prime Minister Nawaf Salam says total reconstruction costs from the two wars since 2024 could exceed US$27 billion.",
+      "by": "Says: Lebanese Prime Minister Nawaf Salam. Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/exclusive-lebanons-hezbollah-gets-200-million-iran-help-displaced-sources-say",
+          "date": "Sep 2026"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "More than one million people were displaced following the March 2026 escalation, mainly from rural areas.",
+      "by": "Says: FAO. Denies: —",
+      "sources": [
+        {
+          "name": "FAO, via ReliefWeb",
+          "url": "https://reliefweb.int/report/lebanon/fao-calls-urgent-investment-protect-food-production-crises-deepen-across-near-east-and-north-africa",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "More than 22% of Lebanon's agricultural land has reportedly been damaged, and about 50% of agricultural land in South and Nabatieh is inaccessible.",
+      "by": "Says: FAO. Denies: —",
+      "sources": [
+        {
+          "name": "FAO, via ReliefWeb",
+          "url": "https://reliefweb.int/report/lebanon/fao-calls-urgent-investment-protect-food-production-crises-deepen-across-near-east-and-north-africa",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The UN Security Council has set 31 December as the end date for UNIFIL's mandate in Lebanon.",
+      "by": "Says: UN Security Council. Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/un-peacekeeping-force-in-lebanon-says-shots-fired-at-israeli-border-post?traffic_source=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Shelter closures, including the Lebanese University Faculty of Arts, and consolidation measures caused significant anxiety among displaced households in South Lebanon.",
+      "by": "Says: ReliefWeb Emergency Protection Monitoring Report. Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/lebanon/emergency-protection-monitoring-report-july-2026",
+          "date": "Jul 2026"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "In the Bekaa, most displaced households had already returned following the ceasefire, leaving only a residual caseload in collective shelters.",
+      "by": "Says: ReliefWeb Emergency Protection Monitoring Report. Denies: —",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/lebanon/emergency-protection-monitoring-report-july-2026",
+          "date": "Jul 2026"
         }
       ]
     }
@@ -234,6 +362,17 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "UNIFIL reports small-arms fire at its position near Kfar Shouba on the Blue Line; no casualties, incident under investigation.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/un-peacekeeping-force-in-lebanon-says-shots-fired-at-israeli-border-post?traffic_source=rss"
+        }
+      ]
+    },
+    {
       "date": "Nov 2024",
       "kind": "official",
       "text": "Ceasefire takes hold; partial returns and temporary easing follow.",
@@ -241,6 +380,28 @@
         {
           "name": "ReliefWeb (MSNA ToR)",
           "url": "https://reliefweb.int/report/lebanon/msna-research-terms-reference-multi-sector-needs-assessment-lbn2602-lebanon-september-2026-v-20"
+        }
+      ]
+    },
+    {
+      "date": "Jun 2026",
+      "kind": "official",
+      "text": "Israel and Lebanon conclude a US-sponsored framework on Hezbollah disarmament, phased Israeli withdrawal and Lebanese army deployment to pilot zones.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/un-peacekeeping-force-in-lebanon-says-shots-fired-at-israeli-border-post?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "Sep 2026",
+      "kind": "official",
+      "text": "Hezbollah leader Naim Qassem says the group will soon help fund a project to house people displaced by the war.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/exclusive-lebanons-hezbollah-gets-200-million-iran-help-displaced-sources-say"
         }
       ]
     }
@@ -257,8 +418,32 @@
       "what": "Telecommunications services in Lebanon have stayed operational despite insecurity and access constraints in the south.",
       "url": "https://reliefweb.int/report/lebanon/lebanon-middle-east-escalation-ltc-situation-report-telecoms-10-september-2026",
       "date": "5 Oct"
+    },
+    {
+      "who": "Al-Monitor/Reuters",
+      "what": "Israeli attacks in Lebanon have killed more than 4,300 people since 2 March 2026, according to Lebanon's Ministry of Pub",
+      "url": "https://www.al-monitor.com/originals/2026/10/exclusive-lebanons-hezbollah-gets-200-million-iran-help-displaced-sources-say",
+      "date": "7 Oct"
+    },
+    {
+      "who": "FAO, via ReliefWeb",
+      "what": "In Bent Jbeil, Marjaayoun, El Nabatieh and Sour, between 55% and 65% of the population is projected to face Crisis or wo",
+      "url": "https://reliefweb.int/report/lebanon/fao-calls-urgent-investment-protect-food-production-crises-deepen-across-near-east-and-north-africa",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The UN Security Council has set 31 December as the end date for UNIFIL's mandate in Lebanon.",
+      "url": "https://www.aljazeera.com/news/2026/10/7/un-peacekeeping-force-in-lebanon-says-shots-fired-at-israeli-border-post?traffic_source=rss",
+      "date": "7 Oct"
+    },
+    {
+      "who": "ReliefWeb",
+      "what": "Shelter closures, including the Lebanese University Faculty of Arts, and consolidation measures caused significant anxie",
+      "url": "https://reliefweb.int/report/lebanon/emergency-protection-monitoring-report-july-2026",
+      "date": "Jul 2026"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "World Bank breaks down Lebanon's war damage by cost and region"
+  "headline": "Lebanon death toll passes 4,300 as Hezbollah-Iran funding dispute emerges"
 }

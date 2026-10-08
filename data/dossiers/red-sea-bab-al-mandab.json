@@ -1,6 +1,6 @@
 {
   "slug": "red-sea-bab-al-mandab",
-  "updatedAt": "2026-10-07T18:32+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Yemen's Saudi-backed government presses Operation Dawn of Yemen on three fronts: the Red Sea coast, Taiz and Marib. Forces claim Mocha and Dhubab near Bab al-Mandeb, though analysts say the Mocha claim was premature and Houthis deny losing either. Houthis have struck Aden's international airport, forcing a diverted flight, and claim fresh strikes on Riyadh, Abha and Khamis Mushait; a coalition, flying 100 jets, intercepted a missile north of Riyadh. Turkiye is sending technical and defensive support under the activated Mecca pact; Pakistan aids with reconnaissance.",
+  "stand": "Yemen's government presses Operation Dawn of Yemen on three fronts, claiming Mocha and Dhubab, though Houthis deny losing either and ISW now doubts its \"collapse\" read on Houthi coastal forces. Houthis appear to be slowing the advance, threatening Taiz, with signs government forces are pulling back toward Aden. Houthi strikes killed three and wounded 36 at Saudi airports; the coalition says it hit back with 82 targets destroyed. Turkiye and Pakistan are implementing the Mecca pact, naming a secretary-general.",
   "figures": [
     {
       "label": "Coalition fighter jets deployed",
@@ -418,6 +418,112 @@
           "date": "6 Oct"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Houthi strikes on Abha and Riyadh's King Khalid airports on 6 and 7 October killed three people and wounded 36.",
+      "by": "Says: Saudi General Authority of Civil Aviation (GACA).",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwn8d5rx22rdo?at_medium=RSS&at_campaign=rss",
+          "date": "7 Oct"
+        },
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3370112/houthi-strikes-saudi-airports-leave-3-dead-dozens-wounded?utm_source=rss_feed",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The Saudi-led coalition said it destroyed 82 Houthi military targets, including 11 mountain-based missile storage sites in Saada, in retaliation for the airport attacks.",
+      "by": "Says: Saudi-led coalition spokesperson.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/yemeni-government-forces-claim-1860-houthis-neutralised?traffic_source=rss",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-new-attacks-saudi-airports-conflict-deepens",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Yemeni government forces say they have \"neutralised\" 1,860 Houthi fighters via 2,103 targeting operations since the counter-offensive began.",
+      "by": "Says: spokesperson for Yemen's army.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/yemeni-government-forces-claim-1860-houthis-neutralised?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The Institute for the Study of War said it was revising its assessment that Houthi coastal forces were collapsing, after evidence Houthi forces halted government-aligned advances.",
+      "by": "Says: Institute for the Study of War, via the Guardian.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/07/houthi-forces-slow-advance-south-west-yemen-taiz-aden-airport",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Independent observers said the Houthis were on course to capture Taiz, with signs government-aligned forces were pulling back to secure Aden.",
+      "by": "Says: unnamed independent observers, via the Guardian.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/07/houthi-forces-slow-advance-south-west-yemen-taiz-aden-airport",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Houthi missile hit Taiz, a government-held city, wounding five civilians.",
+      "by": "Says: Yemen's Saba news agency, via AFP.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-new-attacks-saudi-airports-conflict-deepens",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Pakistani retired Lt Gen Nauman Mahmood was appointed first secretary-general of the Mecca pact alliance for a three-year term.",
+      "by": "Says: joint statement of Saudi Arabia, Pakistan and Turkiye.",
+      "sources": [
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com/en/saudi-arabia-pakistan-turkey-could-the-mecca-defense-pact-become-a-game-changer-in-the-war-against-the-houthis-in-yemen/a-79577245?maca=en-rss-en-world-4025-rdf",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Turkiye's parliament has not yet ratified the Mecca pact; ratification is expected within days, after which support could increase.",
+      "by": "Says: Omer Celik, spokesman for Turkish President Erdogan's AK Party.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/turkey-sending-technical-defensive-support-saudi-arabia-help-fight-houthis",
+          "date": "7 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -533,6 +639,17 @@
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/6/pakistan-turkiye-join-saudi-deterrence-against-houthis-what-that-means"
+        }
+      ]
+    },
+    {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Pakistan's retired Lt Gen Nauman Mahmood is named first secretary-general of the Mecca pact alliance for a three-year term.",
+      "sources": [
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com/en/saudi-arabia-pakistan-turkey-could-the-mecca-defense-pact-become-a-game-changer-in-the-war-against-the-houthis-in-yemen/a-79577245?maca=en-rss-en-world-4025-rdf"
         }
       ]
     },
@@ -713,6 +830,83 @@
       ]
     },
     {
+      "date": "6-7 Oct",
+      "kind": "official",
+      "text": "Saudi civil aviation authority says Houthi attacks on Abha and King Khalid (Riyadh) airports killed three people and wounded 36.",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwn8d5rx22rdo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Saudi-led coalition destroys 82 Houthi targets, including 11 missile storage sites in Saada, and vows the airport attacks \"will not go unpunished\".",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-new-attacks-saudi-airports-conflict-deepens"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "A Houthi missile hits Taiz, wounding five civilians in a crowded street, Saba/AFP report.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-new-attacks-saudi-airports-conflict-deepens"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "ISW revises its view that Houthi coastal forces were collapsing, citing evidence Houthis halted government-aligned advances; observers see Houthis nearing Taiz and government forces pulling back toward Aden.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/07/houthi-forces-slow-advance-south-west-yemen-taiz-aden-airport"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "Southern Giants Forces, a pro-government militia, lead the push on Bab al-Mandeb and are positioned in the military airport sector of Dhubab district.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/07/houthi-forces-slow-advance-south-west-yemen-taiz-aden-airport"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "reaction",
+      "text": "Houthi leader Abdul-Malik al-Houthi marks the Hamas attack anniversary, accusing Saudi Arabia of undermining the Palestinian cause and criticising Al Jazeera's coverage.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/oct/07/houthi-forces-slow-advance-south-west-yemen-taiz-aden-airport"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Yemeni government forces claim to have \"neutralised\" 1,860 Houthi fighters since the counter-offensive began.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/yemeni-government-forces-claim-1860-houthis-neutralised?traffic_source=rss"
+        }
+      ]
+    },
+    {
       "date": "Sep",
       "kind": "media",
       "text": "Houthis sweep down Yemen's Red Sea coast, seizing about 150km of coastline and areas around Bab al-Mandeb.",
@@ -856,8 +1050,38 @@
       "what": "Houthis claim fresh strikes on Saudi Arabia's King Khalid International Airport in Riyadh, Abha airport and the Khamis M",
       "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-claim-new-attacks-saudi-airports-conflict-deepens",
       "date": "7 Oct"
+    },
+    {
+      "who": "BBC World",
+      "what": "Houthi strikes on Abha and Riyadh's King Khalid airports on 6 and 7 October killed three people and wounded 36.",
+      "url": "https://www.bbc.co.uk/news/articles/cwn8d5rx22rdo?at_medium=RSS&at_campaign=rss",
+      "date": "7 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Houthi strikes on Abha and Riyadh's King Khalid airports on 6 and 7 October killed three people and wounded 36.",
+      "url": "https://www.scmp.com/news/world/middle-east/article/3370112/houthi-strikes-saudi-airports-leave-3-dead-dozens-wounded?utm_source=rss_feed",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The Saudi-led coalition said it destroyed 82 Houthi military targets, including 11 mountain-based missile storage sites ",
+      "url": "https://www.aljazeera.com/news/2026/10/8/yemeni-government-forces-claim-1860-houthis-neutralised?traffic_source=rss",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Guardian World",
+      "what": "The Institute for the Study of War said it was revising its assessment that Houthi coastal forces were collapsing, after",
+      "url": "https://www.theguardian.com/world/2026/oct/07/houthi-forces-slow-advance-south-west-yemen-taiz-aden-airport",
+      "date": "7 Oct"
+    },
+    {
+      "who": "DW News",
+      "what": "Pakistani retired Lt Gen Nauman Mahmood was appointed first secretary-general of the Mecca pact alliance for a three-yea",
+      "url": "https://www.dw.com/en/saudi-arabia-pakistan-turkey-could-the-mecca-defense-pact-become-a-game-changer-in-the-war-against-the-houthis-in-yemen/a-79577245?maca=en-rss-en-world-4025-rdf",
+      "date": "5 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Houthis strike Aden airport as Yemen displacement tops 200,000"
+  "headline": "Houthi airport strikes kill three in Saudi Arabia as Yemen battle stalls"
 }

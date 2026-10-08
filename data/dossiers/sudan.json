@@ -1,6 +1,6 @@
 {
   "slug": "sudan",
-  "updatedAt": "2026-10-07T18:36+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Sudan's army (SAF) and the RSF remain at war into a fourth year. Army chief Burhan has rejected negotiations, vowing to retake all RSF-held territory, as fighting intensifies in North and West Kordofan and the RSF kills civilians near En Nahud. The US, via envoy Massad Boulos, and Egypt continue pressing for a Sudanese-led dialogue toward civilian rule; Washington says neither SAF nor RSF represents legitimate governance. Humanitarian agencies warn displacement is deepening, including a refugee outflow into South Sudan now topping 1.4 million.",
+  "stand": "Sudan's army (SAF) and the RSF remain at war into a fourth year. Army chief Burhan has rejected negotiations, vowing to retake all RSF-held territory, as fighting intensifies in North and West Kordofan and the RSF kills civilians near En Nahud. The US and Egypt continue pressing for a Sudanese-led dialogue toward civilian rule, saying neither side represents legitimate governance. WHO warns health needs in Darfur, especially Tawila's 700,000 displaced, far exceed resources, with its 2026 appeal only 23% funded, as refugee outflow into South Sudan tops 1.4 million.",
   "figures": [
     {
       "label": "War dead (cumulative)",
@@ -322,10 +322,81 @@
           "date": "30 Sep 2026"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Health and humanitarian needs in Darfur, particularly Tawila, where more than 700,000 displaced people face severe gaps in health, nutrition, food, water, sanitation and protection, far exceed available resources.",
+      "by": "Says: WHO.",
+      "sources": [
+        {
+          "name": "WHO",
+          "url": "https://reliefweb.int/report/sudan/health-needs-darfur-far-exceed-available-resources",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Darfur hosts 65% of Sudan's 8.6 million internally displaced people.",
+      "by": "Says: International Organization for Migration (IOM).",
+      "sources": [
+        {
+          "name": "IOM, via WHO",
+          "url": "https://reliefweb.int/report/sudan/health-needs-darfur-far-exceed-available-resources",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "WHO's $97.7 million humanitarian appeal for Sudan in 2026 is only 23% funded.",
+      "by": "Says: WHO.",
+      "sources": [
+        {
+          "name": "WHO",
+          "url": "https://reliefweb.int/report/sudan/health-needs-darfur-far-exceed-available-resources",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Rising malnutrition is a major concern at Darfur health facilities, expected to worsen amid poor rainfall, crop failures and a strong El Niño event.",
+      "by": "Says: WHO Representative in Sudan Dr Abdinasir Abubakar.",
+      "sources": [
+        {
+          "name": "WHO",
+          "url": "https://reliefweb.int/report/sudan/health-needs-darfur-far-exceed-available-resources",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Sudan's national food costs rose 16% in August, driven by sharp increases in vegetable oil, goat meat and cow meat prices.",
+      "by": "Says: Joint Market Monitoring Initiative (JMMI).",
+      "sources": [
+        {
+          "name": "REACH / JMMI, via ReliefWeb",
+          "url": "https://reliefweb.int/report/sudan/sudan-joint-market-monitoring-initiative-jmmi-market-overview-6-15-august-2026",
+          "date": "6-15 Aug"
+        }
+      ]
     }
   ],
   "places": [],
   "timeline": [
+    {
+      "date": "24 Sep",
+      "kind": "official",
+      "text": "WHO Representative Dr Abdinasir Abubakar completes a 10-day mission across Darfur states to assess health needs.",
+      "sources": [
+        {
+          "name": "WHO",
+          "url": "https://reliefweb.int/report/sudan/health-needs-darfur-far-exceed-available-resources"
+        }
+      ]
+    },
     {
       "date": "30 Sep",
       "kind": "official",
@@ -448,6 +519,17 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "WHO calls for urgent increase in resources and unhindered humanitarian access to meet Darfur's health needs.",
+      "sources": [
+        {
+          "name": "WHO",
+          "url": "https://reliefweb.int/report/sudan/health-needs-darfur-far-exceed-available-resources"
+        }
+      ]
+    },
+    {
       "date": "late 2024",
       "kind": "media",
       "text": "RSF commander Algoney Dagalo attended a Hague peace conference under the false name \"Ahmed Musa\" while on a US sanctions list.",
@@ -524,8 +606,20 @@
       "what": "Since fighting began in April 2023, 221 health workers have been killed, 16 kidnapped and 142 arrested across Sudan.",
       "url": "https://reliefweb.int/report/sudan/attacks-health-care-sudan-16-30-september-2026",
       "date": "30 Sep 2026"
+    },
+    {
+      "who": "WHO",
+      "what": "Health and humanitarian needs in Darfur, particularly Tawila, where more than 700,000 displaced people face severe gaps ",
+      "url": "https://reliefweb.int/report/sudan/health-needs-darfur-far-exceed-available-resources",
+      "date": "7 Oct"
+    },
+    {
+      "who": "REACH / JMMI, via ReliefWeb",
+      "what": "Sudan's national food costs rose 16% in August, driven by sharp increases in vegetable oil, goat meat and cow meat price",
+      "url": "https://reliefweb.int/report/sudan/sudan-joint-market-monitoring-initiative-jmmi-market-overview-6-15-august-2026",
+      "date": "6-15 Aug"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Attacks on Sudan's health workers and clinics keep rising"
+  "headline": "WHO warns Darfur health crisis far outstrips funding"
 }

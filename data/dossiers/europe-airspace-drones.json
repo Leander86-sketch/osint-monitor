@@ -1,6 +1,6 @@
 {
   "slug": "europe-airspace-drones",
-  "updatedAt": "2026-10-07T18:13+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Drones have struck Black Sea shipping twice this week: a Turkish-flagged carrier sank near Romania on 5 October, killing two, and Bulgaria's Alfa Watan and Able were hit on 6 October, sinking one and damaging the other. Bulgaria has called off the search for the Alfa Watan's crew, finding no survivors, and says it still cannot determine the drones' origin. Radev calls the attack unacceptable and plans to buy five more air-defence systems. Zelensky says Russia carried it out; opposition accuses Radev of shielding Moscow. Estonia received 13 US drones.",
+  "stand": "Drones have struck Black Sea shipping twice this week: a Turkish-flagged carrier sank near Romania on 5 October, killing two, and Bulgaria's Alfa Watan and Able were hit on 6 October, sinking one and damaging the other. Bulgaria has ended its search for the Alfa Watan's crew, finding no survivors, and still cannot determine the drones' origin. Radev calls it unacceptable and will buy five more air-defence systems. Zelensky blames Russia; opposition accuses Radev of shielding Moscow. Denmark says Russia is sabotaging Danish defence firms. Estonia received 13 US drones.",
   "figures": [
     {
       "label": "Romania grain carrier casualties",
@@ -69,6 +69,16 @@
         "name": "Fox News World",
         "url": "https://www.foxnews.com/world/drone-strike-sinks-ship-nato-waters-zelenskyy-warns-looming-massive-strike",
         "date": "6 Oct"
+      }
+    },
+    {
+      "label": "Crew aboard sunk ship (Alfa Watan)",
+      "value": "10, per Maritime.bg",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Maritime.bg, via Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/7/bulgaria-ends-search-for-missing-crew-after-drone-strike-sinks-cargo-ship?traffic_source=rss",
+        "date": "7 Oct"
       }
     }
   ],
@@ -279,6 +289,42 @@
           "date": "7 Oct"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Denmark says Russia has begun sabotage operations against Danish companies supplying Ukraine, an escalation after broader disruption efforts failed to curb Western military support.",
+      "by": "Says: Danish intelligence service PET, analyst Josefine Christensen; Denies: Russian Embassy in Copenhagen rejected the allegations as unfounded",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/denmark-says-russia-has-conducted-sabotage-attacks-against-its-defense-firms-a93914",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The two vessels struck in Bulgaria's waters, the Alfa Watan and the Able, were both managed by Turkiye-based shipping companies.",
+      "by": "Says: Equasis merchant shipping database, cited by Al Jazeera",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/bulgaria-ends-search-for-missing-crew-after-drone-strike-sinks-cargo-ship?traffic_source=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Some EU capitals accuse Brussels of overstepping into NATO's role with its 'nightmare scenario' hybrid-attack contingency planning.",
+      "by": "Says: unnamed EU diplomats, former NATO spokesperson Oana Lungescu",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2198685",
+          "date": "7 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -468,6 +514,17 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Danish intelligence service PET said Russia has moved from planning to directly sabotaging Danish companies supplying weapons to Ukraine.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/denmark-says-russia-has-conducted-sabotage-attacks-against-its-defense-firms-a93914"
+        }
+      ]
+    },
+    {
       "date": "Aug",
       "kind": "official",
       "text": "Romania scrambled F-16 fighter jets to destroy a maritime drone near the Neptun Deep gas platform in the Black Sea.",
@@ -568,8 +625,14 @@
       "what": "EU ambassadors are discussing, in restricted format, a 'nightmare scenario' hybrid attack causing numerous casualties, w",
       "url": "https://tass.com/world/2198685",
       "date": "7 Oct"
+    },
+    {
+      "who": "Moscow Times",
+      "what": "Denmark says Russia has begun sabotage operations against Danish companies supplying Ukraine, an escalation after broade",
+      "url": "https://www.themoscowtimes.com/2026/10/07/denmark-says-russia-has-conducted-sabotage-attacks-against-its-defense-firms-a93914",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Bulgaria ends search for drone-strike crew, origin still unconfirmed"
+  "headline": "Denmark says Russia widening sabotage as Bulgaria ends crew search"
 }

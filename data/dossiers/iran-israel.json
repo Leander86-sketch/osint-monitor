@@ -1,6 +1,6 @@
 {
   "slug": "iran-israel",
-  "updatedAt": "2026-10-07T18:21+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "The US-Israel war on Iran, launched 28 Feb, is in its eighth month and now costs an estimated $3bn a month. Vance says Iran must cut its 60%-enriched uranium stock, not just pledge future drawdowns; Trump rejected Tehran's latest offer, while Pezeshkian insists Tehran is fighting a 'full-scale war' and still negotiating. A suspected Iran-linked drone plot against RAF Fairford brought a UK arrest; Tehran denies involvement. Hormuz disruption has pushed Iraq to devalue its dinar; Iran's own Hormuz exports stay near zero as Gulf exports hit war-time highs. Katz has detailed a short West Bank offensive plan.",
+  "stand": "The US-Israel war on Iran, launched 28 Feb, is in its eighth month and costs an estimated $3bn a month. Trump now says he is not keen on a deal; officials are weighing a return to large-scale strikes before the midterms. Vance says Iran must cut its 60%-enriched uranium stock; Iran says it has set firm conditions to end the war and will respond via mediators, while Qatar says talks continue. Gulf exports excluding Iran have recovered near pre-war levels as Hormuz attacks rise; Iraq has devalued its dinar.",
   "figures": [
     {
       "label": "Strait of Hormuz daily oil exports",
@@ -76,8 +76,8 @@
     },
     {
       "status": "reported",
-      "text": "Middle East crude exports excluding Iran reached 18.3 million bpd in late September, the highest level since the war began, led by Saudi and UAE output.",
-      "by": "Says: Kpler and Vortexa data, cited by United Against Nuclear Iran and gCaptain",
+      "text": "Combined crude volumes from the Gulf excluding Iran, plus Saudi and UAE output, are now around pre-conflict levels at roughly 18.5 million bpd, up from the 18.3 million bpd late-September figure.",
+      "by": "Says: Kpler data, cited by Matt Wright, Kpler lead freight analyst",
       "sources": [
         {
           "name": "CBS News",
@@ -88,6 +88,11 @@
           "name": "gCaptain",
           "url": "https://gcaptain.com/irans-offshore-oil-stockpile-nears-exhaustion-as-blockade-chokes-new-supply/",
           "date": "30 Sep"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/08/us-iran-war-trump-hormuz.html",
+          "date": "8 Oct"
         }
       ]
     },
@@ -272,6 +277,150 @@
         {
           "name": "NPR",
           "url": "https://www.npr.org/2026/10/07/g-s1-146541/fertilizer-diy-farmers-iran-war",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Trump says he no longer wants a deal with Iran, after previously negotiating through envoy Steve Witkoff.",
+      "by": "Says: President Donald Trump, at a campaign rally in San Antonio",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/08/us-iran-war-trump-hormuz.html",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "US national security officials are weighing resumed large-scale military operations against Iran, possibly including heavy bombing of energy, infrastructure and nuclear sites before the midterms.",
+      "by": "Says: NBC News and Axios, citing US officials",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/08/us-iran-war-trump-hormuz.html",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran's foreign ministry says it has clearly and firmly set out its conditions for ending the war and will respond to US proposals through mediators.",
+      "by": "Says: Iranian foreign ministry spokesperson Esmaeil Baghaei",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-it-clearly-and-firmly-set-conditions-end-war",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran and Oman have agreed on safe transit routes through the Strait of Hormuz.",
+      "by": "Says: Iranian foreign ministry spokesperson Esmaeil Baghaei",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-it-clearly-and-firmly-set-conditions-end-war",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Qatar says the US and Iran remain in indirect talks to end the war despite an apparent deadlock seven months in.",
+      "by": "Says: Qatari foreign ministry official Ibrahim al-Hashmi",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/qatar-says-us-iran-still-talks-end-war",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "There have been nine attacks on tankers in the Strait of Hormuz this month, half September's combined total for the strait and the Gulf.",
+      "by": "Says: UK Maritime Trade Operations",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/us-stocks-slide-as-oil-prices-fluctuate-over-renewed-iran-war-fears?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Twelve crew members on a Panama-flagged tanker were injured in an attack by an unknown projectile in the Strait of Hormuz.",
+      "by": "Says: India's Ministry of External Affairs",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/us-stocks-slide-as-oil-prices-fluctuate-over-renewed-iran-war-fears?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Washington is in control of the Strait of Hormuz and oil flows are close to normal levels.",
+      "by": "Says: US Secretary of State Marco Rubio",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/us-stocks-slide-as-oil-prices-fluctuate-over-renewed-iran-war-fears?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Iran is taking part in the SCO's \"Eurasia Antiterror 2026\" counterterrorism exercise in Belarus with Russia, China, Kazakhstan and Uzbekistan.",
+      "by": "Says: CIS Anti-Terrorism Center",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/iran-joins-sco-drill-china-resists-direct-intervention-us-iran-war",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "China has rebuffed Iranian requests to intervene more actively in Iran's war with the US and Israel.",
+      "by": "Says: Al-Monitor",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/iran-joins-sco-drill-china-resists-direct-intervention-us-iran-war",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Global fertiliser prices largely dropped over the summer, including in Zambia, though some fertilisers remain expensive in Malawi, Tanzania and South Africa.",
+      "by": "Says: NPR",
+      "sources": [
+        {
+          "name": "NPR",
+          "url": "https://www.npr.org/2026/10/07/g-s1-146541/fertilizer-diy-farmers-iran-war",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Texas Senate candidate Ken Paxton privately admitted the Iran war's effect on gas and diesel prices is Republicans' biggest problem before the midterms.",
+      "by": "Says: Texas Attorney General Ken Paxton, in audio leaked to Axios",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/oct/07/ken-paxton-trumps-iran-war-gas-prices-republicans",
           "date": "7 Oct"
         }
       ]
@@ -522,6 +671,39 @@
       ]
     },
     {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "UK Maritime Trade Operations reports nine attacks on tankers in the Strait of Hormuz this month, half September's total.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/us-stocks-slide-as-oil-prices-fluctuate-over-renewed-iran-war-fears?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "media",
+      "text": "Panama-flagged tanker struck by unknown projectile in Strait of Hormuz, injuring 12 crew.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/us-stocks-slide-as-oil-prices-fluctuate-over-renewed-iran-war-fears?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "IRGC team arrives in Belarus for the SCO's Eurasia Antiterror 2026 drill, due to begin 9 Oct.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/iran-joins-sco-drill-china-resists-direct-intervention-us-iran-war"
+        }
+      ]
+    },
+    {
       "date": "7 Oct",
       "kind": "official",
       "text": "Iraq's central bank devalues the dinar from about 1,300 to 1,500 per dollar amid Hormuz-linked disruption.",
@@ -540,6 +722,61 @@
         {
           "name": "TASS",
           "url": "https://tass.com/world/2198795"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Trump says he no longer wants a deal with Iran; US reportedly weighs resuming large-scale strikes before the midterms.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/08/us-iran-war-trump-hormuz.html"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Iran's foreign ministry says it has set firm conditions to end the war and will respond to US proposals via mediators.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-it-clearly-and-firmly-set-conditions-end-war"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Iran and Oman agree on safe transit routes through the Strait of Hormuz.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-it-clearly-and-firmly-set-conditions-end-war"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Qatar says US-Iran indirect talks continue despite deadlock.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/qatar-says-us-iran-still-talks-end-war"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "Leaked audio shows Texas Senate candidate Ken Paxton admitting Iran-war gas prices are hurting Republicans before the midterms.",
+      "sources": [
+        {
+          "name": "Guardian World",
+          "url": "https://www.theguardian.com/us-news/2026/oct/07/ken-paxton-trumps-iran-war-gas-prices-republicans"
         }
       ]
     },
@@ -675,8 +912,44 @@
       "what": "The war's shutdown of Strait of Hormuz trade halted global fertiliser shipments and spiked prices, squeezing African sma",
       "url": "https://www.npr.org/2026/10/07/g-s1-146541/fertilizer-diy-farmers-iran-war",
       "date": "7 Oct"
+    },
+    {
+      "who": "CNBC",
+      "what": "Combined crude volumes from the Gulf excluding Iran, plus Saudi and UAE output, are now around pre-conflict levels at ro",
+      "url": "https://www.cnbc.com/2026/10/08/us-iran-war-trump-hormuz.html",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "Iran's foreign ministry says it has clearly and firmly set out its conditions for ending the war and will respond to US ",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-it-clearly-and-firmly-set-conditions-end-war",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "Qatar says the US and Iran remain in indirect talks to end the war despite an apparent deadlock seven months in.",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/qatar-says-us-iran-still-talks-end-war",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "There have been nine attacks on tankers in the Strait of Hormuz this month, half September's combined total for the stra",
+      "url": "https://www.aljazeera.com/news/2026/10/8/us-stocks-slide-as-oil-prices-fluctuate-over-renewed-iran-war-fears?traffic_source=rss",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Iran is taking part in the SCO's \"Eurasia Antiterror 2026\" counterterrorism exercise in Belarus with Russia, China, Kaza",
+      "url": "https://www.al-monitor.com/originals/2026/10/iran-joins-sco-drill-china-resists-direct-intervention-us-iran-war",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Guardian World",
+      "what": "Texas Senate candidate Ken Paxton privately admitted the Iran war's effect on gas and diesel prices is Republicans' bigg",
+      "url": "https://www.theguardian.com/us-news/2026/oct/07/ken-paxton-trumps-iran-war-gas-prices-republicans",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Vance demands Iran cut enrichment as war's economic toll spreads"
+  "headline": "Trump rejects Iran deal as US weighs resuming large-scale strikes"
 }

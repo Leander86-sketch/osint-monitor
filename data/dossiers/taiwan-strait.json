@@ -1,6 +1,6 @@
 {
   "slug": "taiwan-strait",
-  "updatedAt": "2026-10-07T18:37+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -263,6 +263,66 @@
           "date": "7 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "A Taiwan-based war game run by the Foundation for Defense of Democracies found the US underprepared for a Chinese cyberattack and economic-pressure campaign against Taiwan that stops short of invasion.",
+      "by": "Says: FDD organisers Mark Montgomery and Craig Singleton.",
+      "sources": [
+        {
+          "name": "Defense One",
+          "url": "https://www.defenseone.com/threats/2026/10/recent-taiwan-simulation-highlights-us-cyberdefense-gaps-against-china-experts-warn/416487/",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "US intelligence assesses China has no fixed timeline to invade Taiwan and did not plan to do so in 2027.",
+      "by": "Says: Office of the Director of National Intelligence, 2026 worldwide threat assessment.",
+      "sources": [
+        {
+          "name": "Defense One",
+          "url": "https://www.defenseone.com/threats/2026/10/recent-taiwan-simulation-highlights-us-cyberdefense-gaps-against-china-experts-warn/416487/",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "US officials increasingly assess a Chinese invasion of Taiwan before 2028 as unlikely, citing military readiness delays and Taiwan's election calendar.",
+      "by": "Says: unnamed US officials, cited by Defense One.",
+      "sources": [
+        {
+          "name": "Defense One",
+          "url": "https://www.defenseone.com/threats/2026/10/recent-taiwan-simulation-highlights-us-cyberdefense-gaps-against-china-experts-warn/416487/",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "FDD's Mark Montgomery warns China could intensify cyber and economic coercion against Taiwan in early 2028 if the Democratic Progressive Party wins a fourth term.",
+      "by": "Says: FDD senior fellow Mark Montgomery.",
+      "sources": [
+        {
+          "name": "Defense One",
+          "url": "https://www.defenseone.com/threats/2026/10/recent-taiwan-simulation-highlights-us-cyberdefense-gaps-against-china-experts-warn/416487/",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The Philippine Coast Guard commissioned a retired Taiwanese cutter, transferred quietly via a Philippine NGO rather than government-to-government, given Manila's One China policy.",
+      "by": "Says: We Protect Our Seas Foundation, cited by The Diplomat.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/the-quiet-careful-growth-of-philippine-taiwan-ties/",
+          "date": "7 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -319,6 +379,17 @@
         {
           "name": "Defense News",
           "url": "https://www.defensenews.com/global/asia-pacific/2026/10/05/us-marine-corps-anti-ship-weaponry-to-see-exercise-action-on-remote-japan-island-near-taiwan/"
+        }
+      ]
+    },
+    {
+      "date": "2 Oct",
+      "kind": "official",
+      "text": "Philippine Coast Guard commissions BRP Sarangani, a retired Taiwanese cutter acquired via an NGO intermediary.",
+      "sources": [
+        {
+          "name": "The Diplomat",
+          "url": "https://thediplomat.com/2026/10/the-quiet-careful-growth-of-philippine-taiwan-ties/"
         }
       ]
     },
@@ -393,6 +464,17 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "Defense One reports FDD war-game findings on US cyberdefense gaps over Taiwan.",
+      "sources": [
+        {
+          "name": "Defense One",
+          "url": "https://www.defenseone.com/threats/2026/10/recent-taiwan-simulation-highlights-us-cyberdefense-gaps-against-china-experts-warn/416487/"
+        }
+      ]
+    },
+    {
       "date": "Jun",
       "kind": "official",
       "text": "NMESIS and MADIS systems first arrive with Okinawa-based Marine unit.",
@@ -411,6 +493,17 @@
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/5/fbi-arrests-chinese-foreign-agent-for-spying-on-taiwan-presidents-son?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "late Sep",
+      "kind": "media",
+      "text": "FDD runs a Taiwan-based cyber war game simulating Chinese disruption of communications and infrastructure short of invasion.",
+      "sources": [
+        {
+          "name": "Defense One",
+          "url": "https://www.defenseone.com/threats/2026/10/recent-taiwan-simulation-highlights-us-cyberdefense-gaps-against-china-experts-warn/416487/"
         }
       ]
     }
@@ -499,8 +592,20 @@
       "what": "US defence firm Aevex plans to manufacture combat-tested drones in Taiwan, designed to resist electronic warfare based o",
       "url": "https://www.scmp.com/news/china/military/article/3369929/us-firm-make-battle-tested-drones-taiwan-boosting-supply-chain-resilience?utm_source=rss_feed",
       "date": "6 Oct"
+    },
+    {
+      "who": "Defense One",
+      "what": "A Taiwan-based war game run by the Foundation for Defense of Democracies found the US underprepared for a Chinese cybera",
+      "url": "https://www.defenseone.com/threats/2026/10/recent-taiwan-simulation-highlights-us-cyberdefense-gaps-against-china-experts-warn/416487/",
+      "date": "7 Oct"
+    },
+    {
+      "who": "The Diplomat",
+      "what": "The Philippine Coast Guard commissioned a retired Taiwanese cutter, transferred quietly via a Philippine NGO rather than",
+      "url": "https://thediplomat.com/2026/10/the-quiet-careful-growth-of-philippine-taiwan-ties/",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "North Korea sharpens rhetoric backing China's claim over Taiwan"
+  "headline": "War game exposes US gaps in defending Taiwan from cyber pressure"
 }

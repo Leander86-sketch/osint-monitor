@@ -1,6 +1,6 @@
 {
   "slug": "nato-eastern-flank",
-  "updatedAt": "2026-10-07T18:30+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "NATO's Baltic flank is hardening further. Lithuania is deploying troops to help guard its border with Kaliningrad after a Latvian border incident and fears of Russian mobilisation. Vilnius is pressing Washington for a permanent US base, courting Trump's non-committal interest, while roughly 1,000 US troops resume rotations in late October. Estonia is running NATO's biggest-ever command exercise, Steadfast Duel. Moscow calls NATO's new 'Theory of Victory' eastern-flank plan preparation for aggression and repeats its Kaliningrad weapons threat; NATO denies isolating the enclave. Poland and Lithuania plan for mass war refugees.",
+  "stand": "NATO's Baltic flank keeps hardening. Lithuania has ordered troops to help guard its Kaliningrad border after a Latvian border incident and fears of Russian mobilisation, while Estonia runs NATO's biggest-ever command exercise, Steadfast Duel, the alliance's first Article 5 drill with all 32 members. Vilnius presses Washington for a permanent base; Trump says the US will 'look at it', but also favours a Polish base, and experts doubt Washington will fund both so close together, or that the offer is separate from Belarusian transit talks. Moscow calls NATO's 'Theory of Victory' plan aggression; Poland and Lithuania plan for mass war refugees.",
   "figures": [
     {
       "label": "Pabradė base capacity cited for a potential permanent base",
@@ -141,7 +141,7 @@
     },
     {
       "status": "reported",
-      "text": "Lithuania has formally submitted a proposal for a permanent US base to the Pentagon; talks are under way and 'signals are positive'.",
+      "text": "Lithuania's defence minister says the Pentagon base proposal was formally submitted about two weeks ago (around 23 Sept); no decision yet but 'signals are positive'.",
       "by": "Says: Defence Minister Robertas Kaunas.",
       "sources": [
         {
@@ -290,7 +290,7 @@
     },
     {
       "status": "confirmed",
-      "text": "A Russian court sentenced Igor Odintsov, a Kaliningrad man Lithuania had returned to Russia after an asylum request, to six years in prison over anti-war social media posts.",
+      "text": "A Russian court's conviction of Odintsov centred on messages portraying the 'ideology and practice of terrorism' as correct and worth emulating, going beyond general anti-war posts.",
       "by": "Says: Baltic Fleet Military Court.",
       "sources": [
         {
@@ -316,6 +316,78 @@
           "date": "7 Oct"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Steadfast Duel 26 is NATO's first Article 5 exercise with all 32 member states, including newest members Sweden and Finland, and the alliance's largest command-post exercise this year, led by NATO's Joint Warfare Center in Norway with USEUCOM.",
+      "by": "Says: Estonian Defence Forces, via exercise press materials and Maj. Gen. Vahur Karus.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610158603/estonia-joins-nato-s-largest-command-exercise-steadfast-duel-26",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Lithuania's PM says the country also raised the base idea with John Coale, the US special envoy for Belarus, about a month ago.",
+      "by": "Says: Prime Minister Mindaugas Sinkevičius.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A conservative MP calls Trump's remark 'wonderful news' but says it is too early to know if a real plan for a permanent base exists.",
+      "by": "Says: MP Laurynas Kasčiūnas, deputy chairman of the Seimas Committee on National Security and Defence.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Seimas Foreign Affairs Committee chief says it is unlikely the US would permanently base troops in both Lithuania and Poland, given their proximity on either side of the Suwałki corridor.",
+      "by": "Says: Remigijus Motuzas, chairman of the Seimas Foreign Affairs Committee.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "A defence researcher suggests Washington could link its base promise to reopening Belarusian fertiliser transit as leverage; Lithuanian politicians deny any such link.",
+      "by": "Says: Tomas Jermalavičius, International Centre for Defence and Security. Denies: Lithuanian politicians.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A researcher says Washington has historically been reluctant to station large permanent forces in the Suwałki corridor linking Poland and Lithuania.",
+      "by": "Says: Tomas Jermalavičius, International Centre for Defence and Security.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
+          "date": "7 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -328,6 +400,28 @@
         {
           "name": "Moscow Times",
           "url": "https://www.themoscowtimes.com/2026/10/07/russian-who-swam-to-lithuania-to-seek-asylum-gets-6-years-in-russian-prison-after-return-a93912"
+        }
+      ]
+    },
+    {
+      "date": "17 Sep",
+      "kind": "media",
+      "text": "Lithuanian authorities detain Odintsov around 1:50pm and return him to Russia via the Panemunė crossing by 7pm the same day.",
+      "sources": [
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/07/russian-who-swam-to-lithuania-to-seek-asylum-gets-6-years-in-russian-prison-after-return-a93912"
+        }
+      ]
+    },
+    {
+      "date": "21 Sep",
+      "kind": "media",
+      "text": "Odintsov is detained again in Russia after his 17 Sep court hearing was suspended.",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/news/2026/10/07/a-russian-man-swam-to-lithuania-to-seek-asylum-he-was-sent-back-to-russia-where-he-was-sentenced-to-six-years-in-prison"
         }
       ]
     },
@@ -531,6 +625,17 @@
       ]
     },
     {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Steadfast Duel 26 is confirmed as NATO's first Article 5 exercise with all 32 members, including Sweden and Finland for the first time.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610158603/estonia-joins-nato-s-largest-command-exercise-steadfast-duel-26"
+        }
+      ]
+    },
+    {
       "date": "7 Oct",
       "kind": "official",
       "text": "Lithuania orders its armed forces to help guard the border with Kaliningrad as a preventive measure.",
@@ -556,6 +661,17 @@
       "date": "7 Oct",
       "kind": "reaction",
       "text": "Lithuanian President Gitanas Nausėda welcomes Trump's base remark, urges Lithuania to act consistently while awaiting the troop rotation.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "reaction",
+      "text": "Trump says the US will 'certainly look at' a permanent base in Lithuania, calling Lithuanians 'wonderful people'; he also signals support for a Polish base.",
       "sources": [
         {
           "name": "LRT",
@@ -716,5 +832,5 @@
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Lithuania militarises Kaliningrad border as NATO drills and base talks intensify"
+  "headline": "Trump leaves Lithuania's base bid open as flank build-up continues"
 }

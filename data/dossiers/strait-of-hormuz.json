@@ -1,6 +1,6 @@
 {
   "slug": "strait-of-hormuz",
-  "updatedAt": "2026-10-07T18:35+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Iran's IRGC continues near-daily strikes and turn-back orders against tankers in Hormuz; the week of 28 September-5 October saw at least 12 tanker attacks, the highest weekly total since the war began, while the IMO recorded nine. On 6 October a projectile hit tanker On Peace, injuring 12 crew, 11 Indian. An IRGC adviser says Iran will soon block 'illegal' smuggling routes off Oman's coast and claims full control of the strait. Gulf exports remain elevated, topping pre-war levels on about 14 days in September per Kpler.",
+  "stand": "Iran's IRGC continues near-daily strikes and turn-back orders against tankers in Hormuz; the week of 28 September-5 October saw at least 12 tanker attacks, the war's highest weekly total, while the IMO recorded nine. On 6 October a projectile hit tanker On Peace, injuring 12 crew, 11 Indian. Rubio says Iran has lost control of the strait as exports near pre-war levels; Iran disputes this, claiming full control and vowing to block 'illegal' smuggling routes off Oman. Iran and Oman agreed safe shipping corridors, to notify an international body.",
   "figures": [
     {
       "label": "IRGC-claimed current flow on US-supervised route",
@@ -38,6 +38,16 @@
       "src": {
         "name": "Joint Maritime Information Center, via CNBC",
         "url": "https://www.cnbc.com/2026/10/07/trump-hormuz-oil-diesel-iran-anthropic-ai.html",
+        "date": "7 Oct"
+      }
+    },
+    {
+      "label": "Brent crude oil price",
+      "value": "~$101/barrel (7 Oct)",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Al-Monitor",
+        "url": "https://www.al-monitor.com/originals/2026/10/rubio-says-iran-lost-hormuz-has-it",
         "date": "7 Oct"
       }
     }
@@ -344,6 +354,47 @@
           "date": "7 Oct"
         }
       ]
+    },
+    {
+      "status": "disputed",
+      "text": "Rubio says Iran has lost complete control of the Strait of Hormuz, pointing to oil exports nearing pre-war levels; Iran's IRGC says the opposite, claiming full control of the waterway.",
+      "by": "Says: US Secretary of State Marco Rubio. Denies: IRGC adviser Mohammadreza Naqdi, who says Iran retains full control of the strait.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/iran-has-lost-complete-control-of-hormuz-strait-rubio/article71557084.ece",
+          "date": "7 Oct"
+        },
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/rubio-says-iran-lost-hormuz-has-it",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Rubio says Iran's economy is in total and complete freefall as a result of crippling US sanctions.",
+      "by": "Says: US Secretary of State Marco Rubio.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/iran-has-lost-complete-control-of-hormuz-strait-rubio/article71557084.ece",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran and Oman have agreed geographic coordinates for safe shipping corridors through the Strait of Hormuz and will soon notify an international body of the deal.",
+      "by": "Says: Iranian Foreign Ministry spokesman Esmaeil Baghaei, via IRNA.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199021",
+          "date": "7 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -356,6 +407,17 @@
         {
           "name": "gCaptain",
           "url": "https://gcaptain.com/middle-east-oil-exports-top-pre-war-levels-for-part-of-september-but-tanker-attacks-increase/"
+        }
+      ]
+    },
+    {
+      "date": "28 Feb",
+      "kind": "media",
+      "text": "The war began when the US and Israel killed Supreme Leader Ayatollah Ali Khamenei in a Tehran airstrike.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/iranian-official-says-illegal-routes-strait-hormuz-soon-be-blocked"
         }
       ]
     },
@@ -694,6 +756,28 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "reaction",
+      "text": "Rubio says Iran has lost complete control of the Strait of Hormuz as exports near pre-war levels.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/iran-has-lost-complete-control-of-hormuz-strait-rubio/article71557084.ece"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Iran and Oman agree coordinates for safe shipping corridors in Hormuz, to notify an international body soon.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199021"
+        }
+      ]
+    },
+    {
       "date": "Mar",
       "kind": "media",
       "text": "Lloyd's List reports the IRGC had already imposed a toll system on vessel traffic through Hormuz.",
@@ -849,8 +933,26 @@
       "what": "An IRGC adviser says Iran will soon block 'illegal' routes hugging Oman's coast used to smuggle oil, and claims the Stra",
       "url": "https://tass.com/world/2198853",
       "date": "7 Oct"
+    },
+    {
+      "who": "The Hindu",
+      "what": "Rubio says Iran has lost complete control of the Strait of Hormuz, pointing to oil exports nearing pre-war levels; Iran'",
+      "url": "https://www.thehindu.com/news/international/iran-has-lost-complete-control-of-hormuz-strait-rubio/article71557084.ece",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Rubio says Iran has lost complete control of the Strait of Hormuz, pointing to oil exports nearing pre-war levels; Iran'",
+      "url": "https://www.al-monitor.com/originals/2026/10/rubio-says-iran-lost-hormuz-has-it",
+      "date": "7 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Iran and Oman have agreed geographic coordinates for safe shipping corridors through the Strait of Hormuz and will soon ",
+      "url": "https://tass.com/world/2199021",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Iran threatens new Hormuz closures as tanker attacks hit record week"
+  "headline": "Rubio declares Iran's Hormuz grip broken as Tehran disputes claim"
 }

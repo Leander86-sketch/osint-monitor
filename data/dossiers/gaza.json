@@ -1,6 +1,6 @@
 {
   "slug": "gaza",
-  "updatedAt": "2026-10-07T18:19+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,16 +19,16 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Three years after Hamas's 7 October 2023 attack and a year into the Trump-brokered ceasefire, Gaza's war has not ended. Israeli forces control roughly two-thirds of the enclave and continue demolishing towns such as Rafah; OCHA says 1,431 Palestinians have been killed and 5,026 wounded since the ceasefire, on top of more than 74,245 killed overall. Hamas has not disarmed. Reconstruction, estimated at $71.4 billion, remains largely blocked; 94% of Gazans need shelter aid. Netanyahu vows no Hamas rule, with elections set for 27 October.",
+  "stand": "Three years after Hamas's 7 October 2023 attack and a year into the Trump-brokered ceasefire, Gaza's war has not ended. Israeli forces control roughly two-thirds of the enclave and continue demolishing towns such as Rafah; the Palestinian Ministry of Health says at least 1,460 Palestinians have been killed and 5,116 wounded since the ceasefire, on top of more than 74,245 killed overall. Hamas has not disarmed. Reconstruction, estimated at $71.4 billion, remains largely blocked; 94% of Gazans need shelter aid. Netanyahu vows no Hamas rule, with elections set for 27 October.",
   "figures": [
     {
       "label": "Gaza deaths since Oct 2025 ceasefire",
-      "value": "more than 1,440 killed",
+      "value": "more than 1,460 killed",
       "color": "#f59e0b",
       "src": {
-        "name": "Al-Monitor",
-        "url": "https://www.al-monitor.com/originals/2026/10/oct-7-memorial-netanyahu-says-will-be-no-hamas-rule-gaza",
-        "date": "5 Oct"
+        "name": "Palestinian Ministry of Health (via Al Jazeera)",
+        "url": "https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers?traffic_source=rss",
+        "date": "7 Oct"
       }
     },
     {
@@ -114,8 +114,8 @@
     },
     {
       "status": "confirmed",
-      "text": "OCHA counts 1,431 Palestinians killed and 5,026 wounded since the October 2025 ceasefire, revising the earlier rounded toll.",
-      "by": "Says: OCHA, citing Gaza Health Ministry figures.",
+      "text": "The Gaza ceasefire-period toll has risen to at least 1,460 Palestinians killed and 5,116 wounded, up from the previous count of 1,431 killed and 5,026 wounded.",
+      "by": "Says: Palestinian Ministry of Health, whose figures are regarded by the UN as reliable.",
       "sources": [
         {
           "name": "Al-Monitor",
@@ -126,6 +126,11 @@
           "name": "Folha de S.Paulo",
           "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml",
           "date": "5 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers?traffic_source=rss",
+          "date": "7 Oct"
         }
       ]
     },
@@ -404,6 +409,90 @@
           "date": "7 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "Netanyahu said at a Monday memorial ceremony that Israel had killed 4,000 of the 6,000 Palestinians who infiltrated Israel from Gaza on 7 October 2023.",
+      "by": "Says: Israeli PM Benjamin Netanyahu, at a ceremony marking the Jewish calendar anniversary.",
+      "sources": [
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cwkgj0g30m5jo?at_medium=RSS&at_campaign=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Netanyahu said Israel had \"settled the score\" with the 7 October attackers and would continue to do so.",
+      "by": "Says: Israeli PM Benjamin Netanyahu, in a statement from his office.",
+      "sources": [
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cwkgj0g30m5jo?at_medium=RSS&at_campaign=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "A report says Israel was warned by Egypt ahead of the 7 October 2023 attack.",
+      "by": "Says: an unnamed report, cited by Tagesschau. Denies: Netanyahu denies Israel was warned.",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/asien/israel-gedenken-hamas-ueberfall-102.html",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The US has provided at least $25.5 billion in direct government appropriations to Israel since 7 October 2023.",
+      "by": "Says: Al Jazeera analysis of US government funding records.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/how-us-military-aid-to-israel-continues-three-years-into-gaza-genocide?traffic_source=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The US has approved at least $33.16 billion in arms transfers to Israel since 7 October 2023.",
+      "by": "Says: Al Jazeera analysis of US State Department notices to Congress.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/how-us-military-aid-to-israel-continues-three-years-into-gaza-genocide?traffic_source=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "94% of Gaza's hospitals and clinics are fully or partially out of service three years into the war.",
+      "by": "Says: OCHA.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers?traffic_source=rss",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Nearly 300 journalists and media workers have been killed in Gaza since 7 October 2023, including 12 from Al Jazeera.",
+      "by": "Says: Shireen Abu Akleh Observatory.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers?traffic_source=rss",
+          "date": "7 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -501,6 +590,17 @@
       ]
     },
     {
+      "date": "5 Oct 2026",
+      "kind": "official",
+      "text": "Netanyahu says at a memorial ceremony that Israel killed 4,000 of the 6,000 Palestinians who infiltrated from Gaza on 7 October 2023.",
+      "sources": [
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cwkgj0g30m5jo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
       "date": "6 Oct 2026",
       "kind": "media",
       "text": "Guardian reports Benjamin Davis has lodged a formal appeal against his FAO dismissal.",
@@ -541,6 +641,28 @@
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/7/israeli-attacks-across-gaza-kill-at-least-four-palestinians?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct 2026",
+      "kind": "official",
+      "text": "Netanyahu says Israel has settled the score with the 7 October attackers and will continue to do so.",
+      "sources": [
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cwkgj0g30m5jo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct 2026",
+      "kind": "reaction",
+      "text": "Anti-government protesters dye the fountain at Tel Aviv's Dizengoff Square red and briefly block a highway to mark the anniversary.",
+      "sources": [
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cwkgj0g30m5jo?at_medium=RSS&at_campaign=rss"
         }
       ]
     },
@@ -790,8 +912,26 @@
       "what": "Israeli strikes across Gaza kill at least four Palestinians, including a Civil Defence rescue worker near Kamal Adwan Ho",
       "url": "https://www.aljazeera.com/news/2026/10/7/israeli-attacks-across-gaza-kill-at-least-four-palestinians?traffic_source=rss",
       "date": "7 Oct 2026"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The Gaza ceasefire-period toll has risen to at least 1,460 Palestinians killed and 5,116 wounded, up from the previous c",
+      "url": "https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers?traffic_source=rss",
+      "date": "7 Oct"
+    },
+    {
+      "who": "BBC",
+      "what": "Netanyahu said at a Monday memorial ceremony that Israel had killed 4,000 of the 6,000 Palestinians who infiltrated Isra",
+      "url": "https://www.bbc.co.uk/news/articles/cwkgj0g30m5jo?at_medium=RSS&at_campaign=rss",
+      "date": "5 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The US has provided at least $25.5 billion in direct government appropriations to Israel since 7 October 2023.",
+      "url": "https://www.aljazeera.com/news/2026/10/7/how-us-military-aid-to-israel-continues-three-years-into-gaza-genocide?traffic_source=rss",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Israel keeps razing Gaza as war passes third anniversary"
+  "headline": "Israel marks third 7 October anniversary as Gaza toll climbs"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "syria",
-  "updatedAt": "2026-10-07T09:06+02:00",
+  "updatedAt": "2026-10-08T16:47+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Israel continues raids in southern Syria; its troops killed a man near a military post on 5 October, and an Israeli Druze politician, Ayoob Kara, called for seizing the Druze-majority city of Sweida. Syria's UN ambassador, Ibrahim Olabi, demanded a full Israeli withdrawal. Separately, Damascus and UAE developer Eagle Hills signed a framework deal for up to $20 billion in Damascus and Latakia real-estate projects. Human Rights Watch warned nearly 5,700 men and boys transferred from Syria to Iraq over alleged Islamic State links risk abuse and unfair trials.",
+  "stand": "Israel continues raids in southern Syria; its troops killed a man near a military post on 5 October, and Israeli politician Ayoob Kara called for seizing Druze-majority Sweida. Syria's UN envoy Ibrahim Olabi demanded a full Israeli withdrawal. Damascus and UAE developer Eagle Hills signed a framework deal for up to $20 billion in Damascus and Latakia real estate. Human Rights Watch warned nearly 5,700 Islamic-State-linked detainees transferred to Iraq risk abuse and unfair trials. Syria denied plans to send troops to Yemen amid Saudi talks.",
   "figures": [
     {
       "label": "UAE-Syria real-estate investment (potential)",
@@ -162,6 +162,42 @@
           "date": "5 Oct"
         }
       ]
+    },
+    {
+      "status": "disputed",
+      "text": "Syria's Information Ministry denied its armed forces are fighting in Yemen alongside the Saudi-led coalition, after a report that Damascus and Riyadh discussed deploying 10,000-20,000 Syrian troops there.",
+      "by": "Says: Axios (cited by TASS), on Saudi-Syria talks to deploy troops to Yemen. Denies: Syria's Information Ministry.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199029",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Integration of former SDF-controlled areas in northeastern Syria into state structures was declared complete in August, and the SDF's dissolution was announced.",
+      "by": "Says: COI query response (ReliefWeb).",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/syrian-arab-republic/coi-query-response-syria-major-human-rights-security-and-socio-economic-developments-7-october-2026",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The United States removed Syria from its list of state sponsors of terrorism in August, ending a decades-old designation.",
+      "by": "Says: U.S. government.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/syrian-arab-republic/coi-query-response-syria-major-human-rights-security-and-socio-economic-developments-7-october-2026",
+          "date": "7 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -174,6 +210,17 @@
         {
           "name": "Middle East Eye",
           "url": "https://www.middleeasteye.net/news/thousands-suspected-islamic-state-members-risk-abuse-iraqi-prisons-warns-rights-group"
+        }
+      ]
+    },
+    {
+      "date": "12 Jul",
+      "kind": "official",
+      "text": "Syria's transitional Parliament held its inaugural session.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/syrian-arab-republic/coi-query-response-syria-major-human-rights-security-and-socio-economic-developments-7-october-2026"
         }
       ]
     },
@@ -231,6 +278,50 @@
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/syria-condemns-israeli-attacks-demands-withdrawal-territory"
         }
       ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Syria's interim President Ahmed al-Sharaa met Saudi Crown Prince Mohammed bin Salman in Riyadh to discuss cooperation.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199029"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "denial",
+      "text": "Syria's Information Ministry denied its forces are fighting in Yemen, after reports of Saudi-Syria talks on a troop deployment.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199029"
+        }
+      ]
+    },
+    {
+      "date": "Aug",
+      "kind": "official",
+      "text": "Integration of former SDF areas into state structures was declared complete, and the SDF's dissolution was announced.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/syrian-arab-republic/coi-query-response-syria-major-human-rights-security-and-socio-economic-developments-7-october-2026"
+        }
+      ]
+    },
+    {
+      "date": "Aug",
+      "kind": "official",
+      "text": "The US removed Syria from its list of state sponsors of terrorism.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/syrian-arab-republic/coi-query-response-syria-major-human-rights-security-and-socio-economic-developments-7-october-2026"
+        }
+      ]
     }
   ],
   "sources": [
@@ -269,8 +360,20 @@
       "what": "Syria's flexible multipurpose cash assistance (MPCA) fell 47.5% between 2023 and 2025 as sectoral cash assistance rose.",
       "url": "https://reliefweb.int/report/syrian-arab-republic/cash-transition-state-cash-and-voucher-syria-august-2026",
       "date": "5 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Syria's Information Ministry denied its armed forces are fighting in Yemen alongside the Saudi-led coalition, after a re",
+      "url": "https://tass.com/world/2199029",
+      "date": "8 Oct"
+    },
+    {
+      "who": "ReliefWeb",
+      "what": "Integration of former SDF-controlled areas in northeastern Syria into state structures was declared complete in August, ",
+      "url": "https://reliefweb.int/report/syrian-arab-republic/coi-query-response-syria-major-human-rights-security-and-socio-economic-developments-7-october-2026",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Israel presses Syria raids as Damascus presses UN for full withdrawal"
+  "headline": "Syria denies Yemen deployment plans as Sweida stays outside state control"
 }

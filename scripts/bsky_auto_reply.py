@@ -71,8 +71,8 @@ def compose(slug):
     link = f'https://argus.prototipo.nl/s/{slug}?ref=br'
     tail = f' Claim by claim, with sources: {link}'
     room = MAX_LEN - len(tail) - len(head) - 2
-    fact = fact.strip()
-    if len(fact) > room: fact = fact[:room - 1].rsplit(' ', 1)[0] + '…'
+    fact = fact.strip().rstrip('.') + '.'
+    if len(fact) > room: fact = fact[:room - 1].rsplit(' ', 1)[0].rstrip('.,;:') + '…'
     text = f'{head}. {fact}{tail}' if head else f'{fact}{tail}'
     return text if len(text) <= MAX_LEN else None
 

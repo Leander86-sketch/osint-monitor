@@ -1,6 +1,6 @@
 {
   "slug": "gaza",
-  "updatedAt": "2026-10-08T16:47+02:00",
+  "updatedAt": "2026-10-09T19:28+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Three years after Hamas's 7 October 2023 attack and a year into the Trump-brokered ceasefire, Gaza's war has not ended. Israeli forces control roughly two-thirds of the enclave and continue demolishing towns such as Rafah; the Palestinian Ministry of Health says at least 1,460 Palestinians have been killed and 5,116 wounded since the ceasefire, on top of more than 74,245 killed overall. Hamas has not disarmed. Reconstruction, estimated at $71.4 billion, remains largely blocked; 94% of Gazans need shelter aid. Netanyahu vows no Hamas rule, with elections set for 27 October.",
+  "stand": "Three years after Hamas's 7 October 2023 attack and a year into the Trump-brokered ceasefire, Gaza's war has not ended. Israel says it controls about 60% of the enclave; demolitions continue, with Rafah razed. Gaza's Health Ministry says at least 1,471 Palestinians have been killed and 5,189 wounded since the ceasefire, on top of more than 74,254 killed overall. Hamas has not disarmed. Reconstruction, estimated at $71.4 billion, remains largely blocked; more than 100 aid groups say the truce exists \"in name only.\" Elections are set for 27 October.",
   "figures": [
     {
       "label": "Gaza deaths since Oct 2025 ceasefire",
@@ -53,12 +53,12 @@
     },
     {
       "label": "Palestinians killed, total war",
-      "value": "more than 74,243",
+      "value": "at least 74,254 killed",
       "color": "#f59e0b",
       "src": {
-        "name": "Gaza Health Ministry (via Guardian)",
-        "url": "https://www.theguardian.com/us-news/2026/oct/07/first-thing-israel-marks-third-anniversary-7-october-hamas-attacks",
-        "date": "7 Oct"
+        "name": "Al Jazeera, citing Gaza Health Ministry",
+        "url": "https://www.aljazeera.com/news/2026/10/8/israel-kills-or-wounds-palestinian-every-90-minutes-in-gaza-since-ceasefire?traffic_source=rss",
+        "date": "8 Oct"
       }
     },
     {
@@ -114,7 +114,7 @@
     },
     {
       "status": "confirmed",
-      "text": "The Gaza ceasefire-period toll has risen to at least 1,460 Palestinians killed and 5,116 wounded, up from the previous count of 1,431 killed and 5,026 wounded.",
+      "text": "The Gaza ceasefire-period toll has risen to 1,471 Palestinians killed and 5,189 wounded, up from 1,460 killed and 5,116 wounded.",
       "by": "Says: Palestinian Ministry of Health, whose figures are regarded by the UN as reliable.",
       "sources": [
         {
@@ -131,6 +131,11 @@
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers?traffic_source=rss",
           "date": "7 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/israel-kills-or-wounds-palestinian-every-90-minutes-in-gaza-since-ceasefire?traffic_source=rss",
+          "date": "8 Oct"
         }
       ]
     },
@@ -493,6 +498,174 @@
           "date": "7 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "Israeli attacks have killed or wounded a Palestinian in Gaza on average every 90 minutes since the ceasefire; at least 320 of those killed were children.",
+      "by": "Says: Islamic Relief, a UK-based charity.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/israel-kills-or-wounds-palestinian-every-90-minutes-in-gaza-since-ceasefire?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "At least 327 children were killed and 547 injured in Gaza during the ceasefire period, with more than 5,000 injured overall.",
+      "by": "Says: Gaza Ministry of Health; WHO Global Health Cluster (overall injury total).",
+      "sources": [
+        {
+          "name": "ReliefWeb, joint statement of 100+ organisations",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/gaza-ceasefire-exists-name-only-say-more-100-organizations",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "More than 100 humanitarian and human rights organisations say the Gaza ceasefire exists in name only, one year on.",
+      "by": "Says: more than 100 humanitarian and human rights organisations, including Save the Children, the Norwegian Refugee Council and Amnesty International.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/gaza-ceasefire-exists-name-only-say-more-100-organizations",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The UN Commission of Inquiry has twice concluded, in September 2025 and again in June 2026, that Israel has committed genocide in Gaza.",
+      "by": "Says: UN Commission of Inquiry.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/gaza-ceasefire-exists-name-only-say-more-100-organizations",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Not one of Gaza's 36 hospitals is fully functioning; more than 18,500 patients, including at least 4,000 children, still need medical evacuation, and over 1,000 have died waiting.",
+      "by": "Says: more than 100 humanitarian and human rights organisations.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/gaza-ceasefire-exists-name-only-say-more-100-organizations",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "1.4 million people in Gaza face crisis-level hunger or worse through the end of the year.",
+      "by": "Says: more than 100 humanitarian and human rights organisations.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/gaza-ceasefire-exists-name-only-say-more-100-organizations",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Israel says it controls about 60% of Gaza, including the outer perimeter and Beit Hanoun, while most Palestinians live in the remaining Hamas-controlled area.",
+      "by": "Says: Israel.",
+      "sources": [
+        {
+          "name": "CNA, citing AFP",
+          "url": "https://www.channelnewsasia.com/world/israel-strikes-gaza-hamas-oct-7-anniversary-6440946",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Only 3% of Gaza's farmland was intact and accessible to Palestinians as of June, with just 448 of 4,091 reachable hectares undamaged.",
+      "by": "Says: FAO and Unosat.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://www1.folha.uol.com.br/mundo/2026/10/faixa-de-gaza-tem-82-das-construcoes-danificadas-tres-anos-apos-7-de-outubro-veja-fotos-de-antes-e-depois.shtml",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "War damage to Gaza is estimated at $35.2 billion, and reconstruction needs have set the territory's human development back 77 years.",
+      "by": "Says: joint UN, EU and World Bank assessment.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://www1.folha.uol.com.br/mundo/2026/10/faixa-de-gaza-tem-82-das-construcoes-danificadas-tres-anos-apos-7-de-outubro-veja-fotos-de-antes-e-depois.shtml",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "An Israeli government-appointed commission says Hamas and other Palestinian factions repeatedly used sexual violence and torture against victims during the 7 October attack and captivity, amounting to war crimes, crimes against humanity and genocide.",
+      "by": "Says: Israeli government-appointed commission (300-page report). Denies: Hamas denies the accusations.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://www1.folha.uol.com.br/mundo/2026/10/alem-de-mortes-e-sequestros-violencia-sexual-tambem-marcou-ataques-do-hamas.shtml",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "UNFPA reports a sharp rise in gender-based violence against women and girls in Gaza, including a 123% increase in early and forced marriage cases in the second quarter of 2026 versus the first.",
+      "by": "Says: UNFPA.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://www1.folha.uol.com.br/mundo/2026/10/como-a-guerra-aumentou-a-violencia-sexual-e-os-casamentos-forcados-de-meninas-e-mulheres-em-gaza.shtml",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Israel has barred Palestinian election commission officials from entering Gaza, a factor in talk of postponing the Palestinian legislative elections due 28 November.",
+      "by": "Says: Egypt's Sada el-Balad TV, cited by TASS.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199597",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Doctors of the World says 84% of Gaza children under five suffered fever, diarrhoea, or respiratory or skin illness in the past three months, calling child recovery \"deliberately undermined\".",
+      "by": "Says: Médecins du Monde (Doctors of the World).",
+      "sources": [
+        {
+          "name": "NRC",
+          "url": "https://www.nrc.nl/nieuws/2026/10/08/bijna-ieder-kind-onder-de-vijf-jaar-in-gaza-was-in-de-afgelopen-drie-maanden-ziek-en-hun-herstel-wordt-opzettelijk-ondermijnd-a4938471",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "WHO recorded 45 attacks on healthcare in Gaza between January and August 2026, killing ten health workers.",
+      "by": "Says: World Health Organization.",
+      "sources": [
+        {
+          "name": "NRC",
+          "url": "https://www.nrc.nl/nieuws/2026/10/08/bijna-ieder-kind-onder-de-vijf-jaar-in-gaza-was-in-de-afgelopen-drie-maanden-ziek-en-hun-herstel-wordt-opzettelijk-ondermijnd-a4938471",
+          "date": "8 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -663,6 +836,50 @@
         {
           "name": "BBC",
           "url": "https://www.bbc.co.uk/news/articles/cwkgj0g30m5jo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct 2026",
+      "kind": "official",
+      "text": "Israeli commission report finds Hamas used systematic sexual violence and torture against victims during the 7 October attack and captivity.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://www1.folha.uol.com.br/mundo/2026/10/alem-de-mortes-e-sequestros-violencia-sexual-tambem-marcou-ataques-do-hamas.shtml"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct 2026",
+      "kind": "media",
+      "text": "Israeli strikes across Gaza on the anniversary kill five Palestinians, officials say.",
+      "sources": [
+        {
+          "name": "CNA",
+          "url": "https://www.channelnewsasia.com/world/israel-strikes-gaza-hamas-oct-7-anniversary-6440946"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct 2026",
+      "kind": "reaction",
+      "text": "More than 100 humanitarian and human rights organisations declare the Gaza ceasefire exists in name only, a year after it took effect.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/gaza-ceasefire-exists-name-only-say-more-100-organizations"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct 2026",
+      "kind": "media",
+      "text": "Israel bars Palestinian election commission officials from Gaza, feeding talk of postponing the 28 November Palestinian legislative elections.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199597"
         }
       ]
     },
@@ -930,8 +1147,56 @@
       "what": "The US has provided at least $25.5 billion in direct government appropriations to Israel since 7 October 2023.",
       "url": "https://www.aljazeera.com/news/2026/10/7/how-us-military-aid-to-israel-continues-three-years-into-gaza-genocide?traffic_source=rss",
       "date": "7 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The Gaza ceasefire-period toll has risen to 1,471 Palestinians killed and 5,189 wounded, up from 1,460 killed and 5,116 ",
+      "url": "https://www.aljazeera.com/news/2026/10/8/israel-kills-or-wounds-palestinian-every-90-minutes-in-gaza-since-ceasefire?traffic_source=rss",
+      "date": "8 Oct"
+    },
+    {
+      "who": "ReliefWeb, joint statement of 100+ organisations",
+      "what": "At least 327 children were killed and 547 injured in Gaza during the ceasefire period, with more than 5,000 injured over",
+      "url": "https://reliefweb.int/report/occupied-palestinian-territory/gaza-ceasefire-exists-name-only-say-more-100-organizations",
+      "date": "9 Oct"
+    },
+    {
+      "who": "CNA, citing AFP",
+      "what": "Israel says it controls about 60% of Gaza, including the outer perimeter and Beit Hanoun, while most Palestinians live i",
+      "url": "https://www.channelnewsasia.com/world/israel-strikes-gaza-hamas-oct-7-anniversary-6440946",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Folha de S.Paulo",
+      "what": "Only 3% of Gaza's farmland was intact and accessible to Palestinians as of June, with just 448 of 4,091 reachable hectar",
+      "url": "https://www1.folha.uol.com.br/mundo/2026/10/faixa-de-gaza-tem-82-das-construcoes-danificadas-tres-anos-apos-7-de-outubro-veja-fotos-de-antes-e-depois.shtml",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Folha de S.Paulo",
+      "what": "An Israeli government-appointed commission says Hamas and other Palestinian factions repeatedly used sexual violence and",
+      "url": "https://www1.folha.uol.com.br/mundo/2026/10/alem-de-mortes-e-sequestros-violencia-sexual-tambem-marcou-ataques-do-hamas.shtml",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Folha de S.Paulo",
+      "what": "UNFPA reports a sharp rise in gender-based violence against women and girls in Gaza, including a 123% increase in early ",
+      "url": "https://www1.folha.uol.com.br/mundo/2026/10/como-a-guerra-aumentou-a-violencia-sexual-e-os-casamentos-forcados-de-meninas-e-mulheres-em-gaza.shtml",
+      "date": "7 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Israel has barred Palestinian election commission officials from entering Gaza, a factor in talk of postponing the Pales",
+      "url": "https://tass.com/world/2199597",
+      "date": "9 Oct"
+    },
+    {
+      "who": "NRC",
+      "what": "Doctors of the World says 84% of Gaza children under five suffered fever, diarrhoea, or respiratory or skin illness in t",
+      "url": "https://www.nrc.nl/nieuws/2026/10/08/bijna-ieder-kind-onder-de-vijf-jaar-in-gaza-was-in-de-afgelopen-drie-maanden-ziek-en-hun-herstel-wordt-opzettelijk-ondermijnd-a4938471",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Israel marks third 7 October anniversary as Gaza toll climbs"
+  "headline": "NGOs say Gaza ceasefire exists only on paper, year on"
 }

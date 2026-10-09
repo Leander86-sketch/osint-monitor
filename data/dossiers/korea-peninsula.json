@@ -1,6 +1,6 @@
 {
   "slug": "korea-peninsula",
-  "updatedAt": "2026-10-07T18:21+02:00",
+  "updatedAt": "2026-10-09T19:28+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "South Korea and the US-led UN Command have concluded North Korea planted four mines, laid about a year before the blast, 10 metres south of the Military Demarcation Line, wounding three soldiers in the DMZ on 21 September. Seoul (Kang Shin-chul, Cho Hyun, Chung Bin-na) demands an apology, is weighing diplomatic measures, and has cleared mines on its side. Pyongyang, through Kim Yo Jong, denies crossing the line, calling the apology demand \"despicable\", and its Foreign Ministry warns it will retaliate with force against any Southern incursion, \"even one millimetre\".",
+  "stand": "South Korea and the US-led UN Command have concluded North Korea planted four mines, laid about a year before the blast, wounding three soldiers in the DMZ on 21 September. Seoul demands an apology, has cleared mines on its side, and its civilian leadership has called for dialogue. Pyongyang, through Kim Yo Jong, denies crossing the line, has rejected Seoul's medical aid as a \"politically motivated scheme\", and demands Seoul show \"utmost respect\" before ties can be restored; its Foreign Ministry warns it will meet any Southern incursion with force.",
   "figures": [
     {
       "label": "Soldiers injured in 21 Sep blast",
@@ -195,6 +195,30 @@
           "date": "6 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "North Korea demands South Korea show utmost respect before ties can be restored.",
+      "by": "Says: Kim Yo Jong.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/north-korea-demands-utmost-respect-dmz-mine-blast-6441616",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Seoul's civilian leadership has called on North Korea to return to dialogue, apart from the military's apology demand.",
+      "by": "Says: CNA report, citing Seoul's civilian leadership.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/north-korea-demands-utmost-respect-dmz-mine-blast-6441616",
+          "date": "8 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -319,6 +343,28 @@
           "url": "https://tass.com/world/2198141"
         }
       ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "reaction",
+      "text": "Kim Yo Jong rejected South Korea's medical aid offer, calling it a politically motivated scheme.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/asia/east-asia/article/3370150/north-korea-decries-medical-aid-says-nothing-give-or-receive-seoul?utm_source=rss_feed"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "reaction",
+      "text": "Kim Yo Jong said Seoul must show utmost respect, consideration and sincerity to mend ties.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/north-korea-demands-utmost-respect-dmz-mine-blast-6441616"
+        }
+      ]
     }
   ],
   "sources": [
@@ -345,8 +391,20 @@
       "what": "North Korea's Foreign Ministry states it will use force against any Southern military incursion.",
       "url": "https://tass.com/world/2198141",
       "date": "6 Oct"
+    },
+    {
+      "who": "CNA Singapore",
+      "what": "North Korea demands South Korea show utmost respect before ties can be restored.",
+      "url": "https://www.channelnewsasia.com/east-asia/north-korea-demands-utmost-respect-dmz-mine-blast-6441616",
+      "date": "8 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Kim Yo Jong rejected South Korea's medical aid offer, calling it a politically motivated scheme.",
+      "url": "https://www.scmp.com/news/asia/east-asia/article/3370150/north-korea-decries-medical-aid-says-nothing-give-or-receive-seoul?utm_source=rss_feed",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "North Korea denies DMZ mine blast as Seoul weighs apology demand"
+  "headline": "North Korea rejects Seoul's aid, demands respect before talks"
 }

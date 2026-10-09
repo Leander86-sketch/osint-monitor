@@ -1,6 +1,6 @@
 {
   "slug": "sudan",
-  "updatedAt": "2026-10-08T16:47+02:00",
+  "updatedAt": "2026-10-09T19:28+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Sudan's army (SAF) and the RSF remain at war into a fourth year. Army chief Burhan has rejected negotiations, vowing to retake all RSF-held territory, as fighting intensifies in North and West Kordofan and the RSF kills civilians near En Nahud. The US and Egypt continue pressing for a Sudanese-led dialogue toward civilian rule, saying neither side represents legitimate governance. WHO warns health needs in Darfur, especially Tawila's 700,000 displaced, far exceed resources, with its 2026 appeal only 23% funded, as refugee outflow into South Sudan tops 1.4 million.",
+  "stand": "Sudan's army (SAF) and the RSF remain at war into a fourth year. SAF has launched its largest North Kordofan offensive since July, capturing Sodari, while the RSF seized Blue Nile's Jabal Kadam garrison and keeps fighting near En Nahud. Army chief Burhan has rejected negotiations, vowing to retake all RSF territory. The UN Security Council renewed Darfur's arms embargo but blocked a US bid to widen it nationwide after Russia and China objected. FEWS NET warns famine risk has spread into parts of South Darfur amid drought and conflict.",
   "figures": [
     {
       "label": "War dead (cumulative)",
@@ -205,13 +205,18 @@
     },
     {
       "status": "confirmed",
-      "text": "Famine has been confirmed multiple times over the past two years in parts of Sudan, with other areas still at risk.",
-      "by": "Says: Integrated Food Security Phase Classification (IPC).",
+      "text": "Famine risk (IPC Phase 5) has expanded beyond previously identified areas to parts of South Darfur, including Sharg Aj-Jabal (East Jebel Marra), driven by drought compounding conflict.",
+      "by": "Says: FEWS NET.",
       "sources": [
         {
           "name": "ReliefWeb / Sudan FSL Cluster",
           "url": "https://reliefweb.int/report/sudan/sudans-harvest-risk-millions-face-worsening-hunger-2027",
           "date": "5 Oct"
+        },
+        {
+          "name": "ReliefWeb / FEWS NET",
+          "url": "https://reliefweb.int/report/sudan/sudan-key-message-update-drought-compounds-conflict-risk-famine-expands-parts-south-darfur-september-2026-january-2027",
+          "date": "9 Oct"
         }
       ]
     },
@@ -382,10 +387,69 @@
           "date": "6-15 Aug"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The UN Security Council extended the Darfur arms embargo by two months, to 11 December, and extended the monitoring panel's mandate to 11 January 2027, without widening it to cover all of Sudan.",
+      "by": "Says: UN Security Council (Resolution 2830, adopted unanimously).",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/un-extends-darfur-arms-embargo-blocks-broader-sudan-sanctions-proposal?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "The US pushed to widen the Darfur arms embargo to cover all of Sudan; Russia and China blocked the move at the Security Council.",
+      "by": "Says: US Ambassador Jeff Bartos, urging the council to expand the arms embargo across all of Sudan. Denies: Russia's deputy UN ambassador Anna Evstigneeva said the council would not allow any broadening of the restrictions.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/un-extends-darfur-arms-embargo-blocks-broader-sudan-sanctions-proposal?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "SAF launched its largest offensive since July in North Kordofan, capturing Sodari town and several other villages as fighting intensified nearby.",
+      "by": "Says: FEWS NET (Famine Early Warning Systems Network).",
+      "sources": [
+        {
+          "name": "ReliefWeb / FEWS NET",
+          "url": "https://reliefweb.int/report/sudan/sudan-key-message-update-drought-compounds-conflict-risk-famine-expands-parts-south-darfur-september-2026-january-2027",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The RSF captured the Jabal Kadam garrison in Blue Nile state on 17 September, building on gains in Geissan and Kurmuk and pressuring SAF positions near the Roseires Dam.",
+      "by": "Says: FEWS NET.",
+      "sources": [
+        {
+          "name": "ReliefWeb / FEWS NET",
+          "url": "https://reliefweb.int/report/sudan/sudan-key-message-update-drought-compounds-conflict-risk-famine-expands-parts-south-darfur-september-2026-january-2027",
+          "date": "9 Oct"
+        }
+      ]
     }
   ],
   "places": [],
   "timeline": [
+    {
+      "date": "17 Sep",
+      "kind": "official",
+      "text": "RSF captures the Jabal Kadam garrison in Blue Nile, pressuring SAF positions near the Roseires Dam.",
+      "sources": [
+        {
+          "name": "ReliefWeb / FEWS NET",
+          "url": "https://reliefweb.int/report/sudan/sudan-key-message-update-drought-compounds-conflict-risk-famine-expands-parts-south-darfur-september-2026-january-2027"
+        }
+      ]
+    },
     {
       "date": "24 Sep",
       "kind": "official",
@@ -530,6 +594,39 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "Qatar Charity launches a 50-truck humanitarian bridge of medicines and medical supplies from Qatar to Sudan.",
+      "sources": [
+        {
+          "name": "ReliefWeb / Qatar Charity",
+          "url": "https://reliefweb.int/report/sudan/qatar-charity-launches-humanitarian-bridge-qatar-sudan-enar"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "UN Security Council adopts Resolution 2830, extending the Darfur arms embargo two months to 11 December; US bid to expand it nationwide blocked by Russia and China.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/un-extends-darfur-arms-embargo-blocks-broader-sudan-sanctions-proposal?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "FEWS NET warns famine risk now extends to parts of South Darfur amid drought and escalating conflict in Kordofan and Blue Nile.",
+      "sources": [
+        {
+          "name": "ReliefWeb / FEWS NET",
+          "url": "https://reliefweb.int/report/sudan/sudan-key-message-update-drought-compounds-conflict-risk-famine-expands-parts-south-darfur-september-2026-january-2027"
+        }
+      ]
+    },
+    {
       "date": "late 2024",
       "kind": "media",
       "text": "RSF commander Algoney Dagalo attended a Hague peace conference under the false name \"Ahmed Musa\" while on a US sanctions list.",
@@ -618,8 +715,26 @@
       "what": "Sudan's national food costs rose 16% in August, driven by sharp increases in vegetable oil, goat meat and cow meat price",
       "url": "https://reliefweb.int/report/sudan/sudan-joint-market-monitoring-initiative-jmmi-market-overview-6-15-august-2026",
       "date": "6-15 Aug"
+    },
+    {
+      "who": "ReliefWeb / FEWS NET",
+      "what": "Famine risk (IPC Phase 5) has expanded beyond previously identified areas to parts of South Darfur, including Sharg Aj-J",
+      "url": "https://reliefweb.int/report/sudan/sudan-key-message-update-drought-compounds-conflict-risk-famine-expands-parts-south-darfur-september-2026-january-2027",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The UN Security Council extended the Darfur arms embargo by two months, to 11 December, and extended the monitoring pane",
+      "url": "https://www.aljazeera.com/news/2026/10/9/un-extends-darfur-arms-embargo-blocks-broader-sudan-sanctions-proposal?traffic_source=rss",
+      "date": "8 Oct"
+    },
+    {
+      "who": "ReliefWeb / Qatar Charity",
+      "what": "Qatar Charity launches a 50-truck humanitarian bridge of medicines and medical supplies from Qatar to Sudan.",
+      "url": "https://reliefweb.int/report/sudan/qatar-charity-launches-humanitarian-bridge-qatar-sudan-enar",
+      "date": "7 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "WHO warns Darfur health crisis far outstrips funding"
+  "headline": "UN renews Darfur embargo as famine risk spreads and Kordofan fighting escalates"
 }

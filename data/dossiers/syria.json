@@ -1,6 +1,6 @@
 {
   "slug": "syria",
-  "updatedAt": "2026-10-08T16:47+02:00",
+  "updatedAt": "2026-10-09T19:28+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Israel continues raids in southern Syria; its troops killed a man near a military post on 5 October, and Israeli politician Ayoob Kara called for seizing Druze-majority Sweida. Syria's UN envoy Ibrahim Olabi demanded a full Israeli withdrawal. Damascus and UAE developer Eagle Hills signed a framework deal for up to $20 billion in Damascus and Latakia real estate. Human Rights Watch warned nearly 5,700 Islamic-State-linked detainees transferred to Iraq risk abuse and unfair trials. Syria denied plans to send troops to Yemen amid Saudi talks.",
+  "stand": "Israel continues raids in southern Syria; its troops killed a man near a military post on 5 October, and Israeli politician Ayoob Kara called for seizing Druze-majority Sweida. Syria's UN envoy demanded a full Israeli withdrawal. A fuel-price rise in September sparked Syria's biggest protests since Assad's fall; the government has yet to implement a promised lower diesel tier. Syria demanded an independent probe into the Black Sea sinking of the Alfa Watan, which left nine Syrian crew missing. UAE's Eagle Hills is pursuing billions in Syrian tourism investment.",
   "figures": [
     {
       "label": "UAE-Syria real-estate investment (potential)",
@@ -198,6 +198,107 @@
           "date": "7 Oct"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Syria called for an independent IMO-Bulgaria investigation into the sinking of the cargo ship Alfa Watan, questioning why search and rescue was halted before the fate of its missing crew was established.",
+      "by": "Says: Mazen Aloush, Syrian General Authority for Ports and Customs.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/syria-calls-independent-probe-sinking-ship-black-sea",
+          "date": "8 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/syria-calls-for-independent-probe-into-sinking-of-ship-in-black-sea?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The Alfa Watan sank on 6 October in Bulgaria's exclusive economic zone after being hit by a drone; Bulgaria halted the search for its 10 crew, including 9 Syrians, having found no trace of them.",
+      "by": "Says: Bulgarian Vice-Admiral Rumen Nikolov.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/syria-calls-independent-probe-sinking-ship-black-sea",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Bulgaria's prime minister said the cargo and travel direction of the ships struck in the Black Sea could point to Russia, while Russia's embassy denied its drones hit the vessel.",
+      "by": "Says: Bulgarian PM Rumen Radev. Denies: Russia's embassy in Sofia.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/syria-calls-independent-probe-sinking-ship-black-sea",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A 40% diesel price rise on 13 September sparked Syria's most widespread protests since the fall of the al-Assad government, with demonstrators blocking highways and oil tanker routes.",
+      "by": "Says: Cash Working Group / FEWS NET key message update.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/syrian-arab-republic/syria-key-message-update-fuel-price-increase-erodes-purchasing-power-winter-costs-and-lean-season-approach-september-2026-january-2027",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The government announced a lower, 115 SYP/litre diesel tier for heating and agriculture on 17 September in response to the protests, but it had not yet been implemented.",
+      "by": "Says: Syrian government, via Cash Working Group report.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/syrian-arab-republic/syria-key-message-update-fuel-price-increase-erodes-purchasing-power-winter-costs-and-lean-season-approach-september-2026-january-2027",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Crisis (IPC Phase 3) food insecurity is projected to persist in northeast and northwest Syria through January 2027, with the poorest camp-based IDPs at risk of Emergency (IPC Phase 4) conditions.",
+      "by": "Says: Cash Working Group / FEWS NET key message update.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/syrian-arab-republic/syria-key-message-update-fuel-price-increase-erodes-purchasing-power-winter-costs-and-lean-season-approach-september-2026-january-2027",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Drought and groundwater over-extraction have cut Daraa's main spring flows by 86%, with 60% of the population reportedly receiving only 0-25 litres of water per person daily.",
+      "by": "Says: Cash Working Group / FEWS NET key message update.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/syrian-arab-republic/syria-key-message-update-fuel-price-increase-erodes-purchasing-power-winter-costs-and-lean-season-approach-september-2026-january-2027",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Global and regional hotel groups, including Accor, Wyndham and Minor Hotels, are seeking to enter or expand in Syria, betting on tourism from its history and coastal destinations.",
+      "by": "Says: Hotel group executives, per Reuters.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/hotel-groups-target-syria-tourism-it-rebuilds-rubble-civil-war",
+          "date": "8 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -221,6 +322,28 @@
         {
           "name": "ReliefWeb",
           "url": "https://reliefweb.int/report/syrian-arab-republic/coi-query-response-syria-major-human-rights-security-and-socio-economic-developments-7-october-2026"
+        }
+      ]
+    },
+    {
+      "date": "13 Sep",
+      "kind": "official",
+      "text": "Syria raised diesel prices 40% to 175 SYP/litre, sparking its biggest protests since Assad's fall.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/syrian-arab-republic/syria-key-message-update-fuel-price-increase-erodes-purchasing-power-winter-costs-and-lean-season-approach-september-2026-january-2027"
+        }
+      ]
+    },
+    {
+      "date": "17 Sep",
+      "kind": "official",
+      "text": "Damascus announced a lower, 115 SYP/litre diesel tier for heating and farming, not yet implemented.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/syrian-arab-republic/syria-key-message-update-fuel-price-increase-erodes-purchasing-power-winter-costs-and-lean-season-approach-september-2026-january-2027"
         }
       ]
     },
@@ -291,6 +414,17 @@
       ]
     },
     {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "The cargo ship Alfa Watan sank in Bulgaria's exclusive economic zone after being hit by a drone.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/syria-calls-independent-probe-sinking-ship-black-sea"
+        }
+      ]
+    },
+    {
       "date": "8 Oct",
       "kind": "denial",
       "text": "Syria's Information Ministry denied its forces are fighting in Yemen, after reports of Saudi-Syria talks on a troop deployment.",
@@ -298,6 +432,21 @@
         {
           "name": "TASS",
           "url": "https://tass.com/world/2199029"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Syria called for an independent IMO-Bulgaria probe into the ship's sinking and halted search for its crew.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/syria-calls-independent-probe-sinking-ship-black-sea"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/syria-calls-for-independent-probe-into-sinking-of-ship-in-black-sea?traffic_source=rss"
         }
       ]
     },
@@ -372,8 +521,32 @@
       "what": "Integration of former SDF-controlled areas in northeastern Syria into state structures was declared complete in August, ",
       "url": "https://reliefweb.int/report/syrian-arab-republic/coi-query-response-syria-major-human-rights-security-and-socio-economic-developments-7-october-2026",
       "date": "7 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Syria called for an independent IMO-Bulgaria investigation into the sinking of the cargo ship Alfa Watan, questioning wh",
+      "url": "https://www.al-monitor.com/originals/2026/10/syria-calls-independent-probe-sinking-ship-black-sea",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Syria called for an independent IMO-Bulgaria investigation into the sinking of the cargo ship Alfa Watan, questioning wh",
+      "url": "https://www.aljazeera.com/news/2026/10/8/syria-calls-for-independent-probe-into-sinking-of-ship-in-black-sea?traffic_source=rss",
+      "date": "8 Oct"
+    },
+    {
+      "who": "ReliefWeb",
+      "what": "A 40% diesel price rise on 13 September sparked Syria's most widespread protests since the fall of the al-Assad governme",
+      "url": "https://reliefweb.int/report/syrian-arab-republic/syria-key-message-update-fuel-price-increase-erodes-purchasing-power-winter-costs-and-lean-season-approach-september-2026-january-2027",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Global and regional hotel groups, including Accor, Wyndham and Minor Hotels, are seeking to enter or expand in Syria, be",
+      "url": "https://www.al-monitor.com/originals/2026/10/hotel-groups-target-syria-tourism-it-rebuilds-rubble-civil-war",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Syria denies Yemen deployment plans as Sweida stays outside state control"
+  "headline": "Fuel crisis sparks Syria's biggest protests since Assad's fall"
 }

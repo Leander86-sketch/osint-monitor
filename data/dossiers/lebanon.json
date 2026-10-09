@@ -1,6 +1,6 @@
 {
   "slug": "lebanon",
-  "updatedAt": "2026-10-08T16:47+02:00",
+  "updatedAt": "2026-10-09T19:28+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Lebanon remains in humanitarian and economic crisis after hostilities escalated on 2 March 2026. A ceasefire followed a June 2026 US-brokered framework in which Israel and Lebanon agreed Hezbollah disarmament and phased Israeli withdrawal, though violations continue. UNIFIL reported small-arms fire at its Kfar Shouba post on 7 October, and its mandate is due to end 31 December. Lebanon's health ministry says Israeli attacks have killed over 4,300 people since March. Humanitarian partners still seek US$331.5 million for 1.4 million people in need, with 1.24 million facing acute food insecurity.",
+  "stand": "Lebanon remains in humanitarian and economic crisis after hostilities escalated on 2 March 2026. A ceasefire followed a June 2026 US-brokered framework on Hezbollah disarmament and phased Israeli withdrawal; violations continue. The sole \"pilot zone\" withdrawal, from West Zawtar in July, has not been repeated two months on. UNIFIL's mandate ends 31 December; the EU favours extending it and will launch a Lebanese army training mission. Lebanon's health ministry says Israeli attacks have killed over 4,300 people since March. Humanitarian partners seek US$331.5 million for 1.4 million people in need.",
   "figures": [
     {
       "label": "People in need of humanitarian assistance",
@@ -324,6 +324,114 @@
           "date": "Jul 2026"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "Israel's \"pilot zone\" withdrawal plan has stalled: West Zawtar, the only completed withdrawal, remains the sole example two months on.",
+      "by": "Says: Reuters/Al-Monitor reporting from West Zawtar; West Zawtar mayor Abed Ezzedine. Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/drones-explosions-and-soldiers-bulldozers-surrounded-israelis-lebanons-model-town",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Israel's military says the pilot zone process has stalled because the threat of Hezbollah's weapons has not been removed; drones and movement curbs protect troops.",
+      "by": "Says: Israeli military, responding to Reuters questions. Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/drones-explosions-and-soldiers-bulldozers-surrounded-israelis-lebanons-model-town",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The pilot zone process is \"the only viable path\" to security for Lebanon and Israel, and Hezbollah's disarmament is integral to it.",
+      "by": "Says: US State Department spokesperson. Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/drones-explosions-and-soldiers-bulldozers-surrounded-israelis-lebanons-model-town",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "West Zawtar's pilot zone programme has not succeeded, mainly because electricity and running water remain largely unavailable.",
+      "by": "Says: West Zawtar mayor Abed Ezzedine. Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/drones-explosions-and-soldiers-bulldozers-surrounded-israelis-lebanons-model-town",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The EU favours extending UNIFIL's mandate to avoid a security vacuum in south Lebanon.",
+      "by": "Says: EU foreign policy chief Kaja Kallas. Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor (AFP)",
+          "url": "https://www.al-monitor.com/originals/2026/10/eu-top-diplomat-says-bloc-favour-un-lebanon-peacekeepers-extension",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The EU will soon launch a training and advisory mission for the Lebanese Armed Forces and Internal Security Forces, hoped to be ready by year-end.",
+      "by": "Says: EU foreign policy chief Kaja Kallas. Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor (AFP)",
+          "url": "https://www.al-monitor.com/originals/2026/10/eu-top-diplomat-says-bloc-favour-un-lebanon-peacekeepers-extension",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Lebanon is counting on EU support to find an alternative formula for after UNIFIL's mandate ends.",
+      "by": "Says: Lebanese President Joseph Aoun's office. Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor (AFP)",
+          "url": "https://www.al-monitor.com/originals/2026/10/eu-top-diplomat-says-bloc-favour-un-lebanon-peacekeepers-extension",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "UNIFIL now numbers some 7,500 personnel from nearly 50 countries and has been in place since 1978.",
+      "by": "Says: UNIFIL/UN data, cited by AFP. Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor (AFP)",
+          "url": "https://www.al-monitor.com/originals/2026/10/eu-top-diplomat-says-bloc-favour-un-lebanon-peacekeepers-extension",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Lebanon is the EU's third-largest beneficiary of its European Peace Facility fund.",
+      "by": "Says: EU foreign policy chief Kaja Kallas. Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor (AFP)",
+          "url": "https://www.al-monitor.com/originals/2026/10/eu-top-diplomat-says-bloc-favour-un-lebanon-peacekeepers-extension",
+          "date": "8 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -369,6 +477,28 @@
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/7/un-peacekeeping-force-in-lebanon-says-shots-fired-at-israeli-border-post?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Reuters/Al-Monitor report finds no further pilot zones agreed since July; West Zawtar still without reliable power or water.",
+      "sources": [
+        {
+          "name": "Al-Monitor (Reuters)",
+          "url": "https://www.al-monitor.com/originals/2026/10/drones-explosions-and-soldiers-bulldozers-surrounded-israelis-lebanons-model-town"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "EU's Kaja Kallas visits Lebanon, backs extending UNIFIL's mandate and announces an EU army training mission.",
+      "sources": [
+        {
+          "name": "Al-Monitor (AFP)",
+          "url": "https://www.al-monitor.com/originals/2026/10/eu-top-diplomat-says-bloc-favour-un-lebanon-peacekeepers-extension"
         }
       ]
     },
@@ -442,8 +572,20 @@
       "what": "Shelter closures, including the Lebanese University Faculty of Arts, and consolidation measures caused significant anxie",
       "url": "https://reliefweb.int/report/lebanon/emergency-protection-monitoring-report-july-2026",
       "date": "Jul 2026"
+    },
+    {
+      "who": "Al-Monitor (Reuters)",
+      "what": "Israel's \"pilot zone\" withdrawal plan has stalled: West Zawtar, the only completed withdrawal, remains the sole example ",
+      "url": "https://www.al-monitor.com/originals/2026/10/drones-explosions-and-soldiers-bulldozers-surrounded-israelis-lebanons-model-town",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al-Monitor (AFP)",
+      "what": "The EU favours extending UNIFIL's mandate to avoid a security vacuum in south Lebanon.",
+      "url": "https://www.al-monitor.com/originals/2026/10/eu-top-diplomat-says-bloc-favour-un-lebanon-peacekeepers-extension",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Lebanon death toll passes 4,300 as Hezbollah-Iran funding dispute emerges"
+  "headline": "Pilot zone withdrawal stalls as EU urges UNIFIL mandate extension"
 }

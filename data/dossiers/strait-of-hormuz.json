@@ -1,6 +1,6 @@
 {
   "slug": "strait-of-hormuz",
-  "updatedAt": "2026-10-08T16:47+02:00",
+  "updatedAt": "2026-10-09T19:28+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Iran's IRGC continues near-daily strikes and turn-back orders against tankers in Hormuz; the week of 28 September-5 October saw at least 12 tanker attacks, the war's highest weekly total, while the IMO recorded nine. On 6 October a projectile hit tanker On Peace, injuring 12 crew, 11 Indian. Rubio says Iran has lost control of the strait as exports near pre-war levels; Iran disputes this, claiming full control and vowing to block 'illegal' smuggling routes off Oman. Iran and Oman agreed safe shipping corridors, to notify an international body.",
+  "stand": "A new front opened 7 October when multiple projectiles struck tanker Acers off Qatar, inside the Gulf; UKMTO reports casualties. IMO says 24 seafarers have been killed in 93 confirmed Hormuz-area incidents since the war began. Detectable strait transits fell to just seven vessels last week, lowest since July, as Rubio claims the cleared route has reached 80% of pre-war flow. Iran brands any unauthorised new export route hostile, threatening missile, drone or intimidation attacks; IRGC's Mohammadi disputes US claims that oil and ships move freely.",
   "figures": [
     {
       "label": "IRGC-claimed current flow on US-supervised route",
@@ -43,12 +43,22 @@
     },
     {
       "label": "Brent crude oil price",
-      "value": "~$101/barrel (7 Oct)",
+      "value": "$102.28/barrel (8 Oct)",
       "color": "#f59e0b",
       "src": {
-        "name": "Al-Monitor",
-        "url": "https://www.al-monitor.com/originals/2026/10/rubio-says-iran-lost-hormuz-has-it",
-        "date": "7 Oct"
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/8/the-hormuz-bonus-sailor-salaries-soar-for-transits-amid-iran-war?traffic_source=rss",
+        "date": "8 Oct"
+      }
+    },
+    {
+      "label": "Vessels detected transiting Hormuz (past week)",
+      "value": "7, lowest since 23 Jul",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Kpler, via Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/8/the-hormuz-bonus-sailor-salaries-soar-for-transits-amid-iran-war?traffic_source=rss",
+        "date": "8 Oct"
       }
     }
   ],
@@ -115,14 +125,19 @@
       ]
     },
     {
-      "status": "confirmed",
-      "text": "The IRGC Navy has warned ships using the US-supervised southern route through Hormuz that they may be targeted at any point.",
-      "by": "Says: IRGC, via commander Ali Fadavi.",
+      "status": "disputed",
+      "text": "IRGC Navy deputy political commander Ali Mohammadi disputes US/CENTCOM claims that oil and ships are moving freely through Hormuz and that the IRGC Navy has been destroyed, arguing the oil market's lack of reaction proves the claims false; a new distance figure (forces '600 to 700km' away) differs from the IRGC's earlier claim of a 1,000km withdrawal.",
+      "by": "Says: IRGC Navy deputy political commander Ali Mohammadi, who says IRGC maintains full oversight of transits. Denies: CENTCOM, which says the US and regional partners clearly control the strait and traffic is flowing right now.",
       "sources": [
         {
           "name": "Middle East Eye",
           "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-says-us-forces-have-fled-1000km-irans-borders",
           "date": "5 Oct"
+        },
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-navy-official-rejects-us-claims-transits-through-hormuz-strait",
+          "date": "8 Oct"
         }
       ]
     },
@@ -357,8 +372,8 @@
     },
     {
       "status": "disputed",
-      "text": "Rubio says Iran has lost complete control of the Strait of Hormuz, pointing to oil exports nearing pre-war levels; Iran's IRGC says the opposite, claiming full control of the waterway.",
-      "by": "Says: US Secretary of State Marco Rubio. Denies: IRGC adviser Mohammadreza Naqdi, who says Iran retains full control of the strait.",
+      "text": "Rubio specifies that oil shipments via the cleared southern route have reached nearly 80% of pre-war levels, while Iran's own exports remain fully blocked; Iran's IRGC continues to dispute any such recovery and claims full control of the strait.",
+      "by": "Says: US Secretary of State Marco Rubio, via Kathimerini. Denies: Iran's IRGC, which disputes the recovery narrative and claims full control.",
       "sources": [
         {
           "name": "The Hindu",
@@ -369,6 +384,11 @@
           "name": "Al-Monitor",
           "url": "https://www.al-monitor.com/originals/2026/10/rubio-says-iran-lost-hormuz-has-it",
           "date": "7 Oct"
+        },
+        {
+          "name": "TASS",
+          "url": "https://tass.com/economy/2199281",
+          "date": "8 Oct"
         }
       ]
     },
@@ -393,6 +413,138 @@
           "name": "TASS",
           "url": "https://tass.com/world/2199021",
           "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Tanker Acers, an Antigua and Barbuda-flagged chemical and oil tanker, was struck by multiple projectiles 51 nautical miles north of Qatar's Madinat ash Shamal, deep inside the Gulf; casualties were reported.",
+      "by": "Says: UKMTO.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/tanker-attack-off-qatar-signals-wider-threat-beyond-hormuz/",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The IMO's cumulative toll for the war stands at 24 seafarers killed in 93 confirmed shipping incidents since 28 February; the previous casualty incident was the 9 September attack on tanker El Gaia, which killed two sailors near Oman's Musandam peninsula.",
+      "by": "Says: International Maritime Organization.",
+      "sources": [
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&at_campaign=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran has agreed internally, among political leaders and the Revolutionary Guards, to treat any unauthorised new oil export route as a hostile act, with options including missile and drone attacks on ships or intimidation by boats.",
+      "by": "Says: senior regional official and senior diplomat briefed by Tehran, via Reuters.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/attack-risks-rise-tankers-iran-vows-block-more-hormuz-routes",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Detectable vessel transits through Hormuz fell to just seven in the past week, the lowest since 23 July, even as regional exports excluding Iran matched the pre-war average last month, with about 40% of that volume moving via pipeline or undetected ship-to-ship transfers rather than the strait itself.",
+      "by": "Says: Kpler ship-tracking data, via Al Jazeera.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/the-hormuz-bonus-sailor-salaries-soar-for-transits-amid-iran-war?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Tanker captains can now command base salaries up to $100,000 plus a $50,000 per-trip bonus for Hormuz transits; crews overall earn four to six times normal salaries.",
+      "by": "Says: Financial Times, via Al Jazeera.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/the-hormuz-bonus-sailor-salaries-soar-for-transits-amid-iran-war?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Shipping companies are spending $30m-$40m per round trip to move oil in and out of Hormuz via ship-to-ship transfers.",
+      "by": "Says: Wall Street Journal, via Al Jazeera.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/the-hormuz-bonus-sailor-salaries-soar-for-transits-amid-iran-war?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "An energy analyst says the frequency of Iranian attacks on ships is now at its highest point of the war and likely to intensify further.",
+      "by": "Says: Saul Kavonic, energy head at MST Marquee, via Reuters.",
+      "sources": [
+        {
+          "name": "Al Jazeera/Reuters",
+          "url": "https://www.aljazeera.com/news/2026/10/8/the-hormuz-bonus-sailor-salaries-soar-for-transits-amid-iran-war?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "CENTCOM says US forces have helped ship over 1.25 billion barrels of crude through the Strait of Hormuz in recent months.",
+      "by": "Says: CENTCOM, via TASS.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199595",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran's Fars news agency reports several tankers struck naval mines in the strait's southern passage; the number of vessels affected is unconfirmed and no casualties were reported.",
+      "by": "Says: Fars News Agency, via TASS.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/emergencies/2199601",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Mohammad Mokhber, adviser to Iran's Supreme Leader, says the Strait of Hormuz will not reopen until Iran's problems are resolved.",
+      "by": "Says: Mohammad Mokhber, Adviser to Iran's Supreme Leader, via IRNA/TASS.",
+      "sources": [
+        {
+          "name": "TASS, via IRNA",
+          "url": "https://tass.com/world/2199271",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Russia's foreign ministry says about 30% of global fertiliser trade transits Hormuz, disrupted logistics have cut fertiliser production/export capacity by nearly 40%, and the crisis has driven the WTO to cut its 2026 global trade growth forecast from 4.6% to 1.9%; Russia offers to help broker a compromise to reopen the strait.",
+      "by": "Says: Russian Foreign Ministry spokeswoman Maria Zakharova.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/politics/2199259",
+          "date": "8 Oct"
         }
       ]
     }
@@ -429,6 +581,17 @@
         {
           "name": "gCaptain",
           "url": "https://gcaptain.com/five-hormuz-incidents-reported-monday-as-tanker-attacks-mount/"
+        }
+      ]
+    },
+    {
+      "date": "9 Sep",
+      "kind": "official",
+      "text": "Last previous casualty incident before Acers: tanker El Gaia struck near Oman's Musandam peninsula, killing two sailors.",
+      "sources": [
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&at_campaign=rss"
         }
       ]
     },
@@ -778,6 +941,127 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Tanker Acers struck by multiple projectiles 51 nautical miles north of Qatar's Madinat ash Shamal, deep inside the Gulf; casualties reported, unattributed.",
+      "sources": [
+        {
+          "name": "UKMTO, via gCaptain",
+          "url": "https://gcaptain.com/tanker-attack-off-qatar-signals-wider-threat-beyond-hormuz/"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "IMO says 24 seafarers have been killed in 93 confirmed Hormuz-area incidents since the war began.",
+      "sources": [
+        {
+          "name": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Kpler data show detectable Hormuz transits fell to just seven vessels in the past week, lowest since 23 July.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/the-hormuz-bonus-sailor-salaries-soar-for-transits-amid-iran-war?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "denial",
+      "text": "IRGC Navy official Ali Mohammadi disputes US claims that oil and ships are moving freely through Hormuz and that the IRGC Navy was destroyed.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-navy-official-rejects-us-claims-transits-through-hormuz-strait"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "reaction",
+      "text": "CENTCOM responds that the US and regional partners clearly control the strait and traffic is flowing right now.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-navy-official-rejects-us-claims-transits-through-hormuz-strait"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Rubio tells Kathimerini the cleared southern route has reached nearly 80% of pre-war oil flow, while Iran's exports remain fully blocked.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/economy/2199281"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "CENTCOM says US forces have helped ship over 1.25 billion barrels of crude through Hormuz in recent months.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199595"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Mohammad Mokhber, adviser to Iran's Supreme Leader, says the strait will not reopen until Iran's problems are resolved.",
+      "sources": [
+        {
+          "name": "TASS, via IRNA",
+          "url": "https://tass.com/world/2199271"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "reaction",
+      "text": "Russia's Zakharova offers to help broker a Hormuz compromise, citing fertiliser-trade disruption and a cut WTO trade growth forecast.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/politics/2199259"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Reuters sources say Iran has agreed internally to treat any unauthorised new export route as hostile, with options including missile, drone or intimidation attacks.",
+      "sources": [
+        {
+          "name": "Al-Monitor/Reuters",
+          "url": "https://www.al-monitor.com/originals/2026/10/attack-risks-rise-tankers-iran-vows-block-more-hormuz-routes"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "Iran's Fars news agency reports several tankers struck naval mines in the strait's southern passage; vessel count unconfirmed, no casualties reported.",
+      "sources": [
+        {
+          "name": "TASS, via Fars",
+          "url": "https://tass.com/emergencies/2199601"
+        }
+      ]
+    },
+    {
       "date": "Mar",
       "kind": "media",
       "text": "Lloyd's List reports the IRGC had already imposed a toll system on vessel traffic through Hormuz.",
@@ -951,8 +1235,68 @@
       "what": "Iran and Oman have agreed geographic coordinates for safe shipping corridors through the Strait of Hormuz and will soon ",
       "url": "https://tass.com/world/2199021",
       "date": "7 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "IRGC Navy deputy political commander Ali Mohammadi disputes US/CENTCOM claims that oil and ships are moving freely throu",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-navy-official-rejects-us-claims-transits-through-hormuz-strait",
+      "date": "8 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Rubio specifies that oil shipments via the cleared southern route have reached nearly 80% of pre-war levels, while Iran'",
+      "url": "https://tass.com/economy/2199281",
+      "date": "8 Oct"
+    },
+    {
+      "who": "gCaptain",
+      "what": "Tanker Acers, an Antigua and Barbuda-flagged chemical and oil tanker, was struck by multiple projectiles 51 nautical mil",
+      "url": "https://gcaptain.com/tanker-attack-off-qatar-signals-wider-threat-beyond-hormuz/",
+      "date": "8 Oct"
+    },
+    {
+      "who": "BBC",
+      "what": "The IMO's cumulative toll for the war stands at 24 seafarers killed in 93 confirmed shipping incidents since 28 February",
+      "url": "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&at_campaign=rss",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al-Monitor/Reuters",
+      "what": "Iran has agreed internally, among political leaders and the Revolutionary Guards, to treat any unauthorised new oil expo",
+      "url": "https://www.al-monitor.com/originals/2026/10/attack-risks-rise-tankers-iran-vows-block-more-hormuz-routes",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Detectable vessel transits through Hormuz fell to just seven in the past week, the lowest since 23 July, even as regiona",
+      "url": "https://www.aljazeera.com/news/2026/10/8/the-hormuz-bonus-sailor-salaries-soar-for-transits-amid-iran-war?traffic_source=rss",
+      "date": "8 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "CENTCOM says US forces have helped ship over 1.25 billion barrels of crude through the Strait of Hormuz in recent months",
+      "url": "https://tass.com/world/2199595",
+      "date": "9 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Iran's Fars news agency reports several tankers struck naval mines in the strait's southern passage; the number of vesse",
+      "url": "https://tass.com/emergencies/2199601",
+      "date": "9 Oct"
+    },
+    {
+      "who": "TASS, via IRNA",
+      "what": "Mohammad Mokhber, adviser to Iran's Supreme Leader, says the Strait of Hormuz will not reopen until Iran's problems are ",
+      "url": "https://tass.com/world/2199271",
+      "date": "8 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Russia's foreign ministry says about 30% of global fertiliser trade transits Hormuz, disrupted logistics have cut fertil",
+      "url": "https://tass.com/politics/2199259",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Rubio declares Iran's Hormuz grip broken as Tehran disputes claim"
+  "headline": "Iran disputes US recovery claims as Hormuz attacks spread to Qatar waters"
 }

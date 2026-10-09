@@ -1,6 +1,6 @@
 {
   "slug": "taiwan-strait",
-  "updatedAt": "2026-10-08T16:47+02:00",
+  "updatedAt": "2026-10-09T19:28+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "The FBI arrested Wanying Zhang in Los Angeles, charging her as an unregistered foreign agent for spying on President Lai Ching-te's son's family for China, which has not responded. Taiwan's foreign minister visited Arizona's chip corridor, skipping Washington; Taiwanese media report an unconfirmed Pentagon plan to post officials inside Taiwan's defence ministry. The US and Japan are expanding missile and drone deployments, and Taiwan's first F-16V jets arrived, as a Chinese coast guard clash near the Pratas Islands and North Korea's backing for Beijing added to tensions.",
+  "stand": "A US judge denied bail to Wanying Zhang, held for spying on President Lai's son's family for China; Beijing has not responded. A senior US diplomat says investors overpricing Taiwan Strait risk, as Trump holds back a $14bn arms package following December's Beijing backlash. Expanded Japan-US Keen Sword exercises will deploy mobile missile systems to Yonaguni, joined by seven more nations. Ex-US officials warn Washington's transactional demands on Taiwan risk Indo-Pacific stability, while a Chinese military boat was sighted off Taiwan's Pacific coast for the first time in August.",
   "figures": [
     {
       "label": "Taiwan's defence-spending target",
@@ -39,6 +39,16 @@
         "name": "Defense News",
         "url": "https://www.defensenews.com/global/asia-pacific/2026/10/05/us-marine-corps-anti-ship-weaponry-to-see-exercise-action-on-remote-japan-island-near-taiwan/",
         "date": "5 Oct"
+      }
+    },
+    {
+      "label": "US troops in Keen Sword exercise",
+      "value": "about 12,000",
+      "color": "#f59e0b",
+      "src": {
+        "name": "SCMP",
+        "url": "https://www.scmp.com/news/china/military/article/3370210/how-expanded-japan-us-military-exercises-could-complicate-pla-planning-over-taiwan?utm_source=rss_feed",
+        "date": "8 Oct"
       }
     }
   ],
@@ -129,13 +139,18 @@
     },
     {
       "status": "reported",
-      "text": "Taiwan's foreign minister is visiting Arizona's semiconductor corridor while avoiding Washington, days after the Xi-Trump summit.",
-      "by": "Says: two sources familiar with the matter. Denies: not disputed.",
+      "text": "Taiwan's foreign minister Lin Chia-lung visited Phoenix for the opening of a new de facto Taiwan consulate, days after the Xi-Trump summit. Changed: purpose of the Arizona visit specified.",
+      "by": "Says: CNBC reporting. Denies: not disputed.",
       "sources": [
         {
           "name": "SCMP",
           "url": "https://www.scmp.com/news/china/diplomacy/article/3369770/days-after-xi-trump-summit-top-taiwan-diplomat-opens-de-facto-consulate-us?utm_source=rss_feed",
           "date": "5 Oct"
+        },
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html",
+          "date": "9 Oct"
         }
       ]
     },
@@ -323,6 +338,114 @@
           "date": "7 Oct"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A federal judge denied bail for Wanying Zhang, rejecting defence arguments that her surveillance of Lai's son's family was limited to a single day and did not show she was a flight risk.",
+      "by": "Says: US Magistrate Judge Steve Kim, siding with prosecutors. Denies: Zhang's lawyers argued the case covered only one day, 1 September 2025.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3370146/us-judge-blocks-release-alleged-beijing-agent-accused-filming-taiwan-leaders-son?utm_source=rss_feed",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A senior US diplomat says investors are overpricing the risk of conflict in the Taiwan Strait, citing deterrence as sufficient to prevent China acting by 2027.",
+      "by": "Says: US Assistant Secretary of State Michael DeSombre. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The US has held back approval of a new $14 billion arms sale package to Taiwan, after an earlier $11 billion package drew a sharp response from Beijing in December.",
+      "by": "Says: CNBC, citing US government status. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Chinese military boat was spotted with two other vessels off Taiwan's Pacific coast in August, the first such sighting.",
+      "by": "Says: Reuters surveillance report, cited by CNBC. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Beijing has been courting Taiwan's opposition Kuomintang party since last year ahead of Taiwan's 2028 presidential election.",
+      "by": "Says: CNBC. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "This year's expanded Keen Sword exercise will deploy US and Japanese mobile missile systems to Yonaguni Island, with about 12,000 US troops reportedly taking part.",
+      "by": "Says: SCMP, citing unnamed reports. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/military/article/3370210/how-expanded-japan-us-military-exercises-could-complicate-pla-planning-over-taiwan?utm_source=rss_feed",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "France, Germany, the Netherlands, New Zealand and the Philippines move from observer to participant status in this year's Keen Sword exercise, joined by Australia and Canada.",
+      "by": "Says: SCMP. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/military/article/3370210/how-expanded-japan-us-military-exercises-could-complicate-pla-planning-over-taiwan?utm_source=rss_feed",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Former US officials warn Washington's transactional approach puts the Indo-Pacific at risk, citing sharply increased US demands for Taiwan to boost burden-sharing and weapons production.",
+      "by": "Says: former US official Christensen, cited by SCMP. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/us/article/3370204/washingtons-transactional-taiwan-policy-puts-indo-pacific-risk-ex-us-officials-warn?utm_source=rss_feed",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A former American commander says the US has not been in a weaker position in the western Pacific than it is now.",
+      "by": "Says: unnamed former US commander, cited by SCMP. Denies: not disputed.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/us/article/3370204/washingtons-transactional-taiwan-policy-puts-indo-pacific-risk-ex-us-officials-warn?utm_source=rss_feed",
+          "date": "8 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -405,6 +528,17 @@
       ]
     },
     {
+      "date": "3 Oct",
+      "kind": "official",
+      "text": "Lin's Phoenix visit is for the opening of a new de facto Taiwan consulate.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html"
+        }
+      ]
+    },
+    {
       "date": "4 Oct",
       "kind": "official",
       "text": "FBI arrests Wanying Zhang at LAX before a flight to China.",
@@ -475,6 +609,50 @@
       ]
     },
     {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "A US judge denies bail for Wanying Zhang, citing her family's ties in China.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3370146/us-judge-blocks-release-alleged-beijing-agent-accused-filming-taiwan-leaders-son?utm_source=rss_feed"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "SCMP reports an expanded Keen Sword exercise will deploy mobile missile systems to Yonaguni, with new participant nations.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/military/article/3370210/how-expanded-japan-us-military-exercises-could-complicate-pla-planning-over-taiwan?utm_source=rss_feed"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Ex-US officials warn Washington's transactional Taiwan policy risks destabilising the Indo-Pacific.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/us/article/3370204/washingtons-transactional-taiwan-policy-puts-indo-pacific-risk-ex-us-officials-warn?utm_source=rss_feed"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "A senior US diplomat says investors are overpricing the risk of conflict in the Taiwan Strait.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html"
+        }
+      ]
+    },
+    {
       "date": "Jun",
       "kind": "official",
       "text": "NMESIS and MADIS systems first arrive with Okinawa-based Marine unit.",
@@ -504,6 +682,17 @@
         {
           "name": "Defense One",
           "url": "https://www.defenseone.com/threats/2026/10/recent-taiwan-simulation-highlights-us-cyberdefense-gaps-against-china-experts-warn/416487/"
+        }
+      ]
+    },
+    {
+      "date": "Aug",
+      "kind": "media",
+      "text": "A Chinese military boat is sighted off Taiwan's Pacific coast for the first time.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html"
         }
       ]
     }
@@ -604,8 +793,32 @@
       "what": "The Philippine Coast Guard commissioned a retired Taiwanese cutter, transferred quietly via a Philippine NGO rather than",
       "url": "https://thediplomat.com/2026/10/the-quiet-careful-growth-of-philippine-taiwan-ties/",
       "date": "7 Oct"
+    },
+    {
+      "who": "CNBC World",
+      "what": "Taiwan's foreign minister Lin Chia-lung visited Phoenix for the opening of a new de facto Taiwan consulate, days after t",
+      "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html",
+      "date": "9 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "A federal judge denied bail for Wanying Zhang, rejecting defence arguments that her surveillance of Lai's son's family w",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3370146/us-judge-blocks-release-alleged-beijing-agent-accused-filming-taiwan-leaders-son?utm_source=rss_feed",
+      "date": "8 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "This year's expanded Keen Sword exercise will deploy US and Japanese mobile missile systems to Yonaguni Island, with abo",
+      "url": "https://www.scmp.com/news/china/military/article/3370210/how-expanded-japan-us-military-exercises-could-complicate-pla-planning-over-taiwan?utm_source=rss_feed",
+      "date": "8 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Former US officials warn Washington's transactional approach puts the Indo-Pacific at risk, citing sharply increased US ",
+      "url": "https://www.scmp.com/news/us/article/3370204/washingtons-transactional-taiwan-policy-puts-indo-pacific-risk-ex-us-officials-warn?utm_source=rss_feed",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "War game exposes US gaps in defending Taiwan from cyber pressure"
+  "headline": "US judge denies bail to alleged Chinese spy as Taiwan tensions widen"
 }

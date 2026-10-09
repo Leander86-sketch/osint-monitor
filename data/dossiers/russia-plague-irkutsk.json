@@ -1,6 +1,6 @@
 {
   "slug": "russia-plague-irkutsk",
-  "updatedAt": "2026-10-08T16:47+02:00",
+  "updatedAt": "2026-10-09T19:28+02:00",
   "anchors": [
     {
       "label": "WHO",
@@ -15,7 +15,7 @@
       "match": "^AP News"
     }
   ],
-  "stand": "A laboratory technician of the Irkutsk Anti-Plague Institute died in Shelekhov on 1–2 October, two days after admission with severe pneumonia. Rospotrebnadzor calls it \"pneumonia of unknown etiology\", denies a lab accident, and says over 90% of contacts are cleared with no illness found. Russia told the WHO no plague case has been registered; WHO director-general Tedros says it still lacks a \"full picture\" and cannot complete a risk assessment, and seeks clarity on a reported second ill employee. The Kremlin calls most reporting false; the US sent a demarche.",
+  "stand": "A laboratory technician of the Irkutsk Anti-Plague Institute died in Shelekhov on 1–2 October, two days after admission with severe pneumonia. Rospotrebnadzor calls it \"pneumonia of unknown etiology\", denies a lab accident and a second infection, and says monitoring of all contacts is complete, with nearly 5,000 tests finding no dangerous pathogens. Russia told the WHO no plague case has been registered; Tedros says the WHO still lacks a \"full picture\" and cannot complete a risk assessment. The Kremlin calls most reporting false; Trump doubts a bioweapon was involved.",
   "figures": [
     {
       "label": "confirmed plague cases",
@@ -39,12 +39,12 @@
     },
     {
       "label": "of ~200 contacts cleared from observation",
-      "value": "90%",
+      "value": "100%",
       "color": "#f59e0b",
       "src": {
-        "name": "Rospotrebnadzor via BBC",
-        "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss",
-        "date": "7 Oct"
+        "name": "Governor Kobzev via CNA",
+        "url": "https://www.channelnewsasia.com/world/russia-plague-contact-clear-lab-worker-died-6444601",
+        "date": "8 Oct"
       }
     },
     {
@@ -64,6 +64,16 @@
       "src": {
         "name": "WHO via Politico",
         "url": "https://www.politico.eu/article/world-health-organization-who-information-pneumonia-russia-plague/",
+        "date": "7 Oct"
+      }
+    },
+    {
+      "label": "contacts' lab tests, no dangerous pathogens found",
+      "value": "~5,000",
+      "color": "#f59e0b",
+      "src": {
+        "name": "Rospotrebnadzor via The Hindu",
+        "url": "https://www.thehindu.com/news/international/russia-pneumonic-plague-epidemic-siberia-lab-worker-death/article71558805.ece",
         "date": "7 Oct"
       }
     }
@@ -443,9 +453,9 @@
       ]
     },
     {
-      "status": "reported",
-      "text": "A second case: Russian media claim a second person died at Irkutsk district hospital; the WHO speaks only of \"media reports of a second employee with pneumonia of undetermined cause\" and has asked Russia to clarify. Asked directly about it, Peskov called most reporting false. Neither a second death nor a diagnosis is confirmed.",
-      "by": "Says: Russian media via Daily Mail; WHO (reports only). Denies: Kremlin spokesman Peskov — vast majority of reporting false; Russia: no plague case registered.",
+      "status": "disputed",
+      "text": "A second infection: Rospotrebnadzor now explicitly rejects reports that the lab worker spread infection to another person, calling them fake, rather than only Peskov calling reporting generally false.",
+      "by": "Says: Russian media reports of a second ill employee. Denies: Rospotrebnadzor — rejected the reports as fake.",
       "sources": [
         {
           "name": "ABC News (AP)",
@@ -466,6 +476,11 @@
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/8/russia-dismisses-reports-of-second-plague-case-as-false-information?traffic_source=rss",
           "date": "7 Oct"
+        },
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/russias-public-health-watchdog-denies-infection-suspected-pneumonic-137088923",
+          "date": "8 Oct"
         }
       ]
     },
@@ -620,6 +635,90 @@
           "name": "DW",
           "url": "https://www.dw.com/en/suspected-pneumonic-plague-in-siberia-what-we-know-about-the-disease/a-79547919?maca=en-rss-en-world-4025-rdf",
           "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Governor Kobzev: medical monitoring of all contacts of the deceased worker has concluded; no health issues related to infectious disease were detected and the sanitary-epidemiological situation is stable.",
+      "by": "Says: Irkutsk Governor Igor Kobzev.",
+      "sources": [
+        {
+          "name": "CNA",
+          "url": "https://www.channelnewsasia.com/world/russia-plague-contact-clear-lab-worker-died-6444601",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The WHO has offered Russia technical support related to plague and laboratory biosafety and biosecurity.",
+      "by": "Says: WHO Director-General Tedros Adhanom Ghebreyesus.",
+      "sources": [
+        {
+          "name": "El País",
+          "url": "https://english.elpais.com/health/2026-10-08/who-offers-technical-support-to-russia-over-suspected-plague-case-in-siberia-we-need-more-information.html",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The WHO cannot send its own inspectors to investigate unless Russia requests assistance, and Russia has not made such a request.",
+      "by": "Says: El País, describing WHO protocol.",
+      "sources": [
+        {
+          "name": "El País",
+          "url": "https://english.elpais.com/health/2026-10-08/who-offers-technical-support-to-russia-over-suspected-plague-case-in-siberia-we-need-more-information.html",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "China's government says it is in close communication with Russia on the case and on prevention and control of infectious diseases including plague.",
+      "by": "Says: Chinese Foreign Ministry spokesperson Guo Jiakun.",
+      "sources": [
+        {
+          "name": "El País",
+          "url": "https://english.elpais.com/health/2026-10-08/who-offers-technical-support-to-russia-over-suspected-plague-case-in-siberia-we-need-more-information.html",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "President Trump says the US does not believe the lab worker's death is linked to a biological weapon.",
+      "by": "Says: US President Donald Trump.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/trump-says-we-dont-think-russian-plague-is-bioweapon/article71558509.ece",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Rospotrebnadzor, via TASS, says the WHO did not confirm reports of new plague cases and found no risk of a sanitary-epidemiological emergency in Irkutsk — a Russian characterisation of the WHO's position, not a WHO statement itself.",
+      "by": "Says: Rospotrebnadzor, relayed by TASS.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/society/2199261",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Russia's media watchdog Roskomnadzor warns outlets they may be held liable for spreading fake news about the Irkutsk situation and urges reliance only on official sources.",
+      "by": "Says: Roskomnadzor.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/society/2199517",
+          "date": "8 Oct"
         }
       ]
     }
@@ -1132,6 +1231,98 @@
           "url": "https://www.cnbc.com/2026/10/07/trump-russia-plague-bioweapon-putin.html"
         }
       ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Rospotrebnadzor says 90% of quarantined contacts released after nearly 5,000 lab tests found no dangerous pathogens.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/russia-pneumonic-plague-epidemic-siberia-lab-worker-death/article71558805.ece"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "reaction",
+      "text": "WHO offers Russia technical support on plague and lab biosafety; Russia has not requested WHO assistance.",
+      "sources": [
+        {
+          "name": "El País",
+          "url": "https://english.elpais.com/health/2026-10-08/who-offers-technical-support-to-russia-over-suspected-plague-case-in-siberia-we-need-more-information.html"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Governor Kobzev: medical monitoring of all contacts concluded, no health issues found; \"we passed it in worthy fashion\".",
+      "sources": [
+        {
+          "name": "CNA",
+          "url": "https://www.channelnewsasia.com/world/russia-plague-contact-clear-lab-worker-died-6444601"
+        },
+        {
+          "name": "Moscow Times",
+          "url": "https://www.themoscowtimes.com/2026/10/08/russia-says-checks-following-siberian-plague-lab-death-are-complete-a93926"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "denial",
+      "text": "Rospotrebnadzor rejects reports of a second infected person as fake.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/russias-public-health-watchdog-denies-infection-suspected-pneumonic-137088923"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "reaction",
+      "text": "Trump says the US doesn't think a bioweapon is involved in the technician's death.",
+      "sources": [
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/trump-says-we-dont-think-russian-plague-is-bioweapon/article71558509.ece"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "reaction",
+      "text": "China's foreign ministry says it is in close communication with Russia on the case.",
+      "sources": [
+        {
+          "name": "El País",
+          "url": "https://english.elpais.com/health/2026-10-08/who-offers-technical-support-to-russia-over-suspected-plague-case-in-siberia-we-need-more-information.html"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "reaction",
+      "text": "Roskomnadzor warns Russian outlets against spreading unverified reports on the Irkutsk situation.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/society/2199517"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Rospotrebnadzor, via TASS, says the WHO did not confirm reports of new plague cases.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/society/2199261"
+        }
+      ]
     }
   ],
   "background": {
@@ -1365,8 +1556,56 @@
       "what": "ECDC: based on limited information available, there are no reports of secondary cases and no evidence of sustained human",
       "url": "https://www.dw.com/en/suspected-pneumonic-plague-in-siberia-what-we-know-about-the-disease/a-79547919?maca=en-rss-en-world-4025-rdf",
       "date": "6 Oct"
+    },
+    {
+      "who": "ABC News",
+      "what": "A second infection: Rospotrebnadzor now explicitly rejects reports that the lab worker spread infection to another perso",
+      "url": "https://abcnews.com/International/wireStory/russias-public-health-watchdog-denies-infection-suspected-pneumonic-137088923",
+      "date": "8 Oct"
+    },
+    {
+      "who": "CNA",
+      "what": "Governor Kobzev: medical monitoring of all contacts of the deceased worker has concluded; no health issues related to in",
+      "url": "https://www.channelnewsasia.com/world/russia-plague-contact-clear-lab-worker-died-6444601",
+      "date": "8 Oct"
+    },
+    {
+      "who": "El País",
+      "what": "The WHO has offered Russia technical support related to plague and laboratory biosafety and biosecurity.",
+      "url": "https://english.elpais.com/health/2026-10-08/who-offers-technical-support-to-russia-over-suspected-plague-case-in-siberia-we-need-more-information.html",
+      "date": "7 Oct"
+    },
+    {
+      "who": "The Hindu",
+      "what": "President Trump says the US does not believe the lab worker's death is linked to a biological weapon.",
+      "url": "https://www.thehindu.com/news/international/trump-says-we-dont-think-russian-plague-is-bioweapon/article71558509.ece",
+      "date": "8 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Rospotrebnadzor, via TASS, says the WHO did not confirm reports of new plague cases and found no risk of a sanitary-epid",
+      "url": "https://tass.com/society/2199261",
+      "date": "8 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "Russia's media watchdog Roskomnadzor warns outlets they may be held liable for spreading fake news about the Irkutsk sit",
+      "url": "https://tass.com/society/2199517",
+      "date": "8 Oct"
+    },
+    {
+      "who": "The Hindu",
+      "what": "Rospotrebnadzor says 90% of quarantined contacts released after nearly 5,000 lab tests found no dangerous pathogens.",
+      "url": "https://www.thehindu.com/news/international/russia-pneumonic-plague-epidemic-siberia-lab-worker-death/article71558805.ece",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Moscow Times",
+      "what": "Governor Kobzev: medical monitoring of all contacts concluded, no health issues found; \"we passed it in worthy fashion\".",
+      "url": "https://www.themoscowtimes.com/2026/10/08/russia-says-checks-following-siberian-plague-lab-death-are-complete-a93926",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "Not medical advice. The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "WHO says it lacks full picture as Kremlin denies second case"
+  "headline": "Russia declares contact-tracing complete as plague scare winds down"
 }

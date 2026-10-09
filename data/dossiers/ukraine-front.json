@@ -1,6 +1,6 @@
 {
   "slug": "ukraine-front",
-  "updatedAt": "2026-10-08T16:47+02:00",
+  "updatedAt": "2026-10-09T19:28+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Russia and Ukraine continue exchanging long-range strikes as a fifth winter nears. Overnight on 6-7 October, Russia fired 70 missiles, 48 cruise missiles and 130 drones at Ukraine, hitting eleven regions; reported nationwide deaths range 20-24, with a Pryluky apartment block's toll put at 14-18. Zelensky calls it deliberate terror timed to Putin's birthday and appeals for Patriot interceptors. Ukraine says it struck Russian oil facilities and a training ground in response. WHO reports attacks on Ukrainian healthcare rose 17% in Q3. Trilateral talks await Moscow's answer.",
+  "stand": "Russia and Ukraine continue exchanging long-range strikes as a fifth winter nears. A Russian bomb attack on two buses in Kramatorsk killed at least 30 people on 8 October, days after a strike on a Pryluky apartment block killed 22, including five children. Zelensky calls the attacks deliberate terror and seeks Patriot interceptors; Ukraine says it struck Russian refineries in response. South Korea is recalling its ambassador to Kyiv over a North Korean POW dispute. India, Turkey, Egypt and the US have proposed peace talks; Moscow has committed to nothing.",
   "figures": [
     {
       "label": "Trains evacuated in September due to drone attacks",
@@ -205,13 +205,18 @@
     },
     {
       "status": "reported",
-      "text": "Zelenskyy says the US has proposed trilateral peace talks at technical level by end of October; Ukraine responds positively and awaits Russia's answer.",
-      "by": "Says: President Volodymyr Zelenskyy, citing a US proposal. Russia's response not yet given in sources reviewed.",
+      "text": "Peace process: Ukraine has received four truce proposals — from India, Turkey, Egypt and the US — covering energy, ports and Black Sea shipping; India's is called the most comprehensive. The US-proposed trilateral meeting, once expected in early October, has slipped to late October, which Ukrainian officials blame on Russia; Russia reportedly rejected India's plan privately, unconfirmed publicly.",
+      "by": "Says: Ukraine's Foreign Minister Andrii Sybiha; a Ukrainian official, via the Kyiv Independent. Says: Kremlin spokesperson Dmitry Peskov — welcomes India's efforts but commits to nothing publicly.",
       "sources": [
         {
           "name": "CNBC World",
           "url": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html",
           "date": "4 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/india-to-turkiye-can-new-proposals-to-broker-russia-ukraine-truce-succeed",
+          "date": "8 Oct"
         }
       ]
     },
@@ -281,9 +286,9 @@
       ]
     },
     {
-      "status": "reported",
-      "text": "Pryluky apartment-block toll remains disputed by outlet: Guardian/Zelensky and SCMP say 18 dead including 4 children (three aged about one, one aged eight), with dozens wounded; Al Jazeera cites regional officials for 'at least 14' including 4 children and 50 wounded. Nationwide deaths from the 6-7 October barrage are put at 20 (Al Jazeera) to 24 (SCMP, Guardian).",
-      "by": "Says: Ukrainian officials, via Zelensky, SCMP and Al Jazeera reporting (figures vary by outlet).",
+      "status": "confirmed",
+      "text": "Pryluky death toll: now confirmed at 22, including five children, with around 54 wounded, resolving earlier outlet disagreement (14 vs 18-22).",
+      "by": "Says: Chernihiv Governor Vyacheslav Chaus.",
       "sources": [
         {
           "name": "Guardian",
@@ -309,6 +314,21 @@
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/7/at-least-two-killed-in-kyiv-as-russia-launches-massive-attack-on-ukraine?traffic_source=rss",
           "date": "7 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-attack-in-ukraines-kramatorsk-kills-12",
+          "date": "8 Oct"
+        },
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c875pwq134l3o",
+          "date": "8 Oct"
+        },
+        {
+          "name": "NPR News",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war",
+          "date": "8 Oct"
         }
       ]
     },
@@ -493,6 +513,152 @@
         {
           "name": "TASS",
           "url": "https://tass.com/economy/2199045",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A Russian glide-bomb strike on two buses at a Kramatorsk bus stop killed at least 30 people and wounded 18; three more died in shelling nearby in Bilenke, and two more in an evening drone strike, taking the city's Thursday toll to 35.",
+      "by": "Says: Donetsk regional prosecutor's office; Kramatorsk City Council, via Telegram.",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/08/russian-attack-buses-ukraine-frontline-kramatorsk",
+          "date": "8 Oct"
+        },
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c875pwq134l3o",
+          "date": "8 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-attack-in-ukraines-kramatorsk-kills-12",
+          "date": "8 Oct"
+        },
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/world/russia-central-asia/article/3370213/least-33-dead-russian-bomb-blast-east-ukraine-stronghold",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Ukrainian officials accuse Russia of deliberately targeting a civilian bus stop to kill as many people as possible; Russia has not commented on the strike.",
+      "by": "Says: Donetsk Governor Vadym Filashkin; President Volodymyr Zelensky. No Russian comment in sources reviewed.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-attack-in-ukraines-kramatorsk-kills-12",
+          "date": "8 Oct"
+        },
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/08/russian-attack-buses-ukraine-frontline-kramatorsk",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Seoul says Ukraine broke a confidentiality agreement on the POW transfer and is owed an apology; Kyiv denies any such agreement existed.",
+      "by": "Says: South Korea's government — Ukraine breached a non-disclosure agreement. Denies: Ukraine's Foreign Ministry — no non-disclosure agreement existed.",
+      "sources": [
+        {
+          "name": "BBC Asia",
+          "url": "https://www.bbc.co.uk/news/articles/ckwy48rrz95vo",
+          "date": "8 Oct"
+        },
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com/en/south-korea-recalls-ukraine-ambassador-amid-pow-dispute/a-79590511",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "South Korea's Foreign Ministry says it has decided to recall its ambassador to Ukraine, Park Hee-chang, over the POW dispute.",
+      "by": "Says: South Korea's Foreign Ministry.",
+      "sources": [
+        {
+          "name": "BBC Asia",
+          "url": "https://www.bbc.co.uk/news/articles/ckwy48rrz95vo",
+          "date": "8 Oct"
+        },
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/asia/east-asia/article/3370190/south-korea-recall-ambassador-ukraine-amid-pow-dispute",
+          "date": "8 Oct"
+        },
+        {
+          "name": "NPR News",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147115/south-korea-to-recall-its-ambassador-to-ukraine-over-north-korean-pow-dispute",
+          "date": "8 Oct"
+        },
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com/en/south-korea-recalls-ukraine-ambassador-amid-pow-dispute/a-79590511",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "US Secretary of State Marco Rubio says Russia's war on Ukraine is at a dangerous stalemate, and Washington remains committed to pursuing a negotiated settlement.",
+      "by": "Says: US Secretary of State Marco Rubio.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/india-to-turkiye-can-new-proposals-to-broker-russia-ukraine-truce-succeed",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A Ukrainian drone attack damaged a Yandex data centre in Russia's Ryazan region, taking it offline and causing website outages in Russia.",
+      "by": "Says: Yandex, company statement.",
+      "sources": [
+        {
+          "name": "NPR News",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war",
+          "date": "8 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-attack-in-ukraines-kramatorsk-kills-12",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Ukraine's General Staff says its forces struck a large oil refinery and petrochemical complex in Salavat, Russia, about 1,200km east of Moscow; the claim is unverified.",
+      "by": "Says: Ukraine's General Staff. Not independently verified.",
+      "sources": [
+        {
+          "name": "NPR News",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war",
+          "date": "8 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-attack-in-ukraines-kramatorsk-kills-12",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Zelensky urged the US to expand Starlink satellite coverage so Ukraine could strike launch sites inside Russia; Trump and Musk have so far refused.",
+      "by": "Says: President Volodymyr Zelensky. Trump and Musk have not granted the request, per Guardian reporting.",
+      "sources": [
+        {
+          "name": "Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/08/russian-attack-buses-ukraine-frontline-kramatorsk",
           "date": "8 Oct"
         }
       ]
@@ -806,6 +972,17 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "A Russian missile destroys a five-storey apartment block in Pryluky; the death toll later rises to 22, including five children, with around 54 wounded.",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c875pwq134l3o"
+        }
+      ]
+    },
+    {
       "date": "8 Oct",
       "kind": "official",
       "text": "Russian guided aerial bombs strike the 'Intellect' gymnasium in Kushuhum, Zaporizhzhia region, for a second time, causing significant damage.",
@@ -824,6 +1001,127 @@
         {
           "name": "Ukrinform",
           "url": "https://www.ukrinform.net/rubric-ato/4172129-drone-strike-hits-highrise-building-in-kyiv-injuring-four-people-including-two-children.html"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "A Russian glide bomb hits two civilian buses at a stop in Kramatorsk, killing at least 30 and wounding 18; all public transport in the city is suspended.",
+      "sources": [
+        {
+          "name": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c875pwq134l3o"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Shelling kills three more people in Bilenke, near Kramatorsk, and an evening drone strike kills two more in the city, raising Kramatorsk's Thursday toll to 35.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/russia-attack-in-ukraines-kramatorsk-kills-12"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "South Korea's Foreign Ministry announces it will recall its ambassador to Ukraine, Park Hee-chang, over the North Korean POW transfer dispute.",
+      "sources": [
+        {
+          "name": "NPR News",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147115/south-korea-to-recall-its-ambassador-to-ukraine-over-north-korean-pow-dispute"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "A Ukrainian drone attack damages a Yandex data centre in Russia's Ryazan region, knocking some Russian websites offline.",
+      "sources": [
+        {
+          "name": "NPR News",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Ukraine says it struck a major oil refinery complex in Salavat, Russia, and that Ukrainian drones reached Russia's Omsk region, more than 2,000km from the border.",
+      "sources": [
+        {
+          "name": "NPR News",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Kyiv's grid operator Ukrenergo orders emergency power outages as Russian strikes worsen blackouts; water pressure drops and the metro briefly halts all trains.",
+      "sources": [
+        {
+          "name": "NPR News",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Kyiv police defuse two unexploded half-ton ballistic missile warheads that landed near residential buildings.",
+      "sources": [
+        {
+          "name": "NPR News",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "reaction",
+      "text": "Zelensky accuses the US of being unwilling to help Ukraine, criticising Washington's pursuit of economic ties with Russia alongside mediation efforts.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/world/europe/article/3370253/ukraines-zelensky-accuses-us-inaction-russian-strikes-kill-nearly-80-2-days"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "The UK opens its first dedicated industry business centre in Kyiv, the Kyiv Business Centre, to deepen UK-Ukraine defence-industrial ties.",
+      "sources": [
+        {
+          "name": "UK Ministry of Defence",
+          "url": "https://www.gov.uk/government/news/new-kyiv-business-centre-opens-in-ukraine"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Lithuania deploys about 100 additional troops to its border with Russia's Kaliningrad enclave.",
+      "sources": [
+        {
+          "name": "NPR News",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "A Ukrainian delegation is due to meet US officials Jared Kushner and Steve Witkoff for two days to discuss strengthening Ukraine's air defences.",
+      "sources": [
+        {
+          "name": "NPR News",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war"
         }
       ]
     }
@@ -1020,8 +1318,80 @@
       "what": "A Russian drone strikes a 12-storey residential building in Kyiv's Desnianskyi district; 22 people including 8 children ",
       "url": "https://www.ukrinform.net/rubric-ato/4172129-drone-strike-hits-highrise-building-in-kyiv-injuring-four-people-including-two-children.html",
       "date": "8 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Peace process: Ukraine has received four truce proposals — from India, Turkey, Egypt and the US — covering energy, ports",
+      "url": "https://www.aljazeera.com/news/2026/10/8/india-to-turkiye-can-new-proposals-to-broker-russia-ukraine-truce-succeed",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Pryluky death toll: now confirmed at 22, including five children, with around 54 wounded, resolving earlier outlet disag",
+      "url": "https://www.aljazeera.com/news/2026/10/8/russia-attack-in-ukraines-kramatorsk-kills-12",
+      "date": "8 Oct"
+    },
+    {
+      "who": "BBC World",
+      "what": "Pryluky death toll: now confirmed at 22, including five children, with around 54 wounded, resolving earlier outlet disag",
+      "url": "https://www.bbc.co.uk/news/articles/c875pwq134l3o",
+      "date": "8 Oct"
+    },
+    {
+      "who": "NPR News",
+      "what": "Pryluky death toll: now confirmed at 22, including five children, with around 54 wounded, resolving earlier outlet disag",
+      "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Guardian",
+      "what": "A Russian glide-bomb strike on two buses at a Kramatorsk bus stop killed at least 30 people and wounded 18; three more d",
+      "url": "https://www.theguardian.com/world/2026/oct/08/russian-attack-buses-ukraine-frontline-kramatorsk",
+      "date": "8 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "A Russian glide-bomb strike on two buses at a Kramatorsk bus stop killed at least 30 people and wounded 18; three more d",
+      "url": "https://www.scmp.com/news/world/russia-central-asia/article/3370213/least-33-dead-russian-bomb-blast-east-ukraine-stronghold",
+      "date": "8 Oct"
+    },
+    {
+      "who": "BBC Asia",
+      "what": "Seoul says Ukraine broke a confidentiality agreement on the POW transfer and is owed an apology; Kyiv denies any such ag",
+      "url": "https://www.bbc.co.uk/news/articles/ckwy48rrz95vo",
+      "date": "8 Oct"
+    },
+    {
+      "who": "DW News",
+      "what": "Seoul says Ukraine broke a confidentiality agreement on the POW transfer and is owed an apology; Kyiv denies any such ag",
+      "url": "https://www.dw.com/en/south-korea-recalls-ukraine-ambassador-amid-pow-dispute/a-79590511",
+      "date": "8 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "South Korea's Foreign Ministry says it has decided to recall its ambassador to Ukraine, Park Hee-chang, over the POW dis",
+      "url": "https://www.scmp.com/news/asia/east-asia/article/3370190/south-korea-recall-ambassador-ukraine-amid-pow-dispute",
+      "date": "8 Oct"
+    },
+    {
+      "who": "NPR News",
+      "what": "South Korea's Foreign Ministry says it has decided to recall its ambassador to Ukraine, Park Hee-chang, over the POW dis",
+      "url": "https://www.npr.org/2026/10/08/g-s1-147115/south-korea-to-recall-its-ambassador-to-ukraine-over-north-korean-pow-dispute",
+      "date": "8 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Zelensky accuses the US of being unwilling to help Ukraine, criticising Washington's pursuit of economic ties with Russi",
+      "url": "https://www.scmp.com/news/world/europe/article/3370253/ukraines-zelensky-accuses-us-inaction-russian-strikes-kill-nearly-80-2-days",
+      "date": "8 Oct"
+    },
+    {
+      "who": "UK Ministry of Defence",
+      "what": "The UK opens its first dedicated industry business centre in Kyiv, the Kyiv Business Centre, to deepen UK-Ukraine defenc",
+      "url": "https://www.gov.uk/government/news/new-kyiv-business-centre-opens-in-ukraine",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Russia's birthday barrage kills up to 24 as Zelensky demands Patriots"
+  "headline": "Russia kills dozens in Kramatorsk bus strike as death tolls climb"
 }

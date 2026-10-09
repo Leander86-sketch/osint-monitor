@@ -1,6 +1,6 @@
 {
   "slug": "nato-eastern-flank",
-  "updatedAt": "2026-10-08T16:47+02:00",
+  "updatedAt": "2026-10-09T19:28+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "NATO's Baltic flank keeps hardening. Lithuania has ordered troops to help guard its Kaliningrad border after a Latvian border incident and fears of Russian mobilisation, while Estonia runs NATO's biggest-ever command exercise, Steadfast Duel, the alliance's first Article 5 drill with all 32 members. Vilnius presses Washington for a permanent base; Trump says the US will 'look at it', but also favours a Polish base, and experts doubt Washington will fund both so close together, or that the offer is separate from Belarusian transit talks. Moscow calls NATO's 'Theory of Victory' plan aggression; Poland and Lithuania plan for mass war refugees.",
+  "stand": "NATO's Baltic flank keeps hardening. Lithuania has deployed up to 100 troops to guard its Kaliningrad border through 16 October, to intercept Russian men evading mobilisation who seek asylum; guards call the border calm. Estonia runs NATO's biggest-ever command exercise, Steadfast Duel, the alliance's first Article 5 drill with all 32 members, and its foreign minister hails British troops at Tapa as key to deterrence. Vilnius still presses Washington for a permanent base. Moscow calls NATO's 'Theory of Victory' plan aggression; Poland and Lithuania plan for mass war refugees.",
   "figures": [
     {
       "label": "Pabradė base capacity cited for a potential permanent base",
@@ -306,14 +306,19 @@
       ]
     },
     {
-      "status": "disputed",
-      "text": "Lithuania's return of Odintsov to Russia is called a betrayal by the Kaliningrad Lithuanian community; Lithuania's border guard says it was unclear he had made a formal asylum claim.",
-      "by": "Says: Sigitas Šamborskis, Lithuanian community in Kaliningrad. Denies: Lithuania's State Border Guard Service.",
+      "status": "confirmed",
+      "text": "Lithuania deploys up to 100 troops to help guard the Kaliningrad border through 16 October, to intercept Russian men who are evading mobilisation and seeking asylum.",
+      "by": "Says: Interior Minister Martynas Katelynas.",
       "sources": [
         {
           "name": "LRT",
           "url": "https://www.lrt.lt/en/news-in-english/19/3075076/lithuania-could-restrict-transit-from-russia-if-plague-threat-confirmed-minister",
           "date": "7 Oct"
+        },
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3076205/troops-at-kaliningrad-border-are-for-stopping-mobilisation-dodgers-lithuanian-minister",
+          "date": "8 Oct"
         }
       ]
     },
@@ -386,6 +391,66 @@
           "name": "LRT",
           "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
           "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Lithuania's Border Guard Service says the situation on the Kaliningrad border is calm, with no irregular migrants detected on the Belarus border for five consecutive days.",
+      "by": "Says: Border Guard Service adviser Giedrius Mišutis.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3076205/troops-at-kaliningrad-border-are-for-stopping-mobilisation-dodgers-lithuanian-minister",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Lithuania is not currently considering deploying troops to its border with Belarus, separately from the Kaliningrad deployment.",
+      "by": "Says: Interior Minister Martynas Katelynas.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3076205/troops-at-kaliningrad-border-are-for-stopping-mobilisation-dodgers-lithuanian-minister",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Estonia's foreign minister says British troops in Estonia are an important part of NATO's deterrence posture, after talks with the UK foreign secretary.",
+      "by": "Says: Estonian Foreign Minister Margus Tsahkna.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610160325/minister-to-ed-miliband-british-troops-in-estonia-strengthen-nato-security",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The UK's land force deployment to Estonia is Britain's largest for a number of years, and the UK leads the 10-member Joint Expeditionary Force focused on Baltic Sea security.",
+      "by": "Says: ERR News background reporting.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610160325/minister-to-ed-miliband-british-troops-in-estonia-strengthen-nato-security",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Estonia will host the Ukraine Recovery Conference in January, discussed by Estonia's and the UK's foreign ministers.",
+      "by": "Says: Estonian Foreign Minister Margus Tsahkna.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610160325/minister-to-ed-miliband-british-troops-in-estonia-strengthen-nato-security",
+          "date": "8 Oct"
         }
       ]
     }
@@ -680,6 +745,39 @@
       ]
     },
     {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Lithuania's interior minister says up to 100 troops will guard the Kaliningrad border through 16 October, to intercept Russians evading mobilisation.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3076205/troops-at-kaliningrad-border-are-for-stopping-mobilisation-dodgers-lithuanian-minister"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Lithuania's Border Guard Service says the Kaliningrad border is calm, with no migrants on the Belarus border for five days.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3076205/troops-at-kaliningrad-border-are-for-stopping-mobilisation-dodgers-lithuanian-minister"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Estonian Foreign Minister Tsahkna meets UK Foreign Secretary Miliband in London, discussing Ukraine support and British troops' role in NATO deterrence.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610160325/minister-to-ed-miliband-british-troops-in-estonia-strengthen-nato-security"
+        }
+      ]
+    },
+    {
       "date": "May",
       "kind": "official",
       "text": "Estonia incorporates 'active defense' concept into national defence policy.",
@@ -829,8 +927,20 @@
       "what": "NATO's largest-ever command exercise, Steadfast Duel 26, begins with Estonia and all 32 member states, running to 15 Oct",
       "url": "https://news.err.ee/1610158603/estonia-joins-nato-s-largest-command-exercise-steadfast-duel-26",
       "date": "6 Oct"
+    },
+    {
+      "who": "LRT",
+      "what": "Lithuania deploys up to 100 troops to help guard the Kaliningrad border through 16 October, to intercept Russian men who",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3076205/troops-at-kaliningrad-border-are-for-stopping-mobilisation-dodgers-lithuanian-minister",
+      "date": "8 Oct"
+    },
+    {
+      "who": "ERR News",
+      "what": "Estonia's foreign minister says British troops in Estonia are an important part of NATO's deterrence posture, after talk",
+      "url": "https://news.err.ee/1610160325/minister-to-ed-miliband-british-troops-in-estonia-strengthen-nato-security",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Trump leaves Lithuania's base bid open as flank build-up continues"
+  "headline": "Lithuania deploys up to 100 troops to calm Kaliningrad border"
 }

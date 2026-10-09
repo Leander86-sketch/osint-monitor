@@ -1,6 +1,6 @@
 {
   "slug": "iran-israel",
-  "updatedAt": "2026-10-08T16:47+02:00",
+  "updatedAt": "2026-10-09T19:28+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "The US-Israel war on Iran, launched 28 Feb, is in its eighth month and costs an estimated $3bn a month. Trump now says he is not keen on a deal; officials are weighing a return to large-scale strikes before the midterms. Vance says Iran must cut its 60%-enriched uranium stock; Iran says it has set firm conditions to end the war and will respond via mediators, while Qatar says talks continue. Gulf exports excluding Iran have recovered near pre-war levels as Hormuz attacks rise; Iraq has devalued its dinar.",
+  "stand": "The US-Israel war on Iran, launched 28 Feb, is in its eighth month. Trump now rules out new strikes before the 3 Nov midterms, citing 'productive discussions' with Tehran, though the naval blockade stays in place. Iran's Atomic Energy Organization says Tehran will not abandon enrichment or hand over its stockpile, rejecting Vance's demand. Putin has pledged to 'do everything' to help end the war. Qatar says talks continue; Gulf exports excluding Iran remain near pre-war levels; Iraq has devalued its dinar.",
   "figures": [
     {
       "label": "Strait of Hormuz daily oil exports",
@@ -424,6 +424,172 @@
           "date": "7 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "Trump now rules out attacking Iran before the 3 November midterms, reversing his Wednesday stance, and cites 'productive discussions' with Tehran while the blockade stays in place.",
+      "by": "Says: President Donald Trump, in a Truth Social post Denies: —",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html",
+          "date": "8 Oct"
+        },
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/world/united-states-canada/article/3370235/trump-says-us-will-not-attack-iran-novembers-midterm-elections?utm_source=rss_feed",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran's Atomic Energy Organization says Tehran will not abandon uranium enrichment or hand over its stockpile, rejecting Vance's demand for cuts.",
+      "by": "Says: Head of Iran's Atomic Energy Organization, per Iranian state media Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/trump-says-us-will-not-attack-iran-midterm-elections-november",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Putin told Pezeshkian in Turkmenistan that Russia will do everything it can to help end the war on Iran.",
+      "by": "Says: Russian President Vladimir Putin, per Interfax and Russian state media Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/putin-pledges-russias-support-to-end-us-led-war-on-iran?traffic_source=rss",
+          "date": "8 Oct"
+        },
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/putin-offers-help-iran-end-mideast-war-ahead-summit",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran's President Pezeshkian says talks with Washington are 'meaningless' and accuses the US of trying to impose its policies unilaterally.",
+      "by": "Says: Iranian President Masoud Pezeshkian, per Iranian state media Denies: —",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/putin-offers-help-iran-end-mideast-war-ahead-summit",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A Congressional Budget Office report found at least 81 US aircraft have been lost or damaged in the Iran war, costing up to $3.3bn as of 1 August.",
+      "by": "Says: Congressional Budget Office Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/at-least-81-us-aircraft-worth-up-to-3-3bn-lost-or-damaged-in-iran-war?traffic_source=rss",
+          "date": "5 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Senator Chris Murphy says Hegseth is trying to hide the Iran war's costs and consequences from the American public by restricting his access to US bases.",
+      "by": "Says: Senator Chris Murphy, to reporters Denies: Pentagon official says the restriction was communicated in advance and applied evenly",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/oct/08/chris-murphy-pete-hegseth-iran-war-costs",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "An Iranian drone strike on the US embassy in Riyadh caused far more extensive, multi-floor damage than Saudi Arabia initially disclosed, Murphy says.",
+      "by": "Says: Senator Chris Murphy, who visited the site Denies: Saudi Arabia's defense ministry initially described the damage as minor",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/oct/08/chris-murphy-pete-hegseth-iran-war-costs",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iranian drone strikes early in the war halted LNG production at Qatar's Ras Laffan complex, eliminating 17% of Qatar's exports for an estimated three years.",
+      "by": "Says: Senator Chris Murphy, citing his visit to Ras Laffan Denies: —",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/oct/08/chris-murphy-pete-hegseth-iran-war-costs",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "News reports have highlighted deteriorating conditions, food shortages and suicide attempts among USS Lincoln crew during its record deployment.",
+      "by": "Says: News reports, per Al Jazeera Denies: Pentagon chief Hegseth says media sought to portray the ship as a symbol of dysfunction or low morale",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/uss-lincoln-returns-to-us-after-long-deployment-supporting-war-on-iran?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Trump's former defense secretary Mark Esper says the Iran war could drag on well into 2027, or be handed to the next administration in 2029.",
+      "by": "Says: Former US Defense Secretary Mark Esper, to CNBC Denies: —",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/08/trump-iran-war-mark-esper.html",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A Pew Research Center poll found 65% of Americans disapprove of Trump's handling of the Iran war, against 33% approval.",
+      "by": "Says: Pew Research Center Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/uss-lincoln-returns-to-us-after-long-deployment-supporting-war-on-iran?traffic_source=rss",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The US is sending roughly 9,000 sailors and Marines and a third aircraft carrier to the Middle East, which could bring three US carriers to the region by late October.",
+      "by": "Says: Associated Press, citing US officials Denies: —",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html",
+          "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Trump claims 22 million barrels of oil moved through the Strait of Hormuz overnight with none to or from Iran; CNBC could not verify the figure.",
+      "by": "Says: President Donald Trump Denies: —",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html",
+          "date": "8 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -605,6 +771,17 @@
       ]
     },
     {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Congressional Budget Office reports at least 81 US aircraft lost or damaged in the war, costing up to $3.3bn.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/at-least-81-us-aircraft-worth-up-to-3-3bn-lost-or-damaged-in-iran-war?traffic_source=rss"
+        }
+      ]
+    },
+    {
       "date": "6 Oct",
       "kind": "official",
       "text": "Trump says Los Angeles and San Diego could be destroyed, calls it a small price to pay, and says the war is almost over.",
@@ -781,6 +958,87 @@
       ]
     },
     {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Trump rules out attacking Iran before 3 Nov midterms, citing 'productive discussions' with Tehran.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Putin tells Pezeshkian in Turkmenistan that Russia will do everything to help end the war.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/8/putin-pledges-russias-support-to-end-us-led-war-on-iran?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Pezeshkian says talks with Washington are 'meaningless' and accuses the US of unilateralism.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/putin-offers-help-iran-end-mideast-war-ahead-summit"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Senator Chris Murphy says the Pentagon blocked his access to Al Udeid base and is hiding the war's true costs.",
+      "sources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/oct/08/chris-murphy-pete-hegseth-iran-war-costs"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "USS Abraham Lincoln returns to San Diego after a record-length deployment supporting the war.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/uss-lincoln-returns-to-us-after-long-deployment-supporting-war-on-iran?traffic_source=rss"
+        },
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uss-abraham-lincoln-returns-san-diego-after-deployment-during-war-iran"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Esper says the Iran war could drag on well into 2027 or be handed to the next US administration.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/08/trump-iran-war-mark-esper.html"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Pew poll finds 65% of Americans disapprove of Trump's handling of the Iran war.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/uss-lincoln-returns-to-us-after-long-deployment-supporting-war-on-iran?traffic_source=rss"
+        }
+      ]
+    },
+    {
       "date": "June",
       "kind": "official",
       "text": "US and Iran sign memorandum of understanding for a ceasefire including Lebanon.",
@@ -948,8 +1206,68 @@
       "what": "Texas Senate candidate Ken Paxton privately admitted the Iran war's effect on gas and diesel prices is Republicans' bigg",
       "url": "https://www.theguardian.com/us-news/2026/oct/07/ken-paxton-trumps-iran-war-gas-prices-republicans",
       "date": "7 Oct"
+    },
+    {
+      "who": "CNBC",
+      "what": "Trump now rules out attacking Iran before the 3 November midterms, reversing his Wednesday stance, and cites 'productive",
+      "url": "https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html",
+      "date": "8 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Trump now rules out attacking Iran before the 3 November midterms, reversing his Wednesday stance, and cites 'productive",
+      "url": "https://www.scmp.com/news/world/united-states-canada/article/3370235/trump-says-us-will-not-attack-iran-novembers-midterm-elections?utm_source=rss_feed",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Iran's Atomic Energy Organization says Tehran will not abandon uranium enrichment or hand over its stockpile, rejecting ",
+      "url": "https://www.al-monitor.com/originals/2026/10/trump-says-us-will-not-attack-iran-midterm-elections-november",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Putin told Pezeshkian in Turkmenistan that Russia will do everything it can to help end the war on Iran.",
+      "url": "https://www.aljazeera.com/news/2026/10/8/putin-pledges-russias-support-to-end-us-led-war-on-iran?traffic_source=rss",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Putin told Pezeshkian in Turkmenistan that Russia will do everything it can to help end the war on Iran.",
+      "url": "https://www.al-monitor.com/originals/2026/10/putin-offers-help-iran-end-mideast-war-ahead-summit",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "A Congressional Budget Office report found at least 81 US aircraft have been lost or damaged in the Iran war, costing up",
+      "url": "https://www.aljazeera.com/news/2026/10/8/at-least-81-us-aircraft-worth-up-to-3-3bn-lost-or-damaged-in-iran-war?traffic_source=rss",
+      "date": "5 Oct"
+    },
+    {
+      "who": "The Guardian",
+      "what": "Senator Chris Murphy says Hegseth is trying to hide the Iran war's costs and consequences from the American public by re",
+      "url": "https://www.theguardian.com/us-news/2026/oct/08/chris-murphy-pete-hegseth-iran-war-costs",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "News reports have highlighted deteriorating conditions, food shortages and suicide attempts among USS Lincoln crew durin",
+      "url": "https://www.aljazeera.com/news/2026/10/9/uss-lincoln-returns-to-us-after-long-deployment-supporting-war-on-iran?traffic_source=rss",
+      "date": "8 Oct"
+    },
+    {
+      "who": "CNBC",
+      "what": "Trump's former defense secretary Mark Esper says the Iran war could drag on well into 2027, or be handed to the next adm",
+      "url": "https://www.cnbc.com/2026/10/08/trump-iran-war-mark-esper.html",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "USS Abraham Lincoln returns to San Diego after a record-length deployment supporting the war.",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uss-abraham-lincoln-returns-san-diego-after-deployment-during-war-iran",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Trump rejects Iran deal as US weighs resuming large-scale strikes"
+  "headline": "Trump rules out Iran strikes before midterms as Putin offers to mediate"
 }

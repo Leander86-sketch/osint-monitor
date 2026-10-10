@@ -1,6 +1,6 @@
 {
   "slug": "iran-israel",
-  "updatedAt": "2026-10-09T19:28+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "The US-Israel war on Iran, launched 28 Feb, is in its eighth month. Trump now rules out new strikes before the 3 Nov midterms, citing 'productive discussions' with Tehran, though the naval blockade stays in place. Iran's Atomic Energy Organization says Tehran will not abandon enrichment or hand over its stockpile, rejecting Vance's demand. Putin has pledged to 'do everything' to help end the war. Qatar says talks continue; Gulf exports excluding Iran remain near pre-war levels; Iraq has devalued its dinar.",
+  "stand": "The US-Israel war on Iran, launched 28 Feb, is in its eighth month. Trump rules out new strikes before the 3 Nov midterms, citing 'productive discussions' with Tehran, though the blockade stays in place; US media report the Pentagon is readying plans to resume major combat afterwards. Iran's Atomic Energy Organization refuses to abandon enrichment or hand over its stockpile. Putin has pledged to help end the war. A UN-mandated mission says the US may have committed war crimes at Minab. Qatar says talks continue; Iraq has devalued its dinar.",
   "figures": [
     {
       "label": "Strait of Hormuz daily oil exports",
@@ -158,13 +158,18 @@
     },
     {
       "status": "reported",
-      "text": "Trump says the war is almost over and that losing Los Angeles or San Diego would be a small price to pay.",
-      "by": "Says: President Donald Trump, at a Nebraska rally Denies: —",
+      "text": "Trump says he was talking about gasoline prices, not about losing Los Angeles or San Diego, blaming 'fake and artificial news' for the furore over his remarks.",
+      "by": "Says: President Donald Trump, on Truth Social Denies: —",
       "sources": [
         {
           "name": "TASS",
           "url": "https://tass.com/world/2197905",
           "date": "6 Oct"
+        },
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/trump-rules-out-new-iran-attack-us-midterm-elections-0",
+          "date": "8 Oct"
         }
       ]
     },
@@ -283,13 +288,18 @@
     },
     {
       "status": "reported",
-      "text": "Trump says he no longer wants a deal with Iran, after previously negotiating through envoy Steve Witkoff.",
-      "by": "Says: President Donald Trump, at a campaign rally in San Antonio",
+      "text": "The Pentagon has instructed US Central Command to prepare for 'imminent major combat operations' against Iran, with plans developed despite Trump's reported 'ambivalence', for use after the midterms if authorised.",
+      "by": "Says: Axios and Israeli officials, the Atlantic and the New York Times, cited by Al Jazeera Denies: —",
       "sources": [
         {
           "name": "CNBC",
           "url": "https://www.cnbc.com/2026/10/08/us-iran-war-trump-hormuz.html",
           "date": "7 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/is-trump-signalling-a-return-to-war-with-iran-after-the-midterms?traffic_source=rss",
+          "date": "9 Oct"
         }
       ]
     },
@@ -456,8 +466,8 @@
     },
     {
       "status": "reported",
-      "text": "Putin told Pezeshkian in Turkmenistan that Russia will do everything it can to help end the war on Iran.",
-      "by": "Says: Russian President Vladimir Putin, per Interfax and Russian state media Denies: —",
+      "text": "Pezeshkian says Iran is engaged in dialogue but that the US attacks again every time they negotiate, and demands a 'final framework' to end the war.",
+      "by": "Says: Iranian President Masoud Pezeshkian, per Iranian state media Denies: —",
       "sources": [
         {
           "name": "Al Jazeera",
@@ -467,6 +477,16 @@
         {
           "name": "Al-Monitor",
           "url": "https://www.al-monitor.com/originals/2026/10/putin-offers-help-iran-end-mideast-war-ahead-summit",
+          "date": "8 Oct"
+        },
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/trump-rules-out-new-iran-attack-us-midterm-elections-0",
+          "date": "8 Oct"
+        },
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/world/putin-iran-middle-east-war-cis-summit-6444901",
           "date": "8 Oct"
         }
       ]
@@ -485,13 +505,18 @@
     },
     {
       "status": "confirmed",
-      "text": "A Congressional Budget Office report found at least 81 US aircraft have been lost or damaged in the Iran war, costing up to $3.3bn as of 1 August.",
+      "text": "The Congressional Budget Office names the US-Israeli war on Iran 'Operation Epic Fury', reporting at least 81 US aircraft lost or damaged at a cost of between $1.9bn and $3.3bn as of 1 August.",
       "by": "Says: Congressional Budget Office Denies: —",
       "sources": [
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/8/at-least-81-us-aircraft-worth-up-to-3-3bn-lost-or-damaged-in-iran-war?traffic_source=rss",
           "date": "5 Oct"
+        },
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-lost-or-damaged-81-aircraft-iran-war-congress-report-estimates",
+          "date": "9 Oct"
         }
       ]
     },
@@ -569,13 +594,18 @@
     },
     {
       "status": "reported",
-      "text": "The US is sending roughly 9,000 sailors and Marines and a third aircraft carrier to the Middle East, which could bring three US carriers to the region by late October.",
-      "by": "Says: Associated Press, citing US officials Denies: —",
+      "text": "The US deployment of 7,000 sailors and 2,000 Marines, including the USS Theodore Roosevelt strike group, has raised US troop numbers in the Middle East to 20,000, with hundreds of aircraft and at least three carrier strike groups.",
+      "by": "Says: Al Jazeera Denies: —",
       "sources": [
         {
           "name": "CNBC",
           "url": "https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html",
           "date": "8 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/is-trump-signalling-a-return-to-war-with-iran-after-the-midterms?traffic_source=rss",
+          "date": "9 Oct"
         }
       ]
     },
@@ -588,6 +618,42 @@
           "name": "CNBC",
           "url": "https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html",
           "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A Reuters/Ipsos poll found only 30% of Trump's 2024 supporters are enthusiastic about voting in the midterms, against 48% of Democratic voters; 13% of 2024 Trump voters are unsure who to back.",
+      "by": "Says: Reuters/Ipsos poll Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/is-trump-signalling-a-return-to-war-with-iran-after-the-midterms?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A UN-mandated fact-finding mission concluded the US may have committed war crimes in the 28 February strikes on a school in Minab and a sports complex in Lamerd.",
+      "by": "Says: UN-mandated fact-finding mission, per Middle East Eye Denies: —",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-human-rights-official-says-legal-efforts-under-way-over-minab",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran is pursuing national and international legal action over the Minab attack; local authorities reported 156 dead, independent sources citing the UN reported 157.",
+      "by": "Says: Iran's Deputy Minister for Human Rights Askar Jalalian, per IRNA; toll per Middle East Eye Denies: —",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-human-rights-official-says-legal-efforts-under-way-over-minab",
+          "date": "9 Oct"
         }
       ]
     }
@@ -1039,6 +1105,50 @@
       ]
     },
     {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Reuters/Ipsos poll finds only 30% of Trump's 2024 supporters enthusiastic about voting in midterms, against 48% of Democrats.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/is-trump-signalling-a-return-to-war-with-iran-after-the-midterms?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "reaction",
+      "text": "Trump blames 'fake and artificial news' for the furore over his Los Angeles/San Diego remarks, says he meant gasoline prices.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/trump-rules-out-new-iran-attack-us-midterm-elections-0"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "Axios, the Atlantic and NYT report the Pentagon has ordered CENTCOM to prepare plans for major combat operations against Iran after the midterms.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/is-trump-signalling-a-return-to-war-with-iran-after-the-midterms?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "Iran's deputy human rights minister says Iran is pursuing legal action over the Minab school attack, citing a UN-mandated mission's war-crimes finding.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-human-rights-official-says-legal-efforts-under-way-over-minab"
+        }
+      ]
+    },
+    {
       "date": "June",
       "kind": "official",
       "text": "US and Iran sign memorandum of understanding for a ceasefire including Lebanon.",
@@ -1266,8 +1376,38 @@
       "what": "USS Abraham Lincoln returns to San Diego after a record-length deployment supporting the war.",
       "url": "https://www.middleeasteye.net/live-blog/live-blog-update/uss-abraham-lincoln-returns-san-diego-after-deployment-during-war-iran",
       "date": "8 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Trump says he was talking about gasoline prices, not about losing Los Angeles or San Diego, blaming 'fake and artificial",
+      "url": "https://www.al-monitor.com/originals/2026/10/trump-rules-out-new-iran-attack-us-midterm-elections-0",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The Pentagon has instructed US Central Command to prepare for 'imminent major combat operations' against Iran, with plan",
+      "url": "https://www.aljazeera.com/news/2026/10/9/is-trump-signalling-a-return-to-war-with-iran-after-the-midterms?traffic_source=rss",
+      "date": "9 Oct"
+    },
+    {
+      "who": "CNA Singapore",
+      "what": "Pezeshkian says Iran is engaged in dialogue but that the US attacks again every time they negotiate, and demands a 'fina",
+      "url": "https://www.channelnewsasia.com/world/putin-iran-middle-east-war-cis-summit-6444901",
+      "date": "8 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "The Congressional Budget Office names the US-Israeli war on Iran 'Operation Epic Fury', reporting at least 81 US aircraf",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-lost-or-damaged-81-aircraft-iran-war-congress-report-estimates",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "A UN-mandated fact-finding mission concluded the US may have committed war crimes in the 28 February strikes on a school",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-human-rights-official-says-legal-efforts-under-way-over-minab",
+      "date": "9 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Trump rules out Iran strikes before midterms as Putin offers to mediate"
+  "headline": "US Pentagon reportedly readies Iran strike plans for after midterms"
 }

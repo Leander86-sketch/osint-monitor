@@ -1,6 +1,6 @@
 {
   "slug": "taiwan-strait",
-  "updatedAt": "2026-10-09T19:28+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "A US judge denied bail to Wanying Zhang, held for spying on President Lai's son's family for China; Beijing has not responded. A senior US diplomat says investors overpricing Taiwan Strait risk, as Trump holds back a $14bn arms package following December's Beijing backlash. Expanded Japan-US Keen Sword exercises will deploy mobile missile systems to Yonaguni, joined by seven more nations. Ex-US officials warn Washington's transactional demands on Taiwan risk Indo-Pacific stability, while a Chinese military boat was sighted off Taiwan's Pacific coast for the first time in August.",
+  "stand": "Beijing's foreign ministry dismissed the Zhang spying case as 'hype' over so-called Chinese spies, its first response. The US State Department called China's maritime activity off Taiwan's east coast 'deeply destabilising', as Taipei says Beijing is rehearsing a blockade. Taiwanese and US authorities indicted 11 people for smuggling US chips to China for PLA use; a PLA researcher reportedly used Claude to simulate electronic-warfare attacks on Taiwanese radar and air bases. Former president Tsai Ing-wen began a US visit; analysts doubt Taiwan frictions will derail the Washington-Beijing reset.",
   "figures": [
     {
       "label": "Taiwan's defence-spending target",
@@ -446,6 +446,174 @@
           "date": "8 Oct"
         }
       ]
+    },
+    {
+      "status": "disputed",
+      "text": "China's Ministry of Foreign Affairs dismissed the Zhang spying case as hype over so-called 'Chinese spies', without addressing the specifics. Changed: Beijing has now responded.",
+      "by": "Says: FBI/Justice Department allege spying. Denies: China's Ministry of Foreign Affairs, calling it hype.",
+      "sources": [
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com/en/is-china-seeking-to-restrict-taiwan-s-cultural-presence/a-79610947?maca=en-rss-en-world-4025-rdf",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The US State Department called China's maritime activity off Taiwan's east coast deeply destabilising, saying it undermines the peaceful resolution of the dispute.",
+      "by": "Says: US State Department spokesperson.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/us-says-chinas-maritime-actions-taiwan-deeply-destabilising-6448331",
+          "date": "10 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Taiwanese officials believe China is practising for a possible maritime blockade of Taiwan's east coast, using overlapping military, paramilitary and civilian assets.",
+      "by": "Says: Taiwanese officials.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/us-says-chinas-maritime-actions-taiwan-deeply-destabilising-6448331",
+          "date": "10 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Taiwan's Coast Guard says the Chinese militia boat and two accompanying vessels sighted off the east coast operated outside Taiwan's restricted waters.",
+      "by": "Says: Taiwan's Coast Guard.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/us-says-chinas-maritime-actions-taiwan-deeply-destabilising-6448331",
+          "date": "10 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "In June, Britain, France, Germany and the US jointly expressed concern over Chinese activity off Taiwan's east coast as a threat to regional stability.",
+      "by": "Says: Britain, France, Germany and the US.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/us-says-chinas-maritime-actions-taiwan-deeply-destabilising-6448331",
+          "date": "10 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Taiwanese prosecutors charged 10 people on 6 October with reselling export-controlled semiconductor chips to China from 2017, forging documents claiming to represent Taiwan's defence research institute NCSIST.",
+      "by": "Says: Taiwanese prosecutors.",
+      "sources": [
+        {
+          "name": "ISW",
+          "url": "https://understandingwar.org/research/china-taiwan/china-taiwan-update-october-9-2026/",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Taiwanese authorities say the PLA sought the smuggled chips for use in missiles and radar systems.",
+      "by": "Says: Taiwanese authorities.",
+      "sources": [
+        {
+          "name": "ISW",
+          "url": "https://understandingwar.org/research/china-taiwan/china-taiwan-update-october-9-2026/",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "US authorities arrested California resident Greg Lui on 1 October for reselling about $300 million of export-controlled Nvidia chips to China via Singapore and Malaysia.",
+      "by": "Says: US authorities.",
+      "sources": [
+        {
+          "name": "ISW",
+          "url": "https://understandingwar.org/research/china-taiwan/china-taiwan-update-october-9-2026/",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A PLA-affiliated researcher reportedly used Claude to build software simulating coordinated electronic-warfare attacks on Taiwanese radar installations and air bases, between December 2025 and August 2026.",
+      "by": "Says: ISW report.",
+      "sources": [
+        {
+          "name": "ISW",
+          "url": "https://understandingwar.org/research/china-taiwan/china-taiwan-update-october-9-2026/",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Taiwan's former president Tsai Ing-wen began a weeklong US visit the same day foreign minister Lin Chia-lung attended the opening of a Phoenix de facto consulate.",
+      "by": "Says: SCMP, citing diplomatic observers.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/politics/article/3370402/will-taiwan-issue-derail-washington-and-beijings-latest-reset-analysts-are-sceptical?utm_source=rss_feed",
+          "date": "10 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Diplomatic analysts say recent Taiwan-related events are unlikely to derail the Washington-Beijing reset, though the fate of the $14bn arms package remains a key concern.",
+      "by": "Says: diplomatic analysts, cited by SCMP.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/politics/article/3370402/will-taiwan-issue-derail-washington-and-beijings-latest-reset-analysts-are-sceptical?utm_source=rss_feed",
+          "date": "10 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "China's Taiwan Affairs Office said writers on both sides should uphold a 'national standpoint' after Taiwanese author Yang Shuang-zi won the 2026 International Booker Prize.",
+      "by": "Says: China's Taiwan Affairs Office.",
+      "sources": [
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com/en/is-china-seeking-to-restrict-taiwan-s-cultural-presence/a-79610947?maca=en-rss-en-world-4025-rdf",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The World Coffee Championships website dropped references to Taiwan for 2026 champion Lin Shao-hsing, now listing her as representing 'Chinese Taipei'.",
+      "by": "Says: DW report, citing the World Coffee Championships website.",
+      "sources": [
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com/en/is-china-seeking-to-restrict-taiwan-s-cultural-presence/a-79610947?maca=en-rss-en-world-4025-rdf",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A 2026 National Chengchi University poll found the vast majority of Taiwanese identify as 'Taiwanese', with only 2.5% identifying as Chinese.",
+      "by": "Says: National Chengchi University Election Study Center poll.",
+      "sources": [
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com/en/is-china-seeking-to-restrict-taiwan-s-cultural-presence/a-79610947?maca=en-rss-en-world-4025-rdf",
+          "date": "9 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -491,6 +659,17 @@
         {
           "name": "The Diplomat",
           "url": "https://thediplomat.com/2026/10/taiwans-maritime-law-enforcement-operation-has-sparked-anger-in-chinese-society/"
+        }
+      ]
+    },
+    {
+      "date": "1 Oct",
+      "kind": "official",
+      "text": "US authorities arrest Greg Lui in California for reselling export-controlled Nvidia chips to China via Singapore and Malaysia.",
+      "sources": [
+        {
+          "name": "ISW",
+          "url": "https://understandingwar.org/research/china-taiwan/china-taiwan-update-october-9-2026/"
         }
       ]
     },
@@ -583,6 +762,39 @@
       ]
     },
     {
+      "date": "5 Oct",
+      "kind": "official",
+      "text": "Tsai Ing-wen begins a weeklong US visit as Lin Chia-lung attends the Phoenix consulate opening.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/politics/article/3370402/will-taiwan-issue-derail-washington-and-beijings-latest-reset-analysts-are-sceptical?utm_source=rss_feed"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Taiwanese prosecutors charge 10 people with reselling export-controlled chips to China since 2017.",
+      "sources": [
+        {
+          "name": "ISW",
+          "url": "https://understandingwar.org/research/china-taiwan/china-taiwan-update-october-9-2026/"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct",
+      "kind": "denial",
+      "text": "China's foreign ministry dismisses the Zhang spying case as hype over so-called 'Chinese spies'.",
+      "sources": [
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com/en/is-china-seeking-to-restrict-taiwan-s-cultural-presence/a-79610947?maca=en-rss-en-world-4025-rdf"
+        }
+      ]
+    },
+    {
       "date": "7 Oct",
       "kind": "media",
       "text": "North Korea's KCNA backs China's One China policy and warns Washington over Taiwan arms sales.",
@@ -653,6 +865,17 @@
       ]
     },
     {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "US State Department calls China's maritime activity off Taiwan's east coast deeply destabilising.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/us-says-chinas-maritime-actions-taiwan-deeply-destabilising-6448331"
+        }
+      ]
+    },
+    {
       "date": "Jun",
       "kind": "official",
       "text": "NMESIS and MADIS systems first arrive with Okinawa-based Marine unit.",
@@ -693,6 +916,28 @@
         {
           "name": "CNBC World",
           "url": "https://www.cnbc.com/2026/10/09/taiwan-trump-china-militia-boat-tsmc-.html"
+        }
+      ]
+    },
+    {
+      "date": "Apr",
+      "kind": "media",
+      "text": "Taiwanese barista Lin Shao-hsing wins the World Latte Art Championship; the event's website later drops references to Taiwan.",
+      "sources": [
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com/en/is-china-seeking-to-restrict-taiwan-s-cultural-presence/a-79610947?maca=en-rss-en-world-4025-rdf"
+        }
+      ]
+    },
+    {
+      "date": "Jun",
+      "kind": "official",
+      "text": "Britain, France, Germany and the US jointly express concern over Chinese activity off Taiwan's east coast.",
+      "sources": [
+        {
+          "name": "CNA Singapore",
+          "url": "https://www.channelnewsasia.com/east-asia/us-says-chinas-maritime-actions-taiwan-deeply-destabilising-6448331"
         }
       ]
     }
@@ -817,8 +1062,32 @@
       "what": "Former US officials warn Washington's transactional approach puts the Indo-Pacific at risk, citing sharply increased US ",
       "url": "https://www.scmp.com/news/us/article/3370204/washingtons-transactional-taiwan-policy-puts-indo-pacific-risk-ex-us-officials-warn?utm_source=rss_feed",
       "date": "8 Oct"
+    },
+    {
+      "who": "DW News",
+      "what": "China's Ministry of Foreign Affairs dismissed the Zhang spying case as hype over so-called 'Chinese spies', without addr",
+      "url": "https://www.dw.com/en/is-china-seeking-to-restrict-taiwan-s-cultural-presence/a-79610947?maca=en-rss-en-world-4025-rdf",
+      "date": "9 Oct"
+    },
+    {
+      "who": "CNA Singapore",
+      "what": "The US State Department called China's maritime activity off Taiwan's east coast deeply destabilising, saying it undermi",
+      "url": "https://www.channelnewsasia.com/east-asia/us-says-chinas-maritime-actions-taiwan-deeply-destabilising-6448331",
+      "date": "10 Oct"
+    },
+    {
+      "who": "ISW",
+      "what": "Taiwanese prosecutors charged 10 people on 6 October with reselling export-controlled semiconductor chips to China from ",
+      "url": "https://understandingwar.org/research/china-taiwan/china-taiwan-update-october-9-2026/",
+      "date": "9 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "Taiwan's former president Tsai Ing-wen began a weeklong US visit the same day foreign minister Lin Chia-lung attended th",
+      "url": "https://www.scmp.com/news/china/politics/article/3370402/will-taiwan-issue-derail-washington-and-beijings-latest-reset-analysts-are-sceptical?utm_source=rss_feed",
+      "date": "10 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "US judge denies bail to alleged Chinese spy as Taiwan tensions widen"
+  "headline": "China dismisses Taiwan spy case as Washington brands its maritime pressure destabilising"
 }

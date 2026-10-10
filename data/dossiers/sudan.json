@@ -1,6 +1,6 @@
 {
   "slug": "sudan",
-  "updatedAt": "2026-10-09T19:28+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,16 +19,16 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Sudan's army (SAF) and the RSF remain at war into a fourth year. SAF has launched its largest North Kordofan offensive since July, capturing Sodari, while the RSF seized Blue Nile's Jabal Kadam garrison and keeps fighting near En Nahud. Army chief Burhan has rejected negotiations, vowing to retake all RSF territory. The UN Security Council renewed Darfur's arms embargo but blocked a US bid to widen it nationwide after Russia and China objected. FEWS NET warns famine risk has spread into parts of South Darfur amid drought and conflict.",
+  "stand": "Sudan's army (SAF) and the RSF remain at war into a fourth year. The RSF has opened a new front along the Ethiopian border, pushing toward Damazin in Blue Nile, where a drone strike killed 30 displaced people. Sudan accuses Ethiopia of harbouring RSF fighters; Ethiopia denies it. SAF also fights in North Kordofan, having captured Sodari, and continues clashes near En Nahud. Burhan has rejected negotiations, vowing to retake all RSF territory. The UN Security Council renewed Darfur's arms embargo but blocked a wider US sanctions bid.",
   "figures": [
     {
       "label": "War dead (cumulative)",
-      "value": "at least 59,000 killed",
+      "value": "more than 200,000 killed",
       "color": "#f59e0b",
       "src": {
-        "name": "The Hindu",
-        "url": "https://www.thehindu.com/news/international/us-envoy-holds-rare-meeting-with-sudans-top-general-in-push-to-seek-end-to-fighting/article71549759.ece",
-        "date": "6 Oct"
+        "name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/10/9/drone-strike-kills-30-people-in-sudans-blue-nile-region?traffic_source=rss",
+        "date": "9 Oct"
       }
     },
     {
@@ -435,6 +435,54 @@
           "date": "9 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "An RSF drone strike on Wad al-Mahi province, Blue Nile, killed 26 women and four children and wounded dozens more.",
+      "by": "Says: Wad al-Mahi Governor Mahjoub Al-Sheikh.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/drone-strike-kills-30-people-in-sudans-blue-nile-region?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Sudan accuses Ethiopia of harbouring RSF fighters and bases, and the governor says the Blue Nile drone strike was launched from inside Ethiopia.",
+      "by": "Says: Sudan government; Governor Mahjoub Al-Sheikh (drone launched from inside Ethiopia, per AFP). Denies: Ethiopia has denied the allegations.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/drone-strike-kills-30-people-in-sudans-blue-nile-region?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Nearly 100,000 people have been displaced within Blue Nile state so far in 2026.",
+      "by": "Says: United Nations figures, cited by Al Jazeera.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/drone-strike-kills-30-people-in-sudans-blue-nile-region?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The RSF's offensive toward Damazin risks forcing Sudan's army to defend both the Blue Nile and Kordofan fronts at once.",
+      "by": "Says: Al Jazeera Sudan correspondent Wadah Al-Tahir, with AFP.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/drone-strike-kills-30-people-in-sudans-blue-nile-region?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -627,6 +675,17 @@
       ]
     },
     {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "RSF drone strike kills 30 displaced people, mostly women, in Wad al-Mahi, Blue Nile, near Damazin.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/drone-strike-kills-30-people-in-sudans-blue-nile-region?traffic_source=rss"
+        }
+      ]
+    },
+    {
       "date": "late 2024",
       "kind": "media",
       "text": "RSF commander Algoney Dagalo attended a Hague peace conference under the false name \"Ahmed Musa\" while on a US sanctions list.",
@@ -733,8 +792,14 @@
       "what": "Qatar Charity launches a 50-truck humanitarian bridge of medicines and medical supplies from Qatar to Sudan.",
       "url": "https://reliefweb.int/report/sudan/qatar-charity-launches-humanitarian-bridge-qatar-sudan-enar",
       "date": "7 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "An RSF drone strike on Wad al-Mahi province, Blue Nile, killed 26 women and four children and wounded dozens more.",
+      "url": "https://www.aljazeera.com/news/2026/10/9/drone-strike-kills-30-people-in-sudans-blue-nile-region?traffic_source=rss",
+      "date": "9 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "UN renews Darfur embargo as famine risk spreads and Kordofan fighting escalates"
+  "headline": "RSF drone strike kills 30 displaced civilians in Blue Nile"
 }

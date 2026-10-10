@@ -1,6 +1,6 @@
 {
   "slug": "ukraine-front",
-  "updatedAt": "2026-10-09T19:28+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Russia and Ukraine continue exchanging long-range strikes as a fifth winter nears. A Russian bomb attack on two buses in Kramatorsk killed at least 30 people on 8 October, days after a strike on a Pryluky apartment block killed 22, including five children. Zelensky calls the attacks deliberate terror and seeks Patriot interceptors; Ukraine says it struck Russian refineries in response. South Korea is recalling its ambassador to Kyiv over a North Korean POW dispute. India, Turkey, Egypt and the US have proposed peace talks; Moscow has committed to nothing.",
+  "stand": "Russia and Ukraine continue exchanging long-range strikes. Zelensky says 78 were killed and 215 wounded across Ukraine in two days, after the Kramatorsk and Pryluky bombings. Putin told Trump that Ukrainian strikes during Russia's elections make an immediate resumption of peace talks unlikely; Witkoff and Kushner push new proposals and plan a Moscow visit this month. Kyiv is widening strikes to Russian AI data centres and missile plants. In Donetsk, Ukraine's Vivaldi offensive disputes Putin's claimed September gains. South Korea is recalling its Kyiv ambassador over a POW dispute.",
   "figures": [
     {
       "label": "Trains evacuated in September due to drone attacks",
@@ -133,13 +133,18 @@
     },
     {
       "status": "confirmed",
-      "text": "Putin acknowledged Ukrainian refinery strikes have cost Russia around 1% of GDP, saying Ukraine only partially achieved its aim of damaging the economy.",
-      "by": "Says: President Vladimir Putin, at the Valdai Club forum.",
+      "text": "Putin told Trump that Ukrainian drone strikes on Moscow during Russia's September elections make an immediate resumption of trilateral peace talks unlikely.",
+      "by": "Says: Kremlin foreign policy aide Yuri Ushakov, relaying the Trump-Putin call.",
       "sources": [
         {
           "name": "ABC News",
           "url": "https://abcnews.com/International/wireStory/ukraine-claims-attacks-half-russias-oil-refining-capacity-136996326",
           "date": "1 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/10/putin-tells-trump-peace-talks-are-unlikely-cites-ukraine-drone-attacks?traffic_source=rss",
+          "date": "10 Oct"
         }
       ]
     },
@@ -619,7 +624,7 @@
     },
     {
       "status": "confirmed",
-      "text": "A Ukrainian drone attack damaged a Yandex data centre in Russia's Ryazan region, taking it offline and causing website outages in Russia.",
+      "text": "A second Ukrainian strike in as many days partly disabled Yandex's Kaluga data centre, after an earlier attack took its Ryazan AI-supercomputer hub offline; Kyiv is widening its campaign to Russia's AI infrastructure.",
       "by": "Says: Yandex, company statement.",
       "sources": [
         {
@@ -631,6 +636,16 @@
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/8/russia-attack-in-ukraines-kramatorsk-kills-12",
           "date": "8 Oct"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-takes-aim-at-russias-ai-data-infrastructure?traffic_source=rss",
+          "date": "9 Oct"
+        },
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/russian-strikes-kill-2-ukraine-kyiv-struggles-counter-137121911",
+          "date": "9 Oct"
         }
       ]
     },
@@ -660,6 +675,126 @@
           "name": "Guardian",
           "url": "https://www.theguardian.com/world/2026/oct/08/russian-attack-buses-ukraine-frontline-kramatorsk",
           "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Trump announced that Russia agreed to deliver more than 300,000 tonnes of diesel to American and global markets, a deal Zelensky called a gift to Putin.",
+      "by": "Says: US President Donald Trump. Says: President Volodymyr Zelenskyy — calls it a gift to Putin funding the war against Ukraine.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/10/putin-tells-trump-peace-talks-are-unlikely-cites-ukraine-drone-attacks?traffic_source=rss",
+          "date": "10 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "US envoys Witkoff and Kushner are pushing new proposals to end the war, presented to Trump and UK, French and German security advisers plus NATO/EU officials, and plan to visit Moscow this month.",
+      "by": "Says: Axios, citing American and Ukrainian sources.",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/news/2026/10/09/witkoff-and-kushner-have-new-ideas-to-end-russia-s-war-in-ukraine-and-plan-to-visit-moscow-this-month-axios-reports",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The US-mediated Washington talks on 9-10 October will cover security guarantees for Ukraine and a postwar reconstruction plan, broader than earlier reports of air-defence talks alone, with a European team also joining.",
+      "by": "Says: unnamed US officials, per AFP (via Tagesschau).",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/europa/ukraine-trump-angriffe-100.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Zelensky says 78 people were killed and 215 wounded in Russian attacks across Ukraine over the two days before 9 October.",
+      "by": "Says: President Volodymyr Zelenskyy.",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/europa/ukraine-trump-angriffe-100.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Ukraine's military says it struck a missile-component factory in Tver region, an ICBM-disassembly centre in Nizhny Novgorod, and the Ukhta oil refinery 1,900km inside Russia.",
+      "by": "Says: Ukraine's General Staff; President Volodymyr Zelenskyy (Ukhta refinery). Not independently verified.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-takes-aim-at-russias-ai-data-infrastructure?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Putin claims Russia captured 1,300 sq km of Ukraine in September; an independent monitor says Russia actually lost around 80 sq km that month, as Ukraine's Operation Vivaldi reclaims ground near Lyman.",
+      "by": "Says: President Vladimir Putin — Russia gained 1,300 sq km in September. Denies: Institute for the Study of War — found Russia lost territory that month, using geolocated open-source data.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-pushes-russia-back-in-donetsk-as-military-civilian-casualties-soar?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Ukraine's military says Russian casualties hit a 2026 monthly record of 46,230 in September, with more than 70% confirmed kills, and that total Russian dead and wounded since 2022 reached 1,545,950 by 7 October.",
+      "by": "Says: Ukraine's military / General Staff. No independent verification in sources reviewed.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-pushes-russia-back-in-donetsk-as-military-civilian-casualties-soar?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Germany's foreign minister accuses Putin of boundless cruelty over recent civilian strikes and says Berlin will significantly tighten sanctions on Russia's war economy and its backers.",
+      "by": "Says: German Foreign Minister Johann Wadephul.",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/europa/ukraine-trump-angriffe-100.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Ukrainian attack on Russia's Belgorod region killed two people and wounded twelve, regional officials said.",
+      "by": "Says: Belgorod regional emergency headquarters; Governor Alexander Shuvayev.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/russian-strikes-kill-2-ukraine-kyiv-struggles-counter-137121911",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Ukrainian drone attack wounded nine people in Russia's Kaluga region, the regional governor said.",
+      "by": "Says: Kaluga Governor Vladislav Shapsha.",
+      "sources": [
+        {
+          "name": "ABC News",
+          "url": "https://abcnews.com/International/wireStory/russian-strikes-kill-2-ukraine-kyiv-struggles-counter-137121911",
+          "date": "9 Oct"
         }
       ]
     }
@@ -983,6 +1118,17 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Merz visits Kyiv again, announcing a 1.3bn-euro military aid package and signing agreements worth 8.5bn euros.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-pushes-russia-back-in-donetsk-as-military-civilian-casualties-soar?traffic_source=rss"
+        }
+      ]
+    },
+    {
       "date": "8 Oct",
       "kind": "official",
       "text": "Russian guided aerial bombs strike the 'Intellect' gymnasium in Kushuhum, Zaporizhzhia region, for a second time, causing significant damage.",
@@ -1115,6 +1261,17 @@
       ]
     },
     {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Witkoff and Kushner present new proposals to end the war to Trump at the White House, with UK, French and German security advisers and NATO/EU representatives attending.",
+      "sources": [
+        {
+          "name": "Meduza",
+          "url": "https://meduza.io/en/news/2026/10/09/witkoff-and-kushner-have-new-ideas-to-end-russia-s-war-in-ukraine-and-plan-to-visit-moscow-this-month-axios-reports"
+        }
+      ]
+    },
+    {
       "date": "9 Oct",
       "kind": "official",
       "text": "A Ukrainian delegation is due to meet US officials Jared Kushner and Steve Witkoff for two days to discuss strengthening Ukraine's air defences.",
@@ -1122,6 +1279,72 @@
         {
           "name": "NPR News",
           "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "Putin tells Trump by phone that Ukrainian drone strikes during Russia's elections make an immediate resumption of peace talks unlikely.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/10/putin-tells-trump-peace-talks-are-unlikely-cites-ukraine-drone-attacks?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "Trump announces Russia will deliver over 300,000 tonnes of diesel to US and global markets; Zelensky calls it a gift to Putin.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/10/putin-tells-trump-peace-talks-are-unlikely-cites-ukraine-drone-attacks?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "Ukrainian drones partly disable Yandex's Kaluga data centre, a day after knocking its Ryazan AI-supercomputer hub offline.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-takes-aim-at-russias-ai-data-infrastructure?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "Zelensky says Russian attacks killed 78 people and wounded 215 across Ukraine over the preceding two days.",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/europa/ukraine-trump-angriffe-100.html"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "Ukraine's military says it struck Russian missile-production sites in Tver and Nizhny Novgorod regions and the Ukhta oil refinery, 1,900km from the border.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-takes-aim-at-russias-ai-data-infrastructure?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "reaction",
+      "text": "German Foreign Minister Wadephul accuses Putin of boundless cruelty and vows tougher EU sanctions on Russia's war economy.",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/europa/ukraine-trump-angriffe-100.html"
         }
       ]
     }
@@ -1390,8 +1613,44 @@
       "what": "The UK opens its first dedicated industry business centre in Kyiv, the Kyiv Business Centre, to deepen UK-Ukraine defenc",
       "url": "https://www.gov.uk/government/news/new-kyiv-business-centre-opens-in-ukraine",
       "date": "8 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Putin told Trump that Ukrainian drone strikes on Moscow during Russia's September elections make an immediate resumption",
+      "url": "https://www.aljazeera.com/news/2026/10/10/putin-tells-trump-peace-talks-are-unlikely-cites-ukraine-drone-attacks?traffic_source=rss",
+      "date": "10 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "A second Ukrainian strike in as many days partly disabled Yandex's Kaluga data centre, after an earlier attack took its ",
+      "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-takes-aim-at-russias-ai-data-infrastructure?traffic_source=rss",
+      "date": "9 Oct"
+    },
+    {
+      "who": "ABC News",
+      "what": "A second Ukrainian strike in as many days partly disabled Yandex's Kaluga data centre, after an earlier attack took its ",
+      "url": "https://abcnews.com/International/wireStory/russian-strikes-kill-2-ukraine-kyiv-struggles-counter-137121911",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Meduza",
+      "what": "US envoys Witkoff and Kushner are pushing new proposals to end the war, presented to Trump and UK, French and German sec",
+      "url": "https://meduza.io/en/news/2026/10/09/witkoff-and-kushner-have-new-ideas-to-end-russia-s-war-in-ukraine-and-plan-to-visit-moscow-this-month-axios-reports",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Tagesschau",
+      "what": "The US-mediated Washington talks on 9-10 October will cover security guarantees for Ukraine and a postwar reconstruction",
+      "url": "https://www.tagesschau.de/ausland/europa/ukraine-trump-angriffe-100.html",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Putin claims Russia captured 1,300 sq km of Ukraine in September; an independent monitor says Russia actually lost aroun",
+      "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-pushes-russia-back-in-donetsk-as-military-civilian-casualties-soar?traffic_source=rss",
+      "date": "9 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Russia kills dozens in Kramatorsk bus strike as death tolls climb"
+  "headline": "Putin rules out quick peace talks as strikes hit Russian AI hubs"
 }

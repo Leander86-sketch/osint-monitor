@@ -1,6 +1,6 @@
 {
   "slug": "gaza",
-  "updatedAt": "2026-10-09T19:28+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -177,13 +177,18 @@
     },
     {
       "status": "disputed",
-      "text": "Aid agencies say Israel blocks essential shelter and reconstruction items as dual-use; Israel says it is meeting its obligations.",
-      "by": "Says: NRC and the Shelter Cluster say Israel blocks dual-use items. Denies: Israel/COGAT says about 600 trucks/day enter and it is meeting its obligations.",
+      "text": "Aid agencies say Israel blocks essential shelter and reconstruction items as dual-use, including about 8,600 IOM emergency shelter kits still turned away at crossings; Israel says it is meeting its obligations.",
+      "by": "Says: NRC, Shelter Cluster and IOM say Israel blocks dual-use items, including 8,600 shelter kits. Denies: Israel/COGAT says about 600 trucks/day enter and it is meeting its obligations.",
       "sources": [
         {
           "name": "Al-Monitor (Reuters)",
           "url": "https://www.al-monitor.com/originals/2026/10/explainer-one-year-trumps-gaza-plan-has-not-stopped-israeli-fire-or-disarmed",
           "date": "6 Oct"
+        },
+        {
+          "name": "ReliefWeb/IOM",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/nearly-2-million-gaza-need-urgent-shelter-assistance-winter-looms-iom-chief-warns",
+          "date": "9 Oct 2026"
         }
       ]
     },
@@ -345,13 +350,18 @@
     },
     {
       "status": "confirmed",
-      "text": "The number of Gaza structures classed as completely destroyed grew 9% since the ceasefire was declared, as demolition has continued.",
+      "text": "Unosat's latest assessment, from 16 June, finds 82% of Gaza's structures (201,290) damaged, including 134,422 completely destroyed and 328,627 housing units affected; the completely-destroyed count grew 9% since the ceasefire.",
       "by": "Says: Unosat (UN satellite centre).",
       "sources": [
         {
           "name": "Folha de S.Paulo",
           "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml",
           "date": "Oct 2026"
+        },
+        {
+          "name": "Folha de S.Paulo, citing Unosat",
+          "url": "https://www1.folha.uol.com.br/mundo/2026/10/faixa-de-gaza-tem-82-das-construcoes-danificadas-tres-anos-apos-7-de-outubro-veja-fotos-de-antes-e-depois.shtml",
+          "date": "9 Oct 2026"
         }
       ]
     },
@@ -537,13 +547,18 @@
     },
     {
       "status": "confirmed",
-      "text": "The UN Commission of Inquiry has twice concluded, in September 2025 and again in June 2026, that Israel has committed genocide in Gaza.",
-      "by": "Says: UN Commission of Inquiry.",
+      "text": "The UN Commission of Inquiry, chaired by Navi Pillay, concluded in September 2025 that Israel committed genocide in Gaza, naming Netanyahu and then-Defence Minister Yoav Gallant for inciting genocide; Israel calls the findings distorted and false.",
+      "by": "Says: UN Commission of Inquiry, chaired by Navi Pillay. Denies: Israel dismissed the findings as distorted and false.",
       "sources": [
         {
           "name": "ReliefWeb",
           "url": "https://reliefweb.int/report/occupied-palestinian-territory/gaza-ceasefire-exists-name-only-say-more-100-organizations",
           "date": "9 Oct"
+        },
+        {
+          "name": "Fox News World",
+          "url": "https://www.foxnews.com/world/nobel-peace-prize-awarded-un-jurist-accused-israel-committing-genocide-gaza",
+          "date": "9 Oct 2026"
         }
       ]
     },
@@ -666,6 +681,90 @@
           "date": "8 Oct"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "A conservative WHO estimate finds roughly 24% of Gaza's wounded have life-changing injuries requiring long-term rehabilitation, a quarter of them children.",
+      "by": "Says: World Health Organization (WHO).",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/gaza-ceasefire-exists-in-name-only-more-than-100-ngos-say",
+          "date": "9 Oct 2026"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Nearly all of Gaza's population, almost 2 million people, still need shelter assistance one year after the ceasefire, with only 17% of winter shelter needs met as a fourth hard winter and El Niño rains approach.",
+      "by": "Says: International Organization for Migration (Director General Amy Pope).",
+      "sources": [
+        {
+          "name": "ReliefWeb/IOM",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/nearly-2-million-gaza-need-urgent-shelter-assistance-winter-looms-iom-chief-warns",
+          "date": "9 Oct 2026"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "More than 3,600 Gaza structures were identified in August as dangerous and at risk of collapse; dozens were killed in Gaza City last month when a war-damaged building collapsed.",
+      "by": "Says: IOM and partner assessment (AIOCP).",
+      "sources": [
+        {
+          "name": "ReliefWeb/IOM",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/nearly-2-million-gaza-need-urgent-shelter-assistance-winter-looms-iom-chief-warns",
+          "date": "9 Oct 2026"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "UNESCO has verified damage to 164 Gaza cultural sites since October 2023, including 128 buildings of historical or artistic interest and 14 religious sites.",
+      "by": "Says: UNESCO.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/gallery/2026/10/9/gaza-before-and-after-a-city-transformed-by-war",
+          "date": "9 Oct 2026"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "UNRWA has recorded 394 colleagues killed in Gaza since the war began — 311 UNRWA personnel and 83 others supporting UNRWA — as of 6 October.",
+      "by": "Says: UNRWA.",
+      "sources": [
+        {
+          "name": "ReliefWeb/UNRWA Situation Report #236",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/unrwa-situation-report-236-humanitarian-crisis-gaza-strip-and-occupied-west-bank-including-east-jerusalem-enar",
+          "date": "9 Oct 2026"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "90% of Gaza's population face frequent, unpredictable disruptions to safe drinking water, up from 84% the previous month.",
+      "by": "Says: WASH Cluster, Light Touch Monitoring Survey.",
+      "sources": [
+        {
+          "name": "ReliefWeb/UNRWA Situation Report #236",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/unrwa-situation-report-236-humanitarian-crisis-gaza-strip-and-occupied-west-bank-including-east-jerusalem-enar",
+          "date": "9 Oct 2026"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "PHRI says Israel continues to block the Gaza–West Bank medical evacuation corridor, including East Jerusalem; it has tracked more than a dozen children who died awaiting evacuation since the ceasefire.",
+      "by": "Says: Physicians for Human Rights Israel (PHRI).",
+      "sources": [
+        {
+          "name": "ReliefWeb/PHRI",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/israels-genocide-gaza-persists-one-year-so-called-ceasefire",
+          "date": "9 Oct 2026"
+        }
+      ]
     }
   ],
   "places": [],
@@ -700,6 +799,17 @@
         {
           "name": "Folha SP",
           "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/israel-lista-mortos-em-gaza-que-seriam-combatentes-disfarcados-de-jornalistas.shtml"
+        }
+      ]
+    },
+    {
+      "date": "2 Oct 2026",
+      "kind": "media",
+      "text": "Nasser Medical Complex runs out of syringes, PHRI reports.",
+      "sources": [
+        {
+          "name": "ReliefWeb/PHRI",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/israels-genocide-gaza-persists-one-year-so-called-ceasefire"
         }
       ]
     },
@@ -781,6 +891,17 @@
         {
           "name": "The Guardian",
           "url": "https://www.theguardian.com/world/2026/oct/06/former-un-food-agency-official-fao-benjamin-davis-hunger-gaza"
+        }
+      ]
+    },
+    {
+      "date": "6 Oct 2026",
+      "kind": "official",
+      "text": "UNRWA records 394 colleagues killed in Gaza since the war began.",
+      "sources": [
+        {
+          "name": "ReliefWeb/UNRWA Situation Report #236",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/unrwa-situation-report-236-humanitarian-crisis-gaza-strip-and-occupied-west-bank-including-east-jerusalem-enar"
         }
       ]
     },
@@ -880,6 +1001,32 @@
         {
           "name": "TASS",
           "url": "https://tass.com/world/2199597"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct 2026",
+      "kind": "reaction",
+      "text": "Navi Pillay, who chaired the UN inquiry that found Israel committed genocide in Gaza, wins the 2026 Nobel Peace Prize; Israel says the award legitimises anti-Israel hatred.",
+      "sources": [
+        {
+          "name": "Folha de S.Paulo",
+          "url": "https://www1.folha.uol.com.br/mundo/2026/10/nobel-da-paz-premia-navanethem-pillay.shtml"
+        },
+        {
+          "name": "Fox News World",
+          "url": "https://www.foxnews.com/world/nobel-peace-prize-awarded-un-jurist-accused-israel-committing-genocide-gaza"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct 2026",
+      "kind": "media",
+      "text": "More than 80% of Gaza's buildings have been damaged or destroyed since October 2023, the Palestinian Central Bureau of Statistics says.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/gallery/2026/10/9/gaza-before-and-after-a-city-transformed-by-war"
         }
       ]
     },
@@ -1012,6 +1159,28 @@
         {
           "name": "Folha de S.Paulo",
           "url": "https://redir.folha.com.br/redir/online/mundo/rss091/*https://www1.folha.uol.com.br/mundo/2026/10/um-ano-apos-cessar-fogo-mortes-continuam-em-gaza-e-impasse-trava-pos-guerra.shtml"
+        }
+      ]
+    },
+    {
+      "date": "Sept 2026",
+      "kind": "media",
+      "text": "Dozens are killed in Gaza City when a war-damaged building collapses.",
+      "sources": [
+        {
+          "name": "ReliefWeb/IOM",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/nearly-2-million-gaza-need-urgent-shelter-assistance-winter-looms-iom-chief-warns"
+        }
+      ]
+    },
+    {
+      "date": "28 Sept 2026",
+      "kind": "official",
+      "text": "UN Humanitarian Coordinator Ramiz Alakbarov warns the Security Council that restrictions on entry of critical items impede winter preparations in Gaza.",
+      "sources": [
+        {
+          "name": "ReliefWeb/UNRWA Situation Report #236",
+          "url": "https://reliefweb.int/report/occupied-palestinian-territory/unrwa-situation-report-236-humanitarian-crisis-gaza-strip-and-occupied-west-bank-including-east-jerusalem-enar"
         }
       ]
     },
@@ -1195,8 +1364,50 @@
       "what": "Doctors of the World says 84% of Gaza children under five suffered fever, diarrhoea, or respiratory or skin illness in t",
       "url": "https://www.nrc.nl/nieuws/2026/10/08/bijna-ieder-kind-onder-de-vijf-jaar-in-gaza-was-in-de-afgelopen-drie-maanden-ziek-en-hun-herstel-wordt-opzettelijk-ondermijnd-a4938471",
       "date": "8 Oct"
+    },
+    {
+      "who": "ReliefWeb/IOM",
+      "what": "Aid agencies say Israel blocks essential shelter and reconstruction items as dual-use, including about 8,600 IOM emergen",
+      "url": "https://reliefweb.int/report/occupied-palestinian-territory/nearly-2-million-gaza-need-urgent-shelter-assistance-winter-looms-iom-chief-warns",
+      "date": "9 Oct 2026"
+    },
+    {
+      "who": "Fox News World",
+      "what": "The UN Commission of Inquiry, chaired by Navi Pillay, concluded in September 2025 that Israel committed genocide in Gaza",
+      "url": "https://www.foxnews.com/world/nobel-peace-prize-awarded-un-jurist-accused-israel-committing-genocide-gaza",
+      "date": "9 Oct 2026"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "A conservative WHO estimate finds roughly 24% of Gaza's wounded have life-changing injuries requiring long-term rehabili",
+      "url": "https://www.aljazeera.com/news/2026/10/9/gaza-ceasefire-exists-in-name-only-more-than-100-ngos-say",
+      "date": "9 Oct 2026"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "UNESCO has verified damage to 164 Gaza cultural sites since October 2023, including 128 buildings of historical or artis",
+      "url": "https://www.aljazeera.com/gallery/2026/10/9/gaza-before-and-after-a-city-transformed-by-war",
+      "date": "9 Oct 2026"
+    },
+    {
+      "who": "ReliefWeb/UNRWA Situation Report #236",
+      "what": "UNRWA has recorded 394 colleagues killed in Gaza since the war began — 311 UNRWA personnel and 83 others supporting UNRW",
+      "url": "https://reliefweb.int/report/occupied-palestinian-territory/unrwa-situation-report-236-humanitarian-crisis-gaza-strip-and-occupied-west-bank-including-east-jerusalem-enar",
+      "date": "9 Oct 2026"
+    },
+    {
+      "who": "ReliefWeb/PHRI",
+      "what": "PHRI says Israel continues to block the Gaza–West Bank medical evacuation corridor, including East Jerusalem; it has tra",
+      "url": "https://reliefweb.int/report/occupied-palestinian-territory/israels-genocide-gaza-persists-one-year-so-called-ceasefire",
+      "date": "9 Oct 2026"
+    },
+    {
+      "who": "Folha de S.Paulo",
+      "what": "Navi Pillay, who chaired the UN inquiry that found Israel committed genocide in Gaza, wins the 2026 Nobel Peace Prize; I",
+      "url": "https://www1.folha.uol.com.br/mundo/2026/10/nobel-da-paz-premia-navanethem-pillay.shtml",
+      "date": "9 Oct 2026"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "NGOs say Gaza ceasefire exists only on paper, year on"
+  "headline": "Nobel honours Navi Pillay as NGOs call Gaza truce hollow"
 }

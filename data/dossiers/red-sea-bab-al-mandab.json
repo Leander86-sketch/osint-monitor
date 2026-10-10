@@ -1,6 +1,6 @@
 {
   "slug": "red-sea-bab-al-mandab",
-  "updatedAt": "2026-10-09T19:28+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Yemen's government presses Operation Dawn of Yemen on three fronts; Houthis deny losing Mocha or Dhubab and appear to be nearing Taiz as government forces pull back toward Aden. On 8 October Houthis widened their campaign, striking Riyadh airport and destroying a parked Saudia jet, triggering mass flight suspensions; they threaten to shut Saudi airspace and hit energy plants. Syria is weighing sending troops to help Saudi Arabia. Turkiye and Pakistan, implementing the Mecca pact, say support stays defensive, though Pakistan has reportedly also sent equipment to Aden.",
+  "stand": "Yemen's government presses its counter-offensive toward Bab al-Mandeb and Taiz; Saudi Arabia's ambassador says the strait is cleared, which Houthis deny, saying they repelled an advance from Lahij. Houthi missiles killed three Saudis, including a pilot, at Riyadh airport on 8 October, prompting wider flight suspensions and EU no-fly advisories. UN envoy Hans Grundberg warned Yemen has slid into full-scale war and urged political talks at the Security Council, where Saudi Arabia and Yemen's government pressed for action. Pakistan says its forces in Riyadh remain strictly defensive.",
   "figures": [
     {
       "label": "Coalition fighter jets deployed",
@@ -426,8 +426,8 @@
     },
     {
       "status": "confirmed",
-      "text": "Houthi strikes on Abha and Riyadh's King Khalid airports on 6 and 7 October killed three people and wounded 36.",
-      "by": "Says: Saudi General Authority of Civil Aviation (GACA).",
+      "text": "Saudi authorities confirmed three Saudi nationals, including Saudia pilot Capt Hamoud Ali Alkalthami, were killed in two Houthi attacks on Riyadh's King Khalid airport on 8 October — updating earlier reports of no immediate Saudi confirmation.",
+      "by": "Says: Saudi General Authority of Civil Aviation; Saudia.",
       "sources": [
         {
           "name": "BBC World",
@@ -438,6 +438,16 @@
           "name": "SCMP",
           "url": "https://www.scmp.com/news/world/middle-east/article/3370112/houthi-strikes-saudi-airports-leave-3-dead-dozens-wounded?utm_source=rss_feed",
           "date": "7 Oct"
+        },
+        {
+          "name": "BBC Middle East",
+          "url": "https://www.bbc.co.uk/news/articles/cmz7xe37g5wro?at_medium=RSS&at_campaign=rss",
+          "date": "9 Oct"
+        },
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/09/saudi-us-iran-war-trump-hormuz.html",
+          "date": "9 Oct"
         }
       ]
     },
@@ -580,13 +590,18 @@
     },
     {
       "status": "confirmed",
-      "text": "Lufthansa and Air India suspended flights to Riyadh after the Houthi attacks; almost half of Thursday's departures from Riyadh airport were cancelled.",
-      "by": "Says: Lufthansa and Air India; flight-tracking data via Reuters.",
+      "text": "131 flights to and from Riyadh had been cancelled by Friday afternoon, after hundreds of cancellations the day before — a larger toll than the earlier count of nearly half Thursday's departures — as Lufthansa, three Indian airlines and Etihad suspended or cancelled Riyadh services.",
+      "by": "Says: Flightradar24 data, via Reuters; Lufthansa, Etihad.",
       "sources": [
         {
           "name": "Guardian World",
           "url": "https://www.theguardian.com/world/2026/oct/09/riyadh-airport-flights-suspended-houthis-claim-attack",
           "date": "8 Oct"
+        },
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/eu-aviation-body-widens-saudi-airspace-warning-after-houthi-strikes",
+          "date": "9 Oct"
         }
       ]
     },
@@ -635,6 +650,138 @@
           "name": "DW News",
           "url": "https://www.dw.com/en/how-the-houthi-saudi-conflict-is-affecting-countries-on-africa-s-red-sea-coast-and-beyond/a-79588992?maca=en-rss-en-world-4025-rdf",
           "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "Saudi Arabia's ambassador to Yemen says allied forces have fully cleared the Bab al-Mandeb strait of Houthi fighters; a Houthi spokesperson denies this, saying an advance from Lahij was repelled.",
+      "by": "Says: Saudi ambassador to Yemen Mohammad Al-Jaber. Denies: Houthi spokesperson Ameen Hayyan.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/saudi-envoy-says-allied-yemeni-forces-capture-bab-el-mandeb-strait-houthis-what",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Houthis say they repelled a Saudi-backed advance from Lahij toward Bab al-Mandeb, destroying more than 22 armoured vehicles and killing or wounding dozens, including commanders.",
+      "by": "Says: Houthi spokesperson Ameen Hayyan.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/saudi-envoy-says-allied-yemeni-forces-capture-bab-el-mandeb-strait-houthis-what",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Yemeni military source on the ground said fighting around Bab al-Mandeb remained fierce with limited advances, and that Houthi forces still held nearby Mocha, contradicting the Saudi ambassador's \"cleared\" claim.",
+      "by": "Says: unnamed Yemeni military source, via Reuters.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/saudi-arabia-says-three-killed-airport-yemen-war-expands",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "The UN Special Envoy to Yemen told the Security Council the country has slid back into full-scale war and urged political talks rather than reliance on battlefield gains.",
+      "by": "Says: UN Special Envoy to Yemen Hans Grundberg.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/un-envoy-warns-yemen-has-returned-to-full-scale-war-urges-dialogue?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "At least 46 civilians have been killed and more than 130 injured in Yemen since August, with children bearing a disproportionate toll, the UN says.",
+      "by": "Says: United Nations, via UN Special Envoy's briefing.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/un-envoy-warns-yemen-has-returned-to-full-scale-war-urges-dialogue?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Saudi Arabia and Yemen's government asked the UN Security Council to act against the Houthis, including reducing the flow of funding, weapons and technology to the group.",
+      "by": "Says: Saudi UN envoy Abdulaziz al-Wasil; Yemen's UN envoy Abdullah Ali Fadhel al-Saadi.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/saudi-arabia-reopens-riyadh-airport-after-houthi-attack-kills-three?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "France and Saudi Arabia are exploring ways for the French military to help protect the Yanbu oil terminal on Saudi Arabia's Red Sea coast.",
+      "by": "Says: unnamed sources, via Reuters.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/09/saudi-us-iran-war-trump-hormuz.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Houthi military spokesman suggested flights into or out of Riyadh airport, including humanitarian flights, will need authorisation from a Houthi coordinating body in Sanaa.",
+      "by": "Says: Houthi military spokesman Yahya Saree.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/saudi-arabia-says-three-killed-airport-yemen-war-expands",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "EU aviation regulator EASA widened its advisory against flying in Saudi airspace to cover an area in the northwest, and flight-risk body OPSGROUP told members to avoid Saudi Arabia entirely, after the Riyadh airport attacks.",
+      "by": "Says: European Union Aviation Safety Agency (EASA); OPSGROUP.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/eu-aviation-body-widens-saudi-airspace-warning-after-houthi-strikes",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The Saudi-led coalition said it destroyed three Houthi missile launch platforms and vowed a firm response to further attacks on civilians.",
+      "by": "Says: Saudi-led coalition spokesperson Maj Gen Turki al-Malki.",
+      "sources": [
+        {
+          "name": "CNBC World",
+          "url": "https://www.cnbc.com/2026/10/09/saudi-us-iran-war-trump-hormuz.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Across Yemen overall, more than 22 million people need humanitarian support and about 5.2 million are displaced, UNHCR says, on top of the 200,000-plus newly displaced by the past month's fighting.",
+      "by": "Says: UNHCR, via ReliefWeb/MSF.",
+      "sources": [
+        {
+          "name": "ReliefWeb",
+          "url": "https://reliefweb.int/report/yemen/five-things-know-about-situation-south-yemen-today",
+          "date": "9 Oct"
         }
       ]
     }
@@ -1119,6 +1266,50 @@
       ]
     },
     {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "Saudi civil aviation authority confirms three Saudi nationals, including a Saudia pilot, were killed in Thursday's attacks on Riyadh airport.",
+      "sources": [
+        {
+          "name": "BBC Middle East",
+          "url": "https://www.bbc.co.uk/news/articles/cmz7xe37g5wro?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "denial",
+      "text": "Saudi ambassador to Yemen claims Bab al-Mandeb is cleared of Houthi forces; Houthi spokesperson Ameen Hayyan denies it, saying an advance from Lahij was repelled.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/saudi-envoy-says-allied-yemeni-forces-capture-bab-el-mandeb-strait-houthis-what"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "UN Special Envoy Hans Grundberg tells the Security Council Yemen has slid back into full-scale war and urges political talks.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/un-envoy-warns-yemen-has-returned-to-full-scale-war-urges-dialogue?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "EASA widens its no-fly advisory for Saudi airspace and OPSGROUP tells members to avoid Saudi Arabia entirely after the Riyadh airport attacks.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/eu-aviation-body-widens-saudi-airspace-warning-after-houthi-strikes"
+        }
+      ]
+    },
+    {
       "date": "Sep",
       "kind": "media",
       "text": "Houthis sweep down Yemen's Red Sea coast, seizing about 150km of coastline and areas around Bab al-Mandeb.",
@@ -1339,8 +1530,56 @@
       "what": "At least 3,700 refugees have crossed from Yemen into Djibouti since 10 September; UNHCR is preparing to assist another 1",
       "url": "https://www.dw.com/en/how-the-houthi-saudi-conflict-is-affecting-countries-on-africa-s-red-sea-coast-and-beyond/a-79588992?maca=en-rss-en-world-4025-rdf",
       "date": "8 Oct"
+    },
+    {
+      "who": "BBC Middle East",
+      "what": "Saudi authorities confirmed three Saudi nationals, including Saudia pilot Capt Hamoud Ali Alkalthami, were killed in two",
+      "url": "https://www.bbc.co.uk/news/articles/cmz7xe37g5wro?at_medium=RSS&at_campaign=rss",
+      "date": "9 Oct"
+    },
+    {
+      "who": "CNBC World",
+      "what": "Saudi authorities confirmed three Saudi nationals, including Saudia pilot Capt Hamoud Ali Alkalthami, were killed in two",
+      "url": "https://www.cnbc.com/2026/10/09/saudi-us-iran-war-trump-hormuz.html",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "131 flights to and from Riyadh had been cancelled by Friday afternoon, after hundreds of cancellations the day before — ",
+      "url": "https://www.al-monitor.com/originals/2026/10/eu-aviation-body-widens-saudi-airspace-warning-after-houthi-strikes",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Saudi Arabia's ambassador to Yemen says allied forces have fully cleared the Bab al-Mandeb strait of Houthi fighters; a ",
+      "url": "https://www.al-monitor.com/originals/2026/10/saudi-envoy-says-allied-yemeni-forces-capture-bab-el-mandeb-strait-houthis-what",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "A Yemeni military source on the ground said fighting around Bab al-Mandeb remained fierce with limited advances, and tha",
+      "url": "https://www.al-monitor.com/originals/2026/10/saudi-arabia-says-three-killed-airport-yemen-war-expands",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The UN Special Envoy to Yemen told the Security Council the country has slid back into full-scale war and urged politica",
+      "url": "https://www.aljazeera.com/news/2026/10/9/un-envoy-warns-yemen-has-returned-to-full-scale-war-urges-dialogue?traffic_source=rss",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Saudi Arabia and Yemen's government asked the UN Security Council to act against the Houthis, including reducing the flo",
+      "url": "https://www.aljazeera.com/news/2026/10/9/saudi-arabia-reopens-riyadh-airport-after-houthi-attack-kills-three?traffic_source=rss",
+      "date": "9 Oct"
+    },
+    {
+      "who": "ReliefWeb",
+      "what": "Across Yemen overall, more than 22 million people need humanitarian support and about 5.2 million are displaced, UNHCR s",
+      "url": "https://reliefweb.int/report/yemen/five-things-know-about-situation-south-yemen-today",
+      "date": "9 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Houthi missile strike cripples Riyadh airport as flights are suspended"
+  "headline": "Houthi airport strikes kill three Saudis as UN declares full-scale war"
 }

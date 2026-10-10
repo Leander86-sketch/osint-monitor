@@ -1,6 +1,6 @@
 {
   "slug": "russia-plague-irkutsk",
-  "updatedAt": "2026-10-09T19:28+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "WHO",
@@ -15,7 +15,7 @@
       "match": "^AP News"
     }
   ],
-  "stand": "A laboratory technician of the Irkutsk Anti-Plague Institute died in Shelekhov on 1–2 October, two days after admission with severe pneumonia. Rospotrebnadzor calls it \"pneumonia of unknown etiology\", denies a lab accident and a second infection, and says monitoring of all contacts is complete, with nearly 5,000 tests finding no dangerous pathogens. Russia told the WHO no plague case has been registered; Tedros says the WHO still lacks a \"full picture\" and cannot complete a risk assessment. The Kremlin calls most reporting false; Trump doubts a bioweapon was involved.",
+  "stand": "A laboratory technician of the Irkutsk Anti-Plague Institute died in Shelekhov on 1–2 October, two days after admission with pneumonia. Governor Kobzev publicly terms it \"community-acquired pneumonia\", a label Russia had only given the WHO before. Rospotrebnadzor denies a lab accident and a second infection, and says contact monitoring and preventive measures are complete, with nearly 5,000 tests finding no dangerous pathogens. Russia told the WHO no plague case was registered; Tedros says the WHO still lacks a \"full picture\". The Kremlin calls most reporting false; Trump doubts a bioweapon.",
   "figures": [
     {
       "label": "confirmed plague cases",
@@ -170,7 +170,7 @@
     {
       "status": "disputed",
       "text": "The cause of death was pneumonic plague.",
-      "by": "Says: Russian media, Telegram channels, head of Buryatia (later softened to \"may have\"). Denies: Rospotrebnadzor — \"pneumonia of unknown etiology\", no work-related microorganisms in her samples.",
+      "by": "Says: Russian media, Telegram channels, head of Buryatia (later softened to \"may have\"). Denies: Rospotrebnadzor and Governor Kobzev — now diagnosed as \"community-acquired pneumonia\" (previously \"pneumonia of unknown etiology\"); no work-related microorganisms in her samples.",
       "sources": [
         {
           "name": "Meduza",
@@ -181,6 +181,16 @@
           "name": "El País",
           "url": "https://english.elpais.com/international/2026-10-06/what-authorities-have-said-about-plague-alert-after-death-of-a-laboratory-worker-in-russia.html",
           "date": "6 Oct"
+        },
+        {
+          "name": "CNA",
+          "url": "https://www.channelnewsasia.com/world/russia-plague-contact-clear-lab-worker-died-6444601",
+          "date": "8 Oct"
+        },
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/science/article/3370319/russia-lifts-plague-lab-related-measures-should-china-and-world-be-relieved?utm_source=rss_feed",
+          "date": "8 Oct"
         }
       ]
     },
@@ -640,7 +650,7 @@
     },
     {
       "status": "confirmed",
-      "text": "Governor Kobzev: medical monitoring of all contacts of the deceased worker has concluded; no health issues related to infectious disease were detected and the sanitary-epidemiological situation is stable.",
+      "text": "Governor Kobzev: medical monitoring of all contacts has concluded, no health issues related to infectious disease were detected, the situation is stable, and the full range of preventive measures in the region is now complete.",
       "by": "Says: Irkutsk Governor Igor Kobzev.",
       "sources": [
         {
@@ -1323,6 +1333,21 @@
           "url": "https://tass.com/society/2199261"
         }
       ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "Kobzev publicly terms the technician's illness \"community-acquired pneumonia\" and says the region has completed quarantine measures and contact monitoring.",
+      "sources": [
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com/news/china/science/article/3370319/russia-lifts-plague-lab-related-measures-should-china-and-world-be-relieved?utm_source=rss_feed"
+        },
+        {
+          "name": "CNA",
+          "url": "https://www.channelnewsasia.com/world/russia-plague-contact-clear-lab-worker-died-6444601"
+        }
+      ]
     }
   ],
   "background": {
@@ -1604,8 +1629,14 @@
       "what": "Governor Kobzev: medical monitoring of all contacts concluded, no health issues found; \"we passed it in worthy fashion\".",
       "url": "https://www.themoscowtimes.com/2026/10/08/russia-says-checks-following-siberian-plague-lab-death-are-complete-a93926",
       "date": "8 Oct"
+    },
+    {
+      "who": "SCMP",
+      "what": "The cause of death was pneumonic plague.",
+      "url": "https://www.scmp.com/news/china/science/article/3370319/russia-lifts-plague-lab-related-measures-should-china-and-world-be-relieved?utm_source=rss_feed",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "Not medical advice. The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Russia declares contact-tracing complete as plague scare winds down"
+  "headline": "Irkutsk governor declares all plague-scare measures complete"
 }

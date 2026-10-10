@@ -1,6 +1,6 @@
 {
   "slug": "strait-of-hormuz",
-  "updatedAt": "2026-10-09T19:28+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "A new front opened 7 October when multiple projectiles struck tanker Acers off Qatar, inside the Gulf; UKMTO reports casualties. IMO says 24 seafarers have been killed in 93 confirmed Hormuz-area incidents since the war began. Detectable strait transits fell to just seven vessels last week, lowest since July, as Rubio claims the cleared route has reached 80% of pre-war flow. Iran brands any unauthorised new export route hostile, threatening missile, drone or intimidation attacks; IRGC's Mohammadi disputes US claims that oil and ships move freely.",
+  "stand": "Iran's attacks on Hormuz shipping hit a wartime high: IMO counts eleven tankers struck in the week to 4 October, the most since the war began, with five more hit since. The IMO's war toll is now 24 seafarers killed in attacks on 100 ships. CENTCOM says 20 million barrels transited the strait on 7 October, rejecting Iranian closure claims; Kpler puts weekly Hormuz exports at 8.5 million bpd, 40% below pre-war. Iran brands any unauthorised new route hostile; IRGC's Mohammadi claims nightly interdictions and full surveillance.",
   "figures": [
     {
       "label": "IRGC-claimed current flow on US-supervised route",
@@ -347,14 +347,19 @@
       ]
     },
     {
-      "status": "reported",
-      "text": "Maritime security sources tracking incidents say the week of 28 September-5 October saw at least 12 tanker attacks in and around Hormuz, the highest weekly tally since the war began on 28 February.",
-      "by": "Says: three maritime security sources, via Reuters.",
+      "status": "confirmed",
+      "text": "IMO data show eleven tankers were attacked transiting Hormuz in the week to 4 October, the highest weekly tally since the war began; five more ships have been attacked this week.",
+      "by": "Says: International Maritime Organization.",
       "sources": [
         {
           "name": "Al-Monitor/Reuters",
           "url": "https://www.al-monitor.com/originals/2026/10/attacks-tankers-hormuz-hit-highest-any-week-start-iran-war-sources-say",
           "date": "7 Oct"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html",
+          "date": "9 Oct"
         }
       ]
     },
@@ -430,13 +435,18 @@
     },
     {
       "status": "confirmed",
-      "text": "The IMO's cumulative toll for the war stands at 24 seafarers killed in 93 confirmed shipping incidents since 28 February; the previous casualty incident was the 9 September attack on tanker El Gaia, which killed two sailors near Oman's Musandam peninsula.",
+      "text": "The IMO's cumulative war toll is now 24 seafarers killed in attacks on 100 commercial ships in Hormuz, the Persian Gulf and Gulf of Oman, up from the previous count of 93 incidents.",
       "by": "Says: International Maritime Organization.",
       "sources": [
         {
           "name": "BBC",
           "url": "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&at_campaign=rss",
           "date": "8 Oct"
+        },
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html",
+          "date": "9 Oct"
         }
       ]
     },
@@ -545,6 +555,102 @@
           "name": "TASS",
           "url": "https://tass.com/politics/2199259",
           "date": "8 Oct"
+        }
+      ]
+    },
+    {
+      "status": "disputed",
+      "text": "CENTCOM says 20 million barrels of crude transited the Strait of Hormuz, rejecting Iranian claims that the waterway was closed.",
+      "by": "Says: US Central Command. Denies: Iranian claims that the strait is closed.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Iran's Revolutionary Guard says it will not confine its attacks to Hormuz and will pursue ships anywhere in the region that it judges to violate its transit rules.",
+      "by": "Says: Islamic Revolutionary Guard Corps, via Tasnim.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Tanker Gem No. 2 was struck by a projectile off the UAE coast, catching fire; the ship had remained in the Persian Gulf since the war began.",
+      "by": "Says: Marisks, maritime security firm, via CNBC.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "The IRGC says its gas tanker strike hit MT Sunshine, which was attempting to transit the southern Strait of Hormuz via an unauthorised route.",
+      "by": "Says: IRGC, via IRNA/TASS.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199917",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "IRGC Navy political deputy Ali Mohammadi says the Navy has carried out nightly operations against vessels it deems in violation since the war began, claiming complete surveillance of the strait.",
+      "by": "Says: IRGC Navy political deputy Ali Mohammadi, via Fars.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-navy-official-violating-vessels-hormuz-strait-punished-every-night",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A maritime intelligence analyst says Hormuz volumes are recovering but transiting at a time of extremely high maritime risk, as the attack rate climbs alongside the export rebound.",
+      "by": "Says: Michelle Wiese Bockmann, senior maritime intelligence analyst, Windward, via CNBC.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Hormuz disruption has driven a global tanker shortage; chartering a tanker from the US to China now costs roughly as much as a SpaceX Falcon 9 launch.",
+      "by": "Says: Shipbroker Gibson; Vitol CEO Russell Hardy, via gCaptain.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/global-oil-tanker-shortage-is-getting-worse-by-the-day/",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A $15bn plan to revive the Kirkuk-Baniyas pipeline, which would bypass the Strait of Hormuz, advanced in July with MOUs between Iraq, Syria, Chevron, Qatar's UCC Holding and TI Capital; a Reuters probe flags US envoy Thomas Barrack's ties to TI Capital as an ethics concern.",
+      "by": "Says: Reuters investigation, via Al-Monitor.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/trump-envoy-kept-financial-ties-firm-behind-15-billion-hormuz-bypass-oil-pipeline",
+          "date": "9 Oct"
         }
       ]
     }
@@ -746,6 +852,17 @@
         {
           "name": "gCaptain",
           "url": "https://gcaptain.com/lng-trade-through-hormuz-extends-rebound-despite-shipping-risks/"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "official",
+      "text": "IMO data show eleven tankers attacked transiting Hormuz in the week to 4 October, the highest weekly tally of the war.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html"
         }
       ]
     },
@@ -952,6 +1069,17 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "CENTCOM says 20 million barrels of crude have transited the strait, rejecting Iranian claims it is closed.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html"
+        }
+      ]
+    },
+    {
       "date": "8 Oct",
       "kind": "official",
       "text": "IMO says 24 seafarers have been killed in 93 confirmed Hormuz-area incidents since the war began.",
@@ -1062,6 +1190,72 @@
       ]
     },
     {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "Revolutionary Guard says it will not confine attacks to Hormuz, pursuing ships throughout the region.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "Tanker Gem No. 2 struck by a projectile off the UAE coast, catching fire.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "IRGC says it struck gas tanker MT Sunshine in the southern Strait of Hormuz for using an unauthorised route.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199917"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "IRGC Navy's Ali Mohammadi says nightly interdiction operations have run since the war began, claiming full surveillance of the strait.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-navy-official-violating-vessels-hormuz-strait-punished-every-night"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "reaction",
+      "text": "Analyst Michelle Wiese Bockmann says Hormuz volumes are recovering but transiting at extremely high risk.",
+      "sources": [
+        {
+          "name": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "Global tanker shortage pushes US-China charter costs to roughly a SpaceX Falcon 9 launch price, as Hormuz disruption strains the fleet.",
+      "sources": [
+        {
+          "name": "gCaptain",
+          "url": "https://gcaptain.com/global-oil-tanker-shortage-is-getting-worse-by-the-day/"
+        }
+      ]
+    },
+    {
       "date": "Mar",
       "kind": "media",
       "text": "Lloyd's List reports the IRGC had already imposed a toll system on vessel traffic through Hormuz.",
@@ -1069,6 +1263,17 @@
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/5/is-iran-charging-a-toll-to-allow-oil-traffic-through-hormuz?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "Jul",
+      "kind": "media",
+      "text": "Iraq and Syria sign MOUs with a consortium including Chevron, Qatar's UCC Holding and TI Capital to study reviving the Kirkuk-Baniyas pipeline, bypassing Hormuz.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/trump-envoy-kept-financial-ties-firm-behind-15-billion-hormuz-bypass-oil-pipeline"
         }
       ]
     }
@@ -1295,8 +1500,38 @@
       "what": "Russia's foreign ministry says about 30% of global fertiliser trade transits Hormuz, disrupted logistics have cut fertil",
       "url": "https://tass.com/politics/2199259",
       "date": "8 Oct"
+    },
+    {
+      "who": "CNBC",
+      "what": "IMO data show eleven tankers were attacked transiting Hormuz in the week to 4 October, the highest weekly tally since th",
+      "url": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html",
+      "date": "9 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "The IRGC says its gas tanker strike hit MT Sunshine, which was attempting to transit the southern Strait of Hormuz via a",
+      "url": "https://tass.com/world/2199917",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "IRGC Navy political deputy Ali Mohammadi says the Navy has carried out nightly operations against vessels it deems in vi",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-navy-official-violating-vessels-hormuz-strait-punished-every-night",
+      "date": "9 Oct"
+    },
+    {
+      "who": "gCaptain",
+      "what": "Hormuz disruption has driven a global tanker shortage; chartering a tanker from the US to China now costs roughly as muc",
+      "url": "https://gcaptain.com/global-oil-tanker-shortage-is-getting-worse-by-the-day/",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "A $15bn plan to revive the Kirkuk-Baniyas pipeline, which would bypass the Strait of Hormuz, advanced in July with MOUs ",
+      "url": "https://www.al-monitor.com/originals/2026/10/trump-envoy-kept-financial-ties-firm-behind-15-billion-hormuz-bypass-oil-pipeline",
+      "date": "9 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Iran disputes US recovery claims as Hormuz attacks spread to Qatar waters"
+  "headline": "Iran's Hormuz strikes hit wartime high as tanker costs soar"
 }

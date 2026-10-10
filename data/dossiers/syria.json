@@ -1,6 +1,6 @@
 {
   "slug": "syria",
-  "updatedAt": "2026-10-09T19:28+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Israel continues raids in southern Syria; its troops killed a man near a military post on 5 October, and Israeli politician Ayoob Kara called for seizing Druze-majority Sweida. Syria's UN envoy demanded a full Israeli withdrawal. A fuel-price rise in September sparked Syria's biggest protests since Assad's fall; the government has yet to implement a promised lower diesel tier. Syria demanded an independent probe into the Black Sea sinking of the Alfa Watan, which left nine Syrian crew missing. UAE's Eagle Hills is pursuing billions in Syrian tourism investment.",
+  "stand": "Israel is building a new fortified line, \"Sufa 53\", east of the Golan; Syria, Qatar, Jordan and Turkey have condemned it. The IDF says it has set up ten posts in the buffer zone since Assad's fall. The UN's Volker Türk says Israel made 280 incursions into Syria in September, the year's highest, and holds 49 Syrians, some reporting torture. Syria pursues Saudi, Turkish, Emirati and US diplomacy. A September fuel-price rise sparked Syria's biggest protests since Assad's fall. Syria awaits a Black Sea probe into the Alfa Watan sinking.",
   "figures": [
     {
       "label": "UAE-Syria real-estate investment (potential)",
@@ -39,6 +39,16 @@
         "name": "Middle East Eye / HRW",
         "url": "https://www.middleeasteye.net/news/thousands-suspected-islamic-state-members-risk-abuse-iraqi-prisons-warns-rights-group",
         "date": "5 Oct"
+      }
+    },
+    {
+      "label": "Syrians currently detained by Israel",
+      "value": "49",
+      "color": "#f59e0b",
+      "src": {
+        "name": "UN Human Rights Office / Volker Türk",
+        "url": "https://www.middleeasteye.net/live-blog/live-blog-update/un-israeli-forces-made-280-incursions-syria-detain-49-syrians",
+        "date": "9 Oct"
       }
     }
   ],
@@ -299,6 +309,90 @@
           "date": "8 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "Syria's Foreign Ministry condemned Israel for extending control via a new line, dubbed 'Sufa 53', east of the Golan; Qatar, Jordan and Turkey joined the condemnation.",
+      "by": "Says: Syria's Ministry of Foreign Affairs, joined by Qatar, Jordan and Turkey. Denies: not stated; Israel has not commented on the statements.",
+      "sources": [
+        {
+          "name": "Long War Journal",
+          "url": "https://www.longwarjournal.org/archives/2026/10/syria-increases-criticism-of-israeli-actions-continues-diplomatic-outreach.php",
+          "date": "4 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Israel's military said its 210th Division entered Syria after Assad's fall and established a forward security area with ten military posts in the buffer zone.",
+      "by": "Says: Israeli military (IDF).",
+      "sources": [
+        {
+          "name": "Long War Journal",
+          "url": "https://www.longwarjournal.org/archives/2026/10/syria-increases-criticism-of-israeli-actions-continues-diplomatic-outreach.php",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Syria's UN ambassador reaffirmed that the Golan remains Syrian territory and said Israeli measures to annex it are null and void under international law.",
+      "by": "Says: Ibrahim Olabi, Syrian Ambassador to the UN.",
+      "sources": [
+        {
+          "name": "Long War Journal",
+          "url": "https://www.longwarjournal.org/archives/2026/10/syria-increases-criticism-of-israeli-actions-continues-diplomatic-outreach.php",
+          "date": "6 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Israel carried out 280 armed incursions into Syria in September, the highest monthly number since the start of the year, and currently detains 49 Syrians.",
+      "by": "Says: UN High Commissioner for Human Rights Volker Türk.",
+      "sources": [
+        {
+          "name": "Middle East Eye / UN OHCHR",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/un-israeli-forces-made-280-incursions-syria-detain-49-syrians",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Several Syrians released from Israeli detention reported allegations of torture and ill-treatment, among other violations.",
+      "by": "Says: UN Human Rights Office (Volker Türk's office).",
+      "sources": [
+        {
+          "name": "Middle East Eye / UN OHCHR",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/un-israeli-forces-made-280-incursions-syria-detain-49-syrians",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Israeli forces carried out raids and search operations in Rasm al-Haydarah, Quneitra province, a frequent target of incursions and artillery attacks.",
+      "by": "Says: Middle East Eye.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-village-syrias-quneitra-province",
+          "date": "10 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Syria's president and the UAE's president discussed boosting economic and investment cooperation and expanding partnerships between the two countries.",
+      "by": "Says: SANA, on a call between President Ahmed al-Sharaa and UAE President Sheikh Mohamed bin Zayed Al Nahyan.",
+      "sources": [
+        {
+          "name": "Long War Journal",
+          "url": "https://www.longwarjournal.org/archives/2026/10/syria-increases-criticism-of-israeli-actions-continues-diplomatic-outreach.php",
+          "date": "7 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -344,6 +438,28 @@
         {
           "name": "ReliefWeb",
           "url": "https://reliefweb.int/report/syrian-arab-republic/syria-key-message-update-fuel-price-increase-erodes-purchasing-power-winter-costs-and-lean-season-approach-september-2026-january-2027"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "official",
+      "text": "Syria's Foreign Ministry condemned Israel's new 'Sufa 53' security line built east of the Golan.",
+      "sources": [
+        {
+          "name": "Long War Journal",
+          "url": "https://www.longwarjournal.org/archives/2026/10/syria-increases-criticism-of-israeli-actions-continues-diplomatic-outreach.php"
+        }
+      ]
+    },
+    {
+      "date": "4 Oct",
+      "kind": "media",
+      "text": "Israeli forces shelled farmland between Buraiqa and Kodana in southern Quneitra, per Syrian TV.",
+      "sources": [
+        {
+          "name": "Middle East Eye (citing Al-Ikhbariah TV)",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-village-syrias-quneitra-province"
         }
       ]
     },
@@ -425,6 +541,39 @@
       ]
     },
     {
+      "date": "6 Oct",
+      "kind": "official",
+      "text": "Syria's UN ambassador reaffirmed the Golan is Syrian territory and said Israeli annexation measures are null and void.",
+      "sources": [
+        {
+          "name": "Long War Journal",
+          "url": "https://www.longwarjournal.org/archives/2026/10/syria-increases-criticism-of-israeli-actions-continues-diplomatic-outreach.php"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Israel's military said its 210th Division set up ten posts in Syria's buffer zone since Assad's fall.",
+      "sources": [
+        {
+          "name": "Long War Journal",
+          "url": "https://www.longwarjournal.org/archives/2026/10/syria-increases-criticism-of-israeli-actions-continues-diplomatic-outreach.php"
+        }
+      ]
+    },
+    {
+      "date": "7 Oct",
+      "kind": "media",
+      "text": "Israeli artillery shelled the outskirts of al-Samdaniya al-Sharqiya village in Quneitra.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-village-syrias-quneitra-province"
+        }
+      ]
+    },
+    {
       "date": "8 Oct",
       "kind": "denial",
       "text": "Syria's Information Ministry denied its forces are fighting in Yemen, after reports of Saudi-Syria talks on a troop deployment.",
@@ -447,6 +596,39 @@
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com/news/2026/10/8/syria-calls-for-independent-probe-into-sinking-of-ship-in-black-sea?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "official",
+      "text": "US envoy Tom Barrack met Syria's foreign minister al-Shaibani in Turkey.",
+      "sources": [
+        {
+          "name": "Long War Journal",
+          "url": "https://www.longwarjournal.org/archives/2026/10/syria-increases-criticism-of-israeli-actions-continues-diplomatic-outreach.php"
+        }
+      ]
+    },
+    {
+      "date": "8 Oct",
+      "kind": "media",
+      "text": "Syria reopened Aleppo's 1,300-year-old Great Umayyad Mosque after over 13 years of closure.",
+      "sources": [
+        {
+          "name": "Al-Monitor",
+          "url": "https://www.al-monitor.com/originals/2026/10/syria-reopens-aleppos-1300-year-old-great-umayyad-mosque-after-13-years"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "The UN human rights office said Israel made 280 incursions into Syria in September and detains 49 Syrians.",
+      "sources": [
+        {
+          "name": "Middle East Eye / UN OHCHR",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/un-israeli-forces-made-280-incursions-syria-detain-49-syrians"
         }
       ]
     },
@@ -545,8 +727,32 @@
       "what": "Global and regional hotel groups, including Accor, Wyndham and Minor Hotels, are seeking to enter or expand in Syria, be",
       "url": "https://www.al-monitor.com/originals/2026/10/hotel-groups-target-syria-tourism-it-rebuilds-rubble-civil-war",
       "date": "8 Oct"
+    },
+    {
+      "who": "Long War Journal",
+      "what": "Syria's Foreign Ministry condemned Israel for extending control via a new line, dubbed 'Sufa 53', east of the Golan; Qat",
+      "url": "https://www.longwarjournal.org/archives/2026/10/syria-increases-criticism-of-israeli-actions-continues-diplomatic-outreach.php",
+      "date": "4 Oct"
+    },
+    {
+      "who": "Middle East Eye / UN OHCHR",
+      "what": "Israel carried out 280 armed incursions into Syria in September, the highest monthly number since the start of the year,",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/un-israeli-forces-made-280-incursions-syria-detain-49-syrians",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "Israeli forces carried out raids and search operations in Rasm al-Haydarah, Quneitra province, a frequent target of incu",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-raids-village-syrias-quneitra-province",
+      "date": "10 Oct"
+    },
+    {
+      "who": "Al-Monitor",
+      "what": "Syria reopened Aleppo's 1,300-year-old Great Umayyad Mosque after over 13 years of closure.",
+      "url": "https://www.al-monitor.com/originals/2026/10/syria-reopens-aleppos-1300-year-old-great-umayyad-mosque-after-13-years",
+      "date": "8 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Fuel crisis sparks Syria's biggest protests since Assad's fall"
+  "headline": "Israel expands Golan buffer zone as UN tallies rising incursions into Syria"
 }

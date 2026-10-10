@@ -1,6 +1,6 @@
 {
   "slug": "europe-airspace-drones",
-  "updatedAt": "2026-10-08T16:47+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Drones have struck Black Sea shipping twice this week: a Turkish-flagged carrier sank near Romania on 5 October, killing two, and Bulgaria's Alfa Watan and Able were hit on 6 October, sinking one and damaging the other. Bulgaria has ended its search for the Alfa Watan's crew, finding no survivors, and still cannot determine the drones' origin. Radev calls it unacceptable and will buy five more air-defence systems. Zelensky blames Russia; opposition accuses Radev of shielding Moscow. Denmark says Russia is sabotaging Danish defence firms. Estonia received 13 US drones.",
+  "stand": "Drones have struck Black Sea shipping twice this week: a Turkish-flagged carrier sank near Romania on 5 October, killing two, and Bulgaria's Alfa Watan and Able were hit on 6 October, sinking one and damaging the other. Bulgaria has ended its search for the Alfa Watan's crew, finding no survivors, and cannot determine the drones' origin. Radev calls it unacceptable and will buy five air-defence systems. Zelensky blames Russia; opposition accuses Radev of shielding Moscow. Denmark and Estonia say Russian sabotage now targets defence firms directly, after August's Milrem attack.",
   "figures": [
     {
       "label": "Romania grain carrier casualties",
@@ -325,6 +325,90 @@
           "date": "7 Oct"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Russian-directed saboteurs attacked Estonian drone-maker Milrem, which supplies Ukraine's military, in August, marking a shift from symbolic sabotage to disrupting Ukraine's supply chains.",
+      "by": "Says: Estonian Internal Security Service director-general Margo Palloson",
+      "sources": [
+        {
+          "name": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/10/09/russia-sabotage-europe-attacks-hybrid-warfare-estonia/",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Danish officials expect Russia to increase its sabotage and other attacks across Europe in the coming months.",
+      "by": "Says: unnamed Danish officials",
+      "sources": [
+        {
+          "name": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/10/09/russia-sabotage-europe-attacks-hybrid-warfare-estonia/",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Estonia has arrested 20 people since 2025 who travelled to Russia and were recruited there by Russian intelligence as civilian assets.",
+      "by": "Says: Estonian Internal Security Service director-general Margo Palloson",
+      "sources": [
+        {
+          "name": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/10/09/russia-sabotage-europe-attacks-hybrid-warfare-estonia/",
+          "date": "7 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Ukraine's military has reached an overall drone shoot-down rate of 70%, covering piston- and jet-powered Shaheds, though the rate against jet-powered Shaheds is only 57%.",
+      "by": "Says: Office of the President of Ukraine",
+      "sources": [
+        {
+          "name": "Defense News",
+          "url": "https://www.defensenews.com/global/europe/2026/10/09/estonias-krattworks-crafting-shahed-like-dummy-drone-for-target-practice/",
+          "date": "28 Sep"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Russia used an estimated 5,166 Shahed-type drones, including decoys, against Ukraine in August alone, according to a Washington think tank's assessment.",
+      "by": "Says: Institute for Science and International Security (US think tank)",
+      "sources": [
+        {
+          "name": "Defense News",
+          "url": "https://www.defensenews.com/global/europe/2026/10/09/estonias-krattworks-crafting-shahed-like-dummy-drone-for-target-practice/",
+          "date": "Sept"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Estonian firm KrattWorks is developing a dummy target drone mimicking jet-powered Shahed-type drones for air-defence practice; a working prototype is expected by the end of 2027.",
+      "by": "Says: KrattWorks business development manager Ranno Pajuri",
+      "sources": [
+        {
+          "name": "Defense News",
+          "url": "https://www.defensenews.com/global/europe/2026/10/09/estonias-krattworks-crafting-shahed-like-dummy-drone-for-target-practice/",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "German firm Tytan Technologies' rocket-boosted Hyperion interceptor is designed to counter jet-powered drones such as the Geran-5, with deployment in Ukraine expected within weeks.",
+      "by": "Says: Tytan Technologies CEO Balazs Nagy",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4172753-germanys-tytan-technologies-develops-interceptor-drone-to-counter-jetpowered-uavs.html",
+          "date": "9 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -337,6 +421,17 @@
         {
           "name": "ABC News",
           "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648"
+        }
+      ]
+    },
+    {
+      "date": "28 Sep",
+      "kind": "official",
+      "text": "Ukraine's Presidential Office said its forces reached an overall drone shoot-down rate of 70%, but only 57% against jet-powered Shaheds.",
+      "sources": [
+        {
+          "name": "Defense News",
+          "url": "https://www.defensenews.com/global/europe/2026/10/09/estonias-krattworks-crafting-shahed-like-dummy-drone-for-target-practice/"
         }
       ]
     },
@@ -525,6 +620,39 @@
       ]
     },
     {
+      "date": "7 Oct",
+      "kind": "official",
+      "text": "Estonia's counterintelligence chief told Foreign Policy that Russian sabotage in Europe has shifted from symbolic acts to disrupting arms-supply chains.",
+      "sources": [
+        {
+          "name": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/10/09/russia-sabotage-europe-attacks-hybrid-warfare-estonia/"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "Tytan Technologies presented its rocket-boosted Hyperion interceptor, designed to counter jet-powered drones such as the Geran-5, at DefTech Day in Berlin.",
+      "sources": [
+        {
+          "name": "Ukrinform",
+          "url": "https://www.ukrinform.net/rubric-ato/4172753-germanys-tytan-technologies-develops-interceptor-drone-to-counter-jetpowered-uavs.html"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "Estonian firm KrattWorks said it is developing a dummy drone mimicking jet-powered Shahed-type drones, with a prototype due by the end of 2027.",
+      "sources": [
+        {
+          "name": "Defense News",
+          "url": "https://www.defensenews.com/global/europe/2026/10/09/estonias-krattworks-crafting-shahed-like-dummy-drone-for-target-practice/"
+        }
+      ]
+    },
+    {
       "date": "Aug",
       "kind": "official",
       "text": "Romania scrambled F-16 fighter jets to destroy a maritime drone near the Neptun Deep gas platform in the Black Sea.",
@@ -543,6 +671,17 @@
         {
           "name": "ABC News",
           "url": "https://abcnews.com/International/wireStory/bulgarian-pm-drone-attack-2-commercial-vessels-blatant-137025648"
+        }
+      ]
+    },
+    {
+      "date": "Aug",
+      "kind": "official",
+      "text": "Russian-directed saboteurs attacked Estonian drone-maker Milrem, which supplies Ukraine's military, in an escalation of Russian sabotage tactics.",
+      "sources": [
+        {
+          "name": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/10/09/russia-sabotage-europe-attacks-hybrid-warfare-estonia/"
         }
       ]
     }
@@ -631,8 +770,26 @@
       "what": "Denmark says Russia has begun sabotage operations against Danish companies supplying Ukraine, an escalation after broade",
       "url": "https://www.themoscowtimes.com/2026/10/07/denmark-says-russia-has-conducted-sabotage-attacks-against-its-defense-firms-a93914",
       "date": "7 Oct"
+    },
+    {
+      "who": "Foreign Policy",
+      "what": "Russian-directed saboteurs attacked Estonian drone-maker Milrem, which supplies Ukraine's military, in August, marking a",
+      "url": "https://foreignpolicy.com/2026/10/09/russia-sabotage-europe-attacks-hybrid-warfare-estonia/",
+      "date": "7 Oct"
+    },
+    {
+      "who": "Defense News",
+      "what": "Ukraine's military has reached an overall drone shoot-down rate of 70%, covering piston- and jet-powered Shaheds, though",
+      "url": "https://www.defensenews.com/global/europe/2026/10/09/estonias-krattworks-crafting-shahed-like-dummy-drone-for-target-practice/",
+      "date": "28 Sep"
+    },
+    {
+      "who": "Ukrinform",
+      "what": "German firm Tytan Technologies' rocket-boosted Hyperion interceptor is designed to counter jet-powered drones such as th",
+      "url": "https://www.ukrinform.net/rubric-ato/4172753-germanys-tytan-technologies-develops-interceptor-drone-to-counter-jetpowered-uavs.html",
+      "date": "9 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Denmark says Russia widening sabotage as Bulgaria ends crew search"
+  "headline": "Europe's drone-defence race intensifies as Russian sabotage turns disruptive"
 }

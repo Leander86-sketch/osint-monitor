@@ -1,6 +1,6 @@
 {
   "slug": "nato-eastern-flank",
-  "updatedAt": "2026-10-09T19:28+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "NATO's Baltic flank keeps hardening. Lithuania has deployed up to 100 troops to guard its Kaliningrad border through 16 October, to intercept Russian men evading mobilisation who seek asylum; guards call the border calm. Estonia runs NATO's biggest-ever command exercise, Steadfast Duel, the alliance's first Article 5 drill with all 32 members, and its foreign minister hails British troops at Tapa as key to deterrence. Vilnius still presses Washington for a permanent base. Moscow calls NATO's 'Theory of Victory' plan aggression; Poland and Lithuania plan for mass war refugees.",
+  "stand": "NATO's Baltic flank keeps hardening while new strains appear. Lithuania guards its Kaliningrad border through 16 October against draft evaders; Estonia runs NATO's biggest-ever Article 5 drill, Steadfast Duel, and awaits a visit from Secretary General Rutte. Latvia, the flank's weakest link, faces rising Belarus-directed migrant pressure, with 2026 border violations already matching last year's total; experts warn a Ceuta-style surge is possible. Lithuania's president admits the country struggles to spend its own defence budget. Moscow calls NATO's plans aggression; Poland's refugee-aid network strains amid rising hostility.",
   "figures": [
     {
       "label": "Pabradė base capacity cited for a potential permanent base",
@@ -29,6 +29,16 @@
         "name": "LRT",
         "url": "https://www.lrt.lt/en/news-in-english/19/3075164/trump-s-lithuania-base-remark-sparks-excitement-and-questions-in-vilnius",
         "date": "7 Oct"
+      }
+    },
+    {
+      "label": "Lithuania's 2026 defence budget",
+      "value": "€4.8bn (5.38% of GDP)",
+      "color": "#f59e0b",
+      "src": {
+        "name": "LRT",
+        "url": "https://www.lrt.lt/en/news-in-english/19/3077090/nauseda-lithuania-struggles-to-spend-defence-funds",
+        "date": "9 Oct"
       }
     }
   ],
@@ -453,6 +463,138 @@
           "date": "8 Oct"
         }
       ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Latvia's interior minister says the Belarus-directed border crossing attempt was unusually aggressive compared with earlier incidents.",
+      "by": "Says: Interior Minister Jānis Dombrava.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/a-ceuta-style-surge-is-possible-border-tensions-on-natos-eastern-flank?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Baltic security analyst warns a sudden Ceuta-style mass migrant surge into Latvia is plausible and should be planned for.",
+      "by": "Says: Olevs Nikers, Baltic Security Foundation.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/a-ceuta-style-surge-is-possible-border-tensions-on-natos-eastern-flank?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "An analyst says Russia has shifted tactics toward targeting infrastructure the Baltic states depend on, operating below the Article 5 threshold.",
+      "by": "Says: Olevs Nikers, Baltic Security Foundation.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/a-ceuta-style-surge-is-possible-border-tensions-on-natos-eastern-flank?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A migration researcher says Belarus's migrant pressure aims to secure sanctions relief and trade access through Baltic ports.",
+      "by": "Says: Marta Jaroszewicz, University of Warsaw.",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/9/a-ceuta-style-surge-is-possible-border-tensions-on-natos-eastern-flank?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Lithuania's president says the defence system is struggling to spend its own budget, having used less than half of this year's allocated funds.",
+      "by": "Says: President Gitanas Nausėda.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3077090/nauseda-lithuania-struggles-to-spend-defence-funds",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Lithuania's president says a planned joint drone-production deal with Ukraine has stalled because Lithuania's proposed order volumes were too small.",
+      "by": "Says: President Gitanas Nausėda.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3077090/nauseda-lithuania-struggles-to-spend-defence-funds",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A Lithuanian parliamentary leader says removing the constitutional ban would not itself station nuclear weapons; a separate decision would be required.",
+      "by": "Says: Liberal Movement leader Viktorija Čmilytė-Nielsen.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3077164/lithuania-moves-to-lift-constitutional-ban-on-nuclear-weapons-what-it-means",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "NATO says Secretary General Rutte will visit Estonia next week, meeting new President Ülle Madise and visiting Ämari Air Base.",
+      "by": "Says: NATO press service.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610162047/nato-chief-mark-rutte-to-visit-estonia-next-week",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "A NATO reconnaissance aircraft circled Kaliningrad for a second time this week, Russian air traffic control sources say.",
+      "by": "Says: Russian air traffic control source, cited by TASS.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199835",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "Hate crimes against Ukrainians in Poland rose by a third in the first half of 2026, Polish police data show.",
+      "by": "Says: Polish police statistics, cited by DW.",
+      "sources": [
+        {
+          "name": "DW",
+          "url": "https://www.dw.com/en/poland-lifeline-for-ukrainian-refugees-confronts-donor-fatigue-and-online-abuse-as-anti-ukrainian-sentiment-grows/a-79613292?maca=en-rss-en-world-4025-rdf",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "confirmed",
+      "text": "UNHCR has cut its Poland staff by two-thirds since the invasion's peak, closing three of its four regional offices, citing funding cuts.",
+      "by": "Says: UNHCR acting representative Jun Shirato.",
+      "sources": [
+        {
+          "name": "DW",
+          "url": "https://www.dw.com/en/poland-lifeline-for-ukrainian-refugees-confronts-donor-fatigue-and-online-abuse-as-anti-ukrainian-sentiment-grows/a-79613292?maca=en-rss-en-world-4025-rdf",
+          "date": "9 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -778,6 +920,50 @@
       ]
     },
     {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "TASS reports a NATO reconnaissance aircraft (Bombardier ARTEMIS II) circled Kaliningrad for the second time this week.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199835"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "Lithuanian President Nausėda says the defence system is struggling to spend allocated funds and criticises slow procurement.",
+      "sources": [
+        {
+          "name": "LRT",
+          "url": "https://www.lrt.lt/en/news-in-english/19/3077090/nauseda-lithuania-struggles-to-spend-defence-funds"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "DW reports rising hate crimes against Ukrainians in Poland and UNHCR staff cuts amid donor fatigue.",
+      "sources": [
+        {
+          "name": "DW",
+          "url": "https://www.dw.com/en/poland-lifeline-for-ukrainian-refugees-confronts-donor-fatigue-and-online-abuse-as-anti-ukrainian-sentiment-grows/a-79613292?maca=en-rss-en-world-4025-rdf"
+        }
+      ]
+    },
+    {
+      "date": "14 Oct",
+      "kind": "official",
+      "text": "NATO Secretary General Rutte is scheduled to visit Estonia, meeting new President Ülle Madise and visiting Ämari Air Base.",
+      "sources": [
+        {
+          "name": "ERR News",
+          "url": "https://news.err.ee/1610162047/nato-chief-mark-rutte-to-visit-estonia-next-week"
+        }
+      ]
+    },
+    {
       "date": "May",
       "kind": "official",
       "text": "Estonia incorporates 'active defense' concept into national defence policy.",
@@ -939,8 +1125,44 @@
       "what": "Estonia's foreign minister says British troops in Estonia are an important part of NATO's deterrence posture, after talk",
       "url": "https://news.err.ee/1610160325/minister-to-ed-miliband-british-troops-in-estonia-strengthen-nato-security",
       "date": "8 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Latvia's interior minister says the Belarus-directed border crossing attempt was unusually aggressive compared with earl",
+      "url": "https://www.aljazeera.com/news/2026/10/9/a-ceuta-style-surge-is-possible-border-tensions-on-natos-eastern-flank?traffic_source=rss",
+      "date": "9 Oct"
+    },
+    {
+      "who": "LRT",
+      "what": "Lithuania's president says the defence system is struggling to spend its own budget, having used less than half of this ",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3077090/nauseda-lithuania-struggles-to-spend-defence-funds",
+      "date": "9 Oct"
+    },
+    {
+      "who": "LRT",
+      "what": "A Lithuanian parliamentary leader says removing the constitutional ban would not itself station nuclear weapons; a separ",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3077164/lithuania-moves-to-lift-constitutional-ban-on-nuclear-weapons-what-it-means",
+      "date": "9 Oct"
+    },
+    {
+      "who": "ERR News",
+      "what": "NATO says Secretary General Rutte will visit Estonia next week, meeting new President Ülle Madise and visiting Ämari Air",
+      "url": "https://news.err.ee/1610162047/nato-chief-mark-rutte-to-visit-estonia-next-week",
+      "date": "9 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "A NATO reconnaissance aircraft circled Kaliningrad for a second time this week, Russian air traffic control sources say.",
+      "url": "https://tass.com/world/2199835",
+      "date": "9 Oct"
+    },
+    {
+      "who": "DW",
+      "what": "Hate crimes against Ukrainians in Poland rose by a third in the first half of 2026, Polish police data show.",
+      "url": "https://www.dw.com/en/poland-lifeline-for-ukrainian-refugees-confronts-donor-fatigue-and-online-abuse-as-anti-ukrainian-sentiment-grows/a-79613292?maca=en-rss-en-world-4025-rdf",
+      "date": "9 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Lithuania deploys up to 100 troops to calm Kaliningrad border"
+  "headline": "Belarus intensifies migrant pressure on Latvia as flank strains widen"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "lebanon",
-  "updatedAt": "2026-10-09T19:28+02:00",
+  "updatedAt": "2026-10-10T16:40+02:00",
   "anchors": [
     {
       "label": "Reuters",
@@ -19,7 +19,7 @@
       "match": "AFP|France 24"
     }
   ],
-  "stand": "Lebanon remains in humanitarian and economic crisis after hostilities escalated on 2 March 2026. A ceasefire followed a June 2026 US-brokered framework on Hezbollah disarmament and phased Israeli withdrawal; violations continue. The sole \"pilot zone\" withdrawal, from West Zawtar in July, has not been repeated two months on. UNIFIL's mandate ends 31 December; the EU favours extending it and will launch a Lebanese army training mission. Lebanon's health ministry says Israeli attacks have killed over 4,300 people since March. Humanitarian partners seek US$331.5 million for 1.4 million people in need.",
+  "stand": "Lebanon remains in humanitarian and economic crisis after hostilities escalated on 2 March 2026. A June 2026 US-brokered ceasefire on Hezbollah disarmament and phased Israeli withdrawal is still violated, including a 9 October drone strike wounding six near the Syrian border. The sole \"pilot zone\" withdrawal, from West Zawtar in July, has not been repeated. UNIFIL's mandate ends 31 December; the EU will deploy a roughly 100-strong mission, mainly in Beirut, to train Lebanon's army. Lebanon's health ministry says Israeli attacks have killed over 4,300 people since March.",
   "figures": [
     {
       "label": "People in need of humanitarian assistance",
@@ -432,6 +432,64 @@
           "date": "8 Oct"
         }
       ]
+    },
+    {
+      "status": "reported",
+      "text": "The EU's planned civil-military mission in Lebanon is now reported to number around 100 personnel, mostly from Italy, France and Spain, based in Beirut rather than near the Israeli border; its structure is due to be finalised on 12 October and an advance team arrives in December.",
+      "by": "Says: Rapporteur portal, cited by TASS. Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/10/israeli-drone-attack-wounds-six-in-lebanon-near-syria-border?traffic_source=rss",
+          "date": "10 Oct"
+        },
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-wounds-six-northeast-lebanon-near-syrian-border",
+          "date": "9 Oct"
+        },
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199847",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Israel's military says it struck a Syrian national it accused of directing attacks on Israeli forces in Syria on Iran's orders.",
+      "by": "Says: Israeli military. Denies: —",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-wounds-six-northeast-lebanon-near-syrian-border",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Israel occupies swathes of Lebanese territory, in places reaching up to 10 kilometres from the border.",
+      "by": "Says: Al Jazeera. Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news-analysis/2026/10/9/how-october-7-changed-lebanon-and-hezbollahs-political-reality?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
+    },
+    {
+      "status": "reported",
+      "text": "Israel violated the November 2024 ceasefire more than 10,000 times over the following 14 months, before the March 2026 escalation.",
+      "by": "Says: Al Jazeera. Denies: —",
+      "sources": [
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news-analysis/2026/10/9/how-october-7-changed-lebanon-and-hezbollahs-political-reality?traffic_source=rss",
+          "date": "9 Oct"
+        }
+      ]
     }
   ],
   "places": [],
@@ -499,6 +557,32 @@
         {
           "name": "Al-Monitor (AFP)",
           "url": "https://www.al-monitor.com/originals/2026/10/eu-top-diplomat-says-bloc-favour-un-lebanon-peacekeepers-extension"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "official",
+      "text": "Israeli drone strikes a car near Hawsh al-Sayyed Ali in Hermel district, close to the Syrian border, wounding six.",
+      "sources": [
+        {
+          "name": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-wounds-six-northeast-lebanon-near-syrian-border"
+        },
+        {
+          "name": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/10/israeli-drone-attack-wounds-six-in-lebanon-near-syria-border?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "date": "9 Oct",
+      "kind": "media",
+      "text": "Rapporteur portal reports structural details of the EU's planned Lebanon mission, including its roughly 100-person size and December advance-team arrival.",
+      "sources": [
+        {
+          "name": "TASS",
+          "url": "https://tass.com/world/2199847"
         }
       ]
     },
@@ -584,8 +668,32 @@
       "what": "The EU favours extending UNIFIL's mandate to avoid a security vacuum in south Lebanon.",
       "url": "https://www.al-monitor.com/originals/2026/10/eu-top-diplomat-says-bloc-favour-un-lebanon-peacekeepers-extension",
       "date": "8 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "The EU's planned civil-military mission in Lebanon is now reported to number around 100 personnel, mostly from Italy, Fr",
+      "url": "https://www.aljazeera.com/news/2026/10/10/israeli-drone-attack-wounds-six-in-lebanon-near-syria-border?traffic_source=rss",
+      "date": "10 Oct"
+    },
+    {
+      "who": "Middle East Eye",
+      "what": "The EU's planned civil-military mission in Lebanon is now reported to number around 100 personnel, mostly from Italy, Fr",
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-wounds-six-northeast-lebanon-near-syrian-border",
+      "date": "9 Oct"
+    },
+    {
+      "who": "TASS",
+      "what": "The EU's planned civil-military mission in Lebanon is now reported to number around 100 personnel, mostly from Italy, Fr",
+      "url": "https://tass.com/world/2199847",
+      "date": "9 Oct"
+    },
+    {
+      "who": "Al Jazeera",
+      "what": "Israel occupies swathes of Lebanese territory, in places reaching up to 10 kilometres from the border.",
+      "url": "https://www.aljazeera.com/news-analysis/2026/10/9/how-october-7-changed-lebanon-and-hezbollahs-political-reality?traffic_source=rss",
+      "date": "9 Oct"
     }
   ],
   "disclaimer": "The stand, figures, ledger and timeline are extracted from the sources ARGUS reads: every line carries a source link and was checked against a verbatim quote from that source before it was published, then reviewed. The pulse, map mentions, anchor line and headline columns are automatic and refresh with the feeds.",
-  "headline": "Pilot zone withdrawal stalls as EU urges UNIFIL mandate extension"
+  "headline": "Israel strikes near Syrian border as EU details Lebanon mission size"
 }

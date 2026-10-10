@@ -63,11 +63,16 @@ def overlap(slug, post_text):
     specific = {w for w in shared if w not in GENERIC and w not in words(SITUATION_TITLE.get(slug, ''))}
     return sorted(shared), sorted(specific)
 
-def compose(slug):
+def compose(slug, post_text=''):
     d = dossier(slug)
     head = (d.get('headline') or '').strip().rstrip('.')
-    # feit = eerste zin van de stand (redactioneel, met toeschrijving) — niet een kale claim als eigen bewering
-    fact = (d.get('stand') or '').split('. ')[0]
+    # feit = de zin uit het dossier (stand-zinnen + confirmed/disputed claims) met de meeste specifieke overlap met de
+    # post zelf — zodat de reply over hetzelfde gaat als de post; anders de eerste zin van de stand
+    sentences = [x.strip() for x in re.split(r'(?<=[.!?])\s+', d.get('stand') or '') if len(x.strip()) > 30]
+    sentences += [c['text'] for c in d.get('claims', []) if c['status'] in ('confirmed', 'disputed') and len(c['text']) <= 220]
+    pw = words(post_text) - GENERIC
+    best = max(sentences, key=lambda x: len(words(x) & pw), default='') if pw else ''
+    fact = best if best and len(words(best) & pw) >= 2 else (sentences[0] if sentences else '')
     link = f'https://argus.prototipo.nl/s/{slug}?ref=br'
     tail = f' Claim by claim, with sources: {link}'
     room = MAX_LEN - len(tail) - len(head) - 2
@@ -113,7 +118,7 @@ def main():
             ov, spec = overlap(slug, c['text'])
             if len(ov) < 3 or len(spec) < 3: why = f'te weinig specifieke overlap met het dossier (alles: {", ".join(ov) or "geen"} · specifiek: {", ".join(spec) or "geen"})'
         if why: log(f'skip @{author} → {slug}: {why}'); continue
-        text = compose(slug)
+        text = compose(slug, c['text'])
         if not text: log(f'skip @{author}: tekst te lang'); continue
         if hashlib.sha1(text.encode()).hexdigest() in done_text: log(f'skip @{author}: tekst al gebruikt'); continue
         used_slugs.add(slug)

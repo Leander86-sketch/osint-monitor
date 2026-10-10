@@ -69,7 +69,7 @@ def compose(slug, post_text=''):
     # feit = de zin uit het dossier (stand-zinnen + confirmed/disputed claims) met de meeste specifieke overlap met de
     # post zelf — zodat de reply over hetzelfde gaat als de post; anders de eerste zin van de stand
     sentences = [x.strip() for x in re.split(r'(?<=[.!?])\s+', d.get('stand') or '') if len(x.strip()) > 30]
-    sentences += [c['text'] for c in d.get('claims', []) if c['status'] in ('confirmed', 'disputed') and len(c['text']) <= 220]
+    sentences += [c['text'] for c in d.get('claims', []) if c['status'] in ('confirmed', 'disputed', 'reported') and len(c['text']) <= 220]
     pw = words(post_text) - GENERIC
     best = max(sentences, key=lambda x: len(words(x) & pw), default='') if pw else ''
     fact = best if best and len(words(best) & pw) >= 2 else (sentences[0] if sentences else '')

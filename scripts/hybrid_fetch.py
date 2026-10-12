@@ -128,6 +128,21 @@ HYB = re.compile(r'\b(drones?|drohnen?|uavs?|unmanned aircraft|airspace|luftraum
 EU = re.compile(r'\b(german\w*|poland|polish|denmark|danish|norw\w+|swed\w+|finland|finnish|estonia\w*|latvia\w*|lithuania\w*|baltic|nordic|netherlands|dutch|belgi\w+|luxemb\w+|swiss|switzerland|france|french|romania\w*|bulgaria\w*|czech\w*|slovak\w*|hungar\w+|austria\w*|ital\w+|spain|spanish|portug\w+|ireland|irish|britain|british|\buk\b|nato|\beu\b|europe\w*|moldova\w*|greece|greek|croatia\w*|slovenia\w*|serbia\w*|munich|berlin|frankfurt|hamburg|copenhagen|oslo|stockholm|helsinki|warsaw|vilnius|riga|tallinn|brussels|amsterdam|schiphol|paris|london|north sea|bundeswehr)\b', re.I)
 EXCL = re.compile(r'ukrain|kyiv|kiev|kharkiv|odesa|odessa|dnipro|zaporizh|lviv|kherson|sumy|donetsk|crimea|belgorod|moscow|kursk|kremlin|in russia|russian region|gaza|israel|iran|houthi|yemen|sudan|lebanon|syria|iraq|red sea|hormuz|taiwan|korea|india|pakistan|africa|far east|siberia|election commission|drone show|light show|delivery|start-?up|funding|contract|procure|\bbuys?\b|purchase|export|manufactur|drone maker|shares|stocks?\b|opinion|analysis:|explainer', re.I)
 NOT_EU_COUNTRIES = {'Ukraine', 'Russia', 'Belarus', 'Israel', 'Iran', 'United States', 'China', 'Turkey'}
+# cyber-fysiek (12 okt 2026): cyber/hack alleen mét fysiek effect of vitale infrastructuur; geen losse ransomware/datalekken
+CYB = re.compile(r'\b(cyber\s?-?attacks?|cyberattack\w*|cyber\s?-?aanval\w*|hack(ed|ers?|ing)?|ransomware)\b', re.I)
+PHYS = re.compile(r'\b(refrigerat\w*|freezers?|cooling|defrost\w*|koel\w*|supermarkets?|supermarkt\w*|grocer\w*|retail (giant|chain)|food (supply|chain|distribution)|water (supply|utility|utilities|plant|treatment)|waterworks|power (grid|plant|station|outage)|electricity|energy (company|grid|firm|supplier)|substation|pipeline|rail\w*|train\w*|metro|hospital\w*|clinic\w*|\bports?\b|harbou?r|airports?|air traffic|telecom\w*|industrial control|scada|\bics\b|factory|plant shut|production halted|systems offline|took systems offline|takes systems offline|outage)\b', re.I)
+CYB_EXCL = re.compile(r'\b(arrest\w*|charged|sentenced|indict\w*|extradit\w*|data (breach|leak)|records (stolen|leaked)|leaked|phishing|scam\w*|fraud|warns?|warning|minister|report says|study|survey|simulation|exercise|awareness|benchmark|concert)\b', re.I)
+EU_COUNTRY_NAMES = {'Germany', 'Poland', 'Denmark', 'Norway', 'Sweden', 'Finland', 'Estonia', 'Latvia', 'Lithuania', 'Netherlands', 'Belgium', 'Luxembourg', 'Switzerland', 'France', 'Romania', 'Bulgaria', 'Czechia', 'Czech Republic', 'Slovakia', 'Hungary', 'Austria', 'Italy', 'Spain', 'Portugal', 'Ireland', 'United Kingdom', 'UK', 'Moldova', 'Greece', 'Croatia', 'Slovenia', 'Iceland'}
+EU_HINT = re.compile(r'\b(franse|duitse|nederlandse|belgische|deense|zweedse|noorse|finse|poolse|britse|ierse|spaanse|italiaanse|oostenrijkse|zwitserse|tsjechische|ahold( delhaize)?|albert heijn|delhaize|jumbo|carrefour|intermarch\w*|leclerc|auchan|lidl|aldi|rewe|edeka|tesco|sainsbury\w*|colruyt|coop\w*|mercadona|tennet|enexis|alliander|stedin|eneco|vattenfall|engie|edf|enel|iberdrola|\bns\b|prorail|deutsche bahn|\bsncf\b|schiphol|\bkpn\b|\bodido\b|vodafoneziggo|orange|telefonica|deutsche telekom|proximus)\b', re.I)
+HINT_COUNTRY = [(r'\b(franse|intermarch\w*|leclerc|carrefour|auchan|\bsncf\b|engie|edf)\b', 'France'), (r'\b(nederlandse|ahold( delhaize)?|albert heijn|jumbo|tennet|enexis|alliander|stedin|eneco|\bns\b|prorail|schiphol|\bkpn\b|\bodido\b|vodafoneziggo)\b', 'Netherlands'),
+                (r'\b(duitse|rewe|edeka|deutsche bahn|deutsche telekom|vattenfall)\b', 'Germany'), (r'\b(belgische|delhaize|colruyt|proximus)\b', 'Belgium'), (r'\b(britse|tesco|sainsbury\w*)\b', 'United Kingdom'),
+                (r'\b(spaanse|mercadona|iberdrola|telefonica)\b', 'Spain'), (r'\b(italiaanse|enel)\b', 'Italy'), (r'\b(deense)\b', 'Denmark'), (r'\b(zweedse)\b', 'Sweden'), (r'\b(noorse)\b', 'Norway'), (r'\b(finse)\b', 'Finland'), (r'\b(poolse)\b', 'Poland')]
+def hint_country(t):
+    for rx, c in HINT_COUNTRY:
+        if re.search(rx, t, re.I): return c
+    return None
+def cyber_physical(t):
+    return bool(CYB.search(t) and PHYS.search(t) and not CYB_EXCL.search(t))
 
 def own_detect():
     """Nieuwe koppen uit de Argus-feed die op een hybride prikactie in Europa wijzen; bewaard in hybrid-own.json."""
@@ -137,7 +152,10 @@ def own_detect():
     except Exception: items = []
     for it in items:
         t = it.get('title') or ''
-        if not HYB.search(t) or not EU.search(t) or EXCL.search(t): continue
+        loc0 = it.get('location') or {}
+        hyb = HYB.search(t) or cyber_physical(t)
+        eu = EU.search(t) or (loc0.get('country') in EU_COUNTRY_NAMES) or (cyber_physical(t) and EU_HINT.search(t))
+        if not hyb or not eu or EXCL.search(t): continue
         if re.search(r'\b(says|said|warns?|warning|calls? for|urges?|vows?|could|may|might|should|must|plans?|to (protect|boost|counter)|debate|interview)\b', t, re.I) and not HARM.search(t): continue   # mening of voornemen, geen gebeurtenis
         loc = it.get('location') or {}
         if loc.get('country') in NOT_EU_COUNTRIES: continue
@@ -154,7 +172,7 @@ def own_detect():
             continue
         typ = 'drone' if re.search(r'\bdrones?|drohnen?|uavs?\b', t, re.I) else 'jamming' if re.search(r'jamm|spoof|gps', t, re.I) else 'airspace' if re.search(r'airspace|luftraum', t, re.I) else 'cyber' if re.search(r'cyber|hack', t, re.I) else 'maritime' if re.search(r'cable|shadow fleet|vessel|ship', t, re.I) else 'sabotage'
         sev, why = severity(t, typ)
-        country = loc.get('country'); place = loc.get('name') if loc.get('name') and loc.get('name') != country else None
+        country = loc.get('country') or (hint_country(t) if cyber_physical(t) else None); place = loc.get('name') if loc.get('name') and loc.get('name') != country else None
         lat, lon = (loc.get('lat'), loc.get('lng')) if loc.get('lat') is not None else CENTROID.get((country or '').lower(), (None, None))
         kept[link] = {'id': 'own-' + re.sub(r'[^a-z0-9]+', '-', (it.get('id') or link).lower())[:40], 'date': day, 'dateApprox': False, 'countries': [country] if country else [], 'place': place, 'lat': lat, 'lon': lon, 'coordApprox': place is None,
                       'type': typ, 'title': html.unescape(t).strip().rstrip('.'), 'attribution': 'unknown', 'actor': None, 'severity': sev, 'severityWhy': why,

@@ -3,6 +3,7 @@
 // niet zag (localStorage 'argus-wn-seen' < datum) krijgt een NEW-markering.
 export interface WhatsNew { date: string; text: string; href?: string }
 export const WHATS_NEW: WhatsNew[] = [
+  { date: '2026-10-12', text: 'Hybrid Europe now also tracks cyber attacks with a physical effect on vital services (refrigeration, water, power, rail, hospitals) — attribution stays "unknown" until a government speaks; plain ransomware and data leaks are left out.', href: '/focus' },
   { date: '2026-10-06', text: 'Situation dossiers: a newspaper headline, the stand, a claim ledger (confirmed / reported / disputed / debunked), figures with a source per number, places on the map and a timeline — on every situation page.', href: '/s/russia-plague-irkutsk' },
   { date: '2026-10-06', text: 'DOSSIERS button in the header: one list of the Focus dossier and every situation page.' },
   { date: '2026-10-06', text: 'Focus · Hybrid Europe 2.0: where it stands in plain sentences, documented 2022–2025 vs reported 2026, by-country table, last 14 days.', href: '/focus' },
